@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px; /* Global base — all rem/Tailwind sizes scale from here */
 }
 
 body {
