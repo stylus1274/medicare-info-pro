@@ -454,7 +454,7 @@ export default function AmIEligibleClient() {
       <Header />
 
       {/* ── Hero ── */}
-      <section className="relative h-[420px] md:h-[500px] flex items-end overflow-hidden">
+      <section className="relative h-[420px] md:h-[500px] flex items-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${HERO_IMAGE})` }}
@@ -462,7 +462,7 @@ export default function AmIEligibleClient() {
           aria-label="Senior couple reviewing Medicare eligibility documents together"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0d1f5c]/90 via-[#0d1f5c]/70 to-transparent" />
-        <div className="relative z-10 container pb-12 w-full">
+        <div className="relative z-10 container py-12 w-full">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
