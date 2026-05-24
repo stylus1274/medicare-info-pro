@@ -322,7 +322,7 @@ export default function Medicare101Client() {
           aria-label="Senior couple reviewing Medicare options with a licensed agent"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0d2060]/90 via-[#0d2060]/70 to-transparent" />
-        <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8 pb-12 md:pb-16">
+        <div className="relative z-10 container pb-12 md:pb-16">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="flex items-center gap-2 mb-4">
               <span className="bg-[#f5a800] text-[#0d2060] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
@@ -355,7 +355,7 @@ export default function Medicare101Client() {
 
       {/* ── AT A GLANCE STATS ── */}
       <section className="bg-[#1a3fa8] py-6" aria-label="Medicare at a glance statistics">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {STATS.map((s, i) => (
               <motion.div
@@ -380,7 +380,7 @@ export default function Medicare101Client() {
 
       {/* ── MAIN CONTENT + SIDEBAR ── */}
       <div className="py-12">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 flex gap-10 items-start">
+        <div className="container flex gap-10 items-start">
 
           {/* ── LEFT: ARTICLE CONTENT ── */}
           <article className="flex-1 min-w-0">
@@ -891,7 +891,7 @@ export default function Medicare101Client() {
 
       {/* ── RELATED GUIDES ── */}
       <section className="bg-gray-50 border-t border-gray-200 py-14" aria-label="Related Medicare guides">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
+        <div className="container">
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-serif text-2xl font-bold text-[#0d2060]">Related Guides</h2>
             <Link
@@ -953,9 +953,9 @@ export default function Medicare101Client() {
       </section>
 
       {/* ── BOTTOM CTA BAND ── */}
-      <section className="bg-[#1a3fa8] py-14">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="bg-[#1a3fa8] py-14" aria-label="Get started with Medicare">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-2">
                 Ready to choose the right Medicare plan?
