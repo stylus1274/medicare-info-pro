@@ -322,7 +322,7 @@ export default function Medicare101Client() {
           aria-label="Senior couple reviewing Medicare options with a licensed agent"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0d2060]/90 via-[#0d2060]/70 to-transparent" />
-        <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8 lg:px-16 pb-12 md:pb-16">
+        <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8 pb-12 md:pb-16">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="flex items-center gap-2 mb-4">
               <span className="bg-[#f5a800] text-[#0d2060] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
