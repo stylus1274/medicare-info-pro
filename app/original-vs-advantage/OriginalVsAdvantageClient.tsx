@@ -719,7 +719,7 @@ export default function OriginalVsAdvantageClient() {
                             ))}
                           </ul>
                         </Callout>
-                        <Callout type="error">
+                        <Callout type="warning">
                           <h4 className="font-bold text-red-800 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
                             Drawbacks
                           </h4>
