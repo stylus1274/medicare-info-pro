@@ -55,8 +55,8 @@ const planRows: PlanRow[] = [
   { benefit: "Blood (first 3 pints)", A: "full", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
   { benefit: "Part A hospice care coinsurance or copayment", A: "full", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
   { benefit: "Skilled nursing facility care coinsurance", tooltip: "Days 21–100 of a SNF stay", A: "none", B: "none", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
-  { benefit: "Part A deductible", tooltip: "$1,676 per benefit period in 2025", A: "none", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "partial", N: "full" },
-  { benefit: "Part B deductible", tooltip: "$257 per year in 2025", A: "none", B: "none", D: "none", G: "none", K: "none", L: "none", M: "none", N: "none" },
+  { benefit: "Part A deductible", tooltip: "$1,676 per benefit period in 2026", A: "none", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "partial", N: "full" },
+  { benefit: "Part B deductible", tooltip: "$257 per year in 2026", A: "none", B: "none", D: "none", G: "none", K: "none", L: "none", M: "none", N: "none" },
   { benefit: "Part B excess charges", tooltip: "Charges above Medicare-approved amount from non-participating providers", A: "none", B: "none", D: "none", G: "full", K: "none", L: "none", M: "none", N: "none" },
   { benefit: "Foreign travel emergency (up to plan limits)", A: "none", B: "none", D: "full", G: "full", K: "none", L: "none", M: "full", N: "full" },
 ];
@@ -65,7 +65,7 @@ const planDescriptions: Record<string, { tagline: string; best: string; note?: s
   A: { tagline: "Basic coverage only", best: "Lowest premium, bare minimum protection" },
   B: { tagline: "Adds Part A deductible", best: "Slightly more than Plan A" },
   D: { tagline: "Comprehensive minus Part B deductible & excess", best: "Good all-around value with foreign travel" },
-  G: { tagline: "Most comprehensive (for new enrollees)", best: "Best coverage available since 2020", popular: true, note: "Most popular plan in 2025" },
+  G: { tagline: "Most comprehensive (for new enrollees)", best: "Best coverage available since 2020", popular: true, note: "Most popular plan in 2026" },
   K: { tagline: "50% cost-sharing on most benefits", best: "Lower premium, higher out-of-pocket risk" },
   L: { tagline: "75% cost-sharing on most benefits", best: "Middle ground between K and standard plans" },
   M: { tagline: "Covers 50% of Part A deductible", best: "Moderate coverage with lower premium" },
@@ -332,7 +332,7 @@ const faqs = [
   },
   {
     q: "How much does a Medigap plan cost?",
-    a: "Premiums vary significantly by plan type, age, gender, location, and insurer. In 2025, Plan G premiums typically range from $100–$200/month for a 65-year-old, while Plan N runs $70–$150/month. Premiums generally increase with age.",
+    a: "Premiums vary significantly by plan type, age, gender, location, and insurer. In 2026, Plan G premiums typically range from $100–$200/month for a 65-year-old, while Plan N runs $70–$150/month. Premiums generally increase with age.",
   },
 ];
 
@@ -449,7 +449,7 @@ export default function DoINeedSupplementClient() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "20%", label: "Part B coinsurance Original Medicare leaves unpaid" },
-              { value: "$1,676", label: "Part A deductible per benefit period in 2025" },
+              { value: "$1,676", label: "Part A deductible per benefit period in 2026" },
               { value: "Plan G", label: "Most popular Medigap plan for new enrollees" },
               { value: "6 months", label: "Medigap Open Enrollment Period — use it or lose it" },
             ].map((stat) => (
@@ -553,7 +553,7 @@ export default function DoINeedSupplementClient() {
                   <h2 className="text-3xl font-bold text-gray-900 mb-2" style={{ fontFamily: "'Merriweather', serif" }}>
                     Medigap Plan Comparison
                   </h2>
-                  <p className="text-gray-500 mb-6 text-sm">All plans available to new Medicare enrollees in 2025. Plans C and F are no longer available to those new to Medicare after Jan 1, 2020.</p>
+                  <p className="text-gray-500 mb-6 text-sm">All plans available to new Medicare enrollees in 2026. Plans C and F are no longer available to those new to Medicare after Jan 1, 2020.</p>
 
                   <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
                     <div className="overflow-x-auto">
@@ -621,7 +621,7 @@ export default function DoINeedSupplementClient() {
               {/* Popular Plans Deep-Dive */}
               <div id="popular-plans">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#1a3fa8] mb-3">Most Popular in 2025</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#1a3fa8] mb-3">Most Popular in 2026</p>
                   <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Merriweather', serif" }}>
                     Plan G vs. Plan N vs. Plan D
                   </h2>
@@ -695,7 +695,7 @@ export default function DoINeedSupplementClient() {
                           </div>
                           <p className="text-gray-500 text-sm mb-1">{p.headline}</p>
                           <p className="text-[#1a3fa8] font-bold text-lg" style={{ fontFamily: "'Merriweather', serif" }}>{p.premium}</p>
-                          <p className="text-gray-400 text-xs">Typical premium for a 65-year-old, 2025</p>
+                          <p className="text-gray-400 text-xs">Typical premium for a 65-year-old, 2026</p>
                         </div>
                         <div className="px-6 pb-6 flex-1">
                           <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Pros</p>
@@ -829,7 +829,7 @@ export default function DoINeedSupplementClient() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { href: "/original-vs-advantage", label: "Original vs. Advantage", desc: "Decide between Original Medicare and Medicare Advantage before choosing a supplement.", tag: "Key Decision" },
-              { href: "/costs-at-a-glance", label: "Costs at a Glance", desc: "See all 2025 premiums, deductibles, and out-of-pocket limits for every part of Medicare.", tag: "Cost Reference" },
+              { href: "/costs-at-a-glance", label: "Costs at a Glance", desc: "See all 2026 premiums, deductibles, and out-of-pocket limits for every part of Medicare.", tag: "Cost Reference" },
               { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Understand your enrollment windows and how they relate to your Medigap OEP.", tag: "Getting Started" },
             ].map((link) => (
               <Link

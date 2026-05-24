@@ -333,8 +333,8 @@ const criteriaCards = [
       "To receive premium-free Part A, you or your spouse must have worked and paid Medicare taxes for at least 10 years (40 quarters).",
     details: [
       "40 quarters = premium-free Part A",
-      "30–39 quarters = reduced Part A premium (~$284/mo in 2025)",
-      "Under 30 quarters = full Part A premium (~$518/mo in 2025)",
+      "30–39 quarters = reduced Part A premium (~$284/mo in 2026)",
+      "Under 30 quarters = full Part A premium (~$518/mo in 2026)",
     ],
   },
   {

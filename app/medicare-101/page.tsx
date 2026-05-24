@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare 101: The Complete Beginner's Guide",
     description:
-      "Understand Medicare Parts A, B, C & D, enrollment periods, 2025 costs, and how to choose the right plan. Free guide from licensed Medicare agents.",
+      "Understand Medicare Parts A, B, C & D, enrollment periods, 2026 costs, and how to choose the right plan. Free guide from licensed Medicare agents.",
     url: "https://medicare-info-pro.vercel.app/medicare-101",
     siteName: "Medicare Information Project",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Medicare 101: The Complete Beginner's Guide",
     description:
-      "Understand Medicare Parts A, B, C & D, enrollment periods, 2025 costs, and how to choose the right plan.",
+      "Understand Medicare Parts A, B, C & D, enrollment periods, 2026 costs, and how to choose the right plan.",
     images: [
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/pillar-medicare101-hero-f5outgxBhHJbUVbUzgH5fL.webp",
     ],

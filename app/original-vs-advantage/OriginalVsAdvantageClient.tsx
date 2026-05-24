@@ -51,8 +51,8 @@ const comparisonRows = [
   {
     category: "Cost Structure",
     icon: DollarSign,
-    original: { text: "Predictable premiums (Part B: $185/mo in 2025), but potentially high out-of-pocket costs with no annual cap", positive: false },
-    advantage: { text: "Often $0 extra premium beyond Part B, but copays and network restrictions apply. Annual out-of-pocket cap (max $8,850 in-network, 2025)", positive: true },
+    original: { text: "Predictable premiums (Part B: $185/mo in 2026), but potentially high out-of-pocket costs with no annual cap", positive: false },
+    advantage: { text: "Often $0 extra premium beyond Part B, but copays and network restrictions apply. Annual out-of-pocket cap (max $8,850 in-network, 2026)", positive: true },
   },
   {
     category: "Doctor Choice",
@@ -76,7 +76,7 @@ const comparisonRows = [
     category: "Out-of-Pocket Cap",
     icon: Heart,
     original: { text: "No annual out-of-pocket maximum — costs can be unlimited without a Medigap supplement", positive: false },
-    advantage: { text: "Federal law requires an annual out-of-pocket maximum (up to $8,850 in-network in 2025)", positive: true },
+    advantage: { text: "Federal law requires an annual out-of-pocket maximum (up to $8,850 in-network in 2026)", positive: true },
   },
   {
     category: "Travel & Nationwide Coverage",
@@ -369,7 +369,7 @@ const faqs = [
   },
   {
     q: "Is Medicare Advantage really free?",
-    a: "Many Medicare Advantage plans have a $0 extra monthly premium — but you still pay your Part B premium ($185/mo in 2025). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
+    a: "Many Medicare Advantage plans have a $0 extra monthly premium — but you still pay your Part B premium ($185/mo in 2026). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
   },
   {
     q: "What is a Medigap supplement and do I need one with Original Medicare?",
@@ -524,7 +524,7 @@ export default function OriginalVsAdvantageClient() {
             { value: "54%", label: "Choose Medicare Advantage (2024)" },
             { value: "$0", label: "Extra premium on many Advantage plans" },
             { value: "Any doctor", label: "Original Medicare nationwide access" },
-            { value: "$8,850", label: "Advantage out-of-pocket max (2025)" },
+            { value: "$8,850", label: "Advantage out-of-pocket max (2026)" },
           ].map((s) => (
             <div key={s.label} className="flex items-center gap-3">
               <span className="text-[#f5a800] font-bold text-xl" style={{ fontFamily: "'Merriweather', serif" }}>{s.value}</span>

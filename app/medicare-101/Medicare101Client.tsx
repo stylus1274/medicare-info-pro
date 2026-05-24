@@ -58,7 +58,7 @@ const PLAN_PARTS = [
       "Durable medical equipment",
       "Mental health services",
     ],
-    cost: "Standard premium: $185/month in 2025 (income-based adjustments may apply)",
+    cost: "Standard premium: $185/month in 2026 (income-based adjustments may apply)",
     note: "You pay 20% of most services after your deductible.",
   },
   {
@@ -88,7 +88,7 @@ const PLAN_PARTS = [
       "Specialty drugs (with prior auth)",
       "Vaccines in some plans",
     ],
-    cost: "Average premium ~$46/month in 2025; varies by plan and drugs needed",
+    cost: "Average premium ~$46/month in 2026; varies by plan and drugs needed",
     note: "Penalty applies if you delay enrollment without creditable coverage.",
   },
 ];
@@ -144,7 +144,7 @@ const ENROLLMENT_PERIODS = [
   },
 ];
 
-const COSTS_2025 = [
+const COSTS_2026 = [
   { item: "Part A Premium", cost: "$0 (most people)", note: "Free if 40+ quarters of Medicare taxes paid" },
   { item: "Part A Deductible", cost: "$1,676 per benefit period", note: "Applies each time you're admitted to hospital" },
   { item: "Part B Premium", cost: "$185/month", note: "Higher for incomes over $106,000 (IRMAA)" },
@@ -200,7 +200,7 @@ const FAQS = [
   },
   {
     q: "What is IRMAA?",
-    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income reported on your tax return from two years ago exceeds certain thresholds ($106,000 for individuals, $212,000 for couples in 2025), you'll pay a higher Part B and/or Part D premium. The surcharge is applied on a sliding scale based on income.",
+    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income reported on your tax return from two years ago exceeds certain thresholds ($106,000 for individuals, $212,000 for couples in 2026), you'll pay a higher Part B and/or Part D premium. The surcharge is applied on a sliding scale based on income.",
   },
   {
     q: "Can I switch from Medicare Advantage back to Original Medicare?",
@@ -208,7 +208,7 @@ const FAQS = [
   },
   {
     q: "Is Medicare free?",
-    a: "Part A is free for most people who paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $185 in 2025. Part D and Medicare Advantage plans have their own premiums. There are also deductibles and cost-sharing for most services. Some low-income individuals may qualify for programs that help pay these costs.",
+    a: "Part A is free for most people who paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $185 in 2026. Part D and Medicare Advantage plans have their own premiums. There are also deductibles and cost-sharing for most services. Some low-income individuals may qualify for programs that help pay these costs.",
   },
 ];
 
@@ -647,24 +647,24 @@ export default function Medicare101Client() {
               className="mb-14 scroll-mt-28"
             >
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#0d2060] mb-2">
-                What Does Medicare Cost in 2025?
+                What Does Medicare Cost in 2026?
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Medicare costs vary significantly depending on which parts and plans you choose. Here are the key 2025
+                Medicare costs vary significantly depending on which parts and plans you choose. Here are the key 2026
                 figures:
               </p>
               <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
                 <table className="w-full text-sm">
-                  <caption className="sr-only">Medicare 2025 cost breakdown by coverage type</caption>
+                  <caption className="sr-only">Medicare 2026 cost breakdown by coverage type</caption>
                   <thead>
                     <tr className="bg-[#1a3fa8]">
                       <th className="text-left px-5 py-3 text-white font-semibold">Coverage</th>
-                      <th className="text-left px-5 py-3 text-white font-semibold">2025 Cost</th>
+                      <th className="text-left px-5 py-3 text-white font-semibold">2026 Cost</th>
                       <th className="text-left px-5 py-3 text-white font-semibold">Notes</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {COSTS_2025.map((row, i) => (
+                    {COSTS_2026.map((row, i) => (
                       <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                         <td className="px-5 py-3 font-medium text-[#0d2060] border-b border-gray-100">{row.item}</td>
                         <td className="px-5 py-3 text-gray-800 font-semibold border-b border-gray-100">{row.cost}</td>
