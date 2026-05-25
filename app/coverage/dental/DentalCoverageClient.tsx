@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   DentalCoverageClient — /coverage/dental
+   DentalCoverageClient -- /coverage/dental
    Does Medicare Cover Dental Care?
-   Design: MIP brand — navy/gold, editorial two-column layout
+   Design: MIP brand -- navy/gold, editorial two-column layout
    ========================================================================== */
 
 import { useState } from "react";
@@ -58,7 +58,7 @@ const PLAN_ROWS: { plan: string; status: CoverageStatus; detail: string }[] = [
     plan: "Original Medicare (Parts A & B)",
     status: "partial",
     detail:
-      "Very limited. Only covers dental care that is medically necessary as part of a covered procedure — e.g., jaw reconstruction after an accident, or tooth extraction before radiation therapy for jaw cancer. Routine cleanings, fillings, extractions, and dentures are not covered.",
+      "Very limited. Only covers dental care that is medically necessary as part of a covered procedure, such as jaw reconstruction after an accident or tooth extraction before radiation therapy for jaw cancer. Routine cleanings, fillings, extractions, and dentures are not covered.",
   },
   {
     plan: "Medicare Advantage (Part C)",
@@ -70,7 +70,7 @@ const PLAN_ROWS: { plan: string; status: CoverageStatus; detail: string }[] = [
     plan: "Medicare Supplement (Medigap)",
     status: "not",
     detail:
-      "Medigap plans do not add dental coverage. They only cover gaps in Original Medicare costs — and since Original Medicare does not cover dental, Medigap does not either. You would need a separate standalone dental plan.",
+      "Medigap plans do not add dental coverage. They only cover gaps in Original Medicare costs, and since Original Medicare does not cover dental, Medigap does not either. You would need a separate standalone dental plan.",
   },
   {
     plan: "Standalone Dental Plan",
@@ -84,23 +84,23 @@ const SECTIONS: { heading: string; content: string }[] = [
   {
     heading: "What Original Medicare Covers",
     content:
-      "Original Medicare Part A may cover dental services that are an integral part of a covered inpatient procedure. Examples include jaw reconstruction following an accidental injury, or tooth extraction required before radiation treatment for jaw cancer. Part B may cover dental services needed to treat a medical condition — for instance, oral examinations before kidney transplants or heart valve replacements. Outside of these narrow exceptions, routine dental care is explicitly excluded from Medicare coverage.",
+      "Original Medicare Part A may cover dental services that are an integral part of a covered inpatient procedure. Examples include jaw reconstruction following an accidental injury, or tooth extraction required before radiation treatment for jaw cancer. Part B may cover dental services needed to treat a medical condition, such as oral examinations before kidney transplants or heart valve replacements. Outside of these narrow exceptions, routine dental care is explicitly excluded from Medicare coverage.",
   },
   {
     heading: "What Medicare Advantage Covers",
     content:
-      "The majority of Medicare Advantage plans offer dental benefits as an extra benefit beyond Original Medicare. Coverage varies significantly by plan and insurer. Preventive dental benefits (exams, cleanings, X-rays) are the most common. Comprehensive dental benefits — covering basic restorative care like fillings and extractions — are included in many plans. Major dental services (crowns, bridges, dentures, implants) are available in some plans but often with higher cost-sharing and annual limits. Always verify your specific plan's dental benefits and network dentists before enrolling.",
+      "The majority of Medicare Advantage plans offer dental benefits as an extra benefit beyond Original Medicare. Coverage varies significantly by plan and insurer. Preventive dental benefits (exams, cleanings, X-rays) are the most common. Comprehensive dental benefits covering basic restorative care like fillings and extractions are included in many plans. Major dental services (crowns, bridges, dentures, implants) are available in some plans but often with higher cost-sharing and annual limits. Always verify your specific plan's dental benefits and network dentists before enrolling.",
   },
   {
     heading: "Your Options for Dental Coverage",
     content:
-      "If you have Original Medicare and want dental coverage, you have three main options: (1) Switch to a Medicare Advantage plan that includes dental benefits during your next enrollment period. (2) Purchase a standalone dental insurance plan — available year-round from private insurers, typically $20–$50/month. (3) Use a dental discount plan, which is not insurance but provides reduced rates at participating dentists for an annual membership fee.",
+      "If you have Original Medicare and want dental coverage, you have three main options: (1) Switch to a Medicare Advantage plan that includes dental benefits during your next enrollment period. (2) Purchase a standalone dental insurance plan, available year-round from private insurers, typically $20–$50/month. (3) Use a dental discount plan, which is not insurance but provides reduced rates at participating dentists for an annual membership fee.",
   },
 ];
 
 const TIPS: string[] = [
   "Compare Medicare Advantage plans during Annual Enrollment (Oct 15 – Dec 7) to find one with strong dental benefits in your area.",
-  "Standalone dental plans are available year-round — you do not need to wait for an enrollment period.",
+  "Standalone dental plans are available year-round. You do not need to wait for an enrollment period.",
   "Ask your dentist if they accept Medicare Advantage dental benefits before switching plans.",
   "Some community health centers offer sliding-scale dental care regardless of insurance status.",
 ];
@@ -184,7 +184,7 @@ export default function DentalCoverageClient() {
               Does Medicare Cover Dental Care?
             </h1>
             <p className="text-base text-white/75 leading-relaxed mb-6">
-              Original Medicare covers almost no routine dental care. Here's what is and isn't covered — and your options for filling the gap.
+              Original Medicare covers almost no routine dental care. Here is what is and is not covered, and your options for filling the gap.
             </p>
 
             {/* Quick Answer Banner */}
@@ -195,7 +195,7 @@ export default function DentalCoverageClient() {
               <qs.Icon className="text-red-600 flex-shrink-0 mt-0.5" />
               <div>
                 <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: qs.color }}>
-                  Quick Answer — {qs.label}
+                  Quick Answer: {qs.label}
                 </p>
                 <p className="text-sm font-semibold leading-snug" style={{ color: qs.color }}>
                   Original Medicare does NOT cover routine dental care. Medicare Advantage plans often include dental benefits.
@@ -384,7 +384,7 @@ export default function DentalCoverageClient() {
                 Want dental coverage with your Medicare plan?
               </h2>
               <p className="text-white/80 text-base max-w-xl leading-relaxed">
-                We compare Medicare Advantage plans in your ZIP code side-by-side — including dental, vision, and hearing benefits — at no cost to you.
+                We compare Medicare Advantage plans in your ZIP code side-by-side, including dental, vision, and hearing benefits, at no cost to you.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">
