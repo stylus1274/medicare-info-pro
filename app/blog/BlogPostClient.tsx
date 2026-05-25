@@ -208,8 +208,6 @@ export default function BlogPostClient({ post }: Props) {
           <p className="text-[1rem] text-white/80 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
 
           <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/60">
-            <span className="font-semibold text-white/80">{post.author.name}</span>
-            <span className="text-white/40">·</span>
             <span className="flex items-center gap-1.5"><Calendar size={13} aria-hidden="true" /> {post.date}</span>
             <span className="text-white/40">·</span>
             <span className="flex items-center gap-1.5"><Clock size={13} aria-hidden="true" /> {post.readTime}</span>
