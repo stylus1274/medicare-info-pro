@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Home Page — New Design (converted from TestingElements.tsx)
+ * Home Page - New Design (converted from TestingElements.tsx)
  * Rovix-inspired layout: split hero (dark left + photo right),
  * journey cards, mistakes strip, cost estimator, find plans,
  * latest resources, testimonials, FAQ + advisor panel, CTA banner.
@@ -70,11 +70,11 @@ const DECISION_TILES = [
 
 // ── Mistakes data ──
 const MISTAKES = [
-  { title: "Waiting too long to enroll", detail: "Missing your Initial Enrollment Period can trigger a permanent late penalty — 10% per year added to your Part B premium for life.", color: "#dc2626" },
+  { title: "Waiting too long to enroll", detail: "Missing your Initial Enrollment Period can trigger a permanent late penalty - 10% per year added to your Part B premium for life.", color: "#dc2626" },
   { title: "Assuming Medicare covers everything", detail: "Original Medicare has no out-of-pocket maximum. Without a supplement or Advantage plan, a single hospital stay can cost thousands.", color: "#d97706" },
   { title: "Choosing a plan based on premium alone", detail: "A $0 premium plan can cost far more in copays and network restrictions. Total annual cost is what matters, not the monthly sticker price.", color: "#7c3aed" },
   { title: "Not reviewing your plan each year", detail: "Plan formularies, premiums, and networks change every October. A plan that was right last year may no longer be your best option.", color: "#059669" },
-  { title: "Skipping Part D because you don&apos;t take prescriptions now", detail: "Delaying Part D enrollment when you don&apos;t need it yet results in a permanent penalty once you do — 1% per month for every month you waited.", color: "#1a3fa8" },
+  { title: "Skipping Part D because you don&apos;t take prescriptions now", detail: "Delaying Part D enrollment when you don&apos;t need it yet results in a permanent penalty once you do - 1% per month for every month you waited.", color: "#1a3fa8" },
 ];
 
 // ── Estimator options ──
@@ -204,11 +204,11 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="text-center mb-14">
             <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] mb-3" style={{ color: "#1a3fa8" }}>Latest Updates</p>
             <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>Latest Resources</h2>
-            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">Guides, answers, and tools — updated regularly by licensed Medicare professionals.</p>
+            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">Guides, answers, and tools - updated regularly by licensed Medicare professionals.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/blog-scooter-hero_48088844.jpg", category: "Coverage & Claims", title: "Why Medicare Denies Mobility Scooter Claims in Florida (And How to Appeal)", desc: "The most common reasons Medicare turns down scooter requests — and a step-by-step guide to filing a successful appeal.", date: "Updated Apr 2026", href: "/blog-post" },
+              { img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/blog-scooter-hero_48088844.jpg", category: "Coverage & Claims", title: "Why Medicare Denies Mobility Scooter Claims in Florida (And How to Appeal)", desc: "The most common reasons Medicare turns down scooter requests - and a step-by-step guide to filing a successful appeal.", date: "Updated Apr 2026", href: "/blog-post" },
               { img: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&h=400&fit=crop", category: "Tool", title: "Medicare Enrollment Timeline Calculator", desc: "Enter your birthday and employment status to see exactly when you should enroll and what deadlines to watch.", date: "Updated Jan 2026", href: "/enrollment-calculator" },
               { img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop", category: "News", title: "2026 Medicare Advantage Changes in Florida", desc: "Key changes to Medicare Advantage plans in Florida for 2026, including new benefits and network updates.", date: "Updated Jan 2026", href: "#" },
             ].map((a, i) => (
@@ -251,7 +251,7 @@ export default function Home() {
             {[
               { quote: "I was completely overwhelmed by Medicare options when I turned 65. The guides on this site helped me understand exactly what I needed before I even spoke to an agent.", name: "Margaret T.", link: "New to Medicare", stars: 5 },
               { quote: "I kept working past 65 and had no idea how Medicare relates to my employer plan. The &apos;Working Past 65&apos; section answered every question I had.", name: "Robert K.", link: "Working Past 65", stars: 5 },
-              { quote: "Switching from Plan F to Plan G saved me over $100/month. The comparison guide made it so easy — I didn&apos;t even need to call anyone.", name: "Linda M.", link: "Already Enrolled", stars: 5 },
+              { quote: "Switching from Plan F to Plan G saved me over $100/month. The comparison guide made it so easy - I didn&apos;t even need to call anyone.", name: "Linda M.", link: "Already Enrolled", stars: 5 },
             ].map((r, i) => (
               <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative">
@@ -280,7 +280,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl sm:text-3xl text-white mb-2" style={{ fontFamily: "var(--font-heading)" }}>Need help choosing the right plan?</h2>
-              <p className="text-[1rem] text-blue-200">Our licensed agents are available to answer your questions — no obligation, no pressure.</p>
+              <p className="text-[1rem] text-blue-200">Our licensed agents are available to answer your questions - no obligation, no pressure.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 shrink-0">
               <a href="tel:18138699559" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
@@ -441,7 +441,7 @@ function FAQBlock() {
     { q: "What is Medicare and who is eligible?", a: "Medicare is a federal health insurance program primarily for people 65 and older, though some younger people with disabilities or specific conditions also qualify. Most U.S. citizens and permanent residents who have worked and paid Medicare taxes for at least 10 years are eligible." },
     { q: "When should I enroll in Medicare?", a: "Your Initial Enrollment Period begins 3 months before the month you turn 65 and ends 3 months after. If you&apos;re still working with employer coverage, you may be able to delay enrollment without penalty. Contact us to understand your specific timeline." },
     { q: "What&apos;s the difference between Original Medicare and Medicare Advantage?", a: "Original Medicare (Parts A & B) is provided by the federal government and lets you see any doctor who accepts Medicare. Medicare Advantage (Part C) is offered by private insurers and often includes extra benefits like dental and vision, but typically requires using a network of providers." },
-    { q: "Is your service really free?", a: "Yes, 100% free to you. We are licensed, independent insurance agents compensated by the insurance companies — not by you. Our guidance is unbiased because we represent over 100 plans from 17 organizations, so we can recommend what&apos;s truly best for your situation." },
+    { q: "Is your service really free?", a: "Yes, 100% free to you. We are licensed, independent insurance agents compensated by the insurance companies - not by you. Our guidance is unbiased because we represent over 100 plans from 17 organizations, so we can recommend what&apos;s truly best for your situation." },
     { q: "What states do you serve?", a: "We are licensed and serve clients in Florida, Georgia, North Carolina, Arkansas, Kansas, and Texas. Our office is located in Brandon, Florida, but we assist clients across all six states via phone and video consultations." },
   ];
   return (
@@ -479,7 +479,7 @@ function FAQBlock() {
               </div>
               <div className="p-8" style={{ background: "#0a1a4a" }}>
                 <h3 className="text-xl text-white mb-3" style={{ fontFamily: "var(--font-heading)" }}>Need help choosing the right plan?</h3>
-                <p className="text-[0.9rem] text-blue-200 leading-relaxed mb-6">Our licensed agents are available to answer your questions — no obligation, no pressure.</p>
+                <p className="text-[0.9rem] text-blue-200 leading-relaxed mb-6">Our licensed agents are available to answer your questions - no obligation, no pressure.</p>
                 <a href="tel:18138699559" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-bold mb-3" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
                   <Phone size={16} /> Call Us Now
                 </a>

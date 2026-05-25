@@ -1,11 +1,11 @@
 "use client";
 
 /**
- * First Steps Checklist — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, Merriweather headings
+ * First Steps Checklist - MIP Next.js Client Component
+ * Design: MIP brand - navy/gold, Merriweather headings
  * Feature: Persistent checkbox state via localStorage, progress ring, print view
  * Sections: Hero → Progress Bar → Intro → 6 Phase Cards → Completion → CTA → Related
- * Note: Callout has no `title` prop — headings are inlined inside children.
+ * Note: Callout has no `title` prop - headings are inlined inside children.
  * All year references updated to 2026.
  */
 
@@ -96,7 +96,7 @@ const phases: Phase[] = [
       {
         id: "p1-4",
         text: "Check whether you qualify for any Medicare Savings Programs or Extra Help",
-        detail: "If your income is limited, you may qualify for programs that pay your premiums, deductibles, and copays — or reduce your drug costs significantly.",
+        detail: "If your income is limited, you may qualify for programs that pay your premiums, deductibles, and copays - or reduce your drug costs significantly.",
         link: { label: "See savings programs", href: "/costs-at-a-glance#savings" },
       },
       {
@@ -125,7 +125,7 @@ const phases: Phase[] = [
       },
       {
         id: "p2-2",
-        text: "Determine your Initial Enrollment Period (IEP) — the 7-month window around your 65th birthday",
+        text: "Determine your Initial Enrollment Period (IEP) - the 7-month window around your 65th birthday",
         detail: "Your IEP starts 3 months before your birthday month, includes your birthday month, and ends 3 months after. Enrolling in the first 3 months means coverage starts on time.",
         link: { label: "Enrollment Timeline", href: "/enrollment-timeline" },
         warning: "Missing your IEP can result in permanent late enrollment penalties.",
@@ -221,7 +221,7 @@ const phases: Phase[] = [
       {
         id: "p4-5",
         text: "Confirm your enrollment and note your coverage start date",
-        detail: "You should receive a confirmation letter and your Medicare card within a few weeks. Keep your Medicare number secure — treat it like a Social Security number.",
+        detail: "You should receive a confirmation letter and your Medicare card within a few weeks. Keep your Medicare number secure - treat it like a Social Security number.",
       },
     ],
   },
@@ -229,7 +229,7 @@ const phases: Phase[] = [
     id: "phase-5",
     phase: "Phase 5",
     title: "Set Up & Organize",
-    timing: "After enrollment — before coverage starts",
+    timing: "After enrollment - before coverage starts",
     icon: Stethoscope,
     color: "text-teal-700",
     bgColor: "bg-teal-50",
@@ -264,7 +264,7 @@ const phases: Phase[] = [
       {
         id: "p5-6",
         text: "Mark your calendar for the Annual Enrollment Period (Oct 15 – Dec 7) each year",
-        detail: "Each fall, you can review and change your Medicare Advantage or Part D plan. Even if you're happy with your plan, it's worth reviewing — benefits and formularies change each year.",
+        detail: "Each fall, you can review and change your Medicare Advantage or Part D plan. Even if you're happy with your plan, it's worth reviewing - benefits and formularies change each year.",
       },
     ],
   },
@@ -291,7 +291,7 @@ const phases: Phase[] = [
       {
         id: "p6-3",
         text: "Check for new Medicare Savings Program eligibility each year",
-        detail: "Income and asset thresholds change annually. Even if you didn't qualify before, you may qualify now — especially if your income has decreased.",
+        detail: "Income and asset thresholds change annually. Even if you didn't qualify before, you may qualify now - especially if your income has decreased.",
       },
       {
         id: "p6-4",
@@ -631,7 +631,7 @@ function Sidebar({
             Need help with any step?
           </h3>
           <p className="text-white/80 text-sm leading-relaxed mb-4">
-            A licensed MIP agent can walk you through every step on this checklist — at no cost to you.
+            A licensed MIP agent can walk you through every step on this checklist - at no cost to you.
           </p>
           <a
             href="tel:8136995559"
@@ -715,7 +715,7 @@ export default function FirstStepsChecklistClient() {
             Your Medicare First Steps Checklist
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-            A step-by-step action plan for new Medicare enrollees — from understanding your options to enrolling and staying organized. Check off each step as you go.
+            A step-by-step action plan for new Medicare enrollees - from understanding your options to enrolling and staying organized. Check off each step as you go.
           </p>
         </div>
       </section>
@@ -772,7 +772,7 @@ export default function FirstStepsChecklistClient() {
           <div className="flex gap-3 items-start bg-blue-50 border border-blue-200 rounded-2xl px-6 py-4 max-w-3xl">
             <Info className="w-5 h-5 text-[#1a3fa8] flex-shrink-0 mt-0.5" aria-hidden="true" />
             <p className="text-blue-800 text-sm leading-relaxed">
-              <strong>Your progress is saved automatically.</strong> Check off each step as you complete it — your progress is stored in your browser and will be here when you return. Click "More detail" on any item for additional guidance, warnings, and links to related pages.
+              <strong>Your progress is saved automatically.</strong> Check off each step as you complete it - your progress is stored in your browser and will be here when you return. Click "More detail" on any item for additional guidance, warnings, and links to related pages.
             </p>
           </div>
         </div>
@@ -854,7 +854,7 @@ export default function FirstStepsChecklistClient() {
                 Don't navigate this alone.
               </h2>
               <p className="text-white/80 text-lg max-w-xl leading-relaxed">
-                A licensed MIP agent can walk you through every step on this checklist, compare your options, and help you enroll — completely free of charge.
+                A licensed MIP agent can walk you through every step on this checklist, compare your options, and help you enroll - completely free of charge.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">

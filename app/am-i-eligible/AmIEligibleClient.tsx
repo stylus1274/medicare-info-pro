@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Am I Eligible for Medicare? — MIP Next.js Client Component
- * Design: Warm Guide — Merriweather headlines, Inter body
+ * Am I Eligible for Medicare? - MIP Next.js Client Component
+ * Design: Warm Guide - Merriweather headlines, Inter body
  * Primary: #1a3fa8 (royal blue), Accent: #f5a800 (gold)
  * Layout: Full-bleed hero → interactive eligibility checker → criteria cards → special scenarios → FAQ → CTA
  */
@@ -95,14 +95,14 @@ const checkerResults: Record<string, CheckerResult> = {
     type: "eligible",
     title: "You may be eligible for Medicare due to ESRD or ALS.",
     message:
-      "People with End-Stage Renal Disease or ALS can qualify for Medicare before age 65. Enrollment rules vary — an MIP agent can walk you through the specific requirements and timing.",
+      "People with End-Stage Renal Disease or ALS can qualify for Medicare before age 65. Enrollment rules vary - an MIP agent can walk you through the specific requirements and timing.",
     nextStep: "Speak with an Agent",
   },
   INELIGIBLE: {
     type: "ineligible",
     title: "You may not yet qualify for Medicare.",
     message:
-      "Based on your answers, you may not currently meet the standard eligibility criteria. However, there may be other options available — including Medicaid, marketplace plans, or employer coverage. An MIP agent can help you find the best coverage for your situation.",
+      "Based on your answers, you may not currently meet the standard eligibility criteria. However, there may be other options available - including Medicaid, marketplace plans, or employer coverage. An MIP agent can help you find the best coverage for your situation.",
     nextStep: "Explore Other Options",
   },
 };
@@ -262,7 +262,7 @@ function EligibilityChecker() {
                 className="flex items-center justify-center gap-2 w-full bg-[#f5a800] hover:bg-[#e09800] text-[#1a1a1a] font-bold py-4 rounded-xl transition-colors text-lg mb-3"
               >
                 <Phone className="w-5 h-5" />
-                Call (813) 699-5559 — Free Consultation
+                Call (813) 699-5559 - Free Consultation
               </a>
 
               <button
@@ -309,7 +309,7 @@ const criteriaCards = [
       "If you have received Social Security Disability Insurance (SSDI) for 24 consecutive months, you are automatically enrolled in Medicare Parts A and B.",
     details: [
       "24-month SSDI waiting period applies",
-      "ALS (Lou Gehrig's Disease) — no waiting period",
+      "ALS (Lou Gehrig's Disease) - no waiting period",
       "Enrollment begins on the 25th month of SSDI",
     ],
   },
@@ -322,7 +322,7 @@ const criteriaCards = [
     details: [
       "Dialysis patients: Medicare starts after 3-month waiting period",
       "Kidney transplant recipients: immediate eligibility",
-      "Must apply — not automatic enrollment",
+      "Must apply - not automatic enrollment",
     ],
   },
   {
@@ -376,7 +376,7 @@ const scenarios = [
   {
     title: "Retiring Before 65",
     description:
-      "If you retire before 65, you'll need to find coverage to bridge the gap — COBRA, a marketplace plan, or a spouse's employer plan. Medicare won't start until you turn 65.",
+      "If you retire before 65, you'll need to find coverage to bridge the gap - COBRA, a marketplace plan, or a spouse's employer plan. Medicare won't start until you turn 65.",
     tag: "Important",
     tagColor: "bg-yellow-100 text-yellow-700",
   },
@@ -390,7 +390,7 @@ const scenarios = [
   {
     title: "Veterans Benefits",
     description:
-      "VA benefits do not count as creditable coverage for Medicare. You can have both VA and Medicare — they work independently. Having Medicare can give you access to non-VA providers.",
+      "VA benefits do not count as creditable coverage for Medicare. You can have both VA and Medicare - they work independently. Having Medicare can give you access to non-VA providers.",
     tag: "Veterans",
     tagColor: "bg-green-100 text-green-700",
   },
@@ -423,7 +423,7 @@ const faqs = [
   },
   {
     q: "What is the Initial Enrollment Period (IEP)?",
-    a: "Your IEP is a 7-month window — 3 months before your 65th birthday month, your birthday month itself, and 3 months after. Enrolling in the first 3 months ensures your coverage starts on time. Enrolling in months 4–7 may delay your start date.",
+    a: "Your IEP is a 7-month window - 3 months before your 65th birthday month, your birthday month itself, and 3 months after. Enrolling in the first 3 months ensures your coverage starts on time. Enrolling in months 4–7 may delay your start date.",
   },
   {
     q: "Can I get Medicare if I never worked?",
@@ -431,7 +431,7 @@ const faqs = [
   },
   {
     q: "What happens if I miss my enrollment window?",
-    a: "If you miss your Initial Enrollment Period without a qualifying reason, you may face a late enrollment penalty. For Part B, the penalty is 10% for each 12-month period you were eligible but didn't enroll — and it's permanent. Contact an MIP agent immediately if you think you may have missed your window.",
+    a: "If you miss your Initial Enrollment Period without a qualifying reason, you may face a late enrollment penalty. For Part B, the penalty is 10% for each 12-month period you were eligible but didn't enroll - and it's permanent. Contact an MIP agent immediately if you think you may have missed your window.",
   },
   {
     q: "I'm on my spouse's employer plan. Do I need Medicare?",
@@ -481,7 +481,7 @@ export default function AmIEligibleClient() {
             Am I Eligible for Medicare?
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-            Find out if you qualify — and when your coverage can begin. We'll
+            Find out if you qualify - and when your coverage can begin. We'll
             walk you through every eligibility path, clearly and without jargon.
           </p>
         </div>
@@ -514,7 +514,7 @@ export default function AmIEligibleClient() {
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Use the eligibility checker on the right to get a quick answer,
-                then read on for the full details — including special situations
+                then read on for the full details - including special situations
                 like still working at 65, COBRA coverage, and spouse
                 eligibility.
               </p>
@@ -702,7 +702,7 @@ export default function AmIEligibleClient() {
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-8">
                 Still have questions? Our licensed agents are available to
-                answer any Medicare eligibility question — free of charge, no
+                answer any Medicare eligibility question - free of charge, no
                 obligation.
               </p>
               <a
@@ -755,7 +755,7 @@ export default function AmIEligibleClient() {
             <p className="text-white/80 text-lg max-w-xl mx-auto mb-8">
               Our licensed agents in Brandon, FL have helped thousands of
               Florida seniors navigate Medicare eligibility. There is no cost
-              and no pressure — just clear answers.
+              and no pressure - just clear answers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

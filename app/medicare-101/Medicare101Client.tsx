@@ -74,7 +74,7 @@ const PLAN_PARTS = [
       "Extra benefits vary by plan",
     ],
     cost: "Many plans have $0 premium; you still pay your Part B premium",
-    note: "Offered by private insurers — network restrictions apply.",
+    note: "Offered by private insurers - network restrictions apply.",
   },
   {
     part: "Part D",
@@ -97,10 +97,10 @@ const COMPARISON_ROWS = [
   { feature: "Who provides it?", original: "Federal government", advantage: "Private insurance company" },
   { feature: "Network restrictions?", original: "See any doctor who accepts Medicare", advantage: "Usually limited to plan network (HMO/PPO)" },
   { feature: "Referrals needed?", original: "No referrals required", advantage: "HMO plans usually require referrals" },
-  { feature: "Out-of-pocket maximum?", original: "No cap — unlimited exposure", advantage: "Annual cap (e.g., $3,500–$8,850)" },
+  { feature: "Out-of-pocket maximum?", original: "No cap - unlimited exposure", advantage: "Annual cap (e.g., $3,500–$8,850)" },
   { feature: "Dental/Vision/Hearing?", original: "Not covered", advantage: "Often included" },
   { feature: "Prescription drugs?", original: "Need separate Part D plan", advantage: "Usually bundled in" },
-  { feature: "Travel coverage?", original: "Nationwide — any Medicare provider", advantage: "Limited outside plan area" },
+  { feature: "Travel coverage?", original: "Nationwide - any Medicare provider", advantage: "Limited outside plan area" },
   { feature: "Monthly cost?", original: "Part B premium + Medigap premium", advantage: "Often $0 premium + Part B premium" },
   { feature: "Best for?", original: "Those who want maximum flexibility", advantage: "Those who want extra benefits & cost predictability" },
 ];
@@ -121,7 +121,7 @@ const ENROLLMENT_PERIODS = [
     color: "border-green-600 bg-green-50",
     iconBg: "bg-green-600",
     when: "8-month window after losing employer coverage (you or your spouse must have been actively working)",
-    key: "If you're still working past 65 with employer coverage, you can delay Medicare without penalty — but only if the employer has 20+ employees.",
+    key: "If you're still working past 65 with employer coverage, you can delay Medicare without penalty - but only if the employer has 20+ employees.",
     penalty: "No penalty if you enroll during SEP",
   },
   {
@@ -131,7 +131,7 @@ const ENROLLMENT_PERIODS = [
     iconBg: "bg-[#f5a800]",
     when: "October 15 – December 7 every year; changes take effect January 1",
     key: "Use AEP to switch Medicare Advantage plans, switch from Original Medicare to Advantage (or back), or change your Part D drug plan.",
-    penalty: "No penalty — this is your annual review window",
+    penalty: "No penalty - this is your annual review window",
   },
   {
     name: "General Enrollment Period (GEP)",
@@ -157,7 +157,7 @@ const COSTS_2026 = [
 const MISTAKES = [
   {
     title: "Missing your Initial Enrollment Period",
-    desc: "If you don't enroll when you first become eligible and don't have qualifying employer coverage, you'll pay a permanent late penalty — 10% added to your Part B premium for every 12-month period you were eligible but didn't enroll.",
+    desc: "If you don't enroll when you first become eligible and don't have qualifying employer coverage, you'll pay a permanent late penalty - 10% added to your Part B premium for every 12-month period you were eligible but didn't enroll.",
   },
   {
     title: "Assuming Medicare covers everything",
@@ -173,7 +173,7 @@ const MISTAKES = [
   },
   {
     title: "Not checking if your doctors are in-network",
-    desc: "Medicare Advantage plans use provider networks. Before enrolling, verify that your primary care doctor, specialists, and preferred hospital are all in the plan's network — or you may face much higher costs or no coverage at all.",
+    desc: "Medicare Advantage plans use provider networks. Before enrolling, verify that your primary care doctor, specialists, and preferred hospital are all in the plan's network - or you may face much higher costs or no coverage at all.",
   },
   {
     title: "Waiting too long to apply for Medigap",
@@ -188,7 +188,7 @@ const FAQS = [
   },
   {
     q: "What's the difference between Medicare Advantage and Medigap?",
-    a: "Medicare Advantage (Part C) replaces Original Medicare — you get your benefits through a private insurer's network. Medigap (Medicare Supplement) works alongside Original Medicare to pay your share of costs like deductibles and coinsurance. You cannot have both Medicare Advantage and Medigap at the same time.",
+    a: "Medicare Advantage (Part C) replaces Original Medicare - you get your benefits through a private insurer's network. Medigap (Medicare Supplement) works alongside Original Medicare to pay your share of costs like deductibles and coinsurance. You cannot have both Medicare Advantage and Medigap at the same time.",
   },
   {
     q: "Does Medicare cover dental, vision, and hearing?",
@@ -227,9 +227,9 @@ const MEDIGAP_PLANS = [
 
 const NEXT_STEPS = [
   { step: "1", title: "Determine your eligibility date", desc: "If you're turning 65, your Initial Enrollment Period starts 3 months before your birthday month. Mark it on your calendar." },
-  { step: "2", title: "Decide: Original Medicare or Medicare Advantage?", desc: "Consider your doctors, medications, travel habits, and budget. There's no universal right answer — it depends on your situation." },
+  { step: "2", title: "Decide: Original Medicare or Medicare Advantage?", desc: "Consider your doctors, medications, travel habits, and budget. There's no universal right answer - it depends on your situation." },
   { step: "3", title: "Compare Part D or Advantage plans in your zip code", desc: "Plans vary significantly by area. Use Medicare's Plan Finder tool at Medicare.gov or work with a licensed independent agent." },
-  { step: "4", title: "If choosing Original Medicare, apply for Medigap during your open enrollment window", desc: "This is your guaranteed-issue window. Don't wait — it closes 6 months after you enroll in Part B." },
+  { step: "4", title: "If choosing Original Medicare, apply for Medigap during your open enrollment window", desc: "This is your guaranteed-issue window. Don't wait - it closes 6 months after you enroll in Part B." },
   { step: "5", title: "Enroll through Social Security", desc: "Apply online at SSA.gov, call 1-800-772-1213, or visit your local Social Security office. Apply 3 months before your coverage start date." },
   { step: "6", title: "Review your plan every year during AEP (Oct 15 – Dec 7)", desc: "Plans change annually. Your current plan may no longer be the best fit next year." },
 ];
@@ -248,7 +248,7 @@ const RELATED_POSTS = [
   {
     category: "Guide",
     title: "How Florida Seniors Can Maximize Medicare Benefits After 65",
-    excerpt: "A practical guide to getting the most out of your Medicare coverage — from preventive services to financial assistance programs.",
+    excerpt: "A practical guide to getting the most out of your Medicare coverage - from preventive services to financial assistance programs.",
     readTime: "10 min read",
     img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
     imgAlt: "Senior couple reviewing Medicare benefits paperwork",
@@ -336,7 +336,7 @@ export default function Medicare101Client() {
               Medicare 101: The Complete Beginner&apos;s Guide
             </h1>
             <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-              Everything you need to understand Medicare — Parts A, B, C &amp; D, enrollment windows, costs, and how to
+              Everything you need to understand Medicare - Parts A, B, C &amp; D, enrollment windows, costs, and how to
               choose the right coverage for your situation.
             </p>
             <div className="flex items-center gap-4 mt-6">
@@ -413,14 +413,14 @@ export default function Medicare101Client() {
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#0d2060] mb-4">What Is Medicare?</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Medicare is the federal health insurance program administered by the Centers for Medicare &amp; Medicaid
-                Services (CMS). It was signed into law in 1965 and today covers more than 67 million Americans —
+                Services (CMS). It was signed into law in 1965 and today covers more than 67 million Americans -
                 primarily people 65 and older, as well as certain younger individuals with qualifying disabilities or
                 conditions.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Unlike employer-sponsored health insurance, Medicare is not a single plan. It is a framework of
                 different &quot;parts,&quot; each covering a different category of health care. Understanding how these
-                parts work together — and how to choose the right combination for your situation — is the foundation of
+                parts work together - and how to choose the right combination for your situation - is the foundation of
                 making smart Medicare decisions.
               </p>
               <p className="text-gray-700 leading-relaxed">
@@ -457,7 +457,7 @@ export default function Medicare101Client() {
                   },
                   {
                     title: "ALS (Lou Gehrig's Disease)",
-                    desc: "You have ALS — Medicare begins the same month your SSDI benefits start, with no 24-month waiting period.",
+                    desc: "You have ALS - Medicare begins the same month your SSDI benefits start, with no 24-month waiting period.",
                   },
                   {
                     title: "End-Stage Renal Disease (ESRD)",
@@ -495,7 +495,7 @@ export default function Medicare101Client() {
                 The 4 Parts of Medicare
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Medicare is divided into four parts. Most people need at least Parts A and B — and then choose between
+                Medicare is divided into four parts. Most people need at least Parts A and B - and then choose between
                 adding Part D (drug coverage) or enrolling in a Medicare Advantage plan (Part C) that bundles everything
                 together.
               </p>
@@ -513,7 +513,7 @@ export default function Medicare101Client() {
                       <span className="text-2xl" role="img" aria-label={p.name}>{p.icon}</span>
                       <div>
                         <span className="text-white font-bold text-lg">{p.part}</span>
-                        <span className="text-white/80 text-sm ml-2">— {p.name}</span>
+                        <span className="text-white/80 text-sm ml-2">- {p.name}</span>
                       </div>
                     </div>
                     <div className="p-5">
@@ -581,7 +581,7 @@ export default function Medicare101Client() {
                 </table>
               </div>
               <p className="text-xs text-gray-500 mt-3 italic">
-                Neither option is universally &quot;better&quot; — the right choice depends on your health, budget,
+                Neither option is universally &quot;better&quot; - the right choice depends on your health, budget,
                 preferred doctors, and how much you travel. A licensed Medicare agent can help you compare plans
                 available in your specific zip code.
               </p>
@@ -600,7 +600,7 @@ export default function Medicare101Client() {
                 Medicare Enrollment Periods
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                When you can enroll in Medicare — and when you can make changes — is governed by specific enrollment
+                When you can enroll in Medicare - and when you can make changes - is governed by specific enrollment
                 periods. Missing the right window can result in permanent penalties or coverage gaps.
               </p>
               <div className="space-y-5">
@@ -689,7 +689,7 @@ export default function Medicare101Client() {
                 Medicare Supplement Insurance (Medigap)
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Original Medicare pays about 80% of most covered services. The remaining 20% — plus deductibles — is
+                Original Medicare pays about 80% of most covered services. The remaining 20% - plus deductibles - is
                 your responsibility, with no annual cap. For someone with a serious illness, this exposure can be
                 substantial.
               </p>
@@ -732,7 +732,7 @@ export default function Medicare101Client() {
                 6 Common Medicare Mistakes to Avoid
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                These are the mistakes we see most often — and the ones that are most costly to fix.
+                These are the mistakes we see most often - and the ones that are most costly to fix.
               </p>
               <div className="space-y-4">
                 {MISTAKES.map((m, i) => (
@@ -807,7 +807,7 @@ export default function Medicare101Client() {
                 This guide is for educational purposes only and does not constitute legal, financial, or medical advice.
                 Medicare rules, premiums, and plan availability change annually. Always verify current information at
                 Medicare.gov or consult with a licensed Medicare insurance agent before making enrollment decisions.
-                Medicare Information Project is a licensed independent insurance agency — we represent multiple carriers
+                Medicare Information Project is a licensed independent insurance agency - we represent multiple carriers
                 and do not charge fees for our services.
               </p>
             </div>
@@ -854,7 +854,7 @@ export default function Medicare101Client() {
                   Still have questions about Medicare?
                 </h3>
                 <p className="text-white/75 text-sm leading-relaxed mb-4">
-                  Our licensed agents in Florida can walk you through your options — at no cost to you.
+                  Our licensed agents in Florida can walk you through your options - at no cost to you.
                 </p>
                 <a
                   href="tel:8136995559"
@@ -961,7 +961,7 @@ export default function Medicare101Client() {
                 Ready to choose the right Medicare plan?
               </h2>
               <p className="text-white/75 text-lg">
-                Our licensed agents are available to answer your questions — no obligation, no pressure.
+                Our licensed agents are available to answer your questions - no obligation, no pressure.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">

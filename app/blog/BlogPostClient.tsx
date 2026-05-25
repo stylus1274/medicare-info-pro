@@ -1,10 +1,11 @@
 "use client";
 
 /**
- * BlogPostClient — Shared blog post template
- * Design: MIP brand — navy/gold, editorial long-form layout
- * Sections: Hero → Article Body → FAQ → CTA → Related Posts
+ * BlogPostClient - Shared blog post template
+ * Design: MIP brand - navy/gold, editorial long-form layout
+ * Sections: Hero with full-bleed background image, Article Body, FAQ, CTA, Related Posts
  * Sidebar: TOC, Agent CTA, Related Tools
+ * NOTE: No em dashes anywhere in this file or any post data.
  */
 
 import Link from "next/link";
@@ -162,9 +163,15 @@ export default function BlogPostClient({ post }: Props) {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* ── Hero ── */}
-      <div className="bg-[#0d1f5c] text-white">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-10">
+      {/* Hero with full-bleed background image */}
+      <div
+        className="relative text-white"
+        style={{
+          background: `linear-gradient(to bottom, rgba(13,31,92,0.82) 0%, rgba(13,31,92,0.70) 60%, rgba(13,31,92,0.88) 100%), url('${post.image}') center/cover no-repeat`,
+          minHeight: "420px",
+        }}
+      >
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-14 flex flex-col justify-center" style={{ minHeight: "420px" }}>
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] text-white/50 mb-5">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={13} aria-hidden="true" />
@@ -185,7 +192,7 @@ export default function BlogPostClient({ post }: Props) {
           >
             {post.title}
           </h1>
-          <p className="text-[1rem] text-white/70 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
+          <p className="text-[1rem] text-white/80 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
 
           <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/60">
             <span className="font-semibold text-white/80">{post.author}</span>
@@ -201,19 +208,6 @@ export default function BlogPostClient({ post }: Props) {
               <Share2 size={14} aria-hidden="true" />
               {copied ? "Copied!" : "Share"}
             </button>
-          </div>
-        </div>
-      </div>
-
-      {/* ── Featured Image ── */}
-      <div className="w-full bg-gray-100">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
-          <div className="relative h-64 sm:h-80 md:h-96 overflow-hidden rounded-b-2xl">
-            <img
-              src={post.image}
-              alt={post.imageAlt}
-              className="w-full h-full object-cover"
-            />
           </div>
         </div>
       </div>
@@ -341,7 +335,7 @@ export default function BlogPostClient({ post }: Props) {
                 Ready to Compare Medigap Plans?
               </h3>
               <p className="text-white/80 text-[0.9rem] mb-5 leading-relaxed">
-                Our licensed Medicare specialists will compare Plan G quotes from multiple carriers — at no cost to you.
+                Our licensed Medicare specialists will compare Plan G quotes from multiple carriers , at no cost to you.
               </p>
               <a
                 href="tel:8136995559"
@@ -454,7 +448,7 @@ export default function BlogPostClient({ post }: Props) {
                     "Covers Part B coinsurance (20%)",
                     "Covers skilled nursing coinsurance",
                     "Up to $50,000 foreign travel emergency",
-                    "No network restrictions — any Medicare doctor",
+                    "No network restrictions: any Medicare doctor",
                     "Lower premiums than Plan F",
                   ].map((fact, i) => (
                     <li key={i} className="flex items-start gap-2 text-[0.825rem] text-gray-700">

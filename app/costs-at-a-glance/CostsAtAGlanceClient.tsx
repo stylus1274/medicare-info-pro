@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Costs at a Glance — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, Merriweather headings, card-based layout
+ * Costs at a Glance - MIP Next.js Client Component
+ * Design: MIP brand - navy/gold, Merriweather headings, card-based layout
  * Sections: Hero → Stats → Quick Ref → Part A/B/C/D tables → IRMAA → Savings → FAQ → CTA → Related
  * All figures reflect 2026 CMS-published rates.
  */
@@ -72,14 +72,14 @@ const partBData = [
 const partDData = [
   { label: "National base beneficiary premium", value: "$36.78/month", highlight: false, note: "Actual plan premiums vary widely" },
   { label: "Annual deductible (maximum allowed)", value: "$590/year", highlight: false, note: "Some plans have $0 deductible" },
-  { label: "Out-of-pocket cap (2026)", value: "$2,000/year", highlight: true, note: "IRA provision — caps annual drug costs" },
+  { label: "Out-of-pocket cap (2026)", value: "$2,000/year", highlight: true, note: "IRA provision - caps annual drug costs" },
   { label: "Monthly payment option", value: "Available via Medicare Prescription Payment Plan", highlight: false },
   { label: "Low-income subsidy (Extra Help)", value: "Reduces or eliminates costs", highlight: false, note: "See Savings Programs section" },
 ];
 
 const partCData = [
   { label: "Extra monthly premium (beyond Part B)", value: "$0 on many plans", highlight: true, note: "Varies by plan and location" },
-  { label: "In-network out-of-pocket maximum (2026)", value: "Up to $8,850/year", highlight: false, note: "Federal cap — many plans set lower limits" },
+  { label: "In-network out-of-pocket maximum (2026)", value: "Up to $8,850/year", highlight: false, note: "Federal cap - many plans set lower limits" },
   { label: "Combined in/out-of-network OOP max", value: "Up to $13,300/year", highlight: false },
   { label: "Copay: Primary care visit (typical)", value: "$0–$20", highlight: false },
   { label: "Copay: Specialist visit (typical)", value: "$20–$50", highlight: false },
@@ -150,7 +150,7 @@ const faqs = [
   },
   {
     q: "What is a 'benefit period' for Part A?",
-    a: "A benefit period begins the day you're admitted as an inpatient in a hospital or skilled nursing facility, and ends when you haven't received inpatient care for 60 consecutive days. There's no limit to the number of benefit periods you can have — but you pay the $1,676 deductible for each new benefit period.",
+    a: "A benefit period begins the day you're admitted as an inpatient in a hospital or skilled nursing facility, and ends when you haven't received inpatient care for 60 consecutive days. There's no limit to the number of benefit periods you can have - but you pay the $1,676 deductible for each new benefit period.",
   },
   {
     q: "Does the $2,000 Part D out-of-pocket cap still apply in 2026?",
@@ -158,7 +158,7 @@ const faqs = [
   },
   {
     q: "Does Original Medicare have an out-of-pocket maximum?",
-    a: "No. Original Medicare (Parts A and B) has no annual out-of-pocket maximum. Without a Medigap supplement, your costs could be unlimited in a serious illness. This is one of the primary reasons many people add a Medigap plan — to cap their financial exposure.",
+    a: "No. Original Medicare (Parts A and B) has no annual out-of-pocket maximum. Without a Medigap supplement, your costs could be unlimited in a serious illness. This is one of the primary reasons many people add a Medigap plan - to cap their financial exposure.",
   },
   {
     q: "How is IRMAA calculated, and can I appeal it?",
@@ -166,11 +166,11 @@ const faqs = [
   },
   {
     q: "What's the difference between the Part D deductible and the out-of-pocket cap?",
-    a: "The deductible is what you pay before your plan starts sharing costs (up to $590 in 2026, though many plans have $0 deductibles). The out-of-pocket cap ($2,000) is the maximum you'll pay total for covered drugs in a calendar year — once you hit it, your plan covers 100% for the rest of the year.",
+    a: "The deductible is what you pay before your plan starts sharing costs (up to $590 in 2026, though many plans have $0 deductibles). The out-of-pocket cap ($2,000) is the maximum you'll pay total for covered drugs in a calendar year - once you hit it, your plan covers 100% for the rest of the year.",
   },
   {
     q: "Who qualifies for Medicare Savings Programs?",
-    a: "Eligibility is based on income and resources and varies by state. Generally, individuals with income below 135% of the Federal Poverty Level may qualify for full or partial assistance. Many people who qualify don't apply — contact your state Medicaid office or call 1-800-MEDICARE to check your eligibility.",
+    a: "Eligibility is based on income and resources and varies by state. Generally, individuals with income below 135% of the Federal Poverty Level may qualify for full or partial assistance. Many people who qualify don't apply - contact your state Medicaid office or call 1-800-MEDICARE to check your eligibility.",
   },
 ];
 
@@ -338,7 +338,7 @@ export default function CostsAtAGlanceClient() {
             Medicare Costs at a Glance
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-            All 2026 premiums, deductibles, copays, IRMAA surcharges, and out-of-pocket limits — in one place.
+            All 2026 premiums, deductibles, copays, IRMAA surcharges, and out-of-pocket limits - in one place.
           </p>
         </div>
       </section>
@@ -402,7 +402,7 @@ export default function CostsAtAGlanceClient() {
 
                   <Callout type="info">
                     <p className="text-blue-800 text-sm leading-relaxed">
-                      <strong>Important:</strong> All figures are 2026 CMS-published rates. Medicare costs are adjusted annually. IRMAA surcharges apply to higher-income beneficiaries — see the IRMAA section below. Advantage plan costs vary significantly by plan and ZIP code.
+                      <strong>Important:</strong> All figures are 2026 CMS-published rates. Medicare costs are adjusted annually. IRMAA surcharges apply to higher-income beneficiaries - see the IRMAA section below. Advantage plan costs vary significantly by plan and ZIP code.
                     </p>
                   </Callout>
                 </motion.div>
@@ -442,7 +442,7 @@ export default function CostsAtAGlanceClient() {
                   <div className="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex gap-3 items-start">
                     <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <p className="text-amber-800 text-sm leading-relaxed">
-                      <strong>The 20% gap:</strong> After your $257 deductible, Part B pays 80% of approved costs — you pay 20% with no cap. A single surgery or extended specialist care could cost thousands. This is why many people add a Medigap supplement.
+                      <strong>The 20% gap:</strong> After your $257 deductible, Part B pays 80% of approved costs - you pay 20% with no cap. A single surgery or extended specialist care could cost thousands. This is why many people add a Medigap supplement.
                     </p>
                   </div>
                 </motion.div>
@@ -549,7 +549,7 @@ export default function CostsAtAGlanceClient() {
                     Medicare Savings Programs
                   </h2>
                   <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                    Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs — but many don't know they're eligible. These programs are administered by states and the federal government.
+                    Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs - but many don't know they're eligible. These programs are administered by states and the federal government.
                   </p>
 
                   <div className="space-y-6">
@@ -625,7 +625,7 @@ export default function CostsAtAGlanceClient() {
                 Estimate your total Medicare costs.
               </h2>
               <p className="text-white/80 text-lg max-w-xl leading-relaxed">
-                A licensed MIP agent will review your income, health needs, and medications to estimate your total annual Medicare costs — and find ways to reduce them.
+                A licensed MIP agent will review your income, health needs, and medications to estimate your total annual Medicare costs - and find ways to reduce them.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">

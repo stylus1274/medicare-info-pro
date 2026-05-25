@@ -4,7 +4,7 @@ import EnrollmentCalculatorClient from "./EnrollmentCalculatorClient";
 export const metadata: Metadata = {
   title: "Medicare Enrollment Date Calculator: Find Your Exact Deadlines | Medicare Information Pro",
   description:
-    "Enter your birthday and employment status to instantly calculate your Medicare Initial Enrollment Period, coverage start date, Medigap window, and late-penalty deadlines — free tool.",
+    "Enter your birthday and employment status to instantly calculate your Medicare Initial Enrollment Period, coverage start date, Medigap window, and late-penalty deadlines - free tool.",
   keywords: [
     "Medicare enrollment calculator",
     "Medicare enrollment date calculator",

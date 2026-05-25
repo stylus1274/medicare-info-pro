@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Medicare Enrollment Calculator — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, Merriweather headings, clean card-based layout
+ * Medicare Enrollment Calculator - MIP Next.js Client Component
+ * Design: MIP brand - navy/gold, Merriweather headings, clean card-based layout
  * Interactive tool: enter birthday + employment status → personalized enrollment timeline
  */
 
@@ -142,7 +142,7 @@ function calculate(
         id: "medigap-oep",
         dateLabel: `${SHORT_MONTHS[medigapOepStart.getMonth()]} ${medigapOepStart.getFullYear()} – ${SHORT_MONTHS[medigapOepEnd.getMonth()]} ${medigapOepEnd.getFullYear()}`,
         title: "Medigap Open Enrollment",
-        description: `Your 6-month Medigap Open Enrollment Period runs from ${formatMonthYear(medigapOepStart)} through ${formatMonthYear(medigapOepEnd)}. During this window, insurers must sell you any Medigap plan at the best available rate — no medical underwriting. This is the best time to buy a supplement plan.`,
+        description: `Your 6-month Medigap Open Enrollment Period runs from ${formatMonthYear(medigapOepStart)} through ${formatMonthYear(medigapOepEnd)}. During this window, insurers must sell you any Medigap plan at the best available rate - no medical underwriting. This is the best time to buy a supplement plan.`,
         type: "medigap",
       },
       {
@@ -179,14 +179,14 @@ function calculate(
         id: "iep-start",
         dateLabel: formatUpperDateRange(iepStart, iepStart),
         title: "IEP Begins (Optional)",
-        description: `Your Initial Enrollment Period opens. Because you have qualifying employer coverage, you may choose to delay Part B enrollment without penalty. Part A (hospital) is usually free — consider enrolling in Part A now.`,
+        description: `Your Initial Enrollment Period opens. Because you have qualifying employer coverage, you may choose to delay Part B enrollment without penalty. Part A (hospital) is usually free - consider enrolling in Part A now.`,
         type: "info",
       },
       {
         id: "birthday",
         dateLabel: formatUpperDateRange(birthday65, birthday65),
         title: "You Turn 65",
-        description: `You turn 65 this month. You can delay Part B enrollment as long as you remain covered by qualifying employer coverage (20+ employees). Keep your insurance card and enrollment records — you'll need them to prove creditable coverage later.`,
+        description: `You turn 65 this month. You can delay Part B enrollment as long as you remain covered by qualifying employer coverage (20+ employees). Keep your insurance card and enrollment records - you'll need them to prove creditable coverage later.`,
         type: "birthday",
       },
       {
@@ -200,13 +200,13 @@ function calculate(
         id: "sep",
         dateLabel: "WHEN COVERAGE ENDS",
         title: "Special Enrollment Period Begins",
-        description: `When ${sepLabel}, your 8-month Special Enrollment Period (SEP) begins. You have 8 months to enroll in Medicare Part B without penalty. Do not wait for COBRA — COBRA does not count as creditable employer coverage for SEP purposes.`,
+        description: `When ${sepLabel}, your 8-month Special Enrollment Period (SEP) begins. You have 8 months to enroll in Medicare Part B without penalty. Do not wait for COBRA - COBRA does not count as creditable employer coverage for SEP purposes.`,
         type: "sep",
       },
       {
         id: "sep-end",
         dateLabel: "8 MONTHS AFTER COVERAGE ENDS",
-        title: "SEP Closes — Enroll Before This Date",
+        title: "SEP Closes - Enroll Before This Date",
         description: `Your Special Enrollment Period ends 8 months after your employer coverage ends (not 8 months after COBRA starts). Enrolling after this deadline will result in a permanent Part B late enrollment penalty of 10% per 12-month period you were eligible but not enrolled.`,
         type: "warning",
       },
@@ -214,7 +214,7 @@ function calculate(
         id: "medigap-oep",
         dateLabel: "WHEN YOU ENROLL IN PART B",
         title: "Medigap Open Enrollment (63 Days)",
-        description: `When you enroll in Part B via your SEP, you have a 63-day Medigap Special Enrollment Period. During this window, insurers must sell you any Medigap plan at the best available rate — no medical underwriting. This is your best opportunity to secure supplement coverage.`,
+        description: `When you enroll in Part B via your SEP, you have a 63-day Medigap Special Enrollment Period. During this window, insurers must sell you any Medigap plan at the best available rate - no medical underwriting. This is your best opportunity to secure supplement coverage.`,
         type: "medigap",
       },
       {
@@ -227,10 +227,10 @@ function calculate(
     ];
 
     recommendations = [
-      `Consider enrolling in Medicare Part A now — it's usually premium-free and won't affect your employer coverage. However, if you have an HSA, enrolling in Part A will stop your ability to contribute to it.`,
-      `When your employer coverage ends, your 8-month Special Enrollment Period begins immediately. Do not wait — enroll in Part B as soon as possible after your coverage ends.`,
+      `Consider enrolling in Medicare Part A now - it's usually premium-free and won't affect your employer coverage. However, if you have an HSA, enrolling in Part A will stop your ability to contribute to it.`,
+      `When your employer coverage ends, your 8-month Special Enrollment Period begins immediately. Do not wait - enroll in Part B as soon as possible after your coverage ends.`,
       `Do NOT rely on COBRA to extend your SEP. COBRA does not count as creditable employer coverage for Medicare SEP purposes. Your 8-month SEP clock starts when your active employment coverage ends.`,
-      `When you enroll in Part B via your SEP, you'll have a 63-day window to enroll in a Medigap plan with guaranteed issue rights — no health questions asked.`,
+      `When you enroll in Part B via your SEP, you'll have a 63-day window to enroll in a Medigap plan with guaranteed issue rights - no health questions asked.`,
     ];
   }
 
@@ -304,11 +304,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "What happens if I miss my enrollment window?",
-    a: "If you miss your IEP without a qualifying Special Enrollment Period, you'll face two consequences: (1) A permanent Part B late enrollment penalty of 10% added to your premium for every 12-month period you were eligible but didn't enroll — this penalty lasts for life. (2) You'll need to wait for the General Enrollment Period (January 1 – March 31) with coverage starting July 1. The Part D late penalty is 1% of the national base beneficiary premium per month you were without creditable drug coverage.",
+    a: "If you miss your IEP without a qualifying Special Enrollment Period, you'll face two consequences: (1) A permanent Part B late enrollment penalty of 10% added to your premium for every 12-month period you were eligible but didn't enroll - this penalty lasts for life. (2) You'll need to wait for the General Enrollment Period (January 1 – March 31) with coverage starting July 1. The Part D late penalty is 1% of the national base beneficiary premium per month you were without creditable drug coverage.",
   },
   {
     q: "What is the difference between IEP and SEP?",
-    a: "The Initial Enrollment Period (IEP) is your first opportunity to enroll in Medicare — a 7-month window around your 65th birthday. A Special Enrollment Period (SEP) is a limited window to enroll outside the IEP due to a qualifying life event, such as losing employer-sponsored health coverage. The most common SEP is the 8-month window after your employer or union coverage ends.",
+    a: "The Initial Enrollment Period (IEP) is your first opportunity to enroll in Medicare - a 7-month window around your 65th birthday. A Special Enrollment Period (SEP) is a limited window to enroll outside the IEP due to a qualifying life event, such as losing employer-sponsored health coverage. The most common SEP is the 8-month window after your employer or union coverage ends.",
   },
   {
     q: "Is this tool free to use?",
@@ -732,7 +732,7 @@ export default function EnrollmentCalculatorClient() {
                     </h3>
                     <p className="text-white/80 text-sm mb-5">
                       Our licensed Medicare agents can walk you through your
-                      specific situation and help you choose the right plan — at
+                      specific situation and help you choose the right plan - at
                       no cost to you.
                     </p>
                     <div className="flex flex-wrap gap-3">
@@ -784,7 +784,7 @@ export default function EnrollmentCalculatorClient() {
               <ul className="space-y-4">
                 {[
                   { icon: <Star size={15} className="text-amber-500" aria-hidden="true" />, text: "Enroll 3 months before your 65th birthday for the earliest coverage start date." },
-                  { icon: <AlertTriangle size={15} className="text-red-500" aria-hidden="true" />, text: "Missing your IEP can result in a permanent Part B penalty — 10% per year of delay." },
+                  { icon: <AlertTriangle size={15} className="text-red-500" aria-hidden="true" />, text: "Missing your IEP can result in a permanent Part B penalty - 10% per year of delay." },
                   { icon: <Shield size={15} className="text-emerald-500" aria-hidden="true" />, text: "Your 6-month Medigap Open Enrollment is your best window for guaranteed-issue supplement coverage." },
                   { icon: <Briefcase size={15} className="text-blue-500" aria-hidden="true" />, text: "If you have employer coverage (20+ employees), you can delay Part B without penalty." },
                   { icon: <CalendarDays size={15} className="text-purple-500" aria-hidden="true" />, text: "The Annual Election Period (Oct 15 – Dec 7) is your yearly chance to change Advantage or Part D plans." },
@@ -842,7 +842,7 @@ export default function EnrollmentCalculatorClient() {
                 Free Expert Guidance
               </h3>
               <p className="text-sm text-white/90 mb-4 leading-relaxed">
-                Speak with a licensed Medicare agent — no cost, no pressure.
+                Speak with a licensed Medicare agent - no cost, no pressure.
               </p>
               <a
                 href="tel:8136995559"

@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Original Medicare vs. Medicare Advantage — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, Merriweather headings, card-based layout
+ * Original Medicare vs. Medicare Advantage - MIP Next.js Client Component
+ * Design: MIP brand - navy/gold, Merriweather headings, card-based layout
  * Sections: Hero → Stats → Overview cards → Detailed comparison → Pros/Cons → Decision Quiz → Who Chooses → FAQ → CTA → Related
  */
 
@@ -57,14 +57,14 @@ const comparisonRows = [
   {
     category: "Doctor Choice",
     icon: Stethoscope,
-    original: { text: "See any doctor or specialist in the U.S. who accepts Medicare — no referrals needed, no network restrictions", positive: true },
+    original: { text: "See any doctor or specialist in the U.S. who accepts Medicare - no referrals needed, no network restrictions", positive: true },
     advantage: { text: "Most plans require you to use in-network providers. HMO plans require referrals; PPO plans offer more flexibility at higher cost", positive: false },
   },
   {
     category: "Prescription Drugs",
     icon: Pill,
-    original: { text: "Not included — you must add a separate Part D drug plan (monthly premium varies by plan)", positive: false },
-    advantage: { text: "Most plans include built-in Part D drug coverage — no separate plan needed", positive: true },
+    original: { text: "Not included - you must add a separate Part D drug plan (monthly premium varies by plan)", positive: false },
+    advantage: { text: "Most plans include built-in Part D drug coverage - no separate plan needed", positive: true },
   },
   {
     category: "Extra Benefits",
@@ -75,25 +75,25 @@ const comparisonRows = [
   {
     category: "Out-of-Pocket Cap",
     icon: Heart,
-    original: { text: "No annual out-of-pocket maximum — costs can be unlimited without a Medigap supplement", positive: false },
+    original: { text: "No annual out-of-pocket maximum - costs can be unlimited without a Medigap supplement", positive: false },
     advantage: { text: "Federal law requires an annual out-of-pocket maximum (up to $8,850 in-network in 2026)", positive: true },
   },
   {
     category: "Travel & Nationwide Coverage",
     icon: MapPin,
-    original: { text: "Accepted by providers nationwide — ideal for snowbirds, frequent travelers, or those with multiple residences", positive: true },
+    original: { text: "Accepted by providers nationwide - ideal for snowbirds, frequent travelers, or those with multiple residences", positive: true },
     advantage: { text: "Coverage limited to plan's service area. Emergency care covered nationwide, but routine care may not be", positive: false },
   },
   {
     category: "Specialist Access",
     icon: Eye,
-    original: { text: "See any Medicare-accepting specialist directly — no referral required", positive: true },
+    original: { text: "See any Medicare-accepting specialist directly - no referral required", positive: true },
     advantage: { text: "HMO plans require a referral from your primary care doctor. PPO plans allow direct specialist access at higher cost", positive: false },
   },
   {
     category: "Supplement (Medigap) Eligibility",
     icon: Smile,
-    original: { text: "Can add a Medigap supplement to cover deductibles, copays, and coinsurance — greatly reducing out-of-pocket exposure", positive: true },
+    original: { text: "Can add a Medigap supplement to cover deductibles, copays, and coinsurance - greatly reducing out-of-pocket exposure", positive: true },
     advantage: { text: "Cannot use a Medigap supplement while enrolled in Medicare Advantage", positive: false },
   },
 ];
@@ -101,7 +101,7 @@ const comparisonRows = [
 // ─── Pros / Cons ──────────────────────────────────────────────────────────────
 
 const originalPros = [
-  "See any doctor or specialist nationwide — no network",
+  "See any doctor or specialist nationwide - no network",
   "No referrals required for specialist visits",
   "Ideal for frequent travelers or snowbirds",
   "Can add Medigap to cap out-of-pocket costs",
@@ -112,7 +112,7 @@ const originalPros = [
 const originalCons = [
   "No annual out-of-pocket maximum without Medigap",
   "Medigap premiums add $100–$300+/month",
-  "No built-in drug coverage — must add Part D separately",
+  "No built-in drug coverage - must add Part D separately",
   "No dental, vision, or hearing benefits",
   "Higher total monthly cost if adding Medigap + Part D",
 ];
@@ -122,12 +122,12 @@ const advantagePros = [
   "Annual out-of-pocket maximum protects against catastrophic costs",
   "Usually includes Part D drug coverage",
   "May include dental, vision, hearing, fitness benefits",
-  "One card, one plan — simpler administration",
+  "One card, one plan - simpler administration",
   "OTC allowances and other supplemental benefits",
 ];
 
 const advantageCons = [
-  "Network restrictions — must use in-network providers",
+  "Network restrictions - must use in-network providers",
   "Referrals required for specialists (HMO plans)",
   "Prior authorization may be required for some services",
   "Coverage limited to plan's service area",
@@ -150,9 +150,9 @@ const quizQuestions: QuizQuestion[] = [
     text: "How often do you travel or spend time in multiple states?",
     hint: "Original Medicare is accepted nationwide; Advantage plans have service area restrictions.",
     options: [
-      { label: "Frequently — I travel or snowbird regularly", value: "original" },
-      { label: "Occasionally — a few trips a year", value: "neutral" },
-      { label: "Rarely — I stay close to home", value: "advantage" },
+      { label: "Frequently - I travel or snowbird regularly", value: "original" },
+      { label: "Occasionally - a few trips a year", value: "neutral" },
+      { label: "Rarely - I stay close to home", value: "advantage" },
     ],
   },
   {
@@ -160,16 +160,16 @@ const quizQuestions: QuizQuestion[] = [
     text: "How important is it to keep your current doctors?",
     hint: "Original Medicare is accepted by most doctors nationwide. Advantage plans have networks.",
     options: [
-      { label: "Very important — I have specialists I rely on", value: "original" },
-      { label: "Somewhat — I'd check if they're in-network", value: "neutral" },
-      { label: "Not very — I'm open to finding new doctors", value: "advantage" },
+      { label: "Very important - I have specialists I rely on", value: "original" },
+      { label: "Somewhat - I'd check if they're in-network", value: "neutral" },
+      { label: "Not very - I'm open to finding new doctors", value: "advantage" },
     ],
   },
   {
     id: "cost",
     text: "What is your biggest financial concern?",
     options: [
-      { label: "Avoiding large unexpected bills — I want a cap on costs", value: "advantage" },
+      { label: "Avoiding large unexpected bills - I want a cap on costs", value: "advantage" },
       { label: "Keeping monthly premiums low", value: "advantage" },
       { label: "Predictable costs even if monthly premiums are higher", value: "original" },
     ],
@@ -178,18 +178,18 @@ const quizQuestions: QuizQuestion[] = [
     id: "extras",
     text: "How much do extra benefits like dental, vision, and hearing matter to you?",
     options: [
-      { label: "Very much — I need dental and vision coverage", value: "advantage" },
-      { label: "Somewhat — nice to have but not essential", value: "neutral" },
-      { label: "Not much — I'll handle those separately", value: "original" },
+      { label: "Very much - I need dental and vision coverage", value: "advantage" },
+      { label: "Somewhat - nice to have but not essential", value: "neutral" },
+      { label: "Not much - I'll handle those separately", value: "original" },
     ],
   },
   {
     id: "health",
     text: "How would you describe your current health and expected healthcare use?",
     options: [
-      { label: "Complex health needs — I see multiple specialists regularly", value: "original" },
-      { label: "Moderate — routine care plus some specialist visits", value: "neutral" },
-      { label: "Generally healthy — mostly preventive care", value: "advantage" },
+      { label: "Complex health needs - I see multiple specialists regularly", value: "original" },
+      { label: "Moderate - routine care plus some specialist visits", value: "neutral" },
+      { label: "Generally healthy - mostly preventive care", value: "advantage" },
     ],
   },
 ];
@@ -251,7 +251,7 @@ function DecisionQuiz() {
                     Original Medicare may be a better fit.
                   </h4>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Based on your answers, you value flexibility, nationwide access, and the ability to see specialists without restrictions. Original Medicare — paired with a Medigap supplement and Part D drug plan — gives you the most freedom and predictable coverage.
+                    Based on your answers, you value flexibility, nationwide access, and the ability to see specialists without restrictions. Original Medicare - paired with a Medigap supplement and Part D drug plan - gives you the most freedom and predictable coverage.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
                     A licensed MIP agent can help you compare Medigap plans in your area and find the best combination for your needs.
@@ -267,7 +267,7 @@ function DecisionQuiz() {
                     Medicare Advantage may be a better fit.
                   </h4>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Based on your answers, you prioritize lower monthly costs, extra benefits like dental and vision, and an out-of-pocket cap. Medicare Advantage plans in your area may offer all of these — often with a $0 extra premium.
+                    Based on your answers, you prioritize lower monthly costs, extra benefits like dental and vision, and an out-of-pocket cap. Medicare Advantage plans in your area may offer all of these - often with a $0 extra premium.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
                     A licensed MIP agent can compare the Advantage plans available in your ZIP code and help you find the best fit.
@@ -280,7 +280,7 @@ function DecisionQuiz() {
                     <HelpCircle className="w-7 h-7 text-green-600" aria-hidden="true" />
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Merriweather', serif" }}>
-                    It's a close call — talk to an agent.
+                    It's a close call - talk to an agent.
                   </h4>
                   <p className="text-gray-600 leading-relaxed mb-4">
                     Your answers suggest both paths have merit for your situation. The right choice depends on the specific plans available in your area, your current doctors, and your medications. A licensed MIP agent can walk you through both options side by side.
@@ -365,23 +365,23 @@ function DecisionQuiz() {
 const faqs = [
   {
     q: "Can I switch from Medicare Advantage back to Original Medicare?",
-    a: "Yes. During the Annual Enrollment Period (October 15 – December 7), you can switch from Medicare Advantage back to Original Medicare. You can also make one change during the Medicare Advantage Open Enrollment Period (January 1 – March 31). However, if you switch back to Original Medicare after your initial enrollment period, you may face medical underwriting for a Medigap supplement — meaning you could be denied or charged more based on your health history.",
+    a: "Yes. During the Annual Enrollment Period (October 15 – December 7), you can switch from Medicare Advantage back to Original Medicare. You can also make one change during the Medicare Advantage Open Enrollment Period (January 1 – March 31). However, if you switch back to Original Medicare after your initial enrollment period, you may face medical underwriting for a Medigap supplement - meaning you could be denied or charged more based on your health history.",
   },
   {
     q: "Is Medicare Advantage really free?",
-    a: "Many Medicare Advantage plans have a $0 extra monthly premium — but you still pay your Part B premium ($185/mo in 2026). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
+    a: "Many Medicare Advantage plans have a $0 extra monthly premium - but you still pay your Part B premium ($185/mo in 2026). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
   },
   {
     q: "What is a Medigap supplement and do I need one with Original Medicare?",
-    a: "A Medigap (Medicare Supplement) policy is private insurance that pays some or all of the costs that Original Medicare doesn't cover — like deductibles, copays, and coinsurance. Without Medigap, Original Medicare has no annual out-of-pocket cap, meaning a serious illness could cost you thousands. Most people who choose Original Medicare also add a Medigap plan for financial protection.",
+    a: "A Medigap (Medicare Supplement) policy is private insurance that pays some or all of the costs that Original Medicare doesn't cover - like deductibles, copays, and coinsurance. Without Medigap, Original Medicare has no annual out-of-pocket cap, meaning a serious illness could cost you thousands. Most people who choose Original Medicare also add a Medigap plan for financial protection.",
   },
   {
     q: "Does Medicare Advantage cover care outside my area?",
-    a: "Medicare Advantage plans cover emergency and urgent care nationwide. However, routine care — like seeing your regular doctor or a specialist — is typically only covered within the plan's service area and network. If you travel frequently or spend time in multiple states, Original Medicare's nationwide coverage is usually a better fit.",
+    a: "Medicare Advantage plans cover emergency and urgent care nationwide. However, routine care - like seeing your regular doctor or a specialist - is typically only covered within the plan's service area and network. If you travel frequently or spend time in multiple states, Original Medicare's nationwide coverage is usually a better fit.",
   },
   {
     q: "Which plan is better if I have complex health needs?",
-    a: "For people with complex health needs who see multiple specialists, Original Medicare often provides more flexibility — you can see any Medicare-accepting specialist without a referral or prior authorization. Medicare Advantage plans may require referrals and prior authorizations, which can create delays. That said, the out-of-pocket cap in Advantage plans can be valuable for people with high healthcare use.",
+    a: "For people with complex health needs who see multiple specialists, Original Medicare often provides more flexibility - you can see any Medicare-accepting specialist without a referral or prior authorization. Medicare Advantage plans may require referrals and prior authorizations, which can create delays. That said, the out-of-pocket cap in Advantage plans can be valuable for people with high healthcare use.",
   },
   {
     q: "Can I have both Original Medicare and Medicare Advantage?",
@@ -389,7 +389,7 @@ const faqs = [
   },
   {
     q: "How do I know which Advantage plans are available in my area?",
-    a: "Medicare Advantage plans vary significantly by ZIP code. The plans available in Brandon, FL may be very different from those available in another county. A licensed MIP agent can pull up all the plans available in your specific area, compare benefits and networks, and help you find the best fit — at no cost to you.",
+    a: "Medicare Advantage plans vary significantly by ZIP code. The plans available in Brandon, FL may be very different from those available in another county. A licensed MIP agent can pull up all the plans available in your specific area, compare benefits and networks, and help you find the best fit - at no cost to you.",
   },
 ];
 
@@ -431,7 +431,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
             Still not sure?
           </h3>
           <p className="text-white/80 text-sm leading-relaxed mb-4">
-            A licensed MIP agent will compare the plans available in your ZIP code and help you decide — at no cost.
+            A licensed MIP agent will compare the plans available in your ZIP code and help you decide - at no cost.
           </p>
           <a
             href="tel:8136995559"
@@ -445,7 +445,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
 
         <Callout type="info">
           <p className="text-blue-800 text-sm leading-relaxed">
-            In 2024, <strong>54%</strong> of Medicare beneficiaries were enrolled in Medicare Advantage — up from 42% in 2021.
+            In 2024, <strong>54%</strong> of Medicare beneficiaries were enrolled in Medicare Advantage - up from 42% in 2021.
           </p>
         </Callout>
       </div>
@@ -551,7 +551,7 @@ export default function OriginalVsAdvantageClient() {
                     When you become eligible for Medicare, you have a fundamental choice: receive your benefits through <strong>Original Medicare</strong> (the traditional government program) or through a <strong>Medicare Advantage</strong> plan (a private insurance alternative that delivers Medicare benefits).
                   </p>
                   <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                    Both options cover the same core Medicare benefits — hospital care (Part A) and medical care (Part B). The difference is in how those benefits are delivered, what extra coverage is included, which doctors you can see, and how your costs are structured.
+                    Both options cover the same core Medicare benefits - hospital care (Part A) and medical care (Part B). The difference is in how those benefits are delivered, what extra coverage is included, which doctors you can see, and how your costs are structured.
                   </p>
 
                   {/* Two-column overview cards */}
@@ -834,7 +834,7 @@ export default function OriginalVsAdvantageClient() {
                 Get a personalized recommendation.
               </h2>
               <p className="text-white/80 text-lg max-w-xl leading-relaxed">
-                A licensed MIP agent will compare the plans available in your ZIP code, check your doctors are in-network, and help you choose the right option — at no cost to you.
+                A licensed MIP agent will compare the plans available in your ZIP code, check your doctors are in-network, and help you choose the right option - at no cost to you.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">
@@ -862,7 +862,7 @@ export default function OriginalVsAdvantageClient() {
             {[
               { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
               { href: "/am-i-eligible", label: "Am I Eligible?", desc: "Find out if you qualify for Medicare and which eligibility path applies to you.", tag: "Eligibility" },
-              { href: "/medicare-101", label: "Medicare 101 Overview", desc: "A complete beginner's guide to Parts A, B, C, and D — everything in one place.", tag: "Beginner Guide" },
+              { href: "/medicare-101", label: "Medicare 101 Overview", desc: "A complete beginner's guide to Parts A, B, C, and D - everything in one place.", tag: "Beginner Guide" },
             ].map((link) => (
               <Link
                 key={link.href}

@@ -4,7 +4,7 @@ import Medicare101Client from "./Medicare101Client";
 export const metadata: Metadata = {
   title: "Medicare 101: The Complete Beginner's Guide | Medicare Information Project",
   description:
-    "Everything you need to understand Medicare — Parts A, B, C & D, enrollment windows, costs, and how to choose the right coverage for your situation. Updated April 2026.",
+    "Everything you need to understand Medicare - Parts A, B, C & D, enrollment windows, costs, and how to choose the right coverage for your situation. Updated April 2026.",
   openGraph: {
     title: "Medicare 101: The Complete Beginner's Guide",
     description:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/pillar-medicare101-hero-f5outgxBhHJbUVbUzgH5fL.webp",
         width: 1200,
         height: 630,
-        alt: "Medicare 101 guide — senior couple reviewing Medicare options with a licensed agent",
+        alt: "Medicare 101 guide - senior couple reviewing Medicare options with a licensed agent",
       },
     ],
     type: "article",

@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Do I Need a Supplement? — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, Merriweather headings, card-based layout
+ * Do I Need a Supplement? - MIP Next.js Client Component
+ * Design: MIP brand - navy/gold, Merriweather headings, card-based layout
  * Sections: Hero → Stats → What Is Medigap → Plan Comparison Table → Popular Plans → Decision Quiz → OEP Warning → FAQ → CTA → Related
  */
 
@@ -93,19 +93,19 @@ const quizQuestions: QuizQuestion[] = [
     id: "q1",
     question: "How would you describe your overall health?",
     options: [
-      { label: "Excellent — I rarely see doctors", value: "healthy" },
-      { label: "Good — a few visits per year", value: "moderate" },
-      { label: "Fair — I have ongoing conditions", value: "complex" },
-      { label: "Poor — frequent medical care needed", value: "high" },
+      { label: "Excellent - I rarely see doctors", value: "healthy" },
+      { label: "Good - a few visits per year", value: "moderate" },
+      { label: "Fair - I have ongoing conditions", value: "complex" },
+      { label: "Poor - frequent medical care needed", value: "high" },
     ],
   },
   {
     id: "q2",
     question: "How important is predictable, fixed healthcare costs to you?",
     options: [
-      { label: "Very important — I want to know exactly what I'll pay", value: "predictable" },
-      { label: "Somewhat — I can handle occasional surprises", value: "moderate" },
-      { label: "Not very — I prefer lower premiums and pay as I go", value: "flexible" },
+      { label: "Very important - I want to know exactly what I'll pay", value: "predictable" },
+      { label: "Somewhat - I can handle occasional surprises", value: "moderate" },
+      { label: "Not very - I prefer lower premiums and pay as I go", value: "flexible" },
     ],
   },
   {
@@ -121,8 +121,8 @@ const quizQuestions: QuizQuestion[] = [
     id: "q4",
     question: "Are you comfortable with small copays ($20–$50) at doctor visits to get a lower monthly premium?",
     options: [
-      { label: "Yes — I'd rather save on the monthly premium", value: "copays_ok" },
-      { label: "No — I want $0 copays at the doctor", value: "no_copays" },
+      { label: "Yes - I'd rather save on the monthly premium", value: "copays_ok" },
+      { label: "No - I want $0 copays at the doctor", value: "no_copays" },
     ],
   },
 ];
@@ -140,7 +140,7 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
     return {
       plan: "Plan G",
       headline: "Plan G is likely your best fit.",
-      reason: "With frequent medical care, the predictability and comprehensive coverage of Plan G — which covers everything except the Part B deductible ($257/year) — will protect you from large, unexpected bills.",
+      reason: "With frequent medical care, the predictability and comprehensive coverage of Plan G - which covers everything except the Part B deductible ($257/year) - will protect you from large, unexpected bills.",
       alt: "Plan N is worth comparing if you're comfortable with small copays.",
     };
   }
@@ -156,7 +156,7 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
     return {
       plan: "Plan G",
       headline: "Plan G is the right choice for peace of mind.",
-      reason: "You want predictable costs and no copays at the doctor. Plan G delivers exactly that — after the $257 Part B deductible, Medicare and your supplement cover the rest.",
+      reason: "You want predictable costs and no copays at the doctor. Plan G delivers exactly that - after the $257 Part B deductible, Medicare and your supplement cover the rest.",
     };
   }
   if (q3 === "international") {
@@ -304,15 +304,15 @@ function DecisionQuiz() {
 const faqs = [
   {
     q: "What is a Medicare Supplement (Medigap) plan?",
-    a: "A Medigap plan is private health insurance that works alongside Original Medicare to cover costs Medicare doesn't pay — like deductibles, coinsurance, and copays. It does NOT work with Medicare Advantage plans.",
+    a: "A Medigap plan is private health insurance that works alongside Original Medicare to cover costs Medicare doesn't pay - like deductibles, coinsurance, and copays. It does NOT work with Medicare Advantage plans.",
   },
   {
     q: "When is the best time to buy a Medigap plan?",
-    a: "The best time is during your Medigap Open Enrollment Period — the 6-month window that starts the month you're both 65 or older AND enrolled in Part B. During this window, insurers cannot deny you coverage or charge you more based on health history. After this window, you may face medical underwriting.",
+    a: "The best time is during your Medigap Open Enrollment Period - the 6-month window that starts the month you're both 65 or older AND enrolled in Part B. During this window, insurers cannot deny you coverage or charge you more based on health history. After this window, you may face medical underwriting.",
   },
   {
     q: "Can I be denied a Medigap plan if I have health conditions?",
-    a: "During your Medigap Open Enrollment Period, no — insurers must sell you any plan they offer at standard rates regardless of your health. Outside of this window, most states allow insurers to use medical underwriting, which can result in higher premiums or denial.",
+    a: "During your Medigap Open Enrollment Period, no - insurers must sell you any plan they offer at standard rates regardless of your health. Outside of this window, most states allow insurers to use medical underwriting, which can result in higher premiums or denial.",
   },
   {
     q: "Why can't I buy Plan F or Plan C anymore?",
@@ -320,7 +320,7 @@ const faqs = [
   },
   {
     q: "What's the difference between Plan G and Plan N?",
-    a: "Both are comprehensive plans. Plan G covers everything except the Part B deductible ($257/year). Plan N also skips the Part B deductible but adds small copays — up to $20 for office visits and $50 for emergency room visits. Plan N typically costs $30–$60/month less than Plan G.",
+    a: "Both are comprehensive plans. Plan G covers everything except the Part B deductible ($257/year). Plan N also skips the Part B deductible but adds small copays - up to $20 for office visits and $50 for emergency room visits. Plan N typically costs $30–$60/month less than Plan G.",
   },
   {
     q: "Does Medigap cover prescription drugs?",
@@ -328,7 +328,7 @@ const faqs = [
   },
   {
     q: "Can I use a Medigap plan anywhere in the US?",
-    a: "Yes. Medigap plans work with any doctor or hospital that accepts Medicare — nationwide. This is one of the key advantages over Medicare Advantage, which typically restricts you to a local network.",
+    a: "Yes. Medigap plans work with any doctor or hospital that accepts Medicare - nationwide. This is one of the key advantages over Medicare Advantage, which typically restricts you to a local network.",
   },
   {
     q: "How much does a Medigap plan cost?",
@@ -438,7 +438,7 @@ export default function DoINeedSupplementClient() {
             Do I Need a Medicare Supplement Plan?
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-            Original Medicare leaves significant gaps. A Medigap supplement plan fills them — but not everyone needs one. Here's how to decide.
+            Original Medicare leaves significant gaps. A Medigap supplement plan fills them - but not everyone needs one. Here's how to decide.
           </p>
         </div>
       </section>
@@ -451,7 +451,7 @@ export default function DoINeedSupplementClient() {
               { value: "20%", label: "Part B coinsurance Original Medicare leaves unpaid" },
               { value: "$1,676", label: "Part A deductible per benefit period in 2026" },
               { value: "Plan G", label: "Most popular Medigap plan for new enrollees" },
-              { value: "6 months", label: "Medigap Open Enrollment Period — use it or lose it" },
+              { value: "6 months", label: "Medigap Open Enrollment Period - use it or lose it" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-[#f5a800] text-2xl font-bold" style={{ fontFamily: "'Merriweather', serif" }}>{stat.value}</p>
@@ -476,16 +476,16 @@ export default function DoINeedSupplementClient() {
                     What Is a Medicare Supplement Plan?
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Original Medicare (Parts A and B) covers most major medical services, but it doesn't cover everything. You're responsible for deductibles, coinsurance (typically 20% of every bill), and copays — with <strong>no annual out-of-pocket maximum</strong>. A single serious illness could cost you tens of thousands of dollars.
+                    Original Medicare (Parts A and B) covers most major medical services, but it doesn't cover everything. You're responsible for deductibles, coinsurance (typically 20% of every bill), and copays - with <strong>no annual out-of-pocket maximum</strong>. A single serious illness could cost you tens of thousands of dollars.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    A <strong>Medicare Supplement plan</strong> (also called Medigap) is private insurance that pays some or all of the costs that Original Medicare doesn't cover. Plans are standardized by the federal government — Plan G from one insurer covers exactly the same benefits as Plan G from another. The only difference is the monthly premium.
+                    A <strong>Medicare Supplement plan</strong> (also called Medigap) is private insurance that pays some or all of the costs that Original Medicare doesn't cover. Plans are standardized by the federal government - Plan G from one insurer covers exactly the same benefits as Plan G from another. The only difference is the monthly premium.
                   </p>
 
                   <div className="grid md:grid-cols-3 gap-5 mb-8">
                     {[
                       { icon: Shield, color: "text-[#1a3fa8]", bg: "bg-blue-50", title: "Fills the Gaps", desc: "Covers deductibles, coinsurance, and copays that Original Medicare leaves unpaid." },
-                      { icon: Globe, color: "text-green-700", bg: "bg-green-50", title: "Nationwide Coverage", desc: "Works with any doctor or hospital that accepts Medicare — no network restrictions." },
+                      { icon: Globe, color: "text-green-700", bg: "bg-green-50", title: "Nationwide Coverage", desc: "Works with any doctor or hospital that accepts Medicare - no network restrictions." },
                       { icon: DollarSign, color: "text-amber-700", bg: "bg-amber-50", title: "Predictable Costs", desc: "Know your maximum out-of-pocket exposure before you need care." },
                     ].map((card) => {
                       const Icon = card.icon;
@@ -751,15 +751,15 @@ export default function DoINeedSupplementClient() {
                           Your Medigap Open Enrollment Period Is a One-Time Window
                         </h2>
                         <p className="text-amber-800 leading-relaxed mb-4">
-                          Your <strong>Medigap Open Enrollment Period (OEP)</strong> is the 6-month window that begins the first day of the month you are both age 65 or older <em>and</em> enrolled in Medicare Part B. During this window, insurers are legally required to sell you any Medigap plan they offer at standard rates — regardless of your health history.
+                          Your <strong>Medigap Open Enrollment Period (OEP)</strong> is the 6-month window that begins the first day of the month you are both age 65 or older <em>and</em> enrolled in Medicare Part B. During this window, insurers are legally required to sell you any Medigap plan they offer at standard rates - regardless of your health history.
                         </p>
                         <p className="text-amber-800 leading-relaxed mb-6">
-                          Once this window closes, most states allow insurers to use <strong>medical underwriting</strong> — meaning they can charge you higher premiums, exclude pre-existing conditions, or deny your application entirely. This window does not repeat.
+                          Once this window closes, most states allow insurers to use <strong>medical underwriting</strong> - meaning they can charge you higher premiums, exclude pre-existing conditions, or deny your application entirely. This window does not repeat.
                         </p>
                         <div className="grid md:grid-cols-3 gap-4">
                           {[
                             { label: "When it starts", value: "1st day of the month you turn 65 AND are enrolled in Part B" },
-                            { label: "How long it lasts", value: "6 months — it does not renew or repeat" },
+                            { label: "How long it lasts", value: "6 months - it does not renew or repeat" },
                             { label: "What you're guaranteed", value: "Any plan, standard rates, no medical questions" },
                           ].map((item) => (
                             <div key={item.label} className="bg-white/70 rounded-xl px-4 py-3">
@@ -804,7 +804,7 @@ export default function DoINeedSupplementClient() {
                 Ready to compare Medigap plans?
               </h2>
               <p className="text-white/80 text-lg max-w-xl leading-relaxed">
-                We shop all major carriers — Mutual of Omaha, Aetna, Cigna, UnitedHealthcare, and more — to find you the best rate for the plan you choose. Free, no obligation.
+                We shop all major carriers - Mutual of Omaha, Aetna, Cigna, UnitedHealthcare, and more - to find you the best rate for the plan you choose. Free, no obligation.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">

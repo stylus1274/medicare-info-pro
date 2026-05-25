@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Medicare Enrollment Timeline — MIP Next.js Client Component
- * Design: Warm Guide — Merriweather headlines, Inter body
+ * Medicare Enrollment Timeline - MIP Next.js Client Component
+ * Design: Warm Guide - Merriweather headlines, Inter body
  * Primary: #1a3fa8 (royal blue), Accent: #f5a800 (gold)
  * Layout: Full-bleed hero → stats bar → IEP visual timeline → enrollment period cards
  *         → penalty section → key dates table → FAQ → CTA → related pages
@@ -55,7 +55,7 @@ const enrollmentPeriods = [
     tag: "Most Important",
     tagBg: "bg-blue-100 text-blue-700",
     title: "Initial Enrollment Period (IEP)",
-    subtitle: "Your first — and most important — window",
+    subtitle: "Your first - and most important - window",
     duration: "7 months",
     when: "3 months before your 65th birthday month through 3 months after",
     description:
@@ -93,7 +93,7 @@ const enrollmentPeriods = [
       "Part B premium penalty is permanent",
     ],
     warning:
-      "Coverage doesn't start until July 1 — a gap of up to 6 months after you enroll.",
+      "Coverage doesn't start until July 1 - a gap of up to 6 months after you enroll.",
   },
   {
     id: "aep",
@@ -109,7 +109,7 @@ const enrollmentPeriods = [
     duration: "7 weeks",
     when: "October 15 – December 7 each year",
     description:
-      "The AEP — also called Open Enrollment — is when anyone with Medicare can make changes to their coverage for the following year. You can switch between Original Medicare and Medicare Advantage, change your Part D drug plan, or switch between Advantage plans.",
+      "The AEP - also called Open Enrollment - is when anyone with Medicare can make changes to their coverage for the following year. You can switch between Original Medicare and Medicare Advantage, change your Part D drug plan, or switch between Advantage plans.",
     details: [
       "Open every year: October 15 – December 7",
       "Changes take effect January 1 of the following year",
@@ -133,7 +133,7 @@ const enrollmentPeriods = [
     duration: "Varies (usually 8 months)",
     when: "Triggered by qualifying life events",
     description:
-      "A Special Enrollment Period is triggered when you experience certain qualifying life events — most commonly losing employer health coverage. An SEP allows you to enroll in Medicare outside of standard enrollment windows without incurring a late penalty.",
+      "A Special Enrollment Period is triggered when you experience certain qualifying life events - most commonly losing employer health coverage. An SEP allows you to enroll in Medicare outside of standard enrollment windows without incurring a late penalty.",
     details: [
       "Losing employer or union health coverage",
       "Retiring and losing group health insurance",
@@ -190,10 +190,10 @@ const penalties = [
     lightBg: "bg-red-50",
     borderColor: "border-red-200",
     penalty: "10% per year delayed",
-    duration: "Permanent — for as long as you have Part B",
+    duration: "Permanent - for as long as you have Part B",
     who: "Anyone who delays enrollment without creditable employer coverage",
     example: "2 years late = 20% higher monthly premium forever",
-    note: "This is the most impactful penalty. The standard 2026 Part B premium is $185.00/month — a 2-year delay adds $37/month permanently.",
+    note: "This is the most impactful penalty. The standard 2026 Part B premium is $185.00/month - a 2-year delay adds $37/month permanently.",
   },
   {
     part: "Part D",
@@ -201,7 +201,7 @@ const penalties = [
     lightBg: "bg-amber-50",
     borderColor: "border-amber-200",
     penalty: "1% per month without creditable coverage",
-    duration: "Permanent — added to your monthly Part D premium",
+    duration: "Permanent - added to your monthly Part D premium",
     who: "Anyone who goes 63+ consecutive days without creditable drug coverage",
     example: "14 months without coverage = 14% higher Part D premium forever",
     note: "Creditable coverage includes most employer drug plans, VA benefits, and TRICARE. Keep documentation proving your coverage was creditable.",
@@ -214,7 +214,7 @@ const keyDates = [
   {
     period: "Initial Enrollment Period (IEP)",
     window: "7 months centered on 65th birthday",
-    coverageStart: "Varies — earliest is 1st of birthday month",
+    coverageStart: "Varies - earliest is 1st of birthday month",
     penalty: "Yes, if missed without SEP",
   },
   {
@@ -248,11 +248,11 @@ const keyDates = [
 const faqs = [
   {
     q: "What is the most important Medicare enrollment deadline?",
-    a: "Your Initial Enrollment Period (IEP) is the most critical. It's a 7-month window centered on your 65th birthday. Missing it without a qualifying reason results in permanent late enrollment penalties — 10% per year for Part B and 1% per month for Part D. These penalties last for as long as you have Medicare.",
+    a: "Your Initial Enrollment Period (IEP) is the most critical. It's a 7-month window centered on your 65th birthday. Missing it without a qualifying reason results in permanent late enrollment penalties - 10% per year for Part B and 1% per month for Part D. These penalties last for as long as you have Medicare.",
   },
   {
     q: "When exactly does my IEP begin and end?",
-    a: "Your IEP begins 3 months before the month you turn 65 and ends 3 months after your birthday month — a total of 7 months. For example, if you turn 65 in June, your IEP runs from March 1 through September 30. Enrolling in the first 3 months (March–May in this example) gives you the earliest possible coverage start date.",
+    a: "Your IEP begins 3 months before the month you turn 65 and ends 3 months after your birthday month - a total of 7 months. For example, if you turn 65 in June, your IEP runs from March 1 through September 30. Enrolling in the first 3 months (March–May in this example) gives you the earliest possible coverage start date.",
   },
   {
     q: "Can I delay Medicare if I'm still working and have employer coverage?",
@@ -260,18 +260,18 @@ const faqs = [
   },
   {
     q: "What is the difference between the AEP and the OEP?",
-    a: "The Annual Enrollment Period (AEP) runs October 15 – December 7 and is open to all Medicare beneficiaries. You can switch between Original Medicare and Medicare Advantage, or change your Part D plan. The Medicare Advantage Open Enrollment Period (OEP) runs January 1 – March 31 and is only available to people already enrolled in a Medicare Advantage plan — it allows one plan change.",
+    a: "The Annual Enrollment Period (AEP) runs October 15 – December 7 and is open to all Medicare beneficiaries. You can switch between Original Medicare and Medicare Advantage, or change your Part D plan. The Medicare Advantage Open Enrollment Period (OEP) runs January 1 – March 31 and is only available to people already enrolled in a Medicare Advantage plan - it allows one plan change.",
   },
   {
     q: "What qualifies as a Special Enrollment Period trigger?",
-    a: "The most common SEP trigger is losing employer or union health coverage (including when you or your covered spouse retires). Other triggers include moving out of your plan's service area, losing Medicaid eligibility, and your Medicare Advantage plan leaving your area. Each trigger has its own SEP window — typically 8 months for losing employer coverage.",
+    a: "The most common SEP trigger is losing employer or union health coverage (including when you or your covered spouse retires). Other triggers include moving out of your plan's service area, losing Medicaid eligibility, and your Medicare Advantage plan leaving your area. Each trigger has its own SEP window - typically 8 months for losing employer coverage.",
   },
   {
     q: "Is the Part B late enrollment penalty really permanent?",
-    a: "Yes. The Part B late enrollment penalty is 10% for each full 12-month period you were eligible but didn't enroll. It is added to your monthly Part B premium for as long as you have Part B — there is no expiration. At the 2026 standard premium of $185.00/month, even a 2-year delay adds $37/month permanently.",
+    a: "Yes. The Part B late enrollment penalty is 10% for each full 12-month period you were eligible but didn't enroll. It is added to your monthly Part B premium for as long as you have Part B - there is no expiration. At the 2026 standard premium of $185.00/month, even a 2-year delay adds $37/month permanently.",
   },
   {
-    q: "What if I missed my enrollment window — what do I do now?",
+    q: "What if I missed my enrollment window - what do I do now?",
     a: "Contact an MIP licensed agent immediately. Depending on your situation, you may qualify for a Special Enrollment Period, or you may need to wait for the General Enrollment Period (January 1 – March 31). An agent can review your specific circumstances and help you minimize any penalties. The sooner you act, the better.",
   },
 ];
@@ -279,13 +279,13 @@ const faqs = [
 // ─── IEP Visual Timeline ──────────────────────────────────────────────────────
 
 const iepMonths = [
-  { label: "Month 1", desc: "3 mo. before birthday", phase: "before", tip: "Best time to enroll — coverage starts on your birthday month" },
-  { label: "Month 2", desc: "2 mo. before birthday", phase: "before", tip: "Still ideal — coverage starts on your birthday month" },
+  { label: "Month 1", desc: "3 mo. before birthday", phase: "before", tip: "Best time to enroll - coverage starts on your birthday month" },
+  { label: "Month 2", desc: "2 mo. before birthday", phase: "before", tip: "Still ideal - coverage starts on your birthday month" },
   { label: "Month 3", desc: "1 mo. before birthday", phase: "before", tip: "Last chance for on-time coverage start" },
   { label: "Month 4", desc: "Birthday month", phase: "birthday", tip: "Coverage starts the 1st of the following month" },
   { label: "Month 5", desc: "1 mo. after birthday", phase: "after", tip: "Coverage delayed 2 months from enrollment" },
   { label: "Month 6", desc: "2 mo. after birthday", phase: "after", tip: "Coverage delayed 2–3 months from enrollment" },
-  { label: "Month 7", desc: "3 mo. after birthday", phase: "after", tip: "Last month of IEP — coverage delayed 3 months" },
+  { label: "Month 7", desc: "3 mo. after birthday", phase: "after", tip: "Last month of IEP - coverage delayed 3 months" },
 ];
 
 function IEPTimeline() {
@@ -328,7 +328,7 @@ function IEPTimeline() {
         {/* Legend */}
         <div className="flex flex-wrap gap-4 mb-6 text-sm">
           {[
-            { color: "bg-green-500", label: "Ideal — on-time coverage" },
+            { color: "bg-green-500", label: "Ideal - on-time coverage" },
             { color: "bg-[#1a3fa8]", label: "Birthday month" },
             { color: "bg-amber-400", label: "Delayed coverage start" },
           ].map((l) => (
@@ -405,7 +405,7 @@ function IEPTimeline() {
               <Info className="w-5 h-5 text-[#1a3fa8] flex-shrink-0 mt-0.5" aria-hidden="true" />
               <div>
                 <p className="font-semibold text-gray-800 text-sm">
-                  {iepMonths[activeMonth].label} —{" "}
+                  {iepMonths[activeMonth].label} -{" "}
                   {iepMonths[activeMonth].desc}
                 </p>
                 <p className="text-gray-600 text-sm mt-0.5">
@@ -476,7 +476,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
           </h3>
           <p className="text-white/80 text-sm leading-relaxed mb-4">
             A licensed MIP agent will review your situation and tell you exactly
-            when and how to enroll — at no cost to you.
+            when and how to enroll - at no cost to you.
           </p>
           <a
             href="tel:8136995559"
@@ -562,7 +562,7 @@ export default function EnrollmentTimelineClient() {
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
             Missing a Medicare enrollment window can mean permanent penalties
-            and coverage gaps. Here's every deadline you need to know —
+            and coverage gaps. Here's every deadline you need to know -
             explained clearly.
           </p>
         </div>
@@ -606,7 +606,7 @@ export default function EnrollmentTimelineClient() {
                   viewport={{ once: true }}
                 >
                   <p className="text-[#f5a800] font-bold uppercase tracking-widest text-sm mb-3">
-                    Step 1 — Your First Window
+                    Step 1 - Your First Window
                   </p>
                   <h2
                     className="text-3xl md:text-4xl font-bold text-gray-900 mb-5 leading-tight"
@@ -617,7 +617,7 @@ export default function EnrollmentTimelineClient() {
                   <p className="text-gray-600 text-lg leading-relaxed mb-6">
                     The Initial Enrollment Period is the 7-month window centered
                     on your 65th birthday. It is the most important enrollment
-                    deadline in Medicare — missing it without a qualifying reason
+                    deadline in Medicare - missing it without a qualifying reason
                     results in permanent late enrollment penalties that last for
                     as long as you have Medicare.
                   </p>
@@ -757,7 +757,7 @@ export default function EnrollmentTimelineClient() {
                     Late Enrollment Penalties
                   </h2>
                   <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                    Medicare late enrollment penalties are not one-time fees —
+                    Medicare late enrollment penalties are not one-time fees -
                     they are permanent increases to your monthly premium. The
                     longer you delay, the higher your penalty, and it lasts for
                     as long as you have Medicare. This is why timing your
@@ -816,7 +816,7 @@ export default function EnrollmentTimelineClient() {
                           of years. They are added to your monthly premium for
                           as long as you have Medicare coverage. A 2-year Part B
                           delay at the 2026 standard premium of $185.00/month
-                          means paying an extra $37/month — that's over $440 per
+                          means paying an extra $37/month - that's over $440 per
                           year, every year, for the rest of your life.
                         </p>
                         <p className="text-red-700 leading-relaxed mt-3">
@@ -955,7 +955,7 @@ export default function EnrollmentTimelineClient() {
               <p className="text-white/80 text-lg max-w-xl leading-relaxed">
                 A licensed MIP agent will review your specific situation,
                 confirm your enrollment window, and help you choose the right
-                plan — at absolutely no cost to you.
+                plan - at absolutely no cost to you.
               </p>
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">
@@ -995,7 +995,7 @@ export default function EnrollmentTimelineClient() {
               {
                 href: "/medicare-101",
                 label: "Medicare 101 Overview",
-                desc: "A complete beginner's guide to Parts A, B, C, and D — everything in one place.",
+                desc: "A complete beginner's guide to Parts A, B, C, and D - everything in one place.",
                 tag: "Beginner Guide",
               },
               {

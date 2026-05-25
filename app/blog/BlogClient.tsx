@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Blog Listing — MIP Next.js Client Component
- * Design: MIP brand — navy/gold, editorial magazine-style layout
+ * Blog Listing , MIP Next.js Client Component
+ * Design: MIP brand , navy/gold, editorial magazine-style layout
  * Sections: Page Header + Search → Sticky Category Filter → Featured Post → Article Grid + Sidebar
  * All year references updated to 2026.
  */
@@ -72,7 +72,7 @@ const ARTICLES: Article[] = [
     slug: "/blog/working-past-65",
     title: "Working Past 65: When to Enroll in Medicare",
     excerpt:
-      "If you're still working at 65 with employer coverage, you may not need to enroll in Medicare right away — but the rules are nuanced and the penalties for getting it wrong are permanent. Here's everything you need to know.",
+      "If you're still working at 65 with employer coverage, you may not need to enroll in Medicare right away , but the rules are nuanced and the penalties for getting it wrong are permanent. Here's everything you need to know.",
     category: "Enrollment",
     author: "Sarah Mitchell",
     date: "April 2026",
@@ -85,7 +85,7 @@ const ARTICLES: Article[] = [
     slug: "/blog/plan-g-complete-guide",
     title: "Medicare Supplement Plan G: The Complete 2026 Guide",
     excerpt:
-      "Plan G has become the most popular Medigap plan in America — and for good reason. We break down exactly what it covers, what it costs, and who it's best for.",
+      "Plan G has become the most popular Medigap plan in America , and for good reason. We break down exactly what it covers, what it costs, and who it's best for.",
     category: "Supplements",
     author: "David Chen",
     date: "March 2026",
@@ -97,7 +97,7 @@ const ARTICLES: Article[] = [
     slug: "/blog/does-medicare-cover-life-alert",
     title: "Does Medicare Cover Life Alert?",
     excerpt:
-      "Original Medicare doesn't cover personal emergency response systems like Life Alert — but some Medicare Advantage plans do. Here's what to look for when comparing plans.",
+      "Original Medicare doesn't cover personal emergency response systems like Life Alert , but some Medicare Advantage plans do. Here's what to look for when comparing plans.",
     category: "Coverage",
     author: "Sarah Mitchell",
     date: "March 2026",
@@ -133,7 +133,7 @@ const ARTICLES: Article[] = [
     slug: "/blog/part-d-2000-cap",
     title: "The $2,000 Part D Out-of-Pocket Cap: What It Means for You",
     excerpt:
-      "Medicare Part D now has a $2,000 annual out-of-pocket cap — the most significant drug coverage change in decades. Here's how it works and who benefits most.",
+      "Medicare Part D now has a $2,000 annual out-of-pocket cap , the most significant drug coverage change in decades. Here's how it works and who benefits most.",
     category: "Part D",
     author: "Sarah Mitchell",
     date: "January 2026",
@@ -216,7 +216,7 @@ export default function BlogClient() {
                 Medicare Insights
               </h1>
               <p className="text-[1rem] text-white/70 max-w-xl leading-relaxed">
-                Guides, explainers, and tools written by licensed Medicare specialists — updated regularly to reflect the latest rules and rates.
+                Guides, explainers, and tools written by licensed Medicare specialists , updated regularly to reflect the latest rules and rates.
               </p>
             </div>
             {/* Search */}
@@ -269,7 +269,7 @@ export default function BlogClient() {
 
           {/* ── Articles ── */}
           <main>
-            {/* Featured Post — only when no filter/search active */}
+            {/* Featured Post only when no filter/search active */}
             {activeCategory === "All" && searchQuery === "" && featured && (
               <div className="mb-12">
                 <p className="text-[0.75rem] font-bold uppercase tracking-widest text-[#1a3fa8] mb-4 flex items-center gap-2">
@@ -355,7 +355,7 @@ export default function BlogClient() {
                       key={article.slug}
                       href={article.live ? article.slug : "#"}
                       onClick={!article.live ? (e) => e.preventDefault() : undefined}
-                      aria-label={article.live ? `Read: ${article.title}` : `${article.title} — coming soon`}
+                      aria-label={article.live ? `Read: ${article.title}` : `${article.title}  (coming soon)`}
                       className={`group block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white ${
                         !article.live ? "cursor-default opacity-80" : ""
                       }`}
@@ -433,7 +433,7 @@ export default function BlogClient() {
                   Have Questions?
                 </h3>
                 <p className="text-[0.85rem] text-white/80 mb-4 leading-relaxed">
-                  Our licensed Medicare specialists are available to answer your questions — at no cost to you.
+                  Our licensed Medicare specialists are available to answer your questions , at no cost to you.
                 </p>
                 <a
                   href="tel:8136995559"

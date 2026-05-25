@@ -1,4 +1,4 @@
-/* MIP Brand Fonts — must be first */
+/* MIP Brand Fonts - must be first */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
 
 @tailwind base;
@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px; /* Global base — all rem/Tailwind sizes scale from here */
+  font-size: 18px; /* Global base - all rem/Tailwind sizes scale from here */
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   --mip-border: #e5e7eb;
 }
 
-/* Container — matches React project definition */
+/* Container - matches React project definition */
 @layer components {
   .container {
     width: 100%;

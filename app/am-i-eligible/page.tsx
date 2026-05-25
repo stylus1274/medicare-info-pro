@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Am I Eligible for Medicare? | Medicare Information Pro",
     description:
-      "Find out if you qualify for Medicare. Use our free eligibility checker — covers age, disability, ESRD, work history, and special situations.",
+      "Find out if you qualify for Medicare. Use our free eligibility checker - covers age, disability, ESRD, work history, and special situations.",
     url: "https://medicare-info-pro.vercel.app/am-i-eligible",
     siteName: "Medicare Information Pro",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Am I Eligible for Medicare? | Medicare Information Pro",
     description:
-      "Use our free eligibility checker to find out if you qualify for Medicare — age, disability, ESRD, and more.",
+      "Use our free eligibility checker to find out if you qualify for Medicare - age, disability, ESRD, and more.",
     images: [
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/eligible-hero-9oVMsdHrhZ3KWXrFjRcN3L.webp",
     ],

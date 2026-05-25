@@ -4,7 +4,7 @@ import FirstStepsChecklistClient from "./FirstStepsChecklistClient";
 export const metadata: Metadata = {
   title: "Medicare First Steps Checklist | New to Medicare Action Plan | Medicare Information Pro",
   description:
-    "A step-by-step Medicare enrollment checklist for people turning 65. Check off each action — from understanding your options to enrolling and staying organized. Progress saves automatically.",
+    "A step-by-step Medicare enrollment checklist for people turning 65. Check off each action - from understanding your options to enrolling and staying organized. Progress saves automatically.",
   keywords: [
     "Medicare first steps checklist",
     "Medicare enrollment checklist",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare First Steps Checklist | Medicare Information Pro",
     description:
-      "A 6-phase interactive checklist for new Medicare enrollees — from understanding your options to enrolling and staying organized.",
+      "A 6-phase interactive checklist for new Medicare enrollees - from understanding your options to enrolling and staying organized.",
     url: "https://medicare-info-pro.vercel.app/first-steps-checklist",
     type: "article",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Medicare First Steps Checklist | Medicare Information Pro",
     description:
-      "A 6-phase interactive checklist for new Medicare enrollees. Check off each step as you go — progress saves automatically.",
+      "A 6-phase interactive checklist for new Medicare enrollees. Check off each step as you go - progress saves automatically.",
     images: [
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/first-steps-checklist-hero-PGVcHBnzYV2VUbed3eCtQz.webp",
     ],

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png",
         width: 1200,
         height: 630,
-        alt: "Why Choose Medigap Plan G — Medicare Information Pro",
+        alt: "Why Choose Medigap Plan G  | Medicare Information Pro",
       },
     ],
   },
@@ -53,7 +53,7 @@ const POST = {
   date: "August 2024",
   readTime: "8 min read",
   image: "https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png",
-  imageAlt: "Medigap Plan G — Tampa, FL — Medicare Information Project",
+  imageAlt: "Medigap Plan G , Tampa, FL  | Medicare Information Project",
   sections: [
     {
       type: "intro" as const,
@@ -85,7 +85,7 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
       subsections: [
         {
           heading: "Hospital Stay Coverage",
-          content: `Medigap Plan G covers the Medicare Part A deductible, which can be over $1,600 in 2026. Additionally, it pays for hospital stays, including room and board, general nursing, and other hospital services — so you're never caught off guard by an unexpected inpatient bill.`,
+          content: `Medigap Plan G covers the Medicare Part A deductible, which can be over $1,600 in 2026. Additionally, it pays for hospital stays, including room and board, general nursing, and other hospital services , so you will never be caught off guard by an unexpected inpatient bill.`,
         },
         {
           heading: "Skilled Nursing Facility Care",
@@ -104,7 +104,7 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
         },
         {
           heading: "Foreign Travel Emergency Coverage",
-          content: `Emergencies can happen anywhere, even when you're traveling abroad. Medigap Plan G provides you with foreign travel emergency coverage, which means you'll be protected in case of unexpected medical emergencies while traveling outside the United States. With Medigap Plan G, you'll have access to up to $50,000 in foreign travel emergency coverage — a benefit that's especially valuable if you enjoy traveling or have family living abroad.`,
+          content: `Emergencies can happen anywhere, even when you're traveling abroad. Medigap Plan G provides you with foreign travel emergency coverage, which means you'll be protected in case of unexpected medical emergencies while traveling outside the United States. With Medigap Plan G, you'll have access to up to $50,000 in foreign travel emergency coverage , a benefit that is especially valuable if you enjoy traveling or have family living abroad.`,
         },
       ],
     },
@@ -115,11 +115,11 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
       subsections: [
         {
           heading: "Nationwide Coverage",
-          content: `Coverage that follows you wherever you go — that's what you get with Medigap Plan G. With this plan, you're not limited to a specific network or geographic area. You can travel across the country, visit specialists, or receive treatment at any hospital that accepts Medicare, without worrying about out-of-network costs or penalties.`,
+          content: `Coverage that follows you wherever you go : that is what you get with Medigap Plan G. With this plan, you're not limited to a specific network or geographic area. You can travel across the country, visit specialists, or receive treatment at any hospital that accepts Medicare, without worrying about out-of-network costs or penalties.`,
         },
         {
           heading: "No Network Restrictions",
-          content: `Medigap Plan G gives you the freedom to choose any doctor, specialist, or hospital that accepts Medicare, without the need for referrals or network restrictions. This means you can maintain relationships with your current healthcare providers, even if they're not part of a specific network — especially important if you have ongoing medical conditions or require specialized care.`,
+          content: `Medigap Plan G gives you the freedom to choose any doctor, specialist, or hospital that accepts Medicare, without the need for referrals or network restrictions. This means you can maintain relationships with your current healthcare providers, even if they're not part of a specific network , which is especially important if you have ongoing medical conditions or require specialized care.`,
         },
       ],
     },
