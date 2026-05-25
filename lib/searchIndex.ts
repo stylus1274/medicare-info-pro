@@ -123,6 +123,13 @@ export const SEARCH_INDEX: SearchResult[] = [
 
   // ── Blog ─────────────────────────────────────────────────────────────────
   {
+    title: "Why Is Medicare Coverage So Important?",
+    description: "Medicare provides vital healthcare services, financial protection, and preventive care for millions of Americans aged 65 and older.",
+    url: "/blog/why-is-medicare-coverage-so-important",
+    category: "Blog",
+    tags: ["why medicare important", "medicare coverage", "financial protection", "preventive care", "medicare benefits", "eligibility", "coverage gaps"],
+  },
+  {
     title: "Working Past 65? Here's What You Need to Know About Medicare",
     description: "If you're still working at 65 and covered by employer insurance, this guide explains your options.",
     url: "/blog/working-past-65",

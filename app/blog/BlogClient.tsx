@@ -166,6 +166,18 @@ const ARTICLES: Article[] = [
     live: false,
   },
   {
+    slug: "/blog/why-is-medicare-coverage-so-important",
+    title: "Why Is Medicare Coverage So Important?",
+    excerpt:
+      "Medicare serves as a lifeline for millions of Americans aged 65 and older, providing vital healthcare services, financial protection, and preventive care. Here's why coverage matters.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "May 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
