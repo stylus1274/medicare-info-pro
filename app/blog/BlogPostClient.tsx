@@ -229,8 +229,22 @@ export default function BlogPostClient({ post }: Props) {
       <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-12">
 
-          {/* ── Article Body ── */}
+          {/* Article Body */}
           <article className="prose-custom" aria-label="Article content">
+
+            {/* Written By */}
+            <div className="flex items-center gap-3 pb-6 mb-6 border-b border-gray-100">
+              <img
+                src={post.author.photo}
+                alt={`Photo of ${post.author.name}`}
+                className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border-2 border-gray-100"
+              />
+              <div>
+                <p className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-0.5">Written By</p>
+                <p className="font-bold text-gray-900 text-[0.95rem] leading-tight">{post.author.name}</p>
+                <p className="text-[0.8rem] text-gray-500">{post.author.title}</p>
+              </div>
+            </div>
 
             {post.sections.map((section, idx) => {
               if (section.type === "intro") {
@@ -335,20 +349,6 @@ export default function BlogPostClient({ post }: Props) {
 
               return null;
             })}
-
-            {/* Written By */}
-            <div className="flex items-center gap-4 py-6 border-t border-b border-gray-100 mb-10">
-              <img
-                src={post.author.photo}
-                alt={`Photo of ${post.author.name}`}
-                className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0 border-2 border-gray-100"
-              />
-              <div>
-                <p className="text-[0.72rem] font-bold uppercase tracking-wider text-gray-400 mb-0.5">Written By</p>
-                <p className="font-bold text-gray-900 text-[1rem]">{post.author.name}</p>
-                <p className="text-[0.825rem] text-gray-500">{post.author.title}</p>
-              </div>
-            </div>
 
             {/* CTA Band */}
             <div
