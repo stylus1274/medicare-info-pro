@@ -184,7 +184,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 // ---- Page -------------------------------------------------------------------
 
 export default function VisionCoverageClient() {
-  const qs = STATUS_CONFIG["partial"];
+  const qs = STATUS_CONFIG["not"];
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -229,7 +229,7 @@ export default function VisionCoverageClient() {
               className="flex items-start gap-3 px-5 py-4 rounded-xl border"
               style={{ background: qs.bg, borderColor: qs.border }}
             >
-              <qs.Icon className="text-amber-600 flex-shrink-0 mt-0.5" />
+              <qs.Icon className="text-red-600 flex-shrink-0 mt-0.5" />
               <div>
                 <p
                   className="text-xs font-bold uppercase tracking-wider mb-1"
