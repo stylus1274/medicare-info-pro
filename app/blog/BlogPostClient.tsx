@@ -74,13 +74,24 @@ interface RelatedPost {
   category: Category;
 }
 
+interface Author {
+  name: string;
+  title: string;
+  photo: string;
+}
+
+const GREG_WOHL: Author = {
+  name: "Greg Wohl",
+  title: "Licensed Medicare Specialist",
+  photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
+};
+
 interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
   category: Category;
-  author: string;
-  authorTitle: string;
+  author: Author;
   date: string;
   readTime: string;
   image: string;
@@ -88,6 +99,8 @@ interface BlogPost {
   sections: PostSection[];
   relatedPosts: RelatedPost[];
 }
+
+export { GREG_WOHL };
 
 interface Props {
   post: BlogPost;
@@ -195,7 +208,7 @@ export default function BlogPostClient({ post }: Props) {
           <p className="text-[1rem] text-white/80 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
 
           <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/60">
-            <span className="font-semibold text-white/80">{post.author}</span>
+            <span className="font-semibold text-white/80">{post.author.name}</span>
             <span className="text-white/40">·</span>
             <span className="flex items-center gap-1.5"><Calendar size={13} aria-hidden="true" /> {post.date}</span>
             <span className="text-white/40">·</span>
@@ -323,7 +336,21 @@ export default function BlogPostClient({ post }: Props) {
               return null;
             })}
 
-            {/* ── CTA Band ── */}
+            {/* Written By */}
+            <div className="flex items-center gap-4 py-6 border-t border-b border-gray-100 mb-10">
+              <img
+                src={post.author.photo}
+                alt={`Photo of ${post.author.name}`}
+                className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0 border-2 border-gray-100"
+              />
+              <div>
+                <p className="text-[0.72rem] font-bold uppercase tracking-wider text-gray-400 mb-0.5">Written By</p>
+                <p className="font-bold text-gray-900 text-[1rem]">{post.author.name}</p>
+                <p className="text-[0.825rem] text-gray-500">{post.author.title}</p>
+              </div>
+            </div>
+
+            {/* CTA Band */}
             <div
               className="rounded-2xl p-7 text-white mb-10"
               style={{ background: "linear-gradient(135deg, #0d1f5c 0%, #1a3fa8 100%)" }}

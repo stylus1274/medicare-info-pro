@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import BlogPostClient from "../BlogPostClient";
+import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
 
 export const metadata: Metadata = {
   title: "Why Medigap Plan G is Your Best Medicare Choice | Medicare Information Pro",
@@ -48,8 +48,7 @@ const POST = {
   excerpt:
     "If you're looking for comprehensive coverage and flexibility, Medigap Plan G stands out as the most popular choice among Medicare beneficiaries. Here's why.",
   category: "Supplements" as const,
-  author: "Medicare Information Pro",
-  authorTitle: "Licensed Medicare Specialist",
+  author: GREG_WOHL,
   date: "August 2024",
   readTime: "8 min read",
   image: "https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png",
