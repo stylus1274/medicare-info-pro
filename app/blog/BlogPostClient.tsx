@@ -300,7 +300,7 @@ export default function BlogPostClient({ post }: Props) {
                         >
                           {sub.heading}
                         </h3>
-                        <p className="text-gray-700 leading-relaxed text-[0.975rem]">{sub.content}</p>
+                        <p className="text-gray-700 leading-relaxed text-[0.975rem]" dangerouslySetInnerHTML={{ __html: sub.content }} />
                       </div>
                     ))}
                   </section>

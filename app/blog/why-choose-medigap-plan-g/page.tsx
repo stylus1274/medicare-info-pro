@@ -118,7 +118,7 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
         },
         {
           heading: "No Network Restrictions",
-          content: `Medigap Plan G gives you the freedom to choose any doctor, specialist, or hospital that accepts Medicare, without the need for referrals or network restrictions. This means you can maintain relationships with your current healthcare providers, even if they're not part of a specific network , which is especially important if you have ongoing medical conditions or require specialized care.`,
+          content: `Medigap Plan G gives you the freedom to choose any doctor, specialist, or hospital that accepts Medicare, without the need for referrals or network restrictions. This means you can maintain relationships with your current healthcare providers, even if they're not part of a specific network, which is especially important if you have ongoing medical conditions or require specialized care. This is one of the key differences covered in our <a href="/original-vs-advantage" class="text-blue-700 underline hover:text-blue-900">Original Medicare vs. Medicare Advantage comparison</a>.`,
         },
       ],
     },
@@ -133,7 +133,7 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
         },
         {
           heading: "Long-Term Savings",
-          content: `By covering most out-of-pocket expenses, including deductibles, copays, and coinsurance, Plan G minimizes your financial burden, allowing you to allocate your resources more efficiently. As medical expenses continue to increase, having a comprehensive plan in place can provide peace of mind and protect your financial well-being.`,
+          content: `By covering most out-of-pocket expenses, including deductibles, copays, and coinsurance, Plan G minimizes your financial burden, allowing you to allocate your resources more efficiently. For a full breakdown of what you can expect to pay in 2026, see our <a href="/costs-at-a-glance" class="text-blue-700 underline hover:text-blue-900">2026 Medicare Costs at a Glance</a> reference guide. As medical expenses continue to increase, having a comprehensive plan in place can provide peace of mind and protect your financial well-being.`,
         },
       ],
     },
