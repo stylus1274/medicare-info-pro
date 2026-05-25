@@ -94,7 +94,7 @@ The 20-employee threshold is based on the total number of employees across your 
         },
         {
           heading: "Under 20 Employees: Enroll During Your IEP",
-          content: `If your employer has fewer than 20 employees, Medicare becomes the primary payer for your healthcare costs at age 65, even if you have employer-sponsored insurance. Your employer plan is designed to pay after Medicare has paid its share. If you have not enrolled in Medicare, your employer plan may calculate its payment as if Medicare had already paid, leaving you responsible for the portion Medicare would have covered. For small-employer workers, the recommendation is clear: enroll in Medicare Part A and Part B during your Initial Enrollment Period at 65.`,
+          content: `If your employer has fewer than 20 employees, Medicare becomes the primary payer for your healthcare costs at age 65, even if you have employer-sponsored insurance. Your employer plan is designed to pay after Medicare has paid its share. If you have not enrolled in Medicare, your employer plan may calculate its payment as if Medicare had already paid, leaving you responsible for the portion Medicare would have covered. For small-employer workers, the recommendation is clear: enroll in Medicare Part A and Part B during your Initial Enrollment Period at 65. Use our <a href="/am-i-eligible" class="text-blue-700 underline hover:text-blue-900">Medicare Eligibility Checker</a> to confirm your eligibility before your birthday month.`,
         },
       ],
     },
@@ -105,7 +105,7 @@ The 20-employee threshold is based on the total number of employees across your 
       subsections: [
         {
           heading: "Enroll in Medicare Part A",
-          content: `Part A (hospital insurance) is premium-free for most people who have worked and paid Medicare taxes for at least 10 years (40 quarters). There is generally no reason to delay Part A enrollment. It costs nothing and provides a secondary layer of hospital coverage. The one exception: if you contribute to a Health Savings Account (HSA), see the section below before enrolling.`,
+          content: `Part A (hospital insurance) is premium-free for most people who have worked and paid Medicare taxes for at least 10 years (40 quarters). There is generally no reason to delay Part A enrollment. It costs nothing and provides a secondary layer of hospital coverage. The one exception: if you contribute to a Health Savings Account (HSA), see the section below before enrolling. For a full breakdown of what Part A and Part B cover, see our <a href="/medicare-101" class="text-blue-700 underline hover:text-blue-900">Medicare 101 overview</a>.`,
         },
         {
           heading: "Delay Medicare Part B",
@@ -181,7 +181,7 @@ Delaying Medicare enrollment while relying on individual or marketplace coverage
       subsections: [
         {
           heading: "Coverage Types That Qualify for a SEP",
-          content: `Active employer group plan coverage from an employer with 20 or more employees qualifies. Coverage as a dependent on a spouse's employer plan from an employer with 20 or more employees also qualifies. Individual marketplace plans, COBRA, retiree health coverage, and self-purchased insurance do not qualify. When in doubt, confirm with your HR department or a licensed Medicare specialist before making your enrollment decision.`,
+          content: `Active employer group plan coverage from an employer with 20 or more employees qualifies. Coverage as a dependent on a spouse's employer plan from an employer with 20 or more employees also qualifies. Individual marketplace plans, COBRA, retiree health coverage, and self-purchased insurance do not qualify. When in doubt, confirm with your HR department or a licensed Medicare specialist before making your enrollment decision. For a side-by-side look at how Original Medicare and Medicare Advantage handle cost-sharing differently, see our <a href="/costs-at-a-glance" class="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</a> guide.`,
         },
       ],
     },

@@ -128,7 +128,7 @@ The only way to enroll after missing your window is through the General Enrollme
       subsections: [
         {
           heading: "Medicare Part A Costs",
-          content: `Most people qualify for premium-free Part A if they or their spouse worked and paid Medicare taxes for at least 40 quarters, which is about 10 years. If you have not worked enough quarters, you will pay a monthly premium. The exact amount depends on how many quarters you have worked. Those with fewer than 30 quarters pay the higher rate. It is worth checking your Social Security earnings record to confirm your work history before assuming you will owe a premium.`,
+          content: `Most people qualify for premium-free Part A if they or their spouse worked and paid Medicare taxes for at least 40 quarters, which is about 10 years. If you have not worked enough quarters, you will pay a monthly premium. The exact amount depends on how many quarters you have worked. Those with fewer than 30 quarters pay the higher rate. It is worth checking your Social Security earnings record to confirm your work history before assuming you will owe a premium. For a full breakdown of 2025 and 2026 premiums and deductibles, see our <a href="/costs-at-a-glance" class="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</a> reference guide.`,
         },
         {
           heading: "Medicare Part B Costs",
@@ -147,7 +147,7 @@ The only way to enroll after missing your window is through the General Enrollme
         },
         {
           heading: "Special Enrollment Periods",
-          content: `A Special Enrollment Period (SEP) allows you to delay Medicare without facing penalties, but only under specific circumstances. The most common qualifying situation is having active health coverage through an employer with 20 or more employees. Once that coverage ends, you have eight months to enroll in Medicare without a penalty. COBRA coverage and retiree health plans do not qualify as a basis for delaying Medicare. If you rely on either of those after leaving an employer, your SEP clock is already running.`,
+          content: `A Special Enrollment Period (SEP) allows you to delay Medicare without facing penalties, but only under specific circumstances. The most common qualifying situation is having active health coverage through an employer with 20 or more employees. Once that coverage ends, you have eight months to enroll in Medicare without a penalty. COBRA coverage and retiree health plans do not qualify as a basis for delaying Medicare. If you rely on either of those after leaving an employer, your SEP clock is already running. For a complete overview of every enrollment window, see our <a href="/enrollment-timeline" class="text-blue-700 underline hover:text-blue-900">Medicare Enrollment Timeline</a>.`,
         },
       ],
     },
@@ -177,7 +177,7 @@ The only way to enroll after missing your window is through the General Enrollme
     {
       type: "summary" as const,
       heading: "Bottom Line",
-      content: `Applying for Medicare without Social Security is entirely manageable once you understand the process. The key is to act within your 7-month Initial Enrollment Period, gather your documents in advance, and choose the application method that works best for your situation. If you have questions about which parts of Medicare to enroll in or how to choose between coverage options, a licensed Medicare specialist can walk you through your specific situation at no cost.`,
+      content: `Applying for Medicare on your own is entirely manageable once you understand the process. The key is to act within your 7-month Initial Enrollment Period, gather your documents in advance, and choose the application method that works best for your situation. If you have questions about which parts of Medicare to enroll in or how to choose between coverage options, a licensed Medicare specialist can walk you through your specific situation at no cost. Once you are enrolled, use our <a href="/first-steps-checklist" class="text-blue-700 underline hover:text-blue-900">First Steps Checklist</a> to make sure you have everything in place before your coverage begins.`,
     },
     {
       type: "faq" as const,
