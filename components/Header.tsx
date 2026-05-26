@@ -43,21 +43,21 @@ const NAV_ITEMS: NavItem[] = [
     },
   },
   {
-    label: "Medicare Plans", href: "/pillar-page",
+    label: "Medicare Plans", href: "/medicare-advantage",
     megaMenu: {
-      featured: { title: "Find the Right Plan", desc: "Compare every Medicare plan type side by side with unbiased guidance from licensed agents.", cta: "Compare All Plans", href: "/pillar-page" },
+      featured: { title: "Find the Right Plan", desc: "Compare every Medicare plan type side by side with unbiased guidance from licensed agents.", cta: "Compare All Plans", href: "/medicare-advantage" },
       columns: [
         { heading: "Original Medicare", links: [
-          { label: "Part A — Hospital", href: "/pillar-page", desc: "Inpatient coverage" },
-          { label: "Part B — Medical", href: "/pillar-page", desc: "Doctor visits & outpatient" },
-          { label: "Medigap Supplements", href: "/pillar-page", desc: "Fill the gaps" },
-          { label: "Part D Drug Plans", href: "/pillar-page", desc: "Prescription coverage" },
+          { label: "Part A — Hospital", href: "/medicare-part-a", desc: "Inpatient coverage" },
+          { label: "Part B — Medical", href: "/medicare-part-b", desc: "Doctor visits & outpatient" },
+          { label: "Medigap Supplements", href: "/do-i-need-a-supplement", desc: "Fill the gaps" },
+          { label: "Part D Drug Plans", href: "/understanding-part-d", desc: "Prescription coverage" },
         ]},
         { heading: "Medicare Advantage", links: [
-          { label: "HMO Plans", href: "/pillar-page", desc: "Network-based coverage" },
-          { label: "PPO Plans", href: "/pillar-page", desc: "More provider flexibility" },
-          { label: "SNP Plans", href: "/pillar-page", desc: "Special needs plans" },
-          { label: "Compare Plan Types", href: "/pillar-page", desc: "See all options" },
+          { label: "HMO Plans", href: "/plan-types/hmo", desc: "Network-based coverage" },
+          { label: "PPO Plans", href: "/plan-types/ppo", desc: "More provider flexibility" },
+          { label: "SNP Plans", href: "/plan-types/snp", desc: "Special needs plans" },
+          { label: "Compare Plan Types", href: "/original-vs-advantage", desc: "See all options" },
         ]},
       ],
     },
@@ -90,7 +90,7 @@ const NAV_ITEMS: NavItem[] = [
         { heading: "Common Questions", links: [
           { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
           { label: "Vision & Hearing", href: "/coverage/vision", desc: "Exams, aids & more" },
-          { label: "Prescription Drugs", href: "/coverage/prescription-drugs", desc: "Formulary & tiers" },
+          { label: "Prescription Drugs", href: "/coverage-qa", desc: "Formulary & tiers" },
           { label: "Mental Health", href: "/coverage-qa", desc: "Therapy & counseling" },
         ]},
         { heading: "Specialized Care", links: [
