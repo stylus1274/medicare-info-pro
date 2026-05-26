@@ -69,7 +69,7 @@ const TEAM_MEMBER = {
   title: "Licensed Medicare Specialist",
   credentials: "Licensed in FL, GA, NC, AR, KS, TX",
   photo:
-    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl-author_kbxfzwfm.jpg",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
   bio: "Greg Wohl founded Medicare Information Project with a simple mission: give Florida seniors the same quality Medicare guidance that used to be available only to people with connections in the insurance industry. After years in the field, Greg saw how often beneficiaries enrolled in the wrong plan simply because they did not have access to unbiased, comprehensive information. Today, he and his team serve clients across six states, representing 17 carriers and 149 Medicare products.",
 };
 

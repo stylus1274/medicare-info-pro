@@ -103,7 +103,7 @@ const AGENT = {
   phone: "813-699-5559",
   email: "greg@medicareinfopro.com",
   photo:
-    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl-author_kbxfzwfm.jpg",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
   bio: "Greg Wohl has been helping Florida seniors navigate Medicare for over a decade. As an independent agent, he represents 17 insurance organizations and is committed to finding the right fit for each client -- not the highest commission. Greg is based in Brandon, FL and serves clients throughout Florida and five additional states.",
   highlights: [
     "BBB A+ Rated business",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl-author_kbxfzwfm.jpg",
+        url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
         width: 1200,
         height: 630,
         alt: "Greg Wohl, Licensed Medicare Specialist at Medicare Information Project",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Work with an independent, licensed Medicare agent. Free consultations, no pressure, 17 carriers represented.",
     images: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl-author_kbxfzwfm.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
     ],
   },
   alternates: {
