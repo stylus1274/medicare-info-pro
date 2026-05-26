@@ -21,6 +21,7 @@ import {
   DollarSign,
   Shield,
   Hospital,
+  MapPin,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -124,6 +125,7 @@ const TOC = [
   { id: "eligibility", label: "Eligibility and Enrollment" },
   { id: "part-a-vs-advantage", label: "Part A with Medicare Advantage" },
   { id: "faq", label: "Frequently Asked Questions" },
+  { id: "tampa", label: "Medicare Part A in Tampa, FL" },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -315,6 +317,35 @@ export default function MedicarePartAClient() {
                 {FAQ_ITEMS.map((item) => (
                   <FaqItem key={item.q} q={item.q} a={item.a} />
                 ))}
+              </div>
+            </section>
+
+            {/* Local Section -- Tampa / Hillsborough County */}
+            <section id="tampa">
+              <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
+                Medicare Part A in Tampa and Hillsborough County, FL
+              </h2>
+              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                Most Tampa and Hillsborough County residents qualify for premium-free Medicare Part A if they or their spouse worked and paid Medicare taxes for at least 10 years. If you are approaching 65 and have worked in the United States for most of your career, there is a strong chance your Part A coverage will cost you nothing in monthly premiums.
+              </p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                Tampa Bay is home to several major hospital systems that accept Medicare, including Tampa General Hospital, AdventHealth Tampa, St. Joseph's Hospital, and HCA Florida Brandon Hospital. Understanding your Part A benefits before a hospital stay helps you know exactly what you will owe and what the plan covers.
+              </p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                One area where Tampa residents frequently need guidance is the distinction between inpatient admission and observation status. A hospital can keep you overnight for days while classifying your stay as "observation" rather than inpatient -- which means Part A does not apply and you may owe significantly more out of pocket. A licensed Medicare advisor can help you understand your rights and what questions to ask your hospital.
+              </p>
+              <div className="rounded-xl border border-[#c9a84c]/30 bg-[#fdf8ee] px-5 py-4 flex items-start gap-3">
+                <MapPin size={16} className="text-[#c9a84c] flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-bold text-gray-900 mb-1">Serving Tampa Bay and Hillsborough County</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Greg Wohl and the Medicare Information Pro team serve beneficiaries throughout Tampa, Brandon, Riverview, Valrico, Apollo Beach, Sun City Center, Plant City, and surrounding Hillsborough County communities. Consultations are free and available by phone or in person.
+                  </p>
+                  <a href="tel:+18137428888" className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-[#0d1f5c] hover:underline">
+                    <Phone size={13} />
+                    Call (813) 742-8888
+                  </a>
+                </div>
               </div>
             </section>
 
