@@ -347,7 +347,7 @@ export default function HearingAidsCoverageClient() {
               </div>
               <div className="px-5 py-5 space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#0d1f5c]/10 flex items-center justify-center text-[#0d1f5c] font-bold text-sm">GW</div>
+                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl-author_kbxfzwfm.jpg" alt="Greg Wohl, Licensed Medicare Advisor" className="w-10 h-10 rounded-full object-cover" />
                   <div>
                     <p className="text-sm font-bold text-gray-900">Greg Wohl</p>
                     <p className="text-xs text-gray-500">Licensed Medicare Advisor</p>
