@@ -73,8 +73,8 @@ const WHAT_NOT_COVERED = [
   "Custodial care in a nursing home",
 ];
 
-const COSTS_2025 = [
-  { item: "Part A Premium", value: "$0 for most people (40+ quarters worked)", note: "$278/mo for 30-39 quarters; $505/mo for fewer than 30 quarters" },
+const COSTS_2026 = [
+  { item: "Part A Premium", value: "$0 for most people (40+ quarters worked)", note: "$285/mo for 30-39 quarters; $518/mo for fewer than 30 quarters" },
   { item: "Inpatient Deductible", value: "$1,676 per benefit period", note: "Applies once per benefit period, not once per year" },
   { item: "Hospital Coinsurance (Days 1-60)", value: "$0", note: "Fully covered after deductible" },
   { item: "Hospital Coinsurance (Days 61-90)", value: "$419/day", note: "Per day coinsurance" },
@@ -85,7 +85,7 @@ const COSTS_2025 = [
 const FAQ_ITEMS = [
   {
     q: "Is Medicare Part A free?",
-    a: "Most people pay no premium for Part A because they or their spouse worked and paid Medicare taxes for at least 40 quarters (10 years). If you have fewer than 40 quarters, you will pay a monthly premium. In 2025, the premium is $278/month for 30-39 quarters and $505/month for fewer than 30 quarters.",
+    a: "Most people pay no premium for Part A because they or their spouse worked and paid Medicare taxes for at least 40 quarters (10 years). If you have fewer than 40 quarters, you will pay a monthly premium. In 2026, the premium is $285/month for 30-39 quarters and $518/month for fewer than 30 quarters.",
   },
   {
     q: "When does Medicare Part A coverage begin?",
@@ -97,7 +97,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Does Part A cover skilled nursing facility stays?",
-    a: "Yes, but with conditions. You must have a qualifying inpatient hospital stay of at least 3 days (not counting the discharge day). Part A covers the full cost for days 1-20 in the SNF. Days 21-100 require a daily coinsurance of $209.50 in 2025. After day 100, Medicare pays nothing.",
+    a: "Yes, but with conditions. You must have a qualifying inpatient hospital stay of at least 3 days (not counting the discharge day). Part A covers the full cost for days 1-20 in the SNF. Days 21-100 require a daily coinsurance of $215.00 in 2026. After day 100, Medicare pays nothing.",
   },
   {
     q: "What is the difference between inpatient and observation status?",
@@ -113,7 +113,7 @@ const RELATED_LINKS = [
   { label: "Medicare Part B: Medical Insurance", href: "/medicare-part-b", desc: "Doctor visits, outpatient care, and preventive services" },
   { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The complete beginner's guide to all parts of Medicare" },
   { label: "Enrollment Timeline", href: "/enrollment-timeline", desc: "Key dates and deadlines for enrolling in Medicare" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2025 and 2026 premiums, deductibles, and coinsurance" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums, deductibles, and coinsurance" },
   { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "How Medigap fills Part A cost gaps" },
 ];
 
@@ -121,7 +121,7 @@ const TOC = [
   { id: "what-is", label: "What Is Part A?" },
   { id: "what-covered", label: "What Part A Covers" },
   { id: "what-not-covered", label: "What Is Not Covered" },
-  { id: "costs", label: "2025 Costs" },
+  { id: "costs", label: "2026 Costs" },
   { id: "eligibility", label: "Eligibility and Enrollment" },
   { id: "part-a-vs-advantage", label: "Part A with Medicare Advantage" },
   { id: "faq", label: "Frequently Asked Questions" },
@@ -161,7 +161,7 @@ export default function MedicarePartAClient() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
               {[
                 { icon: <DollarSign size={16} />, stat: "$0", label: "Premium for most" },
-                { icon: <Hospital size={16} />, stat: "$1,676", label: "2025 deductible" },
+                { icon: <Hospital size={16} />, stat: "$1,676", label: "2026 deductible" },
                 { icon: <Shield size={16} />, stat: "100 days", label: "Max SNF coverage" },
                 { icon: <Clock size={16} />, stat: "7 months", label: "Initial enrollment window" },
               ].map((item) => (
@@ -243,7 +243,7 @@ export default function MedicarePartAClient() {
             {/* Costs */}
             <section id="costs">
               <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-                Medicare Part A Costs in 2025
+                Medicare Part A Costs in 2026
               </h2>
               <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
                 <table className="w-full text-sm">
@@ -255,7 +255,7 @@ export default function MedicarePartAClient() {
                     </tr>
                   </thead>
                   <tbody>
-                    {COSTS_2025.map((row, i) => (
+                    {COSTS_2026.map((row, i) => (
                       <tr key={row.item} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                         <td className="px-5 py-3 font-semibold text-gray-800">{row.item}</td>
                         <td className="px-5 py-3 text-gray-700">{row.value}</td>
@@ -266,7 +266,7 @@ export default function MedicarePartAClient() {
                 </table>
               </div>
               <p className="text-xs text-gray-400 mt-2">
-                Source: Centers for Medicare and Medicaid Services, 2025. For the full cost reference including Part B, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
+                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part B, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
               </p>
             </section>
 
