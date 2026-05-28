@@ -467,7 +467,7 @@ export default function PPOPlansClient() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#c9a84c]">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/31e0f2a3-1c0b-4e0f-b9e3-2a4c5d6e7f8a/greg-wohl-author_kbxfzwfm.png"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_0f68a894.png"
                   alt="Greg Wohl"
                   className="w-full h-full object-cover object-top"
                 />
