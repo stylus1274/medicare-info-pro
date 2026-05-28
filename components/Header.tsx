@@ -90,7 +90,7 @@ const NAV_ITEMS: NavItem[] = [
         { heading: "Common Questions", links: [
           { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
           { label: "Vision & Hearing", href: "/coverage/vision", desc: "Exams, aids & more" },
-          { label: "Prescription Drugs", href: "/coverage-qa", desc: "Formulary & tiers" },
+          { label: "Prescription Drugs", href: "/coverage/prescription-drugs", desc: "Formulary & tiers" },
           { label: "Mental Health", href: "/coverage-qa", desc: "Therapy & counseling" },
         ]},
         { heading: "Specialized Care", links: [
