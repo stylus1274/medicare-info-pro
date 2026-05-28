@@ -96,7 +96,7 @@ const NAV_ITEMS: NavItem[] = [
         { heading: "Specialized Care", links: [
           { label: "Cancer Treatment", href: "/coverage/cancer-treatment", desc: "Chemo, radiation & more" },
           { label: "Physical Therapy", href: "/coverage/physical-therapy", desc: "Rehab & recovery" },
-          { label: "Medical Equipment", href: "/coverage-qa", desc: "DME coverage rules" },
+          { label: "Medical Equipment", href: "/coverage/medical-equipment", desc: "DME coverage rules" },
           { label: "Skilled Nursing", href: "/coverage-qa", desc: "Post-hospital care" },
         ]},
       ],
