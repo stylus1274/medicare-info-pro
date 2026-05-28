@@ -660,6 +660,7 @@ export default function EnrollmentTimelineClient() {
                     {enrollmentPeriods.map((period, i) => (
                       <motion.div
                         key={period.id}
+                        id={period.id}
                         variants={fadeUp}
                         initial="hidden"
                         whileInView="visible"
@@ -768,6 +769,7 @@ export default function EnrollmentTimelineClient() {
                     {penalties.map((p) => (
                       <div
                         key={p.part}
+                        id={`penalty-${p.part.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
                         className={`${p.lightBg} border ${p.borderColor} rounded-2xl p-5`}
                       >
                         <div

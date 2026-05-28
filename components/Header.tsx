@@ -68,14 +68,14 @@ const NAV_ITEMS: NavItem[] = [
       featured: { title: "Don't Miss Your Window", desc: "Missed deadlines can mean permanent penalties. Let us help you stay on track.", cta: "Check My Dates", href: "/enrollment-timeline" },
       columns: [
         { heading: "Enrollment Periods", links: [
-          { label: "Turning 65", href: "/enrollment-timeline", desc: "Initial enrollment window" },
-          { label: "Annual Enrollment", href: "/enrollment-timeline", desc: "Oct 15 – Dec 7 each year" },
-          { label: "Special Enrollment", href: "/enrollment-timeline", desc: "Qualifying life events" },
-          { label: "Open Enrollment", href: "/enrollment-timeline", desc: "Jan 1 – Mar 31 each year" },
+          { label: "Turning 65", href: "/enrollment-timeline#iep", desc: "Initial enrollment window" },
+          { label: "Annual Enrollment", href: "/enrollment-timeline#aep", desc: "Oct 15 – Dec 7 each year" },
+          { label: "Special Enrollment", href: "/enrollment-timeline#sep", desc: "Qualifying life events" },
+          { label: "Open Enrollment", href: "/enrollment-timeline#oepa", desc: "Jan 1 – Mar 31 each year" },
         ]},
         { heading: "Avoid Penalties", links: [
-          { label: "Part B Late Penalty", href: "/enrollment-timeline", desc: "10% per year late" },
-          { label: "Part D Late Penalty", href: "/enrollment-timeline", desc: "1% per month late" },
+          { label: "Part B Late Penalty", href: "/enrollment-timeline#penalty-partb", desc: "10% per year late" },
+          { label: "Part D Late Penalty", href: "/enrollment-timeline#penalty-partd", desc: "1% per month late" },
           { label: "Working Past 65", href: "/blog/working-past-65", desc: "Employer coverage rules" },
           { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
         ]},
