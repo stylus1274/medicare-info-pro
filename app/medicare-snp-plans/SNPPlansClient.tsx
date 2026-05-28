@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   SNPPlansClient -- /medicare-snp-plans
-   Medicare Special Needs Plans (SNP) -- Comprehensive Guide
-   Design: MIP brand -- navy/gold, pillar-style two-column editorial layout
+   SNPPlansClient: /medicare-snp-plans
+   Medicare Special Needs Plans (SNP): Comprehensive Guide
+   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
    No em dashes anywhere in this file.
    All cost figures are 2026.
    Brandon listed first in local signals.

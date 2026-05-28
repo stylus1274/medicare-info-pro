@@ -61,7 +61,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Most Medicare Advantage plans include Part D drug coverage (called MAPD plans). If your Advantage plan includes drug coverage, you do not need a separate Part D plan. A small number of Advantage plans do not include drug coverage -- in that case you can enroll in a standalone PDP.",
+      "Most Medicare Advantage plans include Part D drug coverage (called MAPD plans). If your Advantage plan includes drug coverage, you do not need a separate Part D plan. A small number of Advantage plans do not include drug coverage: in that case you can enroll in a standalone PDP.",
   },
   {
     plan: "Medigap (Medicare Supplement)",
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     q: "What is the Part D deductible in 2026?",
-    a: "The maximum Part D deductible in 2026 is $590. Not all plans charge the full deductible -- some plans waive it for lower-tier drugs. Check the specific plan's Evidence of Coverage for exact deductible amounts.",
+    a: "The maximum Part D deductible in 2026 is $590. Not all plans charge the full deductible: some plans waive it for lower-tier drugs. Check the specific plan's Evidence of Coverage for exact deductible amounts.",
   },
   {
     q: "What is the Part D out-of-pocket cap in 2026?",
@@ -148,7 +148,7 @@ export default function PrescriptionDrugsClient() {
             Does Medicare Cover Prescription Drugs?
           </h1>
           <p className="text-blue-100 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
-            Original Medicare covers very few outpatient drugs. Part D fills that gap -- but enrollment timing and plan selection matter significantly for your costs.
+            Original Medicare covers very few outpatient drugs. Part D fills that gap: but enrollment timing and plan selection matter significantly for your costs.
           </p>
 
           {/* Quick Answer Banner */}
@@ -228,10 +228,10 @@ export default function PrescriptionDrugsClient() {
                     Medicare Part D is a voluntary prescription drug benefit offered through private insurance companies that contract with Medicare. Plans vary by premium, deductible, formulary (list of covered drugs), and pharmacy network. Every Part D plan must cover at least two drugs in each drug category, but the specific drugs and cost-sharing tiers differ between plans.
                   </p>
                   <p>
-                    Part D plans use a formulary -- a tiered list of covered drugs. Each tier has a different cost-sharing amount. Generic drugs are typically in lower tiers with lower copays, while specialty drugs are in higher tiers with higher coinsurance. Before enrolling, you should verify that your specific medications are on the plan's formulary and check which tier they fall in.
+                    Part D plans use a formulary: a tiered list of covered drugs. Each tier has a different cost-sharing amount. Generic drugs are typically in lower tiers with lower copays, while specialty drugs are in higher tiers with higher coinsurance. Before enrolling, you should verify that your specific medications are on the plan's formulary and check which tier they fall in.
                   </p>
                   <p>
-                    The Part D late enrollment penalty applies if you go 63 or more consecutive days without creditable drug coverage after your Initial Enrollment Period ends. The penalty is 1% of the national base beneficiary premium for each month without coverage, added permanently to your monthly Part D premium. At 2026 rates, even a 12-month gap adds roughly $3.70 per month -- permanently.
+                    The Part D late enrollment penalty applies if you go 63 or more consecutive days without creditable drug coverage after your Initial Enrollment Period ends. The penalty is 1% of the national base beneficiary premium for each month without coverage, added permanently to your monthly Part D premium. At 2026 rates, even a 12-month gap adds roughly $3.70 per month: permanently.
                   </p>
                 </div>
 
@@ -241,7 +241,7 @@ export default function PrescriptionDrugsClient() {
                   <div>
                     <p className="font-bold text-amber-900 mb-1">The Late Enrollment Penalty Is Permanent</p>
                     <p className="text-amber-800 text-sm leading-relaxed">
-                      Unlike a one-time fee, the Part D penalty is added to your monthly premium for as long as you have Part D coverage. Enrolling on time -- or maintaining creditable coverage through an employer plan -- is the only way to avoid it. See the full{" "}
+                      Unlike a one-time fee, the Part D penalty is added to your monthly premium for as long as you have Part D coverage. Enrolling on time: or maintaining creditable coverage through an employer plan: is the only way to avoid it. See the full{" "}
                       <Link href="/enrollment-timeline#penalty-partd" className="underline font-medium hover:text-amber-900">
                         Part D penalty explanation
                       </Link>.
@@ -323,7 +323,7 @@ export default function PrescriptionDrugsClient() {
                     {
                       icon: Info,
                       title: "$590 Maximum Deductible",
-                      desc: "The maximum Part D deductible in 2026 is $590. Not all plans charge the maximum -- some plans waive the deductible for lower-tier drugs. Compare plans carefully during AEP.",
+                      desc: "The maximum Part D deductible in 2026 is $590. Not all plans charge the maximum: some plans waive the deductible for lower-tier drugs. Compare plans carefully during AEP.",
                       color: "bg-amber-50 border-amber-200",
                       iconColor: "text-amber-600",
                     },
@@ -373,13 +373,13 @@ export default function PrescriptionDrugsClient() {
                   </div>
                   <div className="prose prose-sm prose-gray max-w-none text-gray-700 space-y-3">
                     <p>
-                      Hillsborough County residents have access to a wide range of Part D standalone plans and Medicare Advantage plans with drug coverage. The number of available plans varies by ZIP code -- residents in Brandon, Riverview, and Valrico typically have 20 or more Part D plan options during the Annual Enrollment Period.
+                      Hillsborough County residents have access to a wide range of Part D standalone plans and Medicare Advantage plans with drug coverage. The number of available plans varies by ZIP code: residents in Brandon, Riverview, and Valrico typically have 20 or more Part D plan options during the Annual Enrollment Period.
                     </p>
                     <p>
                       Formularies change every year. A drug that was covered at a low tier in 2025 may have moved to a higher tier or been removed from the formulary entirely in 2026. This is why reviewing your plan annually during AEP (October 15 through December 7) is critical, even if you are happy with your current plan.
                     </p>
                     <p>
-                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare Part D plans side by side, verify that their specific medications are covered, and identify the plan with the lowest total annual drug cost -- not just the lowest premium. Call (813) 742-8888 for a no-cost plan comparison.
+                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare Part D plans side by side, verify that their specific medications are covered, and identify the plan with the lowest total annual drug cost: not just the lowest premium. Call (813) 742-8888 for a no-cost plan comparison.
                     </p>
                   </div>
                 </div>
@@ -533,7 +533,7 @@ export default function PrescriptionDrugsClient() {
             Get a Free Part D Plan Comparison
           </h2>
           <p className="text-blue-200 mb-8 max-w-xl mx-auto">
-            Greg Wohl compares every Part D plan available in your ZIP code and shows you the total annual cost -- premium plus your actual drug costs -- so you can make an informed decision.
+            Greg Wohl compares every Part D plan available in your ZIP code and shows you the total annual cost: premium plus your actual drug costs: so you can make an informed decision.
           </p>
           <a
             href="tel:+18137428888"

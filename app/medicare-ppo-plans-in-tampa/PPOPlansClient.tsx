@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   PPOPlansClient -- /medicare-ppo-plans-in-tampa
-   Medicare PPO Plans in Tampa, FL -- Comprehensive Guide
-   Design: MIP brand -- navy/gold, pillar-style two-column editorial layout
+   PPOPlansClient: /medicare-ppo-plans-in-tampa
+   Medicare PPO Plans in Tampa, FL: Comprehensive Guide
+   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
    No em dashes anywhere in this file.
    All cost figures are 2026.
    Brandon listed first in local signals.
@@ -68,7 +68,7 @@ const CONS = [
   { title: "Out-of-network costs add up", desc: "Using out-of-network providers is allowed but can result in significantly higher cost sharing." },
   { title: "More complex cost structure", desc: "In-network vs. out-of-network deductibles and coinsurance rates can be confusing to navigate." },
   { title: "Not always $0 premium", desc: "Unlike many HMO plans, PPO plans in Tampa may carry a monthly premium even after Part B." },
-  { title: "Formulary still applies", desc: "Prescription drug coverage follows a plan formulary -- your specific medications may cost more on some plans." },
+  { title: "Formulary still applies", desc: "Prescription drug coverage follows a plan formulary: your specific medications may cost more on some plans." },
 ];
 
 const COMPARISON_ROWS = [
@@ -151,7 +151,7 @@ export default function PPOPlansClient() {
             Medicare PPO Plans in Tampa, FL
           </h1>
           <p className="text-white/80 text-base max-w-2xl mb-6">
-            Preferred Provider Organization plans give you the freedom to see any doctor or specialist without a referral -- and even use out-of-network providers. Here is everything you need to know about Medicare PPO plans available in Brandon, Tampa, and Hillsborough County in 2026.
+            Preferred Provider Organization plans give you the freedom to see any doctor or specialist without a referral: and even use out-of-network providers. Here is everything you need to know about Medicare PPO plans available in Brandon, Tampa, and Hillsborough County in 2026.
           </p>
           <div className="flex items-center gap-4 text-xs text-white/50">
             <span>Updated for 2026</span>
@@ -194,7 +194,7 @@ export default function PPOPlansClient() {
               A Medicare PPO plan is a type of Medicare Advantage (Part C) plan offered by private insurance companies approved by Medicare. PPO stands for Preferred Provider Organization. Like all Medicare Advantage plans, a PPO replaces your Original Medicare (Parts A and B) and usually includes prescription drug coverage (Part D) as well.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              What sets a PPO apart from other plan types is flexibility. You are not required to choose a primary care doctor, you do not need referrals to see specialists, and you can receive care from providers outside the plan network -- though staying in-network will cost you less.
+              What sets a PPO apart from other plan types is flexibility. You are not required to choose a primary care doctor, you do not need referrals to see specialists, and you can receive care from providers outside the plan network: though staying in-network will cost you less.
             </p>
             <div className="rounded-xl border border-blue-100 bg-blue-50 px-5 py-4 flex items-start gap-3">
               <Info size={16} className="text-blue-600 flex-shrink-0 mt-0.5" />
@@ -388,7 +388,7 @@ export default function PPOPlansClient() {
             </div>
           </section>
 
-          {/* Local Section -- Brandon and Tampa */}
+          {/* Local Section: Brandon and Tampa */}
           <section id="tampa">
             <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
               Medicare PPO Plans in Brandon and Tampa, FL
@@ -421,7 +421,7 @@ export default function PPOPlansClient() {
           <div className="rounded-2xl bg-[#0d1f5c] text-white px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div className="flex-1">
               <p className="text-lg font-bold mb-1">Ready to Compare PPO Plans in Your Area?</p>
-              <p className="text-sm text-white/70">A licensed Medicare specialist can show you every PPO plan available at your address -- at no cost to you.</p>
+              <p className="text-sm text-white/70">A licensed Medicare specialist can show you every PPO plan available at your address: at no cost to you.</p>
             </div>
             <div className="flex flex-col gap-2 flex-shrink-0">
               <a

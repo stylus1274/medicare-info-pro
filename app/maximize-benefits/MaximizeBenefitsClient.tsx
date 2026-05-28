@@ -745,7 +745,7 @@ export default function MaximizeBenefitsClient() {
                     Medicare Information Project
                   </h3>
                   <p className="text-[#1a3fa8] text-sm font-medium mb-2">
-                    Licensed Independent Medicare Agents -- Brandon, FL
+                    Licensed Independent Medicare Agents: Brandon, FL
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     The Medicare Information Project team consists of licensed, independent Medicare agents serving Florida, Georgia, North Carolina, Arkansas, Kansas, and Texas. We represent 17 organizations offering 149 products in our service area. Our mission is to provide clear, unbiased Medicare guidance at no cost to beneficiaries.

@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   MedicareAdvantagePillarClient -- /medicare-advantage
+   MedicareAdvantagePillarClient: /medicare-advantage
    Pillar / cornerstone page: Medicare Advantage (Part C) Complete Guide
-   Design: MIP brand -- navy/gold, editorial two-column layout with sticky TOC
+   Design: MIP brand: navy/gold, editorial two-column layout with sticky TOC
    No em dashes used anywhere in this file.
    ========================================================================== */
 

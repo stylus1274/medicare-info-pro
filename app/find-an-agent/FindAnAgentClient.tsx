@@ -77,7 +77,7 @@ const PROCESS_STEPS = [
   {
     step: "1",
     title: "Call or Request a Consultation",
-    body: "Reach out by phone or fill out our contact form. We will schedule a convenient time to talk -- by phone, video call, or in person at our Brandon, FL office.",
+    body: "Reach out by phone or fill out our contact form. We will schedule a convenient time to talk: by phone, video call, or in person at our Brandon, FL office.",
   },
   {
     step: "2",
@@ -104,7 +104,7 @@ const AGENT = {
   email: "greg@medicareinfopro.com",
   photo:
     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
-  bio: "Greg Wohl has been helping Florida seniors navigate Medicare for over a decade. As an independent agent, he represents 17 insurance organizations and is committed to finding the right fit for each client -- not the highest commission. Greg is based in Brandon, FL and serves clients throughout Florida and five additional states.",
+  bio: "Greg Wohl has been helping Florida seniors navigate Medicare for over a decade. As an independent agent, he represents 17 insurance organizations and is committed to finding the right fit for each client: not the highest commission. Greg is based in Brandon, FL and serves clients throughout Florida and five additional states.",
   highlights: [
     "BBB A+ Rated business",
     "17 carriers represented",
@@ -130,7 +130,7 @@ export default function FindAnAgentClient() {
             Find a Licensed Medicare Agent Near You
           </h1>
           <p className="text-blue-200 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Get personalized, unbiased Medicare guidance from an independent agent who represents all major carriers -- at no cost to you.
+            Get personalized, unbiased Medicare guidance from an independent agent who represents all major carriers: at no cost to you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

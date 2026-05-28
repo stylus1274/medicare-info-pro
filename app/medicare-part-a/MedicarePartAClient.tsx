@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   MedicarePartAClient -- /medicare-part-a
-   Medicare Part A: Hospital Insurance -- Complete Guide
-   Design: MIP brand -- navy/gold, pillar-style two-column editorial layout
+   MedicarePartAClient: /medicare-part-a
+   Medicare Part A: Hospital Insurance: Complete Guide
+   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
    No em dashes anywhere in this file.
    ========================================================================== */
 
@@ -320,7 +320,7 @@ export default function MedicarePartAClient() {
               </div>
             </section>
 
-            {/* Local Section -- Tampa / Hillsborough County */}
+            {/* Local Section: Tampa / Hillsborough County */}
             <section id="tampa">
               <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
                 Medicare Part A in Tampa and Hillsborough County, FL
@@ -332,7 +332,7 @@ export default function MedicarePartAClient() {
                 Tampa Bay is home to several major hospital systems that accept Medicare, including Tampa General Hospital, AdventHealth Tampa, St. Joseph's Hospital, and HCA Florida Brandon Hospital. Understanding your Part A benefits before a hospital stay helps you know exactly what you will owe and what the plan covers.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                One area where Tampa residents frequently need guidance is the distinction between inpatient admission and observation status. A hospital can keep you overnight for days while classifying your stay as "observation" rather than inpatient -- which means Part A does not apply and you may owe significantly more out of pocket. A licensed Medicare advisor can help you understand your rights and what questions to ask your hospital.
+                One area where Tampa residents frequently need guidance is the distinction between inpatient admission and observation status. A hospital can keep you overnight for days while classifying your stay as "observation" rather than inpatient: which means Part A does not apply and you may owe significantly more out of pocket. A licensed Medicare advisor can help you understand your rights and what questions to ask your hospital.
               </p>
               <div className="rounded-xl border border-[#c9a84c]/30 bg-[#fdf8ee] px-5 py-4 flex items-start gap-3">
                 <MapPin size={16} className="text-[#c9a84c] flex-shrink-0 mt-0.5" />

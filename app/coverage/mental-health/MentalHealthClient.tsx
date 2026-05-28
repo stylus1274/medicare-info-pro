@@ -42,7 +42,7 @@ const planCoverage = [
     color: "bg-amber-50 border-amber-300",
     badgeColor: "bg-amber-500",
     details:
-      "Original Medicare covers a broad range of mental health services. Part A covers inpatient psychiatric hospital stays (up to 190 lifetime days in a freestanding psychiatric facility, unlimited days in a general hospital). Part B covers outpatient mental health services including therapy, counseling, psychiatric evaluations, and medication management visits -- but you pay 20% coinsurance after the Part B deductible.",
+      "Original Medicare covers a broad range of mental health services. Part A covers inpatient psychiatric hospital stays (up to 190 lifetime days in a freestanding psychiatric facility, unlimited days in a general hospital). Part B covers outpatient mental health services including therapy, counseling, psychiatric evaluations, and medication management visits: but you pay 20% coinsurance after the Part B deductible.",
   },
   {
     plan: "Medicare Advantage (Part C)",
@@ -51,7 +51,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medicare Advantage plans must cover everything Original Medicare covers, including mental health services. Many plans offer additional benefits such as lower copays for therapy visits, telehealth mental health sessions, and wellness programs. Network restrictions apply -- you typically must use in-network providers.",
+      "Medicare Advantage plans must cover everything Original Medicare covers, including mental health services. Many plans offer additional benefits such as lower copays for therapy visits, telehealth mental health sessions, and wellness programs. Network restrictions apply: you typically must use in-network providers.",
   },
   {
     plan: "Medigap (Medicare Supplement)",
@@ -60,7 +60,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans help cover the 20% coinsurance you owe after Original Medicare pays its share for outpatient mental health services. Plan G, for example, covers the Part B coinsurance entirely after the annual deductible. Medigap does not add new mental health benefits -- it reduces your out-of-pocket costs for services Medicare already covers.",
+      "Medigap plans help cover the 20% coinsurance you owe after Original Medicare pays its share for outpatient mental health services. Plan G, for example, covers the Part B coinsurance entirely after the annual deductible. Medigap does not add new mental health benefits: it reduces your out-of-pocket costs for services Medicare already covers.",
   },
   {
     plan: "Medicare Part D",
@@ -105,7 +105,7 @@ const faqs = [
   },
   {
     q: "Does Medicare cover inpatient psychiatric care?",
-    a: "Yes, with an important limitation. Part A covers inpatient psychiatric care in a general hospital with no day limit. However, care in a freestanding psychiatric hospital is limited to 190 lifetime days. Once you exhaust those 190 days, Medicare will not cover additional inpatient psychiatric hospital stays -- though general hospital stays remain covered.",
+    a: "Yes, with an important limitation. Part A covers inpatient psychiatric care in a general hospital with no day limit. However, care in a freestanding psychiatric hospital is limited to 190 lifetime days. Once you exhaust those 190 days, Medicare will not cover additional inpatient psychiatric hospital stays: though general hospital stays remain covered.",
   },
   {
     q: "Does Medicare cover substance use disorder treatment?",
@@ -155,10 +155,10 @@ export default function MentalHealthClient() {
             Does Medicare Cover Mental Health?
           </h1>
           <p className="text-blue-100 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
-            Medicare covers a wide range of mental health services -- but cost-sharing can be significant without the right supplemental coverage.
+            Medicare covers a wide range of mental health services: but cost-sharing can be significant without the right supplemental coverage.
           </p>
 
-          {/* Quick Answer Banner -- compact inline style */}
+          {/* Quick Answer Banner: compact inline style */}
           <div
             id="quick-answer"
             className="flex items-start gap-3 px-5 py-4 rounded-xl border max-w-2xl"

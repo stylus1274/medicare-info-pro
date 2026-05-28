@@ -28,7 +28,7 @@ const VALUES = [
   {
     icon: Shield,
     title: "Independence",
-    body: "We are not captive agents. We represent 17 insurance organizations and recommend the plan that is right for you -- not the one that pays the highest commission.",
+    body: "We are not captive agents. We represent 17 insurance organizations and recommend the plan that is right for you: not the one that pays the highest commission.",
   },
   {
     icon: BookOpen,
@@ -43,7 +43,7 @@ const VALUES = [
   {
     icon: Users,
     title: "Long-Term Relationships",
-    body: "Our job does not end when you enroll. We are your Medicare resource year-round -- for billing questions, coverage issues, and annual plan reviews.",
+    body: "Our job does not end when you enroll. We are your Medicare resource year-round: for billing questions, coverage issues, and annual plan reviews.",
   },
   {
     icon: Award,
@@ -121,7 +121,7 @@ export default function AboutClient() {
                 Medicare is one of the most important financial and healthcare decisions a person will make. Yet most beneficiaries navigate it alone, relying on confusing government websites, misleading TV commercials, or high-pressure sales calls.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We started Medicare Information Project to change that. Our mission is to provide every Medicare beneficiary with the same quality of guidance that was once available only to people with connections in the insurance industry -- clear, honest, and completely free.
+                We started Medicare Information Project to change that. Our mission is to provide every Medicare beneficiary with the same quality of guidance that was once available only to people with connections in the insurance industry: clear, honest, and completely free.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 We are independent agents, which means we represent all major carriers and recommend the plan that is genuinely right for you. We are compensated by insurance companies when you enroll, so our services cost you nothing.

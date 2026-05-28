@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   MedicarePartBClient -- /medicare-part-b
-   Medicare Part B: Medical Insurance -- Complete Guide
-   Design: MIP brand -- navy/gold, pillar-style two-column editorial layout
+   MedicarePartBClient: /medicare-part-b
+   Medicare Part B: Medical Insurance: Complete Guide
+   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
    No em dashes anywhere in this file.
    ========================================================================== */
 

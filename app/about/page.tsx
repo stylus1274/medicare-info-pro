@@ -4,7 +4,7 @@ import AboutClient from "./AboutClient";
 export const metadata: Metadata = {
   title: "About Medicare Information Project | Independent Medicare Agents in Brandon, FL",
   description:
-    "Medicare Information Project is an independent Medicare insurance agency based in Brandon, FL. We represent 17 carriers and 149 Medicare products across 6 states. Free, unbiased guidance -- no pressure.",
+    "Medicare Information Project is an independent Medicare insurance agency based in Brandon, FL. We represent 17 carriers and 149 Medicare products across 6 states. Free, unbiased guidance: no pressure.",
   keywords: [
     "Medicare Information Project",
     "independent Medicare agency Brandon FL",

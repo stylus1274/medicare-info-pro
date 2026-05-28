@@ -4,7 +4,7 @@ import SNPPlansClient from "./SNPPlansClient";
 export const metadata: Metadata = {
   title: "Medicare Special Needs Plans (SNP) | 2026 Guide | Medicare Information Pro",
   description:
-    "Learn about Medicare Special Needs Plans (SNPs) -- C-SNP, D-SNP, and I-SNP. Find out who qualifies, what they cover, and which SNP plans are available in Brandon and Hillsborough County in 2026.",
+    "Learn about Medicare Special Needs Plans (SNPs): C-SNP, D-SNP, and I-SNP. Find out who qualifies, what they cover, and which SNP plans are available in Brandon and Hillsborough County in 2026.",
   keywords: [
     "Medicare Special Needs Plans",
     "Medicare SNP plans 2026",

@@ -206,14 +206,14 @@ const QUESTIONS: Question[] = [
     options: [
       {
         id: "excellent",
-        label: "Excellent -- rarely see a doctor",
+        label: "Excellent: rarely see a doctor",
         sublabel: "Mostly preventive care",
         icon: Star,
         points: { advantage: 2, original: 1 },
       },
       {
         id: "good",
-        label: "Good -- occasional visits",
+        label: "Good: occasional visits",
         sublabel: "A few specialist visits per year",
         icon: CheckCircle2,
         points: { advantage: 1, original: 1, medigap: 1 },
@@ -242,14 +242,14 @@ const QUESTIONS: Question[] = [
     options: [
       {
         id: "many",
-        label: "Yes -- several medications",
+        label: "Yes: several medications",
         sublabel: "Including specialty or brand-name drugs",
         icon: Pill,
         points: { partd: 4, medigap: 1 },
       },
       {
         id: "few",
-        label: "Yes -- a few generics",
+        label: "Yes: a few generics",
         sublabel: "Low-cost medications",
         icon: Pill,
         points: { partd: 2 },
@@ -278,7 +278,7 @@ const RESULTS: Record<string, Result> = {
     borderColor: "border-blue-200",
     badgeColor: "bg-[#1a3fa8]",
     keyPoints: [
-      "See any doctor or hospital that accepts Medicare -- no network restrictions",
+      "See any doctor or hospital that accepts Medicare: no network restrictions",
       "Works in all 50 states and U.S. territories",
       "Medigap covers most or all of your Part B coinsurance and deductibles",
       "You will need a separate Part D plan for prescription drugs",
@@ -305,7 +305,7 @@ const RESULTS: Record<string, Result> = {
       "Often $0 or very low monthly premium",
       "Bundles hospital, medical, and usually drug coverage in one plan",
       "May include dental, vision, hearing, and fitness benefits",
-      "Uses a network of doctors and hospitals -- check your doctors are in-network",
+      "Uses a network of doctors and hospitals: check your doctors are in-network",
       "Annual out-of-pocket cap protects against catastrophic costs",
     ],
     nextSteps: [
@@ -319,7 +319,7 @@ const RESULTS: Record<string, Result> = {
     title: "Original Medicare + Medigap Plan G",
     subtitle: "Best-in-class coverage for complex health needs",
     description:
-      "Based on your answers -- particularly your health needs and desire for predictable costs -- Original Medicare with a comprehensive Medigap plan (Plan G is the most popular) appears to be the best fit. Plan G covers nearly everything Original Medicare does not, leaving you with only the Part B deductible ($257 in 2026) as your annual out-of-pocket exposure.",
+      "Based on your answers: particularly your health needs and desire for predictable costs: Original Medicare with a comprehensive Medigap plan (Plan G is the most popular) appears to be the best fit. Plan G covers nearly everything Original Medicare does not, leaving you with only the Part B deductible ($257 in 2026) as your annual out-of-pocket exposure.",
     icon: Heart,
     color: "text-rose-700",
     bgColor: "bg-rose-50",
@@ -327,8 +327,8 @@ const RESULTS: Record<string, Result> = {
     badgeColor: "bg-rose-600",
     keyPoints: [
       "Plan G covers Part A deductible, coinsurance, and skilled nursing facility costs",
-      "Covers Part B coinsurance -- you pay only the $257 annual Part B deductible in 2026",
-      "No network restrictions -- see any Medicare-accepting provider nationwide",
+      "Covers Part B coinsurance: you pay only the $257 annual Part B deductible in 2026",
+      "No network restrictions: see any Medicare-accepting provider nationwide",
       "Ideal for people with complex or chronic health conditions",
       "Add a standalone Part D plan for prescription drug coverage",
     ],
@@ -343,7 +343,7 @@ const RESULTS: Record<string, Result> = {
     title: "Do Not Forget Part D Drug Coverage",
     subtitle: "Enroll even if you take no medications",
     description:
-      "Your answers suggest your primary concern is prescription drug coverage. Whether you choose Original Medicare or Medicare Advantage, make sure you have creditable Part D drug coverage. If you choose Original Medicare, add a standalone Part D plan. If you choose Advantage, most plans include drug coverage. Skipping Part D -- even if you take no drugs -- results in a permanent monthly penalty.",
+      "Your answers suggest your primary concern is prescription drug coverage. Whether you choose Original Medicare or Medicare Advantage, make sure you have creditable Part D drug coverage. If you choose Original Medicare, add a standalone Part D plan. If you choose Advantage, most plans include drug coverage. Skipping Part D: even if you take no drugs: results in a permanent monthly penalty.",
     icon: Pill,
     color: "text-green-700",
     bgColor: "bg-green-50",
@@ -583,7 +583,7 @@ function ResultCard({
           Talk to a licensed Medicare agent. No cost, no pressure.
         </h3>
         <p className="text-white/80 text-sm leading-relaxed mb-5">
-          Our agents are independent -- we represent all major carriers and will help you compare every option available in your area, not just one company's plans.
+          Our agents are independent: we represent all major carriers and will help you compare every option available in your area, not just one company's plans.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
           <a
@@ -669,7 +669,7 @@ export default function MedicareQuizClient() {
             Which Medicare Path Is Right for You?
           </h1>
           <p className="text-white/75 text-lg leading-relaxed">
-            Answer {QUESTIONS.length} quick questions and get a personalized recommendation -- Original Medicare, Medicare Advantage, or Medigap -- based on your situation.
+            Answer {QUESTIONS.length} quick questions and get a personalized recommendation: Original Medicare, Medicare Advantage, or Medigap: based on your situation.
           </p>
         </div>
       </div>

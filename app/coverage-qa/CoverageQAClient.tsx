@@ -241,7 +241,7 @@ export default function CoverageQAClient() {
             Does Medicare Cover That?
           </h1>
           <p className="text-blue-200 text-lg leading-relaxed max-w-2xl mx-auto">
-            Search or browse our coverage guide to find out exactly what Medicare pays for -- and what it does not.
+            Search or browse our coverage guide to find out exactly what Medicare pays for: and what it does not.
           </p>
         </div>
       </section>

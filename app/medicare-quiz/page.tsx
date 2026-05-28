@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare Quiz: Which Plan Is Right for You?",
     description:
-      "Answer 6 quick questions and get a personalized Medicare recommendation -- Original Medicare, Advantage, or Medigap -- based on your situation.",
+      "Answer 6 quick questions and get a personalized Medicare recommendation: Original Medicare, Advantage, or Medigap: based on your situation.",
     url: "https://medicare-info-pro.vercel.app/medicare-quiz",
     type: "website",
     images: [

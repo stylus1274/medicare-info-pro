@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   HearingAidsCoverageClient -- /coverage/hearing-aids
+   HearingAidsCoverageClient: /coverage/hearing-aids
    Does Medicare Cover Hearing Aids?
-   Design: MIP brand -- navy/gold, editorial two-column layout
+   Design: MIP brand: navy/gold, editorial two-column layout
    No em dashes anywhere in this file.
    ========================================================================== */
 

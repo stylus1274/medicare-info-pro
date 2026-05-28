@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Does Medicare Cover Prescription Drugs? | 2026 Guide",
     description:
-      "Original Medicare covers very few outpatient drugs. Part D fills the gap -- but enrollment timing and plan selection matter. Learn how it works in 2026.",
+      "Original Medicare covers very few outpatient drugs. Part D fills the gap: but enrollment timing and plan selection matter. Learn how it works in 2026.",
     url: "https://medicare-info-pro.vercel.app/coverage/prescription-drugs",
     siteName: "Medicare Information Pro",
     type: "article",

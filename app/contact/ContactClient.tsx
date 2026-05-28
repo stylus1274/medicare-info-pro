@@ -131,7 +131,7 @@ export default function ContactClient() {
             Get in Touch
           </h1>
           <p className="text-blue-200 text-lg leading-relaxed max-w-xl mx-auto">
-            Have a Medicare question? Ready to compare plans? We are here to help -- at no cost to you.
+            Have a Medicare question? Ready to compare plans? We are here to help: at no cost to you.
           </p>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function ContactClient() {
               Request a Free Consultation
             </h2>
             <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-              Fill out the form below and a licensed Medicare specialist will contact you -- usually within one business day. No obligation, no pressure.
+              Fill out the form below and a licensed Medicare specialist will contact you: usually within one business day. No obligation, no pressure.
             </p>
 
             {submitted ? (

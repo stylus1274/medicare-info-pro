@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   DentalCoverageClient -- /coverage/dental
+   DentalCoverageClient: /coverage/dental
    Does Medicare Cover Dental Care?
-   Design: MIP brand -- navy/gold, editorial two-column layout
+   Design: MIP brand: navy/gold, editorial two-column layout
    ========================================================================== */
 
 import { useState } from "react";

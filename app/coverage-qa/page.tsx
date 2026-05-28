@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Medicare coverage guide -- does Medicare cover that?",
+        alt: "Medicare coverage guide: does Medicare cover that?",
       },
     ],
   },

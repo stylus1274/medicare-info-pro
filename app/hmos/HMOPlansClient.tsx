@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   HMOPlansClient -- /plan-types/hmo
-   Medicare Advantage HMO Plans -- Complete Guide
-   Design: MIP brand -- navy/gold, pillar-style two-column editorial layout
+   HMOPlansClient: /plan-types/hmo
+   Medicare Advantage HMO Plans: Complete Guide
+   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
    No em dashes anywhere in this file.
    ========================================================================== */
 
@@ -344,7 +344,7 @@ export default function HMOPlansClient() {
             <div className="rounded-2xl bg-[#0d1f5c] text-white px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <div className="flex-1">
                 <p className="text-lg font-bold mb-1">Want to Compare HMO Plans in Your Area?</p>
-                <p className="text-sm text-white/70">A licensed Medicare specialist can show you every plan available in your zip code and verify your doctors are in-network -- at no cost to you.</p>
+                <p className="text-sm text-white/70">A licensed Medicare specialist can show you every plan available in your zip code and verify your doctors are in-network: at no cost to you.</p>
               </div>
               <div className="flex flex-col gap-2 flex-shrink-0">
                 <a href="tel:+18137428888" className="flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors">

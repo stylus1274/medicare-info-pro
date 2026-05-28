@@ -1,9 +1,9 @@
 "use client";
 
 /* ==========================================================================
-   VisionCoverageClient -- /coverage/vision
+   VisionCoverageClient: /coverage/vision
    Does Medicare Cover Vision and Eye Exams?
-   Design: MIP brand -- navy/gold, editorial two-column layout
+   Design: MIP brand: navy/gold, editorial two-column layout
    No em dashes used anywhere in this file.
    ========================================================================== */
 
