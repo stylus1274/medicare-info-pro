@@ -25,7 +25,7 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "New to Medicare", href: "/",
     megaMenu: {
-      featured: { title: "Start Your Medicare Journey", desc: "Not sure where to begin? We walk you through everything step by step — no jargon, no pressure.", cta: "Take the Quiz", href: "/quiz" },
+      featured: { title: "Start Your Medicare Journey", desc: "Not sure where to begin? We walk you through everything step by step — no jargon, no pressure.", cta: "Take the Quiz", href: "/medicare-quiz" },
       columns: [
         { heading: "Getting Started", links: [
           { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The basics explained simply" },
@@ -458,7 +458,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/quiz"
+              href="/medicare-quiz"
               className="hidden lg:inline-flex"
               style={{
                 background: "#f5a800", color: "#0d1f5c",
