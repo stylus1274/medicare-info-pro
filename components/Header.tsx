@@ -109,13 +109,13 @@ const NAV_ITEMS: NavItem[] = [
       columns: [
         { heading: "Learn", links: [
           { label: "Blog & Articles", href: "/blog", desc: "Latest Medicare news" },
-          { label: "In-Depth Guides", href: "/blog-post", desc: "Comprehensive resources" },
-          { label: "FAQ Center", href: "/blog-post", desc: "Quick answers" },
-          { label: "About Us", href: "/blog-post", desc: "Meet our team" },
+          { label: "In-Depth Guides", href: "/guides", desc: "Comprehensive resources" },
+          { label: "FAQ Center", href: "/faq", desc: "Quick answers" },
+          { label: "About Us", href: "/about", desc: "Meet our team" },
         ]},
         { heading: "Tools", links: [
-          { label: "Plan Comparison Tool", href: "/blog-post", desc: "Side-by-side compare" },
-          { label: "Cost Estimator", href: "/blog-post", desc: "Estimate your costs" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison", desc: "Side-by-side compare" },
+          { label: "Cost Estimator", href: "/cost-estimator", desc: "Estimate your costs" },
           { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
           { label: "Coverage Search", href: "/coverage-qa", desc: "Does Medicare cover it?" },
         ]},
