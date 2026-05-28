@@ -91,7 +91,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
           { label: "Vision & Hearing", href: "/coverage/vision", desc: "Exams, aids & more" },
           { label: "Prescription Drugs", href: "/coverage/prescription-drugs", desc: "Formulary & tiers" },
-          { label: "Mental Health", href: "/coverage-qa", desc: "Therapy & counseling" },
+          { label: "Mental Health", href: "/coverage/mental-health", desc: "Therapy & counseling" },
         ]},
         { heading: "Specialized Care", links: [
           { label: "Cancer Treatment", href: "/coverage-qa", desc: "Chemo, radiation & more" },
