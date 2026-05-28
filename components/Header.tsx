@@ -94,7 +94,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Mental Health", href: "/coverage/mental-health", desc: "Therapy & counseling" },
         ]},
         { heading: "Specialized Care", links: [
-          { label: "Cancer Treatment", href: "/coverage-qa", desc: "Chemo, radiation & more" },
+          { label: "Cancer Treatment", href: "/coverage/cancer-treatment", desc: "Chemo, radiation & more" },
           { label: "Physical Therapy", href: "/coverage-qa", desc: "Rehab & recovery" },
           { label: "Medical Equipment", href: "/coverage-qa", desc: "DME coverage rules" },
           { label: "Skilled Nursing", href: "/coverage-qa", desc: "Post-hospital care" },
