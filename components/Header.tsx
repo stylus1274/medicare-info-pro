@@ -55,8 +55,8 @@ const NAV_ITEMS: NavItem[] = [
         ]},
         { heading: "Medicare Advantage", links: [
           { label: "HMO Plans", href: "/plan-types/hmo", desc: "Network-based coverage" },
-          { label: "PPO Plans", href: "/plan-types/ppo", desc: "More provider flexibility" },
-          { label: "SNP Plans", href: "/plan-types/snp", desc: "Special needs plans" },
+          { label: "PPO Plans", href: "/medicare-ppo-plans-in-tampa", desc: "More provider flexibility" },
+          { label: "SNP Plans", href: "/medicare-snp-plans", desc: "Special needs plans" },
           { label: "Compare Plan Types", href: "/original-vs-advantage", desc: "See all options" },
         ]},
       ],
