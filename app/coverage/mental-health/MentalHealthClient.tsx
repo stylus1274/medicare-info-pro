@@ -23,6 +23,8 @@ import {
   Info,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const GREG_PHOTO =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_0f68a894.png";
@@ -128,7 +130,9 @@ export default function MentalHealthClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Header />
+      <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="bg-[#0d2d6b] text-white py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
@@ -511,6 +515,8 @@ export default function MentalHealthClient() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
+    </>
   );
 }
