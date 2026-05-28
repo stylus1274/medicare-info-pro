@@ -54,7 +54,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Part D Drug Plans", href: "/understanding-part-d", desc: "Prescription coverage" },
         ]},
         { heading: "Medicare Advantage", links: [
-          { label: "HMO Plans", href: "/plan-types/hmo", desc: "Network-based coverage" },
+          { label: "HMO Plans", href: "/hmos", desc: "Network-based coverage" },
           { label: "PPO Plans", href: "/medicare-ppo-plans-in-tampa", desc: "More provider flexibility" },
           { label: "SNP Plans", href: "/medicare-snp-plans", desc: "Special needs plans" },
           { label: "Compare Plan Types", href: "/original-vs-advantage", desc: "See all options" },
