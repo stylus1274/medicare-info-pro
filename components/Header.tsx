@@ -97,7 +97,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Cancer Treatment", href: "/coverage/cancer-treatment", desc: "Chemo, radiation & more" },
           { label: "Physical Therapy", href: "/coverage/physical-therapy", desc: "Rehab & recovery" },
           { label: "Medical Equipment", href: "/coverage/medical-equipment", desc: "DME coverage rules" },
-          { label: "Skilled Nursing", href: "/coverage-qa", desc: "Post-hospital care" },
+          { label: "Skilled Nursing", href: "/coverage/skilled-nursing", desc: "Post-hospital care" },
         ]},
       ],
     },
