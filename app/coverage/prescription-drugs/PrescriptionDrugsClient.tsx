@@ -148,12 +148,18 @@ export default function PrescriptionDrugsClient() {
           </p>
 
           {/* Quick Answer Banner */}
-          <div id="quick-answer" className="bg-red-600 border border-red-400 rounded-2xl px-6 py-5 flex items-start gap-4 max-w-2xl">
-            <XCircle className="w-8 h-8 text-white flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <div
+            id="quick-answer"
+            className="flex items-start gap-3 px-5 py-4 rounded-xl border max-w-2xl"
+            style={{ background: "#fff0f0", borderColor: "#fca5a5" }}
+          >
+            <XCircle className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
             <div>
-              <p className="font-bold text-white text-lg mb-1">Not Covered by Original Medicare</p>
-              <p className="text-red-100 text-sm leading-relaxed">
-                Original Medicare (Parts A and B) does not cover most outpatient prescription drugs. You need Medicare Part D or a Medicare Advantage plan with drug coverage to get prescription drug benefits.
+              <p className="text-xs font-bold uppercase tracking-wider mb-1 text-red-600">
+                Quick Answer: Not Covered
+              </p>
+              <p className="text-sm font-semibold leading-snug text-red-700">
+                Original Medicare does NOT cover most outpatient prescription drugs. You need Part D or a Medicare Advantage plan with drug coverage.
               </p>
             </div>
           </div>
