@@ -89,7 +89,8 @@ const NAV_ITEMS: NavItem[] = [
       columns: [
         { heading: "Common Questions", links: [
           { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
-          { label: "Vision & Hearing", href: "/coverage/vision", desc: "Exams, aids & more" },
+          { label: "Vision Coverage", href: "/coverage/vision", desc: "Exams & eyeglasses" },
+          { label: "Hearing Aids", href: "/coverage/hearing-aids", desc: "Coverage & alternatives" },
           { label: "Prescription Drugs", href: "/coverage/prescription-drugs", desc: "Formulary & tiers" },
           { label: "Mental Health", href: "/coverage/mental-health", desc: "Therapy & counseling" },
         ]},
