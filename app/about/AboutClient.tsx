@@ -18,6 +18,7 @@ import {
   ChevronRight,
   Star,
   BookOpen,
+  User,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -64,14 +65,16 @@ const STATS = [
   { value: "A+", label: "BBB Rating" },
 ];
 
-const TEAM_MEMBER = {
-  name: "Greg Wohl",
-  title: "Licensed Medicare Specialist",
-  credentials: "Licensed in FL, GA, NC, AR, KS, TX",
-  photo:
-    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
-  bio: "Greg Wohl founded Medicare Information Project with a simple mission: give Florida seniors the same quality Medicare guidance that used to be available only to people with connections in the insurance industry. After years in the field, Greg saw how often beneficiaries enrolled in the wrong plan simply because they did not have access to unbiased, comprehensive information. Today, he and his team serve clients across six states, representing 17 carriers and 149 Medicare products.",
-};
+const TEAM_MEMBERS = [
+  { name: "Greg Wohl", slug: "greg-wohl", title: "Founder and Licensed Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg" },
+  { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg" },
+  { name: "JD Diaz", slug: "jd-diaz", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg" },
+  { name: "Paxton DeMent", slug: "paxton-dement", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg" },
+  { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg" },
+  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", title: "Licensed Independent Agent", photo: null },
+  { name: "Mark VanHoesen", slug: "mark-vanhoesen", title: "Licensed Independent Agent", photo: null },
+  { name: "Kelly Webb", slug: "kelly-webb", title: "Licensed Independent Agent", photo: null },
+];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -150,7 +153,7 @@ export default function AboutClient() {
 
       {/* Team */}
       <section className="py-16 bg-gray-50" aria-label="Our team">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">
               Meet the Team
@@ -159,38 +162,37 @@ export default function AboutClient() {
               Licensed, independent Medicare specialists who put your needs first.
             </p>
           </div>
-          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="md:flex">
-              <div className="md:w-56 shrink-0 bg-[#1a3fa8] flex items-center justify-center p-8">
-                <div className="text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+            {TEAM_MEMBERS.map((member) => (
+              <Link
+                key={member.slug}
+                href={`/${member.slug}`}
+                className="bg-white rounded-2xl border border-gray-100 p-5 flex flex-col items-center text-center hover:shadow-md hover:border-[#1a3fa8] transition-all group"
+              >
+                {member.photo ? (
                   <img
-                    src={TEAM_MEMBER.photo}
-                    alt={`${TEAM_MEMBER.name}, ${TEAM_MEMBER.title}`}
-                    className="w-28 h-28 rounded-full object-cover border-4 border-white/30 mx-auto mb-4"
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-20 h-20 rounded-full object-cover object-top border-2 border-gray-100 mb-3 group-hover:border-[#1a3fa8] transition-colors"
                   />
-                  <h3 className="font-serif font-bold text-white">{TEAM_MEMBER.name}</h3>
-                  <p className="text-blue-200 text-sm mt-1">{TEAM_MEMBER.title}</p>
-                  <p className="text-blue-300 text-xs mt-1">{TEAM_MEMBER.credentials}</p>
-                </div>
-              </div>
-              <div className="flex-1 p-8">
-                <p className="text-gray-700 leading-relaxed mb-6">{TEAM_MEMBER.bio}</p>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="tel:8136995559"
-                    className="flex items-center gap-2 bg-[#1a3fa8] text-white font-bold px-5 py-2.5 rounded-xl hover:bg-[#0d2870] transition-colors text-sm"
-                  >
-                    <Phone className="w-4 h-4" /> 813-699-5559
-                  </a>
-                  <Link
-                    href="/find-an-agent"
-                    className="flex items-center gap-2 bg-gray-100 text-gray-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-gray-200 transition-colors text-sm"
-                  >
-                    Schedule a Consultation <ChevronRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-[#e8edf8] flex items-center justify-center mb-3 border-2 border-gray-100 group-hover:border-[#1a3fa8] transition-colors">
+                    <User className="w-9 h-9 text-[#1a3fa8]" />
+                  </div>
+                )}
+                <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-1">{member.name}</h3>
+                <p className="text-xs text-gray-500 mb-3">{member.title}</p>
+                <span className="text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile</span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="tel:8136995559"
+              className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#0d2870] transition-colors text-sm"
+            >
+              <Phone className="w-4 h-4" /> Call Any Agent: 813-699-5559
+            </a>
           </div>
         </div>
       </section>
