@@ -123,6 +123,7 @@ const NAV_ITEMS: NavItem[] = [
       ],
     },
   },
+  { label: "Contact", href: "/contact-us" },
 ];
 
 const SUGGESTION_CATEGORY_COLORS: Record<string, { bg: string; text: string }> = {
@@ -266,20 +267,22 @@ export default function Header() {
                     display: "flex", alignItems: "center", gap: "0.25rem",
                     padding: "0 0.75rem", height: "100%",
                     color: activeMenu === item.label ? "#1a3fa8" : "#1a2340",
-                    textDecoration: "none", fontSize: "1rem", fontWeight: 700,
+                    textDecoration: "none", fontSize: "0.9rem", fontWeight: 700,
                     whiteSpace: "nowrap", transition: "color 0.15s",
                     borderBottom: activeMenu === item.label ? "3px solid #f5a800" : "3px solid transparent",
                   }}
                 >
                   {item.label}
-                  <ChevronDown
-                    size={13}
-                    style={{
-                      color: activeMenu === item.label ? "#1a3fa8" : "#9ca3af",
-                      transform: activeMenu === item.label ? "rotate(180deg)" : "rotate(0deg)",
-                      transition: "transform 0.2s",
-                    }}
-                  />
+                  {item.megaMenu && (
+                    <ChevronDown
+                      size={13}
+                      style={{
+                        color: activeMenu === item.label ? "#1a3fa8" : "#9ca3af",
+                        transform: activeMenu === item.label ? "rotate(180deg)" : "rotate(0deg)",
+                        transition: "transform 0.2s",
+                      }}
+                    />
+                  )}
                 </Link>
               </div>
             ))}
