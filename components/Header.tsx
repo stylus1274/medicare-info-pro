@@ -229,22 +229,10 @@ export default function Header() {
             </span>
             <span className="hidden md:inline">Serving FL, GA, NC, AR, KS &amp; TX</span>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <a href="tel:8136995559" style={{ color: "#c8d6f5", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem", letterSpacing: "0.01em" }}>
               <Phone size={13} /> 813-699-5559
             </a>
-            <Link
-              href="/contact-us"
-              style={{
-                background: "#f5a800", color: "#0d1f5c",
-                fontWeight: 700, fontSize: "0.78rem", textDecoration: "none",
-                display: "inline-flex", alignItems: "center", gap: "0.3rem",
-                padding: "0.3rem 0.85rem", borderRadius: 999,
-                letterSpacing: "0.02em", whiteSpace: "nowrap",
-              }}
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </div>
