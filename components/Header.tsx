@@ -459,7 +459,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/medicare-quiz"
+              href="/free-consultation"
               className="hidden lg:inline-flex"
               style={{
                 background: "#f5a800", color: "#0d1f5c",
@@ -471,7 +471,7 @@ export default function Header() {
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#e09900"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#f5a800"; }}
             >
-              Get Started Free <ArrowRight size={15} />
+              Free Consultation <ArrowRight size={15} />
             </Link>
 
             <button
