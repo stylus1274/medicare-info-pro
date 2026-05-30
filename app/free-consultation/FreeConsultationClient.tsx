@@ -76,7 +76,7 @@ export default function FreeConsultationClient() {
                 <Phone className="w-3.5 h-3.5" /> Free, No-Obligation Consultation
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
-                Get Expert Medicare Guidance — At No Cost to You
+                Get Expert Medicare Guidance at No Cost to You
               </h1>
               <p className="text-lg text-blue-100 mb-6 leading-relaxed">
                 Choosing the wrong Medicare plan can cost thousands of dollars a year. Our licensed advisors in Brandon help you compare every option available in your zip code and find the plan that fits your health, budget, and doctors.
@@ -120,7 +120,7 @@ export default function FreeConsultationClient() {
             <div>
               <h2 className="text-2xl font-extrabold text-[#1a2e5a] mb-2">What We Cover in Your Consultation</h2>
               <p className="text-gray-600 mb-6">
-                A typical consultation takes 20 to 40 minutes. We review your situation, explain your options clearly, and give you a specific recommendation — with no pressure to enroll.
+                A typical consultation takes 20 to 40 minutes. We review your situation, explain your options clearly, and give you a specific recommendation, with no pressure to enroll.
               </p>
               <ul className="space-y-3 mb-8">
                 {WHAT_WE_COVER.map((item) => (
@@ -157,7 +157,7 @@ export default function FreeConsultationClient() {
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-2xl font-extrabold text-[#1a2e5a] mb-2">Request Received!</h3>
                   <p className="text-gray-600 mb-4">
-                    Thank you, {form.name.split(" ")[0]}. One of our licensed advisors will reach out within one business day — usually much sooner.
+                    Thank you, {form.name.split(" ")[0]}. One of our licensed advisors will reach out within one business day, often much sooner.
                   </p>
                   <p className="text-sm text-gray-500">
                     Need to speak with someone right away? Call <a href="tel:8136995559" className="text-[#1a2e5a] font-bold">813-699-5559</a>.
