@@ -74,6 +74,8 @@ const TEAM_MEMBERS = [
   { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", title: "Licensed Independent Agent", photo: null },
   { name: "Mark VanHoesen", slug: "mark-vanhoesen", title: "Licensed Independent Agent", photo: null },
   { name: "Kelly Webb", slug: "kelly-webb", title: "Licensed Independent Agent", photo: null },
+  { name: "Chris Gallimore", slug: "chris-gallimore", title: "Licensed Independent Agent", photo: null },
+  { name: "Paul Eckstein", slug: "paul-eckstein", title: "Licensed Independent Agent", photo: null },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
