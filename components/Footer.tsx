@@ -121,9 +121,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Insurance Central of Tampa Bay. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government. We represent 17 organizations.
           </p>
           <div className="flex gap-6 text-[0.8rem] text-blue-300/50">
-            <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/" className="hover:text-white transition-colors">Terms of Use</Link>
-            <Link href="/" className="hover:text-white transition-colors">Accessibility</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/testimonials" className="hover:text-white transition-colors">Testimonials</Link>
           </div>
         </div>
       </div>
