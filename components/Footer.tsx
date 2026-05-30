@@ -32,6 +32,7 @@ const FOOTER_LINKS = [
       { label: "Medicare 101", href: "/medicare-101" },
       { label: "FAQ Center", href: "/faq" },
       { label: "About Us", href: "/about" },
+      { label: "Contact Us", href: "/contact-us" },
     ],
   },
 ];
