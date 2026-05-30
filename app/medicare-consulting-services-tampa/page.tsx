@@ -73,7 +73,7 @@ export default function MedicareConsultingServicesTampa() {
                 <span>/</span>
                 <span className="text-white">Medicare Consulting Services Tampa</span>
               </nav>
-              <div className="inline-block bg-[#f5a800] text-[#1a3fa8] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+              <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
                 Tampa, FL
               </div>
               <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -85,7 +85,7 @@ export default function MedicareConsultingServicesTampa() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/free-consultation"
-                  className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Schedule Free Consultation
                 </Link>
@@ -283,7 +283,7 @@ export default function MedicareConsultingServicesTampa() {
               </p>
               <Link
                 href="/free-consultation"
-                className="block text-center bg-[#f5a800] text-[#1a3fa8] font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
+                className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Schedule Free Consultation
               </Link>
@@ -349,7 +349,7 @@ export default function MedicareConsultingServicesTampa() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/free-consultation"
-              className="inline-flex items-center justify-center bg-[#f5a800] text-[#1a3fa8] font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
+              className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Schedule Free Consultation
             </Link>
