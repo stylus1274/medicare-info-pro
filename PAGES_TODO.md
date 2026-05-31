@@ -19,9 +19,9 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 - [x] `how-we-can-help` *(SKIP — not building this page)*
 - [x] `3-ways-to-begin-your-medicare-coverage`
 - [x] `turning-65-and-becoming-eligible-for-medicare`
-- [ ] `how-medicare-part-d-works`
-- [ ] `medicare-part-d`
-- [ ] `medicare-supplement`
+- [x] `how-medicare-part-d-works`
+- [x] `medicare-part-d`
+- [x] `medicare-supplement`
 - [ ] `medicare-advantage-florida`
 - [ ] `medicare-part-b-assistance-in-brandon`
 - [ ] `medicare-penalty-calculator` *(check — may already exist as tool page)*
