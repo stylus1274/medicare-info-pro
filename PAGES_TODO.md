@@ -16,7 +16,7 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 - [x] `what-is-medicare`
 - [x] `new-to-medicare` *(SKIP — not building this page)*
 - [x] `do-i-need-medicare`
-- [ ] `how-we-can-help`
+- [x] `how-we-can-help` *(SKIP — not building this page)*
 - [x] `3-ways-to-begin-your-medicare-coverage`
 - [x] `turning-65-and-becoming-eligible-for-medicare`
 - [ ] `how-medicare-part-d-works`
