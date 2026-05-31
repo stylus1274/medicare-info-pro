@@ -13,12 +13,12 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group A — Core Info Pages (14 pages)
 
-- [ ] `what-is-medicare`
+- [x] `what-is-medicare`
 - [x] `new-to-medicare` *(SKIP — not building this page)*
-- [ ] `do-i-need-medicare`
+- [x] `do-i-need-medicare`
 - [ ] `how-we-can-help`
-- [ ] `3-ways-to-begin-your-medicare-coverage`
-- [ ] `turning-65-and-becoming-eligible-for-medicare`
+- [x] `3-ways-to-begin-your-medicare-coverage`
+- [x] `turning-65-and-becoming-eligible-for-medicare`
 - [ ] `how-medicare-part-d-works`
 - [ ] `medicare-part-d`
 - [ ] `medicare-supplement`
