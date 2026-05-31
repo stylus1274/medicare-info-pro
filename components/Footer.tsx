@@ -31,7 +31,7 @@ const FOOTER_LINKS = [
       { label: "Coverage Search", href: "/coverage-qa" },
       { label: "Medicare 101", href: "/medicare-101" },
       { label: "FAQ Center", href: "/faq" },
-      { label: "About Us", href: "/about" },
+      { label: "About Us", href: "/about-us" },
       { label: "Contact Us", href: "/contact-us" },
     ],
   },

@@ -60,7 +60,7 @@ export default function TeamMemberPage({ member }: { member: TeamMemberData }) {
           <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-3" style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.82rem", color: "#6b7280" }}>
             <Link href="/" style={{ color: "#1a3fa8", textDecoration: "none" }}>Home</Link>
             <ChevronRight size={12} />
-            <Link href="/about" style={{ color: "#1a3fa8", textDecoration: "none" }}>Our Team</Link>
+            <Link href="/about-us" style={{ color: "#1a3fa8", textDecoration: "none" }}>Our Team</Link>
             <ChevronRight size={12} />
             <span style={{ color: "#374151", fontWeight: 600 }}>{member.name}</span>
           </div>
@@ -232,7 +232,7 @@ export default function TeamMemberPage({ member }: { member: TeamMemberData }) {
                       <span style={{ fontSize: "0.88rem", fontWeight: 600, color: "#1a2340" }}>{t.name}</span>
                     </Link>
                   ))}
-                  <Link href="/about" style={{ fontSize: "0.82rem", color: "#1a3fa8", textDecoration: "none", fontWeight: 600, marginTop: "0.25rem" }}>
+                  <Link href="/about-us" style={{ fontSize: "0.82rem", color: "#1a3fa8", textDecoration: "none", fontWeight: 600, marginTop: "0.25rem" }}>
                     View Full Team
                   </Link>
                 </div>

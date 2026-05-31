@@ -112,7 +112,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Blog & Articles", href: "/blog", desc: "Latest Medicare news" },
           { label: "In-Depth Guides", href: "/guides", desc: "Comprehensive resources" },
           { label: "FAQ Center", href: "/faq", desc: "Quick answers" },
-          { label: "About Us", href: "/about", desc: "Meet our team" },
+          { label: "About Us", href: "/about-us", desc: "Meet our team" },
         ]},
         { heading: "Tools", links: [
           { label: "Plan Comparison Tool", href: "/plan-comparison", desc: "Side-by-side compare" },
