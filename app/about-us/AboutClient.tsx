@@ -102,8 +102,8 @@ export default function AboutClient() {
 
       {/* Mission */}
       <section className="py-16 bg-white" aria-label="Our mission">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
             <div>
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">
                 Our Mission
