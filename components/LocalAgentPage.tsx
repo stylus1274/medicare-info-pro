@@ -15,7 +15,7 @@ export interface LocalPageConfig {
   subheadline: string;        // Hero paragraph
   metaTitle: string;
   metaDescription: string;
-  pageType: "agent" | "local-agent" | "insurance-agent" | "consulting" | "enrollment" | "supplement" | "brokers";
+  pageType: "agent" | "local-agent" | "insurance-agent" | "consulting" | "enrollment" | "supplement" | "brokers" | "broker";
   nearbyLandmarks?: string[]; // local hospitals/clinics
   neighborhoods?: string[];   // neighborhoods/zip codes served
   faqs: { q: string; a: string }[];
@@ -31,6 +31,7 @@ const PAGE_TYPE_LABELS: Record<LocalPageConfig["pageType"], string> = {
   "enrollment": "Medicare Enrollment Assistance",
   "supplement": "Medicare Supplement Plans",
   "brokers": "Medicare Insurance Brokers",
+  "broker": "Medicare Insurance Brokers",
 };
 
 const PAGE_TYPE_CTA: Record<LocalPageConfig["pageType"], string> = {
@@ -41,6 +42,7 @@ const PAGE_TYPE_CTA: Record<LocalPageConfig["pageType"], string> = {
   "enrollment": "Get Enrollment Assistance",
   "supplement": "Compare Supplement Plans Free",
   "brokers": "Speak with a Local Broker",
+  "broker": "Speak with a Local Broker",
 };
 
 const DEFAULT_SERVICES = [
