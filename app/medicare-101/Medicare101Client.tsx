@@ -325,7 +325,7 @@ export default function Medicare101Client() {
         <div className="relative z-10 container pb-12 md:pb-16">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="flex items-center gap-2 mb-4">
-              <span className="bg-[#f5a800] text-[#0d2060] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              <span className="bg-[#f5a800] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                 Beginner&apos;s Guide
               </span>
               <span className="text-white/70 text-sm flex items-center gap-1">
@@ -858,7 +858,7 @@ export default function Medicare101Client() {
                 </p>
                 <a
                   href="tel:8136995559"
-                  className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-[#0d2060] font-bold py-3 px-4 rounded-lg transition-colors w-full text-sm mb-3"
+                  className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-white font-bold py-3 px-4 rounded-lg transition-colors w-full text-sm mb-3"
                   aria-label="Call Medicare Information Project at 813-699-5559"
                 >
                   <Phone className="w-4 h-4" aria-hidden="true" />
@@ -967,7 +967,7 @@ export default function Medicare101Client() {
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
               <a
                 href="tel:8136995559"
-                className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-[#0d2060] font-bold py-3.5 px-6 rounded-xl transition-colors text-base"
+                className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-white font-bold py-3.5 px-6 rounded-xl transition-colors text-base"
                 aria-label="Call 813-699-5559 to speak with a licensed Medicare agent"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />

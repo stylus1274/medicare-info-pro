@@ -402,7 +402,7 @@ export default function MentalHealthClient() {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
                     href="tel:+18137428888"
-                    className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-[#0d2d6b] font-bold px-6 py-3 rounded-xl transition-colors"
+                    className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                   >
                     <Phone className="w-4 h-4" />
                     (813) 742-8888
@@ -508,7 +508,7 @@ export default function MentalHealthClient() {
           </p>
           <a
             href="tel:+18137428888"
-            className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-[#0d2d6b] font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
           >
             <Phone className="w-5 h-5" />
             Call (813) 742-8888

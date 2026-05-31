@@ -271,7 +271,7 @@ export default function WhatIsMedicareClient() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="tel:8136995559"
-                className="inline-flex items-center gap-2 bg-[#f5a800] text-[#0d1f5c] font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors"
               >
                 <Phone size={16} /> Call 813-699-5559
               </a>
@@ -595,7 +595,7 @@ export default function WhatIsMedicareClient() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="tel:8136995559"
-                className="inline-flex items-center gap-2 bg-[#f5a800] text-[#0d1f5c] font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base"
+                className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base"
               >
                 <Phone size={17} /> Call 813-699-5559
               </a>
