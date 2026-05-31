@@ -24,9 +24,9 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 - [x] `medicare-supplement`
 - [x] `medicare-advantage-florida`
 - [x] `medicare-part-b-assistance-in-brandon`
-- [ ] `medicare-penalty-calculator` *(check — may already exist as tool page)*
+- [x] `medicare-penalty-calculator`
 - [x] `advisors`
-- [ ] `faqs` *(we have `/faq` — slug mismatch, either redirect or build new)*
+- [x] `faqs` *(redirect to /faq)*
 
 ## Group B — `comparing-medicare-plans-{city}` (5 pages)
 
