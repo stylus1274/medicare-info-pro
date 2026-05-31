@@ -30,11 +30,11 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group B — `comparing-medicare-plans-{city}` (5 pages)
 
-- [ ] `comparing-medicare-plans-apollo-beach`
-- [ ] `comparing-medicare-plans-brandon`
-- [ ] `comparing-medicare-plans-plant-city`
-- [ ] `comparing-medicare-plans-riverview`
-- [ ] `comparing-medicare-plans-valrico`
+- [x] `comparing-medicare-plans-apollo-beach`
+- [x] `comparing-medicare-plans-brandon`
+- [x] `comparing-medicare-plans-plant-city`
+- [x] `comparing-medicare-plans-riverview`
+- [x] `comparing-medicare-plans-valrico`
 
 ## Group C — `health-insurance-{city}` (7 pages)
 
