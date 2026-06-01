@@ -47,12 +47,12 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group D — `health-insurance-broker-{city}` (6 pages)
 
-- [ ] `health-insurance-broker-apollo-beach`
-- [ ] `health-insurance-broker-brandon`
-- [ ] `health-insurance-broker-riverview`
-- [ ] `health-insurance-broker-ruskin`
-- [ ] `health-insurance-broker-temple-terrace`
-- [ ] `health-insurance-broker-valrico`
+- [x] `health-insurance-broker-apollo-beach`
+- [x] `health-insurance-broker-brandon`
+- [x] `health-insurance-broker-riverview`
+- [x] `health-insurance-broker-ruskin`
+- [x] `health-insurance-broker-temple-terrace`
+- [x] `health-insurance-broker-valrico`
 
 ## Group E — `medicare-consulting-services-{city}` (8 pages)
 
