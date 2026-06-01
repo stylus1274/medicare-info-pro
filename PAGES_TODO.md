@@ -56,14 +56,14 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group E — `medicare-consulting-services-{city}` (8 pages)
 
-- [ ] `medicare-consulting-services-bartow-temple-terrace`
-- [ ] `medicare-consulting-services-fish-hawk`
-- [ ] `medicare-consulting-services-gibsonton`
-- [ ] `medicare-consulting-services-lithia`
-- [ ] `medicare-consulting-services-plant-city`
-- [ ] `medicare-consulting-services-ruskin`
-- [ ] `medicare-consulting-services-seffner`
-- [ ] `medicare-consulting-services-sun-city-center`
+- [x] `medicare-consulting-services-bartow`
+- [x] `medicare-consulting-services-fish-hawk`
+- [x] `medicare-consulting-services-gibsonton`
+- [x] `medicare-consulting-services-lithia`
+- [x] `medicare-consulting-services-plant-city`
+- [x] `medicare-consulting-services-ruskin`
+- [x] `medicare-consulting-services-seffner`
+- [x] `medicare-consulting-services-sun-city-center`
 
 ## Group F — `medicare-enrollment-assistance-{city}` (8 pages)
 
