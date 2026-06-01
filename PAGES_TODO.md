@@ -38,12 +38,12 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group C — `health-insurance-{city}` (7 pages)
 
-- [ ] `health-insurance-apollo-beach`
-- [ ] `health-insurance-brandon`
-- [ ] `health-insurance-riverview`
-- [ ] `health-insurance-sun-city`
-- [ ] `health-insurance-valrico`
-- [ ] `health-insurance-wimauma`
+- [x] `health-insurance-apollo-beach`
+- [x] `health-insurance-brandon`
+- [x] `health-insurance-riverview`
+- [x] `health-insurance-sun-city`
+- [x] `health-insurance-valrico`
+- [x] `health-insurance-wimauma`
 
 ## Group D — `health-insurance-broker-{city}` (6 pages)
 
