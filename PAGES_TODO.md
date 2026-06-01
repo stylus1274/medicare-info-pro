@@ -67,14 +67,14 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group F — `medicare-enrollment-assistance-{city}` (8 pages)
 
-- [ ] `medicare-enrollment-assistance-apollo-beach`
-- [ ] `medicare-enrollment-assistance-bartow`
-- [ ] `medicare-enrollment-assistance-brandon`
-- [ ] `medicare-enrollment-assistance-plant-city`
-- [ ] `medicare-enrollment-assistance-riverview`
-- [ ] `medicare-enrollment-assistance-sun-city`
-- [ ] `medicare-enrollment-assistance-temple-terrace`
-- [ ] `medicare-enrollment-assistance-valrico`
+- [x] `medicare-enrollment-assistance-apollo-beach`
+- [x] `medicare-enrollment-assistance-bartow`
+- [x] `medicare-enrollment-assistance-brandon`
+- [x] `medicare-enrollment-assistance-plant-city`
+- [x] `medicare-enrollment-assistance-riverview`
+- [x] `medicare-enrollment-assistance-sun-city`
+- [x] `medicare-enrollment-assistance-temple-terrace`
+- [x] `medicare-enrollment-assistance-valrico`
 
 ## Group G — `medicare-supplement-insurance-plans-{city}` (3 pages)
 
