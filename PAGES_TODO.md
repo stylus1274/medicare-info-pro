@@ -78,9 +78,9 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group G — `medicare-supplement-insurance-plans-{city}` (3 pages)
 
-- [ ] `medicare-supplement-insurance-plans-bartow`
-- [ ] `medicare-supplement-insurance-plans-in-brandon-fl`
-- [ ] `medicare-supplement-insurance-plans-plant-city`
+- [x] `medicare-supplement-insurance-plans-bartow`
+- [x] `medicare-supplement-insurance-plans-in-brandon-fl`
+- [x] `medicare-supplement-insurance-plans-plant-city`
 
 ## Group H — `trusted-medicare-insurance-agent-health-insurance-services-{city}` (6 pages)
 
