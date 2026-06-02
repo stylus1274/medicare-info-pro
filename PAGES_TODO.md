@@ -84,12 +84,12 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group H — `trusted-medicare-insurance-agent-health-insurance-services-{city}` (6 pages)
 
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-apollo-beach`
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-brandon`
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-riverview`
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-sun-city`
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-temple-terrace`
-- [ ] `trusted-medicare-insurance-agent-health-insurance-services-valrico`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-apollo-beach`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-brandon`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-riverview`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-sun-city`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-temple-terrace`
+- [x] `trusted-medicare-insurance-agent-health-insurance-services-valrico`
 
 ## Group I — Other Local Pages (2 pages)
 
