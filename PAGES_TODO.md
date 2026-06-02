@@ -93,5 +93,5 @@ Pages intentionally skipped (Tampa pages, test/redirect pages):
 
 ## Group I — Other Local Pages (2 pages)
 
-- [ ] `local-medicare-agent` *(hub/landing page)*
-- [ ] `medicare-advantage-plans-brandon-florida`
+- [x] `local-medicare-agent` *(hub/landing page)*
+- [x] `medicare-advantage-plans-brandon-florida`
