@@ -186,9 +186,14 @@ export default function BlogPostClient({ post }: Props) {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* Hero — matches site-wide style: solid #0d2260 bg, dot-grid overlay, blue-300/200 text, orange tag */}
-      <section className="bg-[#0d2260] pt-14 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
+      {/* Hero — photo + navy gradient overlay, site-wide color tokens for text */}
+      <section
+        className="relative overflow-hidden pt-14 pb-16"
+        style={{
+          background: `linear-gradient(to bottom, rgba(13,34,96,0.88) 0%, rgba(13,34,96,0.76) 55%, rgba(13,34,96,0.92) 100%), url('${post.image}') center/cover no-repeat`,
+          minHeight: "420px",
+        }}
+      >
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 relative">
 
           {/* Breadcrumbs */}
@@ -439,18 +444,39 @@ export default function BlogPostClient({ post }: Props) {
                     <BookOpen size={13} aria-hidden="true" /> In This Article
                   </h3>
                   <nav aria-label="Article table of contents">
-                    <ul className="space-y-1">
-                      {tocItems.map((item) => (
+                    <ul className="space-y-0.5">
+                      {tocItems.map((item, idx) => (
                         <li key={item.id}>
                           <button
                             onClick={() => scrollTo(item.id)}
-                            className={`w-full text-left px-3 py-2 rounded-lg text-[0.85rem] transition-colors ${
+                            title={`Jump to: ${item.label}`}
+                            className={`group w-full text-left px-3 py-2.5 rounded-lg text-[0.85rem] transition-all flex items-center gap-2.5 ${
                               activeSection === item.id
                                 ? "bg-[#1a3fa8]/10 text-[#1a3fa8] font-semibold"
                                 : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                             }`}
                           >
-                            {item.label}
+                            {/* Section number indicator */}
+                            <span
+                              className={`flex-shrink-0 w-5 h-5 rounded-full text-[0.65rem] font-bold flex items-center justify-center transition-colors ${
+                                activeSection === item.id
+                                  ? "bg-[#1a3fa8] text-white"
+                                  : "bg-gray-100 text-gray-500 group-hover:bg-gray-200"
+                              }`}
+                            >
+                              {idx + 1}
+                            </span>
+                            <span className="flex-1 leading-snug">{item.label}</span>
+                            {/* Arrow hint — visible on hover or active */}
+                            <ArrowRight
+                              size={12}
+                              className={`flex-shrink-0 transition-all ${
+                                activeSection === item.id
+                                  ? "text-[#1a3fa8] opacity-100 translate-x-0"
+                                  : "text-gray-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5"
+                              }`}
+                              aria-hidden="true"
+                            />
                           </button>
                         </li>
                       ))}
