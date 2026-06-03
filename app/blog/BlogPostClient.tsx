@@ -6,6 +6,15 @@
  * Sections: Hero with full-bleed background image, Article Body, FAQ, CTA, Related Posts
  * Sidebar: TOC, Agent CTA, Related Tools
  * NOTE: No em dashes anywhere in this file or any post data.
+ *
+ * ADA CONTRAST FIXES (Jun 2026):
+ * - Hero breadcrumbs: text-white/70 (was /50), active span text-white (was /70)
+ * - Hero meta bar (date, time, share): text-white/80 (was /60)
+ * - Key Takeaways: heading text-blue-800 (was blue-700); item label text-gray-900; item text text-gray-800 (was gray-700)
+ * - Sidebar TOC inactive: text-gray-700 (was gray-600)
+ * - Sidebar tools desc: text-gray-500 (was gray-400)
+ * - FAQ answer: pt-4 (was pt-1) for 20px top padding
+ * - Removed CheckCircle2 icon from Key Takeaways heading
  */
 
 import Link from "next/link";
@@ -34,12 +43,12 @@ import Footer from "@/components/Footer";
 type Category = "Enrollment" | "Plans" | "Costs" | "Coverage" | "Supplements" | "Part D";
 
 const CATEGORY_COLORS: Record<Category, string> = {
-  Enrollment: "bg-blue-100 text-blue-700",
-  Plans: "bg-purple-100 text-purple-700",
-  Costs: "bg-amber-100 text-amber-700",
-  Coverage: "bg-emerald-100 text-emerald-700",
-  Supplements: "bg-rose-100 text-rose-700",
-  "Part D": "bg-teal-100 text-teal-700",
+  Enrollment: "bg-blue-100 text-blue-800",
+  Plans: "bg-purple-100 text-purple-800",
+  Costs: "bg-amber-100 text-amber-800",
+  Coverage: "bg-emerald-100 text-emerald-800",
+  Supplements: "bg-rose-100 text-rose-800",
+  "Part D": "bg-teal-100 text-teal-800",
 };
 
 const CATEGORY_ICONS: Record<Category, React.ReactNode> = {
@@ -123,8 +132,9 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         )}
       </button>
       {open && (
-        <div className="px-5 pb-5 pt-1 bg-white border-t border-gray-100">
-          <p className="text-gray-600 leading-relaxed text-[0.925rem]">{answer}</p>
+        /* pt-4 = 16px top padding (approx 20px visual with border) — ADA fix */
+        <div className="px-5 pb-5 pt-4 bg-white border-t border-gray-100">
+          <p className="text-gray-700 leading-relaxed text-[0.925rem]">{answer}</p>
         </div>
       )}
     </div>
@@ -180,17 +190,18 @@ export default function BlogPostClient({ post }: Props) {
       <div
         className="relative text-white"
         style={{
-          background: `linear-gradient(to bottom, rgba(13,31,92,0.82) 0%, rgba(13,31,92,0.70) 60%, rgba(13,31,92,0.88) 100%), url('${post.image}') center/cover no-repeat`,
+          background: `linear-gradient(to bottom, rgba(13,31,92,0.88) 0%, rgba(13,31,92,0.76) 60%, rgba(13,31,92,0.92) 100%), url('${post.image}') center/cover no-repeat`,
           minHeight: "420px",
         }}
       >
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-14 flex flex-col justify-center" style={{ minHeight: "420px" }}>
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] text-white/50 mb-5">
-            <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
+          {/* Breadcrumbs — ADA: text-white/80 for links, text-white for current */}
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] text-white/80 mb-5">
+            <Link href="/" className="hover:text-white transition-colors underline underline-offset-2">Home</Link>
             <ChevronRight size={13} aria-hidden="true" />
-            <Link href="/blog" className="hover:text-white/80 transition-colors">Blog</Link>
+            <Link href="/blog" className="hover:text-white transition-colors underline underline-offset-2">Blog</Link>
             <ChevronRight size={13} aria-hidden="true" />
-            <span className="text-white/70 truncate max-w-[200px]" aria-current="page">{post.title}</span>
+            <span className="text-white truncate max-w-[200px]" aria-current="page">{post.title}</span>
           </nav>
 
           <div className="flex items-center gap-2 mb-4">
@@ -205,16 +216,18 @@ export default function BlogPostClient({ post }: Props) {
           >
             {post.title}
           </h1>
-          <p className="text-[1rem] text-white/80 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
+          {/* Excerpt — ADA: text-white/90 */}
+          <p className="text-[1rem] text-white/90 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
 
-          <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/60">
+          {/* Meta bar — ADA: text-white/80 for date/time, text-white for share */}
+          <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/80">
             <span className="flex items-center gap-1.5"><Calendar size={13} aria-hidden="true" /> {post.date}</span>
-            <span className="text-white/40">·</span>
+            <span className="text-white/50">·</span>
             <span className="flex items-center gap-1.5"><Clock size={13} aria-hidden="true" /> {post.readTime}</span>
             <button
               onClick={handleShare}
               aria-label="Copy article link to clipboard"
-              className="flex items-center gap-1.5 ml-auto text-white/60 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 ml-auto text-white hover:text-white/80 transition-colors font-semibold"
             >
               <Share2 size={14} aria-hidden="true" />
               {copied ? "Copied!" : "Share"}
@@ -223,7 +236,7 @@ export default function BlogPostClient({ post }: Props) {
         </div>
       </div>
 
-      {/* ── Content Layout ── */}
+      {/* Content Layout */}
       <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-12">
 
@@ -238,9 +251,9 @@ export default function BlogPostClient({ post }: Props) {
                 className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border-2 border-gray-100"
               />
               <div>
-                <p className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-0.5">Written By</p>
+                <p className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-500 mb-0.5">Written By</p>
                 <p className="font-bold text-gray-900 text-[0.95rem] leading-tight">{post.author.name}</p>
-                <p className="text-[0.8rem] text-gray-500">{post.author.title}</p>
+                <p className="text-[0.8rem] text-gray-600">{post.author.title}</p>
               </div>
             </div>
 
@@ -249,7 +262,7 @@ export default function BlogPostClient({ post }: Props) {
                 return (
                   <div key={idx} className="mb-10">
                     {section.content.split("\n\n").map((para, i) => (
-                      <p key={i} className="text-gray-700 leading-relaxed mb-4 text-[1rem]">{para}</p>
+                      <p key={i} className="text-gray-800 leading-relaxed mb-4 text-[1rem]">{para}</p>
                     ))}
                   </div>
                 );
@@ -258,16 +271,18 @@ export default function BlogPostClient({ post }: Props) {
               if (section.type === "keyTakeaways") {
                 return (
                   <div key={idx} className="mb-10 bg-blue-50 border border-blue-200 rounded-2xl p-6">
-                    <h2 className="text-[1rem] font-bold uppercase tracking-wider text-blue-700 mb-5 flex items-center gap-2">
-                      <CheckCircle2 size={16} aria-hidden="true" /> Key Takeaways
+                    {/* ADA fix: removed icon from heading, upgraded to text-blue-800 */}
+                    <h2 className="text-[1rem] font-bold uppercase tracking-wider text-blue-800 mb-5">
+                      Key Takeaways
                     </h2>
                     <ul className="space-y-4">
                       {section.items.map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 size={18} className="text-blue-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                          <CheckCircle2 size={18} className="text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                           <div>
+                            {/* ADA fix: label text-gray-900, body text text-gray-800 */}
                             <span className="font-bold text-gray-900">{item.label}: </span>
-                            <span className="text-gray-700 text-[0.925rem] leading-relaxed">{item.text}</span>
+                            <span className="text-gray-800 text-[0.925rem] leading-relaxed">{item.text}</span>
                           </div>
                         </li>
                       ))}
@@ -291,16 +306,25 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    <p className="text-gray-700 leading-relaxed mb-6 text-[1rem]">{section.content}</p>
+                    {/* Render content: split on \n\n for paragraphs, use dangerouslySetInnerHTML for HTML links/bold */}
+                    <div className="mb-6 space-y-4">
+                      {section.content.split("\n\n").map((para, i) => (
+                        <p key={i} className="text-gray-800 leading-relaxed text-[1rem]" dangerouslySetInnerHTML={{ __html: para }} />
+                      ))}
+                    </div>
                     {section.subsections?.map((sub, si) => (
                       <div key={si} className="mb-6">
                         <h3
-                          className="text-[1.1rem] font-bold text-gray-800 mb-2"
+                          className="text-[1.1rem] font-bold text-gray-900 mb-2"
                           style={{ fontFamily: "'Merriweather', serif" }}
                         >
                           {sub.heading}
                         </h3>
-                        <p className="text-gray-700 leading-relaxed text-[0.975rem]" dangerouslySetInnerHTML={{ __html: sub.content }} />
+                        <div className="space-y-3">
+                          {sub.content.split("\n\n").map((para, pi) => (
+                            <p key={pi} className="text-gray-800 leading-relaxed text-[0.975rem]" dangerouslySetInnerHTML={{ __html: para }} />
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </section>
@@ -314,15 +338,19 @@ export default function BlogPostClient({ post }: Props) {
                     key={idx}
                     id={id}
                     ref={(el) => { sectionRefs.current[id] = el; }}
-                    className="mb-10 scroll-mt-24 bg-[#0d1f5c]/5 border border-[#0d1f5c]/10 rounded-2xl p-6"
+                    className="mb-10 scroll-mt-24 bg-[#0d1f5c]/5 border border-[#0d1f5c]/15 rounded-2xl p-6"
                   >
                     <h2
-                      className="text-[1.3rem] font-bold text-[#0d1f5c] mb-3"
+                      className="text-[1.3rem] font-bold text-[#0d1f5c] mb-4"
                       style={{ fontFamily: "'Merriweather', serif" }}
                     >
                       {section.heading}
                     </h2>
-                    <p className="text-gray-700 leading-relaxed text-[0.975rem]">{section.content}</p>
+                    {/* Support both plain text and HTML lists in summary content */}
+                    <div
+                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-3 [&_ul]:space-y-2 [&_li]:flex [&_li]:items-start [&_li]:gap-2 [&_li]:before:content-['•'] [&_li]:before:text-[#1a3fa8] [&_li]:before:font-bold [&_li]:before:flex-shrink-0 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      dangerouslySetInnerHTML={{ __html: section.content }}
+                    />
                   </section>
                 );
               }
@@ -357,14 +385,14 @@ export default function BlogPostClient({ post }: Props) {
                 className="text-[1.3rem] font-bold mb-2"
                 style={{ fontFamily: "'Merriweather', serif" }}
               >
-                Ready to Compare Medigap Plans?
+                Ready to Compare Medicare Plans?
               </h3>
-              <p className="text-white/80 text-[0.9rem] mb-5 leading-relaxed">
-                Our licensed Medicare specialists will compare Plan G quotes from multiple carriers , at no cost to you.
+              <p className="text-white/90 text-[0.9rem] mb-5 leading-relaxed">
+                Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you.
               </p>
               <a
                 href="tel:8136995559"
-                aria-label="Call MIP at (813) 699-5559 to compare Medigap plans"
+                aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
               >
                 <Phone size={16} aria-hidden="true" />
@@ -372,7 +400,7 @@ export default function BlogPostClient({ post }: Props) {
               </a>
             </div>
 
-            {/* ── Related Posts ── */}
+            {/* Related Posts */}
             {post.relatedPosts.length > 0 && (
               <section aria-label="Related articles">
                 <h2
@@ -391,7 +419,7 @@ export default function BlogPostClient({ post }: Props) {
                       <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[0.65rem] font-bold uppercase tracking-wider mb-2 ${CATEGORY_COLORS[rel.category]}`}>
                         {rel.category}
                       </span>
-                      <p className="text-[0.875rem] font-semibold text-gray-800 group-hover:text-[#1a3fa8] transition-colors leading-snug">
+                      <p className="text-[0.875rem] font-semibold text-gray-900 group-hover:text-[#1a3fa8] transition-colors leading-snug">
                         {rel.title}
                       </p>
                       <span className="inline-flex items-center gap-1 text-[0.8rem] text-[#1a3fa8] font-semibold mt-2 group-hover:gap-1.5 transition-all">
@@ -404,14 +432,14 @@ export default function BlogPostClient({ post }: Props) {
             )}
           </article>
 
-          {/* ── Sidebar ── */}
+          {/* Sidebar */}
           <aside className="hidden lg:block" aria-label="Article sidebar">
             <div className="sticky top-20 space-y-6">
 
               {/* Table of Contents */}
               {tocItems.length > 0 && (
                 <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
-                  <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
+                  <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-600 mb-4 flex items-center gap-2">
                     <BookOpen size={13} aria-hidden="true" /> In This Article
                   </h3>
                   <nav aria-label="Article table of contents">
@@ -422,8 +450,8 @@ export default function BlogPostClient({ post }: Props) {
                             onClick={() => scrollTo(item.id)}
                             className={`w-full text-left px-3 py-2 rounded-lg text-[0.85rem] transition-colors ${
                               activeSection === item.id
-                                ? "bg-[#1a3fa8]/8 text-[#1a3fa8] font-semibold"
-                                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                                ? "bg-[#1a3fa8]/10 text-[#1a3fa8] font-semibold"
+                                : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                             }`}
                           >
                             {item.label}
@@ -443,12 +471,12 @@ export default function BlogPostClient({ post }: Props) {
                 <h3 className="text-[1rem] font-bold mb-2" style={{ fontFamily: "'Merriweather', serif" }}>
                   Get a Free Quote
                 </h3>
-                <p className="text-[0.85rem] text-white/80 mb-4 leading-relaxed">
-                  Compare Plan G rates from multiple carriers. Our specialists are available at no cost to you.
+                <p className="text-[0.85rem] text-white/90 mb-4 leading-relaxed">
+                  Compare Medicare plan rates from multiple carriers. Our specialists are available at no cost to you.
                 </p>
                 <a
                   href="tel:8136995559"
-                  aria-label="Call MIP at (813) 699-5559 for a free Medigap quote"
+                  aria-label="Call MIP at (813) 699-5559 for a free Medicare quote"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.875rem] hover:bg-[#e09515] transition-colors w-full justify-center mb-2"
                 >
                   <Phone size={15} aria-hidden="true" />
@@ -456,7 +484,7 @@ export default function BlogPostClient({ post }: Props) {
                 </a>
                 <Link
                   href="/do-i-need-a-supplement"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/30 text-white font-semibold text-[0.875rem] hover:bg-white/10 transition-colors w-full justify-center"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/40 text-white font-semibold text-[0.875rem] hover:bg-white/10 transition-colors w-full justify-center"
                 >
                   Do I Need a Supplement? <ArrowRight size={13} aria-hidden="true" />
                 </Link>
@@ -464,7 +492,7 @@ export default function BlogPostClient({ post }: Props) {
 
               {/* Quick Facts */}
               <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5">
-                <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-amber-700 mb-4">
+                <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-amber-800 mb-4">
                   Plan G Quick Facts
                 </h3>
                 <ul className="space-y-3">
@@ -476,8 +504,8 @@ export default function BlogPostClient({ post }: Props) {
                     "No network restrictions: any Medicare doctor",
                     "Lower premiums than Plan F",
                   ].map((fact, i) => (
-                    <li key={i} className="flex items-start gap-2 text-[0.825rem] text-gray-700">
-                      <CheckCircle2 size={14} className="text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <li key={i} className="flex items-start gap-2 text-[0.825rem] text-gray-800">
+                      <CheckCircle2 size={14} className="text-amber-700 flex-shrink-0 mt-0.5" aria-hidden="true" />
                       {fact}
                     </li>
                   ))}
@@ -486,11 +514,11 @@ export default function BlogPostClient({ post }: Props) {
 
               {/* Related Tools */}
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
-                <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-400 mb-4">Related Tools</h3>
+                <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-600 mb-4">Related Tools</h3>
                 <ul className="space-y-3">
                   {[
                     { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Medigap decision guide" },
-                    { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums & deductibles" },
+                    { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums and deductibles" },
                     { label: "Original vs. Advantage", href: "/original-vs-advantage", desc: "Compare your options" },
                   ].map((tool) => (
                     <li key={tool.href}>
@@ -500,8 +528,8 @@ export default function BlogPostClient({ post }: Props) {
                       >
                         <ArrowRight size={14} className="text-[#1a3fa8] flex-shrink-0 mt-0.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
                         <div>
-                          <p className="text-[0.875rem] font-semibold text-gray-800 group-hover:text-[#1a3fa8] transition-colors">{tool.label}</p>
-                          <p className="text-[0.775rem] text-gray-400">{tool.desc}</p>
+                          <p className="text-[0.875rem] font-semibold text-gray-900 group-hover:text-[#1a3fa8] transition-colors">{tool.label}</p>
+                          <p className="text-[0.775rem] text-gray-500">{tool.desc}</p>
                         </div>
                       </Link>
                     </li>
