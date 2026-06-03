@@ -347,42 +347,11 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    {/* Summary content renderer: styled list items + paragraphs, no raw table mixing */}
-                    <div className="space-y-3 text-[0.975rem] leading-relaxed"
-                      style={{
-                        // Scope styles to this div only
-                      }}
-                    >
-                      {section.content.split(/\n\n+/).map((block, bi) => {
-                        const trimmed = block.trim();
-                        // Detect a <ul> block and render as styled list
-                        if (trimmed.startsWith("<ul")) {
-                          // Extract <li> items
-                          const liMatches = [...trimmed.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
-                          return (
-                            <ul key={bi} className="space-y-2.5 mt-1">
-                              {liMatches.map((m, li) => (
-                                <li key={li} className="flex items-baseline gap-2">
-                                  <span className="inline-block w-[5px] h-[5px] rounded-full bg-[#1a3fa8] flex-shrink-0 relative top-[0.35em]" aria-hidden="true" />
-                                  <span
-                                    className="text-gray-800 [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                                    dangerouslySetInnerHTML={{ __html: m[1] }}
-                                  />
-                                </li>
-                              ))}
-                            </ul>
-                          );
-                        }
-                        // Plain paragraph or inline HTML
-                        return (
-                          <p
-                            key={bi}
-                            className="text-gray-800 [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                            dangerouslySetInnerHTML={{ __html: trimmed }}
-                          />
-                        );
-                      })}
-                    </div>
+                    {/* Summary content: native HTML pass-through, same approach as body sections */}
+                    <div
+                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      dangerouslySetInnerHTML={{ __html: section.content }}
+                    />
                   </section>
                 );
               }
