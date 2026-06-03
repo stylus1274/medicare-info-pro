@@ -178,6 +178,18 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/medicare-ambulance-coverage-2025",
+    title: "Does Medicare Cover Ambulance Rides in 2026?",
+    excerpt:
+      "Ambulance rides can cost thousands of dollars. Medicare Part B covers them when medically necessary, but strict rules determine when coverage applies, what you owe, and how to avoid surprise bills.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
