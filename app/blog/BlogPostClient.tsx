@@ -186,55 +186,51 @@ export default function BlogPostClient({ post }: Props) {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* Hero with full-bleed background image */}
-      <div
-        className="relative text-white"
-        style={{
-          background: `linear-gradient(to bottom, rgba(13,31,92,0.88) 0%, rgba(13,31,92,0.76) 60%, rgba(13,31,92,0.92) 100%), url('${post.image}') center/cover no-repeat`,
-          minHeight: "420px",
-        }}
-      >
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-14 flex flex-col justify-center" style={{ minHeight: "420px" }}>
-          {/* Breadcrumbs — ADA: text-white/80 for links, text-white for current */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] text-white/80 mb-5">
-            <Link href="/" className="hover:text-white transition-colors underline underline-offset-2">Home</Link>
-            <ChevronRight size={13} aria-hidden="true" />
-            <Link href="/blog" className="hover:text-white transition-colors underline underline-offset-2">Blog</Link>
-            <ChevronRight size={13} aria-hidden="true" />
-            <span className="text-white truncate max-w-[200px]" aria-current="page">{post.title}</span>
+      {/* Hero — matches site-wide style: solid #0d2260 bg, dot-grid overlay, blue-300/200 text, orange tag */}
+      <section className="bg-[#0d2260] pt-14 pb-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 relative">
+
+          {/* Breadcrumbs */}
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] mb-5">
+            <Link href="/" className="text-blue-300 hover:text-white transition-colors">Home</Link>
+            <ChevronRight size={13} className="text-blue-500" aria-hidden="true" />
+            <Link href="/blog" className="text-blue-300 hover:text-white transition-colors">Blog</Link>
+            <ChevronRight size={13} className="text-blue-500" aria-hidden="true" />
+            <span className="text-blue-200 truncate max-w-[240px]" aria-current="page">{post.title}</span>
           </nav>
 
-          <div className="flex items-center gap-2 mb-4">
-            <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[0.72rem] font-bold uppercase tracking-wider ${CATEGORY_COLORS[post.category]}`}>
-              {CATEGORY_ICONS[post.category]} {post.category}
-            </span>
+          {/* Category tag — orange, matches site badge style */}
+          <div className="inline-flex items-center gap-1.5 bg-[#f5a800]/20 text-[#f5a800] text-[0.72rem] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
+            {CATEGORY_ICONS[post.category]} {post.category}
           </div>
 
           <h1
-            className="text-[1.9rem] sm:text-[2.6rem] font-bold leading-tight mb-4 max-w-3xl"
+            className="text-[1.9rem] sm:text-[2.6rem] font-bold leading-tight mb-4 max-w-3xl text-white"
             style={{ fontFamily: "'Merriweather', serif" }}
           >
             {post.title}
           </h1>
-          {/* Excerpt — ADA: text-white/90 */}
-          <p className="text-[1rem] text-white/90 max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
 
-          {/* Meta bar — ADA: text-white/80 for date/time, text-white for share */}
-          <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-white/80">
+          {/* Excerpt */}
+          <p className="text-blue-200 text-[1rem] max-w-2xl leading-relaxed mb-6">{post.excerpt}</p>
+
+          {/* Meta bar */}
+          <div className="flex flex-wrap items-center gap-5 text-[0.82rem] text-blue-300">
             <span className="flex items-center gap-1.5"><Calendar size={13} aria-hidden="true" /> {post.date}</span>
-            <span className="text-white/50">·</span>
+            <span className="text-blue-500">·</span>
             <span className="flex items-center gap-1.5"><Clock size={13} aria-hidden="true" /> {post.readTime}</span>
             <button
               onClick={handleShare}
               aria-label="Copy article link to clipboard"
-              className="flex items-center gap-1.5 ml-auto text-white hover:text-white/80 transition-colors font-semibold"
+              className="flex items-center gap-1.5 ml-auto text-blue-300 hover:text-white transition-colors font-semibold"
             >
               <Share2 size={14} aria-hidden="true" />
               {copied ? "Copied!" : "Share"}
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Content Layout */}
       <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-12 w-full">
