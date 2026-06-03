@@ -15,7 +15,7 @@ Check off each post as it is built on the dev site.
 | 6 | [ ] | 116 | 9.2 | `medicare-qualifications-florida` |
 | 7 | [ ] | 112 | 7.8 | `how-to-reduce-medicare-premiums-based-on-income-2026` |
 | 8 | [ ] | 110 | 8.1 | `medicare-advantage-changes-2026-florida` |
-| 9 | [ ] | 105 | 8.2 | `medicare-ambulance-coverage-2025` |
+| 9 | [x] | 105 | 8.2 | `medicare-ambulance-coverage-2025` |
 | 10 | [ ] | 69 | 14.7 | `medicare-set-aside-explained` |
 | 11 | [ ] | 62 | 12.2 | `florida-medicare-if-still-working-at-65` |
 | 12 | [ ] | 60 | 5.7 | `does-medicare-cover-ozempic` |
