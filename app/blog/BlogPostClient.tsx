@@ -362,8 +362,8 @@ export default function BlogPostClient({ post }: Props) {
                           return (
                             <ul key={bi} className="space-y-2.5 mt-1">
                               {liMatches.map((m, li) => (
-                                <li key={li} className="flex items-start gap-3">
-                                  <span className="mt-1 w-2 h-2 rounded-full bg-[#1a3fa8] flex-shrink-0" aria-hidden="true" />
+                                <li key={li} className="flex items-baseline gap-2">
+                                  <span className="inline-block w-[5px] h-[5px] rounded-full bg-[#1a3fa8] flex-shrink-0 relative top-[0.35em]" aria-hidden="true" />
                                   <span
                                     className="text-gray-800 [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
                                     dangerouslySetInnerHTML={{ __html: m[1] }}
