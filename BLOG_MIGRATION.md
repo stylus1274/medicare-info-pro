@@ -19,7 +19,7 @@ Check off each post as it is built on the dev site.
 | 10 | [ ] | 69 | 14.7 | `medicare-set-aside-explained` |
 | 11 | [ ] | 62 | 12.2 | `florida-medicare-if-still-working-at-65` |
 | 12 | [ ] | 60 | 5.7 | `does-medicare-cover-ozempic` |
-| 13 | [ ] | 58 | 7.1 | `why-is-health-insurance-so-expensive-in-florida` |
+| 13 | [x] | 58 | 7.1 | `why-is-health-insurance-so-expensive-in-florida` |
 | 14 | [ ] | 52 | 11.7 | `switch-medicare-advantage-florida` |
 | 15 | [ ] | 51 | 10.7 | `medicare-coverage-for-scooters` |
 | 16 | [ ] | 47 | 10.0 | `how-medicare-premiums-are-calculated` |

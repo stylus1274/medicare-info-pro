@@ -190,6 +190,18 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/why-is-health-insurance-so-expensive-in-florida",
+    title: "Why Is Health Insurance So Expensive in Florida?",
+    excerpt:
+      "Florida residents consistently pay more for health insurance than most other Americans. An older population, a large uninsured pool, high hospital prices, and a fragmented insurance market all push premiums higher. Here is what is driving the cost and what you can actually do about it.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
