@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. If you missed your Initial Enrollment Period, you may qualify for a Special Enrollment Period depending on your circumstances. We help Apollo Beach residents understand their options and minimize any penalties.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Enrollment Assistance in Apollo Beach FL", href: "/medicare-enrollment-assistance-in-apollo-beach-fl" },
           { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
           { label: "Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach" },

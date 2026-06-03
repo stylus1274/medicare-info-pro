@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes, completely free. We compare every Medigap plan available in Plant City at no cost to you. Insurance carriers compensate us when you enroll, and your premium is the same whether you work with us or apply directly.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
           { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city" },
           { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city" },

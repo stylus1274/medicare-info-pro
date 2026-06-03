@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of eastern Hillsborough County including Brandon, Seffner, Plant City, and the greater Tampa Bay area.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
           { label: "Health Insurance Broker Valrico", href: "/health-insurance-broker-valrico" },
           { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico" },

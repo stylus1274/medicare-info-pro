@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes, completely free. We compare every Medigap plan available in Bartow at no cost to you. Insurance carriers compensate us when you enroll, and your premium is the same whether you work with us or apply directly.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
           { label: "Medicare Consulting Bartow", href: "/medicare-consulting-services-bartow" },
           { label: "Medicare Enrollment Assistance Bartow", href: "/medicare-enrollment-assistance-bartow" },

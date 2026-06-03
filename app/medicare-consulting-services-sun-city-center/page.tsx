@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of South Shore Hillsborough County including Ruskin, Apollo Beach, Wimauma, Riverview, and surrounding communities.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Ruskin", href: "/medicare-consulting-services-ruskin" },
           { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
           { label: "Medicare Agent — Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },

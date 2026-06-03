@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of Hillsborough County including Brandon, Plant City, Valrico, Temple Terrace, and surrounding communities.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon" },
           { label: "Medicare Consulting — Plant City", href: "/medicare-consulting-services-plant-city" },
           { label: "Medicare Agent — Seffner", href: "/medicare-insurance-agent-seffner-fl" },

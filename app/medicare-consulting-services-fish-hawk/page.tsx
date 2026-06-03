@@ -48,7 +48,7 @@ export default function Page() {
             a: "Call us at 813-699-5559 or click the Free Consultation button. We can meet by phone, video, or in person at a time that works for you.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Lithia", href: "/medicare-consulting-services-lithia" },
           { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview" },
           { label: "Medicare Agent — Fish Hawk", href: "/medicare-insurance-agent-fish-hawk-fl" },

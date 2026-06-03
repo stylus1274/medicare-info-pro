@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of eastern Hillsborough County including Valrico, Brandon, Seffner, and Bartow in Polk County.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city" },
           { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city" },
           { label: "Medicare Enrollment Assistance Bartow", href: "/medicare-enrollment-assistance-bartow" },

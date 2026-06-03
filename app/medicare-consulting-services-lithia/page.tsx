@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of Hillsborough County including Fish Hawk, Riverview, Brandon, Valrico, and surrounding communities.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Fish Hawk", href: "/medicare-consulting-services-fish-hawk" },
           { label: "Medicare Consulting — Valrico", href: "/medicare-consulting-services-valrico" },
           { label: "Medicare Agent — Lithia", href: "/medicare-insurance-agent-lithia-fl" },

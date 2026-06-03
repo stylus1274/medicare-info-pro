@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of South Shore Hillsborough County including Sun City Center, Ruskin, Apollo Beach, Wimauma, and Riverview.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
           { label: "Medicare Enrollment Assistance Sun City Center FL", href: "/medicare-enrollment-assistance-in-sun-city-center-fl" },
           { label: "Medicare Supplement Plans", href: "/medicare-supplement" },

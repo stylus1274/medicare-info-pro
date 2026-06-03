@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of South Shore Hillsborough County including Apollo Beach, Sun City Center, Riverview, Brandon, and Gibsonton.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
           { label: "Medicare Consulting — Sun City Center", href: "/medicare-consulting-services-sun-city-center" },
           { label: "Medicare Agent — Ruskin", href: "/medicare-insurance-agent-ruskin-fl" },

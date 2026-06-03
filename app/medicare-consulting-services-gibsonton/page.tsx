@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of Hillsborough County including Riverview, Apollo Beach, Brandon, Ruskin, and surrounding communities.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview" },
           { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
           { label: "Medicare Agent — Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl" },

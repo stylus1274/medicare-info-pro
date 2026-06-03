@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of Hillsborough County including Brandon, Valrico, New Tampa, and the greater Tampa Bay area.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace" },
           { label: "Medicare Insurance Agent Temple Terrace FL", href: "/medicare-insurance-agent-temple-terrace-fl" },
           { label: "Health Insurance Broker Temple Terrace", href: "/health-insurance-broker-temple-terrace" },

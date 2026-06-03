@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. If you missed your Initial Enrollment Period, you may qualify for a Special Enrollment Period. We help Brandon residents understand their options and minimize any penalties. Use our Medicare penalty calculator to estimate what a delay may have cost.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Enrollment Assistance in Brandon FL", href: "/medicare-enrollment-assistance-in-brandon-fl" },
           { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },
           { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },

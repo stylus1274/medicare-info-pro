@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of Hillsborough County including Valrico, Riverview, Seffner, Plant City, and the greater Tampa Bay area.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
           { label: "Health Insurance Broker Brandon", href: "/health-insurance-broker-brandon" },
           { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },

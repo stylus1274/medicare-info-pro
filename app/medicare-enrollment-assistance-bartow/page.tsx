@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. In addition to Bartow, we serve all of Polk County and neighboring Hillsborough County communities including Plant City, Brandon, and Lakeland.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting Bartow", href: "/medicare-consulting-services-bartow" },
           { label: "Medicare Enrollment Assistance Plant City", href: "/medicare-enrollment-assistance-plant-city" },
           { label: "Medicare Agent Bartow FL", href: "/medicare-insurance-agent-bartow-fl" },

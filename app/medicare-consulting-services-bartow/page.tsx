@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. In addition to Bartow, we serve all of Polk County and surrounding Hillsborough County communities including Plant City, Lakeland, Auburndale, and Lake Alfred.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Consulting — Plant City", href: "/medicare-consulting-services-plant-city" },
           { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon" },
           { label: "Medicare Agent — Bartow", href: "/medicare-insurance-agent-bartow-fl" },

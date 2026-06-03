@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of South Hillsborough County including Brandon, Gibsonton, Apollo Beach, Ruskin, and Sun City Center.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
           { label: "Health Insurance Broker Riverview", href: "/health-insurance-broker-riverview" },
           { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview" },

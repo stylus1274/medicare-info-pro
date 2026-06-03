@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes, completely free. We compare every Medigap plan available in Brandon at no cost to you. Insurance carriers compensate us when you enroll, and your premium is the same whether you work with us or apply directly.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
           { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
           { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },

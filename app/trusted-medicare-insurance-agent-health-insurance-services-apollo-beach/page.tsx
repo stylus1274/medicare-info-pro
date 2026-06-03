@@ -48,7 +48,7 @@ export default function Page() {
             a: "Yes. We serve all of South Shore Hillsborough County including Ruskin, Sun City Center, Gibsonton, Riverview, and Wimauma.",
           },
         ],
-        nearbyPages: [
+        relatedLinks: [
           { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
           { label: "Health Insurance Broker Apollo Beach", href: "/health-insurance-broker-apollo-beach" },
           { label: "Comparing Medicare Plans Apollo Beach", href: "/comparing-medicare-plans-apollo-beach" },
