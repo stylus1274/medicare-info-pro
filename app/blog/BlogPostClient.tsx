@@ -309,7 +309,7 @@ export default function BlogPostClient({ post }: Props) {
                     </h2>
                     {/* Body content: single pass-through div with scoped list/link styles */}
                     <div
-                      className="mb-6 text-gray-800 leading-relaxed text-[1rem] space-y-4 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      className="mb-6 text-gray-800 leading-relaxed text-[1rem] space-y-4 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
                       dangerouslySetInnerHTML={{ __html: section.content }}
                     />
                     {section.subsections?.map((sub, si) => (
@@ -321,7 +321,7 @@ export default function BlogPostClient({ post }: Props) {
                           {sub.heading}
                         </h3>
                         <div
-                          className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                          className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
                           dangerouslySetInnerHTML={{ __html: sub.content }}
                         />
                       </div>
@@ -347,7 +347,7 @@ export default function BlogPostClient({ post }: Props) {
                     </h2>
                     {/* Summary content: native HTML pass-through, same approach as body sections */}
                     <div
-                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
                       dangerouslySetInnerHTML={{ __html: section.content }}
                     />
                   </section>
