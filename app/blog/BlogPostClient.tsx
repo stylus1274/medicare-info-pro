@@ -347,11 +347,42 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    {/* Support both plain text and HTML lists in summary content */}
-                    <div
-                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-3 [&_ul]:space-y-2 [&_li]:flex [&_li]:items-start [&_li]:gap-2 [&_li]:before:content-['•'] [&_li]:before:text-[#1a3fa8] [&_li]:before:font-bold [&_li]:before:flex-shrink-0 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                      dangerouslySetInnerHTML={{ __html: section.content }}
-                    />
+                    {/* Summary content renderer: styled list items + paragraphs, no raw table mixing */}
+                    <div className="space-y-3 text-[0.975rem] leading-relaxed"
+                      style={{
+                        // Scope styles to this div only
+                      }}
+                    >
+                      {section.content.split(/\n\n+/).map((block, bi) => {
+                        const trimmed = block.trim();
+                        // Detect a <ul> block and render as styled list
+                        if (trimmed.startsWith("<ul")) {
+                          // Extract <li> items
+                          const liMatches = [...trimmed.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
+                          return (
+                            <ul key={bi} className="space-y-2.5 mt-1">
+                              {liMatches.map((m, li) => (
+                                <li key={li} className="flex items-start gap-3">
+                                  <span className="mt-1 w-2 h-2 rounded-full bg-[#1a3fa8] flex-shrink-0" aria-hidden="true" />
+                                  <span
+                                    className="text-gray-800 [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                                    dangerouslySetInnerHTML={{ __html: m[1] }}
+                                  />
+                                </li>
+                              ))}
+                            </ul>
+                          );
+                        }
+                        // Plain paragraph or inline HTML
+                        return (
+                          <p
+                            key={bi}
+                            className="text-gray-800 [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                            dangerouslySetInnerHTML={{ __html: trimmed }}
+                          />
+                        );
+                      })}
+                    </div>
                   </section>
                 );
               }
