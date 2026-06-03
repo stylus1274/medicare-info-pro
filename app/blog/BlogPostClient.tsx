@@ -307,12 +307,11 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    {/* Render content: split on \n\n for paragraphs, use dangerouslySetInnerHTML for HTML links/bold */}
-                    <div className="mb-6 space-y-4">
-                      {section.content.split("\n\n").map((para, i) => (
-                        <p key={i} className="text-gray-800 leading-relaxed text-[1rem]" dangerouslySetInnerHTML={{ __html: para }} />
-                      ))}
-                    </div>
+                    {/* Body content: single pass-through div with scoped list/link styles */}
+                    <div
+                      className="mb-6 text-gray-800 leading-relaxed text-[1rem] space-y-4 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      dangerouslySetInnerHTML={{ __html: section.content }}
+                    />
                     {section.subsections?.map((sub, si) => (
                       <div key={si} className="mb-6">
                         <h3
@@ -321,11 +320,10 @@ export default function BlogPostClient({ post }: Props) {
                         >
                           {sub.heading}
                         </h3>
-                        <div className="space-y-3">
-                          {sub.content.split("\n\n").map((para, pi) => (
-                            <p key={pi} className="text-gray-800 leading-relaxed text-[0.975rem]" dangerouslySetInnerHTML={{ __html: para }} />
-                          ))}
-                        </div>
+                        <div
+                          className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                          dangerouslySetInnerHTML={{ __html: sub.content }}
+                        />
                       </div>
                     ))}
                   </section>
@@ -349,7 +347,7 @@ export default function BlogPostClient({ post }: Props) {
                     </h2>
                     {/* Summary content: native HTML pass-through, same approach as body sections */}
                     <div
-                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
+                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
                       dangerouslySetInnerHTML={{ __html: section.content }}
                     />
                   </section>
