@@ -202,6 +202,42 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    title: "How Much Does Health Insurance Cost Per Month in Florida?",
+    excerpt:
+      "Florida health insurance premiums are among the highest in the country. What you pay depends on your age, the type of coverage, and whether you qualify for subsidies. Here is a clear breakdown of 2026 costs across every major coverage type.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/what-are-the-best-medicare-plans-for-seniors",
+    title: "What Are the Best Medicare Plans for Seniors?",
+    excerpt:
+      "There is no single best Medicare plan. The right choice depends on your health, your doctors, your medications, and how much financial risk you are comfortable carrying. This guide walks through every major option so you can make a confident, informed decision.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/is-reinstating-a-part-d-plan-possible",
+    title: "Is Reinstating a Part D Plan Possible?",
+    excerpt:
+      "Dropping a Medicare Part D plan or missing your initial enrollment window can have lasting financial consequences. Whether you can reinstate coverage depends on your specific situation and which enrollment period applies. Here is what you need to know.",
+    category: "Part D",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

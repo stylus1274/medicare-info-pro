@@ -7,9 +7,9 @@ Check off each post as it is built on the dev site.
 
 | # | Status | Clicks | Avg Pos | Slug |
 |---|--------|--------|---------|------|
-| 1 | [ ] | 663 | 7.9 | `how-much-does-health-insurance-cost-per-month-in-florida` |
-| 2 | [ ] | 383 | 6.7 | `what-are-the-best-medicare-plans-for-seniors` |
-| 3 | [ ] | 313 | 6.2 | `is-reinstating-a-part-d-plan-possible` |
+| 1 | [x] | 663 | 7.9 | `how-much-does-health-insurance-cost-per-month-in-florida` |
+| 2 | [x] | 383 | 6.7 | `what-are-the-best-medicare-plans-for-seniors` |
+| 3 | [x] | 313 | 6.2 | `is-reinstating-a-part-d-plan-possible` |
 | 4 | [ ] | 190 | 8.9 | `best-medicare-advantage-plans-florida` |
 | 5 | [ ] | 171 | 4.0 | `how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide` |
 | 6 | [ ] | 116 | 9.2 | `medicare-qualifications-florida` |
