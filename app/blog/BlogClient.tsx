@@ -91,7 +91,7 @@ const ARTICLES: Article[] = [
     date: "March 2026",
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/does-medicare-cover-life-alert",
@@ -103,7 +103,7 @@ const ARTICLES: Article[] = [
     date: "March 2026",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/2026-medicare-advantage-changes",
@@ -115,7 +115,7 @@ const ARTICLES: Article[] = [
     date: "February 2026",
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/irmaa-explained",
@@ -127,7 +127,7 @@ const ARTICLES: Article[] = [
     date: "January 2026",
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/part-d-2000-cap",
@@ -139,7 +139,7 @@ const ARTICLES: Article[] = [
     date: "January 2026",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/medigap-open-enrollment",
@@ -151,7 +151,7 @@ const ARTICLES: Article[] = [
     date: "December 2025",
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/annual-enrollment-period-guide",
@@ -163,7 +163,7 @@ const ARTICLES: Article[] = [
     date: "October 2025",
     readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80",
-    live: false,
+    live: true,
   },
   {
     slug: "/blog/medicare-coverage-for-scooters",
@@ -774,7 +774,7 @@ const ARTICLES: Article[] = [
     date: "September 2025",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
-    live: false,
+    live: true,
   },
 ];
 
