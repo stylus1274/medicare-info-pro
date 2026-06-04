@@ -705,6 +705,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+    title: "Do You Need to Work With a Medicare Insurance Agent?",
+    excerpt:
+      "Working with a Medicare insurance agent is free, but is it necessary? We break down exactly what an agent does, when it makes sense to use one, and when you can confidently go it alone.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/what-are-the-6-things-medicare-doesnt-cover",
+    title: "What Are the 6 Things Medicare Doesn't Cover?",
+    excerpt:
+      "Original Medicare leaves several significant gaps in coverage. Understanding what Medicare does not cover helps you plan for out-of-pocket costs and decide whether supplemental coverage makes sense for you.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-broker-vs-agent",
+    title: "Medicare Broker vs. Agent: What's the Difference?",
+    excerpt:
+      "Medicare broker and Medicare agent are often used interchangeably, but there are important differences. Learn what each term means, how they are compensated, and which type of help is best for your situation.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/affordable-health-insurance-options-for-tampa-families",
+    title: "Affordable Health Insurance Options for Tampa Families",
+    excerpt:
+      "Tampa families have more health insurance options than many realize. From ACA marketplace plans and Medicaid to Medicare at 65, learn how to find affordable coverage that fits your family's budget.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/use-medicare-insurance-agent-in-florida",
+    title: "Why Use a Medicare Insurance Agent in Florida?",
+    excerpt:
+      "Florida has one of the most competitive Medicare markets in the country. A licensed independent Medicare insurance agent helps you navigate it at no cost to you.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

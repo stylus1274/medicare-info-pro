@@ -52,11 +52,11 @@ Check off each post as it is built on the dev site.
 | 43 | [x] | 11 | 14.7 | `medicare-and-employer-insurance-after-65-brandon-fl` |
 | 44 | [x] | 11 | 7.7 | `understanding-medicare-part-b` |
 | 45 | [x] | 10 | 14.8 | `which-medicare-advantage-plans-tampa-free-post-hospital-meals` |
-| 46 | [ ] | 10 | 12.9 | `do-you-need-to-work-with-a-medicare-insurance-agent` |
-| 47 | [ ] | 10 | 6.9 | `what-are-the-6-things-medicare-doesnt-cover` |
-| 48 | [ ] | 9 | 15.2 | `medicare-broker-vs-agent` |
-| 49 | [ ] | 9 | 14.0 | `affordable-health-insurance-options-for-tampa-families` |
-| 50 | [ ] | 7 | 14.0 | `use-medicare-insurance-agent-in-florida` |
+| 46 | [x] | 10 | 12.9 | `do-you-need-to-work-with-a-medicare-insurance-agent` |
+| 47 | [x] | 10 | 6.9 | `what-are-the-6-things-medicare-doesnt-cover` |
+| 48 | [x] | 9 | 15.2 | `medicare-broker-vs-agent` |
+| 49 | [x] | 9 | 14.0 | `affordable-health-insurance-options-for-tampa-families` |
+| 50 | [x] | 7 | 14.0 | `use-medicare-insurance-agent-in-florida` |
 
 ## Notes
 - All 50 slugs must match the live site exactly to preserve SEO equity
