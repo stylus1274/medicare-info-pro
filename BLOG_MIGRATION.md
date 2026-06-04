@@ -17,10 +17,10 @@ Check off each post as it is built on the dev site.
 | 8 | [x] | 110 | 8.1 | `medicare-advantage-changes-2026-florida` |
 | 9 | [x] | 105 | 8.2 | `medicare-ambulance-coverage-2025` |
 | 10 | [x] | 69 | 14.7 | `medicare-set-aside-explained` |
-| 11 | [ ] | 62 | 12.2 | `florida-medicare-if-still-working-at-65` |
-| 12 | [ ] | 60 | 5.7 | `does-medicare-cover-ozempic` |
+| 11 | [x] | 62 | 12.2 | `florida-medicare-if-still-working-at-65` |
+| 12 | [x] | 60 | 5.7 | `does-medicare-cover-ozempic` |
 | 13 | [x] | 58 | 7.1 | `why-is-health-insurance-so-expensive-in-florida` |
-| 14 | [ ] | 52 | 11.7 | `switch-medicare-advantage-florida` |
+| 14 | [x] | 52 | 11.7 | `switch-medicare-advantage-florida` |
 | 15 | [ ] | 51 | 10.7 | `medicare-coverage-for-scooters` |
 | 16 | [ ] | 47 | 10.0 | `how-medicare-premiums-are-calculated` |
 | 17 | [ ] | 40 | 8.8 | `why-is-medicare-coverage-so-important` |

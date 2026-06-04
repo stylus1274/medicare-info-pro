@@ -310,6 +310,42 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/florida-medicare-if-still-working-at-65",
+    title: "Florida Medicare If Still Working at 65: What You Need to Know",
+    excerpt:
+      "Turning 65 while still employed is increasingly common in Florida. Whether you must enroll in Medicare, can delay it, or should coordinate it with your employer plan depends on the size of your employer and the type of coverage you have.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/does-medicare-cover-ozempic",
+    title: "Does Medicare Cover Ozempic? Coverage, Costs, and Alternatives",
+    excerpt:
+      "Ozempic is one of the most prescribed medications in the country, but Medicare coverage depends entirely on why your doctor prescribed it. For diabetes, coverage is generally available through Part D. For weight loss alone, coverage is more limited.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/switch-medicare-advantage-florida",
+    title: "How to Switch Medicare Advantage Plans in Florida",
+    excerpt:
+      "You are not locked into your Medicare Advantage plan forever. Florida beneficiaries have several windows each year to switch plans, and the right time to switch depends on your situation.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
