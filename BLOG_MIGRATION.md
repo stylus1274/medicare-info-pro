@@ -32,11 +32,11 @@ Check off each post as it is built on the dev site.
 | 23 | [x] | 27 | 10.6 | `how-to-choose-medicare-advantage-plans-2026` |
 | 24 | [x] | 25 | 7.1 | `original-medicare-vs-medicare-advantage-in-florida` |
 | 25 | [x] | 23 | 19.6 | `pros-and-cons-of-florida-medicare-supplement-plans` |
-| 26 | [ ] | 22 | 31.6 | `medicare-age` |
-| 27 | [ ] | 20 | 20.4 | `the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida` |
-| 28 | [ ] | 19 | 15.8 | `medicare-supplement-plans-florida-2026` |
-| 29 | [ ] | 18 | 13.9 | `medicare-disability-eligibility-requirements` |
-| 30 | [ ] | 18 | 7.1 | `medicare-issues-for-veterans-tampa` |
+| 26 | [x] | 22 | 31.6 | `medicare-age` |
+| 27 | [x] | 20 | 20.4 | `the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida` |
+| 28 | [x] | 19 | 15.8 | `medicare-supplement-plans-florida-2026` |
+| 29 | [x] | 18 | 13.9 | `medicare-disability-eligibility-requirements` |
+| 30 | [x] | 18 | 7.1 | `medicare-issues-for-veterans-tampa` |
 | 31 | [ ] | 17 | 8.4 | `medicare-why-are-there-so-many-letters` |
 | 32 | [ ] | 17 | 16.9 | `value-added-benefits-through-medicare-advantage` |
 | 33 | [ ] | 16 | 3.9 | `medigap-premium-increases` |

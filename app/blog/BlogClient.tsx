@@ -465,6 +465,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/medicare-age",
+    title: "What Age Do You Get Medicare? Eligibility Ages Explained",
+    excerpt:
+      "Most people know Medicare starts at 65, but the rules around exactly when and how you enroll are more nuanced than most people realize. This guide explains every age-based eligibility scenario.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
+    title: "Pros and Cons of Enrolling in a Medicare Advantage Plan in Florida 2026",
+    excerpt:
+      "Medicare Advantage now covers nearly 60% of Florida Medicare beneficiaries, but that does not mean it is the right choice for everyone. This guide gives you an honest, balanced look at the advantages and disadvantages.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-supplement-plans-florida-2026",
+    title: "Medicare Supplement Plans Florida 2026: Plan G vs. N vs. F Compared",
+    excerpt:
+      "Medicare Supplement plans are standardized by the federal government, meaning the benefits for each plan letter are identical regardless of insurer. The only variable is the premium. This guide compares the top plans in Florida for 2026.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-disability-eligibility-requirements",
+    title: "Medicare Disability Eligibility Requirements 2026: Complete Guide",
+    excerpt:
+      "Medicare is not just for people 65 and older. If you have a qualifying disability, End-Stage Renal Disease, or ALS, you may be eligible for Medicare at any age. This guide explains every disability pathway and the waiting periods involved.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-issues-for-veterans-tampa",
+    title: "Medicare and VA Benefits for Veterans in Tampa: What You Need to Know in 2026",
+    excerpt:
+      "Veterans in Tampa have access to both VA healthcare and Medicare, but the two programs do not automatically coordinate. Understanding how they work together can save you thousands of dollars and prevent gaps in coverage.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
