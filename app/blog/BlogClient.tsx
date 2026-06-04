@@ -585,6 +585,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/5-best-medicare-consultants-in-tampa-bay",
+    title: "5 Best Medicare Consultants in Tampa Bay: What to Look For in 2026",
+    excerpt:
+      "Finding the right Medicare consultant in Tampa Bay can save you thousands of dollars and prevent costly enrollment mistakes. This guide explains what separates great consultants from average ones and what to look for when choosing your Medicare advisor.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/maximize-medicare-benefits-florida-seniors",
+    title: "How to Maximize Your Medicare Benefits in Florida: A Complete Guide for 2026",
+    excerpt:
+      "Most Medicare beneficiaries in Florida use only a fraction of the benefits available to them. Free preventive screenings go unused, cost-reduction programs go unapplied for, and plan choices are made once and never revisited. This guide shows you exactly how to get full value from your Medicare coverage.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-advantage-travel-benefits-florida-residents",
+    title: "Medicare Advantage Travel Benefits for Florida Residents: What Is Covered in 2026",
+    excerpt:
+      "Florida residents who travel frequently or split time between states face a coverage challenge with Medicare Advantage. Most MA plans are built around a local service area, which means coverage outside that area is limited. Understanding how travel benefits work, and choosing the right plan structure, can prevent unexpected out-of-pocket costs when you are away from home.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/best-medicare-plans-for-snowbirds-in-florida",
+    title: "Best Medicare Plans for Snowbirds in Florida 2026: A Complete Guide",
+    excerpt:
+      "Snowbirds who split time between Florida and a northern state face a Medicare coverage challenge that most beneficiaries do not. The plan that works perfectly in Florida may leave you without coverage for routine care in your other home state. This guide explains your options and how to choose the plan that works best for your dual-state lifestyle.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/can-i-have-both-medicare-and-medicaid",
+    title: "Can I Have Both Medicare and Medicaid? Dual Eligibility Explained for Florida Residents",
+    excerpt:
+      "Yes, you can have both Medicare and Medicaid at the same time. Beneficiaries who qualify for both programs are called dual-eligible, and they receive some of the most comprehensive coverage available in the U.S. healthcare system. This guide explains how dual eligibility works in Florida, what benefits you receive, and how to enroll.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

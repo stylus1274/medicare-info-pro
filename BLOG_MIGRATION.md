@@ -42,11 +42,11 @@ Check off each post as it is built on the dev site.
 | 33 | [x] | 16 | 3.9 | `medigap-premium-increases` |
 | 34 | [x] | 15 | 6.9 | `why-medicare-denies-mobility-scooter-claims-florida` |
 | 35 | [x] | 15 | 24.1 | `best-medicare-agent-in-florida` |
-| 36 | [ ] | 15 | 33.3 | `5-best-medicare-consultants-in-tampa-bay` |
-| 37 | [ ] | 13 | 11.4 | `maximize-medicare-benefits-florida-seniors` |
-| 38 | [ ] | 13 | 20.4 | `medicare-advantage-travel-benefits-florida-residents` |
-| 39 | [ ] | 13 | 8.2 | `best-medicare-plans-for-snowbirds-in-florida` |
-| 40 | [ ] | 13 | 18.8 | `can-i-have-both-medicare-and-medicaid` |
+| 36 | [x] | 15 | 33.3 | `5-best-medicare-consultants-in-tampa-bay` |
+| 37 | [x] | 13 | 11.4 | `maximize-medicare-benefits-florida-seniors` |
+| 38 | [x] | 13 | 20.4 | `medicare-advantage-travel-benefits-florida-residents` |
+| 39 | [x] | 13 | 8.2 | `best-medicare-plans-for-snowbirds-in-florida` |
+| 40 | [x] | 13 | 18.8 | `can-i-have-both-medicare-and-medicaid` |
 | 41 | [ ] | 13 | 7.4 | `understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025` |
 | 42 | [ ] | 11 | 7.0 | `resolving-common-challenges-when-selecting-medicare-in-florida` |
 | 43 | [ ] | 11 | 14.7 | `medicare-and-employer-insurance-after-65-brandon-fl` |
