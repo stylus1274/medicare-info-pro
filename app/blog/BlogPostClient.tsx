@@ -42,6 +42,54 @@ import Footer from "@/components/Footer";
 
 type Category = "Enrollment" | "Plans" | "Costs" | "Coverage" | "Supplements" | "Part D";
 
+/**
+ * Pre-process content HTML: ensure every <strong>Heading:</strong> that appears
+ * mid-paragraph gets a <p> break before it so it renders as its own paragraph.
+ * Matches patterns like: some text. <strong>Next Sub-heading:</strong> more text
+ * and wraps the strong tag in its own <p> block.
+ */
+function processContent(html: string): string {
+  // Split on double newlines first (explicit breaks)
+  const blocks = html.split(/\n\n+/);
+  return blocks
+    .map((block) => {
+      // Within each block, split further on <strong>Heading:</strong> patterns
+      // that appear after non-whitespace content (i.e., mid-paragraph)
+      return block
+        .replace(/([^>\n])(<strong>[A-Z0-9][^<]*:<\/strong>)/g, "$1\n\n$2")
+        .replace(/([^>\n])(<strong>\d+\.[^<]*<\/strong>)/g, "$1\n\n$2");
+    })
+    .join("\n\n");
+}
+
+/** Convert \n\n-separated content into wrapped blocks for rendering.
+ * Uses <div> for blocks containing block-level HTML (ul, ol, table, div),
+ * and <p> for plain text / inline-only content.
+ */
+function renderParagraphs(html: string, className: string): React.ReactNode {
+  const processed = processContent(html);
+  const blocks = processed.split(/\n\n+/).filter(Boolean);
+  const BLOCK_TAGS = /^\s*<(ul|ol|table|div|blockquote|figure|h[1-6])/i;
+  return blocks.map((block, i) => {
+    const isBlock = BLOCK_TAGS.test(block);
+    if (isBlock) {
+      return (
+        <div
+          key={i}
+          dangerouslySetInnerHTML={{ __html: block }}
+        />
+      );
+    }
+    return (
+      <p
+        key={i}
+        className={className}
+        dangerouslySetInnerHTML={{ __html: block }}
+      />
+    );
+  });
+}
+
 const CATEGORY_COLORS: Record<Category, string> = {
   Enrollment: "bg-blue-100 text-blue-800",
   Plans: "bg-purple-100 text-purple-800",
@@ -307,11 +355,10 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    {/* Body content: single pass-through div with scoped list/link styles */}
-                    <div
-                      className="mb-6 text-gray-800 leading-relaxed text-[1rem] space-y-4 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                      dangerouslySetInnerHTML={{ __html: section.content }}
-                    />
+                    {/* Body content: renderParagraphs splits on \n\n and auto-breaks before bold sub-headings */}
+                    <div className="mb-6 space-y-4 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2 [&_table]:w-full [&_table]:text-sm [&_table]:border-collapse [&_table]:my-4 [&_th]:p-3 [&_th]:text-left [&_td]:p-3 [&_td]:border-b">
+                      {renderParagraphs(section.content, "text-gray-800 leading-relaxed text-[1rem]")}
+                    </div>
                     {section.subsections?.map((sub, si) => (
                       <div key={si} className="mb-6">
                         <h3
@@ -320,10 +367,9 @@ export default function BlogPostClient({ post }: Props) {
                         >
                           {sub.heading}
                         </h3>
-                        <div
-                          className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                          dangerouslySetInnerHTML={{ __html: sub.content }}
-                        />
+                        <div className="space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2">
+                          {renderParagraphs(sub.content, "text-gray-800 leading-relaxed text-[0.975rem]")}
+                        </div>
                       </div>
                     ))}
                   </section>
@@ -345,11 +391,10 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       {section.heading}
                     </h2>
-                    {/* Summary content: native HTML pass-through, same approach as body sections */}
-                    <div
-                      className="text-gray-800 leading-relaxed text-[0.975rem] space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2"
-                      dangerouslySetInnerHTML={{ __html: section.content }}
-                    />
+                    {/* Summary content: renderParagraphs for consistent paragraph breaks */}
+                    <div className="space-y-3 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2">
+                      {renderParagraphs(section.content, "text-gray-800 leading-relaxed text-[0.975rem]")}
+                    </div>
                   </section>
                 );
               }
