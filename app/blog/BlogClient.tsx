@@ -202,6 +202,42 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/best-medicare-advantage-plans-florida",
+    title: "Best Medicare Advantage Plans in Florida 2026",
+    excerpt:
+      "Florida has one of the most competitive Medicare Advantage markets in the country. Knowing which plans consistently deliver strong value requires looking beyond the premium and understanding what each plan actually covers in your specific area.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+    title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
+    excerpt:
+      "Signing up for Medicare is something you can absolutely do on your own. This step-by-step guide walks through every step, from checking your eligibility to confirming your coverage is active.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-qualifications-florida",
+    title: "Medicare Qualifications in Florida: Who Is Eligible?",
+    excerpt:
+      "Most people think of Medicare as a program that starts at 65, but the eligibility rules are more nuanced than that. Age, work history, disability status, and specific medical conditions all affect when and how you qualify.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/how-much-does-health-insurance-cost-per-month-in-florida",
     title: "How Much Does Health Insurance Cost Per Month in Florida?",
     excerpt:

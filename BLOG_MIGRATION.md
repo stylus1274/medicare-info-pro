@@ -10,9 +10,9 @@ Check off each post as it is built on the dev site.
 | 1 | [x] | 663 | 7.9 | `how-much-does-health-insurance-cost-per-month-in-florida` |
 | 2 | [x] | 383 | 6.7 | `what-are-the-best-medicare-plans-for-seniors` |
 | 3 | [x] | 313 | 6.2 | `is-reinstating-a-part-d-plan-possible` |
-| 4 | [ ] | 190 | 8.9 | `best-medicare-advantage-plans-florida` |
-| 5 | [ ] | 171 | 4.0 | `how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide` |
-| 6 | [ ] | 116 | 9.2 | `medicare-qualifications-florida` |
+| 4 | [x] | 190 | 8.9 | `best-medicare-advantage-plans-florida` |
+| 5 | [x] | 171 | 4.0 | `how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide` |
+| 6 | [x] | 116 | 9.2 | `medicare-qualifications-florida` |
 | 7 | [ ] | 112 | 7.8 | `how-to-reduce-medicare-premiums-based-on-income-2026` |
 | 8 | [ ] | 110 | 8.1 | `medicare-advantage-changes-2026-florida` |
 | 9 | [x] | 105 | 8.2 | `medicare-ambulance-coverage-2025` |
