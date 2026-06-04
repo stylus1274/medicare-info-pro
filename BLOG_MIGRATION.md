@@ -21,9 +21,9 @@ Check off each post as it is built on the dev site.
 | 12 | [x] | 60 | 5.7 | `does-medicare-cover-ozempic` |
 | 13 | [x] | 58 | 7.1 | `why-is-health-insurance-so-expensive-in-florida` |
 | 14 | [x] | 52 | 11.7 | `switch-medicare-advantage-florida` |
-| 15 | [ ] | 51 | 10.7 | `medicare-coverage-for-scooters` |
-| 16 | [ ] | 47 | 10.0 | `how-medicare-premiums-are-calculated` |
-| 17 | [ ] | 40 | 8.8 | `why-is-medicare-coverage-so-important` |
+| 15 | [x] | 51 | 10.7 | `medicare-coverage-for-scooters` |
+| 16 | [x] | 47 | 10.0 | `how-medicare-premiums-are-calculated` |
+| 17 | [x] | 40 | 8.8 | `why-is-medicare-coverage-so-important` |
 | 18 | [ ] | 40 | 11.5 | `can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare` |
 | 19 | [ ] | 40 | 11.3 | `florida-health-insurance-cost` |
 | 20 | [ ] | 35 | 13.8 | `medicare-plans-cancer-treatment` |
