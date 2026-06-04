@@ -429,6 +429,42 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/how-to-choose-medicare-advantage-plans-2026",
+    title: "How to Choose a Medicare Advantage Plan in 2026: Step-by-Step Guide",
+    excerpt:
+      "With hundreds of Medicare Advantage plans available in Florida, choosing the right one requires more than comparing monthly premiums. This step-by-step guide walks you through every factor that matters.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/original-medicare-vs-medicare-advantage-in-florida",
+    title: "Original Medicare vs. Medicare Advantage in Florida 2026: Which Is Right for You?",
+    excerpt:
+      "The choice between Original Medicare and Medicare Advantage is the most consequential decision most beneficiaries make. Both options have real advantages and real drawbacks.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/pros-and-cons-of-florida-medicare-supplement-plans",
+    title: "Pros and Cons of Florida Medicare Supplement Plans 2026",
+    excerpt:
+      "Medicare Supplement plans offer some of the most comprehensive coverage available to Medicare beneficiaries. But they also come with higher monthly premiums and no extra benefits. Here is the balanced view.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

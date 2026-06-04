@@ -29,9 +29,9 @@ Check off each post as it is built on the dev site.
 | 20 | [x] | 35 | 13.8 | `medicare-plans-cancer-treatment` |
 | 21 | [x] | 30 | 6.5 | `2025-medicare-scams-florida` |
 | 22 | [x] | 30 | 18.9 | `medicare-supplement-plans-in-florida` |
-| 23 | [ ] | 27 | 10.6 | `how-to-choose-medicare-advantage-plans-2026` |
-| 24 | [ ] | 25 | 7.1 | `original-medicare-vs-medicare-advantage-in-florida` |
-| 25 | [ ] | 23 | 19.6 | `pros-and-cons-of-florida-medicare-supplement-plans` |
+| 23 | [x] | 27 | 10.6 | `how-to-choose-medicare-advantage-plans-2026` |
+| 24 | [x] | 25 | 7.1 | `original-medicare-vs-medicare-advantage-in-florida` |
+| 25 | [x] | 23 | 19.6 | `pros-and-cons-of-florida-medicare-supplement-plans` |
 | 26 | [ ] | 22 | 31.6 | `medicare-age` |
 | 27 | [ ] | 20 | 20.4 | `the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida` |
 | 28 | [ ] | 19 | 15.8 | `medicare-supplement-plans-florida-2026` |
