@@ -227,9 +227,9 @@ Delaying Medicare enrollment while relying on individual or marketplace coverage
     },
   ],
   relatedPosts: [
-    { title: "How to Apply for Medicare Without Social Security", href: "/blog/medicare-without-social-security", category: "Enrollment" },
-    { title: "Medicare Enrollment Timeline", href: "/enrollment-timeline", category: "Enrollment" },
-    { title: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", category: "Supplements" },
+    { title: "How to Apply for Medicare Without Social Security", href: "/blog/medicare-without-social-security", category: "Enrollment" as const },
+    { title: "Medicare Enrollment Timeline", href: "/enrollment-timeline", category: "Enrollment" as const },
+    { title: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", category: "Supplements" as const },
   ],
 };
 

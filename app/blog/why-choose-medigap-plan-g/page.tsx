@@ -164,9 +164,9 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
     },
   ],
   relatedPosts: [
-    { title: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", category: "Supplements" },
-    { title: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage", category: "Plans" },
-    { title: "Costs at a Glance: 2026 Premiums & Deductibles", href: "/costs-at-a-glance", category: "Costs" },
+    { title: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", category: "Supplements" as const },
+    { title: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage", category: "Plans" as const },
+    { title: "Costs at a Glance: 2026 Premiums & Deductibles", href: "/costs-at-a-glance", category: "Costs" as const },
   ],
 };
 

@@ -5,6 +5,7 @@ type CalloutType = "warning" | "info" | "success";
 interface CalloutProps {
   type?: CalloutType;
   children: React.ReactNode;
+  title?: string;
 }
 
 export default function Callout({ type = "info", children }: CalloutProps) {

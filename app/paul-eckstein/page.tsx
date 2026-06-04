@@ -15,6 +15,7 @@ const MEMBER = {
   location: "Brandon, FL",
   serviceArea: "Hillsborough County, Brandon, Riverview, Valrico, and surrounding communities",
   photo: null,
+  photoUrl: "",
   bio: [
     "Paul Eckstein is a Florida licensed insurance agent who has been a resident of the Tampa Bay area since 1983. With more than 20 years of experience in the insurance industry, Paul brings a depth of knowledge that few agents can match. He is originally from Ohio and a graduate of the University of Dayton.",
     "Throughout his career, Paul has worked with a broad spectrum of carriers across life and health insurance disciplines. Today, his focus is squarely on Medicare, where his primary goal is fitting the right plan to each client's unique needs. He believes that no two Medicare situations are exactly alike, and he takes the time to understand each client's health history, budget, and preferred doctors before making any recommendation.",

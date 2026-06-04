@@ -216,9 +216,9 @@ The only way to enroll after missing your window is through the General Enrollme
     },
   ],
   relatedPosts: [
-    { title: "Working Past 65: When to Enroll in Medicare", href: "/blog/working-past-65", category: "Enrollment" },
-    { title: "Medicare Enrollment Timeline", href: "/enrollment-timeline", category: "Enrollment" },
-    { title: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage", category: "Plans" },
+    { title: "Working Past 65: When to Enroll in Medicare", href: "/blog/working-past-65", category: "Enrollment" as const },
+    { title: "Medicare Enrollment Timeline", href: "/enrollment-timeline", category: "Enrollment" as const },
+    { title: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage", category: "Plans" as const },
   ],
 };
 
