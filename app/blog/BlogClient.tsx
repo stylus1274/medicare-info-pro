@@ -274,6 +274,42 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+    title: "How to Reduce Medicare Premiums Based on Income 2026",
+    excerpt:
+      "If your income is above certain thresholds, you pay more for Medicare Parts B and D through a surcharge called IRMAA. Understanding how IRMAA is calculated, when you can appeal it, and how to plan your income to minimize it can save you hundreds or even thousands of dollars per year.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-advantage-changes-2026-florida",
+    title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
+    excerpt:
+      "Medicare Advantage plans change every year, but 2026 brings more significant shifts than most. Florida enrollees who do not review their plan during the Annual Enrollment Period risk facing higher costs, reduced benefits, or coverage gaps.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-set-aside-explained",
+    title: "Medicare Set-Aside Explained: What It Is and When You Need One",
+    excerpt:
+      "If you are settling a personal injury or workers compensation claim and you are a Medicare beneficiary, you may need a Medicare Set-Aside arrangement. Getting this wrong can result in Medicare refusing to pay your future medical bills.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

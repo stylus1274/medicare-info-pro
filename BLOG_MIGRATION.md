@@ -13,10 +13,10 @@ Check off each post as it is built on the dev site.
 | 4 | [x] | 190 | 8.9 | `best-medicare-advantage-plans-florida` |
 | 5 | [x] | 171 | 4.0 | `how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide` |
 | 6 | [x] | 116 | 9.2 | `medicare-qualifications-florida` |
-| 7 | [ ] | 112 | 7.8 | `how-to-reduce-medicare-premiums-based-on-income-2026` |
-| 8 | [ ] | 110 | 8.1 | `medicare-advantage-changes-2026-florida` |
+| 7 | [x] | 112 | 7.8 | `how-to-reduce-medicare-premiums-based-on-income-2026` |
+| 8 | [x] | 110 | 8.1 | `medicare-advantage-changes-2026-florida` |
 | 9 | [x] | 105 | 8.2 | `medicare-ambulance-coverage-2025` |
-| 10 | [ ] | 69 | 14.7 | `medicare-set-aside-explained` |
+| 10 | [x] | 69 | 14.7 | `medicare-set-aside-explained` |
 | 11 | [ ] | 62 | 12.2 | `florida-medicare-if-still-working-at-65` |
 | 12 | [ ] | 60 | 5.7 | `does-medicare-cover-ozempic` |
 | 13 | [x] | 58 | 7.1 | `why-is-health-insurance-so-expensive-in-florida` |
