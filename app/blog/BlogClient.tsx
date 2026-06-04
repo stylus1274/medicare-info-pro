@@ -645,6 +645,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+    title: "Understanding the $2,000 Out-of-Pocket Cap for Medicare Part D in 2025 and 2026",
+    excerpt:
+      "Starting in 2025, Medicare Part D has a $2,000 annual out-of-pocket cap, the most significant drug coverage improvement in decades. This guide explains how the cap works, what changed from previous years, and how to maximize your savings.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+    title: "Resolving Common Challenges When Selecting Medicare in Florida: A Practical Guide",
+    excerpt:
+      "Choosing Medicare in Florida comes with unique challenges: plan availability, provider networks, snowbird coverage, and enrollment timing. Learn how to navigate the most common problems Florida beneficiaries face.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+    title: "Medicare and Employer Insurance After 65 in Brandon, FL: How They Work Together",
+    excerpt:
+      "Still working at 65 in Brandon, FL? Learn how Medicare coordinates with employer insurance, when to enroll in Part B, how to avoid penalties, and when Medicare or your employer plan pays first.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/understanding-medicare-part-b",
+    title: "Understanding Medicare Part B: Coverage, Costs, and Enrollment in 2026",
+    excerpt:
+      "Medicare Part B covers doctor visits, outpatient care, preventive services, and medical equipment. Learn what Part B covers, what it costs in 2026, how to enroll, and how to avoid the late enrollment penalty.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
+    title: "Which Medicare Advantage Plans in Tampa Offer Free Post-Hospital Meals?",
+    excerpt:
+      "Some Medicare Advantage plans in Tampa offer free post-hospital meal delivery as a supplemental benefit. Learn which plans include this benefit, how it works, and how to compare plans in the Tampa Bay area.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

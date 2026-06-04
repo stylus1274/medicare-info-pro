@@ -47,11 +47,11 @@ Check off each post as it is built on the dev site.
 | 38 | [x] | 13 | 20.4 | `medicare-advantage-travel-benefits-florida-residents` |
 | 39 | [x] | 13 | 8.2 | `best-medicare-plans-for-snowbirds-in-florida` |
 | 40 | [x] | 13 | 18.8 | `can-i-have-both-medicare-and-medicaid` |
-| 41 | [ ] | 13 | 7.4 | `understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025` |
-| 42 | [ ] | 11 | 7.0 | `resolving-common-challenges-when-selecting-medicare-in-florida` |
-| 43 | [ ] | 11 | 14.7 | `medicare-and-employer-insurance-after-65-brandon-fl` |
-| 44 | [ ] | 11 | 7.7 | `understanding-medicare-part-b` |
-| 45 | [ ] | 10 | 14.8 | `which-medicare-advantage-plans-tampa-free-post-hospital-meals` |
+| 41 | [x] | 13 | 7.4 | `understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025` |
+| 42 | [x] | 11 | 7.0 | `resolving-common-challenges-when-selecting-medicare-in-florida` |
+| 43 | [x] | 11 | 14.7 | `medicare-and-employer-insurance-after-65-brandon-fl` |
+| 44 | [x] | 11 | 7.7 | `understanding-medicare-part-b` |
+| 45 | [x] | 10 | 14.8 | `which-medicare-advantage-plans-tampa-free-post-hospital-meals` |
 | 46 | [ ] | 10 | 12.9 | `do-you-need-to-work-with-a-medicare-insurance-agent` |
 | 47 | [ ] | 10 | 6.9 | `what-are-the-6-things-medicare-doesnt-cover` |
 | 48 | [ ] | 9 | 15.2 | `medicare-broker-vs-agent` |
