@@ -369,6 +369,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
+    title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
+    excerpt:
+      "Yes, you can drop your Medicare Advantage plan and return to Original Medicare. But the timing of when you do it, and whether you can get a Medigap supplement afterward, depends on which enrollment window you use.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/florida-health-insurance-cost",
+    title: "Florida Health Insurance Cost in 2026: What to Expect",
+    excerpt:
+      "Health insurance costs in Florida are among the highest in the nation. Whether you are buying through the ACA marketplace, enrolling in Medicare, or evaluating employer coverage, understanding what drives costs helps you find the best value.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-plans-cancer-treatment",
+    title: "Medicare Coverage for Cancer Treatment: What Is Covered in 2026",
+    excerpt:
+      "Medicare covers most cancer treatments including chemotherapy, radiation, surgery, and immunotherapy. But the out-of-pocket costs can be substantial without the right supplemental coverage.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/2025-medicare-scams-florida",
+    title: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
+    excerpt:
+      "Florida consistently ranks among the top states for Medicare fraud. Scammers target Medicare beneficiaries with fake plan offers, genetic testing schemes, and identity theft attempts.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medicare-supplement-plans-in-florida",
+    title: "Medicare Supplement Plans in Florida 2026: Complete Guide",
+    excerpt:
+      "Medicare Supplement (Medigap) plans fill the gaps in Original Medicare coverage. Florida has one of the most competitive Medigap markets in the country, which means more choices and potentially lower premiums if you know how to shop.",
+    category: "Supplements",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

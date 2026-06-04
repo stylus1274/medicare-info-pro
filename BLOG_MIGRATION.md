@@ -24,11 +24,11 @@ Check off each post as it is built on the dev site.
 | 15 | [x] | 51 | 10.7 | `medicare-coverage-for-scooters` |
 | 16 | [x] | 47 | 10.0 | `how-medicare-premiums-are-calculated` |
 | 17 | [x] | 40 | 8.8 | `why-is-medicare-coverage-so-important` |
-| 18 | [ ] | 40 | 11.5 | `can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare` |
-| 19 | [ ] | 40 | 11.3 | `florida-health-insurance-cost` |
-| 20 | [ ] | 35 | 13.8 | `medicare-plans-cancer-treatment` |
-| 21 | [ ] | 30 | 6.5 | `2025-medicare-scams-florida` |
-| 22 | [ ] | 30 | 18.9 | `medicare-supplement-plans-in-florida` |
+| 18 | [x] | 40 | 11.5 | `can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare` |
+| 19 | [x] | 40 | 11.3 | `florida-health-insurance-cost` |
+| 20 | [x] | 35 | 13.8 | `medicare-plans-cancer-treatment` |
+| 21 | [x] | 30 | 6.5 | `2025-medicare-scams-florida` |
+| 22 | [x] | 30 | 18.9 | `medicare-supplement-plans-in-florida` |
 | 23 | [ ] | 27 | 10.6 | `how-to-choose-medicare-advantage-plans-2026` |
 | 24 | [ ] | 25 | 7.1 | `original-medicare-vs-medicare-advantage-in-florida` |
 | 25 | [ ] | 23 | 19.6 | `pros-and-cons-of-florida-medicare-supplement-plans` |
