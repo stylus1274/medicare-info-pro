@@ -525,6 +525,66 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/medicare-why-are-there-so-many-letters",
+    title: "Why Are There So Many Medicare Plan Letters? A–N Explained",
+    excerpt:
+      "Medicare supplement plans come in letters A through N, and each letter represents a standardized set of benefits. Understanding what each letter covers helps you choose the right plan without overpaying.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/value-added-benefits-through-medicare-advantage",
+    title: "Value-Added Benefits Through Medicare Advantage in 2026: What Is Still Available",
+    excerpt:
+      "Medicare Advantage plans offer extra benefits beyond Original Medicare: dental, vision, hearing, OTC allowances, transportation, and more. In 2026, many plans have scaled back these benefits. This guide explains what is still available.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/medigap-premium-increases",
+    title: "Medigap Premium Increases: Why They Happen and How to Manage Them in Florida",
+    excerpt:
+      "Medigap premiums do not stay the same year after year. They increase due to inflation, the rating method your insurer uses, and the overall health claims of the pool. Understanding why premiums increase can save you hundreds of dollars per year.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/why-medicare-denies-mobility-scooter-claims-florida",
+    title: "Why Medicare Denies Mobility Scooter Claims in Florida: Top Reasons and How to Appeal",
+    excerpt:
+      "Medicare covers power wheelchairs and mobility scooters as Durable Medical Equipment, but the approval process is strict and claims are frequently denied. Learn the top denial reasons and how to build a successful claim.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    live: true,
+  },
+  {
+    slug: "/blog/best-medicare-agent-in-florida",
+    title: "How to Find the Best Medicare Agent in Florida: What to Look For in 2026",
+    excerpt:
+      "Choosing the right Medicare agent in Florida is one of the most important decisions you will make during Medicare enrollment. A good agent saves you time, prevents costly mistakes, and helps you find coverage that fits your actual healthcare needs.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:

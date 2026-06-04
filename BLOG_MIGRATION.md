@@ -37,11 +37,11 @@ Check off each post as it is built on the dev site.
 | 28 | [x] | 19 | 15.8 | `medicare-supplement-plans-florida-2026` |
 | 29 | [x] | 18 | 13.9 | `medicare-disability-eligibility-requirements` |
 | 30 | [x] | 18 | 7.1 | `medicare-issues-for-veterans-tampa` |
-| 31 | [ ] | 17 | 8.4 | `medicare-why-are-there-so-many-letters` |
-| 32 | [ ] | 17 | 16.9 | `value-added-benefits-through-medicare-advantage` |
-| 33 | [ ] | 16 | 3.9 | `medigap-premium-increases` |
-| 34 | [ ] | 15 | 6.9 | `why-medicare-denies-mobility-scooter-claims-florida` |
-| 35 | [ ] | 15 | 24.1 | `best-medicare-agent-in-florida` |
+| 31 | [x] | 17 | 8.4 | `medicare-why-are-there-so-many-letters` |
+| 32 | [x] | 17 | 16.9 | `value-added-benefits-through-medicare-advantage` |
+| 33 | [x] | 16 | 3.9 | `medigap-premium-increases` |
+| 34 | [x] | 15 | 6.9 | `why-medicare-denies-mobility-scooter-claims-florida` |
+| 35 | [x] | 15 | 24.1 | `best-medicare-agent-in-florida` |
 | 36 | [ ] | 15 | 33.3 | `5-best-medicare-consultants-in-tampa-bay` |
 | 37 | [ ] | 13 | 11.4 | `maximize-medicare-benefits-florida-seniors` |
 | 38 | [ ] | 13 | 20.4 | `medicare-advantage-travel-benefits-florida-residents` |
