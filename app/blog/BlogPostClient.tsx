@@ -192,6 +192,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 export default function BlogPostClient({ post }: Props) {
   const [activeSection, setActiveSection] = useState<string>("");
   const [copied, setCopied] = useState(false);
+  const [mobileTocOpen, setMobileTocOpen] = useState(false);
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
   // Build TOC from sections
@@ -291,6 +292,38 @@ export default function BlogPostClient({ post }: Props) {
 
           {/* Article Body */}
           <article className="prose-custom" aria-label="Article content">
+
+            {/* Mobile TOC — visible only below lg breakpoint */}
+            {tocItems.length > 0 && (
+              <div className="lg:hidden mb-6 border border-gray-200 rounded-xl overflow-hidden">
+                <button
+                  onClick={() => setMobileTocOpen(!mobileTocOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3.5 bg-gray-50 text-left"
+                  aria-expanded={mobileTocOpen}
+                >
+                  <span className="flex items-center gap-2 text-[0.85rem] font-bold text-gray-700 uppercase tracking-wider">
+                    <BookOpen size={13} aria-hidden="true" /> In This Article
+                  </span>
+                  <ChevronDown size={16} className={`text-gray-400 transition-transform duration-200 ${mobileTocOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileTocOpen && (
+                  <nav aria-label="Article table of contents" className="px-4 py-3 space-y-1">
+                    {tocItems.map((item, idx) => (
+                      <button
+                        key={item.id}
+                        onClick={() => { scrollTo(item.id); setMobileTocOpen(false); }}
+                        className="w-full text-left flex items-center gap-2.5 px-3 py-2 rounded-lg text-[0.85rem] text-gray-700 hover:bg-gray-50 transition-colors"
+                      >
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 text-gray-500 text-[0.65rem] font-bold flex items-center justify-center">
+                          {idx + 1}
+                        </span>
+                        <span className="flex-1 leading-snug">{item.label}</span>
+                      </button>
+                    ))}
+                  </nav>
+                )}
+              </div>
+            )}
 
             {/* Written By */}
             <div className="flex items-center gap-3 pb-6 mb-6 border-b border-gray-100">

@@ -139,7 +139,8 @@ export default function Home() {
           {/* Right Photo Panel */}
           <div className="min-h-[280px] lg:min-h-0" style={{ position: "relative", overflow: "hidden" }}>
             <img src={HERO_PHOTO} alt="Senior couple meeting with a Medicare advisor" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
-            <div style={{
+            {/* Stats badge — hidden on mobile to avoid overlap, shown on lg+ */}
+            <div className="hidden lg:block" style={{
               position: "absolute", bottom: 32, left: 32,
               background: "rgba(255,255,255,0.95)", backdropFilter: "blur(12px)",
               borderRadius: 14, padding: "1rem 1.4rem",
@@ -151,6 +152,14 @@ export default function Home() {
                 {[1,2,3,4,5].map(i => <Star key={i} size={12} style={{ color: "#f5c842", fill: "#f5c842" }} />)}
               </div>
             </div>
+          </div>
+          {/* Stats badge for mobile — shown below hero image */}
+          <div className="lg:hidden flex items-center gap-4 px-6 py-4" style={{ background: "#f8f9fb", borderTop: "1px solid #e8eaf0" }}>
+            <div style={{ display: "flex", gap: "0.2rem" }}>
+              {[1,2,3,4,5].map(i => <Star key={i} size={14} style={{ color: "#f5c842", fill: "#f5c842" }} />)}
+            </div>
+            <div style={{ fontSize: "1rem", fontWeight: 800, color: "#0d1f5c" }}>10,000+</div>
+            <div style={{ fontSize: "0.8rem", color: "#6b7280", fontWeight: 500 }}>Clients helped statewide</div>
           </div>
         </div>
       </section>
@@ -305,7 +314,7 @@ export default function Home() {
 function CommonMistakesSection() {
   return (
     <section style={{ background: "#0d1f5c", padding: "5rem 0" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 2rem" }}>
+      <div className="max-w-[1100px] mx-auto px-5 sm:px-8">
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
           <span style={{ display: "inline-block", color: "#f5a800", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Avoid Costly Errors</span>
           <h2 style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 800, color: "#fff", marginBottom: "1rem", lineHeight: 1.2, fontFamily: "var(--font-heading)" }}>
@@ -350,7 +359,7 @@ function CostEstimatorSection() {
   const active = ESTIMATOR_OPTIONS.find(o => o.id === selected);
   return (
     <section style={{ background: "#f8f9fb", padding: "5rem 0" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 2rem" }}>
+      <div className="max-w-[1100px] mx-auto px-5 sm:px-8">
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
           <span style={{ display: "inline-block", color: "#1a3fa8", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Quick Cost Check</span>
           <h2 style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 800, color: "#0d1f5c", marginBottom: "1rem", lineHeight: 1.2, fontFamily: "var(--font-heading)" }}>What Might Medicare Cost You?</h2>

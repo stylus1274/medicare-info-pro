@@ -392,7 +392,8 @@ export default function Header() {
                   </div>
                   {searchSuggestions.length > 0 && (
                     <div style={{
-                      position: "absolute", top: "calc(100% + 8px)", right: 0, width: 420,
+                      position: "absolute", top: "calc(100% + 8px)", right: 0,
+                      width: "min(420px, calc(100vw - 2rem))",
                       background: "#fff", borderRadius: 14,
                       boxShadow: "0 8px 32px rgba(0,0,0,0.14)", border: "1px solid #e5e7eb",
                       overflow: "hidden", zIndex: 9999,
