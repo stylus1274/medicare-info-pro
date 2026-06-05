@@ -378,7 +378,7 @@ export default function Header() {
 
           {/* Right: Search + CTA + Hamburger */}
           <div className="pr-5 sm:pr-10 lg:pr-[100px]" style={{ display: "flex", alignItems: "center", gap: "0.75rem", paddingLeft: "1.5rem", flexShrink: 0 }}>
-            <div ref={searchContainerRef} style={{ display: "flex", alignItems: "center", position: "relative" }}>
+            <div ref={searchContainerRef} style={{ display: "flex", alignItems: "center", position: "relative", width: 260, justifyContent: "flex-end" }}>
               {searchOpen ? (
                 <>
                   <div style={{
