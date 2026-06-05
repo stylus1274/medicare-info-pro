@@ -293,7 +293,7 @@ export default function Header() {
             <div
               style={{
                 position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)",
-                width: 1060, background: "white", borderRadius: 16,
+                width: "min(1060px, calc(100vw - 2rem))", background: "white", borderRadius: 16,
                 boxShadow: "0 20px 60px rgba(0,0,0,0.15)", border: "1px solid #e8eaf0",
                 overflow: "hidden", zIndex: 200, marginTop: 8,
               }}
