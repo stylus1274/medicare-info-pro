@@ -54,6 +54,15 @@ const BLOG_SLUGS = [
   "/blog/medicare-broker-vs-agent",
   "/blog/affordable-health-insurance-options-for-tampa-families",
   "/blog/use-medicare-insurance-agent-in-florida",
+  // 8 pre-existing posts activated June 2026
+  "/blog/plan-g-complete-guide",
+  "/blog/does-medicare-cover-life-alert",
+  "/blog/2026-medicare-advantage-changes",
+  "/blog/irmaa-explained",
+  "/blog/part-d-2000-cap",
+  "/blog/medigap-open-enrollment",
+  "/blog/annual-enrollment-period-guide",
+  "/blog/medicare-vs-medicaid",
 ];
 
 // Coverage sub-pages
