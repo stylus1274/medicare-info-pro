@@ -50,11 +50,25 @@ IRMAA affects both your <a href='/medicare-advantage' class='text-[#1a3fa8] unde
 Your MAGI includes your adjusted gross income plus any tax-exempt interest income. This comprehensive calculation ensures that all relevant income sources are considered when assessing your IRMAA liability. It's not just your taxable income that matters, but also other forms of income that might not be taxed.
 
 If you disagree with the SSA's IRMAA determination, or if your income has significantly decreased due to a life-changing event, you have the right to appeal. Life-changing events can include marriage, divorce, death of a spouse, work stoppage, or loss of income-producing property. Providing documentation for these events can help reduce or eliminate your IRMAA.` },
-    { type: "section" as const, heading: "IRMAA Income Thresholds", content: `The income thresholds for IRMAA are tiered, meaning there are several levels of additional premiums based on how far your MAGI exceeds the base amount. These tiers are updated each year to account for inflation and other economic factors. It's crucial to consult the most current SSA guidelines to understand the exact thresholds for the year you are interested in.
+    { type: "section" as const, heading: "2026 IRMAA Income Thresholds and Surcharges", content: `The income thresholds for IRMAA are tiered and updated each year by the Social Security Administration. For 2026, IRMAA kicks in when your 2024 MAGI exceeds $109,000 (single filers) or $218,000 (married filing jointly). Here are the exact 2026 brackets from CMS:
 
-For example, in a given year, individuals with a MAGI above a certain amount might pay one additional amount, while those with a significantly higher MAGI would pay an even greater amount. The same tiered structure applies to married couples filing jointly, though their thresholds are typically double those for individuals. This ensures fairness across different filing statuses.
+<table style="width:100%;border-collapse:collapse;font-size:0.875rem;margin:1rem 0">
+<thead><tr style="background:#1a3fa8;color:#fff">
+<th style="padding:0.6rem 0.75rem;text-align:left">Single MAGI</th>
+<th style="padding:0.6rem 0.75rem;text-align:left">Joint MAGI</th>
+<th style="padding:0.6rem 0.75rem;text-align:right">Part B Premium</th>
+<th style="padding:0.6rem 0.75rem;text-align:right">Part D Surcharge</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:0.5rem 0.75rem">Up to $109,000</td><td style="padding:0.5rem 0.75rem">Up to $218,000</td><td style="padding:0.5rem 0.75rem;text-align:right">$202.90</td><td style="padding:0.5rem 0.75rem;text-align:right">$0</td></tr>
+<tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb"><td style="padding:0.5rem 0.75rem">$109,001 - $137,000</td><td style="padding:0.5rem 0.75rem">$218,001 - $274,000</td><td style="padding:0.5rem 0.75rem;text-align:right">$284.10</td><td style="padding:0.5rem 0.75rem;text-align:right">$14.50</td></tr>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:0.5rem 0.75rem">$137,001 - $171,000</td><td style="padding:0.5rem 0.75rem">$274,001 - $342,000</td><td style="padding:0.5rem 0.75rem;text-align:right">$405.80</td><td style="padding:0.5rem 0.75rem;text-align:right">$37.60</td></tr>
+<tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb"><td style="padding:0.5rem 0.75rem">$171,001 - $205,000</td><td style="padding:0.5rem 0.75rem">$342,001 - $410,000</td><td style="padding:0.5rem 0.75rem;text-align:right">$527.50</td><td style="padding:0.5rem 0.75rem;text-align:right">$60.80</td></tr>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:0.5rem 0.75rem">$205,001 - $499,999</td><td style="padding:0.5rem 0.75rem">$410,001 - $749,999</td><td style="padding:0.5rem 0.75rem;text-align:right">$649.20</td><td style="padding:0.5rem 0.75rem;text-align:right">$84.10</td></tr>
+<tr style="background:#f9fafb"><td style="padding:0.5rem 0.75rem">$500,000 or more</td><td style="padding:0.5rem 0.75rem">$750,000 or more</td><td style="padding:0.5rem 0.75rem;text-align:right">$689.90</td><td style="padding:0.5rem 0.75rem;text-align:right">$84.10</td></tr>
+</tbody></table>
 
-Staying informed about these thresholds can help you plan your finances and potentially mitigate IRMAA. If your income is close to a threshold, strategic financial planning might help you avoid moving into a higher IRMAA bracket. Consulting with a financial advisor can be beneficial in these situations.` },
+Note: Part D surcharges shown above are added to your plan's own premium. The standard Part B premium for most beneficiaries is $202.90 per month in 2026. If your income is close to a threshold, strategic financial planning in 2024 (the look-back year) can help you avoid moving into a higher bracket. Consulting with a financial advisor or <a href='/get-help' class='text-[#1a3fa8] underline underline-offset-2'>Medicare advisor</a> can be beneficial in these situations.` },
     { type: "section" as const, heading: "Appealing an IRMAA Decision", content: `If you believe your IRMAA determination is incorrect, or if your financial situation has changed, you can file an appeal with the Social Security Administration. The SSA provides specific forms and procedures for this process. It's important to act promptly once you receive an IRMAA notice, as there are deadlines for filing appeals.
 
 To appeal, you will typically need to provide documentation supporting your claim. This could include tax returns, pay stubs, or official documents related to life-changing events. The more evidence you can provide, the stronger your appeal will be. The SSA will review your case and make a new determination.

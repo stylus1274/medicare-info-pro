@@ -28,14 +28,14 @@ const POST = {
   image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
   imageAlt: "Medicare Supplement Plan G insurance documents on a desk",
   keyTakeaways: [
-    { label: "Covers Almost Everything", text: "Plan G covers all Medicare cost-sharing except the Part B deductible ($257 in 2026), which you pay once per year." },
+    { label: "Covers Almost Everything", text: "Plan G covers all Medicare cost-sharing except the Part B deductible ($283 in 2026), which you pay once per year." },
     { label: "No Network Restrictions", text: "Plan G works with any doctor or hospital that accepts Medicare nationwide. No referrals, no prior authorizations, no network limits." },
     { label: "Best Time to Enroll", text: "Your Medigap Open Enrollment Period is the six-month window starting when you turn 65 and enroll in Part B. During this window, you cannot be denied or charged more based on health history." },
     { label: "Premiums Vary by Insurer", text: "All Plan G policies offer identical benefits. The only difference between insurers is price, so shopping multiple companies is always worthwhile." },
     { label: "High-Deductible Option Available", text: "High-Deductible Plan G offers the same coverage but requires a $2,870 deductible in 2026 before benefits begin, in exchange for significantly lower monthly premiums." },
   ],
   quickFacts: [
-    { label: "Part B Deductible Covered?", value: "No ($257 in 2026 — you pay once per year)" },
+    { label: "Part B Deductible Covered?", value: "No ($283 in 2026 — you pay once per year)" },
     { label: "Part B Coinsurance Covered?", value: "Yes — 100%" },
     { label: "Part A Deductible Covered?", value: "Yes — 100%" },
     { label: "Skilled Nursing Coinsurance?", value: "Yes — 100%" },
@@ -46,7 +46,7 @@ const POST = {
     {
       type: "keyTakeaways" as const,
       items: [
-        { label: "Covers Almost Everything", text: "Plan G covers all Medicare cost-sharing except the Part B deductible ($257 in 2026), which you pay once per year." },
+        { label: "Covers Almost Everything", text: "Plan G covers all Medicare cost-sharing except the Part B deductible ($283 in 2026), which you pay once per year." },
         { label: "No Network Restrictions", text: "Plan G works with any doctor or hospital that accepts Medicare nationwide. No referrals, no prior authorizations, no network limits." },
         { label: "Best Time to Enroll", text: "Your Medigap Open Enrollment Period is the six-month window starting when you turn 65 and enroll in Part B. During this window, you cannot be denied or charged more based on health history." },
         { label: "Premiums Vary by Insurer", text: "All Plan G policies offer identical benefits. The only difference between insurers is price, so shopping multiple companies is always worthwhile." },
@@ -56,9 +56,9 @@ const POST = {
     {
       type: "section" as const,
       heading: "What Plan G Covers",
-      content: `<a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement Plan G</a> is the most comprehensive Medigap plan available to new Medicare enrollees. It covers the Medicare Part A deductible ($1,676 in 2026), Part A coinsurance and hospital costs for up to 365 additional days after Medicare benefits are exhausted, and the Part B coinsurance (20 percent of the Medicare-approved amount for outpatient services).
+      content: `<a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement Plan G</a> is the most comprehensive Medigap plan available to new Medicare enrollees. It covers the Medicare Part A deductible ($1,736 in 2026), Part A coinsurance and hospital costs for up to 365 additional days after Medicare benefits are exhausted, and the Part B coinsurance (20 percent of the Medicare-approved amount for outpatient services).
 
-Plan G also covers skilled nursing facility care coinsurance (days 21 through 100 of a skilled nursing stay), the first three pints of blood, and foreign travel emergency care at 80 percent up to plan limits. The only Medicare cost-sharing that Plan G does not cover is the Part B deductible, which is $257 in 2026 and is paid once per year.
+Plan G also covers skilled nursing facility care coinsurance (days 21 through 100 of a skilled nursing stay), the first three pints of blood, and foreign travel emergency care at 80 percent up to plan limits. The only Medicare cost-sharing that Plan G does not cover is the Part B deductible, which is $283 in 2026 and is paid once per year.
 
 Because Plan G works with Original Medicare rather than replacing it, you can see any doctor or specialist who accepts Medicare nationwide. There are no network restrictions, no referrals required, and no prior authorizations for services covered by Medicare.`,
     },
@@ -97,7 +97,7 @@ Premiums increase with age under most pricing structures. Some insurers use atta
     {
       type: "faq" as const,
       items: [
-        { question: "What is the difference between Plan G and Plan F?", answer: "Plan F covers the Part B deductible ($257 in 2026) in addition to everything Plan G covers. However, Plan F is no longer available to people who became eligible for Medicare on or after January 1, 2020. If you became eligible before that date and have Plan F, you can keep it." },
+        { question: "What is the difference between Plan G and Plan F?", answer: "Plan F covers the Part B deductible ($283 in 2026) in addition to everything Plan G covers. However, Plan F is no longer available to people who became eligible for Medicare on or after January 1, 2020. If you became eligible before that date and have Plan F, you can keep it." },
         { question: "Does Plan G cover prescription drugs?", answer: "No. Plan G does not include prescription drug coverage. If you have Plan G, you need a separate Medicare Part D drug plan for prescription coverage." },
         { question: "Can I use Plan G with any doctor?", answer: "Yes. Plan G works with any doctor or hospital that accepts Medicare nationwide. There are no network restrictions, no referrals required, and no prior authorizations for services covered by Medicare." },
         { question: "When is the best time to enroll in Plan G?", answer: "The best time is during your Medigap Open Enrollment Period, which is the six-month window that begins when you turn 65 and enroll in Medicare Part B. During this window, you have guaranteed issue rights and cannot be denied or charged more based on your health history." },
