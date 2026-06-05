@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Find a Licensed Medicare Agent Near You",
     description:
-      "Work with an independent, licensed Medicare agent. Free consultations, no pressure, 17 carriers represented. Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, and TN.",
+      "Work with an independent, licensed Medicare agent. Free consultations, no pressure, 17 carriers represented. Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN, and TX.",
     url: "https://medicare-info-pro.vercel.app/find-an-agent",
     type: "website",
     images: [
