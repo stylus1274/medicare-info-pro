@@ -99,7 +99,7 @@ const PROCESS_STEPS = [
 const AGENT = {
   name: "Greg Wohl",
   title: "Licensed Medicare Specialist",
-  credentials: "Licensed in FL, GA, NC, AR, KS, TX",
+  credentials: "Licensed in FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN",
   phone: "813-699-5559",
   email: "greg@medicareinfopro.com",
   photo:

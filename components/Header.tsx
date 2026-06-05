@@ -228,7 +228,7 @@ export default function Header() {
             <span style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <Star size={12} style={{ color: "#f5a800", fill: "#f5a800" }} /> BBB A+ Rated
             </span>
-            <span className="hidden md:inline">Serving FL, GA, NC, AR, KS &amp; TX</span>
+            <span className="hidden md:inline">Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD &amp; TN</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
             <a href="tel:8136995559" style={{ color: "#c8d6f5", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem", letterSpacing: "0.01em" }}>

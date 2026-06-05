@@ -868,7 +868,7 @@ export default function Medicare101Client() {
                   Request a Callback <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </button>
                 <p className="text-white/50 text-xs text-center mt-3">
-                  No obligation. No pressure. Licensed in FL, GA, NC, AR, KS &amp; TX.
+                  No obligation. No pressure. Licensed in FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD &amp; TN.
                 </p>
               </div>
 

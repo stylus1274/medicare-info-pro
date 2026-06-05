@@ -39,7 +39,7 @@ const member: TeamMemberData = {
   ],
   credentials: [
     "Florida Licensed Insurance Agent",
-    "Licensed in FL, GA, NC, AR, KS, TX",
+    "Licensed in FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN",
     "Independent (Not Captive)",
     "BBB Accredited Business",
   ],
