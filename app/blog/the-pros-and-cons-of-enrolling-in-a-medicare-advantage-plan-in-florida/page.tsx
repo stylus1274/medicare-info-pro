@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
-  imageAlt: "Senior reviewing Medicare Advantage plan options in Florida",
+  image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
+  imageAlt: "Florida senior weighing the pros and cons of Medicare Advantage plan enrollment",
   sections: [
     {
       type: "intro" as const,

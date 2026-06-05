@@ -50,7 +50,7 @@ const POST = {
   date: "June 2026",
   readTime: "9 min read",
   image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80",
-  imageAlt: "Legal documents and gavel representing Medicare Set-Aside settlement process",
+  imageAlt: "Legal documents and gavel representing Medicare Set-Aside arrangements",
   sections: [
     {
       type: "intro" as const,

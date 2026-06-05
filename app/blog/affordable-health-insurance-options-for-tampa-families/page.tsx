@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Tampa family reviewing health insurance options",
+  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
+  imageAlt: "Tampa family reviewing affordable health insurance options together",
   sections: [
     {
       type: "intro" as const,

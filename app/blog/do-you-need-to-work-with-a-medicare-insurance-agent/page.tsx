@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80",
-  imageAlt: "Medicare insurance agent consulting with senior client",
+  image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
+  imageAlt: "Medicare insurance agent shaking hands with a senior client",
   sections: [
     {
       type: "intro" as const,

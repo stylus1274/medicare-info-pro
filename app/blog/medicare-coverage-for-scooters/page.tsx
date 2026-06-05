@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-  imageAlt: "Senior using a mobility scooter covered by Medicare",
+  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+  imageAlt: "Mobility scooter representing Medicare coverage for power wheelchairs and scooters",
   sections: [
     {
       type: "intro" as const,

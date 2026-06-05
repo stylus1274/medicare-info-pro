@@ -18,7 +18,7 @@ const POST = {
   author: GREG_WOHL,
   featuredImage: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80",
   image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80",
-  imageAlt: "Calendar showing Medicare Annual Enrollment Period dates",
+  imageAlt: "Calendar open to October representing the Medicare Annual Enrollment Period",
   keyTakeaways: [
     "The AEP runs from October 15 to December 7 each year.",
     "You can switch between Original Medicare and Medicare Advantage.",

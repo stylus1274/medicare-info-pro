@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-  imageAlt: "Senior Florida resident reviewing Medicare Advantage plan options to switch",
+  image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80",
+  imageAlt: "Calendar representing the Medicare Advantage plan switching window in Florida",
   sections: [
     {
       type: "intro" as const,

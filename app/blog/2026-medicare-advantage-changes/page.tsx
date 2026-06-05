@@ -16,9 +16,9 @@ const POST = {
   date: "June 05, 2026",
   readTime: "8 min read",
   author: GREG_WOHL,
-  featuredImage: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Medicare Advantage plan documents and insurance papers for 2026",
+  featuredImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
+  image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
+  imageAlt: "Calendar and documents representing Medicare Advantage plan changes for 2026",
   keyTakeaways: [
     "Medicare Advantage plans will see significant updates in 2026, affecting benefits and provider networks.",
     "Beneficiaries should review their current plan and compare it with new offerings during the Annual Enrollment Period.",

@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
-  imageAlt: "Medicare coverage gaps and exclusions",
+  image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&q=80",
+  imageAlt: "List of exclusions representing the six things Medicare does not cover",
   sections: [
     {
       type: "intro" as const,

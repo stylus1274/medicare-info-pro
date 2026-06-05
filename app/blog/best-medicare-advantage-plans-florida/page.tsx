@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-  imageAlt: "Senior couple reviewing Medicare plan documents with an advisor",
+  image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80",
+  imageAlt: "Florida coastline representing the best Medicare Advantage plans in the state",
   sections: [
     {
       type: "intro" as const,

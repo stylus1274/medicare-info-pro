@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "8 min read",
-  image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
-  imageAlt: "Medicare broker and agent consultation",
+  image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+  imageAlt: "Two professionals representing the difference between a Medicare broker and agent",
   sections: [
     {
       type: "intro" as const,

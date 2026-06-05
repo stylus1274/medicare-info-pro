@@ -50,7 +50,7 @@ const POST = {
   date: "June 2026",
   readTime: "9 min read",
   image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
-  imageAlt: "Prescription medication and Medicare coverage documents",
+  imageAlt: "Prescription medication representing Medicare coverage for Ozempic and GLP-1 drugs",
   sections: [
     {
       type: "intro" as const,

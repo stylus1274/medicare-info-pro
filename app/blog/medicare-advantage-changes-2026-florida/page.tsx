@@ -50,8 +50,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=1200&q=80",
-  imageAlt: "Senior Florida resident reviewing Medicare Advantage plan documents for 2026",
+  image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
+  imageAlt: "Florida state documents representing Medicare Advantage plan changes for 2026",
   sections: [
     {
       type: "intro" as const,

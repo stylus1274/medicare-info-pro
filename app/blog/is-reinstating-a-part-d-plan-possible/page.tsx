@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "8 min read",
-  image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
-  imageAlt: "Prescription medication bottles and Medicare card on a table",
+  image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=1200&q=80",
+  imageAlt: "Prescription pill bottles representing Medicare Part D plan reinstatement questions",
   sections: [
     {
       type: "intro" as const,

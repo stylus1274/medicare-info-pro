@@ -18,7 +18,7 @@ const POST = {
   author: GREG_WOHL,
   featuredImage: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
   image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Government healthcare program documents representing Medicare and Medicaid differences",
+  imageAlt: "Side-by-side healthcare documents representing the differences between Medicare and Medicaid",
   keyTakeaways: [
     "Medicare primarily serves individuals aged 65 or older, certain younger people with disabilities, and those with specific chronic conditions.",
     "Medicaid provides health coverage to low-income individuals and families, regardless of age, based on financial need.",

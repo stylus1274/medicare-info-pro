@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80",
-  imageAlt: "Chart showing rising healthcare costs",
+  image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
+  imageAlt: "Rising cost chart representing Medigap premium increases over time",
   sections: [
     {
       type: "intro" as const,

@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "8 min read",
-  image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&q=80",
-  imageAlt: "Healthy meal delivery representing Medicare Advantage post-hospital meal benefit",
+  image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80",
+  imageAlt: "Healthy meal delivery representing Medicare Advantage post-hospital meal benefits in Tampa",
   sections: [
     {
       type: "intro" as const,

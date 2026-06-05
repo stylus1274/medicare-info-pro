@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
-  imageAlt: "Senior benefiting from Medicare Advantage extra benefits",
+  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80",
+  imageAlt: "Senior enjoying value-added benefits like fitness and dental through Medicare Advantage",
   sections: [
     {
       type: "intro" as const,

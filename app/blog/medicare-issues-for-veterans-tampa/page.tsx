@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=1200&q=80",
-  imageAlt: "Veterans receiving healthcare services in Tampa",
+  image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80",
+  imageAlt: "American veteran reviewing Medicare and VA benefit coordination documents",
   sections: [
     {
       type: "intro" as const,

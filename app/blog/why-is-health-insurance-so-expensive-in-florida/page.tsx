@@ -51,7 +51,7 @@ const POST = {
   author: GREG_WOHL,
   category: "Costs" as const,
   image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
-  imageAlt: "Calculator and health insurance documents on a desk",
+  imageAlt: "Rising cost chart representing why health insurance is expensive in Florida",
   date: "June 2026",
   readTime: "9 min read",
   tags: ["Costs", "Florida", "Health Insurance", "Medicare", "2026"],

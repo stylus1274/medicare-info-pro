@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-  imageAlt: "Person reviewing health insurance documents and calculator",
+  image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80",
+  imageAlt: "Monthly budget spreadsheet representing health insurance costs per month in Florida",
   sections: [
     {
       type: "intro" as const,

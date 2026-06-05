@@ -35,7 +35,7 @@ const POST = {
   readTime: "10 min read",
   featuredImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80",
   image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80",
-  imageAlt: "Senior couple reviewing Medicare Supplement insurance documents",
+  imageAlt: "Senior couple reviewing Medicare Supplement insurance documents during open enrollment",
   keyTakeaways: [
     { label: "Six-Month Window", text: "Your Medigap Open Enrollment Period begins the first month you are both 65 and enrolled in Medicare Part B, and lasts exactly six months." },
     { label: "Guaranteed Issue", text: "During this window, any insurer selling Medigap plans in Florida must sell you any plan at the standard rate, regardless of your health history." },

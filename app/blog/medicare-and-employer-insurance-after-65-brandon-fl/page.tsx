@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
-  imageAlt: "Professional working past 65 reviewing insurance documents",
+  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
+  imageAlt: "Office worker over 65 reviewing employer insurance and Medicare coordination documents",
   sections: [
     {
       type: "intro" as const,

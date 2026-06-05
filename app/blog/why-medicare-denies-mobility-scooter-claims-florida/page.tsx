@@ -50,7 +50,7 @@ const POST = {
   date: "June 2026",
   readTime: "9 min read",
   image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Senior with mobility scooter",
+  imageAlt: "Mobility scooter with denied claim documents representing Medicare scooter claim denials",
   sections: [
     {
       type: "intro" as const,

@@ -50,8 +50,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-  imageAlt: "Person completing Medicare enrollment paperwork at a desk",
+  image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80",
+  imageAlt: "Person completing Medicare enrollment paperwork step by step online",
   sections: [
     {
       type: "intro" as const,

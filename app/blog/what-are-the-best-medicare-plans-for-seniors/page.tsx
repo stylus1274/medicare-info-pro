@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-  imageAlt: "Senior couple reviewing Medicare plan options with an advisor",
+  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
+  imageAlt: "Active seniors representing the best Medicare plan options available in 2026",
   sections: [
     {
       type: "intro" as const,

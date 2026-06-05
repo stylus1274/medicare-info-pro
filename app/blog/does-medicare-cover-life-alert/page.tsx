@@ -16,9 +16,9 @@ const POST = {
   date: "June 05, 2026",
   readTime: "8 min read",
   author: GREG_WOHL,
-  featuredImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80",
-  image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80",
-  imageAlt: "Medical alert device and Medicare coverage documents",
+  featuredImage: "https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=1200&q=80",
+  image: "https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=1200&q=80",
+  imageAlt: "Medical alert device on a table representing Life Alert Medicare coverage questions",
   keyTakeaways: [
     "Original Medicare (Parts A and B) generally does not cover medical alert systems, as they are not considered medically necessary durable medical equipment.",
     "Some Medicare Advantage plans may offer benefits that include medical alert systems, often as part of supplemental benefits.",

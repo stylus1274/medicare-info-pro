@@ -50,7 +50,7 @@ const POST = {
   date: "June 2026",
   readTime: "9 min read",
   image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80",
-  imageAlt: "Medicare insurance agent in Florida helping a senior client",
+  imageAlt: "Florida Medicare insurance agent consulting with a senior client",
   sections: [
     {
       type: "intro" as const,

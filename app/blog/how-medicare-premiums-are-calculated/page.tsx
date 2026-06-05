@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
-  imageAlt: "Medicare premium calculation and income-based adjustments",
+  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+  imageAlt: "Financial charts and calculator representing how Medicare premiums are calculated",
   sections: [
     {
       type: "intro" as const,

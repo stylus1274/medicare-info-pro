@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80",
-  imageAlt: "Florida health insurance cost comparison chart",
+  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
+  imageAlt: "Calculator and health insurance documents representing Florida health insurance costs",
   sections: [
     {
       type: "intro" as const,

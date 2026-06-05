@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-  imageAlt: "Medical professional reviewing cancer treatment options with a patient",
+  image: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
+  imageAlt: "Medical oncology setting representing Medicare coverage for cancer treatment",
   sections: [
     {
       type: "intro" as const,

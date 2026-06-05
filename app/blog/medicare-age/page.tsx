@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1200&q=80",
-  imageAlt: "Senior couple reviewing Medicare eligibility information",
+  image: "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=1200&q=80",
+  imageAlt: "Senior person at age 65 milestone representing Medicare eligibility age",
   sections: [
     {
       type: "intro" as const,

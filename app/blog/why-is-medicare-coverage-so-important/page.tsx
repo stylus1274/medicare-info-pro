@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&q=80",
-  imageAlt: "Senior couple reviewing Medicare coverage options with an advisor",
+  image: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
+  imageAlt: "Senior receiving quality healthcare representing why Medicare coverage is essential",
   sections: [
     {
       type: "intro" as const,

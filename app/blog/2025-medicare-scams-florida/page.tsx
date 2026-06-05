@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&q=80",
-  imageAlt: "Person on phone being targeted by a Medicare scam",
+  image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80",
+  imageAlt: "Caution sign representing Medicare fraud and scam awareness",
   sections: [
     {
       type: "intro" as const,

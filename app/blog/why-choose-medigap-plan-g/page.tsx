@@ -51,8 +51,8 @@ const POST = {
   author: GREG_WOHL,
   date: "August 2024",
   readTime: "8 min read",
-  image: "https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png",
-  imageAlt: "Medigap Plan G , Tampa, FL  | Medicare Information Project",
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Medicare Supplement Plan G documents representing why it is the top Medigap choice",
   sections: [
     {
       type: "intro" as const,

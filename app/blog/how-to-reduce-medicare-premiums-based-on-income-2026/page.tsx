@@ -50,8 +50,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80",
-  imageAlt: "Senior reviewing Medicare premium statements and financial documents",
+  image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
+  imageAlt: "Financial planning documents representing strategies to reduce Medicare premiums",
   sections: [
     {
       type: "intro" as const,

@@ -51,8 +51,8 @@ const POST = {
   author: GREG_WOHL,
   date: "May 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80",
-  imageAlt: "Person completing a Medicare application online",
+  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
+  imageAlt: "Medicare enrollment form representing how to apply without Social Security benefits",
   sections: [
     {
       type: "intro" as const,

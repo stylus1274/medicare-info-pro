@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "12 min read",
-  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Doctor consulting with a senior patient about Medicare options",
+  image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80",
+  imageAlt: "Florida seniors comparing Original Medicare versus Medicare Advantage plan options",
   sections: [
     {
       type: "intro" as const,

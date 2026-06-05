@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-  imageAlt: "Senior reviewing Medicare plan documents in Florida",
+  image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
+  imageAlt: "Medicare advisor helping a Florida senior resolve common Medicare selection challenges",
   sections: [
     {
       type: "intro" as const,

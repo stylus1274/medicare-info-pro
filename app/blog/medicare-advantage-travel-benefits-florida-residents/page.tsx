@@ -50,7 +50,7 @@ const POST = {
   date: "June 2026",
   readTime: "10 min read",
   image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
-  imageAlt: "Senior traveler at airport with Medicare coverage",
+  imageAlt: "Airplane and travel documents representing Medicare Advantage travel benefits",
   sections: [
     {
       type: "intro" as const,

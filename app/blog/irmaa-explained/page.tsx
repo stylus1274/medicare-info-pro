@@ -16,9 +16,9 @@ const POST = {
   date: "2026-06-05",
   readTime: "5 min read",
   author: GREG_WOHL,
-  featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
-  image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
-  imageAlt: "Financial documents and calculator representing Medicare IRMAA income-based premiums",
+  featuredImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Tax and income documents representing IRMAA Medicare premium surcharges",
   keyTakeaways: [
     "IRMAA is an extra charge added to your Medicare Part B and Part D premiums based on your income.",
     "Your modified adjusted gross income (MAGI) from two years prior determines if you pay IRMAA.",

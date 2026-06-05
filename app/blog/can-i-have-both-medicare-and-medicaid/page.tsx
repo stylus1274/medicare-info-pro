@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1200&q=80",
-  imageAlt: "Healthcare coverage documents representing Medicare and Medicaid",
+  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+  imageAlt: "Healthcare documents representing dual eligibility for Medicare and Medicaid",
   sections: [
     {
       type: "intro" as const,

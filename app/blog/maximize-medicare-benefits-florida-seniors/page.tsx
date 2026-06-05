@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-  imageAlt: "Florida senior reviewing Medicare benefits",
+  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80",
+  imageAlt: "Active Florida senior couple maximizing their Medicare benefits outdoors",
   sections: [
     {
       type: "intro" as const,

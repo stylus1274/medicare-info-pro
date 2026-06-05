@@ -49,7 +49,7 @@ const POST = {
   date: "June 2026",
   readTime: "10 min read",
   image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-  imageAlt: "Florida beach representing snowbird lifestyle",
+  imageAlt: "Florida beach scene representing Medicare plans for snowbirds visiting the state",
   sections: [
     {
       type: "intro" as const,

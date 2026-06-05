@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "11 min read",
-  image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-  imageAlt: "Person reviewing Medicare supplement plan documents",
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Medicare Supplement insurance plan documents spread on a desk in Florida",
   sections: [
     {
       type: "intro" as const,

@@ -49,8 +49,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80",
-  imageAlt: "Senior Florida resident reviewing Medicare eligibility documents",
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Florida Medicare eligibility documents and qualification checklist",
   sections: [
     {
       type: "intro" as const,

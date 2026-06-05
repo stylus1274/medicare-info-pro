@@ -51,7 +51,7 @@ const POST = {
   author: GREG_WOHL,
   category: "Coverage" as const,
   image: "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=1200&q=80",
-  imageAlt: "Ambulance on a city street",
+  imageAlt: "Ambulance vehicle representing Medicare ambulance coverage and costs",
   date: "June 2026",
   readTime: "8 min read",
   tags: ["Medicare Part B", "Ambulance", "Coverage", "2026", "Costs"],

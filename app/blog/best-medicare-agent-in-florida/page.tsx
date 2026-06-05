@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
-  imageAlt: "Medicare agent consulting with a senior in Florida",
+  image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80",
+  imageAlt: "Professional Medicare insurance agent in Florida ready to assist clients",
   sections: [
     {
       type: "intro" as const,

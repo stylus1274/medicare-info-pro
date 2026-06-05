@@ -51,8 +51,8 @@ const POST = {
   author: GREG_WOHL,
   date: "April 2026",
   readTime: "12 min read",
-  image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1400&q=80",
-  imageAlt: "Senior professional working at a laptop past age 65",
+  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
+  imageAlt: "Senior professional working past age 65 considering Medicare enrollment timing",
   sections: [
     {
       type: "intro" as const,

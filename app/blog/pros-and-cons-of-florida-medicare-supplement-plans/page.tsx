@@ -49,7 +49,7 @@ const POST = {
   date: "June 2026",
   readTime: "10 min read",
   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-  imageAlt: "Senior reviewing Medicare supplement plan options",
+  imageAlt: "Pros and cons checklist representing Florida Medicare Supplement plan comparison",
   sections: [
     {
       type: "intro" as const,

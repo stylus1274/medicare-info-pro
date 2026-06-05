@@ -48,8 +48,8 @@ const POST = {
   author: GREG_WOHL,
   date: "June 2026",
   readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
-  imageAlt: "Doctor and patient consultation representing Medicare Part B medical coverage",
+  image: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
+  imageAlt: "Doctor and patient representing Medicare Part B outpatient medical coverage",
   sections: [
     {
       type: "intro" as const,
