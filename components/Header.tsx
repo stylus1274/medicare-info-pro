@@ -230,10 +230,23 @@ export default function Header() {
             </span>
             <span className="hidden md:inline">Serving FL, GA, NC, AR, KS &amp; TX</span>
           </div>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
             <a href="tel:8136995559" style={{ color: "#c8d6f5", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem", letterSpacing: "0.01em" }}>
               <Phone size={13} /> 813-699-5559
             </a>
+            <Link
+              href="/free-consultation"
+              className="hidden sm:inline-flex"
+              style={{
+                background: "#f5a800", color: "#0d1f5c",
+                padding: "0.3rem 1rem", borderRadius: 999, textDecoration: "none",
+                fontSize: "0.78rem", fontWeight: 700, alignItems: "center", gap: "0.35rem",
+                whiteSpace: "nowrap", lineHeight: 1,
+                boxShadow: "0 2px 8px rgba(245,168,0,0.4)",
+              }}
+            >
+              Free Consultation <ArrowRight size={12} />
+            </Link>
           </div>
         </div>
       </div>
@@ -461,22 +474,6 @@ export default function Header() {
                 </button>
               )}
             </div>
-
-            <Link
-              href="/free-consultation"
-              className="hidden lg:inline-flex"
-              style={{
-                background: "#f5a800", color: "#0d1f5c",
-                padding: "0.6rem 1.5rem", borderRadius: 999, textDecoration: "none",
-                fontSize: "1rem", fontWeight: 700, alignItems: "center", gap: "0.45rem",
-                whiteSpace: "nowrap", lineHeight: 1,
-                boxShadow: "0 3px 12px rgba(245,168,0,0.35)",
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#e09900"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#f5a800"; }}
-            >
-              Free Consultation <ArrowRight size={15} />
-            </Link>
 
             <button
               className="lg:hidden p-2.5 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
