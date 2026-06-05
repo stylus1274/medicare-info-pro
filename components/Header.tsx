@@ -378,13 +378,15 @@ export default function Header() {
 
           {/* Right: Search + CTA + Hamburger */}
           <div className="pr-5 sm:pr-8" style={{ display: "flex", alignItems: "center", gap: "0.75rem", paddingLeft: "1.5rem", flexShrink: 0 }}>
-            <div ref={searchContainerRef} style={{ display: "flex", alignItems: "center", position: "relative", width: 260, justifyContent: "flex-start" }}>
+            <div ref={searchContainerRef} style={{ display: "flex", alignItems: "center", position: "relative" }}>
               {searchOpen ? (
                 <>
                   <div style={{
                     display: "flex", alignItems: "center", background: "#f3f4f6",
                     border: "1.5px solid #c7d2f0", borderRadius: 999,
                     padding: "0.35rem 0.5rem 0.35rem 1rem", gap: "0.4rem", width: 260,
+                    position: "absolute", right: 0, top: "50%", transform: "translateY(-50%)",
+                    zIndex: 200,
                   }}>
                     <Search size={15} style={{ color: "#9ca3af", flexShrink: 0 }} />
                     <input
