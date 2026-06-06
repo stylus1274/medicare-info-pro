@@ -465,7 +465,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/free-consultation"
+              href="/get-started"
               className="hidden lg:inline-flex"
               style={{
                 background: "#f5a800", color: "#0d1f5c",
@@ -549,19 +549,20 @@ export default function Header() {
                 </div>
               ))}
               <div className="pt-4 border-t border-gray-100 space-y-3">
-                <a
-                  href="tel:18138699559"
+                <Link
+                  href="/get-started"
                   className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-[#0d1f5c]"
                   style={{ fontSize: "1rem" }}
+                  onClick={() => setMobileOpen(false)}
                 >
-                  <Phone size={16} /> Call 813-699-5559
-                </a>
+                  Get Started <ArrowRight size={16} />
+                </Link>
                 <a
-                  href="tel:18888865840"
+                  href="tel:18138699559"
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold border-2 border-[#1a3fa8] text-[#1a3fa8]"
                   style={{ fontSize: "0.95rem" }}
                 >
-                  <Phone size={14} /> Toll-Free: 888-886-5840
+                  <Phone size={16} /> Call 813-699-5559
                 </a>
               </div>
             </div>

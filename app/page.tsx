@@ -115,9 +115,9 @@ export default function Home() {
               </p>
               <div style={{ display: "flex", flexDirection: "row", gap: "0.5rem", marginTop: "1.5rem", flexWrap: "wrap", maxWidth: "100%" }}>
                 {[
-                  { label: "I'm New to Medicare", icon: <UserPlus size={16} style={{ color: "#3b82f6", flexShrink: 0 }} />, href: "/am-i-eligible" },
-                  { label: "Working Past 65", icon: <Briefcase size={16} style={{ color: "#f59e0b", flexShrink: 0 }} />, href: "/" },
-                  { label: "Already Enrolled", icon: <BadgeCheck size={16} style={{ color: "#10b981", flexShrink: 0 }} />, href: "/" },
+                  { label: "I'm New to Medicare", icon: <UserPlus size={16} style={{ color: "#3b82f6", flexShrink: 0 }} />, href: "/get-started" },
+                  { label: "Working Past 65", icon: <Briefcase size={16} style={{ color: "#f59e0b", flexShrink: 0 }} />, href: "/get-started" },
+                  { label: "Already Enrolled", icon: <BadgeCheck size={16} style={{ color: "#10b981", flexShrink: 0 }} />, href: "/get-started" },
                 ].map((btn) => (
                   <Link key={btn.label} href={btn.href} style={{
                     display: "inline-flex", alignItems: "center", gap: "0.5rem",
@@ -295,9 +295,9 @@ export default function Home() {
               <a href="tel:18138699559" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
                 <Phone size={18} /> Call Us Now
               </a>
-              <a href="#" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold text-white border-2 border-white/25 hover:border-white/50 transition-colors">
+              <Link href="/get-started" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold text-white border-2 border-white/25 hover:border-white/50 transition-colors">
                 Get Started Online <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -394,10 +394,10 @@ function CostEstimatorSection() {
                 </div>
                 <div style={{ fontSize: "0.8rem", color: "#6b7280", marginBottom: "1.25rem" }}>Typical plan type: <strong style={{ color: "#374151" }}>{active.planType}</strong></div>
                 <p style={{ fontSize: "0.9rem", color: "#4b5563", lineHeight: 1.7, marginBottom: "1.5rem" }}>{active.result}</p>
-                <a href="/find-plans" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.75rem 1.5rem", borderRadius: 9, background: active.color, color: "#fff", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}>
+                <Link href="/get-started" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.75rem 1.5rem", borderRadius: 9, background: active.color, color: "#fff", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}>
                   Find Plans in Your Area
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </a>
+                </Link>
               </>
             )}
           </div>
@@ -431,9 +431,9 @@ function FindPlansBlock() {
                 className="w-full pl-11 pr-4 py-4 rounded-xl text-[1rem] bg-white text-gray-900 placeholder:text-gray-400 outline-none border-2 border-transparent focus:border-amber-400 transition-colors"
               />
             </div>
-            <button className="px-8 py-4 rounded-xl text-[1rem] font-bold transition-all duration-200 hover:shadow-lg" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
+            <Link href={zip.length === 5 ? `/get-started?zip=${zip}` : "/get-started"} className="px-8 py-4 rounded-xl text-[1rem] font-bold transition-all duration-200 hover:shadow-lg" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c", textDecoration: "none" }}>
               Search Plans
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>
@@ -492,9 +492,9 @@ function FAQBlock() {
                 <a href="tel:18138699559" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-bold mb-3" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
                   <Phone size={16} /> Call Us Now
                 </a>
-                <a href="#" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-semibold text-white border-2 border-white/20 hover:border-white/40 transition-colors">
+                <Link href="/get-started" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-semibold text-white border-2 border-white/20 hover:border-white/40 transition-colors">
                   Get Started Online <ArrowRight size={16} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
