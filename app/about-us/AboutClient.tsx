@@ -66,16 +66,78 @@ const STATS = [
 ];
 
 const TEAM_MEMBERS = [
-  { name: "Greg Wohl", slug: "greg-wohl", title: "Founder and Licensed Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg" },
-  { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg" },
-  { name: "JD Diaz", slug: "jd-diaz", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg" },
-  { name: "Paxton DeMent", slug: "paxton-dement", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg" },
-  { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", title: "Licensed Independent Agent", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg" },
-  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", title: "Licensed Independent Agent", photo: null },
-  { name: "Mark VanHoesen", slug: "mark-vanhoesen", title: "Licensed Independent Agent", photo: null },
-  { name: "Kelly Webb", slug: "kelly-webb", title: "Licensed Independent Agent", photo: null },
-  { name: "Chris Gallimore", slug: "chris-gallimore", title: "Licensed Independent Agent", photo: null },
-  { name: "Paul Eckstein", slug: "paul-eckstein", title: "Licensed Independent Agent", photo: null },
+  {
+    name: "Greg Wohl",
+    slug: "greg-wohl",
+    title: "Founder & Licensed Agent",
+    license: "FL License # D009743",
+    phone: "813-699-5559",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Gregory-Wohl-.jpeg",
+  },
+  {
+    name: "Jennifer C. Loader-Wohl",
+    slug: "jennifer-loader-wohl",
+    title: "Licensed Independent Agent",
+    license: "FL License # W013380",
+    phone: "813-756-1100 x102",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Jennifer-C.-Loader-Wohl.jpeg",
+  },
+  {
+    name: 'Jose F. Diaz "JD"',
+    slug: "jd-diaz",
+    title: "Licensed Independent Agent",
+    license: "FL License # W613730",
+    phone: "813-699-5559",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/jd-photo-225x300-1.jpg",
+  },
+  {
+    name: "Chris Gallimore",
+    slug: "chris-gallimore",
+    title: "Licensed Independent Agent",
+    license: "FL License # P117166",
+    phone: "727-504-0554",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Chris-Gallimore.jpeg",
+  },
+  {
+    name: "Paul Eckstein",
+    slug: "paul-eckstein",
+    title: "Licensed Independent Agent",
+    license: "FL License # A075214",
+    phone: "813-756-1100 x106",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Paul-Eckstein.jpeg",
+  },
+  {
+    name: "Kelly Webb",
+    slug: "kelly-webb",
+    title: "Licensed Independent Agent",
+    license: "FL License # W127785",
+    phone: "727-560-8850",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Kelly-Webb.jpeg",
+  },
+  {
+    name: "Paxton Dement, CFP",
+    slug: "paxton-dement",
+    title: "Licensed Independent Agent",
+    license: "GA License # 564308",
+    phone: "678-557-7756",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg",
+  },
+  {
+    name: "Valerie Hall",
+    slug: "valerie-justin-hall",
+    title: "Licensed Independent Agent",
+    license: "FL License # W336278",
+    phone: "941-870-3820",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2022/05/valerie-headshot-214x300.jpg",
+  },
+  {
+    name: "Mark VanHoesen",
+    slug: "mark-vanhoesen",
+    title: "Licensed Independent Agent",
+    license: "FL License # W16104983",
+    phone: "727-272-0943",
+    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Mark-VanHoesen-2.jpg",
+  },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -150,27 +212,34 @@ export default function AboutClient() {
               Licensed, independent Medicare specialists who put your needs first.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6">
             {TEAM_MEMBERS.map((member) => (
               <Link
                 key={member.slug}
                 href={`/${member.slug}`}
-                className="bg-white rounded-2xl border border-gray-100 p-5 flex flex-col items-center text-center hover:shadow-md hover:border-[#1a3fa8] transition-all group"
+                className="bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col hover:shadow-lg hover:border-[#1a3fa8] transition-all group"
               >
-                {member.photo ? (
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-20 h-20 rounded-full object-cover object-top border-2 border-gray-100 mb-3 group-hover:border-[#1a3fa8] transition-colors"
-                  />
-                ) : (
-                  <div className="w-20 h-20 rounded-full bg-[#e8edf8] flex items-center justify-center mb-3 border-2 border-gray-100 group-hover:border-[#1a3fa8] transition-colors">
-                    <User className="w-9 h-9 text-[#1a3fa8]" />
-                  </div>
-                )}
-                <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-1">{member.name}</h3>
-                <p className="text-xs text-gray-500 mb-3">{member.title}</p>
-                <span className="text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile</span>
+                {/* Photo */}
+                <div className="relative w-full aspect-[4/3] bg-[#e8edf8] overflow-hidden">
+                  {member.photo ? (
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <User className="w-16 h-16 text-[#1a3fa8] opacity-40" />
+                    </div>
+                  )}
+                </div>
+                {/* Info */}
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-0.5">{member.name}</h3>
+                  <p className="text-xs text-[#1a3fa8] font-medium mb-1">{member.title}</p>
+                  <p className="text-xs text-gray-400 mb-3">{member.license}</p>
+                  <span className="mt-auto text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile →</span>
+                </div>
               </Link>
             ))}
           </div>
