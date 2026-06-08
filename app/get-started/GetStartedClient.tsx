@@ -12,6 +12,40 @@ const PHONE_DISPLAY = "813-699-5559";
 const PHONE_HREF = "tel:8136995559";
 const TOTAL_STEPS = 7;
 
+// ── HubSpot ────────────────────────────────────────────────────────────────────
+const HS_PORTAL_ID = "246426534";
+const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
+
+async function submitToHubSpot(data: FormData): Promise<void> {
+  const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`;
+  const fields = [
+    { name: "phone", value: data.phone },
+    { name: "firstname", value: data.name.split(" ")[0] || "" },
+    { name: "lastname", value: data.name.split(" ").slice(1).join(" ") || "" },
+    { name: "zip", value: data.zip },
+    { name: "hs_lead_status", value: "NEW" },
+  ].filter(f => f.value !== "");
+
+  // Custom properties stored as notes via context
+  const context: Record<string, string> = { hutk: "", pageUri: typeof window !== "undefined" ? window.location.href : "", pageName: "Get Started Funnel" };
+
+  await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      fields,
+      context,
+      legalConsentOptions: {
+        consent: {
+          consentToProcess: true,
+          text: "I agree to allow Medicare Information Project to store and process my personal data.",
+          communications: [{ value: true, subscriptionTypeId: 999, text: "I agree to receive marketing communications." }],
+        },
+      },
+    }),
+  });
+}
+
 // ── Types ──────────────────────────────────────────────────────────────────────
 interface FormData {
   zip: string;
@@ -220,6 +254,20 @@ function GetStartedInner() {
     rxImportance: "", doctorImportance: "", name: "", phone: "",
   });
   const [done, setDone] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async () => {
+    setSubmitting(true);
+    try {
+      await submitToHubSpot(form);
+    } catch (err) {
+      // Silently fail — don't block the thank-you screen on network errors
+      console.error("HubSpot submission error:", err);
+    } finally {
+      setSubmitting(false);
+      setDone(true);
+    }
+  };
 
   // Pre-fill ZIP from query string (?zip=33602)
   useEffect(() => {
@@ -462,9 +510,9 @@ function GetStartedInner() {
                 />
               </div>
               <ContinueButton
-                label="Find My Plans"
-                onClick={() => setDone(true)}
-                disabled={form.phone.replace(/\D/g, "").length !== 10}
+                label={submitting ? "Submitting..." : "Find My Plans"}
+                onClick={handleSubmit}
+                disabled={form.phone.replace(/\D/g, "").length !== 10 || submitting}
               />
               <NavRow onBack={back} />
               <ProgressBar step={7} />
