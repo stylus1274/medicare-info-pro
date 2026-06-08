@@ -16,7 +16,7 @@ const TOTAL_STEPS = 8;
 const HS_PORTAL_ID = "246426534";
 const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
 
-async function submitToHubSpot(data: FormData): Promise<void> {
+async function submitToHubSpot(data: FormData): Promise<{ status: number; body: string }> {
   const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`;
   const fields = [
     { name: "email", value: data.email },
@@ -27,24 +27,15 @@ async function submitToHubSpot(data: FormData): Promise<void> {
     { name: "hs_lead_status", value: "NEW" },
   ].filter(f => f.value !== "");
 
-  // Custom properties stored as notes via context
-  const context: Record<string, string> = { hutk: "", pageUri: typeof window !== "undefined" ? window.location.href : "", pageName: "Get Started Funnel" };
+  const context = { pageUri: typeof window !== "undefined" ? window.location.href : "", pageName: "Get Started Funnel" };
 
-  await fetch(url, {
+  const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      fields,
-      context,
-      legalConsentOptions: {
-        consent: {
-          consentToProcess: true,
-          text: "I agree to allow Medicare Information Project to store and process my personal data.",
-          communications: [{ value: true, subscriptionTypeId: 999, text: "I agree to receive marketing communications." }],
-        },
-      },
-    }),
+    body: JSON.stringify({ fields, context }),
   });
+  const body = await res.text();
+  return { status: res.status, body };
 }
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -261,9 +252,11 @@ function GetStartedInner() {
   const handleSubmit = async () => {
     setSubmitting(true);
     try {
-      await submitToHubSpot(form);
+      const result = await submitToHubSpot(form);
+      // DEBUG: show response so we can diagnose HubSpot issues
+      alert(`HubSpot response:\nStatus: ${result.status}\nBody: ${result.body}`);
     } catch (err) {
-      // Silently fail — don't block the thank-you screen on network errors
+      alert(`HubSpot fetch error: ${err}`);
       console.error("HubSpot submission error:", err);
     } finally {
       setSubmitting(false);
