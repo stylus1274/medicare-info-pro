@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.manus.space" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/free-consultation",
+        destination: "/get-started",
+        permanent: true, // 308 redirect — updates search engine indexes
+      },
+    ];
+  },
 };
 
 export default nextConfig;
