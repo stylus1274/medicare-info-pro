@@ -73,6 +73,7 @@ const TEAM_MEMBERS = [
     license: "FL License # D009743",
     phone: "813-699-5559",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Gregory-Wohl-.jpeg",
+    photoPos: "object-center",
   },
   {
     name: "Jennifer C. Loader-Wohl",
@@ -81,6 +82,7 @@ const TEAM_MEMBERS = [
     license: "FL License # W013380",
     phone: "813-756-1100 x102",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Jennifer-C.-Loader-Wohl.jpeg",
+    photoPos: "object-center",
   },
   {
     name: 'Jose F. Diaz "JD"',
@@ -89,6 +91,7 @@ const TEAM_MEMBERS = [
     license: "FL License # W613730",
     phone: "813-699-5559",
     photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/jd-photo-225x300-1.jpg",
+    photoPos: "object-[center_20%]",
   },
   {
     name: "Chris Gallimore",
@@ -97,6 +100,7 @@ const TEAM_MEMBERS = [
     license: "FL License # P117166",
     phone: "727-504-0554",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Chris-Gallimore.jpeg",
+    photoPos: "object-center",
   },
   {
     name: "Paul Eckstein",
@@ -105,6 +109,7 @@ const TEAM_MEMBERS = [
     license: "FL License # A075214",
     phone: "813-756-1100 x106",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Paul-Eckstein.jpeg",
+    photoPos: "object-[center_15%]",
   },
   {
     name: "Kelly Webb",
@@ -113,6 +118,7 @@ const TEAM_MEMBERS = [
     license: "FL License # W127785",
     phone: "727-560-8850",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Kelly-Webb.jpeg",
+    photoPos: "object-center",
   },
   {
     name: "Paxton Dement, CFP",
@@ -121,6 +127,7 @@ const TEAM_MEMBERS = [
     license: "GA License # 564308",
     phone: "678-557-7756",
     photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg",
+    photoPos: "object-[center_10%]",
   },
   {
     name: "Valerie Hall",
@@ -129,6 +136,7 @@ const TEAM_MEMBERS = [
     license: "FL License # W336278",
     phone: "941-870-3820",
     photo: "https://medicareinfopro.com/wp-content/uploads/2022/05/valerie-headshot-214x300.jpg",
+    photoPos: "object-[center_15%]",
   },
   {
     name: "Mark VanHoesen",
@@ -137,6 +145,7 @@ const TEAM_MEMBERS = [
     license: "FL License # W16104983",
     phone: "727-272-0943",
     photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Mark-VanHoesen-2.jpg",
+    photoPos: "object-center",
   },
 ];
 
@@ -220,12 +229,12 @@ export default function AboutClient() {
                 className="bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col hover:shadow-lg hover:border-[#1a3fa8] transition-all group"
               >
                 {/* Photo */}
-                <div className="relative w-full aspect-[4/3] bg-[#e8edf8] overflow-hidden">
+                <div className="relative w-full aspect-[3/4] bg-[#e8edf8] overflow-hidden">
                   {member.photo ? (
                     <img
                       src={member.photo}
                       alt={member.name}
-                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${member.photoPos}`}
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
