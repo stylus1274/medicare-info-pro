@@ -252,11 +252,9 @@ function GetStartedInner() {
   const handleSubmit = async () => {
     setSubmitting(true);
     try {
-      const result = await submitToHubSpot(form);
-      // DEBUG: show response so we can diagnose HubSpot issues
-      alert(`HubSpot response:\nStatus: ${result.status}\nBody: ${result.body}`);
+      await submitToHubSpot(form);
     } catch (err) {
-      alert(`HubSpot fetch error: ${err}`);
+      // Silently fail — don't block the thank-you screen on network errors
       console.error("HubSpot submission error:", err);
     } finally {
       setSubmitting(false);
