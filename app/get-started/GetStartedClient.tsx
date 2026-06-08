@@ -10,7 +10,7 @@ const LOGO_URL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/logo-white_bb567c3d.png";
 const PHONE_DISPLAY = "813-699-5559";
 const PHONE_HREF = "tel:8136995559";
-const TOTAL_STEPS = 7;
+const TOTAL_STEPS = 8;
 
 // ── HubSpot ────────────────────────────────────────────────────────────────────
 const HS_PORTAL_ID = "246426534";
@@ -19,6 +19,7 @@ const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
 async function submitToHubSpot(data: FormData): Promise<void> {
   const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`;
   const fields = [
+    { name: "email", value: data.email },
     { name: "phone", value: data.phone },
     { name: "firstname", value: data.name.split(" ")[0] || "" },
     { name: "lastname", value: data.name.split(" ").slice(1).join(" ") || "" },
@@ -54,6 +55,7 @@ interface FormData {
   rxImportance: string;
   doctorImportance: string;
   name: string;
+  email: string;
   phone: string;
 }
 
@@ -251,7 +253,7 @@ function GetStartedInner() {
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<FormData>({
     zip: "", hasMedicare: "", dentalImportance: "",
-    rxImportance: "", doctorImportance: "", name: "", phone: "",
+    rxImportance: "", doctorImportance: "", name: "", email: "", phone: "",
   });
   const [done, setDone] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -488,10 +490,34 @@ function GetStartedInner() {
             </>
           )}
 
-          {/* Step 7: Phone */}
+          {/* Step 7: Email */}
           {step === 7 && (
             <>
               {stepLabel(7)}
+              <h2 style={questionStyle}>What&apos;s your email address?</h2>
+              <p style={subtitleStyle}>We&apos;ll send you a summary of your plan options. You can skip this if you prefer.</p>
+              <input
+                type="email"
+                inputMode="email"
+                placeholder="your@email.com"
+                value={form.email}
+                onChange={e => set("email", e.target.value)}
+                onKeyDown={e => { if (e.key === "Enter") next(); }}
+                style={inputStyle}
+                onFocus={e => { e.currentTarget.style.borderColor = "#1a3a8f"; }}
+                onBlur={e => { e.currentTarget.style.borderColor = "#d1d5db"; }}
+                autoFocus
+              />
+              <ContinueButton onClick={next} />
+              <NavRow onBack={back} onSkip={() => { set("email", ""); next(); }} showSkip />
+              <ProgressBar step={7} />
+            </>
+          )}
+
+          {/* Step 8: Phone */}
+          {step === 8 && (
+            <>
+              {stepLabel(8)}
               <h2 style={questionStyle}>How can we reach you?</h2>
               <p style={subtitleStyle}>A licensed agent will call you to review your matches — no obligation.</p>
               <div style={{ position: "relative" }}>
@@ -502,7 +528,7 @@ function GetStartedInner() {
                   placeholder="Phone number"
                   value={form.phone}
                   onChange={e => set("phone", formatPhone(e.target.value))}
-                  onKeyDown={e => { if (e.key === "Enter" && form.phone.replace(/\D/g, "").length === 10) setDone(true); }}
+                  onKeyDown={e => { if (e.key === "Enter" && form.phone.replace(/\D/g, "").length === 10) handleSubmit(); }}
                   style={{ ...inputStyle, paddingLeft: "2.25rem" }}
                   onFocus={e => { e.currentTarget.style.borderColor = "#1a3a8f"; }}
                   onBlur={e => { e.currentTarget.style.borderColor = "#d1d5db"; }}
@@ -515,7 +541,7 @@ function GetStartedInner() {
                 disabled={form.phone.replace(/\D/g, "").length !== 10 || submitting}
               />
               <NavRow onBack={back} />
-              <ProgressBar step={7} />
+              <ProgressBar step={8} />
               {/* TCPA Disclaimer */}
               <p style={{ fontSize: "0.72rem", color: "#9ca3af", marginTop: "1.25rem", lineHeight: 1.5 }}>
                 By clicking &ldquo;Find My Plans&rdquo; you agree to receive calls and texts from Medicare Information Project at the number provided. Standard message and data rates may apply. You may opt out at any time.{" "}
