@@ -158,7 +158,7 @@ export default function Home() {
             <div style={{ display: "flex", gap: "0.2rem" }}>
               {[1,2,3,4,5].map(i => <Star key={i} size={14} style={{ color: "#f5c842", fill: "#f5c842" }} />)}
             </div>
-            <div style={{ fontSize: "1rem", fontWeight: 800, color: "#0d1f5c" }}>10,000+</div>
+            <div style={{ fontSize: "1rem", fontWeight: 800, color: "#ffffff" }}>10,000+</div>
             <div style={{ fontSize: "0.8rem", color: "#6b7280", fontWeight: 500 }}>Clients helped statewide</div>
           </div>
         </div>
@@ -292,7 +292,7 @@ export default function Home() {
               <p className="text-[1rem] text-blue-200">Our licensed agents are available to answer your questions - no obligation, no pressure.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-              <a href="tel:18138699559" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
+              <a href="tel:18138699559" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#ffffff" }}>
                 <Phone size={18} /> Call Us Now
               </a>
               <Link href="/get-started" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold text-white border-2 border-white/25 hover:border-white/50 transition-colors">
@@ -431,7 +431,7 @@ function FindPlansBlock() {
                 className="w-full pl-11 pr-4 py-4 rounded-xl text-[1rem] bg-white text-gray-900 placeholder:text-gray-400 outline-none border-2 border-transparent focus:border-amber-400 transition-colors"
               />
             </div>
-            <Link href={zip.length === 5 ? `/get-started?zip=${zip}` : "/get-started"} className="px-8 py-4 rounded-xl text-[1rem] font-bold transition-all duration-200 hover:shadow-lg" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c", textDecoration: "none" }}>
+            <Link href={zip.length === 5 ? `/get-started?zip=${zip}` : "/get-started"} className="px-8 py-4 rounded-xl text-[1rem] font-bold transition-all duration-200 hover:shadow-lg" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#ffffff", textDecoration: "none" }}>
               Search Plans
             </Link>
           </div>
@@ -489,7 +489,7 @@ function FAQBlock() {
               <div className="p-8" style={{ background: "#0a1a4a" }}>
                 <h3 className="text-xl text-white mb-3" style={{ fontFamily: "var(--font-heading)" }}>Need help choosing the right plan?</h3>
                 <p className="text-[0.9rem] text-blue-200 leading-relaxed mb-6">Our licensed agents are available to answer your questions - no obligation, no pressure.</p>
-                <a href="tel:18138699559" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-bold mb-3" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#0d1f5c" }}>
+                <a href="tel:18138699559" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-bold mb-3" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#ffffff" }}>
                   <Phone size={16} /> Call Us Now
                 </a>
                 <Link href="/get-started" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-semibold text-white border-2 border-white/20 hover:border-white/40 transition-colors">

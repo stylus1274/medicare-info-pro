@@ -468,7 +468,7 @@ export default function Header() {
               href="/get-started"
               className="hidden lg:inline-flex"
               style={{
-                background: "#f5a800", color: "#0d1f5c",
+                background: "#f5a800", color: "#ffffff",
                 padding: "0.55rem 1.25rem", borderRadius: 999, textDecoration: "none",
                 fontSize: "0.875rem", fontWeight: 700, alignItems: "center", gap: "0.4rem",
                 whiteSpace: "nowrap",
@@ -551,7 +551,7 @@ export default function Header() {
               <div className="pt-4 border-t border-gray-100 space-y-3">
                 <Link
                   href="/get-started"
-                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-[#0d1f5c]"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-white"
                   style={{ fontSize: "1rem" }}
                   onClick={() => setMobileOpen(false)}
                 >
