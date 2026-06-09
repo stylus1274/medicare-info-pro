@@ -56,7 +56,11 @@ export default function ContactClient() {
     name: "", email: "", phone: "", zip: "", reason: "general", message: "", bestTime: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const HS_PORTAL_ID = "246426534";
+  const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
 
   function validate() {
     const e: Record<string, string> = {};
@@ -66,10 +70,46 @@ export default function ContactClient() {
     return e;
   }
 
-  function handleSubmit(ev: React.FormEvent) {
+  async function handleSubmit(ev: React.FormEvent) {
     ev.preventDefault();
     const e = validate();
     if (Object.keys(e).length > 0) { setErrors(e); return; }
+    setSubmitting(true);
+
+    const nameParts = form.name.trim().split(" ");
+    const firstName = nameParts[0] || "";
+    const lastName = nameParts.slice(1).join(" ") || "";
+
+    const reasonLabel = REASONS.find(r => r.value === form.reason)?.label || form.reason;
+    const noteLines = [
+      `Inquiry Type: ${reasonLabel}`,
+      form.bestTime ? `Best Time to Reach: ${form.bestTime}` : "",
+      form.message ? `Message: ${form.message}` : "",
+    ].filter(Boolean).join("\n");
+
+    const fields = [
+      { name: "firstname", value: firstName },
+      { name: "lastname", value: lastName },
+      { name: "email", value: form.email },
+      { name: "phone", value: form.phone },
+      { name: "zip", value: form.zip },
+      { name: "message", value: noteLines },
+    ];
+
+    try {
+      await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ fields, context: { pageUri: window.location.href, pageName: "Contact Us" } }),
+        }
+      );
+    } catch (_) {
+      // silently continue — show thank-you regardless
+    }
+
+    setSubmitting(false);
     setSubmitted(true);
   }
 
@@ -230,9 +270,10 @@ export default function ContactClient() {
                     </div>
                     <button
                       type="submit"
-                      className="w-full bg-[#f5a623] hover:bg-[#e09510] text-white font-bold py-3.5 rounded-lg transition-colors text-base"
+                      disabled={submitting}
+                      className="w-full bg-[#f5a623] hover:bg-[#e09510] text-white font-bold py-3.5 rounded-lg transition-colors text-base disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {submitting ? "Sending..." : "Send Message"}
                     </button>
                     <p className="text-xs text-gray-400 text-center leading-relaxed">
                       By submitting this form you consent to be contacted by a licensed insurance agent at Medicare Information Project about Medicare plans and related services. Consent is not a condition of purchase. You may also reach us by phone at 813-699-5559. View our{" "}
