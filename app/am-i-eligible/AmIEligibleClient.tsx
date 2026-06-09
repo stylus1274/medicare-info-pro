@@ -259,7 +259,7 @@ function EligibilityChecker() {
 
               <a
                 href="tel:8136995559"
-                className="flex items-center justify-center gap-2 w-full bg-[#f5a800] hover:bg-[#e09800] text-[#1a1a1a] font-bold py-4 rounded-xl transition-colors text-lg mb-3"
+                className="flex items-center justify-center gap-2 w-full bg-[#f5a800] hover:bg-[#e09800] text-white font-bold py-4 rounded-xl transition-colors text-lg mb-3"
               >
                 <Phone className="w-5 h-5" />
                 Call (813) 699-5559 - Free Consultation
@@ -760,7 +760,7 @@ export default function AmIEligibleClient() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:8136995559"
-                className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl transition-colors text-lg"
+                className="flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09800] text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg"
                 aria-label="Call MIP at (813) 699-5559"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />

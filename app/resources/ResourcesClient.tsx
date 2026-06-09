@@ -185,7 +185,7 @@ export default function ResourcesClient() {
               aria-label="Search Medicare guides and articles"
             />
             <button
-              className="bg-[#f5a800] hover:bg-[#e09700] text-[#1a2e6e] font-bold px-6 py-4 transition-colors text-base"
+              className="bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-4 transition-colors text-base"
               aria-label="Search"
             >
               Find Answers
