@@ -817,9 +817,9 @@ export default function EnrollmentTimelineClient() {
                           enrollment penalties do not go away after a set number
                           of years. They are added to your monthly premium for
                           as long as you have Medicare coverage. A 2-year Part B
-                          delay at the 2026 standard premium of $185.00/month
-                          means paying an extra $37/month - that's over $440 per
-                          year, every year, for the rest of your life.
+                          delay at the 2026 standard premium of $202.90/month
+                          means paying an extra ~$40.58/month - that's over $487
+                          per year, every year, for the rest of your life.
                         </p>
                         <p className="text-red-700 leading-relaxed mt-3">
                           If you think you may have missed your enrollment
