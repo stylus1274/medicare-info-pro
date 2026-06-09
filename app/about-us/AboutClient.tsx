@@ -221,34 +221,27 @@ export default function AboutClient() {
               Licensed, independent Medicare specialists who put your needs first.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
             {TEAM_MEMBERS.map((member) => (
               <Link
                 key={member.slug}
                 href={`/${member.slug}`}
-                className="bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col hover:shadow-lg hover:border-[#1a3fa8] transition-all group"
+                className="bg-white rounded-2xl border border-gray-100 p-5 flex flex-col items-center text-center hover:shadow-md hover:border-[#1a3fa8] transition-all group"
               >
-                {/* Photo */}
-                <div className="relative w-full aspect-[3/4] bg-[#e8edf8] overflow-hidden">
-                  {member.photo ? (
-                    <img
-                      src={member.photo}
-                      alt={member.name}
-                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${member.photoPos}`}
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <User className="w-16 h-16 text-[#1a3fa8] opacity-40" />
-                    </div>
-                  )}
-                </div>
-                {/* Info */}
-                <div className="p-4 flex flex-col flex-1">
-                  <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-0.5">{member.name}</h3>
-                  <p className="text-xs text-[#1a3fa8] font-medium mb-1">{member.title}</p>
-                  <p className="text-xs text-gray-400 mb-3">{member.license}</p>
-                  <span className="mt-auto text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile →</span>
-                </div>
+                {member.photo ? (
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-20 h-20 rounded-full object-cover object-top border-2 border-gray-100 mb-3 group-hover:border-[#1a3fa8] transition-colors"
+                  />
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-[#e8edf8] flex items-center justify-center mb-3 border-2 border-gray-100 group-hover:border-[#1a3fa8] transition-colors">
+                    <User className="w-9 h-9 text-[#1a3fa8]" />
+                  </div>
+                )}
+                <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-1">{member.name}</h3>
+                <p className="text-xs text-gray-500 mb-3">{member.title}</p>
+                <span className="text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile</span>
               </Link>
             ))}
           </div>
