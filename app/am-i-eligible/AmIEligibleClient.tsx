@@ -390,7 +390,7 @@ const scenarios = [
   {
     title: "Veterans Benefits",
     description:
-      "VA benefits do not count as creditable coverage for Medicare. You can have both VA and Medicare - they work independently. Having Medicare can give you access to non-VA providers.",
+      "VA benefits do not count as creditable coverage for Part B, so delaying Part B enrollment based on VA coverage alone can result in a late penalty. VA benefits do count as creditable coverage for Part D, so you can delay a standalone drug plan without penalty. You can have both VA and Medicare - they work independently.",
     tag: "Veterans",
     tagColor: "bg-green-100 text-green-700",
   },
@@ -435,7 +435,7 @@ const faqs = [
   },
   {
     q: "I'm on my spouse's employer plan. Do I need Medicare?",
-    a: "If your spouse's employer has 20+ employees, their plan is primary and you can delay Medicare without penalty. Once that employer coverage ends, you have an 8-month Special Enrollment Period to sign up for Medicare without penalty.",
+    a: "If your spouse's employer has 20+ employees, their plan is primary and you can delay Part A and Part B without penalty. Once that employer coverage ends, you have an 8-month Special Enrollment Period to enroll in Part A and Part B. However, if you want to enroll in a Medicare Advantage (MAPD) or standalone Part D drug plan, the window is shorter - only 63 days after that employer coverage ends.",
   },
 ];
 

@@ -33,14 +33,14 @@ const fadeUp = {
 const DECISION_TILES = [
   {
     icon: <UserPlus size={22} />,
-    label: "I&apos;m turning 65 and new to Medicare",
+    label: "I'm turning 65 and new to Medicare",
     desc: "Understand your options, deadlines, and first steps before your Initial Enrollment Period closes.",
     href: "/am-i-eligible",
     color: "#1a3fa8",
   },
   {
     icon: <Briefcase size={22} />,
-    label: "I&apos;m still working and have employer coverage",
+    label: "I'm still working and have employer coverage",
     desc: "Find out when to enroll, whether to delay, and how to avoid costly late-enrollment penalties.",
     href: "/",
     color: "#059669",
@@ -74,15 +74,15 @@ const MISTAKES = [
   { title: "Assuming Medicare covers everything", detail: "Original Medicare has no out-of-pocket maximum. Without a supplement or Advantage plan, a single hospital stay can cost thousands.", color: "#d97706" },
   { title: "Choosing a plan based on premium alone", detail: "A $0 premium plan can cost far more in copays and network restrictions. Total annual cost is what matters, not the monthly sticker price.", color: "#7c3aed" },
   { title: "Not reviewing your plan each year", detail: "Plan formularies, premiums, and networks change every October. A plan that was right last year may no longer be your best option.", color: "#059669" },
-  { title: "Skipping Part D because you don&apos;t take prescriptions now", detail: "Delaying Part D enrollment when you don&apos;t need it yet results in a permanent penalty once you do - 1% per month for every month you waited.", color: "#1a3fa8" },
+  { title: "Skipping Part D because you don't take prescriptions now", detail: "Delaying Part D enrollment when you don't need it yet results in a permanent penalty once you do - 1% per month for every month you waited.", color: "#1a3fa8" },
 ];
 
 // ── Estimator options ──
 const ESTIMATOR_OPTIONS = [
-  { id: "fixed", label: "Yes, I&apos;m on a fixed income", result: "Medicare Savings Programs may cover your Part B premium entirely. Many people qualify without knowing it.", range: "$0 – $174/mo", planType: "Medicare Savings Program + Medigap Plan G", color: "#1a3fa8" },
+  { id: "fixed", label: "Yes, I'm on a fixed income", result: "Medicare Savings Programs may cover your Part B premium entirely. Many people qualify without knowing it.", range: "$0 – $174/mo", planType: "Medicare Savings Program + Medigap Plan G", color: "#1a3fa8" },
   { id: "rx", label: "Yes, I take regular prescriptions", result: "A Medicare Advantage plan with built-in Part D drug coverage often lowers total annual cost compared to standalone Part D.", range: "$0 – $80/mo", planType: "Medicare Advantage (MAPD)", color: "#059669" },
   { id: "travel", label: "Yes, I travel or split time between states", result: "Original Medicare with a Medigap supplement gives you nationwide provider access without network restrictions.", range: "$120 – $220/mo", planType: "Original Medicare + Medigap Plan G", color: "#7c3aed" },
-  { id: "healthy", label: "Yes, I&apos;m generally healthy", result: "A low-premium Medicare Advantage plan with a high deductible may minimize your costs if you rarely need care.", range: "$0 – $40/mo", planType: "Medicare Advantage HMO", color: "#d97706" },
+  { id: "healthy", label: "Yes, I'm generally healthy", result: "A low-premium Medicare Advantage plan with a high deductible may minimize your costs if you rarely need care.", range: "$0 – $40/mo", planType: "Medicare Advantage HMO", color: "#d97706" },
 ];
 
 export default function Home() {
@@ -170,7 +170,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="text-center mb-14">
             <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] text-[#1a3fa8] mb-3">Personalized Guidance</p>
             <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>Where Are You on Your Medicare Journey?</h2>
-            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">Everyone&apos;s situation is different. Choose the path that matches yours and we&apos;ll guide you through exactly what you need to know.</p>
+            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">Everyone's situation is different. Choose the path that matches yours and we'll guide you through exactly what you need to know.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -259,8 +259,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { quote: "I was completely overwhelmed by Medicare options when I turned 65. The guides on this site helped me understand exactly what I needed before I even spoke to an agent.", name: "Margaret T.", link: "New to Medicare", stars: 5 },
-              { quote: "I kept working past 65 and had no idea how Medicare relates to my employer plan. The &apos;Working Past 65&apos; section answered every question I had.", name: "Robert K.", link: "Working Past 65", stars: 5 },
-              { quote: "Switching from Plan F to Plan G saved me over $100/month. The comparison guide made it so easy - I didn&apos;t even need to call anyone.", name: "Linda M.", link: "Already Enrolled", stars: 5 },
+              { quote: "I kept working past 65 and had no idea how Medicare relates to my employer plan. The 'Working Past 65' section answered every question I had.", name: "Robert K.", link: "Working Past 65", stars: 5 },
+              { quote: "Switching from Plan F to Plan G saved me over $100/month. The comparison guide made it so easy - I didn't even need to call anyone.", name: "Linda M.", link: "Already Enrolled", stars: 5 },
             ].map((r, i) => (
               <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative">
@@ -448,9 +448,9 @@ function FAQBlock() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
   const faqs = [
     { q: "What is Medicare and who is eligible?", a: "Medicare is a federal health insurance program primarily for people 65 and older, though some younger people with disabilities or specific conditions also qualify. Most U.S. citizens and permanent residents who have worked and paid Medicare taxes for at least 10 years are eligible." },
-    { q: "When should I enroll in Medicare?", a: "Your Initial Enrollment Period begins 3 months before the month you turn 65 and ends 3 months after. If you&apos;re still working with employer coverage, you may be able to delay enrollment without penalty. Contact us to understand your specific timeline." },
-    { q: "What&apos;s the difference between Original Medicare and Medicare Advantage?", a: "Original Medicare (Parts A & B) is provided by the federal government and lets you see any doctor who accepts Medicare. Medicare Advantage (Part C) is offered by private insurers and often includes extra benefits like dental and vision, but typically requires using a network of providers." },
-    { q: "Is your service really free?", a: "Yes, 100% free to you. We are licensed, independent insurance agents compensated by the insurance companies - not by you. Our guidance is unbiased because we represent over 100 plans from 17 organizations, so we can recommend what&apos;s truly best for your situation." },
+    { q: "When should I enroll in Medicare?", a: "Your Initial Enrollment Period begins 3 months before the month you turn 65 and ends 3 months after. If you're still working with employer coverage, you may be able to delay enrollment without penalty. Contact us to understand your specific timeline." },
+    { q: "What's the difference between Original Medicare and Medicare Advantage?", a: "Original Medicare (Parts A & B) is provided by the federal government and lets you see any doctor who accepts Medicare. Medicare Advantage (Part C) is offered by private insurers and often includes extra benefits like dental and vision, but typically requires using a network of providers." },
+    { q: "Is your service really free?", a: "Yes, 100% free to you. We are licensed, independent insurance agents compensated by the insurance companies - not by you. Our guidance is unbiased because we represent over 100 plans from 17 organizations, so we can recommend what's truly best for your situation." },
     { q: "What states do you serve?", a: "We are licensed and serve clients in Florida, Georgia, North Carolina, Arkansas, Kansas, and Texas. Our office is located in Brandon, Florida, but we assist clients across all six states via phone and video consultations." },
   ];
   return (

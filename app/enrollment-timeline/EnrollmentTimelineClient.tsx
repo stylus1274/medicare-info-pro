@@ -193,7 +193,7 @@ const penalties = [
     duration: "Permanent - for as long as you have Part B",
     who: "Anyone who delays enrollment without creditable employer coverage",
     example: "2 years late = 20% higher monthly premium forever",
-    note: "This is the most impactful penalty. The standard 2026 Part B premium is $185.00/month - a 2-year delay adds $37/month permanently.",
+    note: "This is the most impactful penalty. The standard 2026 Part B premium is $202.90/month - a 2-year delay adds approximately $40.58/month permanently.",
   },
   {
     part: "Part D",
@@ -268,7 +268,7 @@ const faqs = [
   },
   {
     q: "Is the Part B late enrollment penalty really permanent?",
-    a: "Yes. The Part B late enrollment penalty is 10% for each full 12-month period you were eligible but didn't enroll. It is added to your monthly Part B premium for as long as you have Part B - there is no expiration. At the 2026 standard premium of $185.00/month, even a 2-year delay adds $37/month permanently.",
+    a: "Yes. The Part B late enrollment penalty is 10% for each full 12-month period you were eligible but didn't enroll. It is added to your monthly Part B premium for as long as you have Part B - there is no expiration. At the 2026 standard premium of $202.90/month, even a 2-year delay adds approximately $40.58/month permanently.",
   },
   {
     q: "What if I missed my enrollment window - what do I do now?",

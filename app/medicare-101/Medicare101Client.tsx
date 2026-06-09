@@ -58,7 +58,7 @@ const PLAN_PARTS = [
       "Durable medical equipment",
       "Mental health services",
     ],
-    cost: "Standard premium: $185/month in 2026 (income-based adjustments may apply)",
+    cost: "Standard premium: $202.90/month in 2026 (income-based adjustments may apply)",
     note: "You pay 20% of most services after your deductible.",
   },
   {
@@ -88,7 +88,7 @@ const PLAN_PARTS = [
       "Specialty drugs (with prior auth)",
       "Vaccines in some plans",
     ],
-    cost: "Average premium ~$46/month in 2026; varies by plan and drugs needed",
+    cost: "Average premium ~$38.99/month in 2026; varies by plan and drugs needed",
     note: "Penalty applies if you delay enrollment without creditable coverage.",
   },
 ];
@@ -97,7 +97,7 @@ const COMPARISON_ROWS = [
   { feature: "Who provides it?", original: "Federal government", advantage: "Private insurance company" },
   { feature: "Network restrictions?", original: "See any doctor who accepts Medicare", advantage: "Usually limited to plan network (HMO/PPO)" },
   { feature: "Referrals needed?", original: "No referrals required", advantage: "HMO plans usually require referrals" },
-  { feature: "Out-of-pocket maximum?", original: "No cap - unlimited exposure", advantage: "Annual cap (e.g., $3,500–$8,850)" },
+  { feature: "Out-of-pocket maximum?", original: "No cap - unlimited exposure", advantage: "Annual cap ($9,250 in-network / $13,900 in+out combined)" },
   { feature: "Dental/Vision/Hearing?", original: "Not covered", advantage: "Often included" },
   { feature: "Prescription drugs?", original: "Need separate Part D plan", advantage: "Usually bundled in" },
   { feature: "Travel coverage?", original: "Nationwide - any Medicare provider", advantage: "Limited outside plan area" },
@@ -146,12 +146,12 @@ const ENROLLMENT_PERIODS = [
 
 const COSTS_2026 = [
   { item: "Part A Premium", cost: "$0 (most people)", note: "Free if 40+ quarters of Medicare taxes paid" },
-  { item: "Part A Deductible", cost: "$1,676 per benefit period", note: "Applies each time you're admitted to hospital" },
-  { item: "Part B Premium", cost: "$185/month", note: "Higher for incomes over $106,000 (IRMAA)" },
-  { item: "Part B Deductible", cost: "$257/year", note: "Then you pay 20% of most services" },
-  { item: "Part D Premium", cost: "~$46/month avg.", note: "Varies by plan; income adjustments apply" },
+  { item: "Part A Deductible", cost: "$1,736 per benefit period", note: "Applies each time you're admitted to hospital" },
+  { item: "Part B Premium", cost: "$202.90/month", note: "Higher for incomes over $109,000 (IRMAA)" },
+  { item: "Part B Deductible", cost: "$283/year", note: "Then you pay 20% of most services" },
+  { item: "Part D Premium", cost: "~$38.99/month avg.", note: "Varies by plan; income adjustments apply" },
   { item: "Medicare Advantage", cost: "$0 avg. premium", note: "You still pay Part B premium; copays apply" },
-  { item: "Medigap (Plan G)", cost: "$100–$200/month", note: "Covers most out-of-pocket costs after Part B deductible" },
+  { item: "Medigap (Plan G)", cost: "$100–$250/month", note: "Covers most out-of-pocket costs after Part B deductible" },
 ];
 
 const MISTAKES = [
@@ -200,7 +200,7 @@ const FAQS = [
   },
   {
     q: "What is IRMAA?",
-    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income reported on your tax return from two years ago exceeds certain thresholds ($106,000 for individuals, $212,000 for couples in 2026), you'll pay a higher Part B and/or Part D premium. The surcharge is applied on a sliding scale based on income.",
+    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income reported on your tax return from two years ago exceeds certain thresholds ($109,000 for individuals, $218,000 for couples in 2026), you'll pay a higher Part B and/or Part D premium. The surcharge is applied on a sliding scale based on income.",
   },
   {
     q: "Can I switch from Medicare Advantage back to Original Medicare?",
@@ -208,19 +208,19 @@ const FAQS = [
   },
   {
     q: "Is Medicare free?",
-    a: "Part A is free for most people who paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $185 in 2026. Part D and Medicare Advantage plans have their own premiums. There are also deductibles and cost-sharing for most services. Some low-income individuals may qualify for programs that help pay these costs.",
+    a: "Part A is free for most people who paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $202.90 in 2026. Part D and Medicare Advantage plans have their own premiums. There are also deductibles and cost-sharing for most services. Some low-income individuals may qualify for programs that help pay these costs.",
   },
 ];
 
 const STATS = [
   { value: "67M+", label: "Americans on Medicare", icon: <Users className="w-5 h-5" aria-hidden="true" /> },
   { value: "65", label: "Age of eligibility", icon: <Calendar className="w-5 h-5" aria-hidden="true" /> },
-  { value: "$185", label: "Avg. Part B premium/mo", icon: <DollarSign className="w-5 h-5" aria-hidden="true" /> },
+  { value: "$202.90", label: "Avg. Part B premium/mo", icon: <DollarSign className="w-5 h-5" aria-hidden="true" /> },
   { value: "7 months", label: "Initial enrollment window", icon: <Clock className="w-5 h-5" aria-hidden="true" /> },
 ];
 
 const MEDIGAP_PLANS = [
-  { plan: "Plan G", desc: "Most comprehensive. Covers all gaps except the Part B deductible ($257/year). Best for predictable costs.", badge: "Most Popular" },
+  { plan: "Plan G", desc: "Most comprehensive. Covers all gaps except the Part B deductible ($283/year). Best for predictable costs.", badge: "Most Popular" },
   { plan: "Plan N", desc: "Lower premium than Plan G. You pay up to $20 copay for office visits and $50 for ER visits.", badge: "Best Value" },
   { plan: "Plan A", desc: "Basic coverage. Covers Part A coinsurance and hospital costs. Lower premium but less protection.", badge: "Entry Level" },
 ];
