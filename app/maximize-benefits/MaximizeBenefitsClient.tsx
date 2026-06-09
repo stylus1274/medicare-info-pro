@@ -405,7 +405,7 @@ export default function MaximizeBenefitsClient() {
                 </Callout>
                 <Callout type="warning">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-8 h-8 bg-[#f5a800] rounded-full flex items-center justify-center text-[#1a3fa8] font-bold text-sm">
+                    <div className="w-8 h-8 bg-[#f5a800] rounded-full flex items-center justify-center text-white font-bold text-sm">
                       B
                     </div>
                     <span className="font-bold text-gray-900">Medicare Part B</span>
