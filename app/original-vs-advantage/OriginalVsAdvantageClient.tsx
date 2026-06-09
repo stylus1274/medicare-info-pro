@@ -435,7 +435,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
           </p>
           <a
             href="tel:8136995559"
-            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-4 py-3 rounded-xl transition-colors text-sm"
+            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-4 py-3 rounded-xl transition-colors text-sm"
             aria-label="Call MIP at 813-699-5559 for free plan comparison"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
@@ -502,7 +502,7 @@ export default function OriginalVsAdvantageClient() {
             <span>/</span>
             <span className="text-white" aria-current="page">Original vs. Advantage</span>
           </nav>
-          <div className="inline-block bg-[#f5a800] text-[#1a1a1a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Plan Comparison
           </div>
           <h1
@@ -840,7 +840,7 @@ export default function OriginalVsAdvantageClient() {
             <div className="flex flex-col gap-3 flex-shrink-0">
               <a
                 href="tel:8136995559"
-                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
+                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
                 aria-label="Call MIP at 813-699-5559 for a free personalized Medicare plan comparison"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />

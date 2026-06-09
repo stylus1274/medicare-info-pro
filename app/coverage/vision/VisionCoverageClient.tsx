@@ -377,7 +377,7 @@ export default function VisionCoverageClient() {
               </p>
               <a
                 href="tel:8136995559"
-                className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#f5a800] text-[#1a1a1a] font-bold text-sm hover:bg-amber-400 transition-colors w-full"
+                className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#f5a800] text-white font-bold text-sm hover:bg-amber-400 transition-colors w-full"
               >
                 <Phone size={15} />
                 Call 813-699-5559
@@ -493,7 +493,7 @@ export default function VisionCoverageClient() {
             <div className="flex flex-col gap-3 flex-shrink-0">
               <a
                 href="tel:8136995559"
-                className="flex items-center gap-3 bg-[#f5a800] hover:bg-amber-400 text-[#1a1a1a] font-bold px-8 py-4 rounded-xl transition-colors text-base whitespace-nowrap"
+                className="flex items-center gap-3 bg-[#f5a800] hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-xl transition-colors text-base whitespace-nowrap"
               >
                 <Phone className="w-5 h-5" />
                 Call 813-699-5559

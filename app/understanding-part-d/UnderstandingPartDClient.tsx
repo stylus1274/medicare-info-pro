@@ -244,7 +244,7 @@ function Sidebar() {
           <a
             href="tel:8136995559"
             aria-label="Call MIP at 813-699-5559"
-            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-4 py-3 rounded-xl transition-colors text-sm"
+            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-4 py-3 rounded-xl transition-colors text-sm"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             813-699-5559
@@ -284,7 +284,7 @@ export default function UnderstandingPartDClient() {
             <span aria-hidden="true">/</span>
             <span className="text-white" aria-current="page">Understanding Part D</span>
           </nav>
-          <div className="inline-block bg-[#f5a800] text-[#1a1a1a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Drug Coverage Guide
           </div>
           <h1
@@ -478,7 +478,7 @@ export default function UnderstandingPartDClient() {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" aria-hidden="true" />
                     <div className="relative z-10">
                       <div className="flex items-center gap-2 mb-4">
-                        <div className="bg-[#f5a800] text-[#1a1a1a] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                        <div className="bg-[#f5a800] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
                           In Effect 2026
                         </div>
                         <div className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -689,7 +689,7 @@ export default function UnderstandingPartDClient() {
               <a
                 href="tel:8136995559"
                 aria-label="Call MIP at 813-699-5559 for a free drug plan comparison"
-                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
+                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />
                 Call 813-699-5559

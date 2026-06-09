@@ -471,7 +471,7 @@ export default function AmIEligibleClient() {
             <span>/</span>
             <span className="text-white" aria-current="page">Am I Eligible?</span>
           </nav>
-          <div className="inline-block bg-[#f5a800] text-[#1a1a1a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Getting Started
           </div>
           <h1

@@ -662,7 +662,7 @@ export default function MedicareQuizClient() {
       {/* Page Header */}
       <div className="bg-[#0d1f5c] py-12">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <div className="inline-block bg-[#f5a800] text-[#1a1a1a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Free · 2 Minutes · No Sign-Up
           </div>
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">

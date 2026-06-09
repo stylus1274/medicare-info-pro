@@ -425,7 +425,7 @@ function ArticleCard({ article, featured = false }: { article: typeof ARTICLES[0
               alt={article.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
-            <span className="absolute top-4 left-4 bg-[#f5a800] text-[#1a2e6e] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+            <span className="absolute top-4 left-4 bg-[#f5a800] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
               Featured
             </span>
           </div>

@@ -390,7 +390,7 @@ function Sidebar() {
           </p>
           <a
             href="tel:8136995559"
-            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-4 py-3 rounded-xl transition-colors text-sm"
+            className="flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-4 py-3 rounded-xl transition-colors text-sm"
             aria-label="Call MIP at 813-699-5559 to compare Medigap quotes"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
@@ -431,7 +431,7 @@ export default function DoINeedSupplementClient() {
             <span>/</span>
             <span className="text-white" aria-current="page">Do I Need a Supplement?</span>
           </nav>
-          <div className="inline-block bg-[#f5a800] text-[#1a1a1a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Medigap Guide
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4 max-w-2xl" style={{ fontFamily: "'Merriweather', serif" }}>
@@ -649,7 +649,7 @@ export default function DoINeedSupplementClient() {
                       {
                         plan: "Plan N",
                         badge: "Best Value",
-                        badgeColor: "bg-[#f5a800] text-[#1a1a1a]",
+                        badgeColor: "bg-[#f5a800] text-white",
                         borderColor: "border-[#f5a800]",
                         premium: "$70–$150/mo",
                         headline: "Lower premium, small copays",
@@ -810,7 +810,7 @@ export default function DoINeedSupplementClient() {
             <div className="flex flex-col gap-3 flex-shrink-0">
               <a
                 href="tel:8136995559"
-                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
+                className="flex items-center gap-3 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg whitespace-nowrap"
                 aria-label="Call MIP at 813-699-5559 to compare Medigap plans for free"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />
