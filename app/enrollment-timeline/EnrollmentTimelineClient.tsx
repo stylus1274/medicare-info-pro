@@ -493,7 +493,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
           <p className="font-bold text-amber-800 mb-1">Penalty Reminder</p>
           <p className="text-amber-700 text-sm leading-relaxed">
             The Part B late penalty is <strong>permanent</strong>. A 2-year
-            delay adds ~$37/month to your premium for life.
+            delay adds ~$40.58/month to your premium for life.
           </p>
         </Callout>
       </div>
