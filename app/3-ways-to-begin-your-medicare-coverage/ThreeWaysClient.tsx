@@ -32,7 +32,7 @@ const STEPS = [
     summary: "Medicare has four parts. Understanding each one helps you build the right coverage plan.",
     details: [
       { label: "Part A: Hospital Insurance", desc: "Covers inpatient hospital stays, skilled nursing facility care, hospice, and some home health services. Usually free if you worked 10+ years." },
-      { label: "Part B: Medical Insurance", desc: "Covers doctor visits, outpatient care, preventive screenings, and medical equipment. Standard premium is $185/month in 2025." },
+      { label: "Part B: Medical Insurance", desc: "Covers doctor visits, outpatient care, preventive screenings, and medical equipment. Standard premium is $202.90/month in 2026." },
       { label: "Part C: Medicare Advantage", desc: "An all-in-one alternative to Original Medicare offered by private insurers. Often includes dental, vision, hearing, and drug coverage." },
       { label: "Part D: Drug Coverage", desc: "Covers prescription drugs. Sold by private insurers. Each plan has its own formulary (list of covered drugs) and premium." },
     ],

@@ -111,7 +111,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Do I still pay Medicare Part B premium if I enroll in an SNP?",
-    a: "Yes. You must continue paying your Medicare Part B premium ($185/month in 2026) even when enrolled in an SNP. However, many D-SNPs have $0 plan premiums, and some D-SNPs offer a Part B premium reduction benefit that offsets some or all of the Part B cost.",
+    a: "Yes. You must continue paying your Medicare Part B premium ($202.90/month in 2026) even when enrolled in an SNP. However, many D-SNPs have $0 plan premiums, and some D-SNPs offer a Part B premium reduction benefit that offsets some or all of the Part B cost.",
   },
   {
     q: "Can I switch from a regular Medicare Advantage plan to an SNP?",

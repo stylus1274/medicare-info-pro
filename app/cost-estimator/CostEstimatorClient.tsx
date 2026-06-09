@@ -18,16 +18,16 @@ const GREG_PHOTO =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_0f68a894.png";
 
 // 2026 Medicare figures
-const PART_B_PREMIUM = 185.0;
-const PART_B_DEDUCTIBLE = 257;
-const PART_A_DEDUCTIBLE = 1676;
-const SNF_DAILY_COINSURANCE = 209.5; // days 21-100
+const PART_B_PREMIUM = 202.90;
+const PART_B_DEDUCTIBLE = 283;
+const PART_A_DEDUCTIBLE = 1736;
+const SNF_DAILY_COINSURANCE = 212; // days 21-100
 const PART_D_MAX_OOP = 2000;
 
 // IRMAA 2026 Part B surcharges (individual income)
 const IRMAA_BRACKETS = [
-  { label: "Under $106,000", surcharge: 0 },
-  { label: "$106,001 to $133,000", surcharge: 74.0 },
+  { label: "Under $109,000", surcharge: 0 },
+  { label: "$109,001 to $136,000", surcharge: 74.0 },
   { label: "$133,001 to $167,000", surcharge: 187.0 },
   { label: "$167,001 to $200,000", surcharge: 299.70 },
   { label: "$200,001 to $500,000", surcharge: 412.10 },
@@ -61,9 +61,9 @@ export default function CostEstimatorClient() {
       total += PART_B_DEDUCTIBLE;
       // Hospital: Part A deductible if any days
       if (hospitalDays > 0) total += PART_A_DEDUCTIBLE;
-      // Hospital coinsurance days 61-90: $419/day
-      if (hospitalDays > 60) total += Math.min(hospitalDays - 60, 30) * 419;
-      // SNF coinsurance days 21-100: $209.50/day
+      // Hospital coinsurance days 61-90: $422/day
+      if (hospitalDays > 60) total += Math.min(hospitalDays - 60, 30) * 422;
+      // SNF coinsurance days 21-100: $212/day
       const snfCoinsuranceDays = Math.max(0, Math.min(snfDays, 100) - 20);
       total += snfCoinsuranceDays * SNF_DAILY_COINSURANCE;
       // Doctor visits: 20% coinsurance
@@ -76,7 +76,7 @@ export default function CostEstimatorClient() {
         partAPremium: 0,
         supplementPremium: 0,
         deductibles: PART_B_DEDUCTIBLE + (hospitalDays > 0 ? PART_A_DEDUCTIBLE : 0),
-        coinsurance: doctorVisits * avgVisitCost * 0.2 + snfCoinsuranceDays * SNF_DAILY_COINSURANCE + (hospitalDays > 60 ? Math.min(hospitalDays - 60, 30) * 419 : 0),
+        coinsurance: doctorVisits * avgVisitCost * 0.2 + snfCoinsuranceDays * SNF_DAILY_COINSURANCE + (hospitalDays > 60 ? Math.min(hospitalDays - 60, 30) * 422 : 0),
         drugs: hasDrugs ? Math.min(drugCost * 12, PART_D_MAX_OOP) : 0,
         total,
         note: "Original Medicare has no out-of-pocket maximum. A serious illness or extended hospital stay can cost significantly more.",
@@ -100,7 +100,7 @@ export default function CostEstimatorClient() {
         coinsurance: 0,
         drugs: hasDrugs ? Math.min(drugCost * 12, PART_D_MAX_OOP) : 0,
         total,
-        note: "With Medigap Plan G, your only out-of-pocket cost is the $257 Part B deductible. All other Medicare-covered services are paid by Medigap.",
+        note: "With Medigap Plan G, your only out-of-pocket cost is the $283 Part B deductible. All other Medicare-covered services are paid by Medigap.",
       };
     }
 
@@ -216,7 +216,7 @@ export default function CostEstimatorClient() {
                     ))}
                   </select>
                   <p className="text-xs text-gray-400 mt-2">
-                    Standard Part B premium in 2026 is $185.00/month. IRMAA surcharges apply to higher incomes.
+                    Standard Part B premium in 2026 is $202.90/month. IRMAA surcharges apply to higher incomes.
                   </p>
                 </div>
 

@@ -99,7 +99,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What does a Medicare PPO plan cost in 2026?",
-    a: "Costs vary by plan. Some PPO plans in the Tampa Bay area have $0 monthly premiums, while others charge $30 to $80 or more per month. All plans still require you to pay your Medicare Part B premium ($185/month in 2026). You will also have copays, coinsurance, and a maximum out-of-pocket limit that caps your annual exposure.",
+    a: "Costs vary by plan. Some PPO plans in the Tampa Bay area have $0 monthly premiums, while others charge $30 to $80 or more per month. All plans still require you to pay your Medicare Part B premium ($202.90/month in 2026). You will also have copays, coinsurance, and a maximum out-of-pocket limit that caps your annual exposure.",
   },
   {
     q: "How do I enroll in a Medicare PPO plan in Tampa?",
@@ -304,7 +304,7 @@ export default function PPOPlansClient() {
               Medicare PPO Plan Costs in 2026
             </h2>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              PPO plan costs vary by carrier and plan. The figures below represent typical ranges for Medicare PPO plans available in Hillsborough County in 2026. All enrollees must continue paying their Medicare Part B premium ($185/month in 2026) in addition to any plan premium.
+              PPO plan costs vary by carrier and plan. The figures below represent typical ranges for Medicare PPO plans available in Hillsborough County in 2026. All enrollees must continue paying their Medicare Part B premium ($202.90/month in 2026) in addition to any plan premium.
             </p>
             <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
               <table className="w-full text-sm">
@@ -318,7 +318,7 @@ export default function PPOPlansClient() {
                 <tbody>
                   {[
                     { item: "Monthly Plan Premium", inNet: "$0 to $80+ (plan varies)", outNet: "Same premium applies" },
-                    { item: "Part B Premium (required)", inNet: "$185/month (2026)", outNet: "$185/month (2026)" },
+                    { item: "Part B Premium (required)", inNet: "$202.90/month (2026)", outNet: "$202.90/month (2026)" },
                     { item: "Annual Deductible", inNet: "$0 to $500 (plan varies)", outNet: "Separate higher deductible" },
                     { item: "Primary Care Visit", inNet: "$0 to $20 copay", outNet: "20% to 40% coinsurance" },
                     { item: "Specialist Visit", inNet: "$20 to $50 copay", outNet: "Higher coinsurance" },

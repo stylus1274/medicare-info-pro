@@ -56,7 +56,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans cover the 20% Part B coinsurance you owe for covered DME. For expensive equipment such as power wheelchairs or home oxygen systems, this can represent hundreds or thousands of dollars. Plan G covers the coinsurance entirely after the annual Part B deductible of $257 in 2026.",
+      "Medigap plans cover the 20% Part B coinsurance you owe for covered DME. For expensive equipment such as power wheelchairs or home oxygen systems, this can represent hundreds or thousands of dolla      Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.
   },
 ];
 
@@ -279,7 +279,7 @@ export default function MedicalEquipmentClient() {
                       </thead>
                       <tbody>
                         {[
-                          { item: "Walker or rollator", how: "80% of approved amount", you: "20% coinsurance + $257 deductible" },
+                          { item: "Walker or rollator", how: "80% of approved amount", you: "20% coinsurance + $283 deductible" },
                           { item: "Manual wheelchair", how: "80% of approved amount", you: "20% coinsurance" },
                           { item: "Power wheelchair", how: "80% of approved amount (after documentation)", you: "20% coinsurance" },
                           { item: "CPAP machine", how: "Rents for 13 months, then you own it", you: "20% coinsurance during rental" },

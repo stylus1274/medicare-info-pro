@@ -43,7 +43,7 @@ const snfDays = [
   {
     days: "Days 21 through 100",
     medicare: "All costs above the daily coinsurance",
-    you: "$209.50 per day coinsurance (2026)",
+    you: "$212 per day coinsurance (2026)",
     highlight: false,
   },
   {
@@ -77,7 +77,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans cover the $209.50 per day coinsurance for SNF days 21 through 100. For a 60-day SNF stay, this represents $8,380 in coinsurance that Medigap Plan G would cover entirely. This is one of the most valuable benefits of a Medigap plan for beneficiaries who face a serious illness or major surgery requiring extended rehabilitation.",
+      "Medigap plans cover the $212 per day coinsurance for SNF days 21 through 100. For a 60-day SNF stay, this represents $8,480 in coinsurance that Medigap Plan G would cover entirely. This is one of the most valuable benefits of a Medigap plan for beneficiaries who face a serious illness or major surgery requiring extended rehabilitation.",
   },
 ];
 
@@ -109,7 +109,7 @@ const faqs = [
   },
   {
     q: "How long does Medicare cover skilled nursing facility care?",
-    a: "Medicare covers up to 100 days of SNF care per benefit period. Days 1 through 20 are covered at 100% with no coinsurance. Days 21 through 100 require a daily coinsurance of $209.50 in 2026. After day 100, Medicare pays nothing. A new benefit period begins after you have been out of a hospital or SNF for 60 consecutive days.",
+    a: "Medicare covers up to 100 days of SNF care per benefit period. Days 1 through 20 are covered at 100% with no coinsurance. Days 21 through 100 require a daily coinsurance of $212 in 2026. After day 100, Medicare pays nothing. A new benefit period begins after you have been out of a hospital or SNF for 60 consecutive days.",
   },
   {
     q: "What is the difference between a skilled nursing facility and a nursing home?",
@@ -183,7 +183,7 @@ export default function SkilledNursingClient() {
                   Quick Answer: Yes, with Conditions
                 </p>
                 <p className="text-sm font-semibold leading-snug text-amber-800">
-                  Medicare covers SNF care for up to 100 days per benefit period. You must have a qualifying 3-day inpatient hospital stay first. Days 1 to 20 are free. Days 21 to 100 cost $209.50 per day in 2026. A Medigap plan covers that daily coinsurance.
+                  Medicare covers SNF care for up to 100 days per benefit period. You must have a qualifying 3-day inpatient hospital stay first. Days 1 to 20 are free. Days 21 to 100 cost $212 per day in 2026. A Medigap plan covers that daily coinsurance.
                 </p>
               </div>
             </div>
@@ -358,9 +358,9 @@ export default function SkilledNursingClient() {
                       <tbody>
                         {[
                           { stay: "20 days", without: "$0 (days 1-20 free)", with: "$0" },
-                          { stay: "30 days", without: "$209.50 x 10 = $2,095", with: "$0 (Medigap covers days 21-30)" },
-                          { stay: "60 days", without: "$209.50 x 40 = $8,380", with: "$0 (Medigap covers days 21-60)" },
-                          { stay: "100 days", without: "$209.50 x 80 = $16,760", with: "$0 (Medigap covers days 21-100)" },
+                          { stay: "30 days", without: "$212 x 10 = $2,120", with: "$0 (Medigap covers days 21-30)" },
+                          { stay: "60 days", without: "$212 x 40 = $8,480", with: "$0 (Medigap covers days 21-60)" },
+                          { stay: "100 days", without: "$212 x 80 = $16,960", with: "$0 (Medigap covers days 21-100)" },
                           { stay: "101+ days", without: "Full daily facility cost (often $300-$500+/day)", with: "Full daily facility cost (Medicare stops at day 100)" },
                         ].map((row, i) => (
                           <tr key={row.stay} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>

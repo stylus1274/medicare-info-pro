@@ -48,7 +48,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "If you are admitted to a hospital or a Medicare-certified skilled nursing facility (SNF), physical therapy provided as part of your care is covered under Part A. To qualify for SNF coverage, you must have had a qualifying inpatient hospital stay of at least 3 days. Part A covers the full cost of therapy during days 1 through 20 of a SNF stay (after the Part A deductible). Days 21 through 100 require a daily coinsurance of $209.50 in 2026.",
+      "If you are admitted to a hospital or a Medicare-certified skilled nursing facility (SNF), physical therapy provided as part of your care is covered under Part A. To qualify for SNF coverage, you must have had a qualifying inpatient hospital stay of at least 3 days. Part A covers the full cost of therapy during days 1 through 20 of a SNF stay (after the Part A deductibl      Days 21 through 100 require a daily coinsurance of $212 in 2026.
   },
   {
     plan: "Medicare Advantage (Part C)",
@@ -64,8 +64,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans cover the 20% Part B coinsurance you owe for outpatient physical therapy visits. For someone attending two or three sessions per week during a recovery period, this can add up to hundreds of dollars per month. Plan G covers the coinsurance entirely after the annual Part B deductible of $257 in 2026.",
-  },
+      "Medigap plans cover the 20% Part B coinsurance you owe for outpatient physical therapy visits. For someone attending two or three sessions per week during a recovery period, this can add up to hundreds of dollars per mont      Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.  },
 ];
 
 const coveredServices = [
@@ -269,12 +268,12 @@ export default function PhysicalTherapyClient() {
                       </thead>
                       <tbody>
                         {[
-                          { service: "Outpatient PT visit (per session)", medicare: "80% after deductible", you: "20% coinsurance + $257 deductible" },
+                          { service: "Outpatient PT visit (per session)", medicare: "80% after deductible", you: "20% coinsurance + $283 deductible" },
                           { service: "Outpatient OT visit (per session)", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "Speech-language pathology visit", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "PT evaluation / initial assessment", medicare: "80% after deductible", you: "20% coinsurance" },
-                          { service: "SNF physical therapy (days 1-20)", medicare: "100% after Part A deductible", you: "$0 (after $1,676 Part A deductible)" },
-                          { service: "SNF physical therapy (days 21-100)", medicare: "All costs above daily coinsurance", you: "$209.50/day coinsurance (2026)" },
+                          { service: "SNF physical therapy (days 1-20)", medicare: "100% after Part A deductible", you: "$0 (after $1,736 Part A deductible)" },
+                          { service: "SNF physical therapy (days 21-100)", medicare: "All costs above daily coinsurance", you: "$212/day coinsurance (2026)" },
                           { service: "Home health PT (if homebound)", medicare: "100%", you: "$0" },
                         ].map((row, i) => (
                           <tr key={row.service} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -292,7 +291,7 @@ export default function PhysicalTherapyClient() {
                     <div>
                       <p className="font-bold text-blue-900 mb-1">How Much Can Medigap Save You?</p>
                       <p className="text-blue-800 text-sm leading-relaxed">
-                        If you attend physical therapy three times per week at an average cost of $150 per session, your 20% share is $30 per visit, or about $360 per month. A Medigap Plan G covers that coinsurance entirely after the $257 annual deductible, saving you over $4,000 per year for ongoing therapy.{" "}
+                        If you attend physical therapy three times per week at an average cost of $150 per session, your 20% share is $30 per visit, or about $360 per month. A Medigap Plan G covers that coinsurance entirely after the $283 annual deductible, saving you over $4,000 per year for ongoing therapy.{" "}
                         <Link href="/do-i-need-a-supplement" className="underline font-medium hover:text-blue-900">
                           Learn more about Medigap plans.
                         </Link>

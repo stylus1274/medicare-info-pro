@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     q: "Does Medicare cover cancer surgery?",
-    a: "Yes. Cancer surgery is covered under Part A when performed during an inpatient hospital stay. You pay the Part A deductible ($1,676 per benefit period in 2026) and coinsurance for extended stays. Outpatient surgical procedures are covered under Part B with 20% coinsurance.",
+    a: "Yes. Cancer surgery is covered under Part A when performed during an inpatient hospital stay. You pay the Part A deductible ($1,736 per benefit period in 2026) and coinsurance for extended stays. Outpatient surgical procedures are covered under Part B with 20% coinsurance.",
   },
   {
     q: "Can I go to any cancer center with Medicare?",
@@ -114,7 +114,7 @@ const faqs = [
   },
   {
     q: "How much will I pay out of pocket for cancer treatment with Medicare?",
-    a: "Without supplemental coverage, your costs can be significant. The 20% Part B coinsurance on a $10,000 monthly chemotherapy regimen would be $2,000 per month. A Medigap Plan G covers that coinsurance entirely after the $257 annual Part B deductible, making it one of the most financially protective options for cancer patients.",
+    a: "Without supplemental coverage, your costs can be significant. The 20% Part B coinsurance on a $10,000 monthly chemotherapy regimen would be $2,000 per month. A Medigap Plan G covers that coinsurance entirely after the $283 annual Part B deductible, making it one of the most financially protective options for cancer patients.",
   },
 ];
 
@@ -276,12 +276,12 @@ export default function CancerTreatmentClient() {
                       </thead>
                       <tbody>
                         {[
-                          { service: "Outpatient chemotherapy infusion", medicare: "80% after deductible", you: "20% coinsurance + $257 deductible" },
+                          { service: "Outpatient chemotherapy infusion", medicare: "80% after deductible", you: "20% coinsurance + $283 deductible" },
                           { service: "Radiation therapy (outpatient)", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "Immunotherapy / targeted therapy infusion", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "Oncologist office visit", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "CT, PET, or MRI scan", medicare: "80% after deductible", you: "20% coinsurance" },
-                          { service: "Cancer surgery (inpatient)", medicare: "Per Part A benefit period", you: "$1,676 deductible per benefit period" },
+                          { service: "Cancer surgery (inpatient)", medicare: "Per Part A benefit period", you: "$1,736 deductible per benefit period" },
                           { service: "Oral chemotherapy drug (Part D)", medicare: "Varies by formulary tier", you: "Up to $2,000 annual OOP cap (2026)" },
                           { service: "Preventive cancer screening (colonoscopy, mammogram)", medicare: "100%", you: "$0 (preventive)" },
                         ].map((row, i) => (
@@ -310,7 +310,7 @@ export default function CancerTreatmentClient() {
                     <div>
                       <p className="font-bold text-blue-900 mb-1">Medigap Plan G: The Most Protective Option for Cancer Patients</p>
                       <p className="text-blue-800 text-sm leading-relaxed">
-                        Medigap Plan G covers the 20% Part B coinsurance entirely after the $257 annual deductible. For someone undergoing active cancer treatment, this can save $10,000 or more per year compared to Original Medicare alone.{" "}
+                        Medigap Plan G covers the 20% Part B coinsurance entirely after the $283 annual deductible. For someone undergoing active cancer treatment, this can save $10,000 or more per year compared to Original Medicare alone.{" "}
                         <Link href="/do-i-need-a-supplement" className="underline font-medium hover:text-blue-900">
                           Learn more about Medigap plans.
                         </Link>

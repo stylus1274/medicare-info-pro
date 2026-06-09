@@ -19,7 +19,7 @@ const PLANS = [
     bg: "#e6f4ee",
     border: "#a8d8c2",
     covers: ["Part A coinsurance & hospital costs", "Part B coinsurance or copayment", "Blood (first 3 pints)", "Part A hospice coinsurance", "Skilled nursing facility coinsurance", "Part A deductible", "Foreign travel emergency (80%)"],
-    doesNotCover: ["Part B deductible ($257 in 2025)"],
+    doesNotCover: ["Part B deductible ($283 in 2026)"],
     bestFor: "People who want comprehensive coverage and predictable costs. The most popular plan for new Medicare enrollees.",
   },
   {
@@ -53,16 +53,16 @@ const PLANS = [
     border: "#f8d49a",
     covers: ["50% of Part A coinsurance", "50% of Part B coinsurance", "50% of blood (first 3 pints)", "50% of Part A hospice coinsurance", "50% of skilled nursing facility coinsurance", "50% of Part A deductible"],
     doesNotCover: ["Part B deductible", "Part B excess charges", "Foreign travel emergency", "Full coinsurance (pays 50%)"],
-    bestFor: "People who want lower premiums and have an out-of-pocket limit ($7,220 in 2025) as a safety net.",
+    bestFor: "People who want lower premiums and have an out-of-pocket limit ($7,220 in 2026) as a safety net.",
   },
 ];
 
 const GAPS_COVERED = [
-  { gap: "Part A Deductible", amount: "$1,676 per benefit period (2025)", covered: true },
-  { gap: "Part B Deductible", amount: "$257 per year (2025)", covered: false, note: "Not covered by Plan G or N (was covered by Plan F)" },
+  { gap: "Part A Deductible", amount: "$1,736 per benefit period (2026)", covered: true },
+  { gap: "Part B Deductible", amount: "$283 per year (2026)", covered: false, note: "Not covered by Plan G or N (was covered by Plan F)" },
   { gap: "Part B Coinsurance (20%)", amount: "20% of all Part B services", covered: true },
-  { gap: "Skilled Nursing Facility Coinsurance", amount: "$209.50/day (days 21–100, 2025)", covered: true },
-  { gap: "Part A Hospital Coinsurance", amount: "$418/day (days 61–90, 2025)", covered: true },
+  { gap: "Skilled Nursing Facility Coinsurance", amount: "$212/day (days 21–100, 2026)", covered: true },
+  { gap: "Part A Hospital Coinsurance", amount: "$422/day (days 61–90, 2026)", covered: true },
   { gap: "Foreign Travel Emergency", amount: "80% after $250 deductible", covered: true, note: "Covered by most plans with a $50,000 lifetime limit" },
 ];
 

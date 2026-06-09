@@ -79,20 +79,20 @@ const categories: Category[] = [
       },
       {
         q: "What does Medicare Part B cover?",
-        a: "Medicare Part B covers outpatient medical services including doctor visits, preventive care, lab tests, durable medical equipment, mental health services, and physical therapy. The standard Part B premium in 2026 is $185.00 per month.",
+        a: "Medicare Part B covers outpatient medical services including doctor visits, preventive care, lab tests, durable medical equipment, mental health services, and physical therapy. The standard Part B premium in 2026 is $202.90 per month.",
         link: { label: "Medicare Part B Guide", href: "/medicare-part-b" },
       },
       {
         q: "What is the Medicare Part B deductible in 2026?",
-        a: "The Medicare Part B deductible in 2026 is $257. After you meet this deductible, Medicare pays 80% of covered services and you pay the remaining 20% coinsurance.",
+        a: "The Medicare Part B deductible in 2026 is $283. After you meet this deductible, Medicare pays 80% of covered services and you pay the remaining 20% coinsurance.",
       },
       {
         q: "What is the Medicare Part A deductible in 2026?",
-        a: "The Medicare Part A inpatient hospital deductible in 2026 is $1,676 per benefit period. This covers your first 60 days of inpatient hospital care. Days 61 through 90 require a daily coinsurance of $419, and days 91 through 150 (lifetime reserve days) require $838 per day.",
+        a: "The Medicare Part A inpatient hospital deductible in 2026 is $1,736 per benefit period. This covers your first 60 days of inpatient hospital care. Days 61 through 90 require a daily coinsurance of $422, and days 91 through 150 (lifetime reserve days) require $844 per day.",
       },
       {
         q: "What is IRMAA?",
-        a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income exceeds certain thresholds, you pay a higher Part B and Part D premium. IRMAA is based on your income from 2 years prior. In 2026, the surcharge begins for individuals with income above $106,000 and couples above $212,000.",
+        a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your income exceeds certain thresholds, you pay a higher Part B and Part D premium. IRMAA is based on your income from 2 years prior. In 2026, the surcharge begins for individuals with income above $109,000 and couples above $218,000.",
       },
     ],
   },
@@ -130,7 +130,7 @@ const categories: Category[] = [
       },
       {
         q: "What is the best Medigap plan?",
-        a: "Plan G is the most comprehensive Medigap plan available to new Medicare enrollees (Plan F is no longer available to those who became eligible after January 1, 2020). Plan G covers the Part A deductible, Part A coinsurance, Part B coinsurance, skilled nursing facility coinsurance, and foreign travel emergency care. You pay only the Part B deductible of $257 per year out of pocket.",
+        a: "Plan G is the most comprehensive Medigap plan available to new Medicare enrollees (Plan F is no longer available to those who became eligible after January 1, 2020). Plan G covers the Part A deductible, Part A coinsurance, Part B coinsurance, skilled nursing facility coinsurance, and foreign travel emergency care. You pay only the Part B deductible of $283 per year out of pocket.",
         link: { label: "Why Choose Medigap Plan G?", href: "/blog/why-choose-medigap-plan-g" },
       },
       {
@@ -174,7 +174,7 @@ const categories: Category[] = [
     faqs: [
       {
         q: "What are the Medicare costs in 2026?",
-        a: "Key 2026 Medicare figures: Part B premium $185.00/month, Part B deductible $257/year, Part A deductible $1,676/benefit period, Part D out-of-pocket cap $2,000/year, SNF coinsurance (days 21-100) $209.50/day.",
+        a: "Key 2026 Medicare figures: Part B premium $202.90/month, Part B deductible $283/year, Part A deductible $1,736/benefit period, Part D out-of-pocket cap $2,000/year, SNF coinsurance (days 21-100) $212/day.",
         link: { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
       },
       {
@@ -217,7 +217,7 @@ const categories: Category[] = [
       },
       {
         q: "Does Medicare cover skilled nursing facility care?",
-        a: "Yes, with conditions. Medicare Part A covers up to 100 days of SNF care per benefit period after a qualifying 3-day inpatient hospital stay. Days 1 through 20 are fully covered. Days 21 through 100 require a daily coinsurance of $209.50 in 2026.",
+        a: "Yes, with conditions. Medicare Part A covers up to 100 days of SNF care per benefit period after a qualifying 3-day inpatient hospital stay. Days 1 through 20 are fully covered. Days 21 through 100 require a daily coinsurance of $212 in 2026.",
         link: { label: "Does Medicare Cover Skilled Nursing?", href: "/coverage/skilled-nursing" },
       },
     ],

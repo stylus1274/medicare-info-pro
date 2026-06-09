@@ -55,8 +55,8 @@ const planRows: PlanRow[] = [
   { benefit: "Blood (first 3 pints)", A: "full", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
   { benefit: "Part A hospice care coinsurance or copayment", A: "full", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
   { benefit: "Skilled nursing facility care coinsurance", tooltip: "Days 21–100 of a SNF stay", A: "none", B: "none", D: "full", G: "full", K: "partial", L: "partial", M: "full", N: "full" },
-  { benefit: "Part A deductible", tooltip: "$1,676 per benefit period in 2026", A: "none", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "partial", N: "full" },
-  { benefit: "Part B deductible", tooltip: "$257 per year in 2026", A: "none", B: "none", D: "none", G: "none", K: "none", L: "none", M: "none", N: "none" },
+  { benefit: "Part A deductible", tooltip: "$1,736 per benefit period in 2026", A: "none", B: "full", D: "full", G: "full", K: "partial", L: "partial", M: "partial", N: "full" },
+  { benefit: "Part B deductible", tooltip: "$283 per year in 2026", A: "none", B: "none", D: "none", G: "none", K: "none", L: "none", M: "none", N: "none" },
   { benefit: "Part B excess charges", tooltip: "Charges above Medicare-approved amount from non-participating providers", A: "none", B: "none", D: "none", G: "full", K: "none", L: "none", M: "none", N: "none" },
   { benefit: "Foreign travel emergency (up to plan limits)", A: "none", B: "none", D: "full", G: "full", K: "none", L: "none", M: "full", N: "full" },
 ];
@@ -140,7 +140,7 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
     return {
       plan: "Plan G",
       headline: "Plan G is likely your best fit.",
-      reason: "With frequent medical care, the predictability and comprehensive coverage of Plan G - which covers everything except the Part B deductible ($257/year) - will protect you from large, unexpected bills.",
+      reason: "With frequent medical care, the predictability and comprehensive coverage of Plan G - which covers everything except the Part B deductible ($283/year) - will protect you from large, unexpected bills.",
       alt: "Plan N is worth comparing if you're comfortable with small copays.",
     };
   }
@@ -156,7 +156,7 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
     return {
       plan: "Plan G",
       headline: "Plan G is the right choice for peace of mind.",
-      reason: "You want predictable costs and no copays at the doctor. Plan G delivers exactly that - after the $257 Part B deductible, Medicare and your supplement cover the rest.",
+      reason: "You want predictable costs and no copays at the doctor. Plan G delivers exactly that - after the $283 Part B deductible, Medicare and your supplement cover the rest.",
     };
   }
   if (q3 === "international") {
@@ -170,7 +170,7 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
   return {
     plan: "Plan G",
     headline: "Plan G is the most popular choice for new enrollees.",
-    reason: "For most people new to Medicare, Plan G offers the best balance of comprehensive coverage and reasonable premium. It covers everything except the $257 Part B annual deductible.",
+      reason: "For most people new to Medicare, Plan G offers the best balance of comprehensive coverage and reasonable premium. It covers everything except the $283 Part B annual deductible.",
     alt: "Plan N is worth comparing if you're in good health and want a lower monthly premium.",
   };
 }
@@ -320,7 +320,7 @@ const faqs = [
   },
   {
     q: "What's the difference between Plan G and Plan N?",
-    a: "Both are comprehensive plans. Plan G covers everything except the Part B deductible ($257/year). Plan N also skips the Part B deductible but adds small copays - up to $20 for office visits and $50 for emergency room visits. Plan N typically costs $30–$60/month less than Plan G.",
+    a: "Both are comprehensive plans. Plan G covers everything except the Part B deductible ($283/year). Plan N also skips the Part B deductible but adds small copays - up to $20 for office visits and $50 for emergency room visits. Plan N typically costs $30–$60/month less than Plan G.",
   },
   {
     q: "Does Medigap cover prescription drugs?",
@@ -449,7 +449,7 @@ export default function DoINeedSupplementClient() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "20%", label: "Part B coinsurance Original Medicare leaves unpaid" },
-              { value: "$1,676", label: "Part A deductible per benefit period in 2026" },
+              { value: "$1,736", label: "Part A deductible per benefit period in 2026" },
               { value: "Plan G", label: "Most popular Medigap plan for new enrollees" },
               { value: "6 months", label: "Medigap Open Enrollment Period - use it or lose it" },
             ].map((stat) => (
@@ -635,14 +635,14 @@ export default function DoINeedSupplementClient() {
                         premium: "$100–$200/mo",
                         headline: "Best overall coverage",
                         pros: [
-                          "Covers everything except Part B deductible ($257/yr)",
+                          "Covers everything except Part B deductible ($283/yr)",
                           "No copays at the doctor or specialist",
                           "Includes foreign travel emergency coverage",
                           "Covers Part B excess charges",
                         ],
                         cons: [
                           "Higher monthly premium than Plan N",
-                          "Part B deductible ($257) still applies",
+                          "Part B deductible ($283) still applies",
                         ],
                         bestFor: "Anyone who wants comprehensive, predictable coverage with no surprises.",
                       },

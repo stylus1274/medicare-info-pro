@@ -51,7 +51,7 @@ const comparisonRows = [
   {
     category: "Cost Structure",
     icon: DollarSign,
-    original: { text: "Predictable premiums (Part B: $185/mo in 2026), but potentially high out-of-pocket costs with no annual cap", positive: false },
+    original: { text: "Predictable premiums (Part B: $202.90/mo in 2026), but potentially high out-of-pocket costs with no annual cap", positive: false },
     advantage: { text: "Often $0 extra premium beyond Part B, but copays and network restrictions apply. Annual out-of-pocket cap (max $8,850 in-network, 2026)", positive: true },
   },
   {
@@ -369,7 +369,7 @@ const faqs = [
   },
   {
     q: "Is Medicare Advantage really free?",
-    a: "Many Medicare Advantage plans have a $0 extra monthly premium - but you still pay your Part B premium ($185/mo in 2026). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
+    a: "Many Medicare Advantage plans have a $0 extra monthly premium - but you still pay your Part B premium ($202.90/mo in 2026). 'Free' refers to the plan's additional premium, not your total Medicare costs. You'll still have copays, coinsurance, and deductibles when you use services. The out-of-pocket maximum protects you from catastrophic costs.",
   },
   {
     q: "What is a Medigap supplement and do I need one with Original Medicare?",

@@ -34,7 +34,7 @@ const PARTS = [
     name: "Medical Insurance",
     icon: "👨‍⚕️",
     tagline: "Covers outpatient care",
-    cost: "Standard premium: $185/month in 2025",
+    cost: "Standard premium: $202.90/month in 2026",
     covers: [
       "Doctor visits and specialist care",
       "Outpatient procedures",
@@ -71,7 +71,7 @@ const PARTS = [
     name: "Drug Coverage",
     icon: "💊",
     tagline: "Covers prescription drugs",
-    cost: "Average premium: ~$40/month in 2025",
+    cost: "Average premium: ~$38.99/month in 2026",
     covers: [
       "Brand-name and generic drugs",
       "Drugs on the plan's formulary",
@@ -90,7 +90,7 @@ const FAQS = [
   },
   {
     q: "Is Medicare free?",
-    a: "Part A is usually free if you or your spouse worked and paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $185 in 2025. Parts C and D vary by plan. Even with premiums, Medicare is typically far less expensive than private insurance.",
+    a: "Part A is usually free if you or your spouse worked and paid Medicare taxes for at least 10 years (40 quarters). Part B has a standard monthly premium of $202.90 in 2026. Parts C and D vary by plan. Even with premiums, Medicare is typically far less expensive than private insurance.",
   },
   {
     q: "What is the difference between Medicare and Medicaid?",
@@ -120,10 +120,10 @@ const FAQS = [
 
 // ── Costs Table ─────────────────────────────────────────────────────────────
 const COSTS_2025 = [
-  { part: "Part A", premium: "$0 (if 40+ work quarters)", deductible: "$1,676 per benefit period", coinsurance: "$0 days 1-60; $419/day days 61-90" },
-  { part: "Part B", premium: "$185/month (standard)", deductible: "$257/year", coinsurance: "20% after deductible" },
+  { part: "Part A", premium: "$0 (if 40+ work quarters)", deductible: "$1,736 per benefit period", coinsurance: "$0 days 1-60; $422/day days 61-90" },
+  { part: "Part B", premium: "$202.90/month (standard)", deductible: "$283/year", coinsurance: "20% after deductible" },
   { part: "Part C", premium: "Varies ($0 to $100+/month)", deductible: "Varies by plan", coinsurance: "Varies by plan; has out-of-pocket max" },
-  { part: "Part D", premium: "~$40/month average", deductible: "Up to $590/year", coinsurance: "Varies by drug tier" },
+  { part: "Part D", premium: "~$38.99/month average", deductible: "Up to $590/year", coinsurance: "Varies by drug tier" },
 ];
 
 // ── Enrollment Timeline ──────────────────────────────────────────────────────

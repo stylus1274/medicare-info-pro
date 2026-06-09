@@ -78,8 +78,8 @@ const WHAT_NOT_COVERED = [
 ];
 
 const COSTS_2025 = [
-  { item: "Part B Premium", value: "$185.00/month", note: "Standard amount; higher earners pay more via IRMAA" },
-  { item: "Annual Deductible", value: "$257/year", note: "You pay 100% of covered services until this is met" },
+  { item: "Part B Premium", value: "$202.90/month", note: "Standard amount; higher earners pay more via IRMAA" },
+  { item: "Annual Deductible", value: "$283/year", note: "You pay 100% of covered services until this is met" },
   { item: "Coinsurance After Deductible", value: "20%", note: "Medicare pays 80%; you pay 20% with no out-of-pocket cap" },
   { item: "Preventive Services", value: "$0", note: "No deductible or coinsurance for most preventive services" },
   { item: "Outpatient Mental Health", value: "20% after deductible", note: "Same as other Part B services" },
@@ -87,12 +87,11 @@ const COSTS_2025 = [
 ];
 
 const IRMAA_2025 = [
-  { income: "$106,000 or less (individual)", premium: "$185.00/month" },
-  { income: "$106,001 to $133,000", premium: "$259.00/month" },
-  { income: "$133,001 to $167,000", premium: "$370.00/month" },
-  { income: "$167,001 to $200,000", premium: "$480.90/month" },
-  { income: "$200,001 to $500,000", premium: "$591.90/month" },
-  { income: "Above $500,000", premium: "$628.90/month" },
+  { income: "$109,000 or less (individual)", premium: "$202.90/month" },
+  { income: "$109,001 to $136,000", premium: "$276.90/month" },
+  { income: "$136,001 to $163,000", premium: "$389.90/month" },
+  { income: "$163,001 to $500,000", premium: "$502.90/month" },
+  { income: "Above $500,000", premium: "$594.90/month" },
 ];
 
 const FAQ_ITEMS = [
@@ -106,7 +105,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What is IRMAA?",
-    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your modified adjusted gross income from 2 years ago exceeds certain thresholds, you pay a higher Part B premium. For 2025, the standard premium is $185/month, but higher earners can pay up to $628.90/month. Social Security will notify you if IRMAA applies to you.",
+    a: "IRMAA stands for Income-Related Monthly Adjustment Amount. If your modified adjusted gross income from 2 years ago exceeds certain thresholds, you pay a higher Part B premium. For 2026, the standard premium is $202.90/month, but higher earners can pay up to $594.90/month. Social Security will notify you if IRMAA applies to you.",
   },
   {
     q: "Does Part B cover prescription drugs?",
@@ -174,8 +173,8 @@ export default function MedicarePartBClient() {
             {/* Stats bar */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
               {[
-                { icon: <DollarSign size={16} />, stat: "$185/mo", label: "2025 standard premium" },
-                { icon: <Shield size={16} />, stat: "$257", label: "2025 annual deductible" },
+                { icon: <DollarSign size={16} />, stat: "$202.90/mo", label: "2026 standard premium" },
+                { icon: <Shield size={16} />, stat: "$283", label: "2026 annual deductible" },
                 { icon: <Stethoscope size={16} />, stat: "20%", label: "Your coinsurance share" },
                 { icon: <Clock size={16} />, stat: "8 months", label: "SEP window after employer coverage" },
               ].map((item) => (
@@ -206,7 +205,7 @@ export default function MedicarePartBClient() {
                 Medicare Part B is the medical insurance portion of Original Medicare. It works alongside <Link href="/medicare-part-a" className="text-blue-700 underline hover:text-blue-900">Medicare Part A</Link> to form the foundation of your Medicare coverage. While Part A handles inpatient hospital care, Part B covers the outpatient and medical services you use on a day-to-day basis.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                Unlike Part A, which is free for most people, Part B requires a monthly premium. In 2025, the standard premium is $185.00 per month. This amount is typically deducted directly from your Social Security benefit if you are receiving it. If you are not yet receiving Social Security, you will receive a bill from Medicare.
+                Unlike Part A, which is free for most people, Part B requires a monthly premium. In 2026, the standard premium is $202.90 per month. This amount is typically deducted directly from your Social Security benefit if you are receiving it. If you are not yet receiving Social Security, you will receive a bill from Medicare.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed">
                 One of the most important things to understand about Part B is that it has no out-of-pocket maximum. After you meet the annual deductible, you pay 20% of the Medicare-approved amount for most covered services, with no cap. This is why many people choose to add a <Link href="/do-i-need-a-supplement" className="text-blue-700 underline hover:text-blue-900">Medigap supplement</Link> or enroll in a Medicare Advantage plan to limit their exposure.
@@ -293,13 +292,13 @@ export default function MedicarePartBClient() {
                 IRMAA: Higher-Income Premiums
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                If your income exceeds certain thresholds, you will pay more than the standard $185/month premium. This additional amount is called the Income-Related Monthly Adjustment Amount, or IRMAA. Social Security uses your tax return from 2 years ago to determine whether IRMAA applies to you.
+                If your income exceeds certain thresholds, you will pay more than the standard $202.90/month premium. This additional amount is called the Income-Related Monthly Adjustment Amount, or IRMAA. Social Security uses your tax return from 2 years ago to determine whether IRMAA applies to you.
               </p>
               <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-[#0d1f5c] text-white">
-                      <th className="text-left px-5 py-3 font-bold">2025 Individual Income</th>
+                      <th className="text-left px-5 py-3 font-bold">2026 Individual Income</th>
                       <th className="text-left px-5 py-3 font-bold">Monthly Part B Premium</th>
                     </tr>
                   </thead>

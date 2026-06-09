@@ -17,10 +17,10 @@ const PLANS = [
       "Part B coinsurance (20% after deductible)",
       "Part A hospice care coinsurance",
       "Skilled nursing facility coinsurance",
-      "Part A deductible ($1,676 in 2026)",
+      "Part A deductible ($1,736 in 2026)",
       "Foreign travel emergency (80%)",
     ],
-    notCovered: ["Part B deductible ($257 in 2026)"],
+    notCovered: ["Part B deductible ($283 in 2026)"],
     note: "Plan G covers everything Plan F covers except the Part B deductible. For most new enrollees, Plan G offers the best value.",
   },
   {
@@ -139,9 +139,9 @@ export default function MedicareSupplementInsurancePlansTampa() {
               <div className="font-bold text-white mb-4">Why Medigap Matters</div>
               <div className="space-y-3">
                 {[
-                  { label: "Part A deductible (2026)", value: "$1,676 per benefit period" },
+                  { label: "Part A deductible (2026)", value: "$1,736 per benefit period" },
                   { label: "Part B coinsurance", value: "20% of all outpatient costs" },
-                  { label: "Skilled nursing days 21-100", value: "$209.50/day in 2026" },
+                  { label: "Skilled nursing days 21-100", value: "$212/day in 2026" },
                   { label: "With Plan G", value: "All of the above: $0" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-center py-2 border-b border-white/10 last:border-0">

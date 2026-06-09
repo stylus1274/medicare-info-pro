@@ -57,7 +57,7 @@ export default function Page() {
           },
           {
             q: "What is the difference between Medicare Supplement Plan G and Plan N?",
-            a: "Plan G covers all Medicare cost-sharing except the Part B deductible ($257 in 2026). Plan N has a lower premium but requires copays of up to $20 for office visits and $50 for emergency room visits. The right choice depends on how often you use medical services.",
+            a: "Plan G covers all Medicare cost-sharing except the Part B deductible ($283 in 2026). Plan N has a lower premium but requires copays of up to $20 for office visits and $50 for emergency room visits. The right choice depends on how often you use medical services.",
           },
         ],
         relatedLinks: [

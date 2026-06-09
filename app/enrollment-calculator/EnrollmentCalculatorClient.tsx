@@ -166,7 +166,7 @@ function calculate(
       `For the earliest coverage start date of ${formatMonthYear(coverageStart)}, enroll during the 3 months before your birth month (${formatMonthYear(bestEnrollStart)} – ${formatMonthYear(bestEnrollEnd)}).`,
       `Consider enrolling in a Medigap (Medicare Supplement) plan during your 6-month Medigap Open Enrollment Period (${formatMonthYear(medigapOepStart)} – ${formatMonthYear(medigapOepEnd)}) for guaranteed-issue coverage.`,
       `If you need prescription drug coverage, also enroll in a Part D plan during your IEP to avoid the Part D late enrollment penalty.`,
-      `The standard Part B premium for 2026 is $185.00/month. Higher earners may pay more due to the IRMAA income-related surcharge.`,
+      `The standard Part B premium for 2026 is $202.90/month. Higher earners may pay more due to the IRMAA income-related surcharge.`,
     ];
   } else {
     const sepLabel =
@@ -300,7 +300,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Do I need to sign up for both Part A and Part B?",
-    a: "Most people should enroll in both Part A and Part B during their Initial Enrollment Period. Part A (hospital insurance) is usually premium-free if you or your spouse worked and paid Medicare taxes for at least 10 years. Part B (medical insurance) has a monthly premium ($185.00/month in 2026 for most people). If you have qualifying employer coverage, you may delay Part B without penalty.",
+    a: "Most people should enroll in both Part A and Part B during their Initial Enrollment Period. Part A (hospital insurance) is usually premium-free if you or your spouse worked and paid Medicare taxes for at least 10 years. Part B (medical insurance) has a monthly premium ($202.90/month in 2026 for most people). If you have qualifying employer coverage, you may delay Part B without penalty.",
   },
   {
     q: "What happens if I miss my enrollment window?",

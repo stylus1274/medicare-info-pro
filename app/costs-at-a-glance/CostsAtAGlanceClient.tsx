@@ -49,19 +49,19 @@ const partAData = [
   { label: "Premium (if you worked 40+ quarters)", value: "$0/month", highlight: true, note: "Most people pay $0" },
   { label: "Premium (30–39 quarters worked)", value: "$285/month", highlight: false },
   { label: "Premium (fewer than 30 quarters)", value: "$518/month", highlight: false },
-  { label: "Inpatient deductible (per benefit period)", value: "$1,676", highlight: false },
+  { label: "Inpatient deductible (per benefit period)", value: "$1,736", highlight: false },
   { label: "Coinsurance: Days 1–60", value: "$0/day", highlight: true, note: "Fully covered after deductible" },
-  { label: "Coinsurance: Days 61–90", value: "$419/day", highlight: false },
-  { label: "Coinsurance: Days 91–150 (lifetime reserve)", value: "$838/day", highlight: false },
+  { label: "Coinsurance: Days 61–90", value: "$422/day", highlight: false },
+  { label: "Coinsurance: Days 91–150 (lifetime reserve)", value: "$844/day", highlight: false },
   { label: "Coinsurance: Day 151+", value: "100% of costs", highlight: false },
   { label: "Skilled Nursing Facility: Days 1–20", value: "$0/day", highlight: true },
-  { label: "Skilled Nursing Facility: Days 21–100", value: "$209.50/day", highlight: false },
+  { label: "Skilled Nursing Facility: Days 21–100", value: "$212/day", highlight: false },
   { label: "Skilled Nursing Facility: Day 101+", value: "100% of costs", highlight: false },
 ];
 
 const partBData = [
-  { label: "Standard monthly premium", value: "$185.00/month", highlight: true, note: "Most enrollees pay this" },
-  { label: "Annual deductible", value: "$257/year", highlight: false },
+  { label: "Standard monthly premium", value: "$202.90/month", highlight: true, note: "Most enrollees pay this" },
+  { label: "Annual deductible", value: "$283/year", highlight: false },
   { label: "Coinsurance after deductible", value: "20% of Medicare-approved amount", highlight: false, note: "No out-of-pocket cap without Medigap" },
   { label: "Preventive services (ACA-covered)", value: "$0", highlight: true, note: "Annual wellness visit, screenings, vaccines" },
   { label: "Outpatient mental health coinsurance", value: "20%", highlight: false },
@@ -91,12 +91,11 @@ const partCData = [
 // ─── IRMAA Brackets 2026 ──────────────────────────────────────────────────────
 
 const irmaaBrackets = [
-  { income_single: "≤ $106,000", income_joint: "≤ $212,000", part_b_total: "$185.00/mo", part_b_surcharge: "$0", part_d_surcharge: "$0", highlight: true },
-  { income_single: "$106,001 – $133,000", income_joint: "$212,001 – $266,000", part_b_total: "$259.00/mo", part_b_surcharge: "+$74.00", part_d_surcharge: "+$13.70", highlight: false },
-  { income_single: "$133,001 – $167,000", income_joint: "$266,001 – $334,000", part_b_total: "$370.00/mo", part_b_surcharge: "+$185.00", part_d_surcharge: "+$35.30", highlight: false },
-  { income_single: "$167,001 – $200,000", income_joint: "$334,001 – $400,000", part_b_total: "$480.90/mo", part_b_surcharge: "+$295.90", part_d_surcharge: "+$57.00", highlight: false },
-  { income_single: "$200,001 – $500,000", income_joint: "$400,001 – $750,000", part_b_total: "$591.90/mo", part_b_surcharge: "+$406.90", part_d_surcharge: "+$78.60", highlight: false },
-  { income_single: "> $500,000", income_joint: "> $750,000", part_b_total: "$628.90/mo", part_b_surcharge: "+$443.90", part_d_surcharge: "+$85.80", highlight: false },
+  { income_single: "≤ $109,000", income_joint: "≤ $218,000", part_b_total: "$202.90/mo", part_b_surcharge: "$0", part_d_surcharge: "$0", highlight: true },
+  { income_single: "$109,001 – $136,000", income_joint: "$218,001 – $272,000", part_b_total: "$276.90/mo", part_b_surcharge: "+$74.00", part_d_surcharge: "+$13.70", highlight: false },
+  { income_single: "$136,001 – $163,000", income_joint: "$272,001 – $326,000", part_b_total: "$389.90/mo", part_b_surcharge: "+$187.00", part_d_surcharge: "+$35.30", highlight: false },
+  { income_single: "$163,001 – $500,000", income_joint: "$326,001 – $750,000", part_b_total: "$502.90/mo", part_b_surcharge: "+$300.00", part_d_surcharge: "+$57.00", highlight: false },
+  { income_single: "> $500,000", income_joint: "> $750,000", part_b_total: "$594.90/mo", part_b_surcharge: "+$392.00", part_d_surcharge: "+$85.80", highlight: false },
 ];
 
 // ─── Savings Programs ─────────────────────────────────────────────────────────
@@ -145,12 +144,12 @@ const savingsPrograms = [
 
 const faqs = [
   {
-    q: "Why does my Part B premium cost more than $185/month?",
-    a: "If your income exceeds $106,000 (single) or $212,000 (joint) based on your tax return from 2 years ago, you pay an Income-Related Monthly Adjustment Amount (IRMAA) surcharge on top of the standard $185 premium. Social Security will notify you if IRMAA applies. You can appeal if your income has decreased due to a life-changing event.",
+    q: "Why does my Part B premium cost more than $202.90/month?",
+    a: "If your income exceeds $109,000 (single) or $218,000 (joint) based on your tax return from 2 years ago, you pay an Income-Related Monthly Adjustment Amount (IRMAA) surcharge on top of the standard $202.90 premium. Social Security will notify you if IRMAA applies. You can appeal if your income has decreased due to a life-changing event.",
   },
   {
     q: "What is a 'benefit period' for Part A?",
-    a: "A benefit period begins the day you're admitted as an inpatient in a hospital or skilled nursing facility, and ends when you haven't received inpatient care for 60 consecutive days. There's no limit to the number of benefit periods you can have - but you pay the $1,676 deductible for each new benefit period.",
+    a: "A benefit period begins the day you're admitted as an inpatient in a hospital or skilled nursing facility, and ends when you haven't received inpatient care for 60 consecutive days. There's no limit to the number of benefit periods you can have - but you pay the $1,736 deductible for each new benefit period.",
   },
   {
     q: "Does the $2,000 Part D out-of-pocket cap still apply in 2026?",
@@ -347,8 +346,8 @@ export default function CostsAtAGlanceClient() {
       <div className="bg-[#0d1f5c] text-white py-4">
         <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap gap-6 justify-between items-center">
           {[
-            { value: "$185/mo", label: "Standard Part B premium" },
-            { value: "$1,676", label: "Part A inpatient deductible" },
+            { value: "$202.90/mo", label: "Standard Part B premium" },
+            { value: "$1,736", label: "Part A inpatient deductible" },
             { value: "$2,000", label: "Part D out-of-pocket cap" },
             { value: "$0", label: "Part A premium (most people)" },
           ].map((s) => (
@@ -379,8 +378,8 @@ export default function CostsAtAGlanceClient() {
 
                   <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                     {[
-                      { part: "Part A", label: "Hospital", premium: "$0", note: "for most people", color: "bg-[#1a3fa8]", deductible: "$1,676 deductible/benefit period" },
-                      { part: "Part B", label: "Medical", premium: "$185/mo", note: "standard premium", color: "bg-[#163490]", deductible: "$257 annual deductible" },
+                      { part: "Part A", label: "Hospital", premium: "$0", note: "for most people", color: "bg-[#1a3fa8]", deductible: "$1,736 deductible/benefit period" },
+                      { part: "Part B", label: "Medical", premium: "$202.90/mo", note: "standard premium", color: "bg-[#163490]", deductible: "$283 annual deductible" },
                       { part: "Part C", label: "Advantage", premium: "$0+", note: "many plans", color: "bg-amber-500", deductible: "$8,850 OOP max" },
                       { part: "Part D", label: "Drugs", premium: "Varies", note: "by plan", color: "bg-green-600", deductible: "$2,000 OOP cap (2026)" },
                     ].map((card) => (
@@ -422,7 +421,7 @@ export default function CostsAtAGlanceClient() {
                   <div className="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex gap-3 items-start">
                     <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <p className="text-amber-800 text-sm leading-relaxed">
-                      <strong>No annual out-of-pocket cap:</strong> Part A has no limit on how much you can pay in a year if you have multiple hospitalizations. Each new benefit period triggers a new $1,676 deductible. A Medigap supplement can cover this.
+                      <strong>No annual out-of-pocket cap:</strong> Part A has no limit on how much you can pay in a year if you have multiple hospitalizations. Each new benefit period triggers a new $1,736 deductible. A Medigap supplement can cover this.
                     </p>
                   </div>
                 </motion.div>
@@ -442,7 +441,7 @@ export default function CostsAtAGlanceClient() {
                   <div className="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex gap-3 items-start">
                     <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <p className="text-amber-800 text-sm leading-relaxed">
-                      <strong>The 20% gap:</strong> After your $257 deductible, Part B pays 80% of approved costs - you pay 20% with no cap. A single surgery or extended specialist care could cost thousands. This is why many people add a Medigap supplement.
+                      <strong>The 20% gap:</strong> After your $283 deductible, Part B pays 80% of approved costs - you pay 20% with no cap. A single surgery or extended specialist care could cost thousands. This is why many people add a Medigap supplement.
                     </p>
                   </div>
                 </motion.div>

@@ -275,12 +275,12 @@ export default function MentalHealthClient() {
                     </thead>
                     <tbody>
                       {[
-                        { service: "Outpatient therapy visit", medicare: "80% after deductible", you: "20% coinsurance + $257 deductible" },
+                        { service: "Outpatient therapy visit", medicare: "80% after deductible", you: "20% coinsurance + $283 deductible" },
                         { service: "Psychiatric evaluation", medicare: "80% after deductible", you: "20% coinsurance" },
                         { service: "Medication management visit", medicare: "80% after deductible", you: "20% coinsurance" },
                         { service: "Annual depression screening", medicare: "100%", you: "$0 (preventive)" },
                         { service: "Alcohol misuse counseling", medicare: "100%", you: "$0 (preventive)" },
-                        { service: "Inpatient psychiatric (general hospital)", medicare: "Per Part A benefit period", you: "$1,676 deductible per benefit period" },
+                        { service: "Inpatient psychiatric (general hospital)", medicare: "Per Part A benefit period", you: "$1,736 deductible per benefit period" },
                         { service: "Partial hospitalization program", medicare: "80% after deductible", you: "20% coinsurance per day" },
                       ].map((row, i) => (
                         <tr key={row.service} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -298,7 +298,7 @@ export default function MentalHealthClient() {
                   <div>
                     <p className="font-bold text-blue-900 mb-1">Medigap Eliminates the 20% Coinsurance</p>
                     <p className="text-blue-800 text-sm leading-relaxed">
-                      If you have Original Medicare plus a Medigap Plan G, your 20% coinsurance for outpatient mental health visits is covered entirely after the annual Part B deductible ($257 in 2026). For someone attending weekly therapy, this can save over $1,000 per year.{" "}
+                      If you have Original Medicare plus a Medigap Plan G, your 20% coinsurance for outpatient mental health visits is covered entirely after the annual Part B deductible ($283 in 2026). For someone attending weekly therapy, this can save over $1,000 per year.{" "}
                       <Link href="/do-i-need-a-supplement" className="underline font-medium hover:text-blue-900">
                         Learn more about Medigap plans.
                       </Link>

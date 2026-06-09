@@ -46,19 +46,19 @@ const rows: Row[] = [
   {
     label: "Monthly Premium (2026)",
     values: {
-      original: { value: "partial", note: "$185/mo Part B premium" },
-      hmo: { value: "partial", note: "$185/mo Part B + plan premium (often $0-$50)" },
-      ppo: { value: "partial", note: "$185/mo Part B + plan premium (often $30-$100)" },
-      medigap: { value: "partial", note: "$185/mo Part B + Medigap premium ($100-$200/mo)" },
+      original: { value: "partial", note: "$202.90/mo Part B premium" },
+      hmo: { value: "partial", note: "$202.90/mo Part B + plan premium (often $0-$50)" },
+      ppo: { value: "partial", note: "$202.90/mo Part B + plan premium (often $30-$100)" },
+      medigap: { value: "partial", note: "$202.90/mo Part B + Medigap premium ($100-$250/mo)" },
     },
   },
   {
     label: "Annual Deductible",
     values: {
-      original: { value: "partial", note: "$257 Part B + $1,676 Part A per benefit period" },
+      original: { value: "partial", note: "$283 Part B + $1,736 Part A per benefit period" },
       hmo: { value: "partial", note: "Varies by plan; often lower than Original Medicare" },
       ppo: { value: "partial", note: "Varies by plan; may have in-network and out-of-network deductibles" },
-      medigap: { value: "partial", note: "$257 Part B deductible only (Plan G covers Part A deductible)" },
+      medigap: { value: "partial", note: "$283 Part B deductible only (Plan G covers Part A deductible)" },
     },
   },
   {
@@ -67,7 +67,7 @@ const rows: Row[] = [
       original: { value: "no", note: "No cap; unlimited exposure without supplement" },
       hmo: { value: "yes", note: "Capped (max $9,350 in-network in 2026)" },
       ppo: { value: "yes", note: "Capped (max $14,000 combined in/out-of-network in 2026)" },
-      medigap: { value: "yes", note: "Effectively $257/year (Part B deductible only with Plan G)" },
+      medigap: { value: "yes", note: "Effectively $283/year (Part B deductible only with Plan G)" },
     },
   },
   {
@@ -127,7 +127,7 @@ const rows: Row[] = [
   {
     label: "Skilled Nursing Facility Coinsurance",
     values: {
-      original: { value: "partial", note: "$209.50/day for days 21-100 (2026)" },
+      original: { value: "partial", note: "$212/day for days 21-100 (2026)" },
       hmo: { value: "partial", note: "Varies; may be lower than Original Medicare" },
       ppo: { value: "partial", note: "Varies; may be lower than Original Medicare" },
       medigap: { value: "yes", note: "Plan G covers all SNF coinsurance (days 21-100)" },
@@ -148,7 +148,7 @@ const rows: Row[] = [
       original: { value: "no", note: "No out-of-pocket cap; costs can be unpredictable" },
       hmo: { value: "yes", note: "Out-of-pocket maximum provides cost certainty" },
       ppo: { value: "yes", note: "Out-of-pocket maximum provides cost certainty" },
-      medigap: { value: "yes", note: "Costs are highly predictable: premium + $257 deductible" },
+      medigap: { value: "yes", note: "Costs are highly predictable: premium + $283 deductible" },
     },
   },
 ];

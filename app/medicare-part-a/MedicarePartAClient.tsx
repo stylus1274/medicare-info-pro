@@ -75,11 +75,11 @@ const WHAT_NOT_COVERED = [
 
 const COSTS_2026 = [
   { item: "Part A Premium", value: "$0 for most people (40+ quarters worked)", note: "$285/mo for 30-39 quarters; $518/mo for fewer than 30 quarters" },
-  { item: "Inpatient Deductible", value: "$1,676 per benefit period", note: "Applies once per benefit period, not once per year" },
+  { item: "Inpatient Deductible", value: "$1,736 per benefit period", note: "Applies once per benefit period, not once per year" },
   { item: "Hospital Coinsurance (Days 1-60)", value: "$0", note: "Fully covered after deductible" },
-  { item: "Hospital Coinsurance (Days 61-90)", value: "$419/day", note: "Per day coinsurance" },
-  { item: "Lifetime Reserve Days (Days 91+)", value: "$838/day", note: "60 lifetime reserve days total" },
-  { item: "SNF Coinsurance (Days 21-100)", value: "$209.50/day", note: "Days 1-20 are $0; no coverage after day 100" },
+  { item: "Hospital Coinsurance (Days 61-90)", value: "$422/day", note: "Per day coinsurance" },
+  { item: "Lifetime Reserve Days (Days 91+)", value: "$844/day", note: "60 lifetime reserve days total" },
+  { item: "SNF Coinsurance (Days 21-100)", value: "$212/day", note: "Days 1-20 are $0; no coverage after day 100" },
 ];
 
 const FAQ_ITEMS = [
@@ -161,7 +161,7 @@ export default function MedicarePartAClient() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
               {[
                 { icon: <DollarSign size={16} />, stat: "$0", label: "Premium for most" },
-                { icon: <Hospital size={16} />, stat: "$1,676", label: "2026 deductible" },
+                { icon: <Hospital size={16} />, stat: "$1,736", label: "2026 deductible" },
                 { icon: <Shield size={16} />, stat: "100 days", label: "Max SNF coverage" },
                 { icon: <Clock size={16} />, stat: "7 months", label: "Initial enrollment window" },
               ].map((item) => (

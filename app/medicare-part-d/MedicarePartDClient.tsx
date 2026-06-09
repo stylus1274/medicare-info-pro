@@ -11,8 +11,8 @@ import {
 
 const COSTS_2025 = [
   { item: "Maximum Deductible", amount: "$590/year", note: "Many plans offer $0 deductible for Tier 1–2 drugs" },
-  { item: "Out-of-Pocket Cap", amount: "$2,000/year", note: "New in 2025 — after this you pay $0 for the rest of the year" },
-  { item: "Average Monthly Premium", amount: "~$46.50/month", note: "Varies widely by plan and location" },
+  { item: "Out-of-Pocket Cap", amount: "$2,000/year", note: "After this cap you pay $0 for covered drugs for the rest of the year" },
+  { item: "Average Monthly Premium", amount: "~$38.99/month", note: "Varies widely by plan and location" },
   { item: "Late Enrollment Penalty", amount: "1% per month", note: "Permanent — added to your premium for life" },
 ];
 
@@ -95,7 +95,7 @@ export default function MedicarePartDClient() {
                   Part D is offered by private insurance companies approved by Medicare. Plans vary in their premiums, deductibles, formularies, and pharmacy networks. This is why comparing plans based on your specific medications is far more important than just comparing monthly premiums.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Starting in 2025, the Inflation Reduction Act caps your annual out-of-pocket drug costs at $2,000. Once you hit that limit, you pay $0 for covered drugs for the rest of the year.
+                  The Inflation Reduction Act caps your annual out-of-pocket drug costs at $2,000. Once you hit that limit, you pay $0 for covered drugs for the rest of the year.
                 </p>
               </div>
               <div className="space-y-3">
@@ -121,7 +121,7 @@ export default function MedicarePartDClient() {
         <section className="py-14 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2025 Part D Costs at a Glance</h2>
+              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2026 Part D Costs at a Glance</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">Key numbers to know when comparing Part D plans this year.</p>
             </div>
             <div className="overflow-x-auto">
@@ -129,7 +129,7 @@ export default function MedicarePartDClient() {
                 <thead>
                   <tr className="bg-[#0d2260] text-white">
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tl-xl">Cost Component</th>
-                    <th className="text-left px-5 py-3 font-semibold text-sm">2025 Amount</th>
+                    <th className="text-left px-5 py-3 font-semibold text-sm">2026 Amount</th>
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tr-xl">Notes</th>
                   </tr>
                 </thead>
@@ -147,9 +147,9 @@ export default function MedicarePartDClient() {
             <div className="mt-5 bg-[#e6f4ee] border border-[#a8d8c2] rounded-2xl p-5 flex items-start gap-4">
               <CheckCircle size={18} className="text-[#0d6e4f] shrink-0 mt-0.5" />
               <div>
-                <div className="font-bold text-[#0d6e4f] mb-1">2025: The Donut Hole Is Gone</div>
+                <div className="font-bold text-[#0d6e4f] mb-1">The Donut Hole Is Gone</div>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  The coverage gap (donut hole) that previously required beneficiaries to pay higher costs for drugs has been eliminated in 2025. Your out-of-pocket costs are now capped at $2,000 per year. After reaching that limit, you pay $0 for covered drugs for the rest of the year. <Link href="/how-medicare-part-d-works" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
+                  The coverage gap (donut hole) that previously required beneficiaries to pay higher costs for drugs has been eliminated. Your out-of-pocket costs are now capped at $2,000 per year. After reaching that limit, you pay $0 for covered drugs for the rest of the year. <Link href="/how-medicare-part-d-works" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
                 </p>
               </div>
             </div>

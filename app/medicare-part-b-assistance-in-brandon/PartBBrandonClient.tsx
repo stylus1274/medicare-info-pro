@@ -17,10 +17,10 @@ const PART_B_COVERS = [
 ];
 
 const COSTS_2025 = [
-  { item: "Monthly Premium (standard)", amount: "$185.00", note: "Higher earners pay more via IRMAA" },
-  { item: "Annual Deductible", amount: "$257", note: "You pay this before Part B coverage begins" },
+  { item: "Monthly Premium (standard)", amount: "$202.90", note: "Higher earners pay more via IRMAA" },
+  { item: "Annual Deductible", amount: "$283", note: "You pay this before Part B coverage begins" },
   { item: "Coinsurance", amount: "20%", note: "You pay 20% of Medicare-approved amount after deductible" },
-  { item: "IRMAA Surcharge (income > $106,000)", amount: "+$74.00 – +$443.90/mo", note: "Based on your income from 2 years prior" },
+  { item: "IRMAA Surcharge (income > $109,000)", amount: "+$74.00 – +$443.90/mo", note: "Based on your income from 2 years prior" },
 ];
 
 const ENROLLMENT_TIPS = [
@@ -31,7 +31,7 @@ const ENROLLMENT_TIPS = [
 ];
 
 const FAQS = [
-  { q: "What does Medicare Part B cost in 2025?", a: "The standard Part B premium in 2025 is $185.00 per month. The annual deductible is $257. After the deductible, you pay 20% of the Medicare-approved amount for most services. Higher-income beneficiaries pay more through Income-Related Monthly Adjustment Amounts (IRMAA)." },
+  { q: "What does Medicare Part B cost in 2026?", a: "The standard Part B premium in 2026 is $202.90 per month. The annual deductible is $283. After the deductible, you pay 20% of the Medicare-approved amount for most services. Higher-income beneficiaries pay more through Income-Related Monthly Adjustment Amounts (IRMAA)." },
   { q: "Is Medicare Part B automatic when I turn 65?", a: "It depends. If you are already receiving Social Security benefits, you will be automatically enrolled in Parts A and B when you turn 65. If you are not yet receiving Social Security, you must actively enroll. Our team can help you determine your enrollment status and walk you through the process." },
   { q: "Can I decline Part B if I have other insurance?", a: "Yes, but only if you have creditable coverage from an active employer (yours or your spouse's). Retiree coverage, COBRA, and most other insurance do not count as creditable coverage for delaying Part B. If you decline Part B without creditable coverage, you will face a permanent late enrollment penalty." },
   { q: "What is the Part B late enrollment penalty?", a: "The penalty is 10% of the standard Part B premium for every 12-month period you were eligible but did not enroll. This penalty is permanent and added to your monthly premium for as long as you have Part B." },
@@ -103,7 +103,7 @@ export default function PartBBrandonClient() {
                   Part B covers 80% of Medicare-approved costs after you meet your annual deductible. You are responsible for the remaining 20% — which is why many Brandon residents pair Part B with a Medicare Supplement (Medigap) plan or Medicare Advantage plan to limit their out-of-pocket exposure.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Unlike Part A, Part B always has a monthly premium. In 2025, the standard premium is $185.00 per month, though higher-income beneficiaries pay more.
+                  Unlike Part A, Part B always has a monthly premium. In 2026, the standard premium is $202.90 per month, though higher-income beneficiaries pay more.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-3">

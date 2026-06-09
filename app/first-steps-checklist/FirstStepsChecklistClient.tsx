@@ -90,7 +90,7 @@ const phases: Phase[] = [
       {
         id: "p1-3",
         text: "Review the 2026 Medicare costs: premiums, deductibles, and out-of-pocket limits",
-        detail: "Part B costs $185/month in 2026. Part A is free for most people. Part D now has a $2,000 annual out-of-pocket cap.",
+        detail: "Part B costs $202.90/month in 2026. Part A is free for most people. Part D now has a $2,000 annual out-of-pocket cap.",
         link: { label: "Costs at a Glance", href: "/costs-at-a-glance" },
       },
       {
@@ -102,7 +102,7 @@ const phases: Phase[] = [
       {
         id: "p1-5",
         text: "Find out if your income triggers IRMAA surcharges on Part B or Part D",
-        detail: "If your 2024 income exceeded $106,000 (single) or $212,000 (joint), you'll pay more than the standard Part B premium in 2026.",
+        detail: "If your 2024 income exceeded $109,000 (single) or $218,000 (joint), you'll pay more than the standard Part B premium in 2026.",
         link: { label: "IRMAA brackets", href: "/costs-at-a-glance#irmaa" },
       },
     ],

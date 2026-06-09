@@ -319,7 +319,7 @@ const RESULTS: Record<string, Result> = {
     title: "Original Medicare + Medigap Plan G",
     subtitle: "Best-in-class coverage for complex health needs",
     description:
-      "Based on your answers: particularly your health needs and desire for predictable costs: Original Medicare with a comprehensive Medigap plan (Plan G is the most popular) appears to be the best fit. Plan G covers nearly everything Original Medicare does not, leaving you with only the Part B deductible ($257 in 2026) as your annual out-of-pocket exposure.",
+      "Based on your answers: particularly your health needs and desire for predictable costs: Original Medicare with a comprehensive Medigap plan (Plan G is the most popular) appears to be the best fit. Plan G covers nearly everything Original Medicare does not, leaving you with only the Part B deductible ($283 in 2026) as your annual out-of-pocket exposure.",
     icon: Heart,
     color: "text-rose-700",
     bgColor: "bg-rose-50",
@@ -327,7 +327,7 @@ const RESULTS: Record<string, Result> = {
     badgeColor: "bg-rose-600",
     keyPoints: [
       "Plan G covers Part A deductible, coinsurance, and skilled nursing facility costs",
-      "Covers Part B coinsurance: you pay only the $257 annual Part B deductible in 2026",
+      "Covers Part B coinsurance: you pay only the $283 annual Part B deductible in 2026",
       "No network restrictions: see any Medicare-accepting provider nationwide",
       "Ideal for people with complex or chronic health conditions",
       "Add a standalone Part D plan for prescription drug coverage",
