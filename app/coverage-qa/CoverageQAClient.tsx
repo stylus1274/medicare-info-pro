@@ -234,7 +234,7 @@ export default function CoverageQAClient() {
       {/* Hero */}
       <section className="bg-[#0d2260] py-14" aria-label="Page header">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block bg-[#f5a800] text-[#1a3fa8] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Coverage Center
           </div>
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
@@ -385,7 +385,7 @@ export default function CoverageQAClient() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="tel:8136995559"
-              className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
+              className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
             >
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>

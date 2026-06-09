@@ -588,7 +588,7 @@ function ResultCard({
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href="tel:8136995559"
-            className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
           >
             <Phone className="w-4 h-4" />
             Call 813-699-5559

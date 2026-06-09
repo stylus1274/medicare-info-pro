@@ -123,7 +123,7 @@ export default function FindAnAgentClient() {
       {/* Hero */}
       <section className="bg-[#0d2260] py-16" aria-label="Page header">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block bg-[#f5a800] text-[#1a3fa8] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Free Consultation
           </div>
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -135,7 +135,7 @@ export default function FindAnAgentClient() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:8136995559"
-              className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold text-lg px-8 py-4 rounded-xl hover:bg-amber-400 transition-colors"
+              className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-amber-400 transition-colors"
             >
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
@@ -368,7 +368,7 @@ export default function FindAnAgentClient() {
               <div className="space-y-3">
                 <a
                   href="tel:8136995559"
-                  className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors w-full"
+                  className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors w-full"
                 >
                   <Phone className="w-4 h-4" /> Call Now: 813-699-5559
                 </a>

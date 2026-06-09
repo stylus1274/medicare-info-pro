@@ -124,7 +124,7 @@ export default function ContactClient() {
       {/* Hero */}
       <section className="bg-[#0d2260] py-14" aria-label="Contact page header">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block bg-[#f5a800] text-[#1a3fa8] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Free Consultation
           </div>
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
@@ -331,7 +331,7 @@ export default function ContactClient() {
               <div className="space-y-4">
                 <a
                   href="tel:8136995559"
-                  className="flex items-center gap-3 bg-[#f5a800] text-[#1a3fa8] font-bold px-5 py-3 rounded-xl hover:bg-amber-400 transition-colors"
+                  className="flex items-center gap-3 bg-[#f5a800] text-white font-bold px-5 py-3 rounded-xl hover:bg-amber-400 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   <div>

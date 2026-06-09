@@ -232,7 +232,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
           </p>
           <a
             href="tel:8136995559"
-            className="flex items-center justify-center gap-1.5 bg-[#f5a800] text-[#1a3fa8] font-bold text-sm px-4 py-2.5 rounded-lg hover:bg-amber-400 transition-colors"
+            className="flex items-center justify-center gap-1.5 bg-[#f5a800] text-white font-bold text-sm px-4 py-2.5 rounded-lg hover:bg-amber-400 transition-colors"
           >
             <Phone className="w-3.5 h-3.5" /> 813-699-5559
           </a>
@@ -312,7 +312,7 @@ export default function MaximizeBenefitsClient() {
             </nav>
 
             <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="bg-[#f5a800] text-[#1a3fa8] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              <span className="bg-[#f5a800] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                 Guide
               </span>
               <span className="text-blue-200 text-sm flex items-center gap-1.5">
@@ -708,7 +708,7 @@ export default function MaximizeBenefitsClient() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href="tel:8136995559"
-                  className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
+                  className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors"
                 >
                   <Phone className="w-5 h-5" /> Call 813-699-5559
                 </a>
@@ -831,7 +831,7 @@ export default function MaximizeBenefitsClient() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:8136995559"
-              className="flex items-center justify-center gap-2 bg-[#f5a800] text-[#1a3fa8] font-bold text-lg px-8 py-4 rounded-xl hover:bg-amber-400 transition-colors"
+              className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-amber-400 transition-colors"
             >
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
