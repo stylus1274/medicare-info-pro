@@ -221,27 +221,27 @@ export default function AboutClient() {
               Licensed, independent Medicare specialists who put your needs first.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEAM_MEMBERS.map((member) => (
               <Link
                 key={member.slug}
                 href={`/${member.slug}`}
-                className="bg-white rounded-2xl border border-gray-100 p-5 flex flex-col items-center text-center hover:shadow-md hover:border-[#1a3fa8] transition-all group"
+                className="bg-white rounded-2xl border border-gray-100 p-8 flex flex-col items-center text-center hover:shadow-md hover:border-[#1a3fa8] transition-all group"
               >
                 {member.photo ? (
                   <img
                     src={member.photo}
                     alt={member.name}
-                    className="w-20 h-20 rounded-full object-cover object-top border-2 border-gray-100 mb-3 group-hover:border-[#1a3fa8] transition-colors"
+                    className="w-36 h-36 rounded-full object-cover object-top border-4 border-gray-100 mb-4 group-hover:border-[#1a3fa8] transition-colors"
                   />
                 ) : (
-                  <div className="w-20 h-20 rounded-full bg-[#e8edf8] flex items-center justify-center mb-3 border-2 border-gray-100 group-hover:border-[#1a3fa8] transition-colors">
-                    <User className="w-9 h-9 text-[#1a3fa8]" />
+                  <div className="w-36 h-36 rounded-full bg-[#e8edf8] flex items-center justify-center mb-4 border-4 border-gray-100 group-hover:border-[#1a3fa8] transition-colors">
+                    <User className="w-14 h-14 text-[#1a3fa8]" />
                   </div>
                 )}
-                <h3 className="font-bold text-[#0d1f5c] text-sm leading-tight mb-1">{member.name}</h3>
-                <p className="text-xs text-gray-500 mb-3">{member.title}</p>
-                <span className="text-xs font-semibold text-[#1a3fa8] group-hover:underline">View Profile</span>
+                <h3 className="font-bold text-[#0d1f5c] text-base leading-tight mb-1">{member.name}</h3>
+                <p className="text-sm text-gray-500 mb-4">{member.title}</p>
+                <span className="text-sm font-semibold text-[#1a3fa8] group-hover:underline">View Profile</span>
               </Link>
             ))}
           </div>
