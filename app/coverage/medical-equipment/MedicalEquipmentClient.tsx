@@ -56,7 +56,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans cover the 20% Part B coinsurance you owe for covered DME. For expensive equipment such as power wheelchairs or home oxygen systems, this can represent hundreds or thousands of dolla      Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.
+      "Medigap plans cover the 20% Part B coinsurance you owe for covered DME. For expensive equipment such as power wheelchairs or home oxygen systems, this can represent hundreds or thousands of dollars per year. Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.",
   },
 ];
 

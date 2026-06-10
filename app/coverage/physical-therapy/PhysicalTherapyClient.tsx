@@ -48,7 +48,7 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "If you are admitted to a hospital or a Medicare-certified skilled nursing facility (SNF), physical therapy provided as part of your care is covered under Part A. To qualify for SNF coverage, you must have had a qualifying inpatient hospital stay of at least 3 days. Part A covers the full cost of therapy during days 1 through 20 of a SNF stay (after the Part A deductibl      Days 21 through 100 require a daily coinsurance of $212 in 2026.
+      "If you are admitted to a hospital or a Medicare-certified skilled nursing facility (SNF), physical therapy provided as part of your care is covered under Part A. To qualify for SNF coverage, you must have had a qualifying inpatient hospital stay of at least 3 days. Part A covers the full cost of therapy during days 1 through 20 of a SNF stay (after the Part A deductible of $1,736 per benefit period). Days 21 through 100 require a daily coinsurance of $212 in 2026.",
   },
   {
     plan: "Medicare Advantage (Part C)",
@@ -64,7 +64,8 @@ const planCoverage = [
     color: "bg-green-50 border-green-300",
     badgeColor: "bg-green-600",
     details:
-      "Medigap plans cover the 20% Part B coinsurance you owe for outpatient physical therapy visits. For someone attending two or three sessions per week during a recovery period, this can add up to hundreds of dollars per mont      Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.  },
+      "Medigap plans cover the 20% Part B coinsurance you owe for outpatient physical therapy visits. For someone attending two or three sessions per week during a recovery period, this can add up to hundreds of dollars per month. Plan G covers the coinsurance entirely after the annual Part B deductible of $283 in 2026.",
+  },
 ];
 
 const coveredServices = [
