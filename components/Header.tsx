@@ -225,19 +225,9 @@ export default function Header() {
             <span style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <Shield size={12} style={{ color: "#7b9de0" }} /> Licensed Independent Agents
             </span>
-            <a
-              href="https://www.bbb.org/us/fl/brandon/profile/health-insurance/medicare-information-project-0653-90450280/#sealclick"
-              target="_blank"
-              rel="nofollow noreferrer"
-              aria-label="Medicare Information Project BBB Business Review"
-              style={{ display: "flex", alignItems: "center" }}
-            >
-              <img
-                src="https://seal-westflorida.bbb.org/seals/black-seal-200-42-whitetxt-bbb-90450280.png"
-                alt="Medicare Information Project BBB Business Review"
-                style={{ border: 0, height: 28, width: "auto" }}
-              />
-            </a>
+            <span style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+              <Star size={12} style={{ color: "#f5a800", fill: "#f5a800" }} /> BBB A+ Rated
+            </span>
             <span className="hidden md:inline">Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN &amp; TX</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
