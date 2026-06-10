@@ -101,10 +101,18 @@ export default function Footer() {
             <Shield size={18} className="text-amber-400" />
             Licensed Independent Agents
           </div>
-          <div className="flex items-center gap-2.5 text-[0.9rem] text-blue-200/70">
-            <span className="text-amber-400 font-bold text-[0.95rem]">BBB</span>
-            A+ Accredited Business
-          </div>
+          <a
+            href="https://www.bbb.org/us/fl/brandon/profile/health-insurance/medicare-information-project-0653-90450280/#sealclick"
+            target="_blank"
+            rel="nofollow noreferrer"
+            aria-label="Medicare Information Project BBB Business Review"
+          >
+            <img
+              src="https://seal-westflorida.bbb.org/seals/black-seal-200-42-whitetxt-bbb-90450280.png"
+              alt="Medicare Information Project BBB Business Review"
+              style={{ border: 0, height: 42, width: "auto" }}
+            />
+          </a>
           <div className="flex items-center gap-2.5 text-[0.9rem] text-blue-200/70">
             <Shield size={18} className="text-amber-400" />
             100+ Plans Represented
