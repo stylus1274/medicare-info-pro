@@ -293,11 +293,11 @@ export default function GuidesClient() {
                       Have questions after reading? Greg Wohl is a licensed Medicare advisor serving Brandon and the greater Hillsborough County area.
                     </p>
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/medicare-quiz"
@@ -347,11 +347,11 @@ export default function GuidesClient() {
               Greg Wohl is a licensed Medicare advisor serving Brandon, Riverview, Valrico, and Hillsborough County. Call for a free, no-pressure consultation.
             </p>
             <a
-              href="tel:+18137428888"
+              href="tel:+18136995559"
               className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call (813) 742-8888
+              Call 813-699-5559
             </a>
           </div>
         </section>

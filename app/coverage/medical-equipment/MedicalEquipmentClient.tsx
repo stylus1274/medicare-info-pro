@@ -346,7 +346,7 @@ export default function MedicalEquipmentClient() {
                         For beneficiaries with Medicare Advantage plans, it is especially important to confirm that your DME supplier is in-network before ordering equipment. Out-of-network DME can result in significantly higher costs or denial of coverage. Residents of Riverview, Valrico, and other Hillsborough County communities should verify supplier network status with their plan before discharge from a hospital or skilled nursing facility.
                       </p>
                       <p>
-                        Greg Wohl helps Brandon and Tampa Bay area residents understand their DME benefits and choose the Medicare plan that best fits their needs. Call (813) 742-8888 for a no-cost consultation.
+                        Greg Wohl helps Brandon and Tampa Bay area residents understand their DME benefits and choose the Medicare plan that best fits their needs. Call 813-699-5559 for a no-cost consultation.
                       </p>
                     </div>
                   </div>
@@ -413,11 +413,11 @@ export default function MedicalEquipmentClient() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/medicare-quiz"
@@ -466,11 +466,11 @@ export default function MedicalEquipmentClient() {
                       </div>
                     </div>
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/medicare-quiz"
@@ -519,11 +519,11 @@ export default function MedicalEquipmentClient() {
               From wheelchairs to CPAP machines, the right Medicare plan reduces your equipment costs significantly. Greg Wohl helps Brandon and Tampa Bay area residents find the best coverage for their needs.
             </p>
             <a
-              href="tel:+18137428888"
+              href="tel:+18136995559"
               className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call (813) 742-8888
+              Call 813-699-5559
             </a>
           </div>
         </section>

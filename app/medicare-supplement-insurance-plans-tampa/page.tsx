@@ -350,7 +350,7 @@ export default function MedicareSupplementInsurancePlansTampa() {
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
-                  <span>Mon-Fri: 9am to 5pm<br />Sat: By appointment</span>
+                  <span>By appointment only</span>
                 </div>
               </div>
             </div>

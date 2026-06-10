@@ -97,7 +97,7 @@ const formularyTiers = [
     description:
       "High-cost specialty medications for complex conditions. These are often biologics or drugs for cancer, MS, rheumatoid arthritis, etc.",
     examples: ["Humira", "Keytruda", "Ozempic (some plans)", "Biologics"],
-    note: "The $2,000 out-of-pocket cap (2026) is especially impactful for people on specialty drugs.",
+    note: "The $2,100 out-of-pocket cap (2026) is especially impactful for people on specialty drugs.",
   },
   {
     tier: "Tier 6",
@@ -127,8 +127,8 @@ const faqs = [
     a: "You have several options: (1) Ask your doctor about a therapeutically equivalent drug that is on the formulary. (2) File a formulary exception request. If your doctor documents that the non-covered drug is medically necessary, the plan may cover it. (3) Switch to a plan that covers your drug during the next Annual Enrollment Period.",
   },
   {
-    q: "What is the $2,000 out-of-pocket cap and how does it work?",
-    a: "Starting January 1, 2026, Part D has a $2,000 annual out-of-pocket cap on covered drugs. Once you've paid $2,000 in covered drug costs in a calendar year, your plan pays 100% for the rest of the year. This is a major change from prior years when there was no effective cap.",
+    q: "What is the $2,100 out-of-pocket cap and how does it work?",
+    a: "Starting January 1, 2026, Part D has a $2,100 annual out-of-pocket cap on covered drugs. Once you've paid $2,100 in covered drug costs in a calendar year, your plan pays 100% for the rest of the year. This is a major change from prior years when there was no effective cap.",
   },
   {
     q: "What is the Medicare Prescription Payment Plan (M3P)?",
@@ -189,7 +189,7 @@ function Sidebar() {
   const sections = [
     { id: "what-is-part-d", label: "What Is Part D?" },
     { id: "formulary-tiers", label: "Formulary Tiers" },
-    { id: "2000-cap", label: "The $2,000 Cap (2026)" },
+    { id: "2000-cap", label: "The $2,100 Cap (2026)" },
     { id: "how-to-choose", label: "How to Choose a Plan" },
     { id: "extra-help", label: "Extra Help / LIS" },
     { id: "late-penalty", label: "Late Enrollment Penalty" },
@@ -221,7 +221,7 @@ function Sidebar() {
 
         <Callout type="success" title="2026 Update">
           <p className="text-green-800 text-sm leading-relaxed">
-            The <strong>$2,000 out-of-pocket cap</strong> on Part D drugs is now in effect. People on specialty drugs benefit most.
+            The <strong>$2,100 out-of-pocket cap</strong> on Part D drugs is now in effect. People on specialty drugs benefit most.
           </p>
         </Callout>
 
@@ -294,7 +294,7 @@ export default function UnderstandingPartDClient() {
             Understanding Medicare Part D: Prescription Drug Coverage
           </h1>
           <p className="text-white/85 text-lg max-w-xl leading-relaxed">
-            How Part D works, what formulary tiers mean for your costs, the new $2,000 out-of-pocket cap, and how to choose the right plan for your medications.
+            How Part D works, what formulary tiers mean for your costs, the new $2,100 out-of-pocket cap, and how to choose the right plan for your medications.
           </p>
         </div>
       </section>
@@ -304,7 +304,7 @@ export default function UnderstandingPartDClient() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { value: "$2,000", label: "Annual out-of-pocket cap on covered drugs in 2026" },
+              { value: "$2,100", label: "Annual out-of-pocket cap on covered drugs in 2026" },
               { value: "~$36", label: "Average Part D base premium per month in 2026" },
               { value: "1% / mo", label: "Permanent late enrollment penalty per month without coverage" },
               { value: "$5,300", label: "Maximum annual savings from Extra Help (LIS) in 2026" },
@@ -486,15 +486,15 @@ export default function UnderstandingPartDClient() {
                         </div>
                       </div>
                       <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{ fontFamily: "'Merriweather', serif" }}>
-                        The $2,000 Out-of-Pocket Cap
+                        The $2,100 Out-of-Pocket Cap
                       </h2>
                       <p className="text-white/85 leading-relaxed mb-6 max-w-2xl">
-                        Starting January 1, 2026, there is a <strong>$2,000 annual cap</strong> on what you pay out-of-pocket for covered Part D drugs. Once you've paid $2,000 in a calendar year, your plan covers 100% of your covered drug costs for the rest of the year.
+                        Starting January 1, 2026, there is a <strong>$2,100 annual cap</strong> on what you pay out-of-pocket for covered Part D drugs. Once you've paid $2,100 in a calendar year, your plan covers 100% of your covered drug costs for the rest of the year.
                       </p>
                       <div className="grid md:grid-cols-3 gap-4 mb-6">
                         {[
                           { icon: TrendingDown, label: "Old system", desc: "No effective cap. Catastrophic costs were possible for high-cost drug users." },
-                          { icon: DollarSign, label: "New cap", desc: "$2,000 maximum out-of-pocket per year on covered drugs." },
+                          { icon: DollarSign, label: "New cap", desc: "$2,100 maximum out-of-pocket per year on covered drugs." },
                           { icon: CheckCircle2, label: "After the cap", desc: "Plan pays 100% of covered drug costs for the rest of the calendar year." },
                         ].map((item) => {
                           const Icon = item.icon;

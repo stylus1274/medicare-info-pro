@@ -490,7 +490,7 @@ export default function MaximizeBenefitsClient() {
                 </p>
                 <p className="text-green-700 text-sm leading-relaxed">
                   Starting in 2025, the Inflation Reduction Act capped out-of-pocket Part D drug costs at{" "}
-                  <strong>$2,000 per year</strong>. Once you reach that cap, your covered drugs cost you nothing for the rest of the year. This is a significant change that limits how much you will spend on covered medications regardless of how expensive your prescriptions are.
+                  <strong>$2,100 per year</strong>. Once you reach that cap, your covered drugs cost you nothing for the rest of the year. This is a significant change that limits how much you will spend on covered medications regardless of how expensive your prescriptions are.
                 </p>
               </Callout>
               <p className="text-gray-700 leading-relaxed mt-6 mb-8">

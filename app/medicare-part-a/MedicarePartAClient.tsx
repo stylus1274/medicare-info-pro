@@ -341,9 +341,9 @@ export default function MedicarePartAClient() {
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Greg Wohl and the Medicare Information Pro team serve beneficiaries throughout Tampa, Brandon, Riverview, Valrico, Apollo Beach, Sun City Center, Plant City, and surrounding Hillsborough County communities. Consultations are free and available by phone or in person.
                   </p>
-                  <a href="tel:+18137428888" className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-[#0d1f5c] hover:underline">
+                  <a href="tel:+18136995559" className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-[#0d1f5c] hover:underline">
                     <Phone size={13} />
-                    Call (813) 742-8888
+                    Call 813-699-5559
                   </a>
                 </div>
               </div>
@@ -357,11 +357,11 @@ export default function MedicarePartAClient() {
               </div>
               <div className="flex flex-col gap-2 flex-shrink-0">
                 <a
-                  href="tel:+18137428888"
+                  href="tel:+18136995559"
                   className="flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors"
                 >
                   <Phone size={15} />
-                  (813) 742-8888
+                  813-699-5559
                 </a>
                 <Link
                   href="/medicare-quiz"
@@ -410,11 +410,11 @@ export default function MedicarePartAClient() {
                   </div>
                 </div>
                 <a
-                  href="tel:+18137428888"
+                  href="tel:+18136995559"
                   className="flex items-center justify-center gap-2 w-full bg-[#0d1f5c] hover:bg-[#162a7a] text-white font-bold text-sm py-3 rounded-xl transition-colors"
                 >
                   <Phone size={14} />
-                  (813) 742-8888
+                  813-699-5559
                 </a>
                 <Link
                   href="/medicare-quiz"
@@ -457,11 +457,11 @@ export default function MedicarePartAClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:+18137428888"
+              href="tel:+18136995559"
               className="inline-flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-7 py-3.5 rounded-xl transition-colors"
             >
               <Phone size={16} />
-              Call (813) 742-8888
+              Call 813-699-5559
             </a>
             <Link
               href="/medicare-quiz"

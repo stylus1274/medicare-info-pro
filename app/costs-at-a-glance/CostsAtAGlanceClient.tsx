@@ -72,7 +72,7 @@ const partBData = [
 const partDData = [
   { label: "National base beneficiary premium", value: "$36.78/month", highlight: false, note: "Actual plan premiums vary widely" },
   { label: "Annual deductible (maximum allowed)", value: "$590/year", highlight: false, note: "Some plans have $0 deductible" },
-  { label: "Out-of-pocket cap (2026)", value: "$2,000/year", highlight: true, note: "IRA provision - caps annual drug costs" },
+  { label: "Out-of-pocket cap (2026)", value: "$2,100/year", highlight: true, note: "IRA provision - caps annual drug costs" },
   { label: "Monthly payment option", value: "Available via Medicare Prescription Payment Plan", highlight: false },
   { label: "Low-income subsidy (Extra Help)", value: "Reduces or eliminates costs", highlight: false, note: "See Savings Programs section" },
 ];
@@ -152,8 +152,8 @@ const faqs = [
     a: "A benefit period begins the day you're admitted as an inpatient in a hospital or skilled nursing facility, and ends when you haven't received inpatient care for 60 consecutive days. There's no limit to the number of benefit periods you can have - but you pay the $1,736 deductible for each new benefit period.",
   },
   {
-    q: "Does the $2,000 Part D out-of-pocket cap still apply in 2026?",
-    a: "Yes. The Inflation Reduction Act established a $2,000 annual out-of-pocket cap for Part D drug costs starting January 1, 2025, and it continues in 2026. Once you've spent $2,000 out-of-pocket on covered drugs, your plan pays 100% for the rest of the year. You can also spread payments monthly through the Medicare Prescription Payment Plan.",
+    q: "Does the Part D out-of-pocket cap still apply in 2026?",
+    a: "Yes. The Inflation Reduction Act established a $2,100 annual out-of-pocket cap for Part D drug costs in 2026. Once you've spent $2,100 out-of-pocket on covered drugs, your plan pays 100% for the rest of the year. You can also spread payments monthly through the Medicare Prescription Payment Plan.",
   },
   {
     q: "Does Original Medicare have an out-of-pocket maximum?",
@@ -165,7 +165,7 @@ const faqs = [
   },
   {
     q: "What's the difference between the Part D deductible and the out-of-pocket cap?",
-    a: "The deductible is what you pay before your plan starts sharing costs (up to $590 in 2026, though many plans have $0 deductibles). The out-of-pocket cap ($2,000) is the maximum you'll pay total for covered drugs in a calendar year - once you hit it, your plan covers 100% for the rest of the year.",
+    a: "The deductible is what you pay before your plan starts sharing costs (up to $590 in 2026, though many plans have $0 deductibles). The out-of-pocket cap ($2,100) is the maximum you'll pay total for covered drugs in a calendar year - once you hit it, your plan covers 100% for the rest of the year.",
   },
   {
     q: "Who qualifies for Medicare Savings Programs?",
@@ -252,7 +252,7 @@ function TOCSidebar({ activeSection }: { activeSection: string }) {
 
         <Callout type="warning">
           <p className="text-amber-800 text-sm leading-relaxed">
-            Part D now has a <strong>$2,000 annual out-of-pocket cap</strong>. All figures on this page reflect 2026 rates.
+            Part D now has a <strong>$2,100 annual out-of-pocket cap</strong>. All figures on this page reflect 2026 rates.
           </p>
         </Callout>
 
@@ -348,7 +348,7 @@ export default function CostsAtAGlanceClient() {
           {[
             { value: "$202.90/mo", label: "Standard Part B premium" },
             { value: "$1,736", label: "Part A inpatient deductible" },
-            { value: "$2,000", label: "Part D out-of-pocket cap" },
+            { value: "$2,100", label: "Part D out-of-pocket cap" },
             { value: "$0", label: "Part A premium (most people)" },
           ].map((s) => (
             <div key={s.label} className="flex items-center gap-3">
@@ -381,7 +381,7 @@ export default function CostsAtAGlanceClient() {
                       { part: "Part A", label: "Hospital", premium: "$0", note: "for most people", color: "bg-[#1a3fa8]", deductible: "$1,736 deductible/benefit period" },
                       { part: "Part B", label: "Medical", premium: "$202.90/mo", note: "standard premium", color: "bg-[#163490]", deductible: "$283 annual deductible" },
                       { part: "Part C", label: "Advantage", premium: "$0+", note: "many plans", color: "bg-amber-500", deductible: "$8,850 OOP max" },
-                      { part: "Part D", label: "Drugs", premium: "Varies", note: "by plan", color: "bg-green-600", deductible: "$2,000 OOP cap (2026)" },
+                      { part: "Part D", label: "Drugs", premium: "Varies", note: "by plan", color: "bg-green-600", deductible: "$2,100 OOP cap (2026)" },
                     ].map((card) => (
                       <div key={card.part} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <div className={`${card.color} px-5 py-3`}>
@@ -481,7 +481,7 @@ export default function CostsAtAGlanceClient() {
                   <div className="mt-4 bg-green-50 border border-green-200 rounded-xl px-5 py-4 flex gap-3 items-start">
                     <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <p className="text-green-800 text-sm leading-relaxed">
-                      <strong>$2,000 out-of-pocket cap:</strong> The Inflation Reduction Act established a $2,000 annual out-of-pocket cap for Part D drug costs. Once you've hit this limit, your plan pays 100% for covered drugs for the rest of the year. You can also spread payments over the year through the Medicare Prescription Payment Plan.
+                      <strong>$2,100 out-of-pocket cap:</strong> The Inflation Reduction Act established a $2,100 annual out-of-pocket cap for Part D drug costs. Once you've hit this limit, your plan pays 100% for covered drugs for the rest of the year. You can also spread payments over the year through the Medicare Prescription Payment Plan.
                     </p>
                   </div>
                 </motion.div>

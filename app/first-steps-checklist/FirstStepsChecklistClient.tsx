@@ -90,7 +90,7 @@ const phases: Phase[] = [
       {
         id: "p1-3",
         text: "Review the 2026 Medicare costs: premiums, deductibles, and out-of-pocket limits",
-        detail: "Part B costs $202.90/month in 2026. Part A is free for most people. Part D now has a $2,000 annual out-of-pocket cap.",
+        detail: "Part B costs $202.90/month in 2026. Part A is free for most people. Part D now has a $2,100 annual out-of-pocket cap.",
         link: { label: "Costs at a Glance", href: "/costs-at-a-glance" },
       },
       {

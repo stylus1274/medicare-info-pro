@@ -64,7 +64,7 @@ const planCoverage = [
     color: "bg-amber-50 border-amber-300",
     badgeColor: "bg-amber-500",
     details:
-      "Part D covers oral cancer medications, including oral chemotherapy drugs and targeted therapy pills. Many of these drugs are specialty tier medications with significant cost-sharing. The 2026 $2,000 annual out-of-pocket cap under Part D is especially important for cancer patients on expensive oral oncology drugs. Intravenous chemotherapy administered in a clinical setting is covered under Part B, not Part D.",
+      "Part D covers oral cancer medications, including oral chemotherapy drugs and targeted therapy pills. Many of these drugs are specialty tier medications with significant cost-sharing. The 2026 $2,100 annual out-of-pocket cap under Part D is especially important for cancer patients on expensive oral oncology drugs. Intravenous chemotherapy administered in a clinical setting is covered under Part B, not Part D.",
   },
 ];
 
@@ -282,7 +282,7 @@ export default function CancerTreatmentClient() {
                           { service: "Oncologist office visit", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "CT, PET, or MRI scan", medicare: "80% after deductible", you: "20% coinsurance" },
                           { service: "Cancer surgery (inpatient)", medicare: "Per Part A benefit period", you: "$1,736 deductible per benefit period" },
-                          { service: "Oral chemotherapy drug (Part D)", medicare: "Varies by formulary tier", you: "Up to $2,000 annual OOP cap (2026)" },
+                          { service: "Oral chemotherapy drug (Part D)", medicare: "Varies by formulary tier", you: "Up to $2,100 annual OOP cap (2026)" },
                           { service: "Preventive cancer screening (colonoscopy, mammogram)", medicare: "100%", you: "$0 (preventive)" },
                         ].map((row, i) => (
                           <tr key={row.service} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -343,7 +343,7 @@ export default function CancerTreatmentClient() {
                         Other major cancer care providers in the region include AdventHealth Cancer Institute, HCA Florida Brandon Hospital, and BayCare Health System, all of which accept Original Medicare. Residents of Riverview, Valrico, and other Hillsborough County communities have multiple options for infusion centers and radiation facilities close to home.
                       </p>
                       <p>
-                        Choosing the right Medicare plan before a cancer diagnosis is one of the most important financial decisions a beneficiary can make. Greg Wohl helps Brandon and Tampa Bay area residents understand their options and select coverage that protects them if a serious illness arises. Call (813) 742-8888 for a no-cost consultation.
+                        Choosing the right Medicare plan before a cancer diagnosis is one of the most important financial decisions a beneficiary can make. Greg Wohl helps Brandon and Tampa Bay area residents understand their options and select coverage that protects them if a serious illness arises. Call 813-699-5559 for a no-cost consultation.
                       </p>
                     </div>
                   </div>
@@ -410,11 +410,11 @@ export default function CancerTreatmentClient() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/do-i-need-a-supplement"
@@ -463,11 +463,11 @@ export default function CancerTreatmentClient() {
                       </div>
                     </div>
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/do-i-need-a-supplement"
@@ -516,11 +516,11 @@ export default function CancerTreatmentClient() {
               Original Medicare with a Medigap plan gives you access to Moffitt and any Medicare-accepting oncologist, with no network restrictions. Greg Wohl can help you compare your options.
             </p>
             <a
-              href="tel:+18137428888"
+              href="tel:+18136995559"
               className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call (813) 742-8888
+              Call 813-699-5559
             </a>
           </div>
         </section>

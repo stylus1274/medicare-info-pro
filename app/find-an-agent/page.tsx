@@ -4,7 +4,7 @@ import FindAnAgentClient from "./FindAnAgentClient";
 export const metadata: Metadata = {
   title: "Find a Licensed Medicare Agent Near You | Medicare Information Pro",
   description:
-    "Work with an independent, licensed Medicare agent in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-699-5559 or request an appointment online.",
+    "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-699-5559 or request an appointment online.",
   keywords: [
     "find Medicare agent near me",
     "licensed Medicare agent Florida",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Find a Licensed Medicare Agent Near You",
     description:
-      "Work with an independent, licensed Medicare agent. Free consultations, no pressure, 17 carriers represented. Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN, and TX.",
+      "Work with an independent, licensed Medicare agent with 27+ years of experience. Free consultations, no pressure, 17 carriers represented. Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN, and TX.",
     url: "https://medicare-info-pro.vercel.app/find-an-agent",
     type: "website",
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Find a Licensed Medicare Agent Near You",
     description:
-      "Work with an independent, licensed Medicare agent. Free consultations, no pressure, 17 carriers represented.",
+      "Work with an independent, licensed Medicare agent with 27+ years of experience. Free consultations, no pressure, 17 carriers represented.",
     images: [
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
     ],

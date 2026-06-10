@@ -30,7 +30,8 @@ const PLANS = [
     bg: "#e8edf8",
     border: "#b8c8f0",
     covers: ["Part A coinsurance & hospital costs", "Part B coinsurance (with copays)", "Blood (first 3 pints)", "Part A hospice coinsurance", "Skilled nursing facility coinsurance", "Part A deductible", "Foreign travel emergency (80%)"],
-    doesNotCover: ["Part B deductible", "Part B excess charges", "Copays up to $20 for office visits, $50 for ER"],
+    doesNotCover: ["Part B deductible", "Part B excess charges"],
+    note: "Up to $20 doctor copay and $50 ER copay (waived if admitted)",
     bestFor: "People who want lower premiums and are comfortable with small copays for office and ER visits.",
   },
   {
@@ -208,6 +209,11 @@ export default function MedicareSupplementClient() {
                             </li>
                           ))}
                         </ul>
+                      </div>
+                    )}
+                    {"note" in plan && plan.note && (
+                      <div className="mb-4 bg-amber-50 border border-amber-200 rounded-xl px-4 py-2.5">
+                        <p className="text-xs text-amber-800 font-medium">{plan.note as string}</p>
                       </div>
                     )}
                     <div className="rounded-xl p-3 text-sm border" style={{ background: plan.bg, borderColor: plan.border }}>

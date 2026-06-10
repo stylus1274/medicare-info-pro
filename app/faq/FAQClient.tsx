@@ -157,7 +157,7 @@ const categories: Category[] = [
       },
       {
         q: "What is the Medicare Part D out-of-pocket cap in 2026?",
-        a: "Starting in 2025 and continuing in 2026, there is a $2,000 annual out-of-pocket cap on Part D drug costs. Once you reach this cap, you pay $0 for covered drugs for the rest of the year. This is a significant improvement from prior years.",
+        a: "Starting in 2025 and continuing in 2026, there is a $2,100 annual out-of-pocket cap on Part D drug costs. Once you reach this cap, you pay $0 for covered drugs for the rest of the year. This is a significant improvement from prior years.",
       },
       {
         q: "What is a formulary?",
@@ -174,7 +174,7 @@ const categories: Category[] = [
     faqs: [
       {
         q: "What are the Medicare costs in 2026?",
-        a: "Key 2026 Medicare figures: Part B premium $202.90/month, Part B deductible $283/year, Part A deductible $1,736/benefit period, Part D out-of-pocket cap $2,000/year, SNF coinsurance (days 21-100) $212/day.",
+        a: "Key 2026 Medicare figures: Part B premium $202.90/month, Part B deductible $283/year, Part A deductible $1,736/benefit period, Part D out-of-pocket cap $2,100/year, SNF coinsurance (days 21-100) $212/day.",
         link: { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
       },
       {
@@ -365,11 +365,11 @@ export default function FAQClient() {
                       Can't find your answer? Greg Wohl is a licensed Medicare advisor serving Brandon and Hillsborough County. Call for a free consultation.
                     </p>
                     <a
-                      href="tel:+18137428888"
+                      href="tel:+18136995559"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      (813) 742-8888
+                      813-699-5559
                     </a>
                     <Link
                       href="/medicare-quiz"
@@ -418,11 +418,11 @@ export default function FAQClient() {
               Greg Wohl is a licensed Medicare advisor serving Brandon, Riverview, Valrico, and Hillsborough County. Call for a free, no-pressure consultation.
             </p>
             <a
-              href="tel:+18137428888"
+              href="tel:+18136995559"
               className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call (813) 742-8888
+              Call 813-699-5559
             </a>
           </div>
         </section>

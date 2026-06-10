@@ -50,7 +50,7 @@ const CONTACT_METHODS = [
     label: "Office",
     value: "915 Oakfield Dr, Suite A, Brandon, FL 33511",
     href: "https://maps.google.com/?q=915+Oakfield+Dr+Suite+A+Brandon+FL+33511",
-    note: "By appointment preferred",
+    note: "By appointment only",
   },
 ];
 

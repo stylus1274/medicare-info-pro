@@ -25,8 +25,8 @@ import Footer from "@/components/Footer";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const TRUST_STATS = [
-  { value: "17+", label: "Insurance carriers represented", icon: Shield },
-  { value: "149", label: "Medicare products available", icon: Award },
+  { value: "27+", label: "Years of experience", icon: Shield },
+  { value: "17+", label: "Insurance carriers represented", icon: Award },
   { value: "6", label: "States served", icon: MapPin },
   { value: "A+", label: "BBB Rating", icon: Star },
 ];
@@ -104,11 +104,11 @@ const AGENT = {
   email: "greg@medicareinfopro.com",
   photo:
     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
-  bio: "Greg Wohl has been helping Florida seniors navigate Medicare for over a decade. As an independent agent, he represents 17 insurance organizations and is committed to finding the right fit for each client: not the highest commission. Greg is based in Brandon, FL and serves clients throughout Florida and five additional states.",
+  bio: "Greg Wohl has spent more than 27 years in the insurance industry, the last several years focused exclusively on Medicare. As an independent agent, he represents 17 insurance organizations and is committed to finding the right fit for each client, not the highest commission. Greg is based in Brandon, FL and serves clients throughout Florida and multiple additional states. His straightforward, no-pressure approach has earned him an A+ rating with the Better Business Bureau and the trust of hundreds of families across the region.",
   highlights: [
+    "27+ years in the insurance industry",
     "BBB A+ Rated business",
     "17 carriers represented",
-    "149 Medicare products available",
     "No-pressure, education-first approach",
   ],
 };
@@ -363,7 +363,7 @@ export default function FindAnAgentClient() {
                 Ready to Get Started?
               </h3>
               <p className="text-blue-200 text-sm mb-5 leading-relaxed">
-                Call us today or request a free consultation online. We are available Monday through Friday, 9 AM to 5 PM ET.
+                  Call us today or request a free consultation online. Appointments available by phone, video, or in person.
               </p>
               <div className="space-y-3">
                 <a

@@ -4,7 +4,7 @@ import UnderstandingPartDClient from "./UnderstandingPartDClient";
 export const metadata: Metadata = {
   title: "Understanding Medicare Part D: Prescription Drug Coverage | Medicare Information Pro",
   description:
-    "Learn how Medicare Part D works in 2026: formulary tiers, the new $2,000 out-of-pocket cap, how to choose the right plan for your medications, Extra Help, and late enrollment penalties.",
+    "Learn how Medicare Part D works in 2026: formulary tiers, the new $2,100 out-of-pocket cap, how to choose the right plan for your medications, Extra Help, and late enrollment penalties.",
   keywords: [
     "Medicare Part D",
     "prescription drug coverage",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Understanding Medicare Part D: Prescription Drug Coverage",
     description:
-      "How Part D works, formulary tiers, the $2,000 out-of-pocket cap, and how to choose the right drug plan for your medications in 2026.",
+      "How Part D works, formulary tiers, the $2,100 out-of-pocket cap, and how to choose the right drug plan for your medications in 2026.",
     url: "https://medicare-info-pro.vercel.app/understanding-part-d",
     type: "article",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Understanding Medicare Part D: Prescription Drug Coverage",
     description:
-      "How Part D works, formulary tiers, the $2,000 out-of-pocket cap, and how to choose the right drug plan for your medications in 2026.",
+      "How Part D works, formulary tiers, the $2,100 out-of-pocket cap, and how to choose the right drug plan for your medications in 2026.",
     images: [
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/part-d-hero-JKNbAqW3EVLuYqrytoLudi.webp",
     ],

@@ -84,7 +84,7 @@ const PLAN_TYPES = [
     points: [
       "Standalone prescription drug coverage",
       "Pairs with Original Medicare or Medigap",
-      "2026 out-of-pocket cap: $2,000",
+      "2026 out-of-pocket cap: $2,100",
       "Formularies vary by carrier",
       "Penalty for late enrollment",
       "Compare based on your specific medications",
@@ -381,7 +381,7 @@ export default function MedicareInsuranceAgentTampaFL() {
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
-                  <span>Mon-Fri: 9am to 5pm<br />Sat: By appointment</span>
+                  <span>By appointment only</span>
                 </div>
               </div>
             </div>
