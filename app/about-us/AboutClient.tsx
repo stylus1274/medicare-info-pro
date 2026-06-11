@@ -28,8 +28,8 @@ import Footer from "@/components/Footer";
 const VALUES = [
   {
     icon: Shield,
-    title: "Independence",
-    body: "We are not captive agents. We represent 17 insurance organizations and recommend the plan that is right for you: not the one that pays the highest commission.",
+    title: "Independent Agents",
+    body: "Our expert independent insurance agents are licensed to offer plans from the top insurance companies, representing well over a hundred plans — including Medicare Supplements, Medicare Advantage Plans, and Part D drug plans.",
   },
   {
     icon: BookOpen,
@@ -43,18 +43,18 @@ const VALUES = [
   },
   {
     icon: Users,
-    title: "Long-Term Relationships",
-    body: "Our job does not end when you enroll. We are your Medicare resource year-round: for billing questions, coverage issues, and annual plan reviews.",
+    title: "One-on-One Consultations",
+    body: "You are unique and everyone deserves a personalized consultation. We do business differently because we believe your healthcare decisions are very important.",
   },
   {
     icon: Award,
-    title: "Transparency",
-    body: "We are upfront about how we are compensated, what plans we represent, and what we cannot help with. You deserve honest answers, not marketing spin.",
+    title: "Unbiased Guidance",
+    body: "We research networks and formularies to make sure your doctors, hospitals, and prescription drugs are covered. We provide information in an unbiased and objective manner with no obligation to you.",
   },
   {
     icon: Star,
-    title: "Community",
-    body: "We are a local Florida business serving our neighbors. We take pride in our BBB A+ rating and the trust our clients place in us year after year.",
+    title: "No Extra Cost to You",
+    body: "You will not save money by going direct to an insurance company. The prices are the same whether you go direct or with a licensed agent — so it is always in your best interest to work with a trusted advisor.",
   },
 ];
 
@@ -154,10 +154,10 @@ export default function AboutClient() {
             About Us
           </div>
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-            Medicare Guidance You Can Trust
+            Learn About Medicare Information Project
           </h1>
           <p className="text-blue-200 text-lg leading-relaxed max-w-2xl mx-auto">
-            Medicare Information Project is an independent Medicare insurance agency based in Brandon, Florida. We help seniors across six states navigate Medicare with clarity, confidence, and no pressure.
+            At the Medicare Information Project, we are dedicated to assisting Medicare beneficiaries in fully understanding their Medicare benefits.
           </p>
         </div>
       </section>
@@ -168,27 +168,31 @@ export default function AboutClient() {
           <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
             <div>
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">
-                Our Mission
+                Who We Are
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Medicare is one of the most important financial and healthcare decisions a person will make. Yet most beneficiaries navigate it alone, relying on confusing government websites, misleading TV commercials, or high-pressure sales calls.
+                Our team is passionate about providing clear and thorough explanations of all aspects of Medicare, ensuring that you have the knowledge needed to make informed decisions about your healthcare.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We started Medicare Information Project to change that. Our mission is to provide every Medicare beneficiary with the same quality of guidance that was once available only to people with connections in the insurance industry: clear, honest, and completely free.
+                We employ a consultative approach to guide you through the various components of Medicare, including the supplemental coverages such as Medicare Supplements and Medicare Advantage plans. This approach is designed to safeguard both your health and financial well-being, giving you peace of mind about your healthcare coverage.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Medicare Information Project is a campaign run by Insurance Central of Tampa Bay, located in Brandon, FL. Our current service area includes: Florida, Georgia, Arkansas, North Carolina, Kansas, and Texas.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                We are independent agents, which means we represent all major carriers and recommend the plan that is genuinely right for you. We are compensated by insurance companies when you enroll, so our services cost you nothing.
+                We are a team of trusted independent licensed insurance professionals that provide expert, independent assistance in navigating your Medicare options. We research networks and formularies to make sure your doctors, hospitals, and prescription drugs are covered. We provide information in an unbiased and objective manner with no obligation to you.
               </p>
             </div>
             <div className="bg-[#1a3fa8] rounded-2xl p-8 text-white">
-              <h3 className="font-serif text-xl font-bold mb-4">What We Believe</h3>
+              <h3 className="font-serif text-xl font-bold mb-4">What We Offer</h3>
               <ul className="space-y-3">
                 {[
-                  "Every beneficiary deserves unbiased guidance",
-                  "Education should come before enrollment",
-                  "Transparency builds lasting trust",
-                  "Local knowledge matters for local decisions",
-                  "Our job does not end when you enroll",
+                  "Personalized one-on-one consultations",
+                  "Plan comparisons across Supplements and Advantage plans",
+                  "Enrollment assistance and annual review support",
+                  "Cost analysis: premiums, deductibles, and copayments",
+                  "Drug formulary and network guidance",
+                  "Transition assistance from employer plans to Medicare",
                 ].map((belief) => (
                   <li key={belief} className="flex items-start gap-3 text-sm text-blue-100">
                     <CheckCircle className="w-4 h-4 text-[#f5a800] shrink-0 mt-0.5" />
