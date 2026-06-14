@@ -21,6 +21,35 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// ─── HubSpot ─────────────────────────────────────────────────────────────────
+
+const HS_PORTAL_ID = "246426534";
+const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
+
+async function submitToHubSpot(data: FormState): Promise<void> {
+  const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`;
+  const payload = {
+    fields: [
+      { name: "firstname", value: data.name.split(" ")[0] || data.name },
+      { name: "lastname", value: data.name.split(" ").slice(1).join(" ") || "" },
+      { name: "phone", value: data.phone },
+      { name: "email", value: data.email },
+      { name: "zip", value: data.zip },
+      { name: "message", value: `Inquiry type: ${data.inquiry}\n\n${data.message}` },
+    ].filter((f) => f.value.trim() !== ""),
+    context: { pageUri: typeof window !== "undefined" ? window.location.href : "", pageName: "Contact Us" },
+  };
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`HubSpot error ${res.status}: ${text}`);
+  }
+}
+
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const CONTACT_METHODS = [
@@ -109,12 +138,16 @@ export default function ContactClient() {
 
     setSubmitting(true);
 
-    // Simulate a brief submission delay (replace with real API call if needed)
-    await new Promise((resolve) => setTimeout(resolve, 900));
-
-    setSubmitting(false);
-    setSubmitted(true);
-    setForm(EMPTY_FORM);
+    try {
+      await submitToHubSpot(form);
+      setSubmitted(true);
+      setForm(EMPTY_FORM);
+    } catch (err) {
+      console.error("HubSpot submission error:", err);
+      setError("Something went wrong submitting your request. Please call us directly at 813-699-5559.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
