@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -237,6 +238,7 @@ export default function CoverageQAClient() {
           <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Coverage Center
           </div>
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage" }]} className="mb-4" />
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
             Does Medicare Cover That?
           </h1>

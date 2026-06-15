@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -153,6 +154,7 @@ export default function AboutClient() {
           <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             About Us
           </div>
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About Us" }]} className="mb-4" />
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Learn About Medicare Information Project
           </h1>

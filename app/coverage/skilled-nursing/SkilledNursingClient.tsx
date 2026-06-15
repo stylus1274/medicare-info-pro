@@ -24,6 +24,7 @@ import {
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const GREG_PHOTO =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_0f68a894.png";
@@ -161,6 +162,7 @@ export default function SkilledNursingClient() {
                 Skilled Nursing Coverage
               </span>
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage", href: "/coverage-qa" }, { label: "Skilled Nursing" }]} className="mb-4" />
             <h1
               className="text-3xl md:text-5xl font-bold mb-4 leading-tight"
               style={{ fontFamily: "'Merriweather', serif" }}

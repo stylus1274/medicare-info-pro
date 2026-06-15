@@ -8,6 +8,7 @@ import {
   ChevronRight, ChevronDown, Phone, CheckCircle, AlertCircle,
   ArrowRight, Info, Pill, DollarSign, HelpCircle, Users
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const COSTS_2025 = [
   { item: "Maximum Deductible", amount: "$590/year", note: "Many plans offer $0 deductible for Tier 1–2 drugs" },
@@ -65,6 +66,7 @@ export default function MedicarePartDClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Pill size={12} /> Prescription Drug Coverage
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "Medicare Part D" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Part D
             </h1>

@@ -8,6 +8,7 @@ import {
   ChevronRight, ChevronDown, Phone, CheckCircle, AlertCircle,
   ArrowRight, Info, Pill, DollarSign, Calendar, Shield
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const TIERS = [
   { tier: "Tier 1", label: "Preferred Generics", cost: "Lowest copay (~$0–$5)", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2", desc: "Generic drugs preferred by your plan. These are the most affordable option." },
@@ -100,6 +101,7 @@ export default function HowPartDWorksClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Pill size={12} /> Part D Deep Dive
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "How Part D Works" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               How Medicare Part D Works
             </h1>

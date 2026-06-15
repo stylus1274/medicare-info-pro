@@ -8,6 +8,7 @@ import {
   ChevronRight, ChevronDown, Phone, CheckCircle, AlertCircle,
   ArrowRight, Info, Shield, MapPin, DollarSign, Calendar, Stethoscope
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const PART_B_COVERS = [
   { category: "Preventive Services", items: ["Annual Wellness Visit", "Flu, pneumonia, and COVID-19 vaccines", "Cancer screenings (mammograms, colonoscopies)", "Cardiovascular disease screenings", "Diabetes screenings and self-management training"] },
@@ -73,6 +74,7 @@ export default function PartBBrandonClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <MapPin size={12} /> Brandon, FL
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare Part B", href: "/medicare-part-b" }, { label: "Part B Assistance Brandon" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Part B Assistance in Brandon
             </h1>

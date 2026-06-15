@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ─── FAQ Accordion ────────────────────────────────────────────────────────────
 
@@ -147,6 +148,7 @@ export default function PPOPlansClient() {
             <Shield size={12} />
             Medicare Advantage Plan Type
           </div>
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison" }, { label: "PPO Plans" }]} className="mb-4" />
           <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight" style={{ fontFamily: "'Merriweather', serif" }}>
             Medicare PPO Plans in Tampa, FL
           </h1>

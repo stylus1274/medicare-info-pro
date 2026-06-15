@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Star, Phone, Quote, ChevronRight } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // Real quotes from the live site + additional representative ones
 const TESTIMONIALS = [
@@ -115,6 +116,7 @@ export default function TestimonialsPage() {
             <div style={{ display: "inline-block", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, fontSize: "0.7rem", letterSpacing: "0.1em", textTransform: "uppercase", padding: "0.3rem 0.9rem", borderRadius: 999, marginBottom: "1rem" }}>
               Client Stories
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Testimonials" }]} variant="light" className="mb-4 justify-center" />
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 800, lineHeight: 1.1, marginBottom: "1rem", fontFamily: "'Playfair Display', Georgia, serif" }}>
               Real Stories from Real Clients
             </h1>

@@ -8,6 +8,7 @@ import {
   ChevronRight, ChevronDown, Phone, AlertCircle, ArrowRight,
   Calculator, DollarSign, Info, CheckCircle, Shield
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // 2025 standard premiums
 const PART_B_PREMIUM_2025 = 185.00;
@@ -221,6 +222,7 @@ export default function PenaltyCalculatorClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Calculator size={12} /> Free Tool
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Penalty Calculator" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Late Enrollment Penalty Calculator
             </h1>

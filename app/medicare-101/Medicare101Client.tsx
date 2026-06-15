@@ -13,6 +13,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Callout from "@/components/Callout";
 import FaqAccordion from "@/components/FaqAccordion";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const HERO_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/pillar-medicare101-hero-f5outgxBhHJbUVbUzgH5fL.webp";
@@ -332,6 +333,7 @@ export default function Medicare101Client() {
                 <Clock className="w-3.5 h-3.5" aria-hidden="true" /> 20 min read
               </span>
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101" }]} className="mb-4" />
             <h1 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight max-w-2xl mb-4">
               Medicare 101: The Complete Beginner&apos;s Guide
             </h1>

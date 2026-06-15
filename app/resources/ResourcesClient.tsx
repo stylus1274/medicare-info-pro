@@ -23,6 +23,7 @@ import {
   Clock,
   User,
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const ARTICLES = [
   {
@@ -167,6 +168,7 @@ export default function ResourcesClient() {
           <p className="text-[#f5a800] font-semibold text-sm tracking-widest uppercase mb-3">
             Resource Library
           </p>
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources" }]} className="mb-4" />
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
             Search 200+ Medicare Guides &amp; Answers
           </h1>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ChevronDown, ChevronRight, Phone, CheckCircle, AlertCircle, Info, ArrowRight, Shield, Clock, DollarSign, Users } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ── Medicare Parts ──────────────────────────────────────────────────────────
 const PARTS = [
@@ -262,6 +263,7 @@ export default function WhatIsMedicareClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Info size={12} /> Medicare 101
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "What Is Medicare" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               What Is Medicare?
             </h1>

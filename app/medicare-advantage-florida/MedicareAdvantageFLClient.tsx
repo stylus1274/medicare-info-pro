@@ -8,6 +8,7 @@ import {
   ChevronRight, ChevronDown, Phone, CheckCircle, AlertCircle,
   ArrowRight, Info, Shield, Star, XCircle, MapPin, Calendar
 } from "lucide-react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const PLAN_TYPES = [
   {
@@ -115,6 +116,7 @@ export default function MedicareAdvantageFLClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <MapPin size={12} /> Florida Coverage
             </div>
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison" }, { label: "Medicare Advantage Florida" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Advantage Plans in Florida
             </h1>

@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -665,6 +666,7 @@ export default function MedicareQuizClient() {
           <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Free · 2 Minutes · No Sign-Up
           </div>
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Medicare Quiz" }]} className="mb-4" />
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
             Which Medicare Path Is Right for You?
           </h1>
