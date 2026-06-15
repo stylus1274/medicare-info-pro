@@ -713,7 +713,7 @@ export default function MaximizeBenefitsClient() {
                   <Phone className="w-5 h-5" /> Call 813-699-5559
                 </a>
                 <a
-                  href="https://medicareinfopro.com/contact/"
+                  href="/contact"
                   className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
                 >
                   Get My Free Consultation
@@ -836,7 +836,7 @@ export default function MaximizeBenefitsClient() {
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
             <a
-              href="https://medicareinfopro.com/contact/"
+              href="/contact"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
             >
               Get Started Online <ChevronRight className="w-5 h-5" />

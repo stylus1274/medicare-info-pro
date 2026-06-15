@@ -140,7 +140,7 @@ export default function FindAnAgentClient() {
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
             <a
-              href="https://medicareinfopro.com/contact/"
+              href="/contact"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
             >
               Request a Consultation <ChevronRight className="w-5 h-5" />
@@ -302,7 +302,7 @@ export default function FindAnAgentClient() {
           <p className="text-gray-500 text-sm">
             Not in one of these states?{" "}
             <a
-              href="https://medicareinfopro.com/contact/"
+              href="/contact"
               className="text-[#1a3fa8] underline hover:text-blue-800"
             >
               Contact us
@@ -373,7 +373,7 @@ export default function FindAnAgentClient() {
                   <Phone className="w-4 h-4" /> Call Now: 813-699-5559
                 </a>
                 <a
-                  href="https://medicareinfopro.com/contact/"
+                  href="/contact"
                   className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20 w-full"
                 >
                   Request Online Consultation
