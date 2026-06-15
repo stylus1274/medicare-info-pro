@@ -168,9 +168,9 @@ export default function Home() {
       <section id="journey" className="py-10 lg:py-12" style={{ background: "white" }}>
         <div className="max-w-[1320px] mx-auto px-5 sm:px-8">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="text-center mb-14">
-            <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] text-[#1a3fa8] mb-3">Personalized Guidance</p>
-            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>Where Are You on Your Medicare Journey?</h2>
-            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">Everyone's situation is different. Choose the path that matches yours and we'll guide you through exactly what you need to know.</p>
+            <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] text-[#1a3fa8] mb-3">Start Here</p>
+            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>Medicare Looks Different for Everyone</h2>
+            <p className="text-[1.05rem] text-gray-600 max-w-2xl mx-auto">No two situations are alike. Tell us where you are right now and we'll point you toward the information and guidance that actually applies to you.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
