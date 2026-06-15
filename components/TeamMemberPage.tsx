@@ -24,7 +24,6 @@ const RELATED_TEAM: { name: string; slug: string; photo: string | null }[] = [
   { name: "Greg Wohl", slug: "greg-wohl", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg" },
   { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg" },
   { name: "JD Diaz", slug: "jd-diaz", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg" },
-  { name: "Paxton DeMent", slug: "paxton-dement", photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg" },
   { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg" },
   { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", photo: null },
   { name: "Mark VanHoesen", slug: "mark-vanhoesen", photo: null },

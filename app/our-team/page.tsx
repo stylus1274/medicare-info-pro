@@ -81,18 +81,7 @@ const TEAM_MEMBERS = [
     badge: null,
     specialties: ["Medicare Advantage", "Medigap", "Employer Coverage"],
   },
-  {
-    name: "Paxton Dement, CFP",
-    title: "Licensed Medicare Agent, Certified Financial Planner",
-    license: "GA License # 564308",
-    phone: "678-557-7756",
-    location: "Marietta, GA",
-    bio: "Paxton holds the Certified Financial Planner designation and has lived in the Atlanta area for over 25 years. His background is in Investment Management, Financial Planning, and Risk Management. He has been a licensed agent since 1999.",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/Paxton-Dement.jpg",
-    slug: "paxton-dement",
-    badge: "CFP",
-    specialties: ["Medicare Advantage", "Financial Planning", "Medigap"],
-  },
+
   {
     name: "Valerie Hall",
     title: "Licensed Medicare Agent",
