@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Trusted Medicare Insurance Brokers Apollo Beach FL | Medicare Information Project",

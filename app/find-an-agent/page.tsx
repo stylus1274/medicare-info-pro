@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FindAnAgentClient from "./FindAnAgentClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Find a Licensed Medicare Agent Near You | Medicare Information Pro",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicarePartDClient from "./MedicarePartDClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Part D — Prescription Drug Coverage | Medicare Information Project",

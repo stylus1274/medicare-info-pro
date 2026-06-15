@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MaximizeBenefitsClient from "./MaximizeBenefitsClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "How Florida Seniors Can Maximize Medicare Benefits After 65 | Medicare Information Pro",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Enrollment Assistance in Apollo Beach FL | Medicare Information Project",

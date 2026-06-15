@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts",
   description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.",

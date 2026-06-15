@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicareAdvantagePillarClient from "./MedicareAdvantagePillarClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Advantage (Part C): The Complete Guide | Medicare Information Project",

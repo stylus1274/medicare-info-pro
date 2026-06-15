@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CompareMedicarePlansTemplate from "@/components/CompareMedicarePlansTemplate";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Comparing Medicare Plans in Plant City, FL | Medicare Information Project",

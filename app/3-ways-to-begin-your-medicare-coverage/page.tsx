@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ThreeWaysClient from "./ThreeWaysClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "3 Ways to Begin Your Medicare Coverage | Medicare Information Project",

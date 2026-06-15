@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AmIEligibleClient from "./AmIEligibleClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Am I Eligible for Medicare? | Medicare Information Pro",

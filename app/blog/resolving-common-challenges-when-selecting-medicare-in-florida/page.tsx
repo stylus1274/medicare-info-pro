@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Resolving Common Challenges When Selecting Medicare in Florida | MedicareInfoPro",

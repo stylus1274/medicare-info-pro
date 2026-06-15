@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import TeamMemberPage from "@/components/TeamMemberPage";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Chris Gallimore | Licensed Medicare Agent | Medicare Information Project",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FreeConsultationClient from "./FreeConsultationClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Free Medicare Consultation | Brandon, FL | MedicareInfoPro",

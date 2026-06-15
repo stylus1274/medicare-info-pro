@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Turning65Client from "./Turning65Client";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Turning 65 and Becoming Eligible for Medicare | Medicare Information Project",

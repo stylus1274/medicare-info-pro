@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Why Medigap Plan G is Your Best Medicare Choice | Medicare Information Pro",

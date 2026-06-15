@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PartBBrandonClient from "./PartBBrandonClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Part B Assistance in Brandon, FL | Medicare Information Project",

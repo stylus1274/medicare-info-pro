@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "2026 Medicare Advantage Changes: What You Need to Know",
   description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.",

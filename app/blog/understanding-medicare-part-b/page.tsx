@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Understanding Medicare Part B: Coverage, Costs, and Enrollment in 2026 | MedicareInfoPro",

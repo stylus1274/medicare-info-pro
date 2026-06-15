@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PPOPlansClient from "./PPOPlansClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare PPO Plans in Tampa, FL | 2026 Guide | Medicare Information Pro",

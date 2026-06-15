@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CostEstimatorClient from "./CostEstimatorClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Cost Estimator 2026 | MedicareInfoPro",

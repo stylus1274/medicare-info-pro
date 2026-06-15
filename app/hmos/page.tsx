@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HMOPlansClient from "./HMOPlansClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Advantage HMO Plans Explained | 2026 | Medicare Information Pro",

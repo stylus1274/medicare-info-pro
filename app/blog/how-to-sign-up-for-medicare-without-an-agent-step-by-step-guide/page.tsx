@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide | MedicareInfoPro",

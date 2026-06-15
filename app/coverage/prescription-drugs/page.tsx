@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PrescriptionDrugsClient from "./PrescriptionDrugsClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Prescription Drugs? | 2026 Guide | Medicare Information Pro",

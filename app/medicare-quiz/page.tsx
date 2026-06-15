@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicareQuizClient from "./MedicareQuizClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Quiz: Which Plan Is Right for You? | Medicare Information Pro",

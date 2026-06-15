@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicareSupplementClient from "./MedicareSupplementClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Supplement (Medigap) Plans | Medicare Information Project",

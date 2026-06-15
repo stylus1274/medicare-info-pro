@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HealthInsuranceTemplate from "@/components/HealthInsuranceTemplate";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Health Insurance in Brandon, FL | Medicare Information Project",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HearingAidsCoverageClient from "./HearingAidsCoverageClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Hearing Aids? | Medicare Information Pro",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PlanComparisonClient from "./PlanComparisonClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Plan Comparison Tool | MedicareInfoPro",

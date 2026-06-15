@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AdvisorsClient from "./AdvisorsClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Our Medicare Advisors | Medicare Information Project",

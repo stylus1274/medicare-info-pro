@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "About Medicare Information Project | Independent Medicare Agents in Brandon, FL",

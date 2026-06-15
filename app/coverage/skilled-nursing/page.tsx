@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SkilledNursingClient from "./SkilledNursingClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Skilled Nursing Facility Care? | MedicareInfoPro",

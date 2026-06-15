@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Does Medicare Cover Life Alert Systems? Understanding Your Options",
   description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PenaltyCalculatorClient from "./PenaltyCalculatorClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Late Enrollment Penalty Calculator | Medicare Information Project",

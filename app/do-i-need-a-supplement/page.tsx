@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DoINeedSupplementClient from "./DoINeedSupplementClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Do I Need a Medicare Supplement (Medigap) Plan? | Medicare Information Pro",

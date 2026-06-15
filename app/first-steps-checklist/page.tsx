@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FirstStepsChecklistClient from "./FirstStepsChecklistClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare First Steps Checklist | New to Medicare Action Plan | Medicare Information Pro",

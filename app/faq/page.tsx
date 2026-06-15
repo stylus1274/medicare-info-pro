@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FAQClient from "./FAQClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare FAQ Center | MedicareInfoPro",

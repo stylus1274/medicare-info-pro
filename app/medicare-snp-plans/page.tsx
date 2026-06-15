@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SNPPlansClient from "./SNPPlansClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Special Needs Plans (SNP) | 2026 Guide | Medicare Information Pro",

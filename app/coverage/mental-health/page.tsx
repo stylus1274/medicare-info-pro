@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MentalHealthClient from "./MentalHealthClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Mental Health? | MedicareInfoPro",

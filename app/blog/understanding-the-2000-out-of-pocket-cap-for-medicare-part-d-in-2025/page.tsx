@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Understanding the $2,000 Out-of-Pocket Cap for Medicare Part D in 2025 and 2026 | MedicareInfoPro",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicalEquipmentClient from "./MedicalEquipmentClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Medical Equipment? | MedicareInfoPro",

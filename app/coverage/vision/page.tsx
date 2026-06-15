@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import VisionCoverageClient from "./VisionCoverageClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Vision and Eye Exams? | Medicare Information Project",

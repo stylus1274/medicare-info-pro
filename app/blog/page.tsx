@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogClient from "./BlogClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Blog & Guides | Medicare Information Pro",

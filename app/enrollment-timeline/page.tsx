@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EnrollmentTimelineClient from "./EnrollmentTimelineClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Enrollment Timeline: When to Sign Up | Medicare Information Pro",

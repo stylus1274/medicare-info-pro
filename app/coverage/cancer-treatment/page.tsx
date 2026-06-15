@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CancerTreatmentClient from "./CancerTreatmentClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Cancer Treatment? | MedicareInfoPro",

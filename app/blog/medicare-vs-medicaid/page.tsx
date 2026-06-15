@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare vs. Medicaid: Understanding the Key Differences",
   description: "Navigate the complexities of healthcare by understanding the fundamental differences between Medicare and Medicaid. Learn about eligibility, coverage, and how these vital programs serve different populations.",

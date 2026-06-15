@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import OriginalVsAdvantageClient from "./OriginalVsAdvantageClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Original Medicare vs. Medicare Advantage: Side-by-Side Comparison | Medicare Information Pro",

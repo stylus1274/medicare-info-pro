@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EnrollmentCalculatorClient from "./EnrollmentCalculatorClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Enrollment Date Calculator: Find Your Exact Deadlines | Medicare Information Pro",

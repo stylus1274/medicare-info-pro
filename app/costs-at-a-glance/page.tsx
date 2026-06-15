@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CostsAtAGlanceClient from "./CostsAtAGlanceClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Costs at a Glance 2026 | Premiums, Deductibles & IRMAA | Medicare Information Pro",

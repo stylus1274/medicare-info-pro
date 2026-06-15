@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "How to Choose a Medicare Advantage Plan in 2026: Step-by-Step Guide | MedicareInfoPro",

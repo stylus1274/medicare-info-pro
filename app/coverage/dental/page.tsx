@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DentalCoverageClient from "./DentalCoverageClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Dental Care? | Medicare Information Project",

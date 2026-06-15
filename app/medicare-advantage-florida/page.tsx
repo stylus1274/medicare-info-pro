@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MedicareAdvantageFLClient from "./MedicareAdvantageFLClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Medicare Advantage Plans in Florida | Medicare Information Project",

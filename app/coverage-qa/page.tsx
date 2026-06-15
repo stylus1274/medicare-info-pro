@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CoverageQAClient from "./CoverageQAClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover That? Coverage Q&A Center | Medicare Information Pro",

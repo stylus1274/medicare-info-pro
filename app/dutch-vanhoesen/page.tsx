@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import TeamMemberPage from "@/components/TeamMemberPage";
 import type { TeamMemberData } from "@/components/TeamMemberPage";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Dutch VanHoesen | Licensed Medicare Agent | Brandon, FL | Medicare Information Project",

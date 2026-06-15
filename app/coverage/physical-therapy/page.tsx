@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PhysicalTherapyClient from "./PhysicalTherapyClient";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Does Medicare Cover Physical Therapy? | MedicareInfoPro",
