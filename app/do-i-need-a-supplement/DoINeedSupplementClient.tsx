@@ -66,6 +66,7 @@ const planDescriptions: Record<string, { tagline: string; best: string; note?: s
   B: { tagline: "Adds Part A deductible", best: "Slightly more than Plan A" },
   D: { tagline: "Comprehensive minus Part B deductible & excess", best: "Good all-around value with foreign travel" },
   G: { tagline: "Most comprehensive (for new enrollees)", best: "Best coverage available since 2020", popular: true, note: "Most popular plan in 2026" },
+  "HDHP-G": { tagline: "Same as Plan G after $2,870 deductible", best: "Lowest premium, catastrophic protection", popular: true, note: "Growing in popularity for healthy enrollees" },
   K: { tagline: "50% cost-sharing on most benefits", best: "Lower premium, higher out-of-pocket risk" },
   L: { tagline: "75% cost-sharing on most benefits", best: "Middle ground between K and standard plans" },
   M: { tagline: "Covers 50% of Part A deductible", best: "Moderate coverage with lower premium" },
@@ -147,9 +148,9 @@ function getQuizResult(answers: Record<string, string>): QuizResult {
   if (q1 === "healthy" && q4 === "copays_ok") {
     return {
       plan: "Plan N",
-      headline: "Plan N offers the best value for your situation.",
-      reason: "Since you're healthy and comfortable with small copays ($20 for office visits, $50 for ER), Plan N gives you solid coverage at a meaningfully lower monthly premium than Plan G.",
-      alt: "If your health changes, you can't switch to Plan G without medical underwriting outside your open enrollment window.",
+      headline: "Plan N or HDHP Plan G offer the best value for your situation.",
+      reason: "Since you're healthy and comfortable with some out-of-pocket exposure, Plan N gives you solid coverage with small copays at a lower premium. HDHP Plan G is also worth comparing — it has the lowest monthly premium of any Plan G option and provides full Plan G coverage once the $2,870 annual deductible is met.",
+      alt: "If your health changes, you can't switch plans without medical underwriting outside your open enrollment window.",
     };
   }
   if (q2 === "predictable" && q4 === "no_copays") {
@@ -623,9 +624,9 @@ export default function DoINeedSupplementClient() {
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#1a3fa8] mb-3">Most Popular in 2026</p>
                   <h2 className="text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Merriweather', serif" }}>
-                    Plan G vs. Plan N vs. Plan D
+                    Plan G vs. HDHP Plan G vs. Plan N vs. Plan D
                   </h2>
-                  <div className="grid md:grid-cols-3 gap-5">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                     {[
                       {
                         plan: "Plan G",
@@ -645,6 +646,26 @@ export default function DoINeedSupplementClient() {
                           "Part B deductible ($283) still applies",
                         ],
                         bestFor: "Anyone who wants comprehensive, predictable coverage with no surprises.",
+                      },
+                      {
+                        plan: "HDHP Plan G",
+                        badge: "Growing in Popularity",
+                        badgeColor: "bg-[#0e7490] text-white",
+                        borderColor: "border-[#0e7490]",
+                        premium: "$40–$100/mo",
+                        headline: "Lowest premium, catastrophic protection",
+                        pros: [
+                          "Significantly lower monthly premium than standard Plan G",
+                          "Same comprehensive coverage as Plan G once deductible is met",
+                          "Includes foreign travel emergency coverage",
+                          "Covers Part B excess charges (after deductible)",
+                        ],
+                        cons: [
+                          "$2,870 annual deductible must be met first (2026)",
+                          "Does NOT cover Part B deductible ($283)",
+                          "Higher out-of-pocket risk if you need frequent care",
+                        ],
+                        bestFor: "Healthy beneficiaries who want catastrophic protection at the lowest possible monthly premium.",
                       },
                       {
                         plan: "Plan N",

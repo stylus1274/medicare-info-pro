@@ -23,6 +23,18 @@ const PLANS = [
     bestFor: "People who want comprehensive coverage and predictable costs. The most popular plan for new Medicare enrollees.",
   },
   {
+    name: "HDHP Plan G",
+    badge: "Growing in Popularity",
+    badgeColor: "#0e7490",
+    color: "#0e7490",
+    bg: "#e0f7fa",
+    border: "#7dd3e0",
+    covers: ["Part A coinsurance & hospital costs (after deductible)", "Part B coinsurance or copayment (after deductible)", "Blood (first 3 pints, after deductible)", "Part A hospice coinsurance (after deductible)", "Skilled nursing facility coinsurance (after deductible)", "Part A deductible (after deductible)", "Foreign travel emergency (80%, after deductible)"],
+    doesNotCover: ["Part B deductible ($283 in 2026)", "Costs before the $2,870 annual deductible is met (2026)"],
+    note: "Once the $2,870 annual deductible is met, HDHP Plan G covers everything standard Plan G covers. Significantly lower monthly premiums make this ideal for healthy beneficiaries.",
+    bestFor: "Healthy beneficiaries who want catastrophic protection at a much lower monthly premium and are comfortable paying out-of-pocket for routine care.",
+  },
+  {
     name: "Plan N",
     badge: "Best Value",
     badgeColor: "#1a3fa8",
