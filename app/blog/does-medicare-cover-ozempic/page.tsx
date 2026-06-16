@@ -74,8 +74,8 @@ const POST = {
           text: "In 2024, CMS issued guidance allowing Medicare Part D plans to cover semaglutide (Wegovy) for cardiovascular risk reduction in patients with established cardiovascular disease and obesity. This opened a new coverage pathway for some beneficiaries.",
         },
         {
-          label: "The $2,000 Part D cap limits your maximum annual drug cost",
-          text: "As of 2025, the annual out-of-pocket cap for Medicare Part D is $2,000. Even for expensive GLP-1 medications, your total annual drug cost is capped at $2,000 once you reach this threshold.",
+          label: "The $2,100 Part D cap limits your maximum annual drug cost",
+          text: "In 2026, the annual out-of-pocket cap for Medicare Part D is $2,100. Even for expensive GLP-1 medications, your total annual drug cost is capped at $2,100 once you reach this threshold.",
         },
         {
           label: "Not all Part D plans cover Ozempic on their formulary",
@@ -97,7 +97,7 @@ const POST = {
       type: "section" as const,
       heading: "What Ozempic Costs Under Medicare Part D",
       content:
-        "Ozempic is an expensive medication with a list price of approximately $935 per month without insurance. Under Medicare Part D, your actual cost depends on your plan's tier placement and where you are in the benefit phases.\n\n<strong>Typical Part D cost structure for Ozempic:</strong>\n\n<table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-[#0d2260] text-white'><th class='p-3 text-left'>Benefit Phase</th><th class='p-3 text-left'>What You Pay</th><th class='p-3 text-left'>When It Applies</th></tr></thead><tbody><tr class='bg-white border-b'><td class='p-3'>Deductible phase</td><td class='p-3'>Full negotiated price</td><td class='p-3'>Until you meet your plan deductible (up to $590 in 2026)</td></tr><tr class='bg-gray-50 border-b'><td class='p-3'>Initial coverage phase</td><td class='p-3'>25% of drug cost (coinsurance)</td><td class='p-3'>After deductible, until you reach $2,000 OOP</td></tr><tr class='bg-white'><td class='p-3'>Catastrophic phase</td><td class='p-3'>$0</td><td class='p-3'>After you reach $2,000 OOP for the year</td></tr></tbody></table>\n\nFor a drug costing $935 per month, many beneficiaries reach the $2,000 out-of-pocket cap within the first 2 to 3 months of the year. After that, Ozempic costs $0 for the rest of the year.\n\n<strong>The Medicare Prescription Payment Plan (M3P)</strong> allows you to spread your drug costs across monthly installments throughout the year. This can help with cash flow even if your total annual cost remains the same.",
+        "Ozempic is an expensive medication with a list price of approximately $935 per month without insurance. Under Medicare Part D, your actual cost depends on your plan's tier placement and where you are in the benefit phases.\n\n<strong>Typical Part D cost structure for Ozempic:</strong>\n\n<table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-[#0d2260] text-white'><th class='p-3 text-left'>Benefit Phase</th><th class='p-3 text-left'>What You Pay</th><th class='p-3 text-left'>When It Applies</th></tr></thead><tbody><tr class='bg-white border-b'><td class='p-3'>Deductible phase</td><td class='p-3'>Full negotiated price</td><td class='p-3'>Until you meet your plan deductible (up to $590 in 2026)</td></tr><tr class='bg-gray-50 border-b'><td class='p-3'>Initial coverage phase</td><td class='p-3'>25% of drug cost (coinsurance)</td><td class='p-3'>After deductible, until you reach $2,100 OOP</td></tr><tr class='bg-white'><td class='p-3'>Catastrophic phase</td><td class='p-3'>$0</td><td class='p-3'>After you reach $2,100 OOP for the year</td></tr></tbody></table>\n\nFor a drug costing $935 per month, many beneficiaries reach the $2,100 out-of-pocket cap within the first 2 to 3 months of the year. After that, Ozempic costs $0 for the rest of the year.\n\n<strong>The Medicare Prescription Payment Plan (M3P)</strong> allows you to spread your drug costs across monthly installments throughout the year. This can help with cash flow even if your total annual cost remains the same.",
     },
     {
       type: "section" as const,
@@ -121,7 +121,7 @@ const POST = {
       type: "summary" as const,
       heading: "Medicare and Ozempic: What You Need to Know",
       content:
-        "Here is a quick summary of the key points:\n\n<ul><li><strong>Ozempic for type 2 diabetes</strong> is generally covered by Medicare Part D plans that include it on their formulary</li><li><strong>Wegovy for weight loss alone</strong> has historically not been covered, but CMS now allows coverage for patients with cardiovascular disease and obesity</li><li><strong>Prior authorization is almost always required</strong> and your doctor must document medical necessity</li><li><strong>The $2,000 Part D OOP cap</strong> limits your maximum annual drug cost, which helps for expensive GLP-1 medications</li><li><strong>If your plan does not cover it</strong>, request a formulary exception, compare plans during AEP, or ask your doctor about covered alternatives</li></ul>\n\nOur licensed specialists can review your current Part D plan and help you find the best coverage for your medications. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> for a personalized plan comparison.",
+        "Here is a quick summary of the key points:\n\n<ul><li><strong>Ozempic for type 2 diabetes</strong> is generally covered by Medicare Part D plans that include it on their formulary</li><li><strong>Wegovy for weight loss alone</strong> has historically not been covered, but CMS now allows coverage for patients with cardiovascular disease and obesity</li><li><strong>Prior authorization is almost always required</strong> and your doctor must document medical necessity</li>          <li><strong>The $2,100 Part D OOP cap in 2026</strong> limits your maximum annual drug cost, which helps for expensive GLP-1 medications</li><li><strong>If your plan does not cover it</strong>, request a formulary exception, compare plans during AEP, or ask your doctor about covered alternatives</li></ul>\n\nOur licensed specialists can review your current Part D plan and help you find the best coverage for your medications. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> for a personalized plan comparison.",
     },
     {
       type: "faq" as const,
@@ -139,7 +139,7 @@ const POST = {
         {
           question: "How much does Ozempic cost with Medicare Part D?",
           answer:
-            "Your cost depends on your plan's tier placement and where you are in the benefit year. After your deductible, you typically pay 25% coinsurance. Given Ozempic's list price of approximately $935 per month, many beneficiaries reach the $2,000 annual out-of-pocket cap within the first 2 to 3 months, after which the drug costs $0 for the rest of the year.",
+            "Your cost depends on your plan's tier placement and where you are in the benefit year. After your deductible, you typically pay 25% coinsurance. Given Ozempic's list price of approximately $935 per month, many beneficiaries reach the $2,100 annual out-of-pocket cap within the first 2 to 3 months, after which the drug costs $0 for the rest of the year.",
         },
         {
           question: "What is prior authorization and why is it required for Ozempic?",
