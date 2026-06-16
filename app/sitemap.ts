@@ -4,7 +4,7 @@ const BASE_URL = "https://medicareinfopro.com";
 
 // All live blog post slugs (50 migrated posts + ambulance post)
 const BLOG_SLUGS = [
-  "/blog/medicare-ambulance-coverage-2025",
+  "/blog/does-medicare-cover-ambulance-rides",
   "/blog/why-is-health-insurance-so-expensive-in-florida",
   "/blog/how-much-does-health-insurance-cost-per-month-in-florida",
   "/blog/what-are-the-best-medicare-plans-for-seniors",
@@ -24,7 +24,7 @@ const BLOG_SLUGS = [
   "/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
   "/blog/florida-health-insurance-cost",
   "/blog/medicare-plans-cancer-treatment",
-  "/blog/2025-medicare-scams-florida",
+  "/blog/medicare-scams-florida",
   "/blog/medicare-supplement-plans-in-florida",
   "/blog/how-to-choose-medicare-advantage-plans-2026",
   "/blog/original-medicare-vs-medicare-advantage-in-florida",
@@ -44,7 +44,7 @@ const BLOG_SLUGS = [
   "/blog/medicare-advantage-travel-benefits-florida-residents",
   "/blog/best-medicare-plans-for-snowbirds-in-florida",
   "/blog/can-i-have-both-medicare-and-medicaid",
-  "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+  "/blog/medicare-part-d-out-of-pocket-cap",
   "/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
   "/blog/medicare-and-employer-insurance-after-65-brandon-fl",
   "/blog/understanding-medicare-part-b",
@@ -56,6 +56,10 @@ const BLOG_SLUGS = [
   "/blog/use-medicare-insurance-agent-in-florida",
   // 8 pre-existing posts activated June 2026
   "/blog/plan-g-complete-guide",
+  // Additional posts added June 2026
+  "/blog/working-past-65",
+  "/blog/medicare-without-social-security",
+  "/blog/why-choose-medigap-plan-g",
   "/blog/does-medicare-cover-life-alert",
   "/blog/2026-medicare-advantage-changes",
   "/blog/irmaa-explained",
