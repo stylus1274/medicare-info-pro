@@ -1,5 +1,38 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Medicare vs. Medicaid: Understanding the Key Differences",
+  "url": "https://medicareinfopro.com/blog/medicare-vs-medicaid",
+  "datePublished": "2023-10-26",
+  "dateModified": "2023-10-26",
+  "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/medicare-vs-medicaid"
+  }
+} as const;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": []
+} as const;
+
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare vs. Medicaid: Understanding the Key Differences",
@@ -76,5 +109,17 @@ While both programs share the overarching goal of providing essential healthcare
   ],
 };
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }
