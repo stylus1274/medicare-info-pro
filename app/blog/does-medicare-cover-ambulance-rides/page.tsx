@@ -1,5 +1,32 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Does Medicare Cover Ambulance Rides in 2026?",
+  "url": "https://medicareinfopro.com/blog/does-medicare-cover-ambulance-rides",
+  "datePublished": "2026-06-03",
+  "dateModified": "2026-06-03",
+  "image": "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/does-medicare-cover-ambulance-rides"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -182,5 +209,13 @@ const POST = {
 };
 
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }

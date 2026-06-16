@@ -1,5 +1,38 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "2026 Medicare Advantage Changes: What You Need to Know",
+  "url": "https://medicareinfopro.com/blog/2026-medicare-advantage-changes",
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/2026-medicare-advantage-changes"
+  }
+} as const;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": []
+} as const;
+
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "2026 Medicare Advantage Changes: What You Need to Know",
@@ -79,5 +112,17 @@ Don't hesitate to <a href='/get-help' class='text-[#1a3fa8] underline underline-
   ],
 };
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }
