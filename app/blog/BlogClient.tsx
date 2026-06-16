@@ -201,7 +201,7 @@ const ARTICLES: Article[] = [
     image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
     live: true,},
   {
-    slug: "/blog/medicare-ambulance-coverage-2025",
+    slug: "/blog/does-medicare-cover-ambulance-rides",
     title: "Does Medicare Cover Ambulance Rides in 2026?",
     excerpt:
       "Ambulance rides can cost thousands of dollars. Medicare Part B covers them when medically necessary, but strict rules determine when coverage applies, what you owe, and how to avoid surprise bills.",
@@ -405,7 +405,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/2025-medicare-scams-florida",
+    slug: "/blog/medicare-scams-florida",
     title: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
     excerpt:
       "Florida consistently ranks among the top states for Medicare fraud. Scammers target Medicare beneficiaries with fake plan offers, genetic testing schemes, and identity theft attempts.",

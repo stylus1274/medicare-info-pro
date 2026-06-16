@@ -171,7 +171,7 @@ const POST = {
     },
     {
       title: "Does Medicare Cover Ambulance Rides in 2026?",
-      href: "/blog/medicare-ambulance-coverage-2025",
+      href: "/blog/does-medicare-cover-ambulance-rides",
       category: "Coverage" as const,
     },
   ],

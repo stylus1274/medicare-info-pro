@@ -102,7 +102,7 @@ const POST = {
       type: "section" as const,
       heading: "Red Flags to Watch Out For",
       content:
-        "Not all Medicare agents operate ethically. Here are the red flags that should make you look elsewhere.\n\n<strong>Recommending a plan before asking about your doctors and medications:</strong> A plan that does not include your doctors in-network or does not cover your medications is the wrong plan, regardless of its premium or extra benefits.\n\n<strong>Pushing Medicare Advantage without discussing Medigap:</strong> Both options have legitimate advantages depending on your situation. An agent who dismisses Medigap without explanation may be steering you toward the option that is easier to sell.\n\n<strong>Charging a fee for enrollment assistance:</strong> CMS regulations prohibit agents from charging beneficiaries for Medicare enrollment help. Any agent who asks for payment is violating federal rules.\n\n<strong>Using high-pressure sales tactics:</strong> Medicare enrollment decisions should not be rushed. An agent who pressures you to enroll immediately or implies that an offer will expire is not acting in your best interest.\n\n<strong>Not disclosing that they are an agent:</strong> Agents are required to disclose that they are licensed insurance agents and that they are compensated by insurance companies. If an agent presents themselves as a neutral government resource, that is a red flag.\n\nFor more on Medicare scams and how to protect yourself, see our guide on <a href='/blog/2025-medicare-scams-florida' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Scams in Florida 2026</a>.",
+        "Not all Medicare agents operate ethically. Here are the red flags that should make you look elsewhere.\n\n<strong>Recommending a plan before asking about your doctors and medications:</strong> A plan that does not include your doctors in-network or does not cover your medications is the wrong plan, regardless of its premium or extra benefits.\n\n<strong>Pushing Medicare Advantage without discussing Medigap:</strong> Both options have legitimate advantages depending on your situation. An agent who dismisses Medigap without explanation may be steering you toward the option that is easier to sell.\n\n<strong>Charging a fee for enrollment assistance:</strong> CMS regulations prohibit agents from charging beneficiaries for Medicare enrollment help. Any agent who asks for payment is violating federal rules.\n\n<strong>Using high-pressure sales tactics:</strong> Medicare enrollment decisions should not be rushed. An agent who pressures you to enroll immediately or implies that an offer will expire is not acting in your best interest.\n\n<strong>Not disclosing that they are an agent:</strong> Agents are required to disclose that they are licensed insurance agents and that they are compensated by insurance companies. If an agent presents themselves as a neutral government resource, that is a red flag.\n\nFor more on Medicare scams and how to protect yourself, see our guide on <a href='/blog/medicare-scams-florida' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Scams in Florida 2026</a>.",
     },
     {
       type: "section" as const,
@@ -171,7 +171,7 @@ const POST = {
     },
     {
       title: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
-      href: "/blog/2025-medicare-scams-florida",
+      href: "/blog/medicare-scams-florida",
       category: "Coverage" as const,
     },
   ],

@@ -26,6 +26,16 @@ const nextConfig: NextConfig = {
         destination: "/blog/medicare-part-d-out-of-pocket-cap",
         permanent: true,
       },
+      {
+        source: "/blog/2025-medicare-scams-florida",
+        destination: "/blog/medicare-scams-florida",
+        permanent: true,
+      },
+      {
+        source: "/blog/medicare-ambulance-coverage-2025",
+        destination: "/blog/does-medicare-cover-ambulance-rides",
+        permanent: true,
+      },
     ];
   },
 };
