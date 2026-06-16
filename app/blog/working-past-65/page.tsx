@@ -1,5 +1,32 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Working Past 65: When to Enroll in Medicare",
+  "url": "https://medicareinfopro.com/blog/working-past-65",
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-01",
+  "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/working-past-65"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -235,5 +262,13 @@ Delaying Medicare enrollment while relying on individual or marketplace coverage
 };
 
 export default function WorkingPast65Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }

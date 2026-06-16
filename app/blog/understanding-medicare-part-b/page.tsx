@@ -1,5 +1,32 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Understanding Medicare Part B: Coverage, Costs and Enrollment in 2026",
+  "url": "https://medicareinfopro.com/blog/understanding-medicare-part-b",
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-01",
+  "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/understanding-medicare-part-b"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -178,5 +205,13 @@ const POST = {
 };
 
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }

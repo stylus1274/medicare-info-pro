@@ -1,5 +1,32 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Medigap Plan G is Your Best Medicare Choice",
+  "url": "https://medicareinfopro.com/blog/why-choose-medigap-plan-g",
+  "datePublished": "2024-08-01",
+  "dateModified": "2024-08-01",
+  "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Wohl",
+    "jobTitle": "Licensed Medicare Specialist",
+    "url": "https://medicareinfopro.com/greg-wohl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "url": "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medicareinfopro.com/blog/why-choose-medigap-plan-g"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -172,5 +199,13 @@ For starters, Plan G covers a wide range of medical expenses, including coinsura
 };
 
 export default function PlanGPostPage() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }
