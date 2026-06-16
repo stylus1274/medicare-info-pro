@@ -126,7 +126,7 @@ const RELATED_LINKS = [
   { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The complete beginner's guide to all parts of Medicare" },
   { label: "Understanding Part D", href: "/understanding-part-d", desc: "Prescription drug coverage explained" },
   { label: "Enrollment Timeline", href: "/enrollment-timeline", desc: "Key dates and deadlines for enrolling in Medicare" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2025 and 2026 premiums, deductibles, and coinsurance" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums, deductibles, and coinsurance" },
   { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "How Medigap covers the 20% Part B coinsurance" },
 ];
 
@@ -134,7 +134,7 @@ const TOC = [
   { id: "what-is", label: "What Is Part B?" },
   { id: "what-covered", label: "What Part B Covers" },
   { id: "what-not-covered", label: "What Is Not Covered" },
-  { id: "costs", label: "2025 Costs" },
+  { id: "costs", label: "2026 Costs" },
   { id: "irmaa", label: "IRMAA: Higher-Income Premiums" },
   { id: "eligibility", label: "Eligibility and Enrollment" },
   { id: "part-b-gap", label: "The 20% Gap Problem" },
@@ -259,7 +259,7 @@ export default function MedicarePartBClient() {
             {/* Costs */}
             <section id="costs">
               <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-                Medicare Part B Costs in 2025
+                Medicare Part B Costs in 2026
               </h2>
               <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
                 <table className="w-full text-sm">
@@ -282,7 +282,7 @@ export default function MedicarePartBClient() {
                 </table>
               </div>
               <p className="text-xs text-gray-400 mt-2">
-                Source: Centers for Medicare and Medicaid Services, 2025. For the full cost reference including Part A, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
+                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part A, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
               </p>
             </section>
 
