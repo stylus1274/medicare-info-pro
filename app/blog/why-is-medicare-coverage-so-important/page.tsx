@@ -75,7 +75,7 @@ const POST = {
         },
         {
           label: "Medicare prescription drug coverage prevents medication cost crises",
-          text: "Medicare Part D and Medicare Advantage drug coverage cap your annual out-of-pocket drug costs at $2,000 in 2025. Without drug coverage, a single specialty medication can cost thousands of dollars per month.",
+          text: "Medicare Part D and Medicare Advantage drug coverage cap your annual out-of-pocket drug costs at $2,100 in 2026. Without drug coverage, a single specialty medication can cost thousands of dollars per month.",
         },
         {
           label: "Medicare enrollment decisions have permanent financial consequences",
@@ -109,7 +109,7 @@ const POST = {
       type: "section" as const,
       heading: "Reason 4: Prescription Drug Cost Protection",
       content:
-        "Prescription drug costs are one of the fastest-growing healthcare expenses for seniors. Many chronic conditions common in older adults require ongoing medication, and specialty drugs can cost thousands of dollars per month without coverage.\n\n<strong>The $2,000 annual cap is a game-changer:</strong> As of 2025, Medicare Part D caps your annual out-of-pocket drug costs at $2,000. Before this cap was implemented, beneficiaries with high drug costs could spend $5,000 to $10,000 or more per year on medications. The cap provides genuine financial security for people who depend on expensive medications.\n\n<strong>Extra Help for low-income beneficiaries:</strong> Medicare's Extra Help program (Low Income Subsidy) provides additional drug cost assistance for beneficiaries with limited income and resources. Extra Help can reduce your drug costs to near zero, including premiums, deductibles, and copays.\n\nFor more on managing drug costs, see our guide on <a href='/blog/is-reinstating-a-part-d-plan-possible' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D enrollment and reinstatement</a>.",
+        "Prescription drug costs are one of the fastest-growing healthcare expenses for seniors. Many chronic conditions common in older adults require ongoing medication, and specialty drugs can cost thousands of dollars per month without coverage.\n\n<strong>The $2,100 annual cap is a game-changer:</strong> In 2026, Medicare Part D caps your annual out-of-pocket drug costs at $2,100 (up from $2,000 when the cap was first introduced in 2025). Before this cap was implemented, beneficiaries with high drug costs could spend $5,000 to $10,000 or more per year on medications. The cap provides genuine financial security for people who depend on expensive medications.\n\n<strong>Extra Help for low-income beneficiaries:</strong> Medicare's Extra Help program (Low Income Subsidy) provides additional drug cost assistance for beneficiaries with limited income and resources. Extra Help can reduce your drug costs to near zero, including premiums, deductibles, and copays.\n\nFor more on managing drug costs, see our guide on <a href='/blog/is-reinstating-a-part-d-plan-possible' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D enrollment and reinstatement</a>.",
     },
     {
       type: "section" as const,

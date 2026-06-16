@@ -3,32 +3,32 @@ import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "The Medicare Part D $2,000 Out-of-Pocket Cap Explained | MedicareInfoPro",
+  title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026) | MedicareInfoPro",
   description:
-    "Medicare Part D introduced a $2,000 annual out-of-pocket cap in 2025, rising to $2,100 in 2026. Learn how it works, what counts toward the cap, and how to use the Medicare Prescription Payment Plan.",
+    "In 2026, Medicare Part D caps your annual out-of-pocket drug costs at $2,100. Learn how the cap works, what counts toward it, and how to use the Medicare Prescription Payment Plan.",
   keywords: [
-    "Medicare Part D 2000 cap",
-    "Medicare drug out of pocket cap",
-    "Part D out of pocket maximum 2025 2026",
+    "Medicare Part D 2100 cap",
+    "Medicare drug out of pocket cap 2026",
+    "Part D out of pocket maximum 2026",
     "Medicare prescription drug cap",
     "Medicare Prescription Payment Plan",
     "Inflation Reduction Act Medicare Part D",
   ],
   openGraph: {
-    title: "The Medicare Part D $2,000 Out-of-Pocket Cap Explained",
-    description: "Medicare Part D has a $2,100 annual cap on out-of-pocket drug costs in 2026 (up from $2,000 in 2025). Here is exactly how it works, what counts toward the cap, and how to spread costs across the year.",
+    title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
+    description: "Medicare Part D has a $2,100 annual cap on out-of-pocket drug costs in 2026. Here is exactly how it works, what counts toward the cap, and how to spread costs across the year.",
     url: "https://medicare-info-pro.vercel.app/blog/part-d-2000-cap",
     type: "article",
     images: [{ url: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80", width: 1200, height: 630, alt: "Prescription medication bottles representing Medicare Part D drug coverage" }],
   },
-  twitter: { card: "summary_large_image", title: "The Medicare Part D $2,000 Out-of-Pocket Cap Explained", description: "Medicare Part D has a $2,100 out-of-pocket cap in 2026 (up from $2,000 in 2025). Here is how it works." },
+  twitter: { card: "summary_large_image", title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)", description: "Medicare Part D has a $2,100 out-of-pocket cap in 2026. Here is how it works." },
   alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/part-d-2000-cap" },
 };
 
 const POST = {
   slug: "part-d-2000-cap",
-  title: "The Medicare Part D $2,000 Out-of-Pocket Cap Explained",
-  excerpt: "Starting in 2025, Medicare Part D introduced a $2,000 annual cap on out-of-pocket prescription drug costs. In 2026, that cap increases slightly to $2,100. This is the most significant change to Medicare drug coverage in decades. Here is exactly how it works, what counts toward the cap, and how the new Medicare Prescription Payment Plan lets you spread costs across the year.",
+  title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
+  excerpt: "In 2026, Medicare Part D caps your annual out-of-pocket prescription drug costs at $2,100. This is the most significant change to Medicare drug coverage in decades. Here is exactly how it works, what counts toward the cap, and how the Medicare Prescription Payment Plan lets you spread costs across the year.",
   category: "Part D" as const,
   author: GREG_WOHL,
   date: "January 2026",
