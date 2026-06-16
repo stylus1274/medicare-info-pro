@@ -126,11 +126,11 @@ export default function PartBBrandonClient() {
           </div>
         </section>
 
-        {/* 2025 Costs */}
+        {/* 2026 Costs */
         <section className="py-14 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2025 Medicare Part B Costs</h2>
+              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2026 Medicare Part B Costs</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">Understanding your Part B costs helps you plan and identify opportunities to reduce your expenses.</p>
             </div>
             <div className="overflow-x-auto mb-6">
@@ -138,7 +138,7 @@ export default function PartBBrandonClient() {
                 <thead>
                   <tr className="bg-[#0d2260] text-white">
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tl-xl">Cost Component</th>
-                    <th className="text-left px-5 py-3 font-semibold text-sm">2025 Amount</th>
+                    <th className="text-left px-5 py-3 font-semibold text-sm">2026 Amount</th>
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tr-xl">Notes</th>
                   </tr>
                 </thead>
