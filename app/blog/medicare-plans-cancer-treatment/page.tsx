@@ -67,7 +67,7 @@ const POST = {
         },
         {
           label: "Oral cancer drugs are covered under Part D, not Part B",
-          text: "Oral chemotherapy and targeted therapy drugs taken at home are covered under Medicare Part D. The $2,000 annual out-of-pocket cap under Part D (effective 2025) provides significant protection for patients on expensive oral cancer drugs.",
+          text: "Oral chemotherapy and targeted therapy drugs taken at home are covered under Medicare Part D. The $2,100 annual out-of-pocket cap under Part D in 2026 provides significant protection for patients on expensive oral cancer drugs.",
         },
         {
           label: "Radiation therapy is covered under Part B",
@@ -103,7 +103,7 @@ const POST = {
       type: "section" as const,
       heading: "What Medicare Part D Covers for Oral Cancer Drugs",
       content:
-        "Oral chemotherapy, targeted therapy pills, and hormone therapy drugs taken at home are covered under Medicare Part D, not Part B. This distinction matters because Part D has different cost-sharing rules.\n\n<strong>The $2,000 annual cap is critical for cancer patients:</strong> As of 2025, Medicare Part D caps your annual out-of-pocket drug costs at $2,000. Before this cap, patients on expensive oral cancer drugs like Ibrance, Revlimid, or Gleevec could face $10,000 or more per year in drug costs. The cap provides meaningful financial protection.\n\n<strong>Part D formulary considerations:</strong> Not all Part D plans cover all oral cancer drugs. Some drugs may require prior authorization or step therapy. When choosing a Part D plan, cancer patients should verify that their specific oral cancer drugs are covered on the plan's formulary and at what tier.\n\n<strong>The Medicare Drug Price Negotiation program</strong> has begun reducing costs for some high-use drugs. Several cancer drugs are among those being targeted for negotiation, which may further reduce costs in coming years.\n\nFor more on Part D coverage and enrollment, see our guide on <a href='/blog/is-reinstating-a-part-d-plan-possible' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D enrollment</a>.",
+        "Oral chemotherapy, targeted therapy pills, and hormone therapy drugs taken at home are covered under Medicare Part D, not Part B. This distinction matters because Part D has different cost-sharing rules.\n\n<strong>The $2,100 annual cap is critical for cancer patients:</strong> In 2026, Medicare Part D caps your annual out-of-pocket drug costs at $2,100. Before this cap was introduced, patients on expensive oral cancer drugs like Ibrance, Revlimid, or Gleevec could face $10,000 or more per year in drug costs. The cap provides meaningful financial protection.\n\n<strong>Part D formulary considerations:</strong> Not all Part D plans cover all oral cancer drugs. Some drugs may require prior authorization or step therapy. When choosing a Part D plan, cancer patients should verify that their specific oral cancer drugs are covered on the plan's formulary and at what tier.\n\n<strong>The Medicare Drug Price Negotiation program</strong> has begun reducing costs for some high-use drugs. Several cancer drugs are among those being targeted for negotiation, which may further reduce costs in coming years.\n\nFor more on Part D coverage and enrollment, see our guide on <a href='/blog/is-reinstating-a-part-d-plan-possible' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D enrollment</a>.",
     },
     {
       type: "section" as const,
@@ -121,7 +121,7 @@ const POST = {
       type: "summary" as const,
       heading: "The Bottom Line on Medicare and Cancer Treatment",
       content:
-        "Medicare provides substantial coverage for cancer treatment, but the out-of-pocket costs under Original Medicare alone can be significant. Here is the key summary:\n\n<ul><li><strong>Part A</strong> covers inpatient cancer surgery, inpatient chemotherapy, and hospice care</li><li><strong>Part B</strong> covers IV chemotherapy, immunotherapy, radiation, outpatient surgery, and diagnostic imaging; you pay 20% coinsurance with no cap</li><li><strong>Part D</strong> covers oral cancer drugs with a $2,000 annual out-of-pocket cap</li><li><strong>Medigap Plan G</strong> covers the 20% Part B coinsurance and is the strongest financial protection for cancer patients</li><li><strong>Original Medicare</strong> provides unrestricted access to any Medicare-accepting oncologist or cancer center; Medicare Advantage has network restrictions</li></ul>\n\nIf you or a family member has been diagnosed with cancer, reviewing your Medicare coverage options is urgent. Our licensed specialists can help you understand your current coverage and identify any gaps. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> today.",
+        "Medicare provides substantial coverage for cancer treatment, but the out-of-pocket costs under Original Medicare alone can be significant. Here is the key summary:\n\n<ul><li><strong>Part A</strong> covers inpatient cancer surgery, inpatient chemotherapy, and hospice care</li><li><strong>Part B</strong> covers IV chemotherapy, immunotherapy, radiation, outpatient surgery, and diagnostic imaging; you pay 20% coinsurance with no cap</li>          <li><strong>Part D</strong> covers oral cancer drugs with a $2,100 annual out-of-pocket cap in 2026</li><li><strong>Medigap Plan G</strong> covers the 20% Part B coinsurance and is the strongest financial protection for cancer patients</li><li><strong>Original Medicare</strong> provides unrestricted access to any Medicare-accepting oncologist or cancer center; Medicare Advantage has network restrictions</li></ul>\n\nIf you or a family member has been diagnosed with cancer, reviewing your Medicare coverage options is urgent. Our licensed specialists can help you understand your current coverage and identify any gaps. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> today.",
     },
     {
       type: "faq" as const,
@@ -129,7 +129,7 @@ const POST = {
         {
           question: "Does Medicare cover chemotherapy?",
           answer:
-            "Yes. Medicare Part B covers IV chemotherapy administered in a doctor's office or outpatient hospital setting. You pay 20% coinsurance after your Part B deductible. Oral chemotherapy drugs taken at home are covered under Part D, subject to your plan's formulary and the $2,000 annual out-of-pocket cap.",
+            "Yes. Medicare Part B covers IV chemotherapy administered in a doctor's office or outpatient hospital setting. You pay 20% coinsurance after your Part B deductible. Oral chemotherapy drugs taken at home are covered under Part D, subject to your plan's formulary and the $2,100 annual out-of-pocket cap in 2026.",
         },
         {
           question: "Does Medicare cover radiation therapy?",

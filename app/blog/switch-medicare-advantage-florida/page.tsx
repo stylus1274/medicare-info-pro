@@ -56,7 +56,7 @@ const POST = {
     {
       type: "intro" as const,
       content:
-        "Medicare Advantage plans change every year, and your needs change too. A plan that worked well in 2024 may have higher costs, a narrower network, or fewer benefits in 2026.\n\nThe good news is that Medicare gives you several opportunities each year to switch plans. The key is knowing which window applies to your situation and acting before the deadline.\n\nThis guide covers every enrollment period that allows you to switch Medicare Advantage plans in Florida, what to look for when comparing plans, and how to make the switch without creating a coverage gap.",
+        "Medicare Advantage plans change every year, and your needs change too. A plan that worked well in prior years may have higher costs, a narrower network, or fewer benefits in 2026.\n\nThe good news is that Medicare gives you several opportunities each year to switch plans. The key is knowing which window applies to your situation and acting before the deadline.\n\nThis guide covers every enrollment period that allows you to switch Medicare Advantage plans in Florida, what to look for when comparing plans, and how to make the switch without creating a coverage gap.",
     },
     {
       type: "keyTakeaways" as const,

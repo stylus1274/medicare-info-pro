@@ -166,7 +166,7 @@ const POST = {
       category: "Plans" as const,
     },
     {
-      title: "Understanding the $2,000 Out-of-Pocket Cap for Medicare Part D in 2025",
+      title: "Understanding the Medicare Part D Out-of-Pocket Cap",
       href: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
       category: "Part D" as const,
     },
