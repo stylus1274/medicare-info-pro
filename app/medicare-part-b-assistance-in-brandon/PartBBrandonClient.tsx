@@ -126,7 +126,7 @@ export default function PartBBrandonClient() {
           </div>
         </section>
 
-        {/* 2026 Costs */
+        {/* 2026 Costs */}
         <section className="py-14 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
