@@ -149,7 +149,7 @@ const POST = {
         {
           question: "Are extra benefits the same every year?",
           answer:
-            "No. Medicare Advantage plans can change their extra benefits each plan year. Benefits that were available in 2025 may be reduced or eliminated in 2026. This is why reviewing your plan during the Annual Enrollment Period (October 15 to December 7) is important.",
+            "No. Medicare Advantage plans can change their extra benefits each plan year. Benefits that were available last year may be reduced or eliminated in 2026. This is why reviewing your plan during the Annual Enrollment Period (October 15 to December 7) is important.",
         },
         {
           question: "How do I find out what extra benefits a plan offers?",
