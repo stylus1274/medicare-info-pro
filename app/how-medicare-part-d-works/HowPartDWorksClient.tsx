@@ -25,7 +25,7 @@ const PHASES = [
     color: "#1a3fa8",
     bg: "#e8edf8",
     border: "#b8c8f0",
-    desc: "You pay 100% of drug costs until you meet your deductible. In 2025, the maximum deductible is $590. Many plans offer a $0 deductible for Tier 1 and 2 drugs.",
+    desc: "You pay 100% of drug costs until you meet your deductible. In 2026, the maximum deductible is $590. Many plans offer a $0 deductible for Tier 1 and 2 drugs.",
     tip: "Look for plans with a $0 deductible for your specific medications.",
   },
   {
@@ -34,7 +34,7 @@ const PHASES = [
     color: "#0d6e4f",
     bg: "#e6f4ee",
     border: "#a8d8c2",
-    desc: "Your plan shares costs with you. You pay copayments or coinsurance based on your drug's tier. This continues until your total drug costs reach $2,100 in 2025.",
+    desc: "Your plan shares costs with you. You pay copayments or coinsurance based on your drug's tier. This continues until your total drug costs reach $2,100 in 2026.",
     tip: "This is the phase where your plan provides the most value for everyday medications.",
   },
   {
@@ -43,8 +43,8 @@ const PHASES = [
     color: "#0d6e4f",
     bg: "#e6f4ee",
     border: "#a8d8c2",
-    desc: "Starting in 2025, once your out-of-pocket costs reach $2,000, you pay $0 for covered drugs for the rest of the year. The coverage gap (donut hole) was eliminated in 2025.",
-    tip: "The Inflation Reduction Act eliminated the donut hole in 2025. Your costs are now capped at $2,100 per year.",
+    desc: "In 2026, once your out-of-pocket costs reach $2,100, you pay $0 for covered drugs for the rest of the year. The coverage gap (donut hole) was eliminated starting in 2025.",
+    tip: "The Inflation Reduction Act eliminated the donut hole starting in 2025. Your costs are capped at $2,100 per year in 2026.",
     highlight: true,
   },
 ];
@@ -106,7 +106,7 @@ export default function HowPartDWorksClient() {
               How Medicare Part D Works
             </h1>
             <p className="text-blue-200 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-              Medicare Part D is prescription drug coverage. Understanding how it works, including tiers, phases, and the 2025 out-of-pocket cap, helps you choose the right plan and avoid costly surprises.
+              Medicare Part D is prescription drug coverage. Understanding how it works, including tiers, phases, and the 2026 out-of-pocket cap, helps you choose the right plan and avoid costly surprises.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
@@ -138,7 +138,7 @@ export default function HowPartDWorksClient() {
               <div className="space-y-3">
                 {[
                   { icon: <Pill size={15} className="text-[#1a3fa8]" />, title: "Covers Generic and Brand-Name Drugs", desc: "Part D covers a wide range of prescription medications, organized into tiers based on cost.", bg: "#e8edf8", border: "#b8c8f0" },
-                  { icon: <DollarSign size={15} className="text-[#0d6e4f]" />, title: "$2,100 Out-of-Pocket Cap in 2025", desc: "Starting in 2025, your annual out-of-pocket drug costs are capped at $2,100. After that, you pay $0 for covered drugs for the rest of the year.", bg: "#e6f4ee", border: "#a8d8c2" },
+                  { icon: <DollarSign size={15} className="text-[#0d6e4f]" />, title: "$2,100 Out-of-Pocket Cap in 2026", desc: "In 2026, your annual out-of-pocket drug costs are capped at $2,100. After that, you pay $0 for covered drugs for the rest of the year.", bg: "#e6f4ee", border: "#a8d8c2" },
                   { icon: <AlertCircle size={15} className="text-[#991b1b]" />, title: "Permanent Penalty for Late Enrollment", desc: "Skipping Part D when you are first eligible results in a permanent penalty added to your premium for life.", bg: "#fee2e2", border: "#fca5a5" },
                   { icon: <Shield size={15} className="text-[#7c3aed]" />, title: "Extra Help Available", desc: "People with limited income may qualify for Extra Help, which significantly reduces Part D costs.", bg: "#f3eeff", border: "#d4b8f8" },
                 ].map(({ icon, title, desc, bg, border }) => (
@@ -189,7 +189,7 @@ export default function HowPartDWorksClient() {
         <section className="py-14 bg-gray-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">The 3 Phases of Part D Coverage (2025)</h2>
+              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">The 3 Phases of Part D Coverage (2026)</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Your Part D costs change as you move through the year. Understanding these phases helps you budget and plan for your medication expenses.
               </p>
@@ -202,7 +202,7 @@ export default function HowPartDWorksClient() {
                     <div className="font-bold text-gray-900">{p.label}</div>
                     {p.highlight && (
                       <div className="mt-2 inline-flex items-center gap-1.5 bg-[#0d6e4f] text-white text-xs font-bold px-2.5 py-1 rounded-full">
-                        2025 Change
+                        2026 Update
                       </div>
                     )}
                   </div>

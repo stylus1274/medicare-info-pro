@@ -12,7 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 const COSTS_2025 = [
   { item: "Maximum Deductible", amount: "$590/year", note: "Many plans offer $0 deductible for Tier 1–2 drugs" },
-  { item: "Out-of-Pocket Cap", amount: "$2,000/year", note: "After this cap you pay $0 for covered drugs for the rest of the year" },
+  { item: "Out-of-Pocket Cap", amount: "$2,100/year", note: "After this cap you pay $0 for covered drugs for the rest of the year" },
   { item: "Average Monthly Premium", amount: "~$38.99/month", note: "Varies widely by plan and location" },
   { item: "Late Enrollment Penalty", amount: "1% per month", note: "Permanent — added to your premium for life" },
 ];
@@ -71,7 +71,7 @@ export default function MedicarePartDClient() {
               Medicare Part D
             </h1>
             <p className="text-blue-200 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-              Medicare Part D provides prescription drug coverage for Medicare beneficiaries. Understanding your options, costs, and the 2025 out-of-pocket cap can save you thousands of dollars a year.
+              Medicare Part D provides prescription drug coverage for Medicare beneficiaries. Understanding your options, costs, and the 2026 out-of-pocket cap can save you thousands of dollars a year.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
@@ -119,7 +119,7 @@ export default function MedicarePartDClient() {
           </div>
         </section>
 
-        {/* 2025 Costs */}
+        {/* 2026 Costs */}
         <section className="py-14 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
