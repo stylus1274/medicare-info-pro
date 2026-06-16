@@ -40,6 +40,45 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness", "InsuranceAgency"],
+  "@id": "https://medicareinfopro.com/#organization",
+  name: "Medicare Information Pro",
+  url: "https://medicareinfopro.com",
+  logo: "https://medicareinfopro.com/apple-touch-icon.png",
+  description:
+    "Medicare Information Pro provides expert Medicare guidance to Florida residents, helping seniors understand their options and choose the right coverage.",
+  telephone: "+18136995559",
+  email: "info@medicareinfopro.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Brandon",
+    addressRegion: "FL",
+    addressCountry: "US",
+  },
+  areaServed: [
+    { "@type": "State", name: "Florida" },
+    { "@type": "City", name: "Brandon" },
+    { "@type": "City", name: "Tampa" },
+    { "@type": "City", name: "Riverview" },
+    { "@type": "City", name: "Apollo Beach" },
+    { "@type": "City", name: "Sun City Center" },
+    { "@type": "City", name: "Valrico" },
+    { "@type": "City", name: "Plant City" },
+  ],
+  sameAs: [
+    "https://www.facebook.com/medicareinfopro",
+  ],
+  knowsAbout: [
+    "Medicare Advantage",
+    "Medicare Supplement",
+    "Medicare Part D",
+    "Medicare Enrollment",
+    "Medigap",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -47,6 +86,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
