@@ -460,8 +460,8 @@ export default function WhatIsMedicareClient() {
                 <div className="space-y-3">
                   {[
                     { quarters: "40+ quarters (10 years)", premium: "$0/month", color: "#0d6e4f", bg: "#e6f4ee" },
-                    { quarters: "30-39 quarters", premium: "$285/month (2025)", color: "#b45309", bg: "#fef3e2" },
-                    { quarters: "Under 30 quarters", premium: "$518/month (2025)", color: "#991b1b", bg: "#fee2e2" },
+                    { quarters: "30-39 quarters", premium: "$285/month (2026)", color: "#b45309", bg: "#fef3e2" },
+                    { quarters: "Under 30 quarters", premium: "$518/month (2026)", color: "#991b1b", bg: "#fee2e2" },
                   ].map(({ quarters, premium, color, bg }) => (
                     <div key={quarters} className="flex items-center justify-between rounded-xl px-4 py-3 border" style={{ background: bg, borderColor: color + "40" }}>
                       <span className="text-sm font-medium text-gray-700">{quarters}</span>
@@ -526,12 +526,12 @@ export default function WhatIsMedicareClient() {
           </div>
         </section>
 
-        {/* ── 2025 Costs Table ── */}
+        {/* ── 2026 Costs Table ── */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">
-                2025 Medicare Costs at a Glance
+                2026 Medicare Costs at a Glance
               </h2>
               <p className="text-gray-600 max-w-xl mx-auto text-sm">
                 These are the standard federal costs. Your actual costs may differ based on income, the plan you choose, and your healthcare usage.
@@ -559,7 +559,7 @@ export default function WhatIsMedicareClient() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-gray-400 mt-3 text-center">Source: CMS.gov. Figures are for 2025. IRMAA surcharges may apply to higher-income beneficiaries.</p>
+            <p className="text-xs text-gray-400 mt-3 text-center">Source: CMS.gov. Figures are for 2026. IRMAA surcharges may apply to higher-income beneficiaries.</p>
           </div>
         </section>
 
