@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 
-// 2025 standard premiums
-const PART_B_PREMIUM_2025 = 185.00;
+// 2026 standard premiums
+const PART_B_PREMIUM_2025 = 202.90;
 const PART_D_NATIONAL_BASE_2025 = 36.78;
 
 function formatCurrency(n: number) {
@@ -88,7 +88,7 @@ function PartBCalculator() {
             </div>
             <div className="bg-[#fef2f2] border border-[#fecaca] rounded-xl p-3 flex items-start gap-2">
               <AlertCircle size={14} className="text-red-500 shrink-0 mt-0.5" />
-              <p className="text-xs text-red-700">This penalty is <strong>permanent</strong> and lasts for as long as you have Part B. Based on the 2025 standard premium of {formatCurrency(PART_B_PREMIUM_2025)}/mo.</p>
+              <p className="text-xs text-red-700">This penalty is <strong>permanent</strong> and lasts for as long as you have Part B. Based on the 2026 standard premium of {formatCurrency(PART_B_PREMIUM_2025)}/mo.</p>
             </div>
           </div>
         ) : (
@@ -162,7 +162,7 @@ function PartDCalculator() {
             </div>
             <div className="bg-[#e6f4ee] border border-[#a8d8c2] rounded-xl p-3 flex items-start gap-2">
               <Info size={14} className="text-[#0d6e4f] shrink-0 mt-0.5" />
-              <p className="text-xs text-[#0d5a3e]">Based on the 2025 national base beneficiary premium of {formatCurrency(PART_D_NATIONAL_BASE_2025)}/mo. The base premium changes annually, so your actual penalty amount may change each year — but the percentage stays the same.</p>
+              <p className="text-xs text-[#0d5a3e]">Based on the 2026 national base beneficiary premium of {formatCurrency(PART_D_NATIONAL_BASE_2025)}/mo. The base premium changes annually, so your actual penalty amount may change each year, but the percentage stays the same.</p>
             </div>
             <div className="bg-[#fef2f2] border border-[#fecaca] rounded-xl p-3 flex items-start gap-2">
               <AlertCircle size={14} className="text-red-500 shrink-0 mt-0.5" />
@@ -257,7 +257,7 @@ export default function PenaltyCalculatorClient() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">Calculate Your Penalty</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">Enter the number of months you went without coverage to see your estimated penalty. Both calculators use 2025 premium rates.</p>
+              <p className="text-gray-600 max-w-2xl mx-auto">Enter the number of months you went without coverage to see your estimated penalty. Both calculators use 2026 premium rates.</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <PartBCalculator />
@@ -282,7 +282,7 @@ export default function PenaltyCalculatorClient() {
                     "Applies if you do not have creditable employer coverage during the delay",
                     "Penalty is permanent — it lasts for as long as you have Part B",
                     "Calculated based on the standard premium at the time you enroll, then adjusted annually",
-                    "Example: 2 years late = 20% penalty = +$37/mo on top of standard premium (2025 rates)",
+                    "Example: 2 years late = 20% penalty = +$40.58/mo on top of standard premium (2026 rates)",
                   ],
                 },
                 {
@@ -293,7 +293,7 @@ export default function PenaltyCalculatorClient() {
                     "Applies if you go 63 or more consecutive days without creditable drug coverage",
                     "Penalty is permanent — added to your Part D premium for life",
                     "The dollar amount changes each year as the national base premium changes",
-                    "Example: 18 months late = 18% penalty = ~$6.62/mo added to your Part D premium (2025 rates)",
+                    "Example: 18 months late = 18% penalty = ~$6.62/mo added to your Part D premium (2026 rates)",
                   ],
                 },
               ].map((item) => (
@@ -404,7 +404,7 @@ export default function PenaltyCalculatorClient() {
               </Link>
             </div>
             <p className="text-blue-300/60 text-xs mt-6">
-              Penalty estimates are based on 2025 standard premium rates. Actual amounts may vary. This tool is for informational purposes only and does not constitute legal or financial advice.
+              Penalty estimates are based on 2026 standard premium rates. Actual amounts may vary. This tool is for informational purposes only and does not constitute legal or financial advice.
             </p>
           </div>
         </section>

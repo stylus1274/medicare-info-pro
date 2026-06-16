@@ -110,7 +110,7 @@ The 20-employee threshold is based on the total number of employees across your 
         },
         {
           heading: "Delay Medicare Part B",
-          content: `Part B (medical insurance) costs $185.00 per month in 2025 for most people. As long as you remain covered by your employer's active group health plan, you can delay Part B enrollment without incurring a late enrollment penalty. You do not need to sign up during your Initial Enrollment Period.`,
+          content: `Part B (medical insurance) costs $202.90 per month in 2026 for most people. As long as you remain covered by your employer's active group health plan, you can delay Part B enrollment without incurring a late enrollment penalty. You do not need to sign up during your Initial Enrollment Period.`,
         },
         {
           heading: "Keep Your Proof of Coverage",
