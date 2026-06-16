@@ -8,6 +8,10 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://medicareinfopro.com/sitemap.xml",
+    sitemap: [
+      "https://medicareinfopro.com/sitemap.xml",
+      "https://medicareinfopro.com/pages-sitemap.xml",
+      "https://medicareinfopro.com/blog-sitemap.xml",
+    ],
   };
 }
