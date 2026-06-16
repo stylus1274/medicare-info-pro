@@ -167,7 +167,7 @@ const POST = {
     },
     {
       title: "Understanding the Medicare Part D Out-of-Pocket Cap",
-      href: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+      href: "/blog/medicare-part-d-out-of-pocket-cap",
       category: "Part D" as const,
     },
     {

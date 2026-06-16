@@ -18,7 +18,13 @@ const nextConfig: NextConfig = {
       {
         source: "/free-consultation",
         destination: "/get-started",
-        permanent: true, // 308 redirect — updates search engine indexes
+        permanent: true,
+      },
+      {
+        // Old stale slug with year in URL — 301 to clean evergreen slug
+        source: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+        destination: "/blog/medicare-part-d-out-of-pocket-cap",
+        permanent: true,
       },
     ];
   },

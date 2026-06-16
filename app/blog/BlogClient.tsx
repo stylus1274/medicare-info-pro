@@ -645,7 +645,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+    slug: "/blog/medicare-part-d-out-of-pocket-cap",
     title: "Understanding the $2,000 Out-of-Pocket Cap for Medicare Part D in 2025 and 2026",
     excerpt:
       "Starting in 2025, Medicare Part D has a $2,000 annual out-of-pocket cap, the most significant drug coverage improvement in decades. This guide explains how the cap works, what changed from previous years, and how to maximize your savings.",
