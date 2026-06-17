@@ -17,6 +17,34 @@ const webpageSchema = {
   "description": "Licensed Medicare insurance agents in Lithia, FL. Compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers at no cost."
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/medicare-insurance-agent-lithia-fl#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Lithia, FL.",
+  "url": "https://medicareinfopro.com/medicare-insurance-agent-lithia-fl",
+  "telephone": "+1-813-699-5559",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lithia",
+    "addressRegion": "FL",
+    "postalCode": "33547",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Lithia"
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -30,6 +58,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <LocalAgentPage
       config={{
