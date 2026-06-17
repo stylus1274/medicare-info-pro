@@ -17,6 +17,80 @@ const webpageSchema = {
   "description": "Compare Medicare Advantage, Medigap, and Part D plans in Valrico, FL. Independent agents serving Hillsborough County help you find the right plan at no cost."
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/comparing-medicare-plans-valrico#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Valrico, FL and surrounding Hillsborough County communities.",
+  "url": "https://medicareinfopro.com/comparing-medicare-plans-valrico",
+  "telephone": "+1-813-699-5559",
+  "priceRange": "Free Consultation",
+  "image": "https://medicareinfopro.com/og-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Brandon, FL",
+    "addressLocality": "Valrico",
+    "addressRegion": "FL",
+    "postalCode": "33594",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Valrico",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Florida"
+    }
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Medicare Insurance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medicare Advantage Plans"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medicare Supplement Plans"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medicare Part D Drug Plans"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medicare Enrollment Assistance"
+        }
+      }
+    ]
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -39,6 +113,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <CompareMedicarePlansTemplate
       data={{
