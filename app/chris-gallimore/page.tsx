@@ -1,5 +1,26 @@
 import { Metadata } from "next";
 import TeamMemberPage from "@/components/TeamMemberPage";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chris Gallimore",
+  "jobTitle": "Licensed Medicare Agent",
+  "url": "https://medicareinfopro.com/chris-gallimore",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "knowsAbout": [
+    "Medicare",
+    "Medicare Advantage",
+    "Medicare Supplement",
+    "Medicare Part D",
+    "Health Insurance"
+  ]
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -29,5 +50,13 @@ const MEMBER = {
 };
 
 export default function ChrisGallimorePage() {
-  return <TeamMemberPage member={MEMBER} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <TeamMemberPage member={MEMBER} />
+    </>
+  );
 }

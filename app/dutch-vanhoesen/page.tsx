@@ -1,6 +1,27 @@
 import type { Metadata } from "next";
 import TeamMemberPage from "@/components/TeamMemberPage";
 import type { TeamMemberData } from "@/components/TeamMemberPage";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dutch VanHoesen",
+  "jobTitle": "Licensed Medicare Agent",
+  "url": "https://medicareinfopro.com/dutch-vanhoesen",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "knowsAbout": [
+    "Medicare",
+    "Medicare Advantage",
+    "Medicare Supplement",
+    "Medicare Part D",
+    "Health Insurance"
+  ]
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -49,5 +70,13 @@ const member: TeamMemberData = {
 };
 
 export default function Page() {
-  return <TeamMemberPage member={member} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <TeamMemberPage member={member} />
+    </>
+  );
 }
