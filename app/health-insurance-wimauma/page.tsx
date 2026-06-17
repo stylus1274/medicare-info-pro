@@ -17,6 +17,34 @@ const webpageSchema = {
   "description": "Find the right health insurance in Wimauma, FL. Independent agents compare Medicare, ACA Marketplace, and private plans at no cost to you. Call 813-699-5559."
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/health-insurance-wimauma#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Wimauma, FL.",
+  "url": "https://medicareinfopro.com/health-insurance-wimauma",
+  "telephone": "+1-813-699-5559",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wimauma",
+    "addressRegion": "FL",
+    "postalCode": "33598",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Wimauma"
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -39,6 +67,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <HealthInsuranceTemplate
       data={{

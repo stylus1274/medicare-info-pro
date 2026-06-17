@@ -24,6 +24,34 @@ const webpageSchema = {
   }
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
+  "url": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida",
+  "telephone": "+1-813-699-5559",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brandon",
+    "addressRegion": "FL",
+    "postalCode": "33511",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Brandon"
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -100,6 +128,10 @@ export default function MedicareAdvantageBrandonPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
     <main className="min-h-screen bg-white">
       {/* Hero */}
