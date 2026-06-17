@@ -345,6 +345,18 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/what-is-the-special-enrollment-period",
+    title: "What Is the Medicare Special Enrollment Period and When Can You Use It?",
+    excerpt:
+      "Missing your initial Medicare enrollment window does not mean you are out of options. The Special Enrollment Period gives you a second chance to enroll or make changes when a qualifying life event occurs.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/does-medicare-cover-cataract-surgery",
     title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
     excerpt:
