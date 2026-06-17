@@ -345,6 +345,18 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/does-medicare-cover-home-health-care",
+    title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
+    excerpt:
+      "Medicare covers skilled home health care, but only when specific eligibility criteria are met. Understanding what qualifies, what is excluded, and how long coverage lasts can help you plan ahead and avoid unexpected costs.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/what-is-the-special-enrollment-period",
     title: "What Is the Medicare Special Enrollment Period and When Can You Use It?",
     excerpt:

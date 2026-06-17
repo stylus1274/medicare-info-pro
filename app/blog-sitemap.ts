@@ -15,6 +15,7 @@ const BLOG_SLUGS = [
   "/blog/medicare-advantage-changes-2026-florida",
   "/blog/medicare-set-aside-explained",
   "/blog/florida-medicare-if-still-working-at-65",
+  "/blog/does-medicare-cover-home-health-care",
   "/blog/what-is-the-special-enrollment-period",
   "/blog/does-medicare-cover-cataract-surgery",
   "/blog/does-medicare-cover-ozempic",
