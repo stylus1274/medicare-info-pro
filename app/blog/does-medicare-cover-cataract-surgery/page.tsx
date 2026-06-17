@@ -145,16 +145,27 @@ const POST = {
   author: GREG_WOHL,
   sections: [
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "The Short Answer: Yes, Medicare Covers Cataract Surgery",
       content:
         "Cataracts are the leading cause of vision loss in adults over 65, and cataract surgery is one of the most common procedures performed on Medicare beneficiaries each year. The good news is that <strong>Medicare Part B covers cataract surgery when it is medically necessary</strong> — meaning your vision has deteriorated to the point where it significantly affects your daily life.\n\nCoverage includes the surgical procedure itself, one standard intraocular lens (IOL) implant, pre-operative and post-operative care, and — uniquely — one pair of eyeglasses or contact lenses after surgery. This last benefit is notable because Medicare generally does not cover routine vision care.",
     },
     {
-      type: "table" as const,
+      type: "section" as const,
       heading: "What Medicare Covers for Cataract Surgery (2026)",
-      rows: [
-        ["Service", "Covered by Medicare?", "Your Cost"],
+      content: `<table>
+<thead><tr><th>Service</th><th>Covered by Medicare?</th><th>Your Cost</th></tr></thead>
+<tbody>
+<tr><td>Cataract surgery (standard technique)</td><td>Yes — Part B</td><td>20% after $257 deductible</td></tr>
+<tr><td>Standard monofocal IOL lens implant</td><td>Yes — Part B</td><td>Included in 20% coinsurance</td></tr>
+<tr><td>Pre-operative eye exam</td><td>Yes — Part B</td><td>20% coinsurance</td></tr>
+<tr><td>Post-operative follow-up visits</td><td>Yes — Part B</td><td>20% coinsurance</td></tr>
+<tr><td>One pair of eyeglasses or contacts after surgery</td><td>Yes — Part B</td><td>20% coinsurance</td></tr>
+<tr><td>Premium IOL (multifocal, toric, EDOF)</td><td>Partial — upgrade cost not covered</td><td>Difference between premium and standard lens ($1,000–$3,000/eye)</td></tr>
+<tr><td>Laser-assisted surgery (FLACS) upgrade</td><td>Partial — upgrade cost not covered</td><td>Additional laser fee ($500–$1,500/eye)</td></tr>
+<tr><td>Routine eye exams (unrelated to cataracts)</td><td>No</td><td>Full cost</td></tr>
+</tbody>
+</table>`,
         ["Cataract surgery (standard technique)", "Yes — Part B", "20% after $257 deductible"],
         ["Standard monofocal IOL lens implant", "Yes — Part B", "Included in 20% coinsurance"],
         ["Pre-operative eye exam", "Yes — Part B", "20% coinsurance"],
@@ -166,37 +177,37 @@ const POST = {
       ],
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "How Much Will You Pay Out of Pocket?",
       content:
         "With <strong>Original Medicare only</strong>, your typical costs for cataract surgery are:\n\n<ul><li><strong>Part B deductible:</strong> $257 in 2026 (applies once per year, not per procedure)</li><li><strong>20% coinsurance:</strong> Medicare pays 80% of the approved amount; you pay 20%</li><li><strong>Estimated out-of-pocket per eye:</strong> $300 to $600 for standard surgery</li></ul>\n\nIf you have a <strong>Medicare Supplement (Medigap) plan</strong>, it can cover most or all of that 20% coinsurance, reducing your cost to near zero for standard cataract surgery. Plan G and Plan N are the most popular Medigap options for this reason.\n\nIf you are enrolled in a <strong>Medicare Advantage plan</strong>, your costs depend on your plan's specific copays and coinsurance. Many Advantage plans have lower out-of-pocket costs for surgery than Original Medicare, but you must use in-network providers.",
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "Standard vs. Premium Lens Implants: What Medicare Pays",
       content:
         "Every cataract surgery involves implanting an intraocular lens (IOL) to replace the clouded natural lens. Medicare covers the cost of a <strong>standard monofocal IOL</strong>, which corrects vision at one distance (usually distance vision). Most patients still need reading glasses after surgery.\n\nIf you want a <strong>premium lens</strong> — such as a multifocal IOL (corrects near and far), a toric IOL (corrects astigmatism), or an extended depth-of-focus (EDOF) lens — Medicare pays what it would have paid for the standard lens, and you pay the difference. Premium lens upgrades typically cost <strong>$1,000 to $3,000 per eye</strong> out of pocket.\n\nThe upgrade cost is not covered by Medigap plans either, since it is considered elective. It is a personal decision based on your lifestyle and how much you want to reduce your dependence on glasses after surgery.",
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "Does Medicare Cover Laser Cataract Surgery?",
       content:
         "Traditional cataract surgery uses a technique called phacoemulsification, where the surgeon makes a small incision and uses ultrasound to break up the clouded lens. Femtosecond laser-assisted cataract surgery (FLACS) uses a laser to perform some of those steps with greater precision.\n\n<strong>Medicare covers the medically necessary portion of cataract surgery regardless of technique.</strong> However, the additional cost of the laser upgrade over traditional surgery is considered elective and is not covered. Surgeons typically charge an additional $500 to $1,500 per eye for the laser upgrade.\n\nWhether FLACS is worth the extra cost is a conversation to have with your ophthalmologist. For most straightforward cataract cases, outcomes are comparable between the two techniques.",
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "Eyeglasses After Cataract Surgery: A Rare Medicare Vision Benefit",
       content:
         "One of Medicare's most overlooked benefits is that <strong>Part B covers one pair of eyeglasses or contact lenses after cataract surgery that includes an IOL implant</strong>. This is one of the only times Medicare covers eyewear — routine glasses and contact lenses are otherwise excluded.\n\nTo use this benefit:\n\n<ul><li>Your surgeon must have implanted an intraocular lens during the procedure</li><li>You must purchase the glasses or contacts from a supplier enrolled in Medicare</li><li>Medicare pays 80% of the approved amount; you pay 20%</li><li>The benefit applies once per eye that has had surgery</li></ul>\n\nNote that Medicare sets an approved amount for basic frames and lenses. If you choose more expensive frames or lens upgrades (anti-reflective coating, progressive lenses, etc.), you pay the difference.",
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "Medicare Advantage and Cataract Surgery",
       content:
         "If you are enrolled in a Medicare Advantage (Part C) plan, your plan must cover everything Original Medicare covers — including cataract surgery. Your specific cost-sharing (copays, coinsurance, out-of-pocket maximum) depends on your plan.\n\nMany Medicare Advantage plans also include <strong>additional vision benefits</strong> that Original Medicare does not offer, such as annual eye exams, an allowance for frames or contacts, and discounts on LASIK or premium lenses. These extra benefits vary widely by plan and carrier.\n\nOne important consideration: Medicare Advantage plans require you to use <strong>in-network providers</strong>. Before scheduling surgery, confirm that your ophthalmologist and the surgical facility are both in your plan's network to avoid unexpected out-of-network charges.",
     },
     {
-      type: "text" as const,
+      type: "section" as const,
       heading: "How to Minimize Your Out-of-Pocket Costs",
       content:
         "Here are the most effective ways to reduce what you pay for cataract surgery:\n\n<ul><li><strong>Get a Medigap plan before surgery:</strong> Plan G covers 100% of your Part B coinsurance after the annual deductible, making standard cataract surgery essentially free. Plan N covers coinsurance with a small copay per visit.</li><li><strong>Confirm your surgeon accepts Medicare assignment:</strong> Surgeons who accept Medicare assignment agree to charge no more than the Medicare-approved amount. If your surgeon does not accept assignment, they can charge up to 15% more (the \"limiting charge\"), which you pay out of pocket.</li><li><strong>Use your Medicare Advantage vision benefits:</strong> If your Advantage plan includes a vision allowance, apply it toward your post-surgery eyeglasses.</li><li><strong>Ask about the standard lens first:</strong> For many patients, a standard monofocal lens with reading glasses afterward is a perfectly good outcome — and it costs significantly less than a premium lens upgrade.</li><li><strong>Check for Extra Help or Medicare Savings Programs:</strong> If you have limited income, these programs can reduce your Medicare cost-sharing significantly.</li></ul>",
