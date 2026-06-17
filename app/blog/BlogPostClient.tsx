@@ -123,7 +123,8 @@ type PostSection =
   | { type: "keyTakeaways"; items: KeyTakeaway[] }
   | { type: "section"; heading: string; content: string; subsections?: Subsection[] }
   | { type: "summary"; heading: string; content: string }
-  | { type: "faq"; items: { question: string; answer: string }[] };
+  | { type: "faq"; items: { question: string; answer: string }[] }
+  | { type: "proTip"; content: string };
 
 interface RelatedPost {
   title: string;
@@ -389,7 +390,7 @@ export default function BlogPostClient({ post }: Props) {
                       {section.heading}
                     </h2>
                     {/* Body content: renderParagraphs splits on \n\n and auto-breaks before bold sub-headings */}
-                    <div className="mb-6 space-y-4 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2 [&_table]:w-full [&_table]:text-sm [&_table]:border-collapse [&_table]:my-4 [&_th]:p-3 [&_th]:text-left [&_td]:p-3 [&_td]:border-b">
+                    <div className="mb-6 space-y-4 [&_ul]:mt-2 [&_ul]:mb-4 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:marker:text-[#1a3fa8] [&_ol]:mt-2 [&_ol]:mb-4 [&_ol]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-900 [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2 [&_table]:w-full [&_table]:text-sm [&_table]:border-collapse [&_table]:my-6 [&_table]:rounded-xl [&_table]:overflow-hidden [&_table]:shadow-sm [&_thead]:bg-[#0d1f5c] [&_th]:p-3 [&_th]:text-left [&_th]:text-white [&_th]:font-semibold [&_th]:text-xs [&_th]:uppercase [&_th]:tracking-wide [&_tbody_tr:nth-child(even)]:bg-blue-50/60 [&_tbody_tr:nth-child(odd)]:bg-white [&_tbody_tr]:border-b [&_tbody_tr]:border-gray-100 [&_tbody_tr:last-child]:border-0 [&_td]:p-3 [&_td]:text-gray-700 [&_td]:leading-snug">
                       {renderParagraphs(section.content, "text-gray-800 leading-relaxed text-[1rem]")}
                     </div>
                     {section.subsections?.map((sub, si) => (
@@ -432,6 +433,22 @@ export default function BlogPostClient({ post }: Props) {
                 );
               }
 
+              if (section.type === "proTip") {
+                return (
+                  <div
+                    key={idx}
+                    className="mb-8 flex gap-3 bg-amber-50 border-l-4 border-amber-400 rounded-r-xl px-5 py-4 shadow-sm"
+                  >
+                    <span className="mt-0.5 text-amber-500 text-xl flex-shrink-0" aria-hidden="true">&#128161;</span>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Pro Tip</p>
+                      <div className="text-gray-800 leading-relaxed text-[0.975rem] [&_a]:text-[#1a3fa8] [&_a]:underline [&_a]:underline-offset-2 [&_strong]:font-semibold [&_strong]:text-gray-900">
+                        {renderParagraphs(section.content, "text-gray-800 leading-relaxed text-[0.975rem]")}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
               if (section.type === "faq") {
                 return (
                   <section key={idx} className="mb-10" aria-label="Frequently asked questions">

@@ -180,6 +180,11 @@ const POST = {
         "With <strong>Original Medicare only</strong>, your typical costs for cataract surgery are:\n\n<ul><li><strong>Part B deductible:</strong> $257 in 2026 (applies once per year, not per procedure)</li><li><strong>20% coinsurance:</strong> Medicare pays 80% of the approved amount; you pay 20%</li><li><strong>Estimated out-of-pocket per eye:</strong> $300 to $600 for standard surgery</li></ul>\n\nIf you have a <strong><a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement (Medigap) plan</a></strong>, it can cover most or all of that 20% coinsurance, reducing your cost to near zero for standard cataract surgery. Plan G and Plan N are the most popular Medigap options for this reason.\n\nIf you are enrolled in a <strong><a href='/medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage plan</a></strong>, your costs depend on your plan's specific copays and coinsurance. Many Advantage plans have lower out-of-pocket costs for surgery than Original Medicare, but you must use in-network providers.",
     },
     {
+      type: "proTip" as const,
+      content:
+        "If you have <strong>Original Medicare only</strong> and are planning cataract surgery, consider enrolling in a <a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medigap Plan G</a> before your procedure. Plan G covers your 20% coinsurance after the annual Part B deductible, which can save you $300 to $600 per eye on standard surgery. Once you have a scheduled surgery date, speak with a <a href='/find-an-agent' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare agent</a> right away -- Medigap enrollment rules mean timing matters.",
+    },
+    {
       type: "section" as const,
       heading: "Standard vs. Premium Lens Implants: What Medicare Pays",
       content:
