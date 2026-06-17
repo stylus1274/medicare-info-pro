@@ -345,6 +345,18 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/does-medicare-cover-cataract-surgery",
+    title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
+    excerpt:
+      "Cataracts are the leading cause of vision loss in adults over 65. Medicare Part B covers medically necessary cataract surgery including a standard lens implant — but premium lenses, laser upgrades, and routine vision care are handled differently.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    live: true,
+  },
+  {
     slug: "/blog/does-medicare-cover-ozempic",
     title: "Does Medicare Cover Ozempic? Coverage, Costs, and Alternatives",
     excerpt:
