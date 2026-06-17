@@ -17,6 +17,34 @@ const webpageSchema = {
   "description": "Compare Medicare Supplement (Medigap) insurance plans in Riverview, FL. Independent agents help you find the lowest premium for the coverage you need."
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/medicare-supplement-insurance-plans-riverview#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Riverview, FL.",
+  "url": "https://medicareinfopro.com/medicare-supplement-insurance-plans-riverview",
+  "telephone": "+1-813-699-5559",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Riverview",
+    "addressRegion": "FL",
+    "postalCode": "33578",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Riverview"
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -30,6 +58,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <LocalAgentPage
       config={{

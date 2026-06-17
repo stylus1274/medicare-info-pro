@@ -17,6 +17,34 @@ const webpageSchema = {
   "description": "Compare Medicare Supplement (Medigap) insurance plans in Bartow, FL. We help you find the right plan to cover the gaps in Original Medicare at no cost."
 } as const;
 
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://medicareinfopro.com/medicare-supplement-insurance-plans-bartow#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare insurance specialists serving Bartow, FL.",
+  "url": "https://medicareinfopro.com/medicare-supplement-insurance-plans-bartow",
+  "telephone": "+1-813-699-5559",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bartow",
+    "addressRegion": "FL",
+    "postalCode": "33830",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Bartow"
+  },
+  "serviceType": "Medicare Insurance Consulting",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -30,6 +58,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <LocalAgentPage
       config={{
