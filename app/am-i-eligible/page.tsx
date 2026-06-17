@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import AmIEligibleClient from "./AmIEligibleClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Am I Eligible for Medicare? | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/am-i-eligible",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Find out if you qualify for Medicare. Use our free eligibility checker to learn about age requirements, disability pathways, ESRD, work history, and special enrollment situations.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,5 +72,13 @@ export const metadata: Metadata = {
 };
 
 export default function AmIEligiblePage() {
-  return <AmIEligibleClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <AmIEligibleClient />
+    </>
+  );
 }

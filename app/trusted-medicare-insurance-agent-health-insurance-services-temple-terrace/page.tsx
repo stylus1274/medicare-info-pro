@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Trusted Medicare Insurance Agent Health Insurance Services Temple Terrace FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/trusted-medicare-insurance-agent-health-insurance-services-temple-terrace",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Trusted Medicare insurance agent and health insurance services in Temple Terrace, FL. Independent, unbiased guidance from local experts at no cost."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -9,7 +26,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <LocalAgentPage
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <LocalAgentPage
       config={{
         city: "Temple Terrace",
         cityFull: "Temple Terrace, FL",
@@ -57,5 +79,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare Advantage Plans Brandon Florida | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Explore Medicare Advantage plans in Brandon, Florida. Compare HMO, PPO, and DSNP options with help from local independent agents at no cost.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -72,6 +96,11 @@ const faqs = [
 
 export default function MedicareAdvantageBrandonPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
     <main className="min-h-screen bg-white">
       {/* Hero */}
       <section className="bg-[#0d1f5c] relative overflow-hidden">
@@ -311,5 +340,5 @@ export default function MedicareAdvantageBrandonPage() {
         </div>
       </section>
     </main>
+    </>
   );
-}

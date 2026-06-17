@@ -2,6 +2,23 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ResourcesClient from "./ResourcesClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Resources: Guides, FAQs & Tools | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/resources",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Browse 200+ Medicare guides, FAQs, and free tools covering enrollment, costs, plan comparisons, and coverage. Written and reviewed by licensed Medicare specialists in Florida."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,6 +65,10 @@ export const metadata: Metadata = {
 export default function ResourcesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
       <Header />
       <main id="main-content">
         <ResourcesClient />

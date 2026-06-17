@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import PenaltyCalculatorClient from "./PenaltyCalculatorClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Late Enrollment Penalty Calculator | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-penalty-calculator",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Calculate your Medicare Part B and Part D late enrollment penalties instantly. See exactly how much you will pay and for how long if you miss your enrollment window."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -28,5 +45,13 @@ export const metadata: Metadata = {
 };
 
 export default function PenaltyCalculatorPage() {
-  return <PenaltyCalculatorClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <PenaltyCalculatorClient />
+    </>
+  );
 }

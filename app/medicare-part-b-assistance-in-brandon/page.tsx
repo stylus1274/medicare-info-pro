@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import PartBBrandonClient from "./PartBBrandonClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare Part B Assistance in Brandon, FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Get expert Medicare Part B guidance in Brandon, FL. Enrollment help, cost management, benefits maximization, and personalized support from licensed local agents.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -27,5 +51,13 @@ export const metadata: Metadata = {
 };
 
 export default function PartBBrandonPage() {
-  return <PartBBrandonClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <PartBBrandonClient />
+    </>
+  );
 }

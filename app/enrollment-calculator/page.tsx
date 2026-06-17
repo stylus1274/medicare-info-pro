@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import EnrollmentCalculatorClient from "./EnrollmentCalculatorClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Enrollment Date Calculator: Find Your Exact Deadlines | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/enrollment-calculator",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Enter your birthday and employment status to instantly calculate your Medicare Initial Enrollment Period, coverage start date, Medigap window, and late-penalty deadlines - free tool."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,5 +65,13 @@ export const metadata: Metadata = {
 };
 
 export default function EnrollmentCalculatorPage() {
-  return <EnrollmentCalculatorClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <EnrollmentCalculatorClient />
+    </>
+  );
 }

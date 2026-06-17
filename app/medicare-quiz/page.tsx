@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import MedicareQuizClient from "./MedicareQuizClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Quiz: Which Plan Is Right for You? | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/medicare-quiz",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Take our free 2-minute Medicare quiz to find out whether Original Medicare, Medicare Advantage, or Medigap is the best fit for your health needs, budget, and lifestyle."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -45,5 +62,13 @@ export const metadata: Metadata = {
 };
 
 export default function MedicareQuizPage() {
-  return <MedicareQuizClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <MedicareQuizClient />
+    </>
+  );
 }

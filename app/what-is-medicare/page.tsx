@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import WhatIsMedicareClient from "./WhatIsMedicareClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "What Is Medicare? A Complete Guide | Medicare Information Project",
+  "url": "https://medicareinfopro.com/what-is-medicare",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Learn what Medicare is, how Parts A, B, C, and D work, who qualifies, when to enroll, and how much it costs. Free, unbiased guidance from licensed agents in Brandon, FL.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -29,5 +53,13 @@ export const metadata: Metadata = {
 };
 
 export default function WhatIsMedicarePage() {
-  return <WhatIsMedicareClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <WhatIsMedicareClient />
+    </>
+  );
 }

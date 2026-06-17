@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Supplement Insurance Plans Sun City FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-supplement-insurance-plans-sun-city",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Compare Medicare Supplement (Medigap) insurance plans in Sun City Center, FL. Independent agents help retirees find the lowest premium for the coverage they need."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -9,7 +26,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <LocalAgentPage
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <LocalAgentPage
       config={{
         city: "Sun City Center",
         cityFull: "Sun City Center, FL",
@@ -43,5 +65,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

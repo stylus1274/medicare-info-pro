@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import MedicareAdvantagePillarClient from "./MedicareAdvantagePillarClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare Advantage (Part C): The Complete Guide | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-advantage",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Everything you need to know about Medicare Advantage plans. Learn how they work, the four plan types (HMO, PPO, SNP, PFFS), costs, pros and cons, and how to enroll.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -46,5 +70,13 @@ export const metadata: Metadata = {
 };
 
 export default function MedicareAdvantagePage() {
-  return <MedicareAdvantagePillarClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <MedicareAdvantagePillarClient />
+    </>
+  );
 }

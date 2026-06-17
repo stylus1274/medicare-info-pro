@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import Medicare101Client from "./Medicare101Client";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare 101: The Complete Beginner",
+  "url": "https://medicareinfopro.com/medicare-101",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Everything you need to understand Medicare - Parts A, B, C & D, enrollment windows, costs, and how to choose the right coverage for your situation. Updated April 2026.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -37,5 +61,13 @@ export const metadata: Metadata = {
 };
 
 export default function Medicare101Page() {
-  return <Medicare101Client />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <Medicare101Client />
+    </>
+  );
 }

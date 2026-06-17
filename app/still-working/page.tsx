@@ -52,9 +52,37 @@ const PENALTIES = [
   { part: "Part D", penalty: "1% of the national base beneficiary premium per month you went without creditable drug coverage.", duration: "For life" },
 ];
 
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Employer Has 20+ Employees",
+  "url": "https://medicareinfopro.com/still-working",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Your employer must offer you the same coverage as younger employees. You can delay Medicare Parts A and B without penalty as long as you have active employer coverage. You will receive a Special Enrollment Period (SEP) when you or your spouse stops working or loses that coverage.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export default function StillWorkingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
       <Header />
       <main style={{ background: "#f7f9fc", minHeight: "100vh" }}>
         {/* Hero */}

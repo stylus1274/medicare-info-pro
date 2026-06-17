@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import DoINeedMedicareClient from "./DoINeedMedicareClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Do I Need Medicare? | Medicare Information Project",
+  "url": "https://medicareinfopro.com/do-i-need-medicare",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Not sure if you need Medicare? Find out who must enroll, who can delay, what happens if you skip it, and how to decide based on your situation. Free guidance from licensed agents.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -28,5 +52,13 @@ export const metadata: Metadata = {
 };
 
 export default function DoINeedMedicarePage() {
-  return <DoINeedMedicareClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <DoINeedMedicareClient />
+    </>
+  );
 }

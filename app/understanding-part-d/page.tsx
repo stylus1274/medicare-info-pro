@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import UnderstandingPartDClient from "./UnderstandingPartDClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Understanding Medicare Part D: Prescription Drug Coverage | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/understanding-part-d",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Learn how Medicare Part D works in 2026: formulary tiers, the new $2,100 out-of-pocket cap, how to choose the right plan for your medications, Extra Help, and late enrollment penalties.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -46,5 +70,13 @@ export const metadata: Metadata = {
 };
 
 export default function UnderstandingPartDPage() {
-  return <UnderstandingPartDClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <UnderstandingPartDClient />
+    </>
+  );
 }

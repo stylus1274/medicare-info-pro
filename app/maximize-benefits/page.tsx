@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import MaximizeBenefitsClient from "./MaximizeBenefitsClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "How Florida Seniors Can Maximize Medicare Benefits After 65 | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/maximize-benefits",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "A complete guide for Florida seniors on maximizing Medicare benefits: choosing the right plan, avoiding costly enrollment mistakes, Medicare Savings Programs, preventive services, and finding trusted guidance.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -47,5 +71,13 @@ export const metadata: Metadata = {
 };
 
 export default function MaximizeBenefitsPage() {
-  return <MaximizeBenefitsClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <MaximizeBenefitsClient />
+    </>
+  );
 }

@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import HealthInsuranceTemplate from "@/components/HealthInsuranceTemplate";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Health Insurance in Apollo Beach, FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/health-insurance-apollo-beach",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Find the right health insurance in Apollo Beach, FL. Independent agents compare Medicare, ACA Marketplace, and private plans at no cost to you. Call 813-699-5559."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -18,7 +35,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <HealthInsuranceTemplate
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <HealthInsuranceTemplate
       data={{
         city: "Apollo Beach",
         slug: "apollo-beach",
@@ -33,5 +55,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

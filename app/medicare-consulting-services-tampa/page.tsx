@@ -56,10 +56,31 @@ const SERVICES = [
   },
 ];
 
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Education",
+  "url": "https://medicareinfopro.com/medicare-consulting-services-tampa",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export default function MedicareConsultingServicesTampa() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
     <div className="min-h-screen bg-white">
       <Header />
 
@@ -366,5 +387,5 @@ export default function MedicareConsultingServicesTampa() {
 
       <Footer />
     </div>
+    </>
   );
-}

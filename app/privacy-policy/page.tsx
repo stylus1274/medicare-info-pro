@@ -9,9 +9,29 @@ import Footer from "@/components/Footer";
 
 const LAST_UPDATED = "January 1, 2025";
 
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy",
+  "url": "https://medicareinfopro.com/privacy-policy",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
       <Header />
       <main style={{ background: "#f7f9fc", minHeight: "100vh" }}>
         {/* Hero */}

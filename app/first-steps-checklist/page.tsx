@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import FirstStepsChecklistClient from "./FirstStepsChecklistClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare First Steps Checklist | New to Medicare Action Plan | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/first-steps-checklist",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "A step-by-step Medicare enrollment checklist for people turning 65. Check off each action - from understanding your options to enrolling and staying organized. Progress saves automatically.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -46,5 +70,13 @@ export const metadata: Metadata = {
 };
 
 export default function FirstStepsChecklistPage() {
-  return <FirstStepsChecklistClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <FirstStepsChecklistClient />
+    </>
+  );
 }

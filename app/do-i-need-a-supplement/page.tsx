@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import DoINeedSupplementClient from "./DoINeedSupplementClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Do I Need a Medicare Supplement (Medigap) Plan? | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/do-i-need-a-supplement",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Find out if you need a Medicare Supplement (Medigap) plan. Compare Plan G, Plan N, and Plan D side by side, take our 4-question quiz, and learn about the critical 6-month open enrollment window.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,5 +72,13 @@ export const metadata: Metadata = {
 };
 
 export default function DoINeedSupplementPage() {
-  return <DoINeedSupplementClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <DoINeedSupplementClient />
+    </>
+  );
 }

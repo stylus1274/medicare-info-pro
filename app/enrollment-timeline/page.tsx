@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import EnrollmentTimelineClient from "./EnrollmentTimelineClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare Enrollment Timeline: When to Sign Up | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/enrollment-timeline",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Learn every Medicare enrollment deadline - Initial Enrollment Period, General Enrollment Period, Special Enrollment Period, and Annual Enrollment Period. Avoid permanent late penalties.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,5 +72,13 @@ export const metadata: Metadata = {
 };
 
 export default function EnrollmentTimelinePage() {
-  return <EnrollmentTimelineClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <EnrollmentTimelineClient />
+    </>
+  );
 }

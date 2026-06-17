@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Agent Sun City FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-agent-sun-city",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Free Medicare guidance for Sun City Center, FL residents. Independent agents compare 17+ carriers to find the right Medicare plan for your retirement community."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -9,7 +26,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <LocalAgentPage
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <LocalAgentPage
       config={{
         city: "Sun City Center",
         cityFull: "Sun City Center, FL",
@@ -71,5 +93,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

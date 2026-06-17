@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import HowPartDWorksClient from "./HowPartDWorksClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "How Medicare Part D Works | Medicare Information Project",
+  "url": "https://medicareinfopro.com/how-medicare-part-d-works",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Learn how Medicare Part D prescription drug coverage works: premiums, deductibles, tiers, the coverage gap, and how to choose the right plan. Free guidance from licensed agents.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -28,5 +52,13 @@ export const metadata: Metadata = {
 };
 
 export default function HowPartDWorksPage() {
-  return <HowPartDWorksClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <HowPartDWorksClient />
+    </>
+  );
 }

@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "About Medicare Information Project | Independent Medicare Agents in Brandon, FL",
+  "url": "https://medicareinfopro.com/about-us",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Medicare Information Project is an independent Medicare insurance agency based in Brandon, FL. We represent 17 carriers and 149 Medicare products across 6 states. Free, unbiased guidance: no pressure."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -45,5 +62,13 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <AboutClient />
+    </>
+  );
 }

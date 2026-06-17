@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Contact Us | Medicare Information Project | Brandon, FL",
+  "url": "https://medicareinfopro.com/contact",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Contact Medicare Information Project for a free Medicare consultation. Call 813-699-5559 or 888-886-5840, email us, or visit our Brandon, FL office. No pressure, no obligation."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -45,5 +62,13 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  return <ContactClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <ContactClient />
+    </>
+  );
 }

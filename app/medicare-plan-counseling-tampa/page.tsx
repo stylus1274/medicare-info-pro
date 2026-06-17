@@ -29,10 +29,38 @@ const FAQS = [
   },
 ];
 
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Schedule a Free Session",
+  "url": "https://medicareinfopro.com/medicare-plan-counseling-tampa",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export default function MedicarePlanCounselingTampa() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
     <div className="min-h-screen bg-white">
       <Header />
 
@@ -310,5 +338,5 @@ export default function MedicarePlanCounselingTampa() {
 
       <Footer />
     </div>
+    </>
   );
-}

@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import FindAnAgentClient from "./FindAnAgentClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Find a Licensed Medicare Agent Near You | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/find-an-agent",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-699-5559 or request an appointment online."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -45,5 +62,13 @@ export const metadata: Metadata = {
 };
 
 export default function FindAnAgentPage() {
-  return <FindAnAgentClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <FindAnAgentClient />
+    </>
+  );
 }

@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import PPOPlansClient from "./PPOPlansClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare PPO Plans in Tampa, FL | 2026 Guide | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/medicare-ppo-plans-in-tampa",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Compare Medicare PPO plans available in Brandon, Tampa, and Hillsborough County for 2026. No referrals required. See any doctor, in or out of network. Free consultation with a licensed Medicare advisor.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -34,5 +58,13 @@ export const metadata: Metadata = {
 };
 
 export default function PPOPlansPage() {
-  return <PPOPlansClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <PPOPlansClient />
+    </>
+  );
 }

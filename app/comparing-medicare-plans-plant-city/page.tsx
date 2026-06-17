@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import CompareMedicarePlansTemplate from "@/components/CompareMedicarePlansTemplate";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Comparing Medicare Plans in Plant City, FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/comparing-medicare-plans-plant-city",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Compare Medicare Advantage, Medigap, and Part D plans in Plant City, FL. Independent agents serving Hillsborough County help you find the right plan at no cost."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -18,7 +35,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <CompareMedicarePlansTemplate
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <CompareMedicarePlansTemplate
       data={{
         city: "Plant City",
         slug: "plant-city",
@@ -33,5 +55,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

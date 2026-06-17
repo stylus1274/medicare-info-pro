@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import FreeConsultationClient from "./FreeConsultationClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Free Medicare Consultation | Brandon, FL | MedicareInfoPro",
+  "url": "https://medicareinfopro.com/free-consultation",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Get a free, no-obligation Medicare consultation from a licensed advisor in Brandon, FL. We compare every plan available in your zip code and help you avoid costly mistakes. Call 813-699-5559."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -26,5 +43,13 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <FreeConsultationClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <FreeConsultationClient />
+    </>
+  );
 }

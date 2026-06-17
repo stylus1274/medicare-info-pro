@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import CostEstimatorClient from "./CostEstimatorClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Cost Estimator 2026 | MedicareInfoPro",
+  "url": "https://medicareinfopro.com/cost-estimator",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Estimate your annual Medicare costs for 2026. Compare Original Medicare, Medigap Plan G, and Medicare Advantage costs based on your income, plan type, and expected healthcare use."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -36,5 +53,13 @@ export const metadata: Metadata = {
 };
 
 export default function CostEstimatorPage() {
-  return <CostEstimatorClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <CostEstimatorClient />
+    </>
+  );
 }

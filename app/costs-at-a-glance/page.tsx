@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import CostsAtAGlanceClient from "./CostsAtAGlanceClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Medicare Costs at a Glance 2026 | Premiums, Deductibles & IRMAA | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/costs-at-a-glance",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "All 2026 Medicare costs in one place - Part A, B, C, and D premiums, deductibles, copays, IRMAA surcharges, and the $2,100 Part D out-of-pocket cap. Updated for 2026.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -46,5 +70,13 @@ export const metadata: Metadata = {
 };
 
 export default function CostsAtAGlancePage() {
-  return <CostsAtAGlanceClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <CostsAtAGlanceClient />
+    </>
+  );
 }

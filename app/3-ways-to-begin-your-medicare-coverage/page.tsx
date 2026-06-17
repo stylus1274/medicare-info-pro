@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import ThreeWaysClient from "./ThreeWaysClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "3 Ways to Begin Your Medicare Coverage | Medicare Information Project",
+  "url": "https://medicareinfopro.com/3-ways-to-begin-your-medicare-coverage",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Ready to start Medicare? Learn the 3 simple steps to begin your coverage: understand eligibility, learn the parts, and enroll. Free guidance from licensed agents in Brandon, FL.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -28,5 +52,13 @@ export const metadata: Metadata = {
 };
 
 export default function ThreeWaysPage() {
-  return <ThreeWaysClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <ThreeWaysClient />
+    </>
+  );
 }

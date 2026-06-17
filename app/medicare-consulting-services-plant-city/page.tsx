@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Consulting Services Plant City FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/medicare-consulting-services-plant-city",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Expert Medicare consulting services in Plant City, FL. We help you understand your options, avoid penalties, and choose the right plan at no cost."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -9,7 +26,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <LocalAgentPage
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <LocalAgentPage
       config={{
         city: "Plant City",
         cityFull: "Plant City, FL",
@@ -57,5 +79,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import HealthInsuranceBrokerTemplate from "@/components/HealthInsuranceBrokerTemplate";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Health Insurance Broker in Brandon, FL | Medicare Information Project",
+  "url": "https://medicareinfopro.com/health-insurance-broker-brandon",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Independent health insurance broker in Brandon, FL. We compare Medicare, ACA Marketplace, and private plans at no cost. Call 813-699-5559."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -18,7 +35,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <HealthInsuranceBrokerTemplate
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <HealthInsuranceBrokerTemplate
       data={{
         city: "Brandon",
         slug: "brandon",
@@ -33,5 +55,6 @@ export default function Page() {
         ],
       }}
     />
+    </>
   );
 }

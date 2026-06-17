@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import OriginalVsAdvantageClient from "./OriginalVsAdvantageClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Original Medicare vs. Medicare Advantage: Side-by-Side Comparison | Medicare Information Pro",
+  "url": "https://medicareinfopro.com/original-vs-advantage",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Compare Original Medicare and Medicare Advantage side by side - costs, doctor choice, drug coverage, extra benefits, and out-of-pocket caps. Take our 5-question quiz to find the right plan for you.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -48,5 +72,13 @@ export const metadata: Metadata = {
 };
 
 export default function OriginalVsAdvantagePage() {
-  return <OriginalVsAdvantageClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <OriginalVsAdvantageClient />
+    </>
+  );
 }

@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
 import Turning65Client from "./Turning65Client";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Turning 65 and Becoming Eligible for Medicare | Medicare Information Project",
+  "url": "https://medicareinfopro.com/turning-65-and-becoming-eligible-for-medicare",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Turning 65 is a major Medicare milestone. Learn what happens, when to enroll, what your coverage options are, and what to do if you are still working. Free guidance from licensed agents.",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medicare"
+  },
+  "audience": {
+    "@type": "Patient"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -29,5 +53,13 @@ export const metadata: Metadata = {
 };
 
 export default function Turning65Page() {
-  return <Turning65Client />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <Turning65Client />
+    </>
+  );
 }

@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
 import AdvisorsClient from "./AdvisorsClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Our Medicare Advisors | Medicare Information Project",
+  "url": "https://medicareinfopro.com/advisors",
+  "isPartOf": {
+    "@id": "https://medicareinfopro.com/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  },
+  "description": "Meet the licensed Medicare advisors at Medicare Information Project. Our agents are bound by a strict Code of Ethics and committed to finding the plan that is genuinely right for you."
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -27,5 +44,13 @@ export const metadata: Metadata = {
 };
 
 export default function AdvisorsPage() {
-  return <AdvisorsClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <AdvisorsClient />
+    </>
+  );
 }
