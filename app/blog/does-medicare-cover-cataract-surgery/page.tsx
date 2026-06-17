@@ -166,15 +166,6 @@ const POST = {
 <tr><td>Routine eye exams (unrelated to cataracts)</td><td>No</td><td>Full cost</td></tr>
 </tbody>
 </table>`,
-        ["Cataract surgery (standard technique)", "Yes — Part B", "20% after $257 deductible"],
-        ["Standard monofocal IOL lens implant", "Yes — Part B", "Included in 20% coinsurance"],
-        ["Pre-operative eye exam", "Yes — Part B", "20% coinsurance"],
-        ["Post-operative follow-up visits", "Yes — Part B", "20% coinsurance"],
-        ["One pair of eyeglasses or contacts after surgery", "Yes — Part B", "20% coinsurance"],
-        ["Premium IOL (multifocal, toric, EDOF)", "Partial — upgrade cost not covered", "Difference between premium and standard lens"],
-        ["Laser-assisted surgery (FLACS) upgrade", "Partial — upgrade cost not covered", "Additional laser fee out of pocket"],
-        ["Routine eye exams (unrelated to cataracts)", "No", "Full cost"],
-      ],
     },
     {
       type: "section" as const,
