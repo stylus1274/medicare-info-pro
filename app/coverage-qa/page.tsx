@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
 import CoverageQAClient from "./CoverageQAClient";
+
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medicare Coverage Questions & Answers",
+  "url": "https://medicareinfopro.com/coverage-qa",
+  "description": "Get answers to common Medicare coverage questions from licensed Medicare specialists in Florida.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -47,5 +61,13 @@ export const metadata: Metadata = {
 };
 
 export default function CoverageQAPage() {
-  return <CoverageQAClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <CoverageQAClient />
+    </>
+  );
 }
