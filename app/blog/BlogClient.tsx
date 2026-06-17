@@ -65,6 +65,7 @@ interface Article {
   image: string;
   featured?: boolean;
   live?: boolean;
+  sortOrder?: number;
 }
 
 const ARTICLES: Article[] = [
@@ -355,6 +356,7 @@ const ARTICLES: Article[] = [
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     live: true,
+    sortOrder: 1,
   },
   {
     slug: "/blog/what-is-the-special-enrollment-period",
@@ -367,6 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
     live: true,
+    sortOrder: 2,
   },
   {
     slug: "/blog/does-medicare-cover-cataract-surgery",
@@ -379,6 +382,7 @@ const ARTICLES: Article[] = [
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
     live: true,
+    sortOrder: 3,
   },
   {
     slug: "/blog/does-medicare-cover-ozempic",
@@ -818,17 +822,9 @@ export default function BlogClient() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const MONTH_ORDER: Record<string, number> = {
-    January: 1, February: 2, March: 3, April: 4, May: 5, June: 6,
-    July: 7, August: 8, September: 9, October: 10, November: 11, December: 12,
-  };
-  function parseDateValue(dateStr: string): number {
-    const [month, year] = dateStr.split(" ");
-    return parseInt(year) * 100 + (MONTH_ORDER[month] ?? 0);
-  }
   const featured = ARTICLES.find((a) => a.featured);
   const rest = ARTICLES.filter((a) => !a.featured).sort(
-    (a, b) => parseDateValue(b.date) - parseDateValue(a.date)
+    (a, b) => (a.sortOrder ?? 9999) - (b.sortOrder ?? 9999)
   );
   const filtered = rest.filter((a) => {
     const matchesCategory = activeCategory === "All" || a.category === activeCategory;
