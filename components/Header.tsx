@@ -240,15 +240,16 @@ export default function Header() {
 
       {/* ── Main Navigation ── */}
       <header style={{ background: "#fff", position: "sticky", top: 0, zIndex: 100, borderBottom: "1px solid #e8eaf0", overflow: "visible", isolation: "isolate" }}>
-        <div style={{ display: "flex", alignItems: "stretch", justifyContent: "space-between", height: 88 }}>
+        <div style={{ display: "flex", alignItems: "stretch", justifyContent: "space-between", height: 88, minWidth: 0, width: "100%" }}>
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", flexShrink: 0 }}>
-            <div className="ml-5 sm:ml-10 lg:ml-[100px]" style={{
-              background: "#1a3fa8", borderRadius: 10, padding: "0.5rem 1rem",
+          <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", flexShrink: 0, minWidth: 0 }}>
+            <div className="ml-3 sm:ml-6 lg:ml-[100px]" style={{
+              background: "#1a3fa8", borderRadius: 10, padding: "0.4rem 0.75rem",
               display: "flex", alignItems: "center", justifyContent: "center",
-              border: "2px solid #2a52c4", marginRight: "1.5rem",
+              border: "2px solid #2a52c4", marginRight: "0.75rem",
+              maxWidth: "calc(100vw - 120px)",
             }}>
-              <img src={LOGO_URL} alt="Medicare Information Project" style={{ height: 52, width: "auto" }} />
+              <img src={LOGO_URL} alt="Medicare Information Project" style={{ height: 44, width: "auto", maxWidth: "100%" }} />
             </div>
           </Link>
 
@@ -364,7 +365,7 @@ export default function Header() {
           )}
 
           {/* Right: Search + CTA + Hamburger */}
-          <div className="pr-5 sm:pr-8" style={{ display: "flex", alignItems: "center", gap: "0.75rem", paddingLeft: "1.5rem", flexShrink: 0 }}>
+          <div className="pr-3 sm:pr-8" style={{ display: "flex", alignItems: "center", gap: "0.5rem", paddingLeft: "0.5rem", flexShrink: 0 }}>
             <div ref={searchContainerRef} style={{ display: "flex", alignItems: "center", position: "relative" }}>
               {searchOpen ? (
                 <>
