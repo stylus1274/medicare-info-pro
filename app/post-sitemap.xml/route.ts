@@ -4,6 +4,10 @@ const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
   "/blog/how-to-get-help-paying-for-medicare",
+  "/blog/feeling-trapped-in-medicare-advantage-plans",
+  "/blog/2025-medicare-scams-florida",
+  "/blog/medicare-ambulance-coverage-2025",
+  "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
   "/blog/does-medicare-cover-home-health-care",
   "/blog/what-is-the-special-enrollment-period",
   "/blog/does-medicare-cover-cataract-surgery",
