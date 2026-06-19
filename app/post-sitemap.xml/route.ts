@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/blog/how-to-get-help-paying-for-medicare",
   "/blog/does-medicare-cover-home-health-care",
   "/blog/what-is-the-special-enrollment-period",
   "/blog/does-medicare-cover-cataract-surgery",

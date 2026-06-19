@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/how-to-get-help-paying-for-medicare",
+    title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
+    excerpt:
+      "If you have limited income or resources, you may qualify for programs that significantly reduce your Medicare costs. This guide explains every major assistance program, who qualifies, and exactly how to apply.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/blog/does-medicare-cover-home-health-care",
     title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
     excerpt:
@@ -356,7 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     live: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     slug: "/blog/what-is-the-special-enrollment-period",
@@ -369,7 +382,7 @@ const ARTICLES: Article[] = [
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
     live: true,
-    sortOrder: 2,
+    sortOrder: 3,
   },
   {
     slug: "/blog/does-medicare-cover-cataract-surgery",
@@ -382,7 +395,7 @@ const ARTICLES: Article[] = [
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
     live: true,
-    sortOrder: 3,
+    sortOrder: 4,
   },
   {
     slug: "/blog/does-medicare-cover-ozempic",
