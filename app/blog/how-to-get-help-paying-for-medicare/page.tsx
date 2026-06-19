@@ -221,6 +221,23 @@ const POST = {
         "<ul><li><strong>Extra Help / LIS:</strong> Reduces Part D drug costs; save up to $5,900 per year; apply through Social Security at ssa.gov</li><li><strong>QMB:</strong> Pays Part A and Part B premiums, deductibles, and copays; apply through Florida Medicaid at myflorida.com/accessflorida</li><li><strong>SLMB:</strong> Pays Part B premium ($185/month in 2026); apply through Florida Medicaid</li><li><strong>QI:</strong> Pays Part B premium; slightly higher income limit than SLMB; apply through Florida Medicaid</li><li><strong>QDWI:</strong> Pays Part A premium for working disabled individuals; apply through Florida Medicaid</li><li><strong>Dual Eligible SNPs:</strong> Medicare Advantage plans for people with both Medicare and Medicaid; often include extra benefits</li><li><strong>Free help:</strong> Florida SHINE counselors provide free assistance; call 1-800-963-5337</li></ul>\n\nIf you are unsure which programs you qualify for, our <a href='/find-an-agent' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare specialists</a> can review your situation and help you apply. There is no cost for this service and no obligation to enroll in any plan.",
     },
   ],
+  relatedPosts: [
+    {
+      title: "How Medicare Premiums Are Calculated in 2026",
+      href: "/blog/how-medicare-premiums-are-calculated",
+      category: "Costs" as const,
+    },
+    {
+      title: "Can I Have Both Medicare and Medicaid?",
+      href: "/blog/can-i-have-both-medicare-and-medicaid",
+      category: "Plans" as const,
+    },
+    {
+      title: "What Is the Medicare Special Enrollment Period?",
+      href: "/blog/what-is-the-special-enrollment-period",
+      category: "Enrollment" as const,
+    },
+  ],
   faqSchema,
   articleSchema,
 };
