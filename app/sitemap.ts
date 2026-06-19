@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://medicareinfopro.com/pages-sitemap.xml",
     },
     {
-      url: "https://medicareinfopro.com/blog-sitemap.xml",
+      url: "https://medicareinfopro.com/post-sitemap.xml",
     },
   ];
 }
