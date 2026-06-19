@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/medicare-out-of-pocket-costs",
+    title: "Medicare Out-of-Pocket Costs: Your Guide to Copays, Deductibles, and Maximizing Savings",
+    excerpt:
+      "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to protect yourself from unexpected costs.",
+    category: "Costs",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/blog/how-to-get-help-paying-for-medicare",
     title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
     excerpt:
@@ -356,7 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     live: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     slug: "/blog/does-medicare-cover-home-health-care",
@@ -369,7 +382,7 @@ const ARTICLES: Article[] = [
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     live: true,
-    sortOrder: 2,
+    sortOrder: 3,
   },
   {
     slug: "/blog/what-is-the-special-enrollment-period",
@@ -382,7 +395,7 @@ const ARTICLES: Article[] = [
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
     live: true,
-    sortOrder: 3,
+    sortOrder: 4,
   },
   {
     slug: "/blog/does-medicare-cover-cataract-surgery",
