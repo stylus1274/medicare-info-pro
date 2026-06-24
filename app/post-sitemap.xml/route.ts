@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/blog/best-medicare-advantage-plans-hillsborough-county-2026",
   "/blog/medicare-out-of-pocket-costs",
   "/blog/how-to-get-help-paying-for-medicare",
   "/blog/feeling-trapped-in-medicare-advantage-plans",

@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/blog/best-medicare-advantage-plans-hillsborough-county-2026",
+    title: "Best Medicare Advantage Plans in Hillsborough County for 2026",
+    excerpt:
+      "With 58 Medicare Advantage plans available in Hillsborough County in 2026, choosing the right one requires more than comparing premiums. This guide breaks down the top carriers, plan types, extra benefits, and the key questions every local resident should ask before enrolling.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/blog/medicare-out-of-pocket-costs",
     title: "Medicare Out-of-Pocket Costs: Your Guide to Copays, Deductibles, and Maximizing Savings",
     excerpt:
@@ -356,7 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
     live: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     slug: "/blog/how-to-get-help-paying-for-medicare",
@@ -369,7 +382,7 @@ const ARTICLES: Article[] = [
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     live: true,
-    sortOrder: 2,
+    sortOrder: 3,
   },
   {
     slug: "/blog/does-medicare-cover-home-health-care",
@@ -382,7 +395,7 @@ const ARTICLES: Article[] = [
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     live: true,
-    sortOrder: 3,
+    sortOrder: 4,
   },
   {
     slug: "/blog/what-is-the-special-enrollment-period",
