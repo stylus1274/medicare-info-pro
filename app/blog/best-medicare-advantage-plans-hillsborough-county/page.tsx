@@ -197,17 +197,14 @@ const POST = {
         "Special Needs Plans (SNPs) are a category of Medicare Advantage plans designed for people with specific health situations. They offer more targeted benefits and care coordination than standard plans. Three types of SNPs are available in Hillsborough County:\n\n<strong>Chronic Condition SNPs (C-SNPs):</strong> Designed for people with specific chronic conditions such as diabetes, chronic heart failure, COPD, end-stage renal disease, or certain cancers. C-SNPs typically include disease management programs, lower copays for condition-related services, and care teams that specialize in the enrolled condition.\n\n<strong>Dual Eligible SNPs (D-SNPs):</strong> Available to people who qualify for both Medicare and Medicaid. D-SNPs coordinate benefits across both programs and often include additional benefits such as transportation, meal delivery, and personal care services. If you qualify for both programs, a D-SNP can significantly reduce your out-of-pocket costs compared to a standard Medicare Advantage plan.\n\n<strong>Institutional SNPs (I-SNPs):</strong> Designed for people who live in or require the level of care provided by a nursing facility or long-term care institution. I-SNPs coordinate care across the full continuum of services available in a facility setting.\n\nIf you have a qualifying chronic condition or dual eligibility, an SNP may offer substantially better coverage and lower costs than a standard HMO or PPO plan. A <a href='/local-medicare-agent' class='text-[#1a3fa8] underline underline-offset-2'>local Medicare agent</a> can help you determine whether you qualify and which SNP plans are available in your area.",
     },
     {
-      type: "image" as const,
-      src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-      alt: "Doctor consulting with a senior patient about Medicare Advantage plan options in Florida",
-      caption: "Working with a local Medicare specialist ensures your doctors and prescriptions are covered before you enroll.",
+      type: "section" as const,
+      heading: "",
+      content: "<figure><img src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80' alt='Doctor consulting with a senior patient about Medicare Advantage plan options in Florida' style='width:100%;border-radius:12px;max-height:320px;object-fit:cover;' /><figcaption style='font-size:0.85rem;color:#6b7280;margin-top:8px;text-align:center;'>Working with a local Medicare specialist ensures your doctors and prescriptions are covered before you enroll.</figcaption></figure>",
     },
     {
-      type: "cta" as const,
+      type: "summary" as const,
       heading: "Not Sure Which Plan Is Right for You?",
-      text: "Our licensed Medicare specialists know the Hillsborough County provider network and can compare every plan available in your zip code at no cost to you. Get a free, no-obligation consultation today.",
-      buttonText: "Schedule a Free Consultation",
-      buttonHref: "/free-consultation",
+      content: "Our licensed Medicare specialists know the Hillsborough County provider network and can compare every plan available in your zip code at no cost to you. Get a free, no-obligation consultation today. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2 font-semibold'>Schedule a Free Consultation</a>",
     },
     {
       type: "proTip" as const,
@@ -227,11 +224,9 @@ const POST = {
         "Before committing to a Medicare Advantage plan, it is worth understanding how it compares to staying with <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare paired with a Medigap supplement</a>. Both approaches have distinct advantages depending on your health situation and financial priorities.\n\nMedicare Advantage plans bundle Parts A, B, and usually D into a single plan with an annual out-of-pocket cap, extra benefits like dental and vision, and often a $0 premium. The trade-off is network restrictions and the need to navigate prior authorizations for some services.\n\nOriginal Medicare with a Medigap supplement gives you access to any Medicare-accepting provider in the country with no network restrictions and minimal cost-sharing. The trade-off is a higher monthly premium for the supplement plan and no built-in drug coverage (you add a standalone Part D plan separately).\n\nFor Hillsborough County residents who are generally healthy, prefer lower monthly costs, and are comfortable staying within a local provider network, Medicare Advantage is often the better financial choice. For those with complex medical needs, multiple specialists, or who travel frequently, Original Medicare with a Medigap plan often provides more predictable coverage.",
     },
     {
-      type: "cta" as const,
+      type: "summary" as const,
       heading: "Compare Every Plan Available in Your Zip Code",
-      text: "Medicare Information Pro serves Brandon, Riverview, Apollo Beach, Sun City Center, Valrico, and the surrounding Hillsborough County area. Our agents compare all 58 plans available in 2026 and help you find the one that fits your doctors, prescriptions, and budget.",
-      buttonText: "Find My Best Plan",
-      buttonHref: "/medicare-advantage-plans-brandon-florida",
+      content: "Medicare Information Pro serves Brandon, Riverview, Apollo Beach, Sun City Center, Valrico, and the surrounding Hillsborough County area. Our agents compare all 58 plans available in 2026 and help you find the one that fits your doctors, prescriptions, and budget. <a href='/medicare-advantage-plans-brandon-florida' class='text-[#1a3fa8] underline underline-offset-2 font-semibold'>Find My Best Plan</a>",
     },
     {
       type: "section" as const,
@@ -240,77 +235,37 @@ const POST = {
         "Hillsborough County offers one of the most competitive Medicare Advantage markets in Florida, with 58 plans from seven major carriers in 2026. The abundance of options is a genuine advantage for local residents, but only if you have a clear framework for comparing them.\n\nFocus on the out-of-pocket maximum, provider network, and drug formulary before you consider the premium. Verify your doctors are in-network every year, not just when you first enroll. If you have a chronic condition or dual Medicare and Medicaid eligibility, explore whether a Special Needs Plan offers better coverage for your situation.\n\nThe <a href='/annual-enrollment-period-guide' class='text-[#1a3fa8] underline underline-offset-2'>Annual Enrollment Period</a> from October 15 to December 7 is your primary window to make changes. Starting your research in September gives you the time to compare plans carefully, verify your providers, and make a confident decision before the deadline.\n\nWorking with a licensed, independent Medicare agent who knows the local Hillsborough County market is the most efficient path to finding the right plan. Our team at Medicare Information Pro serves Brandon, Riverview, Sun City Center, Apollo Beach, Valrico, and the surrounding area at no cost to you.",
     },
   ],
-  faqItems: [
-    {
-      question: "How many Medicare Advantage plans are available in Hillsborough County in 2026?",
-      answer:
-        "There are 58 Medicare Advantage plans available to residents of Hillsborough County, Florida in 2026. These include HMO, PPO, and Special Needs Plans from carriers such as Humana, UnitedHealthcare, Aetna, Florida Blue, Cigna, Wellcare, and Ultimate Health Plans.",
-    },
-    {
-      question: "What is the best Medicare Advantage plan in Hillsborough County?",
-      answer:
-        "There is no single best plan for everyone. The right Medicare Advantage plan depends on your specific doctors, prescriptions, budget, and how often you travel. Working with a local independent Medicare agent who knows the Hillsborough County provider network is the most reliable way to find the plan that fits your situation.",
-    },
-    {
-      question: "Does Medicare Advantage cover dental and vision in Hillsborough County?",
-      answer:
-        "Many Medicare Advantage plans in Hillsborough County include extra benefits such as routine dental care, vision exams and eyeglasses, hearing aids, and over-the-counter allowances. These benefits are not covered by Original Medicare. The specific benefits and coverage limits vary by plan.",
-    },
-    {
-      question: "Can I keep my doctor if I switch to Medicare Advantage?",
-      answer:
-        "It depends on the plan. HMO plans require you to use in-network providers and typically require referrals to see specialists. PPO plans allow you to see out-of-network providers at a higher cost. Before enrolling, always verify that your current doctors and preferred hospitals are in the plan's network for the upcoming year.",
-    },
-    {
-      question: "What is the out-of-pocket maximum for Medicare Advantage plans in Hillsborough County in 2026?",
-      answer:
-        "In 2026, the maximum allowed out-of-pocket limit for Medicare Advantage plans is $9,350 for in-network services and $14,000 for combined in-network and out-of-network services. Individual plans may set lower limits. This cap is one of the key advantages over Original Medicare, which has no out-of-pocket maximum.",
-    },
-    {
-      question: "When can I enroll in a Medicare Advantage plan in Hillsborough County?",
-      answer:
-        "The main enrollment window is the Annual Enrollment Period (AEP), which runs from October 15 to December 7 each year. Changes made during AEP take effect January 1. If you are already in a Medicare Advantage plan, you can also make one switch during the Medicare Advantage Open Enrollment Period (OEP), which runs from January 1 to March 31.",
-    },
-    {
-      question: "What is the difference between an HMO and PPO Medicare Advantage plan?",
-      answer:
-        "HMO plans generally have lower premiums and out-of-pocket costs but require you to use in-network providers and get referrals for specialists. PPO plans offer more flexibility to see any provider, including out-of-network, but typically have higher premiums and cost-sharing. For residents who travel frequently or split time between Florida and another state, a PPO plan often provides better coverage.",
-    },
-  ],
   relatedPosts: [
     {
-      slug: "best-medicare-advantage-plans-florida",
       title: "Best Medicare Advantage Plans in Florida for 2026",
-      excerpt: "A statewide look at the top-rated Medicare Advantage plans available to Florida residents in 2026.",
+      href: "/blog/best-medicare-advantage-plans-florida",
       category: "Plans" as const,
-      readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
     },
     {
-      slug: "original-medicare-vs-medicare-advantage-in-florida",
       title: "Original Medicare vs. Medicare Advantage in Florida",
-      excerpt: "A detailed comparison of Original Medicare and Medicare Advantage for Florida residents.",
+      href: "/blog/original-medicare-vs-medicare-advantage-in-florida",
       category: "Plans" as const,
-      readTime: "11 min read",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
     },
     {
-      slug: "annual-enrollment-period-guide",
       title: "Medicare Annual Enrollment Period: Your Complete Guide",
-      excerpt: "Everything you need to know about the October 15 to December 7 enrollment window.",
+      href: "/blog/annual-enrollment-period-guide",
       category: "Enrollment" as const,
-      readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
     },
   ],
 };
 
 export default function Page() {
   return (
-    <BlogPostClient
-      post={POST}
-      articleSchema={articleSchema}
-      faqSchema={faqSchema}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
   );
 }
