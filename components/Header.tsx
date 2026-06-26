@@ -76,7 +76,7 @@ const NAV_ITEMS: NavItem[] = [
         { heading: "Avoid Penalties", links: [
           { label: "Part B Late Penalty", href: "/enrollment-timeline#penalty-partb", desc: "10% per year late" },
           { label: "Part D Late Penalty", href: "/enrollment-timeline#penalty-partd", desc: "1% per month late" },
-          { label: "Working Past 65", href: "/blog/working-past-65", desc: "Employer coverage rules" },
+          { label: "Working Past 65", href: "/working-past-65", desc: "Employer coverage rules" },
           { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
         ]},
       ],

@@ -21,19 +21,25 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        // Old stale slug with year in URL — 301 to clean evergreen slug
+        // Old stale slugs with year — redirect to clean evergreen slugs at root level
         source: "/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
-        destination: "/blog/medicare-part-d-out-of-pocket-cap",
+        destination: "/medicare-part-d-out-of-pocket-cap",
         permanent: true,
       },
       {
         source: "/blog/2025-medicare-scams-florida",
-        destination: "/blog/medicare-scams-florida",
+        destination: "/medicare-scams-florida",
         permanent: true,
       },
       {
         source: "/blog/medicare-ambulance-coverage-2025",
-        destination: "/blog/does-medicare-cover-ambulance-rides",
+        destination: "/does-medicare-cover-ambulance-rides",
+        permanent: true,
+      },
+      {
+        // Catch-all: redirect any /blog/[slug] to /[slug]
+        source: "/blog/:slug",
+        destination: "/:slug",
         permanent: true,
       },
     ];

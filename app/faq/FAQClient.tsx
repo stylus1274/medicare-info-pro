@@ -52,12 +52,12 @@ const categories: Category[] = [
       {
         q: "Do I have to enroll in Medicare at 65 if I am still working?",
         a: "Not necessarily. If you or your spouse has employer-sponsored health coverage through a current employer with 20 or more employees, you can delay Medicare enrollment without penalty. However, you must enroll within 8 months of losing that coverage. If your employer has fewer than 20 employees, Medicare becomes your primary insurance at 65 and you should enroll.",
-        link: { label: "Working Past 65 Guide", href: "/blog/working-past-65" },
+        link: { label: "Working Past 65 Guide", href: "/working-past-65" },
       },
       {
         q: "How do I enroll in Medicare if I am not collecting Social Security?",
         a: "If you are not yet receiving Social Security benefits, Medicare will not automatically enroll you. You must sign up yourself through Social Security online at ssa.gov, by calling 1-800-772-1213, or by visiting your local Social Security office.",
-        link: { label: "Medicare Without Social Security", href: "/blog/medicare-without-social-security" },
+        link: { label: "Medicare Without Social Security", href: "/medicare-without-social-security" },
       },
       {
         q: "What is the Annual Enrollment Period?",
@@ -132,7 +132,7 @@ const categories: Category[] = [
       {
         q: "What is the best Medigap plan?",
         a: "Plan G is the most comprehensive Medigap plan available to new Medicare enrollees (Plan F is no longer available to those who became eligible after January 1, 2020). Plan G covers the Part A deductible, Part A coinsurance, Part B coinsurance, skilled nursing facility coinsurance, and foreign travel emergency care. You pay only the Part B deductible of $283 per year out of pocket.",
-        link: { label: "Why Choose Medigap Plan G?", href: "/blog/why-choose-medigap-plan-g" },
+        link: { label: "Why Choose Medigap Plan G?", href: "/why-choose-medigap-plan-g" },
       },
       {
         q: "When is the best time to buy a Medigap plan?",

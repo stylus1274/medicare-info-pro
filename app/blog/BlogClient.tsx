@@ -70,7 +70,7 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
-    slug: "/blog/working-past-65",
+    slug: "/working-past-65",
     title: "Working Past 65: When to Enroll in Medicare",
     excerpt:
       "If you're still working at 65 with employer coverage, you may not need to enroll in Medicare right away , but the rules are nuanced and the penalties for getting it wrong are permanent. Here's everything you need to know.",
@@ -83,7 +83,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/plan-g-complete-guide",
+    slug: "/plan-g-complete-guide",
     title: "Medicare Supplement Plan G: The Complete 2026 Guide",
     excerpt:
       "Plan G has become the most popular Medigap plan in America , and for good reason. We break down exactly what it covers, what it costs, and who it's best for.",
@@ -95,7 +95,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/does-medicare-cover-life-alert",
+    slug: "/does-medicare-cover-life-alert",
     title: "Does Medicare Cover Life Alert?",
     excerpt:
       "Original Medicare doesn't cover personal emergency response systems like Life Alert , but some Medicare Advantage plans do. Here's what to look for when comparing plans.",
@@ -107,7 +107,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/2026-medicare-advantage-changes",
+    slug: "/2026-medicare-advantage-changes",
     title: "2026 Medicare Advantage Changes: What Enrollees Need to Know",
     excerpt:
       "CMS has finalized significant changes to Medicare Advantage for 2026, including new Star Ratings adjustments, prior authorization reforms, and benefit changes. Here's what's changing and how it affects you.",
@@ -119,7 +119,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/irmaa-explained",
+    slug: "/irmaa-explained",
     title: "IRMAA Explained: How Your Income Affects Your Medicare Premiums",
     excerpt:
       "If your income exceeds certain thresholds, you'll pay more for Medicare Part B and Part D. We explain how IRMAA works, the 2026 brackets, and how to appeal a surcharge you believe is incorrect.",
@@ -131,7 +131,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/part-d-2000-cap",
+    slug: "/part-d-2000-cap",
     title: "The $2,000 Part D Out-of-Pocket Cap: What It Means for You",
     excerpt:
       "Medicare Part D now has a $2,000 annual out-of-pocket cap , the most significant drug coverage change in decades. Here's how it works and who benefits most.",
@@ -143,7 +143,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medigap-open-enrollment",
+    slug: "/medigap-open-enrollment",
     title: "Medigap Open Enrollment: Your One Chance for Guaranteed Coverage",
     excerpt:
       "Your 6-month Medigap Open Enrollment Period begins when you turn 65 and enroll in Part B. Miss it, and insurers can deny you coverage or charge higher premiums based on your health history.",
@@ -155,7 +155,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/annual-enrollment-period-guide",
+    slug: "/annual-enrollment-period-guide",
     title: "Annual Enrollment Period Guide: How to Review and Switch Plans",
     excerpt:
       "Every year from October 15 to December 7, Medicare beneficiaries can switch plans. Here's how to review your current coverage, compare alternatives, and make the best choice.",
@@ -167,7 +167,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-coverage-for-scooters",
+    slug: "/medicare-coverage-for-scooters",
     title: "Does Medicare Cover Power Wheelchairs and Mobility Scooters?",
     excerpt:
       "Medicare Part B covers power wheelchairs and mobility scooters as durable medical equipment, but only when strict medical necessity criteria are met. Here is exactly what is required and how to navigate the approval process.",
@@ -179,7 +179,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/how-medicare-premiums-are-calculated",
+    slug: "/how-medicare-premiums-are-calculated",
     title: "How Medicare Premiums Are Calculated in 2026",
     excerpt:
       "Medicare premiums are not one-size-fits-all. Your Part B and Part D premiums depend on your income from two years ago, your work history affects Part A costs, and Medicare Advantage premiums vary by plan and county.",
@@ -191,7 +191,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/why-is-medicare-coverage-so-important",
+    slug: "/why-is-medicare-coverage-so-important",
     title: "Why Is Medicare Coverage So Important? 7 Reasons That Matter",
     excerpt:
       "Medicare is not just a government benefit. For most Americans over 65, it is the primary financial protection against medical costs that can otherwise wipe out decades of savings.",
@@ -202,7 +202,7 @@ const ARTICLES: Article[] = [
     image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
     live: true,},
   {
-    slug: "/blog/does-medicare-cover-ambulance-rides",
+    slug: "/does-medicare-cover-ambulance-rides",
     title: "Does Medicare Cover Ambulance Rides in 2026?",
     excerpt:
       "Ambulance rides can cost thousands of dollars. Medicare Part B covers them when medically necessary, but strict rules determine when coverage applies, what you owe, and how to avoid surprise bills.",
@@ -214,7 +214,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/why-is-health-insurance-so-expensive-in-florida",
+    slug: "/why-is-health-insurance-so-expensive-in-florida",
     title: "Why Is Health Insurance So Expensive in Florida?",
     excerpt:
       "Florida residents consistently pay more for health insurance than most other Americans. An older population, a large uninsured pool, high hospital prices, and a fragmented insurance market all push premiums higher. Here is what is driving the cost and what you can actually do about it.",
@@ -226,7 +226,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/best-medicare-advantage-plans-florida",
+    slug: "/best-medicare-advantage-plans-florida",
     title: "Best Medicare Advantage Plans in Florida 2026",
     excerpt:
       "Florida has one of the most competitive Medicare Advantage markets in the country. Knowing which plans consistently deliver strong value requires looking beyond the premium and understanding what each plan actually covers in your specific area.",
@@ -238,7 +238,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+    slug: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
     title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
     excerpt:
       "Signing up for Medicare is something you can absolutely do on your own. This step-by-step guide walks through every step, from checking your eligibility to confirming your coverage is active.",
@@ -250,7 +250,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-qualifications-florida",
+    slug: "/medicare-qualifications-florida",
     title: "Medicare Qualifications in Florida: Who Is Eligible?",
     excerpt:
       "Most people think of Medicare as a program that starts at 65, but the eligibility rules are more nuanced than that. Age, work history, disability status, and specific medical conditions all affect when and how you qualify.",
@@ -262,7 +262,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    slug: "/how-much-does-health-insurance-cost-per-month-in-florida",
     title: "How Much Does Health Insurance Cost Per Month in Florida?",
     excerpt:
       "Florida health insurance premiums are among the highest in the country. What you pay depends on your age, the type of coverage, and whether you qualify for subsidies. Here is a clear breakdown of 2026 costs across every major coverage type.",
@@ -274,7 +274,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/what-are-the-best-medicare-plans-for-seniors",
+    slug: "/what-are-the-best-medicare-plans-for-seniors",
     title: "What Are the Best Medicare Plans for Seniors?",
     excerpt:
       "There is no single best Medicare plan. The right choice depends on your health, your doctors, your medications, and how much financial risk you are comfortable carrying. This guide walks through every major option so you can make a confident, informed decision.",
@@ -286,7 +286,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/is-reinstating-a-part-d-plan-possible",
+    slug: "/is-reinstating-a-part-d-plan-possible",
     title: "Is Reinstating a Part D Plan Possible?",
     excerpt:
       "Dropping a Medicare Part D plan or missing your initial enrollment window can have lasting financial consequences. Whether you can reinstate coverage depends on your specific situation and which enrollment period applies. Here is what you need to know.",
@@ -298,7 +298,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+    slug: "/how-to-reduce-medicare-premiums-based-on-income-2026",
     title: "How to Reduce Medicare Premiums Based on Income 2026",
     excerpt:
       "If your income is above certain thresholds, you pay more for Medicare Parts B and D through a surcharge called IRMAA. Understanding how IRMAA is calculated, when you can appeal it, and how to plan your income to minimize it can save you hundreds or even thousands of dollars per year.",
@@ -310,7 +310,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-advantage-changes-2026-florida",
+    slug: "/medicare-advantage-changes-2026-florida",
     title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
     excerpt:
       "Medicare Advantage plans change every year, but 2026 brings more significant shifts than most. Florida enrollees who do not review their plan during the Annual Enrollment Period risk facing higher costs, reduced benefits, or coverage gaps.",
@@ -322,7 +322,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-set-aside-explained",
+    slug: "/medicare-set-aside-explained",
     title: "Medicare Set-Aside Explained: What It Is and When You Need One",
     excerpt:
       "If you are settling a personal injury or workers compensation claim and you are a Medicare beneficiary, you may need a Medicare Set-Aside arrangement. Getting this wrong can result in Medicare refusing to pay your future medical bills.",
@@ -334,7 +334,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/florida-medicare-if-still-working-at-65",
+    slug: "/florida-medicare-if-still-working-at-65",
     title: "Florida Medicare If Still Working at 65: What You Need to Know",
     excerpt:
       "Turning 65 while still employed is increasingly common in Florida. Whether you must enroll in Medicare, can delay it, or should coordinate it with your employer plan depends on the size of your employer and the type of coverage you have.",
@@ -346,7 +346,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/best-medicare-advantage-plans-hillsborough-county",
+    slug: "/best-medicare-advantage-plans-hillsborough-county",
     title: "Best Medicare Advantage Plans in Hillsborough County for 2026",
     excerpt:
       "With 58 Medicare Advantage plans available in Hillsborough County in 2026, choosing the right one requires more than comparing premiums. This guide breaks down the top carriers, plan types, extra benefits, and the key questions every local resident should ask before enrolling.",
@@ -359,7 +359,7 @@ const ARTICLES: Article[] = [
     sortOrder: 1,
   },
   {
-    slug: "/blog/medicare-out-of-pocket-costs",
+    slug: "/medicare-out-of-pocket-costs",
     title: "Medicare Out-of-Pocket Costs: Your Guide to Copays, Deductibles, and Maximizing Savings",
     excerpt:
       "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to protect yourself from unexpected costs.",
@@ -372,7 +372,7 @@ const ARTICLES: Article[] = [
     sortOrder: 2,
   },
   {
-    slug: "/blog/how-to-get-help-paying-for-medicare",
+    slug: "/how-to-get-help-paying-for-medicare",
     title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
     excerpt:
       "If you have limited income or resources, you may qualify for programs that significantly reduce your Medicare costs. This guide explains every major assistance program, who qualifies, and exactly how to apply.",
@@ -385,7 +385,7 @@ const ARTICLES: Article[] = [
     sortOrder: 3,
   },
   {
-    slug: "/blog/does-medicare-cover-home-health-care",
+    slug: "/does-medicare-cover-home-health-care",
     title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
     excerpt:
       "Medicare covers skilled home health care, but only when specific eligibility criteria are met. Understanding what qualifies, what is excluded, and how long coverage lasts can help you plan ahead and avoid unexpected costs.",
@@ -398,7 +398,7 @@ const ARTICLES: Article[] = [
     sortOrder: 4,
   },
   {
-    slug: "/blog/what-is-the-special-enrollment-period",
+    slug: "/what-is-the-special-enrollment-period",
     title: "What Is the Medicare Special Enrollment Period and When Can You Use It?",
     excerpt:
       "Missing your initial Medicare enrollment window does not mean you are out of options. The Special Enrollment Period gives you a second chance to enroll or make changes when a qualifying life event occurs.",
@@ -411,7 +411,7 @@ const ARTICLES: Article[] = [
     sortOrder: 4,
   },
   {
-    slug: "/blog/does-medicare-cover-cataract-surgery",
+    slug: "/does-medicare-cover-cataract-surgery",
     title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
     excerpt:
       "Cataracts are the leading cause of vision loss in adults over 65. Medicare Part B covers medically necessary cataract surgery including a standard lens implant — but premium lenses, laser upgrades, and routine vision care are handled differently.",
@@ -424,7 +424,7 @@ const ARTICLES: Article[] = [
     sortOrder: 4,
   },
   {
-    slug: "/blog/does-medicare-cover-ozempic",
+    slug: "/does-medicare-cover-ozempic",
     title: "Does Medicare Cover Ozempic? Coverage, Costs, and Alternatives",
     excerpt:
       "Ozempic is one of the most prescribed medications in the country, but Medicare coverage depends entirely on why your doctor prescribed it. For diabetes, coverage is generally available through Part D. For weight loss alone, coverage is more limited.",
@@ -436,7 +436,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/switch-medicare-advantage-florida",
+    slug: "/switch-medicare-advantage-florida",
     title: "How to Switch Medicare Advantage Plans in Florida",
     excerpt:
       "You are not locked into your Medicare Advantage plan forever. Florida beneficiaries have several windows each year to switch plans, and the right time to switch depends on your situation.",
@@ -448,7 +448,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
+    slug: "/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
     title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
     excerpt:
       "Yes, you can drop your Medicare Advantage plan and return to Original Medicare. But the timing of when you do it, and whether you can get a Medigap supplement afterward, depends on which enrollment window you use.",
@@ -460,7 +460,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/florida-health-insurance-cost",
+    slug: "/florida-health-insurance-cost",
     title: "Florida Health Insurance Cost in 2026: What to Expect",
     excerpt:
       "Health insurance costs in Florida are among the highest in the nation. Whether you are buying through the ACA marketplace, enrolling in Medicare, or evaluating employer coverage, understanding what drives costs helps you find the best value.",
@@ -472,7 +472,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-plans-cancer-treatment",
+    slug: "/medicare-plans-cancer-treatment",
     title: "Medicare Coverage for Cancer Treatment: What Is Covered in 2026",
     excerpt:
       "Medicare covers most cancer treatments including chemotherapy, radiation, surgery, and immunotherapy. But the out-of-pocket costs can be substantial without the right supplemental coverage.",
@@ -484,7 +484,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-scams-florida",
+    slug: "/medicare-scams-florida",
     title: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
     excerpt:
       "Florida consistently ranks among the top states for Medicare fraud. Scammers target Medicare beneficiaries with fake plan offers, genetic testing schemes, and identity theft attempts.",
@@ -496,7 +496,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-supplement-plans-in-florida",
+    slug: "/medicare-supplement-plans-in-florida",
     title: "Medicare Supplement Plans in Florida 2026: Complete Guide",
     excerpt:
       "Medicare Supplement (Medigap) plans fill the gaps in Original Medicare coverage. Florida has one of the most competitive Medigap markets in the country, which means more choices and potentially lower premiums if you know how to shop.",
@@ -508,7 +508,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/how-to-choose-medicare-advantage-plans-2026",
+    slug: "/how-to-choose-medicare-advantage-plans-2026",
     title: "How to Choose a Medicare Advantage Plan in 2026: Step-by-Step Guide",
     excerpt:
       "With hundreds of Medicare Advantage plans available in Florida, choosing the right one requires more than comparing monthly premiums. This step-by-step guide walks you through every factor that matters.",
@@ -520,7 +520,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/original-medicare-vs-medicare-advantage-in-florida",
+    slug: "/original-medicare-vs-medicare-advantage-in-florida",
     title: "Original Medicare vs. Medicare Advantage in Florida 2026: Which Is Right for You?",
     excerpt:
       "The choice between Original Medicare and Medicare Advantage is the most consequential decision most beneficiaries make. Both options have real advantages and real drawbacks.",
@@ -532,7 +532,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/pros-and-cons-of-florida-medicare-supplement-plans",
+    slug: "/pros-and-cons-of-florida-medicare-supplement-plans",
     title: "Pros and Cons of Florida Medicare Supplement Plans 2026",
     excerpt:
       "Medicare Supplement plans offer some of the most comprehensive coverage available to Medicare beneficiaries. But they also come with higher monthly premiums and no extra benefits. Here is the balanced view.",
@@ -544,7 +544,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-age",
+    slug: "/medicare-age",
     title: "What Age Do You Get Medicare? Eligibility Ages Explained",
     excerpt:
       "Most people know Medicare starts at 65, but the rules around exactly when and how you enroll are more nuanced than most people realize. This guide explains every age-based eligibility scenario.",
@@ -556,7 +556,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
+    slug: "/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
     title: "Pros and Cons of Enrolling in a Medicare Advantage Plan in Florida 2026",
     excerpt:
       "Medicare Advantage now covers nearly 60% of Florida Medicare beneficiaries, but that does not mean it is the right choice for everyone. This guide gives you an honest, balanced look at the advantages and disadvantages.",
@@ -568,7 +568,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-supplement-plans-florida-2026",
+    slug: "/medicare-supplement-plans-florida-2026",
     title: "Medicare Supplement Plans Florida 2026: Plan G vs. N vs. F Compared",
     excerpt:
       "Medicare Supplement plans are standardized by the federal government, meaning the benefits for each plan letter are identical regardless of insurer. The only variable is the premium. This guide compares the top plans in Florida for 2026.",
@@ -580,7 +580,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-disability-eligibility-requirements",
+    slug: "/medicare-disability-eligibility-requirements",
     title: "Medicare Disability Eligibility Requirements 2026: Complete Guide",
     excerpt:
       "Medicare is not just for people 65 and older. If you have a qualifying disability, End-Stage Renal Disease, or ALS, you may be eligible for Medicare at any age. This guide explains every disability pathway and the waiting periods involved.",
@@ -592,7 +592,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-issues-for-veterans-tampa",
+    slug: "/medicare-issues-for-veterans-tampa",
     title: "Medicare and VA Benefits for Veterans in Tampa: What You Need to Know in 2026",
     excerpt:
       "Veterans in Tampa have access to both VA healthcare and Medicare, but the two programs do not automatically coordinate. Understanding how they work together can save you thousands of dollars and prevent gaps in coverage.",
@@ -604,7 +604,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-why-are-there-so-many-letters",
+    slug: "/medicare-why-are-there-so-many-letters",
     title: "Why Are There So Many Medicare Plan Letters? A–N Explained",
     excerpt:
       "Medicare supplement plans come in letters A through N, and each letter represents a standardized set of benefits. Understanding what each letter covers helps you choose the right plan without overpaying.",
@@ -616,7 +616,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/value-added-benefits-through-medicare-advantage",
+    slug: "/value-added-benefits-through-medicare-advantage",
     title: "Value-Added Benefits Through Medicare Advantage in 2026: What Is Still Available",
     excerpt:
       "Medicare Advantage plans offer extra benefits beyond Original Medicare: dental, vision, hearing, OTC allowances, transportation, and more. In 2026, many plans have scaled back these benefits. This guide explains what is still available.",
@@ -628,7 +628,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medigap-premium-increases",
+    slug: "/medigap-premium-increases",
     title: "Medigap Premium Increases: Why They Happen and How to Manage Them in Florida",
     excerpt:
       "Medigap premiums do not stay the same year after year. They increase due to inflation, the rating method your insurer uses, and the overall health claims of the pool. Understanding why premiums increase can save you hundreds of dollars per year.",
@@ -640,7 +640,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/why-medicare-denies-mobility-scooter-claims-florida",
+    slug: "/why-medicare-denies-mobility-scooter-claims-florida",
     title: "Why Medicare Denies Mobility Scooter Claims in Florida: Top Reasons and How to Appeal",
     excerpt:
       "Medicare covers power wheelchairs and mobility scooters as Durable Medical Equipment, but the approval process is strict and claims are frequently denied. Learn the top denial reasons and how to build a successful claim.",
@@ -652,7 +652,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/best-medicare-agent-in-florida",
+    slug: "/best-medicare-agent-in-florida",
     title: "How to Find the Best Medicare Agent in Florida: What to Look For in 2026",
     excerpt:
       "Choosing the right Medicare agent in Florida is one of the most important decisions you will make during Medicare enrollment. A good agent saves you time, prevents costly mistakes, and helps you find coverage that fits your actual healthcare needs.",
@@ -664,7 +664,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/5-best-medicare-consultants-in-tampa-bay",
+    slug: "/5-best-medicare-consultants-in-tampa-bay",
     title: "5 Best Medicare Consultants in Tampa Bay: What to Look For in 2026",
     excerpt:
       "Finding the right Medicare consultant in Tampa Bay can save you thousands of dollars and prevent costly enrollment mistakes. This guide explains what separates great consultants from average ones and what to look for when choosing your Medicare advisor.",
@@ -676,7 +676,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/maximize-medicare-benefits-florida-seniors",
+    slug: "/maximize-medicare-benefits-florida-seniors",
     title: "How to Maximize Your Medicare Benefits in Florida: A Complete Guide for 2026",
     excerpt:
       "Most Medicare beneficiaries in Florida use only a fraction of the benefits available to them. Free preventive screenings go unused, cost-reduction programs go unapplied for, and plan choices are made once and never revisited. This guide shows you exactly how to get full value from your Medicare coverage.",
@@ -688,7 +688,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-advantage-travel-benefits-florida-residents",
+    slug: "/medicare-advantage-travel-benefits-florida-residents",
     title: "Medicare Advantage Travel Benefits for Florida Residents: What Is Covered in 2026",
     excerpt:
       "Florida residents who travel frequently or split time between states face a coverage challenge with Medicare Advantage. Most MA plans are built around a local service area, which means coverage outside that area is limited. Understanding how travel benefits work, and choosing the right plan structure, can prevent unexpected out-of-pocket costs when you are away from home.",
@@ -700,7 +700,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/best-medicare-plans-for-snowbirds-in-florida",
+    slug: "/best-medicare-plans-for-snowbirds-in-florida",
     title: "Best Medicare Plans for Snowbirds in Florida 2026: A Complete Guide",
     excerpt:
       "Snowbirds who split time between Florida and a northern state face a Medicare coverage challenge that most beneficiaries do not. The plan that works perfectly in Florida may leave you without coverage for routine care in your other home state. This guide explains your options and how to choose the plan that works best for your dual-state lifestyle.",
@@ -712,7 +712,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/can-i-have-both-medicare-and-medicaid",
+    slug: "/can-i-have-both-medicare-and-medicaid",
     title: "Can I Have Both Medicare and Medicaid? Dual Eligibility Explained for Florida Residents",
     excerpt:
       "Yes, you can have both Medicare and Medicaid at the same time. Beneficiaries who qualify for both programs are called dual-eligible, and they receive some of the most comprehensive coverage available in the U.S. healthcare system. This guide explains how dual eligibility works in Florida, what benefits you receive, and how to enroll.",
@@ -724,7 +724,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-part-d-out-of-pocket-cap",
+    slug: "/medicare-part-d-out-of-pocket-cap",
     title: "Understanding the $2,000 Out-of-Pocket Cap for Medicare Part D in 2025 and 2026",
     excerpt:
       "Starting in 2025, Medicare Part D has a $2,000 annual out-of-pocket cap, the most significant drug coverage improvement in decades. This guide explains how the cap works, what changed from previous years, and how to maximize your savings.",
@@ -736,7 +736,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+    slug: "/resolving-common-challenges-when-selecting-medicare-in-florida",
     title: "Resolving Common Challenges When Selecting Medicare in Florida: A Practical Guide",
     excerpt:
       "Choosing Medicare in Florida comes with unique challenges: plan availability, provider networks, snowbird coverage, and enrollment timing. Learn how to navigate the most common problems Florida beneficiaries face.",
@@ -748,7 +748,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+    slug: "/medicare-and-employer-insurance-after-65-brandon-fl",
     title: "Medicare and Employer Insurance After 65 in Brandon, FL: How They Work Together",
     excerpt:
       "Still working at 65 in Brandon, FL? Learn how Medicare coordinates with employer insurance, when to enroll in Part B, how to avoid penalties, and when Medicare or your employer plan pays first.",
@@ -760,7 +760,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/understanding-medicare-part-b",
+    slug: "/understanding-medicare-part-b",
     title: "Understanding Medicare Part B: Coverage, Costs, and Enrollment in 2026",
     excerpt:
       "Medicare Part B covers doctor visits, outpatient care, preventive services, and medical equipment. Learn what Part B covers, what it costs in 2026, how to enroll, and how to avoid the late enrollment penalty.",
@@ -772,7 +772,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
+    slug: "/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
     title: "Which Medicare Advantage Plans in Tampa Offer Free Post-Hospital Meals?",
     excerpt:
       "Some Medicare Advantage plans in Tampa offer free post-hospital meal delivery as a supplemental benefit. Learn which plans include this benefit, how it works, and how to compare plans in the Tampa Bay area.",
@@ -784,7 +784,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+    slug: "/do-you-need-to-work-with-a-medicare-insurance-agent",
     title: "Do You Need to Work With a Medicare Insurance Agent?",
     excerpt:
       "Working with a Medicare insurance agent is free, but is it necessary? We break down exactly what an agent does, when it makes sense to use one, and when you can confidently go it alone.",
@@ -796,7 +796,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/what-are-the-6-things-medicare-doesnt-cover",
+    slug: "/what-are-the-6-things-medicare-doesnt-cover",
     title: "What Are the 6 Things Medicare Doesn't Cover?",
     excerpt:
       "Original Medicare leaves several significant gaps in coverage. Understanding what Medicare does not cover helps you plan for out-of-pocket costs and decide whether supplemental coverage makes sense for you.",
@@ -808,7 +808,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-broker-vs-agent",
+    slug: "/medicare-broker-vs-agent",
     title: "Medicare Broker vs. Agent: What's the Difference?",
     excerpt:
       "Medicare broker and Medicare agent are often used interchangeably, but there are important differences. Learn what each term means, how they are compensated, and which type of help is best for your situation.",
@@ -820,7 +820,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/affordable-health-insurance-options-for-tampa-families",
+    slug: "/affordable-health-insurance-options-for-tampa-families",
     title: "Affordable Health Insurance Options for Tampa Families",
     excerpt:
       "Tampa families have more health insurance options than many realize. From ACA marketplace plans and Medicaid to Medicare at 65, learn how to find affordable coverage that fits your family's budget.",
@@ -832,7 +832,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/use-medicare-insurance-agent-in-florida",
+    slug: "/use-medicare-insurance-agent-in-florida",
     title: "Why Use a Medicare Insurance Agent in Florida?",
     excerpt:
       "Florida has one of the most competitive Medicare markets in the country. A licensed independent Medicare insurance agent helps you navigate it at no cost to you.",
@@ -844,7 +844,7 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/blog/medicare-vs-medicaid",
+    slug: "/medicare-vs-medicaid",
     title: "Medicare vs. Medicaid: Understanding the Difference",
     excerpt:
       "Medicare and Medicaid are two separate government programs that are often confused. We explain who qualifies for each, what they cover, and how they can work together for dual-eligible beneficiaries.",

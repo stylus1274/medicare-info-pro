@@ -55,7 +55,7 @@ const categories = [
       {
         title: "Working Past 65: How Medicare Works When You Are Still Employed",
         desc: "If you or your spouse still has employer coverage, read this before enrolling.",
-        href: "/blog/working-past-65",
+        href: "/working-past-65",
         badge: "Employment",
         badgeColor: "bg-purple-100 text-purple-800",
       },
@@ -83,7 +83,7 @@ const categories = [
       {
         title: "Why Choose Medigap Plan G?",
         desc: "Plan G is the most popular Medigap plan for new enrollees. Here is why.",
-        href: "/blog/why-choose-medigap-plan-g",
+        href: "/why-choose-medigap-plan-g",
         badge: "Medigap",
         badgeColor: "bg-green-100 text-green-800",
       },
@@ -139,7 +139,7 @@ const categories = [
       {
         title: "Why Medicare Coverage Matters More Than You Think",
         desc: "The real financial risk of gaps in Medicare coverage and how to protect yourself.",
-        href: "/blog/why-is-medicare-coverage-so-important",
+        href: "/why-is-medicare-coverage-so-important",
         badge: "Planning",
         badgeColor: "bg-green-100 text-green-800",
       },
@@ -160,7 +160,7 @@ const categories = [
       {
         title: "Medicare Without Social Security: How to Enroll on Your Own",
         desc: "If you are not yet collecting Social Security, you must enroll in Medicare separately. Here is how.",
-        href: "/blog/medicare-without-social-security",
+        href: "/medicare-without-social-security",
         badge: "Enrollment",
         badgeColor: "bg-blue-100 text-blue-800",
       },

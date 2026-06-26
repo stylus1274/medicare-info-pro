@@ -375,8 +375,8 @@ export default function MedicareSupplementInsurancePlansTampa() {
               <ul className="space-y-2">
                 {[
                   { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-                  { label: "Medigap Open Enrollment", href: "/blog/medigap-open-enrollment" },
-                  { label: "Plan G Complete Guide", href: "/blog/plan-g-complete-guide" },
+                  { label: "Medigap Open Enrollment", href: "/medigap-open-enrollment" },
+                  { label: "Plan G Complete Guide", href: "/plan-g-complete-guide" },
                   { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl" },
                   { label: "Plan Comparison Tool", href: "/plan-comparison" },
                   { label: "Free Consultation", href: "/free-consultation" },

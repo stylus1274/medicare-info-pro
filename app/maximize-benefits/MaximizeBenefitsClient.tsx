@@ -173,7 +173,7 @@ const RELATED_POSTS = [
     date: "April 1, 2026",
     readTime: "9 min read",
     img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
-    href: "/blog/why-choose-medigap-plan-g",
+    href: "/why-choose-medigap-plan-g",
   },
   {
     category: "Medicare Advantage",
