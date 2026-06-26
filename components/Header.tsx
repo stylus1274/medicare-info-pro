@@ -50,6 +50,7 @@ const NAV_ITEMS: NavItem[] = [
         { heading: "Original Medicare", links: [
           { label: "Part A — Hospital", href: "/medicare-part-a", desc: "Inpatient coverage" },
           { label: "Part B — Medical", href: "/medicare-part-b", desc: "Doctor visits & outpatient" },
+          { label: "Part C — Medicare Advantage", href: "/medicare-part-c", desc: "Private plan alternative" },
           { label: "Medigap Supplements", href: "/do-i-need-a-supplement", desc: "Fill the gaps" },
           { label: "Part D Drug Plans", href: "/understanding-part-d", desc: "Prescription coverage" },
         ]},

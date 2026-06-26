@@ -9,6 +9,7 @@ const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/medicare-supplement", priority: 0.9 },
   { path: "/medicare-part-a", priority: 0.8 },
   { path: "/medicare-part-b", priority: 0.8 },
+  { path: "/medicare-part-c", priority: 0.8 },
   { path: "/medicare-part-d", priority: 0.8 },
   { path: "/original-vs-advantage", priority: 0.8 },
   { path: "/coverage", priority: 0.8 },
