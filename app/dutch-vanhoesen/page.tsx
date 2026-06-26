@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Meet Dutch VanHoesen, licensed independent Medicare agent serving Brandon, Riverview, Valrico, and Hillsborough County.",
     url: "https://medicareinfopro.com/dutch-vanhoesen/",
     type: "profile",
-    images: [{ url: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg", width: 800, height: 1000, alt: "Dutch VanHoesen" }],
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/JbVyyBCvRLIIuqgQ.jpg", width: 800, height: 1000, alt: "Dutch VanHoesen" }],
   },
 };
 
@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   name: "Dutch VanHoesen",
   slug: "dutch-vanhoesen",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg",
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/JbVyyBCvRLIIuqgQ.jpg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

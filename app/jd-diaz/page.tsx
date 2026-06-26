@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Meet JD Diaz, licensed independent Medicare agent serving Brandon, Riverview, Valrico, and Hillsborough County.",
     url: "https://medicareinfopro.com/jd-diaz/",
     type: "profile",
-    images: [{ url: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg", width: 800, height: 1000, alt: "JD Diaz" }],
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg", width: 800, height: 1000, alt: "JD Diaz" }],
   },
 };
 
@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   name: "JD Diaz",
   slug: "jd-diaz",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg",
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

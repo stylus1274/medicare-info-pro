@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Meet Paxton DeMent, licensed independent Medicare agent serving Brandon, Riverview, Valrico, and Hillsborough County.",
     url: "https://medicareinfopro.com/paxton-dement/",
     type: "profile",
-    images: [{ url: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg", width: 800, height: 1000, alt: "Paxton DeMent" }],
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/rYnJIbXyXhSEATDJ.jpg", width: 800, height: 1000, alt: "Paxton DeMent" }],
   },
 };
 
@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   name: "Paxton DeMent",
   slug: "paxton-dement",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: "https://medicareinfopro.com/wp-content/uploads/2021/02/paxton-photo-1.jpg",
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/rYnJIbXyXhSEATDJ.jpg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

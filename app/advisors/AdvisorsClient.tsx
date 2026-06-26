@@ -39,7 +39,7 @@ const TEAM_MEMBERS = [
     phone: "813-699-5559",
     location: "Plant City, FL",
     bio: "JD is a licensed insurance agent appointed with the most well-respected carriers in the area. As a third-generation Tampa Bay native, he is passionate about helping clients identify the most competitive plans through a consultative, needs-based approach.",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/JD-Diaz.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg",
     slug: "jd-diaz",
     badge: null,
     specialties: ["Medicare Advantage", "Special Needs Plans", "Part D"],

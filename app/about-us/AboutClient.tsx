@@ -91,7 +91,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W613730",
     phone: "813-699-5559",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/jd-photo-225x300-1.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/jUJZJkjvpOtQygpw.jpg",
     photoPos: "object-[center_20%]",
   },
   {
