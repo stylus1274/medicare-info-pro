@@ -36,8 +36,8 @@ const MEMBER = {
   email: "info@medicareinfopro.com",
   location: "Madeira Beach, FL",
   serviceArea: "Pinellas County, Hillsborough County, and surrounding Tampa Bay communities",
-  photo: null,
-  photoUrl: "",
+  photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/BWlfPJNxFqQKGDUL.jpeg",
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/BWlfPJNxFqQKGDUL.jpeg",
   bio: [
     "Chris Gallimore is a licensed insurance agent and a native Floridian who has called Madeira Beach home for many years. With nearly a decade of experience helping clients navigate Medicare, Chris brings a calm, patient approach to what can often feel like an overwhelming process.",
     "Chris specializes in helping beneficiaries compare Medicare Advantage plans, Medicare Supplement (Medigap) policies, and Part D prescription drug coverage. He takes the time to understand each client's doctors, medications, and budget before making any recommendations, ensuring every client gets a plan that truly fits their life.",

@@ -18,16 +18,16 @@ export interface TeamMemberData {
   yearsExperience?: number;
 }
 
-const GREG_PHOTO = "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg";
+const GREG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png";
 
 const RELATED_TEAM: { name: string; slug: string; photo: string | null }[] = [
-  { name: "Greg Wohl", slug: "greg-wohl", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg" },
-  { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg" },
-  { name: "JD Diaz", slug: "jd-diaz", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/JD.jpg" },
-  { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", photo: "https://medicareinfopro.com/wp-content/uploads/2022/12/Dutch-photo-2023-scaled.jpg" },
-  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", photo: null },
-  { name: "Mark VanHoesen", slug: "mark-vanhoesen", photo: null },
-  { name: "Kelly Webb", slug: "kelly-webb", photo: null },
+  { name: "Greg Wohl", slug: "greg-wohl", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png" },
+  { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg" },
+  { name: "JD Diaz", slug: "jd-diaz", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg" },
+  { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/JbVyyBCvRLIIuqgQ.jpg" },
+  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg" },
+  { name: "Mark VanHoesen", slug: "mark-vanhoesen", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/gISbkFqSnQEUvXao.jpg" },
+  { name: "Kelly Webb", slug: "kelly-webb", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg" },
 ];
 
 function Avatar({ photo, name, size = 48 }: { photo: string | null; name: string; size?: number }) {
