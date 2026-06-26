@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
 const articleSchema = {
   "@context": "https://schema.org",

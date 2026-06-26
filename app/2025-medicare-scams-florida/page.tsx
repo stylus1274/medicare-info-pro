@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import BlogPostClient, { GREG_WOHL } from "../BlogPostClient";
+import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
