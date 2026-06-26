@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Meet Jennifer Loader-Wohl, licensed independent Medicare agent serving Brandon, Riverview, Valrico, and Hillsborough County.",
     url: "https://medicareinfopro.com/jennifer-loader-wohl/",
     type: "profile",
-    images: [{ url: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg", width: 800, height: 1000, alt: "Jennifer Loader-Wohl" }],
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg", width: 800, height: 1000, alt: "Jennifer Loader-Wohl" }],
   },
 };
 
@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   name: "Jennifer Loader-Wohl",
   slug: "jennifer-loader-wohl",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: "https://medicareinfopro.com/wp-content/uploads/2022/12/Jennifer-web-02.jpg",
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

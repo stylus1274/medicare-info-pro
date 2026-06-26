@@ -27,7 +27,7 @@ const TEAM_MEMBERS = [
     phone: "813-756-1100",
     location: "Lithia, FL",
     bio: "Jennifer is a graduate of Florida State University and a licensed insurance agent representing the top carriers in the area. She is an expert on Medicare Advantage Plans, Medicare Supplements, and Part D Drug plans.",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/Jennifer-Loader.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
     slug: "jennifer-loader-wohl",
     badge: null,
     specialties: ["Medicare Advantage", "Medigap", "Part D"],

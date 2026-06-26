@@ -82,7 +82,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W013380",
     phone: "813-756-1100 x102",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Jennifer-C.-Loader-Wohl.jpeg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
     photoPos: "object-center",
   },
   {
@@ -100,7 +100,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # P117166",
     phone: "727-504-0554",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Chris-Gallimore.jpeg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/BWlfPJNxFqQKGDUL.jpeg",
     photoPos: "object-center",
   },
   {
@@ -109,7 +109,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # A075214",
     phone: "813-756-1100 x106",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Paul-Eckstein.jpeg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/LCWjVjohdZHMUbko.jpeg",
     photoPos: "object-[center_15%]",
   },
   {
@@ -118,7 +118,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W127785",
     phone: "727-560-8850",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Kelly-Webb.jpeg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg",
     photoPos: "object-center",
   },
   {
@@ -136,7 +136,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W16104983",
     phone: "727-272-0943",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Mark-VanHoesen-2.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/gISbkFqSnQEUvXao.jpg",
     photoPos: "object-center",
   },
 ];
