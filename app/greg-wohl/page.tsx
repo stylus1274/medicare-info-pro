@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Meet Greg Wohl, founder and licensed independent Medicare agent serving Brandon, Riverview, Valrico, and Hillsborough County.",
     url: "https://medicareinfopro.com/greg-wohl/",
     type: "profile",
-    images: [{ url: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg", width: 800, height: 1000, alt: "Greg Wohl" }],
+    images: [{ url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png", width: 800, height: 1000, alt: "Greg Wohl" }],
   },
 };
 
@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   name: "Greg Wohl",
   slug: "greg-wohl",
   title: "Founder and Licensed Independent Medicare Agent",
-  photoUrl: "https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg",
+  photoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

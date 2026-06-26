@@ -73,7 +73,7 @@ const TEAM_MEMBERS = [
     title: "Founder & Licensed Agent",
     license: "FL License # D009743",
     phone: "813-699-5559",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2024/06/Our-Team-Gregory-Wohl-.jpeg",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
     photoPos: "object-center",
   },
   {

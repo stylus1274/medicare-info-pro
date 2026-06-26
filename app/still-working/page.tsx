@@ -220,7 +220,7 @@ export default function StillWorkingPage() {
               {/* Greg CTA */}
               <div style={{ background: "#0d1f5c", borderRadius: 16, padding: "1.5rem", color: "#fff", textAlign: "center" }}>
                 <img
-                  src="https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png"
                   alt="Greg Wohl, Licensed Medicare Specialist"
                   style={{ width: 80, height: 80, borderRadius: "50%", objectFit: "cover", objectPosition: "top", border: "3px solid #f5a800", margin: "0 auto 1rem" }}
                 />

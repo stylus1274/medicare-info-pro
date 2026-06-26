@@ -374,7 +374,7 @@ export default function MedicareInsuranceAgentTampaFL() {
             <div className="bg-[#1a3fa8] rounded-2xl p-6 text-white sticky top-6">
               <div className="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#f5a800]">
                 <img
-                  src="https://medicareinfopro.com/wp-content/uploads/2022/12/Greg-web-02.jpg"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png"
                   alt="Greg Wohl, Licensed Medicare Agent"
                   className="w-full h-full object-cover"
                 />

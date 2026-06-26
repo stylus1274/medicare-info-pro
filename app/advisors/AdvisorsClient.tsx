@@ -15,7 +15,7 @@ const TEAM_MEMBERS = [
     phone: "813-699-5559",
     location: "Brandon, FL",
     bio: "Greg Wohl is a graduate of the University of South Florida with a Bachelor's Degree in Finance. He has been a licensed agent for 22 years and is an expert on Medicare, serving as one of the leading representatives for these plans in the area.",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2021/02/Greg-Wohl.jpg",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
     slug: "greg-wohl",
     badge: "CMIP Certified",
     specialties: ["Medicare Advantage", "Medigap", "Part D"],
