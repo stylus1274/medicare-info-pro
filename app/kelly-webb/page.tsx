@@ -40,7 +40,7 @@ const member: TeamMemberData = {
   name: "Kelly Webb",
   slug: "kelly-webb",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: null,
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [

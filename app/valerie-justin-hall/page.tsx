@@ -40,7 +40,7 @@ const member: TeamMemberData = {
   name: "Valerie Justin-Hall",
   slug: "valerie-justin-hall",
   title: "Licensed Independent Medicare Agent",
-  photoUrl: null,
+  photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg",
   phone: "813-699-5559",
   email: "info@medicareinfopro.com",
   bio: [
