@@ -37,7 +37,7 @@ const ARTICLES = [
     type: "Guide",
     date: "March 2026",
     readTime: "9 min read",
-    image: "https://medicareinfopro.com/wp-content/uploads/2026/03/why-medicare-denies-mobiity-scooter-coverage-1080x675.png",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1080&q=80",
     featured: true,
   },
   {
@@ -51,7 +51,7 @@ const ARTICLES = [
     type: "Guide",
     date: "March 2026",
     readTime: "7 min read",
-    image: "https://medicareinfopro.com/wp-content/uploads/2026/03/maximize-medicare-benefits-florida-seniors-1080x675.png",
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1080&q=80",
     featured: false,
   },
   {
@@ -65,7 +65,7 @@ const ARTICLES = [
     type: "FAQ",
     date: "March 2026",
     readTime: "5 min read",
-    image: "https://medicareinfopro.com/wp-content/uploads/2026/03/medicare-coverage-for-mobility-scooters-1080x675.png",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1080&q=80",
     featured: false,
   },
   {
@@ -79,7 +79,7 @@ const ARTICLES = [
     type: "Guide",
     date: "August 2024",
     readTime: "10 min read",
-    image: "https://medicareinfopro.com/wp-content/uploads/2024/08/How-to-Get-Started-image-3.jpg",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1080&q=80",
     featured: false,
   },
   {
@@ -93,7 +93,7 @@ const ARTICLES = [
     type: "Guide",
     date: "February 2026",
     readTime: "8 min read",
-    image: "https://medicareinfopro.com/wp-content/uploads/2026/02/medicare-advisor-talking-to-elder-client-1080x675.jpg",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1080&q=80",
     featured: false,
   },
   {

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://medicareinfopro.com/wp-content/uploads/2026/02/medicare-advisor-talking-to-elder-client-1080x675.jpg",
+        url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
         width: 1080,
         height: 675,
         alt: "Medicare resources and guides",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Medicare Resources: Guides, FAQs & Tools | Medicare Information Pro",
     description:
       "Browse 200+ Medicare guides, FAQs, and free tools covering enrollment, costs, plan comparisons, and coverage.",
-    images: ["https://medicareinfopro.com/wp-content/uploads/2026/02/medicare-advisor-talking-to-elder-client-1080x675.jpg"],
+    images: ["https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80"],
   },
   alternates: {
     canonical: "https://medicare-info-pro.vercel.app/resources",

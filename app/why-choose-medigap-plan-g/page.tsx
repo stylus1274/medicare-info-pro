@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png",
+        url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
         width: 1200,
         height: 630,
         alt: "Why Choose Medigap Plan G  | Medicare Information Pro",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Why Medigap Plan G is Your Best Medicare Choice",
     description:
       "Comprehensive coverage, no network restrictions, and lower premiums than Plan F. Here's why Plan G is the most popular Medigap plan.",
-    images: ["https://medicareinfopro.com/wp-content/uploads/2024/08/Why-Choose-Medigap-Plan-G-3.png"],
+    images: ["https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80"],
   },
   alternates: {
     canonical: "https://medicare-info-pro.vercel.app/blog/why-choose-medigap-plan-g",
