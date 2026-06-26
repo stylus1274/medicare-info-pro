@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/medicare-part-c-explained",
+        destination: "/medicare-part-c",
+        permanent: true,
+      },
+      {
+        source: "/medicare-part-c-explained/",
+        destination: "/medicare-part-c",
+        permanent: true,
+      },
+      {
         // Catch-all: redirect any /blog/[slug] to /[slug]
         source: "/blog/:slug",
         destination: "/:slug",
