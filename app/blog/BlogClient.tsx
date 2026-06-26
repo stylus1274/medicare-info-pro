@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-advantage-vs-medigap",
+    title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
+    excerpt:
+      "Medicare Advantage and Medigap are the two main paths beyond Original Medicare, and they work in fundamentally different ways. This guide compares costs, coverage, flexibility, and trade-offs so you can choose the option that fits your health and budget.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "13 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/best-medicare-advantage-plans-hillsborough-county",
     title: "Best Medicare Advantage Plans in Hillsborough County for 2026",
     excerpt:
@@ -356,7 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "12 min read",
     image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
     live: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     slug: "/medicare-out-of-pocket-costs",
