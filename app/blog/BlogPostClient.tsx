@@ -345,7 +345,7 @@ export default function BlogPostClient({ post }: Props) {
                 return (
                   <div key={idx} className="mb-10">
                     {section.content.split("\n\n").map((para, i) => (
-                      <p key={i} className="text-gray-800 leading-relaxed mb-4 text-[1rem]">{para}</p>
+                      <p key={i} className="text-gray-800 leading-relaxed mb-4 text-[1rem]" dangerouslySetInnerHTML={{ __html: para }} />
                     ))}
                   </div>
                 );
