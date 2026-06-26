@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/does-medicare-cover-dental",
   "/medicare-advantage-vs-medigap",
   "/best-medicare-advantage-plans-hillsborough-county",
   "/medicare-out-of-pocket-costs",

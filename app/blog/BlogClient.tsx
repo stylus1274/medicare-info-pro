@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/does-medicare-cover-dental",
+    title: "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026",
+    excerpt:
+      "Original Medicare does not cover routine dental care, and the gap can be expensive. This guide explains exactly what Medicare Parts A and B cover for dental, how Medicare Advantage plans fill the gap, and the best options for getting dental coverage alongside Medicare.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "June 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1588776814546-1ffbb172d936?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-advantage-vs-medigap",
     title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
     excerpt:
@@ -356,7 +369,7 @@ const ARTICLES: Article[] = [
     readTime: "13 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
     live: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     slug: "/best-medicare-advantage-plans-hillsborough-county",
