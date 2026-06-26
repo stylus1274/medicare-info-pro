@@ -127,7 +127,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W336278",
     phone: "813-699-5559",
-    photo: "https://medicareinfopro.com/wp-content/uploads/2022/05/valerie-headshot-214x300.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg",
     photoPos: "object-[center_15%]",
   },
   {
