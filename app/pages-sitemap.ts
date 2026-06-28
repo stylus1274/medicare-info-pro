@@ -23,7 +23,6 @@ const CORE_PAGES = [
   "/resources",
   "/guides",
   "/faq",
-  "/faqs",
   "/plan-comparison",
   "/medicare-101",
   "/medicare-quiz",

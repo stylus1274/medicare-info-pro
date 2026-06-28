@@ -23,7 +23,6 @@ const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/resources", priority: 0.7 },
   { path: "/guides", priority: 0.7 },
   { path: "/faq", priority: 0.8 },
-  { path: "/faqs", priority: 0.8 },
   { path: "/plan-comparison", priority: 0.8 },
   { path: "/medicare-101", priority: 0.8 },
   { path: "/medicare-quiz", priority: 0.7 },
