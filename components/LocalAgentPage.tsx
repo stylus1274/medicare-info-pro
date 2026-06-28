@@ -296,6 +296,18 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
               </ul>
             </div>
 
+            <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
+              <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Medicare Plan Types</div>
+              <ul className="space-y-2">
+                <li><Link href="/medicare-advantage" className="text-[#1a3fa8] hover:underline text-sm">Medicare Advantage Plans in Florida</Link></li>
+                <li><Link href="/medicare-supplement" className="text-[#1a3fa8] hover:underline text-sm">Medicare Supplement (Medigap) Plans</Link></li>
+                <li><Link href="/medicare-part-d" className="text-[#1a3fa8] hover:underline text-sm">Medicare Part D Drug Coverage</Link></li>
+                <li><Link href="/original-vs-advantage" className="text-[#1a3fa8] hover:underline text-sm">Original Medicare vs. Medicare Advantage</Link></li>
+                <li><Link href="/medicare-part-a" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part A Cover?</Link></li>
+                <li><Link href="/medicare-part-b" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part B Cover?</Link></li>
+              </ul>
+            </div>
+
             <div className="bg-white rounded-xl p-5 border border-gray-200">
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Our Office</div>
               <div className="space-y-2 text-sm text-gray-600">

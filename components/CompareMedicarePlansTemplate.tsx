@@ -465,6 +465,24 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
           </section>
         )}
 
+        {/* Medicare Plan Types Internal Links */}
+        <section className="py-10 bg-white border-t border-gray-100">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6">
+              <h2 className="font-serif text-xl font-bold text-gray-900">Learn More About Your Medicare Options</h2>
+              <p className="text-gray-500 text-sm mt-1">Explore our in-depth guides to every part of Medicare.</p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/medicare-advantage" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Advantage Plans</Link>
+              <Link href="/medicare-supplement" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Supplement (Medigap)</Link>
+              <Link href="/medicare-part-d" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Part D Drug Coverage</Link>
+              <Link href="/original-vs-advantage" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Original Medicare vs. Advantage</Link>
+              <Link href="/medicare-part-a" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part A</Link>
+              <Link href="/medicare-part-b" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part B</Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="py-14 bg-gray-50">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
