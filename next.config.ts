@@ -37,6 +37,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/medicare-ambulance-coverage-2025",
+        destination: "/does-medicare-cover-ambulance-rides",
+        permanent: true,
+      },
+      {
         source: "/medicare-part-c-explained",
         destination: "/medicare-part-c",
         permanent: true,

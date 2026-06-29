@@ -10,7 +10,6 @@ const BLOG_SLUGS = [
   "/how-to-get-help-paying-for-medicare",
   "/feeling-trapped-in-medicare-advantage-plans",
   "/2025-medicare-scams-florida",
-  "/medicare-ambulance-coverage-2025",
   "/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
   "/does-medicare-cover-home-health-care",
   "/what-is-the-special-enrollment-period",
