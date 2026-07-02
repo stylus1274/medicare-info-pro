@@ -106,14 +106,17 @@ export const metadata: Metadata = {
 };
 
 const POST = {
+  slug: "how-to-enroll-in-medicare",
   title: "How to Enroll in Medicare: A Complete Step-by-Step Guide for 2026",
-  description:
+  excerpt:
     "Everything you need to know about Medicare enrollment windows, how to apply, what to do if you are still working, and how to avoid late penalties.",
+  category: "Enrollment" as const,
   date: "July 1, 2026",
   updatedDate: "July 1, 2026",
   readTime: "11 min read",
   author: GREG_WOHL,
-  heroImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Person reviewing Medicare enrollment paperwork",
   sections: [
     {
       type: "intro" as const,
@@ -346,32 +349,32 @@ const POST = {
     {
       title: "What Is the Special Enrollment Period?",
       href: "/what-is-the-special-enrollment-period",
-      description: "When and how to use a Special Enrollment Period to avoid late penalties.",
+      category: "Enrollment" as const,
     },
     {
       title: "Annual Enrollment Period Guide",
       href: "/annual-enrollment-period-guide",
-      description: "How to use the AEP to review and change your Medicare coverage each fall.",
+      category: "Enrollment" as const,
     },
     {
       title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
       href: "/medicare-advantage-vs-medigap",
-      description: "Compare the two main paths for supplementing Original Medicare.",
+      category: "Plans" as const,
     },
     {
       title: "Medigap Open Enrollment: Your Most Important Window",
       href: "/medigap-open-enrollment",
-      description: "Why the 6-month Medigap open enrollment window after Part B matters so much.",
+      category: "Supplements" as const,
     },
     {
       title: "Medicare Penalty Calculator",
       href: "/medicare-penalty-calculator",
-      description: "Estimate the cost of a late enrollment penalty before it happens.",
+      category: "Enrollment" as const,
     },
     {
       title: "Still Working at 65? Medicare and Employer Coverage Explained",
       href: "/still-working",
-      description: "How Medicare coordinates with employer coverage when you work past 65.",
+      category: "Enrollment" as const,
     },
   ],
 };
