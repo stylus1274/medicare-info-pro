@@ -120,10 +120,7 @@ const POST = {
   sections: [
     {
       type: "intro" as const,
-      paragraphs: [
-        "Enrolling in Medicare sounds straightforward until you realize there are multiple enrollment windows, different rules depending on whether you are still working, and permanent financial penalties if you miss the wrong deadline. Getting it right the first time matters.",
-        "This guide walks you through every Medicare enrollment period, explains exactly how to apply, and covers the special situations — employer coverage, disability, COBRA, and more — that affect when and how you should enroll.",
-      ],
+      content: "Enrolling in Medicare sounds straightforward until you realize there are multiple enrollment windows, different rules depending on whether you are still working, and permanent financial penalties if you miss the wrong deadline. Getting it right the first time matters.\n\nThis guide walks you through every Medicare enrollment period, explains exactly how to apply, and covers the special situations - employer coverage, disability, COBRA, and more - that affect when and how you should enroll.",
     },
     {
       type: "keyTakeaways" as const,
