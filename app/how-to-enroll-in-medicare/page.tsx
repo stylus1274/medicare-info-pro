@@ -135,7 +135,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Step 1: Understand Your Enrollment Window",
+      heading: "Step 1: Understand Your Enrollment Window",
       content: `<p>Before you apply, you need to know <strong>which enrollment period applies to you</strong>. There are four main windows:</p>
 
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
@@ -174,7 +174,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Step 2: Decide Whether to Enroll Now or Delay",
+      heading: "Step 2: Decide Whether to Enroll Now or Delay",
       content: `<p>Not everyone needs to enroll at 65. Whether you should enroll immediately or delay depends on your current health coverage situation.</p>
 
 <h3 style="font-size:1.1rem;font-weight:600;margin:1.25rem 0 0.5rem;">Enroll at 65 if you:</h3>
@@ -198,7 +198,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Step 3: Enroll in Medicare Parts A and B",
+      heading: "Step 3: Enroll in Medicare Parts A and B",
       content: `<p>Medicare Parts A and B are administered by the Social Security Administration (SSA), not by private insurers. There are three ways to apply:</p>
 
 <h3 style="font-size:1.1rem;font-weight:600;margin:1.25rem 0 0.5rem;">Option 1: Apply Online (Fastest)</h3>
@@ -219,7 +219,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Step 4: Choose How You Want to Receive Your Benefits",
+      heading: "Step 4: Choose How You Want to Receive Your Benefits",
       content: `<p>Once you are enrolled in Parts A and B, you have a choice about <strong>how you receive your Medicare benefits</strong>:</p>
 
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
@@ -250,7 +250,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Step 5: Understand the Late Enrollment Penalties",
+      heading: "Step 5: Understand the Late Enrollment Penalties",
       content: `<p>Missing your enrollment window without a qualifying exception results in <strong>permanent financial penalties</strong> that are added to your monthly premiums for as long as you have Medicare.</p>
 
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem;">
@@ -286,7 +286,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Special Situations: What to Do If Your Situation Is Not Straightforward",
+      heading: "Special Situations: What to Do If Your Situation Is Not Straightforward",
       content: `<h3 style="font-size:1.1rem;font-weight:600;margin:0 0 0.5rem;">Still Working at 65 With Employer Coverage</h3>
 <p>You can delay Parts A and B without penalty as long as you are covered by a group health plan through your own or your spouse's current employer (20+ employees). When that coverage ends, you have an 8-month Special Enrollment Period to sign up for Part B without penalty. Do not wait for COBRA to end — the SEP starts when active employment ends, not when COBRA ends.</p>
 
@@ -304,7 +304,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "What Happens After You Enroll",
+      heading: "What Happens After You Enroll",
       content: `<p>After your application is processed, here is what to expect:</p>
 <ol style="margin:0.75rem 0 1rem 1.5rem;line-height:2;">
   <li><strong>Medicare card arrives:</strong> Your red, white, and blue Medicare card will arrive in the mail within 4-6 weeks of your coverage start date.</li>
@@ -320,7 +320,7 @@ const POST = {
     },
     {
       type: "section" as const,
-      title: "Frequently Asked Questions",
+      heading: "Frequently Asked Questions",
       content: `<div style="margin-top:0.5rem;">
 <h3 style="font-size:1.05rem;font-weight:600;margin:1.25rem 0 0.4rem;">When should I enroll in Medicare?</h3>
 <p>Most people should enroll during their Initial Enrollment Period, which opens 3 months before the month they turn 65. Enrolling in those first 3 months ensures coverage starts on the first day of your birthday month.</p>
