@@ -125,12 +125,12 @@ const POST = {
     {
       type: "keyTakeaways" as const,
       items: [
-        "Most people have a 7-month Initial Enrollment Period (IEP) centered on their 65th birthday",
-        "You can enroll online at SSA.gov, by phone, or in person at a Social Security office",
-        "If you have qualifying employer coverage, you can delay enrollment without penalty",
-        "Missing your enrollment window without a valid exception triggers a permanent Part B late penalty",
-        "You must be enrolled in Parts A and B before joining a Medicare Advantage or Part D plan",
-        "A licensed Medicare specialist can help you choose the right plan after you enroll in Original Medicare",
+        { label: "Initial Enrollment Period", text: "Most people have a 7-month Initial Enrollment Period (IEP) centered on their 65th birthday" },
+        { label: "How to Apply", text: "You can enroll online at SSA.gov, by phone, or in person at a Social Security office" },
+        { label: "Employer Coverage", text: "If you have qualifying employer coverage, you can delay enrollment without penalty" },
+        { label: "Late Penalty", text: "Missing your enrollment window without a valid exception triggers a permanent Part B late penalty" },
+        { label: "Parts A and B First", text: "You must be enrolled in Parts A and B before joining a Medicare Advantage or Part D plan" },
+        { label: "Get Help", text: "A licensed Medicare specialist can help you choose the right plan after you enroll in Original Medicare" },
       ],
     },
     {
