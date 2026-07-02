@@ -52,6 +52,7 @@ const CORE_PAGES: { path: string; priority: number }[] = [
 
 const COVERAGE_PAGES: string[] = [
   "/coverage/medicare-advantage",
+  "/coverage/long-term-care",
   "/coverage/cancer-treatment",
   "/coverage/dental",
   "/coverage/hearing-aids",
