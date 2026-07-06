@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-8-minute-rule",
+    title: "Medicare's 8-Minute Rule: What It Is and How It Affects Your Ambulance Bill",
+    excerpt:
+      "If you or a family member has ever received a confusing ambulance bill after a Medicare claim, the 8-minute rule may be part of the reason. This FAQ explains what the rule is, how it affects ALS and BLS billing, what you are actually responsible for paying, and what to do if your claim is denied.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/at-what-age-can-you-get-medicare",
     title: "At What Age Can You Get Medicare? Eligibility Rules Explained",
     excerpt:
