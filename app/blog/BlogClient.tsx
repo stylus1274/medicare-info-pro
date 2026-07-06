@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/at-what-age-can-you-get-medicare",
+    title: "At What Age Can You Get Medicare? Eligibility Rules Explained",
+    excerpt:
+      "Most Americans become eligible for Medicare at 65, but the rules are more nuanced than a single number. Disability, kidney disease, and employer coverage all affect when and how you enroll. This guide covers every eligibility scenario so you know exactly where you stand.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/does-medicare-cover-dental",
     title: "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026",
     excerpt:
