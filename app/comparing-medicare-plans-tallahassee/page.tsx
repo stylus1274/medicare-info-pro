@@ -142,6 +142,10 @@ export default function Page() {
             { name: "Apollo Beach", slug: "apollo-beach" },
             { name: "Valrico", slug: "valrico" },
           ],
+          relatedCityLinks: [
+            { label: "Medicare Agent in Tallahassee", href: "/medicare-agent-tallahassee" },
+            { label: "Medicare Supplement Plans in Tallahassee", href: "/medicare-supplement-insurance-plans-tallahassee" },
+          ],
         }}
       />
     </>

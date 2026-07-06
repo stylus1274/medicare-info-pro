@@ -16,6 +16,7 @@ interface CityData {
   zip: string;
   carriers: string[];
   neighboringCities: { name: string; slug: string }[];
+  relatedCityLinks?: { label: string; href: string }[];
 }
 
 const PLAN_COMPARISON = [
@@ -184,7 +185,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function CompareMedicarePlansTemplate({ data }: { data: CityData }) {
-  const { city, county, zip, carriers, neighboringCities } = data;
+  const { city, county, zip, carriers, neighboringCities, relatedCityLinks } = data;
 
   return (
     <>
@@ -443,6 +444,27 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
           </div>
         </section>
 
+        {/* Related City Pages */}
+        {relatedCityLinks && relatedCityLinks.length > 0 && (
+          <section className="py-10 bg-blue-50 border-t border-blue-100">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-6">
+                <h2 className="font-serif text-2xl font-bold text-gray-900">More Medicare Resources in {city}</h2>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                {relatedCityLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="inline-flex items-center gap-2 bg-white text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#e8edf8] transition-colors text-sm border border-[#b8c8f0]"
+                  >
+                    <ChevronRight size={13} /> {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
         {/* Neighboring Cities */}
         {neighboringCities.length > 0 && (
           <section className="py-10 bg-white">
