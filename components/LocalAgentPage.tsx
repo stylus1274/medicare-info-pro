@@ -256,11 +256,12 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
           {/* Sidebar */}
           <div className="space-y-6">
             <div className="bg-[#1a3fa8] rounded-2xl p-6 text-white sticky top-6">
-              <div className="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-[#f5a800]">
+              <div className="flex justify-center mb-4">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png"
                   alt="Greg Wohl, Licensed Medicare Agent"
-                  className="w-full h-full object-cover"
+                  className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
+                  style={{ border: "3px solid #f5a800" }}
                 />
               </div>
               <div className="font-bold text-lg mb-0.5">Greg Wohl</div>
