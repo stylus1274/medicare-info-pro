@@ -86,7 +86,7 @@ export async function GET() {
   const urls = BLOG_SLUGS.map(
     (path) => `
   <url>
-    <loc>${BASE_URL}${path}</loc>
+    <loc>${BASE_URL}${path}/</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
