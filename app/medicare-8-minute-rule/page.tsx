@@ -90,7 +90,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Medicare's 8-Minute Rule: FAQ and Coverage Guide | Medicare Information Pro",
+  title: "Medicare's 8-Minute Rule: FAQ and Coverage Guide",
   description: "What is Medicare's 8-minute rule? Learn how it affects ambulance billing, ALS vs BLS reimbursement, what you owe, and what to do if your claim is denied or downgraded.",
   keywords: [
     "medicare 8 minute rule",
