@@ -193,7 +193,7 @@ export async function GET() {
   const coreUrls = CORE_PAGES.map(
     ({ path, priority }) => `
   <url>
-    <loc>${BASE_URL}${path}/</loc>
+    <loc>${BASE_URL}${path}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>${path === "/" ? "weekly" : "monthly"}</changefreq>
     <priority>${priority.toFixed(1)}</priority>
@@ -203,7 +203,7 @@ export async function GET() {
   const coverageUrls = COVERAGE_PAGES.map(
     (path) => `
   <url>
-    <loc>${BASE_URL}${path}/</loc>
+    <loc>${BASE_URL}${path}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -213,7 +213,7 @@ export async function GET() {
   const localUrls = LOCAL_PAGES.map(
     (path) => `
   <url>
-    <loc>${BASE_URL}${path}/</loc>
+    <loc>${BASE_URL}${path}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -223,7 +223,7 @@ export async function GET() {
   const teamUrls = TEAM_PAGES.map(
     (path) => `
   <url>
-    <loc>${BASE_URL}${path}/</loc>
+    <loc>${BASE_URL}${path}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
