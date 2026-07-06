@@ -16,6 +16,20 @@ const TOTAL_STEPS = 8;
 const HS_PORTAL_ID = "246426534";
 const HS_FORM_ID = "1afd1c7a-145b-426b-a40d-f2df27790c75";
 
+function formatAnswers(data: FormData): string {
+  const hasMedicareLabel = data.hasMedicare === "yes" ? "Yes" : data.hasMedicare === "no" ? "No" : "Not answered";
+  const dentalLabel = data.dentalImportance === "very" ? "Very Important" : data.dentalImportance === "not" ? "Not Important" : "Skipped";
+  const rxLabel = data.rxImportance === "very" ? "Very Important" : data.rxImportance === "not" ? "Not Important" : "Skipped";
+  const doctorLabel = data.doctorImportance === "very" ? "Very Important" : data.doctorImportance === "not" ? "Not Important" : "Skipped";
+  return [
+    `ZIP Code: ${data.zip || "Not provided"}`,
+    `Already has Medicare: ${hasMedicareLabel}`,
+    `Dental coverage importance: ${dentalLabel}`,
+    `Prescription drug importance: ${rxLabel}`,
+    `Keeping current doctors importance: ${doctorLabel}`,
+  ].join("\n");
+}
+
 async function submitToHubSpot(data: FormData): Promise<{ status: number; body: string }> {
   const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_ID}`;
   const fields = [
@@ -25,6 +39,7 @@ async function submitToHubSpot(data: FormData): Promise<{ status: number; body: 
     { name: "lastname", value: data.name.split(" ").slice(1).join(" ") || "" },
     { name: "zip", value: data.zip },
     { name: "hs_lead_status", value: "NEW" },
+    { name: "message", value: formatAnswers(data) },
   ].filter(f => f.value !== "");
 
   const context = { pageUri: typeof window !== "undefined" ? window.location.href : "", pageName: "Get Started Funnel" };
