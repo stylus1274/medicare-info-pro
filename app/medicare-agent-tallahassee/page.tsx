@@ -144,6 +144,8 @@ export default function Page() {
             { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
             { label: "Medicare Supplement Plans Tallahassee", href: "/medicare-supplement-insurance-plans-tallahassee" },
             { label: "Compare Medicare Plans Tallahassee", href: "/comparing-medicare-plans-tallahassee" },
+            { label: "Medicare Advantage Plans Tallahassee", href: "/medicare-advantage-plans-tallahassee-florida" },
+            { label: "Medicare Enrollment Assistance Tallahassee", href: "/medicare-enrollment-assistance-tallahassee" },
             { label: "Free Consultation", href: "/free-consultation" },
             { label: "Medicare 101 Overview", href: "/medicare-101" },
           ],

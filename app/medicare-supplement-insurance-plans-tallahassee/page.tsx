@@ -142,6 +142,8 @@ export default function Page() {
           relatedLinks: [
             { label: "Medicare Agent Tallahassee", href: "/medicare-agent-tallahassee" },
             { label: "Compare Medicare Plans Tallahassee", href: "/comparing-medicare-plans-tallahassee" },
+            { label: "Medicare Advantage Plans Tallahassee", href: "/medicare-advantage-plans-tallahassee-florida" },
+            { label: "Medicare Enrollment Assistance Tallahassee", href: "/medicare-enrollment-assistance-tallahassee" },
             { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
             { label: "Medicare Advantage vs. Medigap", href: "/medicare-advantage-vs-medigap" },
             { label: "Why Choose Medigap Plan G", href: "/why-choose-medigap-plan-g" },

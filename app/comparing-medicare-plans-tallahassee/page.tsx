@@ -145,6 +145,8 @@ export default function Page() {
           relatedCityLinks: [
             { label: "Medicare Agent in Tallahassee", href: "/medicare-agent-tallahassee" },
             { label: "Medicare Supplement Plans in Tallahassee", href: "/medicare-supplement-insurance-plans-tallahassee" },
+            { label: "Medicare Advantage Plans Tallahassee", href: "/medicare-advantage-plans-tallahassee-florida" },
+            { label: "Medicare Enrollment Assistance Tallahassee", href: "/medicare-enrollment-assistance-tallahassee" },
           ],
         }}
       />
