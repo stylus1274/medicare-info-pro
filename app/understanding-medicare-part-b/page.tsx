@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Understanding Medicare Part B: Coverage, Costs, and Enrollment in 2026",
     description:
       "What Medicare Part B covers, what it costs in 2026, how to enroll, and how to avoid the late enrollment penalty.",
-    url: "https://medicare-info-pro.vercel.app/blog/understanding-medicare-part-b",
+    url: "https://medicareinfopro.com/blog/understanding-medicare-part-b",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What Medicare Part B covers, what it costs in 2026, and how to enroll without penalties.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/understanding-medicare-part-b",
+    canonical: "https://medicareinfopro.com/blog/understanding-medicare-part-b",
   },
 };
 

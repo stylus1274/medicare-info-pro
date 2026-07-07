@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "What Are the 6 Things Medicare Doesn't Cover?",
     description:
       "Medicare has significant coverage gaps that surprise many beneficiaries. Learn what is excluded and how to protect yourself.",
-    url: "https://medicare-info-pro.vercel.app/blog/what-are-the-6-things-medicare-doesnt-cover",
+    url: "https://medicareinfopro.com/blog/what-are-the-6-things-medicare-doesnt-cover",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/what-are-the-6-things-medicare-doesnt-cover",
+      "https://medicareinfopro.com/blog/what-are-the-6-things-medicare-doesnt-cover",
   },
 };
 

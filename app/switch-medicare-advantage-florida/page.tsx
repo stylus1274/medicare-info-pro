@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Switch Medicare Advantage Plans in Florida",
     description:
       "When you can switch Medicare Advantage plans in Florida, which enrollment periods apply, how to compare plans, and what to watch out for.",
-    url: "https://medicare-info-pro.vercel.app/blog/switch-medicare-advantage-florida",
+    url: "https://medicareinfopro.com/blog/switch-medicare-advantage-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "When you can switch Medicare Advantage plans in Florida, which enrollment periods apply, and how to compare plans.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/switch-medicare-advantage-florida",
+    canonical: "https://medicareinfopro.com/blog/switch-medicare-advantage-florida",
   },
 };
 

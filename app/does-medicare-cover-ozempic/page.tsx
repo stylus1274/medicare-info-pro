@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Ozempic? Coverage, Costs, and Alternatives",
     description:
       "When Medicare Part D covers Ozempic, what it costs, how to reduce out-of-pocket expenses, and what alternatives are available for Medicare beneficiaries.",
-    url: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-ozempic",
+    url: "https://medicareinfopro.com/blog/does-medicare-cover-ozempic",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare Part D coverage for Ozempic, costs, and alternatives for Medicare beneficiaries.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-ozempic",
+    canonical: "https://medicareinfopro.com/blog/does-medicare-cover-ozempic",
   },
 };
 

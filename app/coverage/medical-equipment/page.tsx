@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Medical Equipment? | MedicareInfoPro",
     description:
       "Medicare covers wheelchairs, CPAP machines, home oxygen, hospital beds, and other DME when medically necessary. Learn what you pay in 2026 and how Medigap reduces your costs.",
-    url: "https://medicare-info-pro.vercel.app/coverage/medical-equipment",
+    url: "https://medicareinfopro.com/coverage/medical-equipment",
     siteName: "MedicareInfoPro",
     type: "article",
   },
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
       "Medicare covers DME including wheelchairs, CPAP, home oxygen, and prosthetics. See 2026 costs and how to avoid paying more than you should.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/medical-equipment",
+    canonical: "https://medicareinfopro.com/coverage/medical-equipment",
   },
 };
 

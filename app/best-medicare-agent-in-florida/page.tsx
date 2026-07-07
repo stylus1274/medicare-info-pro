@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How to Find the Best Medicare Agent in Florida 2026",
     description:
       "What to look for in a Medicare agent, questions to ask, red flags to avoid, and why working with an independent agent matters in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/best-medicare-agent-in-florida",
+    url: "https://medicareinfopro.com/blog/best-medicare-agent-in-florida",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What to look for in a Medicare agent, questions to ask, and red flags to avoid in Florida.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/best-medicare-agent-in-florida",
+    canonical: "https://medicareinfopro.com/blog/best-medicare-agent-in-florida",
   },
 };
 

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Affordable Health Insurance Options for Tampa Families",
     description:
       "Tampa families have more health insurance options than many realize. Learn how to find affordable coverage that fits your budget.",
-    url: "https://medicare-info-pro.vercel.app/blog/affordable-health-insurance-options-for-tampa-families",
+    url: "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/affordable-health-insurance-options-for-tampa-families",
+      "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families",
   },
 };
 

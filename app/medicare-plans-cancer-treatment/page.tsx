@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Coverage for Cancer Treatment: What Is Covered in 2026",
     description:
       "Medicare covers most cancer treatments, but costs vary significantly by plan type. Learn what is covered, what you will pay, and how to choose the right plan if you have cancer.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-plans-cancer-treatment",
+    url: "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare covers most cancer treatments. Learn what is covered, what you will pay, and how to choose the right plan.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-plans-cancer-treatment",
+    canonical: "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment",
   },
 };
 

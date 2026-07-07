@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Medicare Quiz: Which Plan Is Right for You?",
     description:
       "Answer 6 quick questions and get a personalized Medicare recommendation: Original Medicare, Advantage, or Medigap: based on your situation.",
-    url: "https://medicare-info-pro.vercel.app/medicare-quiz",
+    url: "https://medicareinfopro.com/medicare-quiz",
     type: "website",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-quiz",
+    canonical: "https://medicareinfopro.com/medicare-quiz",
   },
 };
 

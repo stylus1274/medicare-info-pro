@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Am I Eligible for Medicare? | Medicare Information Pro",
     description:
       "Find out if you qualify for Medicare. Use our free eligibility checker - covers age, disability, ESRD, work history, and special situations.",
-    url: "https://medicare-info-pro.vercel.app/am-i-eligible",
+    url: "https://medicareinfopro.com/am-i-eligible",
     siteName: "Medicare Information Pro",
     images: [
       {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/am-i-eligible",
+    canonical: "https://medicareinfopro.com/am-i-eligible",
   },
 };
 

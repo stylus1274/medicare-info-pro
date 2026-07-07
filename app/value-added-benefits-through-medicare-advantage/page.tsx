@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Value-Added Benefits Through Medicare Advantage 2026",
     description:
       "What extra benefits Medicare Advantage plans offer in 2026, which benefits were reduced, and how to find plans with the best supplemental coverage in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/value-added-benefits-through-medicare-advantage",
+    url: "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/value-added-benefits-through-medicare-advantage",
+      "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage",
   },
 };
 

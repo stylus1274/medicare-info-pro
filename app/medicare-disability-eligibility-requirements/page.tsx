@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Disability Eligibility Requirements 2026",
     description:
       "Complete guide to Medicare disability eligibility. SSDI 24-month wait, ESRD and ALS pathways, and how to enroll before age 65.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-disability-eligibility-requirements",
+    url: "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Complete guide to Medicare disability eligibility. SSDI 24-month wait, ESRD and ALS pathways, and how to enroll before age 65.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-disability-eligibility-requirements",
+    canonical: "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements",
   },
 };
 

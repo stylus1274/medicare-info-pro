@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Medicare Special Needs Plans (SNP) | 2026 Guide",
     description:
       "C-SNP, D-SNP, and I-SNP explained. Find out who qualifies and which SNP plans are available in Brandon and Hillsborough County for 2026.",
-    url: "https://medicare-info-pro.vercel.app/medicare-snp-plans",
+    url: "https://medicareinfopro.com/medicare-snp-plans",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       "C-SNP, D-SNP, and I-SNP explained. Find out who qualifies in Brandon and Hillsborough County for 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-snp-plans",
+    canonical: "https://medicareinfopro.com/medicare-snp-plans",
   },
 };
 

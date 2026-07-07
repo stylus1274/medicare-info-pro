@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comparing Medicare Plans in Riverview, FL",
     description: "Independent Medicare agents in Riverview, FL compare every available plan to find the right fit for your doctors, prescriptions, and budget.",
-    url: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-riverview",
+    url: "https://medicareinfopro.com/comparing-medicare-plans-riverview",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-riverview" },
+  alternates: { canonical: "https://medicareinfopro.com/comparing-medicare-plans-riverview" },
 };
 
 export default function Page() {

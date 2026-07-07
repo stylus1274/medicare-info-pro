@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Is Reinstating a Part D Plan Possible?",
     description:
       "Dropped your Medicare Part D plan or missed enrollment? Learn when reinstatement is possible and how to avoid the permanent late enrollment penalty.",
-    url: "https://medicare-info-pro.vercel.app/blog/is-reinstating-a-part-d-plan-possible",
+    url: "https://medicareinfopro.com/blog/is-reinstating-a-part-d-plan-possible",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Learn when you can reinstate a Medicare Part D plan, what enrollment periods apply, and how to avoid the permanent late enrollment penalty.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/is-reinstating-a-part-d-plan-possible",
+    canonical: "https://medicareinfopro.com/blog/is-reinstating-a-part-d-plan-possible",
   },
 };
 

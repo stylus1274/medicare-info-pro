@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     title: "Our Medicare Advisors",
     description:
       "Meet our licensed Medicare advisors. Independent agents bound by a strict Code of Ethics, committed to your best interest.",
-    url: "https://medicare-info-pro.vercel.app/advisors",
+    url: "https://medicareinfopro.com/advisors",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/advisors",
+    canonical: "https://medicareinfopro.com/advisors",
   },
 };
 

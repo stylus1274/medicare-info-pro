@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Pros and Cons of Florida Medicare Supplement Plans 2026",
     description:
       "Balanced look at Medigap pros and cons in Florida. What it covers, what it costs, and whether it is the right choice for your situation.",
-    url: "https://medicare-info-pro.vercel.app/blog/pros-and-cons-of-florida-medicare-supplement-plans",
+    url: "https://medicareinfopro.com/blog/pros-and-cons-of-florida-medicare-supplement-plans",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Balanced look at Medigap pros and cons in Florida. What it covers, what it costs, and whether it is the right choice for your situation.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/pros-and-cons-of-florida-medicare-supplement-plans",
+    canonical: "https://medicareinfopro.com/blog/pros-and-cons-of-florida-medicare-supplement-plans",
   },
 };
 

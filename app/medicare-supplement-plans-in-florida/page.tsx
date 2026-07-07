@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Supplement Plans in Florida 2026: Complete Guide",
     description:
       "Compare Medigap Plans G, N, and F in Florida for 2026. Understand premiums, enrollment windows, and how to choose the right supplement plan.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-supplement-plans-in-florida",
+    url: "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Compare Medigap Plans G, N, and F in Florida. Understand premiums, enrollment windows, and how to choose the right supplement plan.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-supplement-plans-in-florida",
+    canonical: "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida",
   },
 };
 

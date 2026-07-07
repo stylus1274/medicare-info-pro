@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "How Medicare Part D Works",
     description:
       "A complete guide to Medicare Part D: what it covers, how costs work, the coverage gap, drug tiers, and how to pick the right plan.",
-    url: "https://medicare-info-pro.vercel.app/how-medicare-part-d-works",
+    url: "https://medicareinfopro.com/how-medicare-part-d-works",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/how-medicare-part-d-works",
+    canonical: "https://medicareinfopro.com/how-medicare-part-d-works",
   },
 };
 

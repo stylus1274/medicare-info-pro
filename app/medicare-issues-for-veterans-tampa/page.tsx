@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare and VA Benefits for Veterans in Tampa 2026",
     description:
       "How VA benefits and Medicare work together for Tampa veterans. When you need both, enrollment rules, and how to avoid costly mistakes.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-issues-for-veterans-tampa",
+    url: "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "How VA benefits and Medicare work together for Tampa veterans. When you need both, enrollment rules, and how to avoid costly mistakes.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-issues-for-veterans-tampa",
+    canonical: "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa",
   },
 };
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
     description:
       "Florida is one of the most targeted states for Medicare fraud. Learn the most common scams, the red flags to watch for, and how to protect yourself.",
-    url: "https://medicare-info-pro.vercel.app/blog/2025-medicare-scams-florida",
+    url: "https://medicareinfopro.com/blog/2025-medicare-scams-florida",
     type: "article",
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Florida is one of the most targeted states for Medicare fraud. Learn the most common scams and how to protect yourself.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/2025-medicare-scams-florida",
+    canonical: "https://medicareinfopro.com/blog/2025-medicare-scams-florida",
   },
 };
 

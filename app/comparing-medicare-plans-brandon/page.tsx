@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comparing Medicare Plans in Brandon, FL",
     description: "Independent Medicare agents in Brandon, FL compare every available plan to find the right fit for your doctors, prescriptions, and budget.",
-    url: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-brandon",
+    url: "https://medicareinfopro.com/comparing-medicare-plans-brandon",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-brandon" },
+  alternates: { canonical: "https://medicareinfopro.com/comparing-medicare-plans-brandon" },
 };
 
 export default function Page() {

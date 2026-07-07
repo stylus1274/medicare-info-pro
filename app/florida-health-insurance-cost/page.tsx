@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Florida Health Insurance Cost in 2026: What to Expect",
     description:
       "ACA marketplace premiums, Medicare costs, employer plan costs, and strategies to reduce what you pay in Florida in 2026.",
-    url: "https://medicare-info-pro.vercel.app/blog/florida-health-insurance-cost",
+    url: "https://medicareinfopro.com/blog/florida-health-insurance-cost",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "ACA marketplace premiums, Medicare costs, employer plan costs, and strategies to reduce what you pay in Florida in 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/florida-health-insurance-cost",
+    canonical: "https://medicareinfopro.com/blog/florida-health-insurance-cost",
   },
 };
 

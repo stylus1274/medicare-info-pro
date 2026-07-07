@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Plans in Florida",
     description:
       "Compare HMO, PPO, PFFS, and Special Needs Plans available in Florida. Free guidance from licensed Medicare agents.",
-    url: "https://medicare-info-pro.vercel.app/medicare-advantage-florida",
+    url: "https://medicareinfopro.com/medicare-advantage-florida",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-advantage-florida",
+    canonical: "https://medicareinfopro.com/medicare-advantage-florida",
   },
 };
 

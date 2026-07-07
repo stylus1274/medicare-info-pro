@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Are There So Many Medicare Plan Letters? A-N Explained",
     description:
       "Medicare plan letters A through N explained. What each Medigap plan covers, why so many exist, and which plans are most popular in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-why-are-there-so-many-letters",
+    url: "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Medicare plan letters A through N explained. What each Medigap plan covers and which are most popular in Florida.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-why-are-there-so-many-letters",
+    canonical: "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters",
   },
 };
 

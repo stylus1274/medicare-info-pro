@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How Medicare Premiums Are Calculated in 2026",
     description:
       "Exactly how Medicare Part A, Part B, Part D, and Medicare Advantage premiums are calculated, including IRMAA income brackets and strategies to lower your costs.",
-    url: "https://medicare-info-pro.vercel.app/blog/how-medicare-premiums-are-calculated",
+    url: "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "How Medicare Part A, Part B, Part D, and Medicare Advantage premiums are calculated, including IRMAA brackets and cost-reduction strategies.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/how-medicare-premiums-are-calculated",
+    canonical: "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated",
   },
 };
 

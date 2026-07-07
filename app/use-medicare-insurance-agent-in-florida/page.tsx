@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Use a Medicare Insurance Agent in Florida?",
     description:
       "A Medicare insurance agent in Florida can help you navigate hundreds of plan options and avoid costly enrollment mistakes.",
-    url: "https://medicare-info-pro.vercel.app/blog/use-medicare-insurance-agent-in-florida",
+    url: "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/use-medicare-insurance-agent-in-florida",
+      "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida",
   },
 };
 

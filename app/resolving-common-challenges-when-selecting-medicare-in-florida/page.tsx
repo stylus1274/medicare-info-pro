@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Resolving Common Challenges When Selecting Medicare in Florida",
     description:
       "How to navigate the most common Medicare selection problems Florida beneficiaries face, from network issues to enrollment timing mistakes.",
-    url: "https://medicare-info-pro.vercel.app/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+    url: "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+      "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
   },
 };
 

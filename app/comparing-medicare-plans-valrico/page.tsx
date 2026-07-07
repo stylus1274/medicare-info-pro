@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comparing Medicare Plans in Valrico, FL",
     description: "Independent Medicare agents in Valrico, FL compare every available plan to find the right fit for your doctors, prescriptions, and budget.",
-    url: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-valrico",
+    url: "https://medicareinfopro.com/comparing-medicare-plans-valrico",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-valrico" },
+  alternates: { canonical: "https://medicareinfopro.com/comparing-medicare-plans-valrico" },
 };
 
 export default function Page() {

@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     title: "Medicare Late Enrollment Penalty Calculator",
     description:
       "Calculate your Medicare Part B and Part D late enrollment penalties. Free tool — see exactly how much you owe and for how long.",
-    url: "https://medicare-info-pro.vercel.app/medicare-penalty-calculator",
+    url: "https://medicareinfopro.com/medicare-penalty-calculator",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-penalty-calculator",
+    canonical: "https://medicareinfopro.com/medicare-penalty-calculator",
   },
 };
 

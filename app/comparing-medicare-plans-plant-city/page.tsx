@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comparing Medicare Plans in Plant City, FL",
     description: "Independent Medicare agents in Plant City, FL compare every available plan to find the right fit for your doctors, prescriptions, and budget.",
-    url: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-plant-city",
+    url: "https://medicareinfopro.com/comparing-medicare-plans-plant-city",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/comparing-medicare-plans-plant-city" },
+  alternates: { canonical: "https://medicareinfopro.com/comparing-medicare-plans-plant-city" },
 };
 
 export default function Page() {

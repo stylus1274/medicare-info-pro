@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Do You Need to Work With a Medicare Insurance Agent?",
     description:
       "Working with an independent Medicare agent is free and can save you from costly mistakes. Learn when an agent adds real value.",
-    url: "https://medicare-info-pro.vercel.app/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+    url: "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+      "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
   },
 };
 

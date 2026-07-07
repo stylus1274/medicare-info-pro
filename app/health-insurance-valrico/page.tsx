@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Valrico, FL | Medicare Information Project",
     description: "Independent agents in Valrico, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-valrico",
+    url: "https://medicareinfopro.com/health-insurance-valrico",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-valrico" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-valrico" },
 };
 
 export default function Page() {

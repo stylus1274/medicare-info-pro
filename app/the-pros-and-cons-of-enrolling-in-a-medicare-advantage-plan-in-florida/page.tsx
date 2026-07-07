@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Pros and Cons of Medicare Advantage Plans in Florida 2026",
     description:
       "Balanced look at Medicare Advantage pros and cons in Florida. Real trade-offs explained before you decide.",
-    url: "https://medicare-info-pro.vercel.app/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
+    url: "https://medicareinfopro.com/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
+      "https://medicareinfopro.com/blog/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
   },
 };
 

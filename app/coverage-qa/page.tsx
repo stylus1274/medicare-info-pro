@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover That? Coverage Q&A Center",
     description:
       "Search our Medicare coverage guide to find out what Medicare covers in 2026: dental, vision, hearing aids, prescriptions, mental health, home care, and more.",
-    url: "https://medicare-info-pro.vercel.app/coverage-qa",
+    url: "https://medicareinfopro.com/coverage-qa",
     type: "website",
     images: [
       {
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage-qa",
+    canonical: "https://medicareinfopro.com/coverage-qa",
   },
 };
 

@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "Do I Need Medicare?",
     description:
       "Not sure if Medicare is required for you? Learn who must enroll, who can delay, and what the consequences are of skipping enrollment.",
-    url: "https://medicare-info-pro.vercel.app/do-i-need-medicare",
+    url: "https://medicareinfopro.com/do-i-need-medicare",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/do-i-need-medicare",
+    canonical: "https://medicareinfopro.com/do-i-need-medicare",
   },
 };
 

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "5 Best Medicare Consultants in Tampa Bay 2026",
     description:
       "What separates the best Medicare consultants in Tampa Bay from the rest, and how to find the right specialist for your situation.",
-    url: "https://medicare-info-pro.vercel.app/blog/5-best-medicare-consultants-in-tampa-bay",
+    url: "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What separates the best Medicare consultants in Tampa Bay from the rest, and how to find the right specialist.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/5-best-medicare-consultants-in-tampa-bay",
+    canonical: "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay",
   },
 };
 

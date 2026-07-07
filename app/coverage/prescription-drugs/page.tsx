@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Prescription Drugs? | 2026 Guide",
     description:
       "Original Medicare covers very few outpatient drugs. Part D fills the gap: but enrollment timing and plan selection matter. Learn how it works in 2026.",
-    url: "https://medicare-info-pro.vercel.app/coverage/prescription-drugs",
+    url: "https://medicareinfopro.com/coverage/prescription-drugs",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Original Medicare does not cover most outpatient drugs. Learn how Part D works, the $2,000 out-of-pocket cap, and how to avoid the permanent late enrollment penalty.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/prescription-drugs",
+    canonical: "https://medicareinfopro.com/coverage/prescription-drugs",
   },
 };
 

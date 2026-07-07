@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Reduce Medicare Premiums Based on Income 2026",
     description:
       "Learn how IRMAA surcharges work and 5 strategies to legally reduce your Medicare Part B and Part D premiums in 2026.",
-    url: "https://medicare-info-pro.vercel.app/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+    url: "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+      "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
   },
 };
 

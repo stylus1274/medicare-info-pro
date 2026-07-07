@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Medicare Denies Mobility Scooter Claims in Florida",
     description:
       "The top reasons Medicare denies mobility scooter claims, what documentation you need to get approved, and how to appeal a denied claim in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/why-medicare-denies-mobility-scooter-claims-florida",
+    url: "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/why-medicare-denies-mobility-scooter-claims-florida",
+      "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida",
   },
 };
 

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
     description:
       "A clear, step-by-step guide to enrolling in Medicare Parts A, B, C, and D on your own. Includes enrollment windows, deadlines, and what to watch out for.",
-    url: "https://medicare-info-pro.vercel.app/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+    url: "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
   },
 };
 

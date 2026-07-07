@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "About Medicare Information Project",
     description:
       "Independent Medicare insurance agency in Brandon, FL. We represent 17 carriers and provide free, unbiased Medicare guidance across 6 states.",
-    url: "https://medicare-info-pro.vercel.app/about-us",
+    url: "https://medicareinfopro.com/about-us",
     type: "website",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/about-us",
+    canonical: "https://medicareinfopro.com/about-us",
   },
 };
 

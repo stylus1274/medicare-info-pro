@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Understanding the Medicare Part D Out-of-Pocket Cap in 2026",
     description:
       "How the $2,100 Part D cap works in 2026, what counts toward it, and how the Medicare Prescription Payment Plan lets you spread costs across the year.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-part-d-out-of-pocket-cap",
+    url: "https://medicareinfopro.com/blog/medicare-part-d-out-of-pocket-cap",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/medicare-part-d-out-of-pocket-cap",
+      "https://medicareinfopro.com/blog/medicare-part-d-out-of-pocket-cap",
   },
 };
 

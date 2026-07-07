@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Medicare Plan Comparison Tool | MedicareInfoPro",
     description:
       "Compare Original Medicare, Medicare Advantage, and Medigap plans side by side with our interactive 2026 comparison tool.",
-    url: "https://medicare-info-pro.vercel.app/plan-comparison",
+    url: "https://medicareinfopro.com/plan-comparison",
     siteName: "MedicareInfoPro",
     type: "website",
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       "Interactive side-by-side comparison of Original Medicare, Medicare Advantage HMO, PPO, and Medigap Plan G for 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/plan-comparison",
+    canonical: "https://medicareinfopro.com/plan-comparison",
   },
 };
 

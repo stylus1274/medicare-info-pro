@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Brandon, FL | Medicare Information Project",
     description: "Independent health insurance broker in Brandon, FL — comparing every plan at no cost to you.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-broker-brandon",
+    url: "https://medicareinfopro.com/health-insurance-broker-brandon",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-broker-brandon" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-brandon" },
 };
 
 export default function Page() {

@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Mental Health? | MedicareInfoPro",
     description:
       "Medicare covers most outpatient and inpatient mental health services. Learn what is covered, what you pay in 2026, and how Medigap can eliminate the 20% coinsurance.",
-    url: "https://medicare-info-pro.vercel.app/coverage/mental-health",
+    url: "https://medicareinfopro.com/coverage/mental-health",
     siteName: "MedicareInfoPro",
     type: "article",
   },
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
       "Medicare covers therapy, psychiatric care, and substance use treatment. See 2026 costs and your options for reducing out-of-pocket expenses.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/mental-health",
+    canonical: "https://medicareinfopro.com/coverage/mental-health",
   },
 };
 

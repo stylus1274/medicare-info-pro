@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Choose a Medicare Advantage Plan in 2026: Step-by-Step Guide",
     description:
       "Step-by-step guide to comparing Medicare Advantage plans in 2026. Networks, drug costs, out-of-pocket maximums, and extra benefits explained.",
-    url: "https://medicare-info-pro.vercel.app/blog/how-to-choose-medicare-advantage-plans-2026",
+    url: "https://medicareinfopro.com/blog/how-to-choose-medicare-advantage-plans-2026",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Step-by-step guide to comparing Medicare Advantage plans in 2026. Networks, drug costs, out-of-pocket maximums, and extra benefits explained.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/how-to-choose-medicare-advantage-plans-2026",
+    canonical: "https://medicareinfopro.com/blog/how-to-choose-medicare-advantage-plans-2026",
   },
 };
 

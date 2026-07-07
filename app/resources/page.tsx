@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Medicare Resources: Guides, FAQs & Tools | Medicare Information Pro",
     description:
       "Browse 200+ Medicare guides, FAQs, and free tools covering enrollment, costs, plan comparisons, and coverage.",
-    url: "https://medicare-info-pro.vercel.app/resources",
+    url: "https://medicareinfopro.com/resources",
     type: "website",
     images: [
       {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     images: ["https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80"],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/resources",
+    canonical: "https://medicareinfopro.com/resources",
   },
 };
 

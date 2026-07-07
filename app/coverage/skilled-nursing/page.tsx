@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Skilled Nursing Facility Care? | MedicareInfoPro",
     description:
       "Medicare covers up to 100 days of SNF care. Days 1-20 are free. Days 21-100 cost $212/day in 2026. Learn the qualifying conditions and how Medigap covers the daily coinsurance.",
-    url: "https://medicare-info-pro.vercel.app/coverage/skilled-nursing",
+    url: "https://medicareinfopro.com/coverage/skilled-nursing",
     siteName: "MedicareInfoPro",
     type: "article",
   },
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
       "Medicare covers SNF care for up to 100 days. See the 3-day hospital rule, 2026 costs, and how Medigap can save you up to $16,960 per benefit period.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/skilled-nursing",
+    canonical: "https://medicareinfopro.com/coverage/skilled-nursing",
   },
 };
 

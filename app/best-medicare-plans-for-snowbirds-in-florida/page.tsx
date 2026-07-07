@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Best Medicare Plans for Snowbirds in Florida 2026",
     description:
       "The best Medicare plan options for Florida snowbirds who split time between two states, and how to avoid coverage gaps.",
-    url: "https://medicare-info-pro.vercel.app/blog/best-medicare-plans-for-snowbirds-in-florida",
+    url: "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "The best Medicare plan options for Florida snowbirds who split time between two states.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/best-medicare-plans-for-snowbirds-in-florida",
+    canonical: "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida",
   },
 };
 

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "What Are the Best Medicare Plans for Seniors?",
     description:
       "Compare Original Medicare, Medicare Advantage, and Medigap to find the best plan for your health needs and budget in 2026.",
-    url: "https://medicare-info-pro.vercel.app/blog/what-are-the-best-medicare-plans-for-seniors",
+    url: "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "A clear comparison of Original Medicare, Medicare Advantage, and Medigap to help you choose the right plan in 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/what-are-the-best-medicare-plans-for-seniors",
+    canonical: "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors",
   },
 };
 

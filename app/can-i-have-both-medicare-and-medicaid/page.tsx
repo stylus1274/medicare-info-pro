@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Can I Have Both Medicare and Medicaid? Dual Eligibility Explained",
     description:
       "How dual eligibility works in Florida, what benefits you receive, and how Medicare and Medicaid coordinate for dual-eligible beneficiaries.",
-    url: "https://medicare-info-pro.vercel.app/blog/can-i-have-both-medicare-and-medicaid",
+    url: "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "How dual eligibility works in Florida, what benefits you receive, and how the programs coordinate.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/can-i-have-both-medicare-and-medicaid",
+    canonical: "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid",
   },
 };
 

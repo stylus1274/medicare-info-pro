@@ -45,12 +45,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medigap Open Enrollment: Your One Guaranteed Chance",
     description: "You have a 6-month window to buy any Medigap plan without medical underwriting. Miss it and you may be denied or charged more based on your health history.",
-    url: "https://medicare-info-pro.vercel.app/blog/medigap-open-enrollment",
+    url: "https://medicareinfopro.com/blog/medigap-open-enrollment",
     type: "article",
     images: [{ url: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80", width: 1200, height: 630, alt: "Senior couple reviewing Medicare Supplement insurance documents" }],
   },
   twitter: { card: "summary_large_image", title: "Medigap Open Enrollment: Your One Guaranteed Chance", description: "You have a 6-month window to buy any Medigap plan without medical underwriting. Miss it and you may be denied." },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/medigap-open-enrollment" },
+  alternates: { canonical: "https://medicareinfopro.com/blog/medigap-open-enrollment" },
 };
 
 const POST = {

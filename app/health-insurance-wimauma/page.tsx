@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Wimauma, FL | Medicare Information Project",
     description: "Independent agents in Wimauma, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-wimauma",
+    url: "https://medicareinfopro.com/health-insurance-wimauma",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-wimauma" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-wimauma" },
 };
 
 export default function Page() {

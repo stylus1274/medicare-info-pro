@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medigap Premium Increases: Why They Happen and How to Manage Them",
     description:
       "Why Medigap premiums increase, how rating methods affect long-term costs, and strategies to manage or reduce your Medicare supplement premium in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/medigap-premium-increases",
+    url: "https://medicareinfopro.com/blog/medigap-premium-increases",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Why Medigap premiums increase and strategies to manage your Medicare supplement premium in Florida.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medigap-premium-increases",
+    canonical: "https://medicareinfopro.com/blog/medigap-premium-increases",
   },
 };
 

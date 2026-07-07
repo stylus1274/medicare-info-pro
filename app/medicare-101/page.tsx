@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Medicare 101: The Complete Beginner's Guide",
     description:
       "Understand Medicare Parts A, B, C & D, enrollment periods, 2026 costs, and how to choose the right plan. Free guide from licensed Medicare agents.",
-    url: "https://medicare-info-pro.vercel.app/medicare-101",
+    url: "https://medicareinfopro.com/medicare-101",
     siteName: "Medicare Information Project",
     images: [
       {
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-101",
+    canonical: "https://medicareinfopro.com/medicare-101",
   },
 };
 

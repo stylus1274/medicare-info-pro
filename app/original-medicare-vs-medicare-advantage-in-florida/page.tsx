@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Original Medicare vs. Medicare Advantage in Florida 2026",
     description:
       "Detailed comparison of Original Medicare and Medicare Advantage in Florida. Costs, provider access, coverage gaps, and which is better for your situation.",
-    url: "https://medicare-info-pro.vercel.app/blog/original-medicare-vs-medicare-advantage-in-florida",
+    url: "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Detailed comparison of Original Medicare and Medicare Advantage in Florida. Costs, provider access, coverage gaps, and which is better for your situation.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/original-medicare-vs-medicare-advantage-in-florida",
+    canonical: "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida",
   },
 };
 

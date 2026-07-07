@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Scooters and Power Wheelchairs? 2026 Guide",
     description:
       "Medicare covers mobility scooters when medically necessary. Learn the coverage rules, documentation requirements, and how to avoid claim denials.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-coverage-for-scooters",
+    url: "https://medicareinfopro.com/blog/medicare-coverage-for-scooters",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare covers mobility scooters when medically necessary. Learn the coverage rules, documentation requirements, and how to avoid claim denials.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-coverage-for-scooters",
+    canonical: "https://medicareinfopro.com/blog/medicare-coverage-for-scooters",
   },
 };
 

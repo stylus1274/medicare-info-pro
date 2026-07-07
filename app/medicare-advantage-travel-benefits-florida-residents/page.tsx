@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Travel Benefits for Florida Residents 2026",
     description:
       "How Medicare Advantage covers you when you travel, what is and is not covered, and how to choose a plan that works for frequent travelers.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-advantage-travel-benefits-florida-residents",
+    url: "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/medicare-advantage-travel-benefits-florida-residents",
+      "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents",
   },
 };
 

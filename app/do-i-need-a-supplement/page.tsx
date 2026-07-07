@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Do I Need a Medicare Supplement (Medigap) Plan? | Medicare Information Pro",
     description:
       "Compare Medigap plans side by side, take our 4-question quiz to find the right plan, and learn about the one-time 6-month open enrollment window you can't afford to miss.",
-    url: "https://medicare-info-pro.vercel.app/do-i-need-a-supplement",
+    url: "https://medicareinfopro.com/do-i-need-a-supplement",
     siteName: "Medicare Information Pro",
     images: [
       {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/do-i-need-a-supplement",
+    canonical: "https://medicareinfopro.com/do-i-need-a-supplement",
   },
 };
 

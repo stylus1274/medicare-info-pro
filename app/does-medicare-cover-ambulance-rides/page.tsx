@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Ambulance Rides in 2026?",
     description:
       "Medicare Part B covers ambulance services when medically necessary. Here is what is covered, what you owe, and how to limit out-of-pocket costs in 2026.",
-    url: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-ambulance-rides",
+    url: "https://medicareinfopro.com/blog/does-medicare-cover-ambulance-rides",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare Part B covers emergency and some non-emergency ambulance rides. Here is what to know about costs and coverage in 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-ambulance-rides",
+    canonical: "https://medicareinfopro.com/blog/does-medicare-cover-ambulance-rides",
   },
 };
 

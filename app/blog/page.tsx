@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Medicare Blog & Guides | Medicare Information Pro",
     description:
       "Expert Medicare guides written by licensed specialists. Enrollment, plan comparisons, costs, supplements, and Part D , updated for 2026.",
-    url: "https://medicare-info-pro.vercel.app/blog",
+    url: "https://medicareinfopro.com/blog",
     type: "website",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog",
+    canonical: "https://medicareinfopro.com/blog",
   },
 };
 

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Medicare Part B: Medical Insurance Explained",
     description:
       "Medicare Part B covers doctor visits, outpatient care, preventive services, and durable medical equipment. 2026 premium is $202.90/month. Learn costs, IRMAA, and enrollment rules.",
-    url: "https://medicare-info-pro.vercel.app/medicare-part-b",
+    url: "https://medicareinfopro.com/medicare-part-b",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       "What does Medicare Part B cover? Doctor visits, outpatient care, preventive services, and DME. 2026 premium is $202.90/month with 20% coinsurance and no out-of-pocket cap.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-part-b",
+    canonical: "https://medicareinfopro.com/medicare-part-b",
   },
 };
 

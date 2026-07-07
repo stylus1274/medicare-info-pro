@@ -291,7 +291,7 @@ export const metadata: Metadata = {
     title: "Medicare FAQ Center | MedicareInfoPro",
     description:
       "Searchable answers to the most common Medicare questions, organized by topic: eligibility, enrollment, plan types, costs, and coverage.",
-    url: "https://medicare-info-pro.vercel.app/faq",
+    url: "https://medicareinfopro.com/faq",
     siteName: "MedicareInfoPro",
     type: "website",
   },
@@ -302,7 +302,7 @@ export const metadata: Metadata = {
       "Quick answers to the most common Medicare questions, searchable and organized by topic.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/faq",
+    canonical: "https://medicareinfopro.com/faq",
   },
 };
 

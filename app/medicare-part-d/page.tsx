@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "Medicare Part D — Prescription Drug Coverage",
     description:
       "Medicare Part D eligibility, costs, enrollment periods, the Extra Help program, and how to choose the right plan in Florida.",
-    url: "https://medicare-info-pro.vercel.app/medicare-part-d",
+    url: "https://medicareinfopro.com/medicare-part-d",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-part-d",
+    canonical: "https://medicareinfopro.com/medicare-part-d",
   },
 };
 

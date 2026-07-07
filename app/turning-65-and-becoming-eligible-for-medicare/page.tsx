@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     title: "Turning 65 and Becoming Eligible for Medicare",
     description:
       "Everything you need to know when you turn 65: enrollment windows, coverage options, what to do if you are still working, and how to avoid costly mistakes.",
-    url: "https://medicare-info-pro.vercel.app/turning-65-and-becoming-eligible-for-medicare",
+    url: "https://medicareinfopro.com/turning-65-and-becoming-eligible-for-medicare",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/turning-65-and-becoming-eligible-for-medicare",
+    canonical: "https://medicareinfopro.com/turning-65-and-becoming-eligible-for-medicare",
   },
 };
 

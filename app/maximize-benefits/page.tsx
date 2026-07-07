@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How Florida Seniors Can Maximize Medicare Benefits After 65",
     description:
       "Clear, unbiased guidance on choosing the right Medicare plan, avoiding costly mistakes, and getting the most value from your coverage in 2026.",
-    url: "https://medicare-info-pro.vercel.app/maximize-benefits",
+    url: "https://medicareinfopro.com/maximize-benefits",
     type: "article",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/maximize-benefits",
+    canonical: "https://medicareinfopro.com/maximize-benefits",
   },
 };
 

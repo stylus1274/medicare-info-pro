@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     title: "What Is Medicare? A Complete Guide",
     description:
       "Medicare explained simply: Parts A, B, C, and D, eligibility rules, enrollment windows, costs, and how to choose the right plan. Free guidance from licensed agents.",
-    url: "https://medicare-info-pro.vercel.app/what-is-medicare",
+    url: "https://medicareinfopro.com/what-is-medicare",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/what-is-medicare",
+    canonical: "https://medicareinfopro.com/what-is-medicare",
   },
 };
 

@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Temple Terrace, FL | Medicare Information Project",
     description: "Independent health insurance broker in Temple Terrace, FL — comparing every plan at no cost to you.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-broker-temple-terrace",
+    url: "https://medicareinfopro.com/health-insurance-broker-temple-terrace",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-broker-temple-terrace" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-temple-terrace" },
 };
 
 export default function Page() {

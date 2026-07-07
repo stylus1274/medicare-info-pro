@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Medicare PPO Plans in Tampa, FL | 2026 Guide",
     description:
       "Compare Medicare PPO plans in Brandon, Tampa, and Hillsborough County for 2026. No referrals required. Free consultation with a licensed Medicare advisor.",
-    url: "https://medicare-info-pro.vercel.app/medicare-ppo-plans-in-tampa",
+    url: "https://medicareinfopro.com/medicare-ppo-plans-in-tampa",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
       "Compare Medicare PPO plans in Brandon, Tampa, and Hillsborough County for 2026. No referrals required.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-ppo-plans-in-tampa",
+    canonical: "https://medicareinfopro.com/medicare-ppo-plans-in-tampa",
   },
 };
 

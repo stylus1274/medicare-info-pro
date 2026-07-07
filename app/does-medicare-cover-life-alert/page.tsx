@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   title: "Does Medicare Cover Life Alert Systems? Understanding Your Options",
   description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.",
   keywords: ["Medicare", "Life Alert", "medical alert systems", "Medicare coverage", "Medicare Advantage", "Original Medicare", "senior safety"],
-  openGraph: { title: "Does Medicare Cover Life Alert Systems? Understanding Your Options", description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.", url: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-life-alert", type: "article", images: [{ url: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80", width: 1200, height: 630, alt: "Elderly person using a medical alert device" }] },
+  openGraph: { title: "Does Medicare Cover Life Alert Systems? Understanding Your Options", description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.", url: "https://medicareinfopro.com/blog/does-medicare-cover-life-alert", type: "article", images: [{ url: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80", width: 1200, height: 630, alt: "Elderly person using a medical alert device" }] },
   twitter: { card: "summary_large_image", title: "Does Medicare Cover Life Alert Systems? Understanding Your Options", description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices." },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/does-medicare-cover-life-alert" },
+  alternates: { canonical: "https://medicareinfopro.com/blog/does-medicare-cover-life-alert" },
 };
 const POST = {
   slug: "does-medicare-cover-life-alert",

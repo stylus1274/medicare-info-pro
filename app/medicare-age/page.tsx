@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "What Age Do You Get Medicare? Eligibility Ages Explained 2026",
     description:
       "The standard Medicare age is 65, but there are several ways to qualify earlier. Learn all the eligibility rules and enrollment windows.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-age",
+    url: "https://medicareinfopro.com/blog/medicare-age",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "The standard Medicare age is 65, but there are several ways to qualify earlier. Learn all the eligibility rules and enrollment windows.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-age",
+    canonical: "https://medicareinfopro.com/blog/medicare-age",
   },
 };
 

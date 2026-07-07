@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Sun City, FL | Medicare Information Project",
     description: "Independent agents in Sun City, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-sun-city",
+    url: "https://medicareinfopro.com/health-insurance-sun-city",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-sun-city" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-sun-city" },
 };
 
 export default function Page() {

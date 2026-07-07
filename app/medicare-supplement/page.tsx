@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     title: "Medicare Supplement (Medigap) Plans",
     description:
       "Compare Medicare Supplement plans A through N, understand what each covers, and find the right Medigap plan for your needs and budget.",
-    url: "https://medicare-info-pro.vercel.app/medicare-supplement",
+    url: "https://medicareinfopro.com/medicare-supplement",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-supplement",
+    canonical: "https://medicareinfopro.com/medicare-supplement",
   },
 };
 

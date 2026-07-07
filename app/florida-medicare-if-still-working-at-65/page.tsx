@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Florida Medicare If Still Working at 65: What You Need to Know",
     description:
       "Working at 65 in Florida? Learn how employer coverage interacts with Medicare, when you can delay without penalty, and what to do when you retire.",
-    url: "https://medicare-info-pro.vercel.app/blog/florida-medicare-if-still-working-at-65",
+    url: "https://medicareinfopro.com/blog/florida-medicare-if-still-working-at-65",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "How employer coverage interacts with Medicare at 65, when you can delay without penalty, and what to do when you eventually retire.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/florida-medicare-if-still-working-at-65",
+    canonical: "https://medicareinfopro.com/blog/florida-medicare-if-still-working-at-65",
   },
 };
 

@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Why Medigap Plan G is Your Best Medicare Choice",
     description:
       "Comprehensive coverage, no network restrictions, and lower premiums than Plan F. Here's why Plan G is the most popular Medigap plan in America.",
-    url: "https://medicare-info-pro.vercel.app/blog/why-choose-medigap-plan-g",
+    url: "https://medicareinfopro.com/blog/why-choose-medigap-plan-g",
     type: "article",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     images: ["https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80"],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/why-choose-medigap-plan-g",
+    canonical: "https://medicareinfopro.com/blog/why-choose-medigap-plan-g",
   },
 };
 

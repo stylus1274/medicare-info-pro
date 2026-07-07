@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Why Is Medicare Coverage So Important? 7 Reasons That Matter",
     description:
       "Medicare coverage protects seniors from catastrophic medical costs, provides access to preventive care, and is the foundation of retirement financial security. Here is why it matters.",
-    url: "https://medicare-info-pro.vercel.app/blog/why-is-medicare-coverage-so-important",
+    url: "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare protects seniors from catastrophic costs, provides preventive care access, and is the foundation of retirement financial security.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/why-is-medicare-coverage-so-important",
+    canonical: "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important",
   },
 };
 

@@ -44,12 +44,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
     description: "Medicare Part D has a $2,100 annual cap on out-of-pocket drug costs in 2026. Here is exactly how it works, what counts toward the cap, and how to spread costs across the year.",
-    url: "https://medicare-info-pro.vercel.app/blog/part-d-2000-cap",
+    url: "https://medicareinfopro.com/blog/part-d-2000-cap",
     type: "article",
     images: [{ url: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80", width: 1200, height: 630, alt: "Prescription medication bottles representing Medicare Part D drug coverage" }],
   },
   twitter: { card: "summary_large_image", title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)", description: "Medicare Part D has a $2,100 out-of-pocket cap in 2026. Here is how it works." },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/part-d-2000-cap" },
+  alternates: { canonical: "https://medicareinfopro.com/blog/part-d-2000-cap" },
 };
 
 const POST = {

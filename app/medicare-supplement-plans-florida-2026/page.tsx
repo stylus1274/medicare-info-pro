@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Supplement Plans Florida 2026: Compare Plan G, N, and F",
     description:
       "Compare Medicare Supplement plans in Florida for 2026. Plan G vs Plan N vs Plan F, premium ranges, and how to choose.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-supplement-plans-florida-2026",
+    url: "https://medicareinfopro.com/blog/medicare-supplement-plans-florida-2026",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Compare Medicare Supplement plans in Florida for 2026. Plan G vs Plan N vs Plan F, premium ranges, and how to choose.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-supplement-plans-florida-2026",
+    canonical: "https://medicareinfopro.com/blog/medicare-supplement-plans-florida-2026",
   },
 };
 

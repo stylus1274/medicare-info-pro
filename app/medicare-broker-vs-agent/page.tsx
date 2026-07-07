@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Broker vs. Agent: What's the Difference?",
     description:
       "Medicare broker and agent are often used interchangeably, but there are important differences. Learn which type of help is best for you.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-broker-vs-agent",
+    url: "https://medicareinfopro.com/blog/medicare-broker-vs-agent",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Learn the difference between a Medicare broker and agent, and which type of help is best for your situation.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/medicare-broker-vs-agent",
+    canonical: "https://medicareinfopro.com/blog/medicare-broker-vs-agent",
   },
 };
 

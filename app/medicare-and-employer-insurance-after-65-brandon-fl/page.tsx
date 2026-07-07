@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare and Employer Insurance After 65 in Brandon, FL: How They Work Together",
     description:
       "How Medicare coordinates with employer insurance after 65, when to enroll in Part B, and how to avoid late enrollment penalties.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+    url: "https://medicareinfopro.com/blog/medicare-and-employer-insurance-after-65-brandon-fl",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+      "https://medicareinfopro.com/blog/medicare-and-employer-insurance-after-65-brandon-fl",
   },
 };
 

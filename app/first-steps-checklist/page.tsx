@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Medicare First Steps Checklist | Medicare Information Pro",
     description:
       "A 6-phase interactive checklist for new Medicare enrollees - from understanding your options to enrolling and staying organized.",
-    url: "https://medicare-info-pro.vercel.app/first-steps-checklist",
+    url: "https://medicareinfopro.com/first-steps-checklist",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/first-steps-checklist",
+    canonical: "https://medicareinfopro.com/first-steps-checklist",
   },
 };
 

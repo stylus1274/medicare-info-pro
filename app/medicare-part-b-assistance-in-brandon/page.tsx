@@ -70,11 +70,11 @@ export const metadata: Metadata = {
     title: "Medicare Part B Assistance in Brandon, FL",
     description:
       "Expert Medicare Part B enrollment, cost management, and benefits guidance for Brandon, FL residents. Free consultations from licensed local agents.",
-    url: "https://medicare-info-pro.vercel.app/medicare-part-b-assistance-in-brandon",
+    url: "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon",
     type: "website",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-part-b-assistance-in-brandon",
+    canonical: "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon",
   },
 };
 

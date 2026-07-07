@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How Much Does Health Insurance Cost Per Month in Florida?",
     description:
       "See 2026 average monthly premiums for ACA, Medicare, and employer plans in Florida — plus strategies to reduce what you pay.",
-    url: "https://medicare-info-pro.vercel.app/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    url: "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "2026 average monthly premiums for ACA, Medicare, and employer plans in Florida, plus tips to lower your costs.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    canonical: "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida",
   },
 };
 

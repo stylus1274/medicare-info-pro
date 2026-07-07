@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Part A: Hospital Insurance Explained",
     description:
       "Medicare Part A covers inpatient hospital stays, skilled nursing facility care, hospice, and home health services. Most people pay no premium. Learn what is covered and 2025 costs.",
-    url: "https://medicare-info-pro.vercel.app/medicare-part-a",
+    url: "https://medicareinfopro.com/medicare-part-a",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "What does Medicare Part A cover? Hospital stays, skilled nursing, hospice, and home health. Most people pay $0 premium. See 2025 costs and enrollment details.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/medicare-part-a",
+    canonical: "https://medicareinfopro.com/medicare-part-a",
   },
 };
 

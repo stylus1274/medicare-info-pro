@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Contact Medicare Information Project",
     description:
       "Get a free Medicare consultation. Call 813-699-5559 or request an appointment online. No pressure, no obligation.",
-    url: "https://medicare-info-pro.vercel.app/contact",
+    url: "https://medicareinfopro.com/contact",
     type: "website",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/contact",
+    canonical: "https://medicareinfopro.com/contact",
   },
 };
 

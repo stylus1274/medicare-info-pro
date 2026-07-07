@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How to Maximize Your Medicare Benefits in Florida 2026",
     description:
       "Most Medicare beneficiaries leave money on the table every year. Here is how to get full value from your Medicare coverage in Florida.",
-    url: "https://medicare-info-pro.vercel.app/blog/maximize-medicare-benefits-florida-seniors",
+    url: "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Most Medicare beneficiaries leave money on the table every year. Here is how to get full value from your coverage.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/maximize-medicare-benefits-florida-seniors",
+    canonical: "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors",
   },
 };
 

@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Cancer Treatment? | MedicareInfoPro",
     description:
       "Medicare covers chemotherapy, radiation, immunotherapy, and surgery. Learn what you pay in 2026 and how Medigap can eliminate the 20% coinsurance on cancer treatment.",
-    url: "https://medicare-info-pro.vercel.app/coverage/cancer-treatment",
+    url: "https://medicareinfopro.com/coverage/cancer-treatment",
     siteName: "MedicareInfoPro",
     type: "article",
   },
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
       "Medicare covers most cancer treatments. See 2026 costs, what Medigap covers, and how to access Moffitt Cancer Center with Original Medicare.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/cancer-treatment",
+    canonical: "https://medicareinfopro.com/coverage/cancer-treatment",
   },
 };
 

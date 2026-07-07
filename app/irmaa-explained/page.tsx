@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts",
   description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.",
   keywords: ["IRMAA", "Medicare premiums", "income-related monthly adjustment amount", "Medicare costs"],
-  openGraph: { title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts", description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.", url: "https://medicare-info-pro.vercel.app/blog/irmaa-explained", type: "article", images: [{ url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80", width: 1200, height: 630, alt: "Money and documents" }] },
+  openGraph: { title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts", description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.", url: "https://medicareinfopro.com/blog/irmaa-explained", type: "article", images: [{ url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80", width: 1200, height: 630, alt: "Money and documents" }] },
   twitter: { card: "summary_large_image", title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts", description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs." },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/irmaa-explained" },
+  alternates: { canonical: "https://medicareinfopro.com/blog/irmaa-explained" },
 };
 const POST = {
   slug: "irmaa-explained",

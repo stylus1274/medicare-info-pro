@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Medicare Costs at a Glance 2026 | Medicare Information Pro",
     description:
       "All 2026 Medicare premiums, deductibles, IRMAA surcharges, and the $2,100 Part D cap - in one easy reference guide.",
-    url: "https://medicare-info-pro.vercel.app/costs-at-a-glance",
+    url: "https://medicareinfopro.com/costs-at-a-glance",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/costs-at-a-glance",
+    canonical: "https://medicareinfopro.com/costs-at-a-glance",
   },
 };
 

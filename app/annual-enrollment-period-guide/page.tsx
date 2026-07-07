@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   title: "Annual Enrollment Period Guide",
   description: "A comprehensive guide to Medicare's Annual Enrollment Period.",
   keywords: ["Medicare", "Annual Enrollment Period", "AEP", "Medicare plans", "enrollment"],
-  openGraph: { title: "Annual Enrollment Period Guide", description: "A comprehensive guide to Medicare's Annual Enrollment Period.", url: "https://medicare-info-pro.vercel.app/blog/annual-enrollment-period-guide", type: "article", images: [{ url: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80", width: 1200, height: 630, alt: "Calendar and planning" }] },
+  openGraph: { title: "Annual Enrollment Period Guide", description: "A comprehensive guide to Medicare's Annual Enrollment Period.", url: "https://medicareinfopro.com/blog/annual-enrollment-period-guide", type: "article", images: [{ url: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80", width: 1200, height: 630, alt: "Calendar and planning" }] },
   twitter: { card: "summary_large_image", title: "Annual Enrollment Period Guide", description: "A comprehensive guide to Medicare's Annual Enrollment Period." },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/blog/annual-enrollment-period-guide" },
+  alternates: { canonical: "https://medicareinfopro.com/blog/annual-enrollment-period-guide" },
 };
 const POST = {
   slug: "annual-enrollment-period-guide",

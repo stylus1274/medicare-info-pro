@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "In-Depth Medicare Guides | MedicareInfoPro",
     description:
       "Comprehensive Medicare guides organized by topic: getting started, choosing a plan, understanding costs, enrollment timing, and more.",
-    url: "https://medicare-info-pro.vercel.app/guides",
+    url: "https://medicareinfopro.com/guides",
     siteName: "MedicareInfoPro",
     type: "website",
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Expert-written Medicare guides covering every topic, from enrollment basics to plan comparison and cost strategies.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/guides",
+    canonical: "https://medicareinfopro.com/guides",
   },
 };
 

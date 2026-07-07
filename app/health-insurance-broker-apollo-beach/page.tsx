@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Apollo Beach, FL | Medicare Information Project",
     description: "Independent health insurance broker in Apollo Beach, FL — comparing every plan at no cost to you.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-broker-apollo-beach",
+    url: "https://medicareinfopro.com/health-insurance-broker-apollo-beach",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-broker-apollo-beach" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-apollo-beach" },
 };
 
 export default function Page() {

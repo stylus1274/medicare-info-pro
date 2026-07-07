@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Best Medicare Advantage Plans in Florida 2026",
     description:
       "Compare the top Medicare Advantage plans available in Florida for 2026. See which carriers offer the best value, lowest out-of-pocket costs, and strongest extra benefits.",
-    url: "https://medicare-info-pro.vercel.app/blog/best-medicare-advantage-plans-florida",
+    url: "https://medicareinfopro.com/blog/best-medicare-advantage-plans-florida",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Compare top-rated Medicare Advantage plans in Florida. Find $0 premium plans, dental and vision coverage, and the lowest out-of-pocket costs for 2026.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/blog/best-medicare-advantage-plans-florida",
+    canonical: "https://medicareinfopro.com/blog/best-medicare-advantage-plans-florida",
   },
 };
 

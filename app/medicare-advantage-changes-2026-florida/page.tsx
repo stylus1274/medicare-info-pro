@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
     description:
       "Key Medicare Advantage changes for 2026 that affect Florida enrollees: new OOP limits, plan exits, benefit reductions, and what to do during AEP.",
-    url: "https://medicare-info-pro.vercel.app/blog/medicare-advantage-changes-2026-florida",
+    url: "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicare-info-pro.vercel.app/blog/medicare-advantage-changes-2026-florida",
+      "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida",
   },
 };
 

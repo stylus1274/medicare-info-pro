@@ -101,10 +101,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Riverview, FL | Medicare Information Project",
     description: "Independent agents in Riverview, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicare-info-pro.vercel.app/health-insurance-riverview",
+    url: "https://medicareinfopro.com/health-insurance-riverview",
     type: "website",
   },
-  alternates: { canonical: "https://medicare-info-pro.vercel.app/health-insurance-riverview" },
+  alternates: { canonical: "https://medicareinfopro.com/health-insurance-riverview" },
 };
 
 export default function Page() {

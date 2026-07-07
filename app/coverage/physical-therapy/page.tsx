@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Physical Therapy? | MedicareInfoPro",
     description:
       "Medicare Part B covers outpatient physical therapy with no annual cap. Learn what you pay in 2026 and how a Medigap plan can eliminate the 20% coinsurance.",
-    url: "https://medicare-info-pro.vercel.app/coverage/physical-therapy",
+    url: "https://medicareinfopro.com/coverage/physical-therapy",
     siteName: "MedicareInfoPro",
     type: "article",
   },
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
       "Medicare covers PT with no annual visit cap. See 2026 costs, SNF coverage rules, and how Medigap can save you thousands per year.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/physical-therapy",
+    canonical: "https://medicareinfopro.com/coverage/physical-therapy",
   },
 };
 

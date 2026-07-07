@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Hearing Aids?",
     description:
       "Original Medicare does not cover hearing aids. Many Medicare Advantage plans do. Here is what is covered, what is not, and how to find a plan with hearing benefits.",
-    url: "https://medicare-info-pro.vercel.app/coverage/hearing-aids",
+    url: "https://medicareinfopro.com/coverage/hearing-aids",
     siteName: "Medicare Information Pro",
     type: "article",
   },
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
       "Original Medicare does not cover hearing aids or routine hearing exams. Medicare Advantage plans often include hearing benefits.",
   },
   alternates: {
-    canonical: "https://medicare-info-pro.vercel.app/coverage/hearing-aids",
+    canonical: "https://medicareinfopro.com/coverage/hearing-aids",
   },
 };
 
