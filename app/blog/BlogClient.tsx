@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-grocery-card",
+    title: "Medicare Grocery Card: What It Is, Who Qualifies, and How to Get One",
+    excerpt:
+      "You may have seen ads promising a Medicare grocery card that puts hundreds of dollars on a prepaid card for food. Some of these benefits are real, but the details matter. This page explains exactly what the Medicare grocery card is, which plans offer it, who qualifies, what you can buy, and how to get one.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-8-minute-rule",
     title: "Medicare's 8-Minute Rule: What It Is and How It Affects Your Ambulance Bill",
     excerpt:
