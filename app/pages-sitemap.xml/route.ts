@@ -83,6 +83,7 @@ const LOCAL_PAGES: string[] = [
   "/medicare-agent-sun-city",
   "/medicare-agent-valrico",
   "/medicare-agent-wimauma",
+  "/medicare-agent-gainesville",
   "/medicare-agent-tallahassee",
   "/medicare-supplement-insurance-plans-tallahassee",
   "/comparing-medicare-plans-tallahassee",
