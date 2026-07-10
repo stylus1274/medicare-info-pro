@@ -53,6 +53,7 @@ export default function Page() {
       />
       <LocalAgentPage
         data={{
+          pageType: "agent",
           city: "Gainesville",
           state: "FL",
           county: "Alachua County",
