@@ -117,6 +117,12 @@ export default function Page() {
               a: "University of Florida and Santa Fe College retirees have unique Medicare coordination considerations, particularly around university retiree health benefits. Our agents are experienced in helping university retirees understand how Medicare works alongside their retiree benefits and when it makes sense to transition to a standalone Medicare plan.",
             },
           ],
+          agent: {
+            name: "Jennifer Loader-Wohl",
+            title: "Licensed Medicare Agent",
+            location: "Brandon FL",
+            photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
+          },
           relatedLinks: [
             { label: "Medicare Supplement Plans Gainesville", href: "/medicare-supplement-insurance-plans-gainesville" },
             { label: "Compare Medicare Plans Gainesville", href: "/comparing-medicare-plans-gainesville" },

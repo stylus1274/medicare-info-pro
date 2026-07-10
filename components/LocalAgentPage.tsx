@@ -21,6 +21,12 @@ export interface LocalPageConfig {
   faqs: { q: string; a: string }[];
   testimonials?: { name: string; location: string; text: string }[];
   relatedLinks: { label: string; href: string }[];
+  agent?: {
+    name: string;
+    title: string;
+    location: string;
+    photoUrl: string;
+  };
 }
 
 const PAGE_TYPE_LABELS: Record<LocalPageConfig["pageType"], string> = {
@@ -258,14 +264,14 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
             <div className="bg-[#1a3fa8] rounded-2xl p-6 text-white sticky top-6">
               <div className="flex justify-center mb-4">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png"
-                  alt="Greg Wohl, Licensed Medicare Agent"
+                  src={config.agent?.photoUrl ?? "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png"}
+                  alt={`${config.agent?.name ?? "Greg Wohl"}, Licensed Medicare Agent`}
                   className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
                   style={{ border: "3px solid #f5a800" }}
                 />
               </div>
-              <div className="font-bold text-lg mb-0.5">Greg Wohl</div>
-              <div className="text-blue-300 text-sm mb-4">Licensed Medicare Agent, Brandon FL</div>
+              <div className="font-bold text-lg mb-0.5">{config.agent?.name ?? "Greg Wohl"}</div>
+              <div className="text-blue-300 text-sm mb-4">{config.agent?.title ?? "Licensed Medicare Agent"}, {config.agent?.location ?? "Brandon FL"}</div>
               <p className="text-blue-100 text-sm leading-relaxed mb-5">
                 Serving {config.city} and {config.county} for over 22 years. Free consultations, no pressure.
               </p>
