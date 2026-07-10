@@ -52,14 +52,16 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <LocalAgentPage
-        data={{
+        config={{
           pageType: "agent",
           city: "Gainesville",
-          state: "FL",
+          cityFull: "Gainesville, FL",
           county: "Alachua County",
-          heroHeading: "Medicare Agent in Gainesville, FL",
-          heroSubheading: "Free, independent Medicare guidance for Gainesville and Alachua County residents. We compare plans from 17+ carriers so you get the coverage that fits your doctors, your budget, and your life.",
-          agentDescription: "Serving Gainesville and Alachua County for over 22 years. Free consultations, no pressure.",
+          slug: "gainesville",
+          headline: "Medicare Agent in Gainesville, FL",
+          subheadline: "Free, independent Medicare guidance for Gainesville and Alachua County residents. We compare plans from 17+ carriers so you get the coverage that fits your doctors, your budget, and your life.",
+          metaTitle: "Medicare Agent in Gainesville FL | Free Medicare Help",
+          metaDescription: "Looking for a licensed Medicare agent in Gainesville, FL? Get free, independent Medicare guidance. We compare plans from 17+ carriers serving Alachua County with no pressure.",
           nearbyLandmarks: [
             "UF Health Shands Hospital",
             "North Florida Regional Medical Center",
