@@ -13,6 +13,7 @@ export interface LocalPageConfig {
   slug: string;               // e.g. "brandon"
   headline: string;           // H1 text
   subheadline: string;        // Hero paragraph
+  bodyText?: string;           // Optional second paragraph in Services section
   metaTitle: string;
   metaDescription: string;
   pageType: "agent" | "local-agent" | "insurance-agent" | "consulting" | "enrollment" | "supplement" | "brokers" | "broker";
@@ -162,6 +163,11 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Medicare Information Project provides free, independent Medicare guidance to residents of {config.city} and the surrounding {config.county} communities. We are not employed by any insurance company, which means our recommendations are based entirely on what is best for you.
               </p>
+              {config.bodyText && (
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {config.bodyText}
+                </p>
+              )}
               <div className="grid sm:grid-cols-2 gap-3">
                 {DEFAULT_SERVICES.map((service) => (
                   <div key={service} className="flex items-start gap-2 p-3 bg-gray-50 rounded-lg border border-gray-100">

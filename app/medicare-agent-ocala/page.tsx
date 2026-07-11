@@ -61,6 +61,7 @@ export default function Page() {
           slug: "ocala",
           headline: "Medicare Agent in Ocala, FL",
           subheadline: "Marion County has one of the highest concentrations of Medicare-eligible residents in Florida. Our licensed independent agents help Ocala residents compare every plan available in their ZIP code, verify their doctors are in-network, and enroll with confidence. Free consultations, no pressure.",
+          bodyText: "Whether you are turning 65, retiring from a Marion County employer, or reviewing your current plan during the Annual Enrollment Period, the choices can feel overwhelming. Ocala has more Medicare plan options than most Florida cities its size, which is a good thing, but only if you know how to compare them. We help you cut through the noise, check that your doctors at AdventHealth Ocala or Ocala Regional are covered, review your drug formulary, and choose the plan that fits your budget and your health. There is no cost to you and no obligation.",
           metaTitle: "Medicare Agent in Ocala FL | Licensed Medicare Insurance Help",
           metaDescription: "Looking for a licensed Medicare agent in Ocala, FL? We serve Marion County residents with free, unbiased Medicare Advantage, Medigap, and Part D plan guidance. No pressure, no cost.",
           agent: {
