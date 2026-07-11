@@ -150,14 +150,14 @@ export default function MedicareAdvantagePlansGainesvilleClient() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Not sure whether Medicare Advantage is right for you? Our{" "}
-                <Link href="/comparing-medicare-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">Medicare plan comparison guide for Gainesville</Link>{" "}
+                <Link href="/comparing-medicare-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">local Medicare plan comparison guide</Link>{" "}
                 walks through the key differences between Medicare Advantage and{" "}
-                <Link href="/medicare-supplement-insurance-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">Medicare Supplement (Medigap) plans in Gainesville</Link>.{" "}
-                If you are still working past 65 and have employer coverage, our{" "}
+                <Link href="/medicare-supplement-insurance-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">Medicare Supplement (Medigap) plans</Link>{" "}
+                available in Alachua County. If you are still working past 65 and have employer coverage, our{" "}
                 <Link href="/still-working" className="text-[#1a3fa8] underline hover:text-blue-800">guide to Medicare when you are still working</Link>{" "}
                 explains how Medicare Advantage coordinates with group insurance. You can also use our{" "}
                 <Link href="/get-started" className="text-[#1a3fa8] underline hover:text-blue-800">free plan comparison tool</Link>{" "}
-                to see every plan available in your Gainesville ZIP code in minutes.
+                to see every plan available in your ZIP code in minutes.
               </p>
             </section>
 
