@@ -145,8 +145,19 @@ export default function MedicareAdvantagePlansGainesvilleClient() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 In Gainesville, Medicare Advantage plans typically include prescription drug coverage (Part D), dental, vision, hearing, fitness benefits, and more, often at a $0 monthly premium. You still pay your Medicare Part B premium.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 The trade-off is that Medicare Advantage plans use provider networks. Before enrolling, it is critical to verify that your doctors at UF Health, North Florida Regional, or the Malcom Randall VA are in the plan's network for the coming year.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Not sure whether Medicare Advantage is right for you? Our{" "}
+                <Link href="/comparing-medicare-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">Medicare plan comparison guide for Gainesville</Link>{" "}
+                walks through the key differences between Medicare Advantage and{" "}
+                <Link href="/medicare-supplement-insurance-plans-gainesville" className="text-[#1a3fa8] underline hover:text-blue-800">Medicare Supplement (Medigap) plans in Gainesville</Link>.{" "}
+                If you are still working past 65 and have employer coverage, our{" "}
+                <Link href="/still-working" className="text-[#1a3fa8] underline hover:text-blue-800">guide to Medicare when you are still working</Link>{" "}
+                explains how Medicare Advantage coordinates with group insurance. You can also use our{" "}
+                <Link href="/get-started" className="text-[#1a3fa8] underline hover:text-blue-800">free plan comparison tool</Link>{" "}
+                to see every plan available in your Gainesville ZIP code in minutes.
               </p>
             </section>
 
