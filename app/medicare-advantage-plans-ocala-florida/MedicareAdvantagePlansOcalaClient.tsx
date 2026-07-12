@@ -273,13 +273,13 @@ export default function MedicareAdvantagePlansOcalaClient() {
                 <div className="bg-[#1a3fa8] rounded-2xl p-6 text-white sticky top-6">
                   <div className="flex justify-center mb-4">
                     <img
-                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg"
-                      alt="Kelly Webb, Licensed Medicare Agent"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg"
+                      alt="JD Diaz, Licensed Medicare Agent"
                       className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
                       style={{ border: "3px solid #f5a800" }}
                     />
                   </div>
-                  <div className="font-bold text-lg mb-0.5">Kelly Webb</div>
+                  <div className="font-bold text-lg mb-0.5">JD Diaz</div>
                   <div className="text-blue-300 text-sm mb-4">Licensed Medicare Agent, Brandon FL</div>
                   <p className="text-blue-100 text-sm leading-relaxed mb-5">
                     Serving Ocala and Marion County. Free plan comparisons, no pressure.
