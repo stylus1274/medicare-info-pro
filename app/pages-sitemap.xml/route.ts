@@ -90,6 +90,7 @@ const LOCAL_PAGES: string[] = [
   "/medicare-enrollment-assistance-gainesville",
   "/medicare-agent-ocala",
   "/medicare-supplement-insurance-plans-ocala",
+  "/comparing-medicare-plans-ocala",
   "/medicare-agent-tallahassee",
   "/medicare-supplement-insurance-plans-tallahassee",
   "/comparing-medicare-plans-tallahassee",
