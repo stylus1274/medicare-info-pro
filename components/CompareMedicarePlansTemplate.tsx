@@ -37,7 +37,7 @@ const PLAN_COMPARISON = [
   {
     feature: "Prescription Drug Coverage",
     advantage: "Usually included",
-    medigap: "Not included - need separate Part D",
+    medigap: "Not included. A separate Part D plan is required.",
     partD: "Standalone drug coverage",
     notes: "Medigap enrollees must add a separate Part D plan",
   },
@@ -127,7 +127,7 @@ const PLAN_TYPES = [
       "Wide variety of plans available",
     ],
     cons: [
-      "Formularies vary - not all drugs covered by all plans",
+      "Formularies vary. Not all drugs are covered by all plans.",
       "Late enrollment penalty if you delay",
       "Coverage gap (donut hole) still applies for some",
       "Must review annually during Open Enrollment",
@@ -139,19 +139,19 @@ const PLAN_TYPES = [
 const FAQS = [
   {
     q: "What is the difference between Medicare Advantage and Medigap?",
-    a: "Medicare Advantage (Part C) replaces Original Medicare with an all-in-one plan from a private insurer, often including drug coverage and extra benefits like dental and vision. Medigap (Medicare Supplement) works alongside Original Medicare to fill in the cost gaps - like deductibles and coinsurance - but does not include drug coverage. The right choice depends on your health needs, budget, and how important provider flexibility is to you.",
+    a: "Medicare Advantage (Part C) replaces Original Medicare with an all-in-one plan from a private insurer, often including drug coverage and extra benefits like dental and vision. Medigap (Medicare Supplement) works alongside Original Medicare to fill in the cost gaps, including deductibles and coinsurance, but does not include drug coverage. The right choice depends on your health needs, budget, and how important provider flexibility is to you.",
   },
   {
     q: "Can I have both Medicare Advantage and Medigap?",
-    a: "No. You cannot use a Medigap policy to pay costs in a Medicare Advantage plan. Medigap is designed to supplement Original Medicare (Parts A and B) only. If you are enrolled in Medicare Advantage, you do not need - and generally cannot use - a Medigap policy.",
+    a: "No. You cannot use a Medigap policy to pay costs in a Medicare Advantage plan. Medigap is designed to supplement Original Medicare (Parts A and B) only. If you are enrolled in Medicare Advantage, you generally do not need and cannot use a Medigap policy.",
   },
   {
     q: "When is the best time to compare Medicare plans?",
-    a: "The best time is during your Initial Enrollment Period (the 7-month window around your 65th birthday) when you have guaranteed issue rights for Medigap. After that, the Annual Enrollment Period (October 15 - December 7) allows you to switch Medicare Advantage or Part D plans. Our agents can review your options at any time of year.",
+    a: "The best time is during your Initial Enrollment Period (the 7-month window around your 65th birthday) when you have guaranteed issue rights for Medigap. After that, the Annual Enrollment Period (October 15 through December 7) allows you to switch Medicare Advantage or Part D plans. Our agents can review your options at any time of year.",
   },
   {
     q: "How do I know which plan covers my doctors and prescriptions?",
-    a: "Each Medicare Advantage plan has a provider directory and formulary (drug list). Our agents compare plans side-by-side using your specific doctors and medications to find the plan that covers what you need at the lowest cost. This is one of the most valuable services we provide - and it is completely free.",
+    a: "Each Medicare Advantage plan has a provider directory and formulary (drug list). Our agents compare plans side-by-side using your specific doctors and medications to find the plan that covers what you need at the lowest cost. This is one of the most valuable services we provide, and it is completely free.",
   },
   {
     q: "Is there a cost to work with Medicare Information Project?",
@@ -205,13 +205,13 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
               <span className="text-blue-200 text-sm">Comparing Medicare Plans in {city}</span>
             </div>
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
-              <MapPin size={12} /> {city}, FL - {county} County
+              <MapPin size={12} /> {city}, FL | {county} County
             </div>
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Comparing Medicare Plans in {city}
             </h1>
             <p className="text-blue-200 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-              Medicare is not one-size-fits-all. {city} residents have access to Medicare Advantage, Medigap, and Part D plans from {carriers.length}+ carriers. We help you compare them side-by-side - at no cost to you.
+              Medicare is not one-size-fits-all. {city} residents have access to Medicare Advantage, Medigap, and Part D plans from {carriers.length}+ carriers. We help you compare them side by side at no cost to you.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -239,13 +239,13 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                   Why Comparing Medicare Plans in {city} Matters
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Medicare beneficiaries in {city} ({zip}) have access to dozens of plans across multiple carriers. The plan that was right for your neighbor may not be right for you - because plan value depends entirely on your doctors, your prescriptions, and how you use healthcare.
+                  Medicare beneficiaries in {city} ({zip}) have access to dozens of plans across multiple carriers. The plan that was right for your neighbor may not be right for you, because plan value depends entirely on your doctors, your prescriptions, and how you use healthcare.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   A plan with a $0 premium is not always the best deal. If it does not cover your medications or requires you to switch doctors, the out-of-pocket costs can far exceed what you would have paid with a higher-premium plan.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Our independent agents in {county} County compare every available plan against your specific situation - completely free of charge.
+                  Our independent agents in {county} County compare every available plan against your specific situation, completely free of charge.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-3">
@@ -365,7 +365,7 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                   Medicare Carriers Available in {city}
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  {city} residents in {county} County have access to plans from multiple major insurance carriers. As independent agents, we are appointed with all of them - which means we can compare every available option and recommend the one that is genuinely best for you.
+                  {city} residents in {county} County have access to plans from multiple major insurance carriers. As independent agents, we are appointed with all of them, which means we can compare every available option and recommend the one that is genuinely best for you.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Unlike captive agents who only represent one company, our advisors are free to recommend any plan from any carrier. Our compensation is the same regardless of which plan you choose.
@@ -414,7 +414,7 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
               {[
                 { step: "1", title: "Review Your Situation", desc: "We start by understanding your doctors, prescriptions, budget, and health priorities.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
                 { step: "2", title: "Compare Every Plan", desc: "We run a side-by-side comparison of every plan available in your zip code.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { step: "3", title: "Explain Your Options", desc: "We walk you through the top options in plain language - no jargon, no pressure.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { step: "3", title: "Explain Your Options", desc: "We walk you through the top options in plain language. No jargon, no pressure.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
                 { step: "4", title: "Enroll & Support You", desc: "We handle enrollment and stay available year-round for questions and plan reviews.", color: "#b45309", bg: "#fef3e2", border: "#f8d49a" },
               ].map((item) => (
                 <div key={item.step} className="rounded-2xl border p-5" style={{ background: item.bg, borderColor: item.border }}>
