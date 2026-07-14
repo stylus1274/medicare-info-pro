@@ -58,6 +58,7 @@ export default function Page() {
           { label: "Medicare Advantage Plans Ocala", href: "/medicare-advantage-plans-ocala-florida" },
           { label: "Medicare Enrollment Assistance Ocala", href: "/medicare-enrollment-assistance-ocala" },
           { label: "Compare Medicare Plans Gainesville", href: "/comparing-medicare-plans-gainesville" },
+          { label: "Compare Medicare Plans The Villages", href: "/comparing-medicare-plans-the-villages" },
           { label: "Compare Medicare Plans Tallahassee", href: "/comparing-medicare-plans-tallahassee" },
           { label: "Free Consultation", href: "/free-consultation" },
         ],

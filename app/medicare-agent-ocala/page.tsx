@@ -133,6 +133,7 @@ export default function Page() {
             { label: "Medicare Advantage Plans Ocala", href: "/medicare-advantage-plans-ocala-florida" },
             { label: "Medicare Enrollment Assistance Ocala", href: "/medicare-enrollment-assistance-ocala" },
             { label: "Medicare Agent Gainesville", href: "/medicare-agent-gainesville" },
+            { label: "Medicare Agent The Villages", href: "/medicare-agent-the-villages" },
             { label: "Medicare Advantage vs. Medigap Guide", href: "/original-vs-advantage" },
             { label: "Free Consultation", href: "/free-consultation" },
           ],
