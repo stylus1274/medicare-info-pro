@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-scope-of-appointment",
+    title: "Medicare Scope of Appointment: What It Is and Why It Matters",
+    excerpt:
+      "Before a Medicare agent can discuss Advantage or Part D plans with you, federal law requires them to obtain a signed Scope of Appointment form. This guide explains what the SOA is, the 48-hour rule, what agents can and cannot discuss, and what to do if an agent skips it.",
+    category: "Plans",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-grocery-card",
     title: "Medicare Grocery Card: What It Is, Who Qualifies, and How to Get One",
     excerpt:
