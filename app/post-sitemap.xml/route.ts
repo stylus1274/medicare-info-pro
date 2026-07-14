@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/medicare-scope-of-appointment",
   "/medicare-grocery-card",
   "/medicare-8-minute-rule",
   "/at-what-age-can-you-get-medicare",
