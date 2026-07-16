@@ -59,6 +59,7 @@ export default function Page() {
           { label: "Medicare Advantage Plans The Villages", href: "/medicare-advantage-plans-the-villages-florida" },
           { label: "Medicare Enrollment Assistance The Villages", href: "/medicare-enrollment-assistance-the-villages" },
           { label: "Compare Medicare Plans Ocala", href: "/comparing-medicare-plans-ocala" },
+          { label: "Compare Medicare Plans Leesburg", href: "/comparing-medicare-plans-leesburg" },
           { label: "Compare Medicare Plans Gainesville", href: "/comparing-medicare-plans-gainesville" },
           { label: "Free Consultation", href: "/free-consultation" },
         ],
