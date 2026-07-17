@@ -124,7 +124,8 @@ type PostSection =
   | { type: "section"; heading: string; content: string; subsections?: Subsection[] }
   | { type: "summary"; heading: string; content: string }
   | { type: "faq"; items: { question: string; answer: string }[] }
-  | { type: "proTip"; content: string };
+  | { type: "proTip"; content: string }
+  | { type: "inlineCta"; heading?: string; body?: string };
 
 interface RelatedPost {
   title: string;
@@ -464,6 +465,34 @@ export default function BlogPostClient({ post }: Props) {
                       ))}
                     </div>
                   </section>
+                );
+              }
+
+              if (section.type === "inlineCta") {
+                return (
+                  <div
+                    key={idx}
+                    className="rounded-2xl p-7 text-white mb-10"
+                    style={{ background: "linear-gradient(135deg, #0d1f5c 0%, #1a3fa8 100%)" }}
+                  >
+                    <h3
+                      className="text-[1.3rem] font-bold mb-2"
+                      style={{ fontFamily: "'Merriweather', serif" }}
+                    >
+                      {section.heading ?? "Ready to Compare Medicare Plans?"}
+                    </h3>
+                    <p className="text-white/90 text-[0.9rem] mb-5 leading-relaxed">
+                      {section.body ?? "Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you."}
+                    </p>
+                    <a
+                      href="tel:8136995559"
+                      aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
+                      className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
+                    >
+                      <Phone size={16} aria-hidden="true" />
+                      Call (813) 699-5559
+                    </a>
+                  </div>
                 );
               }
 

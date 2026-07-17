@@ -160,6 +160,11 @@ const POST = {
         "The Bridge was designed specifically for beneficiaries who need GLP-1 medications for weight management and who do not have an existing pathway to coverage through standard Part D. If you have a diagnosis that already qualifies you for GLP-1 coverage under Part D, you are not eligible for the Bridge, even if you also meet the BMI criteria.\n\nThe key exclusions are beneficiaries who have been diagnosed with:\n\n<ul><li><strong>Type 2 diabetes:</strong> GLP-1 medications like Ozempic and Mounjaro are FDA-approved for type 2 diabetes and are covered under standard Part D for this indication. If you have type 2 diabetes, you access your GLP-1 through your Part D plan, not through the Bridge.</li><li><strong>Obstructive sleep apnea (OSA):</strong> CMS has approved GLP-1 coverage under Part D for obstructive sleep apnea. Beneficiaries with this diagnosis are directed to their Part D plan.</li><li><strong>Noncirrhotic metabolic dysfunction-associated steatohepatitis (MASH):</strong> Also known as NASH, this liver condition has an FDA-approved GLP-1 indication covered under Part D.</li></ul>\n\nAdditionally, if you have already filled a GLP-1 prescription through your Part D plan in 2026, you are not eligible for the Bridge in 2026. This rule is designed to prevent existing Part D GLP-1 use from shifting to the Bridge program.\n\nThe Bridge is not a way to get a cheaper copay on a GLP-1 you are already receiving through Part D. It is exclusively for beneficiaries whose primary reason for taking the medication is weight reduction, and who do not have a Part D-covered diagnosis that provides an alternative coverage pathway.",
     },
     {
+      type: "inlineCta" as const,
+      heading: "Questions About the GLP-1 Bridge? We Can Help.",
+      body: "Our licensed Medicare specialists can review your eligibility, explain how the Bridge interacts with your current plan, and help you get started at no cost to you.",
+    },
+    {
       type: "section" as const,
       heading: "How the $50 Copay Works and What It Does Not Include",
       content:
