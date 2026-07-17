@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-glp1-bridge-program",
+    title: "Medicare GLP-1 Bridge Program: $50 Wegovy and Zepbound Starting July 2026",
+    excerpt:
+      "Starting July 1, 2026, eligible Medicare Part D beneficiaries can access Wegovy, Zepbound, or Foundayo for a flat $50 monthly copay through the Medicare GLP-1 Bridge. This guide covers who qualifies, how the three BMI tiers work, which drugs are covered, and what the $50 copay does and does not include.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-scope-of-appointment",
     title: "Medicare Scope of Appointment: What It Is and Why It Matters",
     excerpt:
