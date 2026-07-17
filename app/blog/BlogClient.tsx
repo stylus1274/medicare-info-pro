@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/does-medicare-cover-wegovy",
+    title: "Does Medicare Cover Wegovy? Coverage Rules, Costs, and the New GLP-1 Bridge",
+    excerpt:
+      "Medicare coverage for Wegovy has historically been limited by a federal prohibition on weight loss drugs. That changed in 2024 for some beneficiaries and again in 2026 with the launch of the Medicare GLP-1 Bridge. This guide explains every coverage pathway available to Medicare beneficiaries who need Wegovy.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-glp1-bridge-program",
     title: "Medicare GLP-1 Bridge Program: $50 Wegovy and Zepbound Starting July 2026",
     excerpt:

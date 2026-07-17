@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/does-medicare-cover-wegovy",
   "/medicare-glp1-bridge-program",
   "/medicare-scope-of-appointment",
   "/medicare-grocery-card",
