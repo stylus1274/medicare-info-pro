@@ -153,11 +153,11 @@ export default function MedicarePartCClient() {
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
             <a
-              href="tel:+18136995559"
+              href="tel:+18137897700"
               className="inline-flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm"
             >
               <Phone size={15} />
-              Call 813-699-5559
+              Call 813-789-7700
             </a>
             <Link
               href="/medicare-advantage"
@@ -408,11 +408,11 @@ export default function MedicarePartCClient() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="tel:+18136995559"
+                    href="tel:+18137897700"
                     className="inline-flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm"
                   >
                     <Phone size={15} />
-                    Call 813-699-5559
+                    Call 813-789-7700
                   </a>
                   <Link
                     href="/get-started"
@@ -515,11 +515,11 @@ export default function MedicarePartCClient() {
                   </div>
                 </div>
                 <a
-                  href="tel:+18136995559"
+                  href="tel:+18137897700"
                   className="flex items-center justify-center gap-2 w-full bg-[#0d1f5c] hover:bg-[#162a7a] text-white font-bold text-sm py-3 rounded-xl transition-colors"
                 >
                   <Phone size={14} />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link
                   href="/medicare-quiz"
@@ -561,11 +561,11 @@ export default function MedicarePartCClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:+18136995559"
+              href="tel:+18137897700"
               className="inline-flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-7 py-3.5 rounded-xl transition-colors"
             >
               <Phone size={16} />
-              Call 813-699-5559
+              Call 813-789-7700
             </a>
             <Link
               href="/get-started"

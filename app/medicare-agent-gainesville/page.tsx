@@ -7,7 +7,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro - Gainesville FL",
   "description": "Licensed Medicare agent serving Gainesville and Alachua County, FL. Free, independent Medicare plan comparisons with no pressure.",
   "url": "https://medicareinfopro.com/medicare-agent-gainesville/",
-  "telephone": "813-699-5559",
+  "telephone": "813-841-3296",
   "areaServed": {
     "@type": "City",
     "name": "Gainesville",

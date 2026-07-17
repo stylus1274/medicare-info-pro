@@ -379,7 +379,7 @@ export default function PrescriptionDrugsClient() {
                       Formularies change every year. A drug that was covered at a low tier in 2025 may have moved to a higher tier or been removed from the formulary entirely in 2026. This is why reviewing your plan annually during AEP (October 15 through December 7) is critical, even if you are happy with your current plan.
                     </p>
                     <p>
-                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare Part D plans side by side, verify that their specific medications are covered, and identify the plan with the lowest total annual drug cost: not just the lowest premium. Call 813-699-5559 for a no-cost plan comparison.
+                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare Part D plans side by side, verify that their specific medications are covered, and identify the plan with the lowest total annual drug cost: not just the lowest premium. Call 813-789-7700 for a no-cost plan comparison.
                     </p>
                   </div>
                 </div>
@@ -430,11 +430,11 @@ export default function PrescriptionDrugsClient() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="tel:+18136995559"
+                    href="tel:+18137897700"
                     className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    813-699-5559
+                    813-789-7700
                   </a>
                   <Link
                     href="/medicare-quiz"
@@ -483,11 +483,11 @@ export default function PrescriptionDrugsClient() {
                     </div>
                   </div>
                   <a
-                    href="tel:+18136995559"
+                    href="tel:+18137897700"
                     className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                   >
                     <Phone className="w-4 h-4" />
-                    813-699-5559
+                    813-789-7700
                   </a>
                   <Link
                     href="/medicare-quiz"
@@ -536,11 +536,11 @@ export default function PrescriptionDrugsClient() {
             Greg Wohl compares every Part D plan available in your ZIP code and shows you the total annual cost: premium plus your actual drug costs: so you can make an informed decision.
           </p>
           <a
-            href="tel:+18136995559"
+            href="tel:+18137897700"
             className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
           >
             <Phone className="w-5 h-5" />
-            Call 813-699-5559
+            Call 813-789-7700
           </a>
         </div>
       </section>

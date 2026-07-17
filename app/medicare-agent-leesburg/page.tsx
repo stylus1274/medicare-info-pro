@@ -7,7 +7,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro - Medicare Agent Leesburg FL",
   "description": "Licensed independent Medicare agents serving Leesburg and Lake County, FL. Free consultations for Medicare Advantage, Medigap, and Part D plans.",
   "url": "https://medicareinfopro.com/medicare-agent-leesburg/",
-  "telephone": "813-699-5559",
+  "telephone": "813-789-7700",
   "areaServed": {
     "@type": "City",
     "name": "Leesburg",

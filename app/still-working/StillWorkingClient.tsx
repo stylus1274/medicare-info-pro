@@ -104,8 +104,8 @@ export default function StillWorkingClient() {
               To enroll or not to enroll? It is one of the most common questions we hear. The answer depends on your specific situation, and getting it wrong can cost you permanently.
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-              <a href="tel:8136995559" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem" }}>
-                <Phone size={16} /> Talk to an Agent: 813-699-5559
+              <a href="tel:8137897700" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem" }}>
+                <Phone size={16} /> Talk to an Agent: 813-789-7700
               </a>
               <Link href="/free-consultation" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.12)", color: "#fff", fontWeight: 600, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem", border: "1px solid rgba(255,255,255,0.25)" }}>
                 Free Consultation <ChevronRight size={16} />
@@ -229,9 +229,9 @@ export default function StillWorkingClient() {
                 <p style={{ fontSize: "0.88rem", color: "#c8d6f5", lineHeight: 1.6, marginBottom: "1.25rem" }}>
                   Still working and not sure what to do? I help people in your exact situation every week. Call me and we will figure it out together.
                 </p>
-                <a href="tel:8136995559" style={{ display: "block", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.75rem", borderRadius: 10, textDecoration: "none", fontSize: "0.92rem", marginBottom: "0.75rem" }}>
+                <a href="tel:8137897700" style={{ display: "block", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.75rem", borderRadius: 10, textDecoration: "none", fontSize: "0.92rem", marginBottom: "0.75rem" }}>
                   <Phone size={14} style={{ display: "inline", marginRight: 6 }} />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link href="/free-consultation" style={{ display: "block", background: "rgba(255,255,255,0.1)", color: "#fff", fontWeight: 600, padding: "0.75rem", borderRadius: 10, textDecoration: "none", fontSize: "0.88rem", border: "1px solid rgba(255,255,255,0.2)" }}>
                   Schedule a Free Consultation

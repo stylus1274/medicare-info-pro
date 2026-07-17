@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro",
   "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
   "url": "https://medicareinfopro.com/medicare-agent-brandon",
-  "telephone": "+1-813-699-5559",
+  "telephone": "+1-813-789-7700",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Brandon",

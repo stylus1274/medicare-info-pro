@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   slug: "valerie-justin-hall",
   title: "Licensed Independent Medicare Agent",
   photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg",
-  phone: "813-699-5559",
+  phone: "479-225-9566",
   email: "info@medicareinfopro.com",
   bio: [
     "Valerie Justin-Hall is a licensed independent Medicare agent at Medicare Information Project, based in Brandon, Florida. Valerie brings a compassionate and thorough approach to every client consultation, ensuring that each person she works with fully understands their Medicare options before making any decisions.",

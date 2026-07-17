@@ -42,7 +42,7 @@ const member: TeamMemberData = {
   slug: "jennifer-loader-wohl",
   title: "Licensed Independent Medicare Agent",
   photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
-  phone: "813-699-5559",
+  phone: "813-841-3296",
   email: "info@medicareinfopro.com",
   bio: [
     "Jennifer Loader-Wohl is a licensed independent Medicare agent at Medicare Information Project, based in Brandon, Florida. Jennifer brings warmth, patience, and deep knowledge of Medicare to every client interaction, making her a trusted resource for beneficiaries navigating Medicare for the first time or reviewing their existing coverage.",

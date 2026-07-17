@@ -1232,12 +1232,12 @@ export default function BlogClient() {
                   Our licensed Medicare specialists are available to answer your questions , at no cost to you.
                 </p>
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   aria-label="Call MIP at (813) 699-5559"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white text-[#1a3fa8] font-bold text-[0.875rem] hover:bg-white/90 transition-colors w-full justify-center mb-2"
                 >
                   <Phone size={15} aria-hidden="true" />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link
                   href="/enrollment-calculator"

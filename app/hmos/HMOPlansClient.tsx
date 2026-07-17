@@ -347,9 +347,9 @@ export default function HMOPlansClient() {
                 <p className="text-sm text-white/70">A licensed Medicare specialist can show you every plan available in your zip code and verify your doctors are in-network: at no cost to you.</p>
               </div>
               <div className="flex flex-col gap-2 flex-shrink-0">
-                <a href="tel:+18136995559" className="flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors">
+                <a href="tel:+18137897700" className="flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors">
                   <Phone size={15} />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link href="/medicare-quiz" className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors">
                   Take the Medicare Quiz
@@ -392,9 +392,9 @@ export default function HMOPlansClient() {
                     <p className="text-xs text-gray-500">Licensed Medicare Advisor</p>
                   </div>
                 </div>
-                <a href="tel:+18136995559" className="flex items-center justify-center gap-2 w-full bg-[#0d1f5c] hover:bg-[#162a7a] text-white font-bold text-sm py-3 rounded-xl transition-colors">
+                <a href="tel:+18137897700" className="flex items-center justify-center gap-2 w-full bg-[#0d1f5c] hover:bg-[#162a7a] text-white font-bold text-sm py-3 rounded-xl transition-colors">
                   <Phone size={14} />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link href="/medicare-quiz" className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors">
                   Take the Medicare Quiz
@@ -432,9 +432,9 @@ export default function HMOPlansClient() {
             An independent Medicare advisor can compare every HMO plan available in your zip code and verify your doctors are in-network before you enroll.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18136995559" className="inline-flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-7 py-3.5 rounded-xl transition-colors">
+            <a href="tel:+18137897700" className="inline-flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-7 py-3.5 rounded-xl transition-colors">
               <Phone size={16} />
-              Call 813-699-5559
+              Call 813-789-7700
             </a>
             <Link href="/medicare-quiz" className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors">
               Take the Medicare Quiz

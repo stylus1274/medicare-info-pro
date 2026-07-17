@@ -84,7 +84,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro",
   "description": "Licensed Medicare insurance specialists serving Tampa, FL.",
   "url": "https://medicareinfopro.com/medicare-enrollment-assistance-in-tampa-fl",
-  "telephone": "+1-813-699-5559",
+  "telephone": "+1-813-789-7700",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tampa",
@@ -147,11 +147,11 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
                   Get Enrollment Help Now
                 </Link>
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   className="inline-flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  813-699-5559
+                  813-789-7700
                 </a>
               </div>
             </div>
@@ -319,11 +319,11 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
                 Get Enrollment Help
               </Link>
               <a
-                href="tel:8136995559"
+                href="tel:8137897700"
                 className="flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-blue-800 transition-colors text-sm"
               >
                 <Phone className="w-4 h-4" />
-                813-699-5559
+                813-789-7700
               </a>
             </div>
 
@@ -356,7 +356,7 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#1a3fa8] flex-shrink-0" />
-                  <a href="tel:8136995559" className="hover:text-[#1a3fa8]">813-699-5559</a>
+                  <a href="tel:8137897700" className="hover:text-[#1a3fa8]">813-789-7700</a>
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
@@ -384,11 +384,11 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
               Get Enrollment Help Now
             </Link>
             <a
-              href="tel:8136995559"
+              href="tel:8137897700"
               className="inline-flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              813-699-5559
+              813-789-7700
             </a>
           </div>
         </div>

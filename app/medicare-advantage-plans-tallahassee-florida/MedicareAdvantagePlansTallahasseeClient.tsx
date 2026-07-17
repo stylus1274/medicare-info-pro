@@ -95,9 +95,9 @@ export default function MedicareAdvantagePlansTallahasseeClient() {
             Tallahassee residents have access to Medicare Advantage plans from 10+ carriers. Our independent agents compare every plan against your doctors, prescriptions, and budget - completely free.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
+            <a href="tel:8137897700" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" /></svg>
-              Call 813-699-5559
+              Call 813-789-7700
             </a>
             <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
               Free Plan Comparison
@@ -186,9 +186,9 @@ export default function MedicareAdvantagePlansTallahasseeClient() {
               <p className="text-blue-100 text-sm leading-relaxed mb-6">
                 "Tallahassee has a unique Medicare landscape - especially for state retirees and those with FRS pension coverage. I help residents understand exactly how Medicare works alongside their existing benefits and find the plan that fits their situation."
               </p>
-              <a href="tel:8136995559" className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors w-full">
+              <a href="tel:8137897700" className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors w-full">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" /></svg>
-                Speak with Greg: 813-699-5559
+                Speak with Greg: 813-789-7700
               </a>
             </div>
           </div>
@@ -244,9 +244,9 @@ export default function MedicareAdvantagePlansTallahasseeClient() {
             <Link href="/free-consultation" className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e09600] transition-colors text-lg">
               Schedule Free Consultation
             </Link>
-            <a href="tel:8136995559" className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
+            <a href="tel:8137897700" className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" /></svg>
-              813-699-5559
+              813-789-7700
             </a>
           </div>
         </div>

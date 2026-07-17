@@ -7,7 +7,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro - Medicare Supplement Plans Leesburg FL",
   "description": "Licensed independent Medicare agents helping Leesburg and Lake County residents compare Medicare Supplement (Medigap) plans. Free consultations.",
   "url": "https://medicareinfopro.com/medicare-supplement-insurance-plans-leesburg/",
-  "telephone": "813-699-5559",
+  "telephone": "813-841-3296",
   "areaServed": {
     "@type": "City",
     "name": "Leesburg",

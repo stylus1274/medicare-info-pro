@@ -617,7 +617,7 @@ export default function MedicareAdvantagePillarClient() {
                   Take the Quiz
                 </Link>
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition-colors"
                 >
                   <Phone size={14} /> Call Now
@@ -678,10 +678,10 @@ export default function MedicareAdvantagePillarClient() {
                   <span className="text-xs text-white/60 ml-1">4.9 / 5</span>
                 </div>
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold bg-[#f5a800] text-white hover:bg-amber-400 transition-colors mb-2"
                 >
-                  <Phone size={14} /> 813-699-5559
+                  <Phone size={14} /> 813-789-7700
                 </a>
                 <Link
                   href="/medicare-quiz"
@@ -740,11 +740,11 @@ export default function MedicareAdvantagePillarClient() {
             </div>
             <div className="flex flex-col gap-3 flex-shrink-0">
               <a
-                href="tel:8136995559"
+                href="tel:8137897700"
                 className="flex items-center gap-3 bg-[#f5a800] hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-xl transition-colors text-base whitespace-nowrap"
               >
                 <Phone className="w-5 h-5" />
-                Call 813-699-5559
+                Call 813-789-7700
               </a>
               <p className="text-white/50 text-xs text-center">
                 BBB A+ Rated · Brandon, FL · Free Service

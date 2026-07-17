@@ -413,7 +413,7 @@ export default function SkilledNursingClient() {
                         If you have a Medicare Advantage plan, your plan's discharge coordinator will typically recommend in-network SNFs. It is important to confirm that the recommended facility is in your plan's network before transfer. If you have Original Medicare with a Medigap plan, you have the flexibility to choose any Medicare-certified SNF in the area without network restrictions.
                       </p>
                       <p>
-                        One of the most common and costly mistakes in the Brandon and Tampa Bay area is assuming that a hospital stay qualifies for SNF coverage without confirming inpatient admission status. Greg Wohl helps local residents understand their Medicare benefits before a health event occurs, so they are prepared when they need care most. Call 813-699-5559 for a no-cost consultation.
+                        One of the most common and costly mistakes in the Brandon and Tampa Bay area is assuming that a hospital stay qualifies for SNF coverage without confirming inpatient admission status. Greg Wohl helps local residents understand their Medicare benefits before a health event occurs, so they are prepared when they need care most. Call 813-789-7700 for a no-cost consultation.
                       </p>
                     </div>
                   </div>
@@ -480,11 +480,11 @@ export default function SkilledNursingClient() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a
-                      href="tel:+18136995559"
+                      href="tel:+18137897700"
                       className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                     >
                       <Phone className="w-4 h-4" />
-                      813-699-5559
+                      813-789-7700
                     </a>
                     <Link
                       href="/do-i-need-a-supplement"
@@ -533,11 +533,11 @@ export default function SkilledNursingClient() {
                       </div>
                     </div>
                     <a
-                      href="tel:+18136995559"
+                      href="tel:+18137897700"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      813-699-5559
+                      813-789-7700
                     </a>
                     <Link
                       href="/do-i-need-a-supplement"
@@ -586,11 +586,11 @@ export default function SkilledNursingClient() {
               A SNF stay can cost $16,760 or more without the right coverage. Greg Wohl helps Brandon and Tampa Bay area residents choose a Medigap or Advantage plan that protects them.
             </p>
             <a
-              href="tel:+18136995559"
+              href="tel:+18137897700"
               className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call 813-699-5559
+              Call 813-789-7700
             </a>
           </div>
         </section>

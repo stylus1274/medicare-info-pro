@@ -14,7 +14,7 @@ const webpageSchema = {
     "name": "Medicare Information Pro",
     "@id": "https://medicareinfopro.com/#organization"
   },
-  "description": "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-699-5559 or request an appointment online."
+  "description": "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-789-7700 or request an appointment online."
 } as const;
 
 export const dynamic = "force-dynamic";
@@ -22,7 +22,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Find a Licensed Medicare Agent Near You | Medicare Information Pro",
   description:
-    "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-699-5559 or request an appointment online.",
+    "Work with an independent, licensed Medicare agent with 27+ years of experience in Florida and surrounding states. Free consultations, no pressure, 17 carriers represented. Call 813-789-7700 or request an appointment online.",
   keywords: [
     "find Medicare agent near me",
     "licensed Medicare agent Florida",

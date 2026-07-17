@@ -352,7 +352,7 @@ export default function MentalHealthClient() {
                       If you are choosing between Original Medicare with a Medigap plan versus a Medicare Advantage plan for mental health coverage, the key question is whether your current therapist or psychiatrist accepts the plan. Many mental health providers in the Brandon and Tampa area accept Original Medicare but may not be in every Advantage plan's network.
                     </p>
                     <p>
-                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare plans with their specific providers in mind. Call 813-699-5559 for a no-cost consultation.
+                      Greg Wohl and the MIP team help Brandon and Tampa Bay area residents compare plans with their specific providers in mind. Call 813-789-7700 for a no-cost consultation.
                     </p>
                   </div>
                 </div>
@@ -403,11 +403,11 @@ export default function MentalHealthClient() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="tel:+18136995559"
+                    href="tel:+18137897700"
                     className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-6 py-3 rounded-xl transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    813-699-5559
+                    813-789-7700
                   </a>
                   <Link
                     href="/medicare-quiz"
@@ -456,11 +456,11 @@ export default function MentalHealthClient() {
                     </div>
                   </div>
                   <a
-                    href="tel:+18136995559"
+                    href="tel:+18137897700"
                     className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full mb-3 text-sm"
                   >
                     <Phone className="w-4 h-4" />
-                    813-699-5559
+                    813-789-7700
                   </a>
                   <Link
                     href="/medicare-quiz"
@@ -509,11 +509,11 @@ export default function MentalHealthClient() {
             The right plan depends on your providers, your medications, and your budget. Greg Wohl helps Brandon and Tampa Bay area residents find the plan that covers their needs at the lowest cost.
           </p>
           <a
-            href="tel:+18136995559"
+            href="tel:+18137897700"
             className="inline-flex items-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
           >
             <Phone className="w-5 h-5" />
-            Call 813-699-5559
+            Call 813-789-7700
           </a>
         </div>
       </section>

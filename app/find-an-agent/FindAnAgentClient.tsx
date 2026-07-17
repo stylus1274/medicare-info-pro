@@ -101,7 +101,7 @@ const AGENT = {
   name: "Greg Wohl",
   title: "Licensed Medicare Specialist",
   credentials: "Licensed in FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN, TX",
-  phone: "813-699-5559",
+  phone: "813-789-7700",
   email: "greg@medicareinfopro.com",
   photo:
     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
@@ -136,10 +136,10 @@ export default function FindAnAgentClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:8136995559"
+              href="tel:8137897700"
               className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-amber-400 transition-colors"
             >
-              <Phone className="w-5 h-5" /> Call 813-699-5559
+              <Phone className="w-5 h-5" /> Call 813-789-7700
             </a>
             <a
               href="/contact"
@@ -334,8 +334,8 @@ export default function FindAnAgentClient() {
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#1a3fa8] shrink-0" />
                   <div>
-                    <a href="tel:8136995559" className="font-semibold text-gray-900 hover:text-[#1a3fa8] transition-colors">
-                      813-699-5559
+                    <a href="tel:8137897700" className="font-semibold text-gray-900 hover:text-[#1a3fa8] transition-colors">
+                      813-789-7700
                     </a>
                     <span className="text-gray-500 text-sm ml-2">(local)</span>
                   </div>
@@ -369,10 +369,10 @@ export default function FindAnAgentClient() {
               </p>
               <div className="space-y-3">
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   className="flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors w-full"
                 >
-                  <Phone className="w-4 h-4" /> Call Now: 813-699-5559
+                  <Phone className="w-4 h-4" /> Call Now: 813-789-7700
                 </a>
                 <a
                   href="/contact"
@@ -420,7 +420,7 @@ export default function FindAnAgentClient() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="p-5 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-500 leading-relaxed">
           <p className="font-semibold text-gray-700 mb-1">Compliance Disclosure</p>
-          We do not offer every plan available in your area. Currently we represent 17 organizations which offer 149 products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options. We are not part of, affiliated with, reviewed, or endorsed by CMS. A non-government entity. Medicare Information Project | 915 Oakfield Dr, Suite A, Brandon, FL 33511 | 813-699-5559.
+          We do not offer every plan available in your area. Currently we represent 17 organizations which offer 149 products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options. We are not part of, affiliated with, reviewed, or endorsed by CMS. A non-government entity. Medicare Information Project | 915 Oakfield Dr, Suite A, Brandon, FL 33511 | 813-789-7700.
         </div>
       </div>
 

@@ -444,11 +444,11 @@ export default function CostEstimatorClient() {
                       Want a precise comparison of plans available in Brandon and Hillsborough County? Call Greg for a free consultation.
                     </p>
                     <a
-                      href="tel:+18136995559"
+                      href="tel:+18137897700"
                       className="flex items-center justify-center gap-2 bg-[#0d2d6b] hover:bg-[#0a2558] text-white font-bold px-4 py-3 rounded-xl transition-colors w-full text-sm"
                     >
                       <Phone className="w-4 h-4" />
-                      813-699-5559
+                      813-789-7700
                     </a>
                   </div>
 
@@ -490,11 +490,11 @@ export default function CostEstimatorClient() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+18136995559"
+                href="tel:+18137897700"
                 className="inline-flex items-center justify-center gap-2 bg-[#f5a800] hover:bg-[#e09700] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call 813-699-5559
+                Call 813-789-7700
               </a>
               <Link
                 href="/medicare-quiz"

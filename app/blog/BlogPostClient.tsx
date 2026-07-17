@@ -491,7 +491,7 @@ export default function BlogPostClient({ post }: Props) {
                       {section.body ?? "Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you."}
                     </p>
                     <a
-                      href="tel:8136995559"
+                      href="tel:8137897700"
                       aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
                       className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
                     >
@@ -520,7 +520,7 @@ export default function BlogPostClient({ post }: Props) {
                 Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you.
               </p>
               <a
-                href="tel:8136995559"
+                href="tel:8137897700"
                 aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
               >
@@ -625,12 +625,12 @@ export default function BlogPostClient({ post }: Props) {
                   Compare Medicare plan rates from multiple carriers. Our specialists are available at no cost to you.
                 </p>
                 <a
-                  href="tel:8136995559"
+                  href="tel:8137897700"
                   aria-label="Call MIP at (813) 699-5559 for a free Medicare quote"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.875rem] hover:bg-[#e09515] transition-colors w-full justify-center mb-2"
                 >
                   <Phone size={15} aria-hidden="true" />
-                  813-699-5559
+                  813-789-7700
                 </a>
                 <Link
                   href="/do-i-need-a-supplement"

@@ -7,7 +7,7 @@ const localBusinessSchema = {
   "name": "Medicare Information Pro - Medicare Agent The Villages FL",
   "description": "Licensed independent Medicare agents serving The Villages and Sumter County, FL. Free consultations for Medicare Advantage, Medigap, and Part D plans.",
   "url": "https://medicareinfopro.com/medicare-agent-the-villages/",
-  "telephone": "813-699-5559",
+  "telephone": "813-841-3296",
   "areaServed": {
     "@type": "City",
     "name": "The Villages",

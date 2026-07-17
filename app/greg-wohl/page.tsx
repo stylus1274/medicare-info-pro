@@ -42,7 +42,7 @@ const member: TeamMemberData = {
   slug: "greg-wohl",
   title: "Founder and Licensed Independent Medicare Agent",
   photoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
-  phone: "813-699-5559",
+  phone: "813-789-7700",
   email: "info@medicareinfopro.com",
   bio: [
     "Greg Wohl is the founder of Medicare Information Project and a licensed independent insurance agent based in Brandon, Florida. With years of experience helping Medicare beneficiaries across Florida and beyond, Greg has built a reputation for making Medicare simple, clear, and stress-free.",

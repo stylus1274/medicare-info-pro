@@ -32,7 +32,7 @@ const MEMBER = {
   name: "Paul Eckstein",
   title: "Licensed Medicare Agent",
   license: "FL License # A075214",
-  phone: "813-756-1100",
+  phone: "813-499-9771",
   email: "info@medicareinfopro.com",
   location: "Brandon, FL",
   serviceArea: "Hillsborough County, Brandon, Riverview, Valrico, and surrounding communities",
