@@ -29,8 +29,8 @@ const ARTICLES = [
   {
     id: 1,
     title: "Common Reasons Medicare Denies Mobility Scooter Claims in Florida (and How to Appeal)",
-    slug: "https://medicareinfopro.com/why-medicare-denies-mobility-scooter-coverage/",
-    isInternal: false,
+    slug: "/why-medicare-denies-mobility-scooter-claims-florida/",
+    isInternal: true,
     excerpt:
       "Medicare often denies mobility scooter claims in Florida because medical necessity is not clearly documented, paperwork is incomplete, or the request does not meet Medicare's strict in-home use requirement. Learn the exact steps to appeal.",
     category: "Coverage",
@@ -43,8 +43,8 @@ const ARTICLES = [
   {
     id: 2,
     title: "How Florida Seniors Can Maximize Medicare Benefits After 65",
-    slug: "https://medicareinfopro.com/maximize-medicare-benefits-florida-seniors/",
-    isInternal: false,
+    slug: "/maximize-medicare-benefits-florida-seniors/",
+    isInternal: true,
     excerpt:
       "Florida seniors can maximize Medicare benefits by understanding their options, choosing the right plan based on health needs and budget, and avoiding gaps in coverage. Focus on preventive care, compare plans annually, and review financial assistance programs.",
     category: "Guide",
@@ -57,8 +57,8 @@ const ARTICLES = [
   {
     id: 3,
     title: "Does Medicare Cover Mobility Scooters In 2026?",
-    slug: "https://medicareinfopro.com/medicare-coverage-for-scooters/",
-    isInternal: false,
+    slug: "/medicare-coverage-for-scooters/",
+    isInternal: true,
     excerpt:
       "Yes, Medicare Part B may cover a mobility scooter if your doctor documents it as medically necessary. You must meet specific eligibility requirements, use a Medicare-approved supplier, and be prepared to pay 20% of the Medicare-approved cost after your deductible.",
     category: "Coverage",
@@ -71,8 +71,8 @@ const ARTICLES = [
   {
     id: 4,
     title: "Best Medicare Advantage Plan in Florida for 2026: Compare Top Plans",
-    slug: "https://medicareinfopro.com/best-medicare-advantage-plans-florida/",
-    isInternal: false,
+    slug: "/best-medicare-advantage-plans-florida/",
+    isInternal: true,
     excerpt:
       "With over 4 million Floridians enrolled in Medicare, choosing the right Medicare Advantage plan can feel overwhelming. This guide compares the top-rated plans available in Florida for 2026, by cost, network, and coverage.",
     category: "Medicare Advantage",
@@ -85,8 +85,8 @@ const ARTICLES = [
   {
     id: 5,
     title: "How to Lower Your Medicare Premiums Based on Income in 2026",
-    slug: "https://medicareinfopro.com/how-to-reduce-medicare-premiums-based-on-income-2026/",
-    isInternal: false,
+    slug: "/how-to-reduce-medicare-premiums-based-on-income-2026/",
+    isInternal: true,
     excerpt:
       "You can lower your Medicare premiums based on income by applying for Medicare Savings Programs, appealing IRMAA if your income has changed, or qualifying for Extra Help. These programs help reduce costs for eligible individuals significantly.",
     category: "Costs & Savings",
@@ -99,8 +99,8 @@ const ARTICLES = [
   {
     id: 6,
     title: "How Medicare Premiums Are Calculated: A Simple Guide for 2026",
-    slug: "https://medicareinfopro.com/how-medicare-premiums-are-calculated/",
-    isInternal: false,
+    slug: "/how-medicare-premiums-are-calculated/",
+    isInternal: true,
     excerpt:
       "Understanding how your Medicare premiums are determined can save you from unexpected costs. Premiums are based on your income from two years prior and can change annually.",
     category: "Costs & Savings",
