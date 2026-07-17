@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/does-medicare-cover-zepbound",
+    title: "Does Medicare Cover Zepbound? Coverage Rules, Costs, and the New GLP-1 Bridge",
+    excerpt:
+      "Zepbound (tirzepatide) is one of the most effective weight loss medications available, but Medicare coverage has been limited by a longstanding prohibition on weight loss drugs. The Medicare GLP-1 Bridge, launched July 1, 2026, changes that for many beneficiaries. This guide explains every coverage pathway, what Zepbound costs under Medicare, and how it differs from Mounjaro.",
+    category: "Coverage",
+    author: "Jennifer C. Loader-Wohl",
+    date: "July 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/does-medicare-cover-wegovy",
     title: "Does Medicare Cover Wegovy? Coverage Rules, Costs, and the New GLP-1 Bridge",
     excerpt:

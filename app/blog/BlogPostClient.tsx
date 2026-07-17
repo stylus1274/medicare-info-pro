@@ -159,7 +159,13 @@ interface BlogPost {
   relatedPosts: RelatedPost[];
 }
 
-export { GREG_WOHL };
+const JENNIFER_LOADER_WOHL: Author = {
+  name: "Jennifer C. Loader-Wohl",
+  title: "Licensed Medicare Specialist",
+  photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg",
+};
+
+export { GREG_WOHL, JENNIFER_LOADER_WOHL };
 
 interface Props {
   post: BlogPost;
