@@ -83,6 +83,23 @@ const POST = {
   readTime: "12 min read",
   image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
   imageAlt: "GLP-1 medication injection pen representing the new Medicare GLP-1 Bridge Program covering Wegovy and Zepbound",
+  relatedPosts: [
+    {
+      title: "Does Medicare Cover Ozempic? Coverage, Costs, and Alternatives",
+      href: "/does-medicare-cover-ozempic",
+      category: "Coverage" as const,
+    },
+    {
+      title: "Understanding Medicare Part D: Coverage, Costs, and How It Works",
+      href: "/understanding-part-d",
+      category: "Part D" as const,
+    },
+    {
+      title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
+      href: "/medicare-advantage-vs-medigap",
+      category: "Plans" as const,
+    },
+  ],
   sections: [
     {
       type: "intro" as const,
