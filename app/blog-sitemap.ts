@@ -3,6 +3,22 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/does-medicare-cover-zepbound",
+  "/does-medicare-cover-wegovy",
+  "/medicare-glp1-bridge-program",
+  "/medicare-scope-of-appointment",
+  "/medicare-grocery-card",
+  "/medicare-8-minute-rule",
+  "/at-what-age-can-you-get-medicare",
+  "/how-to-enroll-in-medicare",
+  "/does-medicare-cover-dental",
+  "/medicare-advantage-vs-medigap",
+  "/best-medicare-advantage-plans-hillsborough-county",
+  "/medicare-out-of-pocket-costs",
+  "/how-to-get-help-paying-for-medicare",
+  "/feeling-trapped-in-medicare-advantage-plans",
+  "/2025-medicare-scams-florida",
+  "/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
   "/does-medicare-cover-ambulance-rides",
   "/why-is-health-insurance-so-expensive-in-florida",
   "/how-much-does-health-insurance-cost-per-month-in-florida",
