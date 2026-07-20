@@ -41,7 +41,7 @@ const member: TeamMemberData = {
   slug: "mark-vanhoesen",
   title: "Licensed Independent Medicare Agent",
   photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/gISbkFqSnQEUvXao.jpg",
-  phone: "813-699-5559",
+  phone: "727-560-8850",
   email: "info@medicareinfopro.com",
   bio: [
     "Mark VanHoesen is a licensed independent Medicare agent at Medicare Information Project, based in Brandon, Florida. Mark brings a detail-oriented approach to every client consultation, helping beneficiaries understand the full picture of their Medicare options before making any coverage decisions.",
