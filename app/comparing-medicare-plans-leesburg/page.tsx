@@ -59,6 +59,7 @@ export default function Page() {
           { label: "Medicare Advantage Plans Leesburg", href: "/medicare-advantage-plans-leesburg-florida" },
           { label: "Medicare Enrollment Assistance Leesburg", href: "/medicare-enrollment-assistance-leesburg" },
           { label: "Compare Medicare Plans The Villages", href: "/comparing-medicare-plans-the-villages" },
+          { label: "Compare Medicare Plans Clermont", href: "/comparing-medicare-plans-clermont" },
           { label: "Compare Medicare Plans Ocala", href: "/comparing-medicare-plans-ocala" },
           { label: "Free Consultation", href: "/free-consultation" },
         ],
