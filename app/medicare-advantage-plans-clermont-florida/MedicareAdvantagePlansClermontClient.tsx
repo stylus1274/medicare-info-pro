@@ -81,7 +81,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-export default function MedicareAdvantagePlansClermont Client() {
+export default function MedicareAdvantagePlansClermontClient() {
   return (
     <>
       <Header />
