@@ -80,9 +80,7 @@ export default function Page() {
             "Clermont National Training Center",
           ],
           neighborhoods: [
-            "Clermont 34711",
-            "Clermont 34714",
-            "Clermont 34715",
+            "Clermont",
             "Minneola",
             "Groveland",
             "Mascotte",
