@@ -66,7 +66,7 @@ const POST = {
         "Medicare Part A hospital coinsurance and hospital costs up to an additional 365 days after Medicare benefits are exhausted",
         "Medicare Part A hospice care coinsurance or copayment",
         "Medicare Part A deductible ($1,676 per benefit period in 2026)",
-        "Medicare Part B coinsurance or copayment — EXCEPT for copays of up to $20 for some office visits and up to $50 for emergency room visits that do not result in an inpatient admission",
+        "Medicare Part B coinsurance or copayment (EXCEPT for copays of up to $20 for some office visits and up to $50 for emergency room visits that do not result in an inpatient admission)",
         "Skilled nursing facility care coinsurance",
         "First three pints of blood",
         "Foreign travel emergency care (up to plan limits)",
