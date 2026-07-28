@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/medicare-supplement-plan-g-vs-plan-n",
   "/does-medicare-cover-zepbound",
   "/does-medicare-cover-wegovy",
   "/medicare-glp1-bridge-program",

@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-supplement-plan-g-vs-plan-n",
+    title: "Medicare Supplement Plan G vs. Plan N: Which Is Right for You?",
+    excerpt:
+      "Plan G and Plan N are the two most popular Medigap plans in 2026. Both offer strong coverage, but the right choice depends on how often you see doctors and whether you want the lowest possible premium or the most predictable costs. This guide compares coverage, copays, excess charges, and long-term cost scenarios.",
+    category: "Supplements",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/does-medicare-cover-zepbound",
     title: "Does Medicare Cover Zepbound? Coverage Rules, Costs, and the New GLP-1 Bridge",
     excerpt:
