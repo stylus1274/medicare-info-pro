@@ -79,16 +79,35 @@ const POST = {
   date: "July 2026",
   readTime: "11 min read",
   image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+  imageAlt: "Medicare Supplement Plan G vs Plan N comparison documents",
   sections: [
     {
       type: "keyTakeaways" as const,
       items: [
-        "Plan G covers 100% of Medicare-approved costs after the Part B deductible; Plan N requires copays of up to $20 per office visit and up to $50 per ER visit",
-        "Plan N does NOT cover Part B excess charges; Plan G covers them in full",
-        "Plan N premiums are typically $20 to $50 per month lower than Plan G premiums",
-        "Plan N makes financial sense if you rarely visit doctors and your doctors accept Medicare assignment",
-        "Both plans require medical underwriting outside of open enrollment, which can affect your ability to switch later",
-        "In Florida, both Plan G and Plan N are widely available from dozens of carriers",
+        {
+          label: "Plan G covers all costs after the Part B deductible",
+          text: "Plan G covers 100% of Medicare-approved costs after the annual Part B deductible ($257 in 2026). You pay no copays at doctor visits or the ER.",
+        },
+        {
+          label: "Plan N requires copays at the point of care",
+          text: "Plan N requires copays of up to $20 per office visit and up to $50 per ER visit (waived if admitted). It does NOT cover Part B excess charges.",
+        },
+        {
+          label: "Plan N premiums are $20 to $50 per month lower",
+          text: "The premium savings with Plan N typically range from $240 to $600 per year. Whether that outweighs the copays depends on how often you use healthcare.",
+        },
+        {
+          label: "Plan N works best for healthy, infrequent users",
+          text: "Plan N makes financial sense if you visit the doctor fewer than 10 to 12 times per year and all your doctors accept Medicare assignment.",
+        },
+        {
+          label: "Switching plans later requires underwriting",
+          text: "Outside of open enrollment, switching from Plan N to Plan G requires medical underwriting in Florida. If your health changes, you may not be able to switch.",
+        },
+        {
+          label: "Both plans are widely available in Florida",
+          text: "Florida is one of the most competitive Medigap markets in the country. Both Plan G and Plan N are available from dozens of carriers at competitive rates.",
+        },
       ],
     },
     {
@@ -198,17 +217,17 @@ const POST = {
   ],
   relatedPosts: [
     {
-      slug: "/plan-g-complete-guide",
+      href: "/plan-g-complete-guide",
       title: "Medigap Plan G: The Complete Guide for 2026",
       category: "Supplements" as const,
     },
     {
-      slug: "/medigap-open-enrollment",
+      href: "/medigap-open-enrollment",
       title: "Medigap Open Enrollment: Your One Guaranteed Chance",
       category: "Supplements" as const,
     },
     {
-      slug: "/original-vs-advantage",
+      href: "/original-vs-advantage",
       title: "Original Medicare vs. Medicare Advantage: Which Is Right for You?",
       category: "Plans" as const,
     },
