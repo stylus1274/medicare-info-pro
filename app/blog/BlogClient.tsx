@@ -346,6 +346,19 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
+    slug: "/medicare-secondary-payer-rules",
+    title: "Medicare Secondary Payer Rules: When Medicare Pays Second",
+    excerpt:
+      "Medicare does not always pay first. When you have other health coverage, federal Medicare Secondary Payer (MSP) rules determine which insurer pays first and which pays second. This guide covers employer plans, COBRA, workers comp, auto insurance, VA benefits, and how MSP affects your enrollment decisions.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "July 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+    live: true,
+    sortOrder: 1,
+  },
+  {
     slug: "/medicare-supplement-plan-g-vs-plan-n",
     title: "Medicare Supplement Plan G vs. Plan N: Which Is Right for You?",
     excerpt:
