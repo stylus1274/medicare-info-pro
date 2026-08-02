@@ -16,6 +16,7 @@ const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/coverage-qa", priority: 0.8 },
   { path: "/blog", priority: 0.8 },
   { path: "/free-consultation", priority: 0.9 },
+  { path: "/free-medicare-kit", priority: 0.9 },
   { path: "/contact-us", priority: 0.8 },
   { path: "/about-us", priority: 0.7 },
   { path: "/our-team", priority: 0.6 },
