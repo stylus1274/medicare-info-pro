@@ -220,11 +220,6 @@ export default function FreeMedicareKitClient() {
 
   return (
     <div className="min-h-screen" style={{ background: "#f8f9fc" }}>
-      {/* ── Top Bar ── */}
-      <div style={{ background: "#0a163c" }} className="py-2 px-4 text-center text-sm text-white/80">
-        Free resource for anyone turning 65 or new to Medicare. No obligation, no sales calls.
-      </div>
-
       {/* ── Header ── */}
       <header style={{ background: "#0a163c" }} className="py-4 px-6">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
