@@ -266,59 +266,9 @@ export default function FreeMedicareKitClient() {
 
       {/* ── Main Content ── */}
       <section className="py-14 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-2xl mx-auto">
 
-          {/* ── Left: Benefits ── */}
-          <div>
-            <h2 className="text-2xl font-bold mb-2" style={{ color: "#0a163c" }}>
-              What is inside your kit?
-            </h2>
-            <p className="text-gray-600 mb-8">
-              Everything you need to walk into a Medicare conversation prepared, organized, and confident.
-            </p>
-            <div className="space-y-5">
-              {KIT_BENEFITS.map((benefit, i) => {
-                const Icon = benefit.icon;
-                return (
-                  <div key={i} className="flex gap-4">
-                    <div
-                      className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
-                      style={{ background: "rgba(26,63,168,0.1)" }}
-                    >
-                      <Icon className="h-5 w-5" style={{ color: "#1a3fa8" }} />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">{benefit.title}</p>
-                      <p className="text-sm text-gray-500 mt-0.5 leading-relaxed">{benefit.desc}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Trust Signals */}
-            <div
-              className="mt-10 rounded-2xl p-6"
-              style={{ background: "#f0f4ff", border: "1px solid rgba(26,63,168,0.1)" }}
-            >
-              <p className="text-sm font-semibold mb-4" style={{ color: "#0a163c" }}>
-                Your privacy is protected
-              </p>
-              <div className="space-y-3">
-                {TRUST_ITEMS.map((item, i) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={i} className="flex items-start gap-3 text-sm text-gray-600">
-                      <Icon className="h-4 w-4 mt-0.5 flex-shrink-0" style={{ color: "#1a3fa8" }} />
-                      <span>{item.text}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-
-          {/* ── Right: Form ── */}
+          {/* ── Form ── */}
           <div ref={formRef}>
             {status === "success" ? (
               <SuccessCard firstName={form.firstName} />
