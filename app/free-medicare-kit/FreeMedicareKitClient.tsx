@@ -246,7 +246,7 @@ export default function FreeMedicareKitClient() {
         style={{
           background: "linear-gradient(135deg, #0a163c 0%, #1a3fa8 60%, #0a163c 100%)",
         }}
-        className="py-16 px-6"
+        className="pt-16 pb-24 px-6"
       >
         <div className="max-w-5xl mx-auto text-center">
 
@@ -265,7 +265,7 @@ export default function FreeMedicareKitClient() {
       </section>
 
       {/* ── Main Content ── */}
-      <section className="py-14 px-6">
+      <section className="pb-14 px-6" style={{ marginTop: "-5rem" }}>
         <div className="max-w-2xl mx-auto">
 
           {/* ── Form ── */}
