@@ -249,15 +249,9 @@ export default function FreeMedicareKitClient() {
         className="py-16 px-6"
       >
         <div className="max-w-5xl mx-auto text-center">
-          <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6"
-            style={{ background: "rgba(245,200,66,0.15)", color: "#f5c842", border: "1px solid rgba(245,200,66,0.3)" }}
-          >
-            <Download className="h-4 w-4" />
-            Free Personalized Download
-          </div>
+
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
-            Get Your Free Personalized
+            Get Your <span style={{ textDecoration: "underline" }}>Free</span> Personalized
             <br />
             <span style={{ color: "#f5c842" }}>Medicare Decision Kit</span>
           </h1>
@@ -266,11 +260,7 @@ export default function FreeMedicareKitClient() {
             your exact enrollment deadlines, key dates, and a personalized action plan, delivered as a PDF
             you can print or save.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-white/70 text-sm">
-            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> 14 pages of personalized guidance</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Your exact enrollment dates calculated</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Instant PDF download</span>
-          </div>
+
         </div>
       </section>
 
