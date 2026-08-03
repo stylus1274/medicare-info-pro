@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import FreeMedicareKitClient from "./FreeMedicareKitClient";
 
 export const metadata: Metadata = {
@@ -45,7 +46,9 @@ export default function FreeMedicareKitPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
       />
-      <FreeMedicareKitClient />
+      <Suspense fallback={null}>
+        <FreeMedicareKitClient />
+      </Suspense>
     </>
   );
 }
