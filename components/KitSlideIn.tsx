@@ -66,7 +66,7 @@ export default function KitSlideIn() {
           bottom: 80px;
           right: 28px;
           width: 340px;
-          min-height: 320px;
+          min-height: 450px;
           background: #0a1a3c;
           border-radius: 14px;
           box-shadow: 0 12px 48px rgba(10, 26, 60, 0.35), 0 2px 8px rgba(10, 26, 60, 0.18);
