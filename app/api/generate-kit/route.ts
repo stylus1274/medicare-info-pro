@@ -965,7 +965,9 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    const stack = err instanceof Error ? err.stack : "";
     console.error("[generate-kit]", err);
-    return NextResponse.json({ error: "Failed to generate PDF." }, { status: 500 });
+    return NextResponse.json({ error: "Failed to generate PDF.", detail: msg, stack: stack?.split("\n").slice(0,5) }, { status: 500 });
   }
 }
