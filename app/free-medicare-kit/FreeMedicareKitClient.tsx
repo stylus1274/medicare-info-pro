@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   CheckCircle,
@@ -119,6 +120,7 @@ function getYearRange(): number[] {
 
 // ── Main Component ────────────────────────────────────────────────────────────
 export default function FreeMedicareKitClient() {
+  const searchParams = useSearchParams();
   const [form, setForm] = useState<KitFormData>({
     firstName: "",
     lastName: "",
@@ -127,6 +129,19 @@ export default function FreeMedicareKitClient() {
     dobYear: "",
     email: "",
   });
+
+  // Prefill from slide-in modal URL params
+  useEffect(() => {
+    const fn = searchParams?.get("firstName");
+    const em = searchParams?.get("email");
+    if (fn || em) {
+      setForm((prev) => ({
+        ...prev,
+        firstName: fn ?? prev.firstName,
+        email: em ?? prev.email,
+      }));
+    }
+  }, [searchParams]);
   const [errors, setErrors] = useState<Partial<Record<keyof KitFormData, string>>>({});
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");

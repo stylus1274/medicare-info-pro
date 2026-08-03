@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import KitSlideIn from "@/components/KitSlideIn";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://medicareinfopro.com"),
@@ -105,7 +106,10 @@ export default function RootLayout({
           gtag('config', 'G-QQ0LVJ9MH5');
         `}
       </Script>
-      <body>{children}</body>
+      <body>
+        {children}
+        <KitSlideIn />
+      </body>
     </html>
   );
 }
