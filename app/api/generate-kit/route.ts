@@ -152,7 +152,7 @@ async function buildCover(pdfDoc: PDFDocument, firstName: string, lastName: stri
   txt(page, "The Turning 65", 50, 605, 40, WHITE, bold);
   txt(page, "Medicare Decision Kit", 50, 555, 40, GOLD, bold);
 
-  multiline(page, "Organize your deadlines, doctors, prescriptions and likely costs before you choose coverage.", reg, 12, 50, 520, rgb(0.78, 0.83, 0.94), 510, 17);
+  multiline(page, "Organize your deadlines, doctors, prescriptions and likely costs before you choose coverage.", 50, 520, 12, rgb(0.78, 0.83, 0.94), reg, 510, 17);
 
   // Section pills
   const pills = [
@@ -174,7 +174,7 @@ async function buildCover(pdfDoc: PDFDocument, firstName: string, lastName: stri
   // How to use box
   rect(page, 50, 340, 512, 72, rgb(0.06, 0.12, 0.30));
   txt(page, "How to use this kit", 66, 394, 11, GOLD, bold);
-  multiline(page, "Complete the worksheets before you compare plans or speak with an agent. Bring the finished kit to the conversation so your options can be checked against your real healthcare needs.", reg, 9, 66, 376, rgb(0.78, 0.83, 0.94), 476, 13);
+  multiline(page, "Complete the worksheets before you compare plans or speak with an agent. Bring the finished kit to the conversation so your options can be checked against your real healthcare needs.", 66, 376, 9, rgb(0.78, 0.83, 0.94), reg, 476, 13);
 
   txt(page, "UPDATED JULY 2026", 50, 318, 8, GOLD, bold);
   txt(page, "Educational resource  |  Printable and fillable", 50, 305, 8, MID_GRAY, reg);
@@ -194,7 +194,7 @@ async function buildSnapshot(pdfDoc: PDFDocument) {
   await pageHeader(pdfDoc, page, "Start Here", 2, 14);
 
   txt(page, "Start here: your Medicare snapshot", 50, 720, 22, NAVY, bold);
-  multiline(page, "Check every statement that applies. These details can change when you should enroll and which coverage tradeoffs matter most.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "Check every statement that applies. These details can change when you should enroll and which coverage tradeoffs matter most.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   txt(page, "Which statements describe you?", 50, 668, 13, NAVY_MID, bold);
 
@@ -251,7 +251,7 @@ async function buildTimeline(pdfDoc: PDFDocument, firstName: string, dates: Date
   await pageHeader(pdfDoc, page, "Enrollment Timeline", 3, 14);
 
   txt(page, `Your turning 65 timeline`, 50, 720, 22, NAVY, bold);
-  multiline(page, "Plan early so your coverage is settled before the month Medicare should begin.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "Plan early so your coverage is settled before the month Medicare should begin.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   const milestones = [
     { tag: "12 MONTHS BEFORE", date: fmtMonthYear(dates.minus12), title: "Learn the basic paths", body: "Review Parts A, B, C and D. Decide whether keeping certain doctors, traveling, monthly predictability or a low premium matters most.", color: NAVY_MID },
@@ -299,7 +299,7 @@ async function buildEnrollmentPath(pdfDoc: PDFDocument) {
   // Warning note
   rect(page, 50, 650, 512, 36, rgb(1.0, 0.97, 0.92));
   rect(page, 50, 650, 3, 36, ORANGE);
-  multiline(page, "Do not make an enrollment decision based on employer size alone. Ask which coverage pays first and whether you need Part A and Part B for the employer plan to pay correctly.", reg, 8.5, 62, 678, BODY_TEXT, 490, 12);
+  multiline(page, "Do not make an enrollment decision based on employer size alone. Ask which coverage pays first and whether you need Part A and Part B for the employer plan to pay correctly.", 62, 678, 8.5, BODY_TEXT, reg, 490, 12);
 
   const situations = [
     { num: "1", title: "Already receiving Social Security?", body: "Many people receiving benefits before 65 are enrolled automatically. Check your Medicare card or online status instead of assuming.", color: NAVY_MID },
@@ -351,7 +351,7 @@ async function buildKeyDates(pdfDoc: PDFDocument, dates: Dates) {
   await pageHeader(pdfDoc, page, "Key Dates", 5, 14);
 
   txt(page, "Write down your key dates", 50, 720, 22, NAVY, bold);
-  multiline(page, "A deadline you can see is much harder to miss. Confirm these entries using Medicare.gov or Social Security before relying on them.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "A deadline you can see is much harder to miss. Confirm these entries using Medicare.gov or Social Security before relying on them.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   // Pre-filled fields
   const preFields = [
@@ -469,7 +469,7 @@ async function buildDoctorInventory(pdfDoc: PDFDocument) {
   await pageHeader(pdfDoc, page, "Doctor Inventory", 7, 14);
 
   txt(page, "Your doctors and care inventory", 50, 720, 22, NAVY, bold);
-  multiline(page, "List every provider before you compare plans. A plan that excludes one key doctor can cost more than a higher-premium option that keeps them in network.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "List every provider before you compare plans. A plan that excludes one key doctor can cost more than a higher-premium option that keeps them in network.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   // Table header
   rect(page, 50, 658, 512, 24, NAVY);
@@ -510,7 +510,7 @@ async function buildDoctorInventory(pdfDoc: PDFDocument) {
 
   rect(page, 50, ofy - 60, 512, 36, NOTE_BG);
   rect(page, 50, ofy - 60, 3, 36, NAVY_MID);
-  multiline(page, "Check each doctor's Medicare participation status at medicare.gov/care-compare before comparing plans. Providers can change their status.", reg, 8.5, 62, ofy - 32, BODY_TEXT, 490, 12);
+  multiline(page, "Check each doctor's Medicare participation status at medicare.gov/care-compare before comparing plans. Providers can change their status.", 62, ofy - 32, 8.5, BODY_TEXT, reg, 490, 12);
 }
 
 // Page 8: Prescription Inventory
@@ -628,7 +628,7 @@ async function buildCostComparison(pdfDoc: PDFDocument) {
   rect(page, 50, cry - 100, 3, 36, RED_DARK);
   multiline(page, "Original Medicare has no annual out-of-pocket limit unless you have other coverage, such as Medigap, Medicaid or employer coverage. Medicare Advantage plans have annual limits for covered Part A and Part B services.", reg, 8.5, 62, cry - 72, BODY_TEXT, 490, 12);
 
-  multiline(page, "Planning formula: annual premiums + likely prescriptions + routine cost sharing + a realistic amount for unexpected care. Compare the result with your emergency savings and monthly budget.", reg, 8.5, 50, cry - 118, BODY_TEXT, 512, 12);
+  multiline(page, "Planning formula: annual premiums + likely prescriptions + routine cost sharing + a realistic amount for unexpected care. Compare the result with your emergency savings and monthly budget.", 50, cry - 118, 8.5, BODY_TEXT, reg, 512, 12);
 }
 
 // Page 10: Seven Mistakes Part 1 (mistakes 1-4)
@@ -639,7 +639,7 @@ async function buildMistakesPart1(pdfDoc: PDFDocument) {
   await pageHeader(pdfDoc, page, "Costly Mistakes", 10, 14);
 
   txt(page, "Seven expensive Medicare mistakes", 50, 720, 22, NAVY, bold);
-  multiline(page, "Most Medicare problems start with one bad assumption. Use this list as a final check before you enroll or delay coverage.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "Most Medicare problems start with one bad assumption. Use this list as a final check before you enroll or delay coverage.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   const mistakes = [
     {
@@ -691,7 +691,7 @@ async function buildMistakesPart2(pdfDoc: PDFDocument) {
   await pageHeader(pdfDoc, page, "Questions to Ask", 11, 14);
 
   txt(page, "Finish the mistake check", 50, 720, 22, NAVY, bold);
-  multiline(page, "Then use the questions below to make sure a plan comparison addresses the issues that actually affect you.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "Then use the questions below to make sure a plan comparison addresses the issues that actually affect you.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   const mistakes = [
     {
@@ -850,7 +850,7 @@ async function buildSources(pdfDoc: PDFDocument, logoBytes: Uint8Array) {
   await pageHeader(pdfDoc, page, "Sources and Next Step", 14, 14);
 
   txt(page, "Official sources and your next step", 50, 720, 22, NAVY, bold);
-  multiline(page, "Medicare rules and plan details can change. Use these official pages to verify information before making a coverage decision.", reg, 10, 50, 700, BODY_TEXT, 512, 14);
+  multiline(page, "Medicare rules and plan details can change. Use these official pages to verify information before making a coverage decision.", 50, 700, 10, BODY_TEXT, reg, 512, 14);
 
   const sources = [
     "[1] Medicare.gov: When can I sign up for Medicare?",
@@ -884,7 +884,7 @@ async function buildSources(pdfDoc: PDFDocument, logoBytes: Uint8Array) {
   rect(page, 50, sy - 120, 512, 1, RULE_CLR);
   txt(page, "IMPORTANT DISCLOSURE", 50, sy - 132, 7.5, NAVY_MID, bold);
   multiline(page, "This workbook is for educational purposes only. It is not legal, tax or medical advice and does not determine eligibility, benefits or plan availability. Confirm dates and coverage with Medicare, Social Security, your employer benefits administrator or a licensed insurance agent. Plan benefits, costs, formularies and networks vary and may change.", reg, 7.5, 50, sy - 148, BODY_TEXT, 512, 11);
-  multiline(page, "Medicare Information Pro is a licensed insurance agency. We are not affiliated with or endorsed by Medicare or any government agency. Medicare has neither reviewed nor endorsed this information.", reg, 7.5, 50, sy - 188, BODY_TEXT, 512, 11);
+  multiline(page, "Medicare Information Pro is a licensed insurance agency. We are not affiliated with or endorsed by Medicare or any government agency. Medicare has neither reviewed nor endorsed this information.", 50, sy - 188, 7.5, BODY_TEXT, reg, 512, 11);
 
   txt(page, "Sources reviewed July 2026", 50, 36, 7.5, MID_GRAY, reg);
 }
