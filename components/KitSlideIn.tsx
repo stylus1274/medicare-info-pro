@@ -105,7 +105,7 @@ export default function KitSlideIn() {
           margin-bottom: 10px;
         }
         .kit-slide-title {
-          font-size: 26px;
+          font-size: 32px;
           font-weight: 800;
           color: #ffffff;
           line-height: 1.2;
