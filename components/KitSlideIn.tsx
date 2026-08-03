@@ -14,7 +14,8 @@ export default function KitSlideIn() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (sessionStorage.getItem("kit-slide-dismissed")) setDismissed(true);
+      const stored = localStorage.getItem("kit-slide-dismissed-until");
+      if (stored && Date.now() < parseInt(stored, 10)) setDismissed(true);
     }
   }, []);
 
@@ -33,7 +34,9 @@ export default function KitSlideIn() {
   const dismiss = () => {
     setVisible(false);
     setDismissed(true);
-    sessionStorage.setItem("kit-slide-dismissed", "1");
+    // Suppress for 7 days
+    const until = Date.now() + 7 * 24 * 60 * 60 * 1000;
+    localStorage.setItem("kit-slide-dismissed-until", String(until));
   };
 
   if (isExcluded || dismissed || !visible) return null;
