@@ -63,13 +63,14 @@ export default function KitSlideIn() {
       <style>{`
         .kit-slide-in {
           position: fixed;
-          bottom: 24px;
-          right: 24px;
+          bottom: 80px;
+          right: 28px;
           width: 340px;
+          min-height: 320px;
           background: #0a1a3c;
           border-radius: 14px;
           box-shadow: 0 12px 48px rgba(10, 26, 60, 0.35), 0 2px 8px rgba(10, 26, 60, 0.18);
-          padding: 32px 28px 24px;
+          padding: 40px 32px 32px;
           z-index: 9999;
           animation: kitSlideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
           border-top: 4px solid #f5c841;
