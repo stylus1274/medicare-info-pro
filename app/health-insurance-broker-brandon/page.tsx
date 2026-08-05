@@ -94,9 +94,9 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Health Insurance Broker in Brandon, FL | Medicare Information Project",
+  title: 'Independent Medicare Broker in Brandon, FL — 915 Oakfield Dr',
   description:
-    "Independent health insurance broker in Brandon, FL. We compare Medicare, ACA Marketplace, and private plans at no cost. Call 813-699-5559.",
+    'Brandon\'s locally-based independent broker. We compare Medicare Advantage, Medigap, ACA, and private plans from 17+ carriers. Office at 915 Oakfield Dr. Free consultations.',
   keywords: ["health insurance broker Brandon FL", "health insurance broker Brandon", "Medicare broker Brandon FL", "independent insurance agent Brandon"],
   openGraph: {
     title: "Health Insurance Broker in Brandon, FL | Medicare Information Project",

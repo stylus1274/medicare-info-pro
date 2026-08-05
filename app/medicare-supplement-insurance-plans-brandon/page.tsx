@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Supplement Insurance Plans Brandon FL | Medicare Information Project",
-  description: "Compare Medicare Supplement (Medigap) insurance plans in Brandon, FL. Independent agents help you find the lowest premium for the coverage you need.",
+  title: 'Medigap Plans in Brandon, FL — Lowest Premium for Your Coverage Level',
+  description: 'Brandon-based independent agents compare every Medigap carrier to find your lowest premium. Plan G, Plan N, Plan D — no cost, no obligation. Call 813-699-5559.',
 };
 
 export default function Page() {

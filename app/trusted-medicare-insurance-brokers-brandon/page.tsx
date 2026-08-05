@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Trusted Medicare Insurance Brokers Brandon FL | Medicare Information Project",
-  description: "Find trusted Medicare insurance brokers in Brandon, FL. Independent brokers compare 17+ carriers at no cost to find the right plan for you.",
+  title: 'Trusted Medicare Brokers in Brandon, FL — 500+ Clients, A+ BBB Rating',
+  description: '500+ clients served across Brandon and Hillsborough County. MIP\'s independent brokers compare 17+ carriers — Medicare Advantage, Medigap, Part D — at no cost. A+ BBB.',
 };
 
 export default function Page() {

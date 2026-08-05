@@ -30,9 +30,9 @@ const articleSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare and Employer Insurance After 65 in Brandon, FL: How They Work Together | MedicareInfoPro",
+  title: 'Medicare + Employer Insurance After 65 in Brandon, FL — Avoid the Penalty Trap',
   description:
-    "Still working at 65 in Brandon, FL? Learn how Medicare coordinates with employer insurance, when to enroll in Part B, how to avoid penalties, and when Medicare or your employer plan pays first.",
+    'Still working at 65 in Brandon? The wrong enrollment decision can mean a permanent Part B penalty. MIP agents explain exactly when to enroll and how your plans coordinate.',
   keywords: [
     "Medicare and employer insurance after 65 Brandon FL",
     "Medicare employer coverage coordination Brandon",

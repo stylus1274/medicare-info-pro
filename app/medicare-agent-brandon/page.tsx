@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Agent Brandon FL | Medicare Information Project",
-  description: "Looking for a Medicare agent in Brandon, FL? Greg Wohl and the Medicare Information Project team offer free, independent Medicare guidance. 17+ carriers, no pressure.",
+  title: 'Medicare Agent in Brandon, FL — Greg Wohl & Team, No Cost',
+  description: 'Greg Wohl and the MIP team are based in Brandon, FL. Independent guidance across 17+ carriers — Medicare Advantage, Medigap, and Part D. No cost, no pressure. Call today.',
 };
 
 export default function Page() {

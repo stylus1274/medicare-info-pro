@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Trusted Medicare Insurance Agent Health Insurance Services Brandon FL | Medicare Information Project",
-  description: "Trusted Medicare insurance agent and health insurance services in Brandon, FL. Independent, unbiased guidance from local experts at no cost.",
+  title: 'Trusted Medicare Agent in Brandon, FL — Independent, Local, No Cost',
+  description: 'MIP\'s Brandon office has helped 500+ Hillsborough County residents choose the right Medicare plan. Independent agents, 17+ carriers, A+ BBB rating. Free consultations.',
 };
 
 export default function Page() {

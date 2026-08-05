@@ -55,9 +55,9 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Part B Assistance in Brandon, FL | Medicare Information Project",
+  title: 'Medicare Part B Help in Brandon, FL — Enrollment, Costs & Late Penalties',
   description:
-    "Get expert Medicare Part B guidance in Brandon, FL. Enrollment help, cost management, benefits maximization, and personalized support from licensed local agents.",
+    'Part B has a 7-month enrollment window — miss it and pay a 10% penalty for life. Brandon-based MIP agents help you enroll on time and manage your Part B costs. Free.',
   keywords: [
     "Medicare Part B Brandon FL",
     "Medicare Part B assistance Brandon",

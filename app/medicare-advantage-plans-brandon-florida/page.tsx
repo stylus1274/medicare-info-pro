@@ -55,8 +55,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Advantage Plans Brandon Florida | Medicare Information Project",
-  description: "Explore Medicare Advantage plans in Brandon, Florida. Compare HMO, PPO, and DSNP options with help from local independent agents at no cost.",
+  title: 'Medicare Advantage Plans in Brandon, FL (2026) — 90 Plans, 7 Carriers',
+  description: 'Hillsborough County has 90 Medicare Advantage plans for 2026, averaging $11.50/month. Brandon-based MIP agents compare every option — HMO, PPO, DSNP — at no cost.',
   alternates: { canonical: "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida/" },
 };
 

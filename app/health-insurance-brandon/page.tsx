@@ -94,9 +94,9 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Health Insurance in Brandon, FL | Medicare Information Project",
+  title: 'Health Insurance in Brandon, FL — Medicare, ACA & Private Plans Compared',
   description:
-    "Find the right health insurance in Brandon, FL. Independent agents compare Medicare, ACA Marketplace, and private plans at no cost to you. Call 813-699-5559.",
+    'Turning 65, losing employer coverage, or just shopping for better rates? Brandon\'s MIP team compares Medicare, ACA, and private plans at no cost. Call 813-699-5559.',
   keywords: ["health insurance Brandon FL", "health insurance Brandon", "Medicare plans Brandon", "ACA plans Brandon FL", "health insurance agent Brandon"],
   openGraph: {
     title: "Health Insurance in Brandon, FL | Medicare Information Project",

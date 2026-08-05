@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Enrollment Assistance Brandon FL | Medicare Information Project",
-  description: "Free Medicare enrollment assistance in Brandon, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
+  title: 'Free Medicare Enrollment Help in Brandon, FL — Don\'t Miss Your Deadline',
+  description: 'Missing your Medicare enrollment window means lifetime penalties. Brandon-based MIP agents walk you through every step — free, same-day callbacks available. Call 813-699-5559.',
 };
 
 export default function Page() {

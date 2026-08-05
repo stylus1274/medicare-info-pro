@@ -94,9 +94,9 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Comparing Medicare Plans in Brandon, FL | Medicare Information Project",
+  title: 'Compare Medicare Plans in Brandon, FL — Advantage vs. Medigap vs. Part D',
   description:
-    "Compare Medicare Advantage, Medigap, and Part D plans in Brandon, FL. Independent agents serving Hillsborough County help you find the right plan at no cost.",
+    'Not sure whether Medicare Advantage or Medigap is right for you? Brandon-based MIP agents compare all three paths side-by-side — free, unbiased, no sales pressure.',
   keywords: ["comparing Medicare plans Brandon", "Medicare plans Brandon FL", "Medicare Advantage Brandon", "Medigap Brandon FL", "Medicare Part D Brandon"],
   openGraph: {
     title: "Comparing Medicare Plans in Brandon, FL",

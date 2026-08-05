@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Supplement Insurance Plans in Brandon FL | Medicare Information Project",
-  description: "Compare Medicare Supplement (Medigap) insurance plans in Brandon, FL. We help you find the right plan to cover the gaps in Original Medicare at no cost.",
+  title: 'Medicare Supplement Plans in Brandon, FL — Compare Plan G, N & D Costs',
+  description: 'Brandon Medigap premiums range from $65–$803/month depending on age and plan. Local MIP agents compare Plan G, Plan N, and Plan D from all major carriers. Free quotes.',
 };
 
 export default function Page() {

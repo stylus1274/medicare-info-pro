@@ -48,8 +48,8 @@ const localBusinessSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Consulting Services Brandon FL | Medicare Information Project",
-  description: "Expert Medicare consulting services in Brandon, FL. We help you understand your options, avoid penalties, and choose the right plan at no cost.",
+  title: 'Medicare Consulting in Brandon, FL — Expert Guidance, No Cost',
+  description: 'Confused by Medicare\'s moving parts? Brandon-based MIP consultants walk you through every option — Advantage, Medigap, Part D — and help you avoid costly mistakes. Free.',
 };
 
 export default function Page() {
