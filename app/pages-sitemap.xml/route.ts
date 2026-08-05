@@ -4,6 +4,7 @@ const BASE_URL = "https://medicareinfopro.com";
 
 const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/", priority: 1.0 },
+  { path: "/medicare-brandon-fl", priority: 1.0 },
   { path: "/what-is-medicare", priority: 0.9 },
   { path: "/medicare-advantage", priority: 0.9 },
   { path: "/medicare-supplement", priority: 0.9 },
