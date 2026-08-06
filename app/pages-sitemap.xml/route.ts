@@ -5,6 +5,9 @@ const BASE_URL = "https://medicareinfopro.com";
 const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/", priority: 1.0 },
   { path: "/medicare-brandon-fl", priority: 1.0 },
+  { path: "/free-medicare-enrollment-help-brandon-fl", priority: 0.9 },
+  { path: "/turning-65-brandon-fl", priority: 0.9 },
+  { path: "/does-medicare-cover-ozempic-glp1-2026", priority: 0.9 },
   { path: "/what-is-medicare", priority: 0.9 },
   { path: "/medicare-advantage", priority: 0.9 },
   { path: "/medicare-supplement", priority: 0.9 },
