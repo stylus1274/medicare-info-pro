@@ -20,24 +20,50 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-enrollment-assistance-brandon#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/medicare-enrollment-assistance-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
-  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-brandon",
+  "description": "Free Medicare enrollment assistance in Brandon, FL. Licensed agents help with Initial Enrollment, Special Enrollment Periods, and Annual Enrollment Period plan changes.",
+  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-brandon/",
   "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
   },
-  "serviceType": "Medicare Insurance Consulting",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
@@ -45,6 +71,52 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I enroll in Medicare in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can enroll in Medicare online at SSA.gov, by calling 1-800-772-1213, or in person at the Brandon Social Security office. If you are turning 65, your Initial Enrollment Period is a 7-month window centered on your birthday month. Our Brandon agents provide free enrollment assistance and can walk you through every step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I miss my Medicare enrollment deadline in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Missing your Initial Enrollment Period for Part B can result in a permanent 10% premium penalty for each 12-month period you were eligible but did not enroll. Missing the Part D enrollment window results in a similar ongoing penalty. These penalties are permanent and apply for as long as you have Medicare. Contact our Brandon office at 813-699-5559 immediately if you think you may have missed a deadline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to enroll in Medicare if I have employer insurance in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the size of your employer. If your employer has 20 or more employees, your employer plan is primary and you may be able to delay Medicare Part B without penalty. If your employer has fewer than 20 employees, Medicare is primary and you should enroll in Part B when first eligible to avoid penalties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get free Medicare enrollment help in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Medicare Information Pro at 915 Oakfield Dr, Brandon, FL 33511 provides free Medicare enrollment assistance. Our licensed agents help you understand your enrollment windows, compare plan options, and complete the enrollment process at no cost. Call 813-699-5559 or schedule a free consultation online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Special Enrollment Period for Medicare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Special Enrollment Period (SEP) allows you to enroll in or change Medicare coverage outside of standard enrollment windows when you experience a qualifying life event, such as losing employer coverage, moving to a new service area, or gaining eligibility for Extra Help. Our Brandon agents can determine whether you qualify for an SEP."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -62,6 +134,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LocalAgentPage
       config={{

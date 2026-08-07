@@ -20,24 +20,50 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
-  "url": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon",
+  "description": "Trusted independent Medicare insurance brokers in Brandon, FL. A+ BBB rating, 500+ clients served, 17+ carriers compared. Located at 915 Oakfield Dr, Brandon.",
+  "url": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon/",
   "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
   },
-  "serviceType": "Medicare Insurance Consulting",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
@@ -45,6 +71,44 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I find a trusted Medicare insurance broker in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for an independent broker who represents multiple carriers, is licensed in Florida, and has verifiable local reviews. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511, holds an A+ BBB rating, and has served 500+ clients across Brandon and Hillsborough County. Call 813-699-5559."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes a Medicare broker trustworthy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A trustworthy Medicare broker is independent (represents multiple carriers, not just one), licensed in your state, transparent about how they are compensated, and willing to explain all your options including ones that may not pay them the highest commission. MIP is an independent broker representing 17+ carriers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Medicare brokers in Brandon have to be licensed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Anyone selling Medicare insurance in Florida must hold a valid Florida Department of Financial Services insurance license and complete annual Medicare certification training. You can verify a broker's license at the Florida DFS website. All MIP agents are fully licensed and certified."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Medicare Information Pro different from other brokers in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MIP is an independent agency with a physical office in Brandon at 915 Oakfield Dr. We represent 17+ carriers, have served 500+ local clients, and provide ongoing support after enrollment — not just at sign-up. Our agents live and work in the Brandon community."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -62,6 +126,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LocalAgentPage
       config={{

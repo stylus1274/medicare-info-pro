@@ -27,24 +27,50 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
-  "url": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida",
+  "description": "Medicare Advantage plan specialists in Brandon, FL. Compare 90+ plans available in Brandon ZIP codes 33510, 33511, and 33527 at no cost.",
+  "url": "https://medicareinfopro.com/medicare-advantage-plans-brandon-florida/",
   "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
   },
-  "serviceType": "Medicare Insurance Consulting",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
@@ -52,6 +78,52 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many Medicare Advantage plans are available in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brandon residents in ZIP codes 33510, 33511, and 33527 have access to approximately 90 Medicare Advantage plans from multiple carriers for 2026. Many plans in Brandon have $0 monthly premiums and include dental, vision, and hearing benefits not covered by Original Medicare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the average Medicare Advantage premium in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The average Medicare Advantage premium in the Brandon area is approximately $11.50 per month for 2026, with many $0 premium plans available. However, premium is only one factor — you should also compare networks, drug formularies, and out-of-pocket maximums when choosing a plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my Medicare Advantage plan at Brandon Regional Hospital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coverage at Brandon Regional Hospital (HCA Florida Brandon Hospital) depends on your specific Medicare Advantage plan's network. Not all plans include all hospitals. Our Brandon agents verify network coverage for your specific providers before you enroll so there are no surprises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can I switch Medicare Advantage plans in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can switch Medicare Advantage plans during the Annual Enrollment Period (October 15 to December 7) or the Medicare Advantage Open Enrollment Period (January 1 to March 31). You may also be able to switch during a Special Enrollment Period if you experience a qualifying life event."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Medicare Advantage or Medicare Supplement better for Brandon residents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your health needs, preferred doctors, and budget. Medicare Advantage has lower premiums and extra benefits but network restrictions. Medicare Supplement has higher premiums but no networks and predictable costs. Our Brandon agents compare both options for your specific situation at no cost."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -132,6 +204,10 @@ export default function MedicareAdvantageBrandonPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
     <main className="min-h-screen bg-white">
       {/* Hero */}

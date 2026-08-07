@@ -20,17 +20,16 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/comparing-medicare-plans-brandon#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/comparing-medicare-plans-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL and surrounding Hillsborough County communities.",
-  "url": "https://medicareinfopro.com/comparing-medicare-plans-brandon",
+  "description": "Free Medicare plan comparison in Brandon, FL. Independent agents compare all Medicare Advantage, Medigap, and Part D plans available in your ZIP code.",
+  "url": "https://medicareinfopro.com/comparing-medicare-plans-brandon/",
   "telephone": "+1-813-699-5559",
-  "priceRange": "Free Consultation",
-  "image": "https://medicareinfopro.com/og-image.jpg",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Brandon, FL",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
@@ -41,48 +40,29 @@ const localBusinessSchema = {
     "latitude": 27.9378,
     "longitude": -82.2859
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon",
-    "containedInPlace": {
-      "@type": "State",
-      "name": "Florida"
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
     }
-  },
-  "serviceType": "Medicare Insurance Consulting",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Medicare Insurance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Advantage Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Supplement Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Part D Drug Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Enrollment Assistance"
-        }
-      }
-    ]
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
   },
   "parentOrganization": {
     "@type": "Organization",
@@ -91,6 +71,44 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I compare Medicare plans in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To compare Medicare plans in Brandon, you need to evaluate Medicare Advantage vs. Original Medicare with a Supplement, compare Part D drug plans for your specific medications, and verify that your doctors and hospitals are in-network. Our Brandon agents do this comparison for free using all plans available in your ZIP code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Medicare plans are available in Brandon ZIP codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brandon ZIP codes 33510, 33511, and 33527 have access to approximately 90 Medicare Advantage plans and multiple Medicare Supplement options from 17+ carriers for 2026. Plan availability and pricing vary by ZIP code, so it is important to compare plans specific to your address."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most important factor when comparing Medicare plans in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most important factors are whether your current doctors and hospitals are in the plan's network, whether your prescription drugs are covered at an affordable tier, and the total annual cost including premiums, deductibles, and expected cost-sharing. Our Brandon agents analyze all three factors for your specific situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I compare Medicare plans for free in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Medicare Information Pro at 915 Oakfield Dr, Brandon, FL 33511 provides free plan comparison services. Our independent agents compare all available plans in your ZIP code at no cost. Call 813-699-5559 or schedule a free consultation online."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -117,6 +135,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <CompareMedicarePlansTemplate
       data={{

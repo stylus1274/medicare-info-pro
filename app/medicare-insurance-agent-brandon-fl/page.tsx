@@ -20,24 +20,50 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
-  "url": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl",
+  "description": "Licensed independent Medicare insurance agents in Brandon, FL serving Brandon, Valrico, Riverview, and Seffner. Free plan comparison across 17+ carriers.",
+  "url": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/",
   "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
   },
-  "serviceType": "Medicare Insurance Consulting",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
@@ -45,6 +71,60 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you have a Medicare insurance agent near Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed agents serve Brandon, Valrico, Riverview, and Seffner at no cost to you. Call 813-699-5559 to speak with an agent today."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to use a Medicare agent in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our service is completely free. Medicare agents are compensated by the insurance carriers, not by you. You pay the same premium whether you enroll through an agent or directly with the carrier — and an independent agent can compare 17+ carriers to find you the best option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Medicare plans are available in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brandon residents in ZIP codes 33510, 33511, and 33527 have access to Medicare Advantage plans, Medicare Supplement (Medigap) plans including Plan G and Plan N, and Part D prescription drug plans. Our agents compare all available options in your specific ZIP code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a Medicare agent help me during the Annual Enrollment Period?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Annual Enrollment Period runs October 15 to December 7 each year. During this window you can switch Medicare Advantage plans, switch from Medicare Advantage to Original Medicare, or change your Part D plan. Our Brandon agents are available to review your options at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between an independent Medicare agent and a captive agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An independent agent like MIP represents multiple carriers and can compare plans across 17+ companies to find the best fit for your needs. A captive agent works for a single carrier and can only offer that company's plans. Independent agents typically have access to more options and can provide more objective comparisons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Medicare Information Pro located in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. We serve Brandon, Valrico, Riverview, Seffner, and surrounding Hillsborough County communities. Call 813-699-5559 or visit our website to schedule a free consultation."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -62,6 +142,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LocalAgentPage
       config={{

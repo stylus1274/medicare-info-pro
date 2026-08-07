@@ -20,17 +20,16 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/health-insurance-broker-brandon#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/health-insurance-broker-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL and surrounding Hillsborough County communities.",
-  "url": "https://medicareinfopro.com/health-insurance-broker-brandon",
+  "description": "Independent Medicare insurance broker in Brandon, FL. Free comparison of Medicare Advantage, Medigap, and Part D plans from 17+ carriers. 500+ clients served.",
+  "url": "https://medicareinfopro.com/health-insurance-broker-brandon/",
   "telephone": "+1-813-699-5559",
-  "priceRange": "Free Consultation",
-  "image": "https://medicareinfopro.com/og-image.jpg",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Brandon, FL",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
@@ -41,48 +40,29 @@ const localBusinessSchema = {
     "latitude": 27.9378,
     "longitude": -82.2859
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon",
-    "containedInPlace": {
-      "@type": "State",
-      "name": "Florida"
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
     }
-  },
-  "serviceType": "Medicare Insurance Consulting",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Medicare Insurance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Advantage Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Supplement Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Part D Drug Plans"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medicare Enrollment Assistance"
-        }
-      }
-    ]
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
   },
   "parentOrganization": {
     "@type": "Organization",
@@ -91,6 +71,52 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Medicare broker in Brandon, FL do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Medicare broker in Brandon compares plans from multiple insurance carriers on your behalf at no cost. MIP represents 17+ carriers and can show you Medicare Advantage, Medigap, and Part D options side by side so you can make an informed decision. We are located at 915 Oakfield Dr, Brandon, FL 33511."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a Medicare broker the same as a Medicare agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The terms are often used interchangeably. Both refer to licensed professionals who help you compare and enroll in Medicare plans. The key distinction is independent vs. captive: an independent broker or agent represents multiple carriers, while a captive agent works for one company only. MIP is an independent broker."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find a trusted Medicare broker near Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Information Pro is a licensed independent Medicare broker located at 915 Oakfield Dr, Brandon, FL 33511. We have served 500+ clients across Brandon and Hillsborough County. Call 813-699-5559 for a free, no-obligation consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Medicare brokers in Brandon charge a fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Independent Medicare brokers are compensated by the insurance carriers, not by you. You pay the same premium whether you enroll through a broker or directly with the carrier. There is never a fee for our services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a Medicare broker help me switch plans in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. During the Annual Enrollment Period (October 15 to December 7) you can switch Medicare Advantage plans or Part D plans. During a Special Enrollment Period triggered by a qualifying life event, you may be able to switch outside of AEP. Our Brandon brokers can review your situation and identify your options."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -117,6 +143,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HealthInsuranceBrokerTemplate
       data={{

@@ -20,24 +20,50 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-agent-brandon#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/medicare-agent-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Brandon, FL.",
-  "url": "https://medicareinfopro.com/medicare-agent-brandon",
-  "telephone": "+1-813-789-7700",
+  "description": "Licensed Medicare agents in Brandon, FL. Free, no-pressure help comparing Medicare plans from 17+ carriers. Located at 915 Oakfield Dr, Brandon.",
+  "url": "https://medicareinfopro.com/medicare-agent-brandon/",
+  "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brandon"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
   },
-  "serviceType": "Medicare Insurance Consulting",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/medicareinfopro",
+    "https://medicareinfopro.com"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
@@ -45,6 +71,44 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I find a Medicare agent in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Information Pro is a licensed independent Medicare agency located at 915 Oakfield Dr, Brandon, FL 33511. Our agents serve Brandon, Valrico, Riverview, and Seffner. Call 813-699-5559 or schedule a free consultation at medicareinfopro.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a Medicare agent in Brandon charge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing. Medicare agents are compensated by the insurance carriers, not by you. You pay the same premium whether you enroll through an agent or directly with the carrier. Our service is always free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a Medicare agent in Brandon help me with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Medicare agent in Brandon can help you understand your enrollment windows and deadlines, compare Medicare Advantage and Medicare Supplement plans available in your ZIP code, find Part D plans that cover your specific medications, and complete your enrollment paperwork. Our agents also provide ongoing support after enrollment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to use a local Medicare agent or go online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A local independent agent provides personalized guidance that online tools cannot replicate. We verify your specific doctors are in-network, check your exact drug list against formularies, and explain the trade-offs in plain language. Online tools show you options but do not help you evaluate them for your specific situation."
+      }
+    }
+  ]
+} as const;
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -62,6 +126,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LocalAgentPage
       config={{
