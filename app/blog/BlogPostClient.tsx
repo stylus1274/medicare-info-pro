@@ -157,6 +157,7 @@ interface BlogPost {
   imageAlt: string;
   sections: PostSection[];
   relatedPosts: RelatedPost[];
+  serviceAreas?: string[];
 }
 
 const JENNIFER_LOADER_WOHL: Author = {
@@ -529,6 +530,25 @@ export default function BlogPostClient({ post }: Props) {
               </a>
             </div>
 
+            {/* Related Posts */}
+            {post.relatedPosts.length > 0 && (
+            {post.serviceAreas && post.serviceAreas.length > 0 && (
+              <section aria-label="Service areas" className="bg-blue-50 border border-blue-100 rounded-2xl p-5 mb-10">
+                <p className="text-[0.7rem] font-bold uppercase tracking-wider text-[#1a3fa8] mb-3">
+                  Areas We Serve
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {post.serviceAreas.map((area) => (
+                    <span
+                      key={area}
+                      className="bg-white border border-blue-200 text-[#1a3fa8] text-xs font-medium px-3 py-1 rounded-full"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </section>
+            )}
             {/* Related Posts */}
             {post.relatedPosts.length > 0 && (
               <section aria-label="Related articles">

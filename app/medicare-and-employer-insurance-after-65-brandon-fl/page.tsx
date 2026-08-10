@@ -203,6 +203,15 @@ const POST = {
       category: "Enrollment" as const,
     },
   ],
+  serviceAreas: [
+    "Brandon 33510",
+    "Brandon 33511",
+    "Brandon 33527",
+    "Valrico 33594",
+    "Riverview 33578",
+    "Seffner 33584",
+    "Hillsborough County",
+  ],
 };
 
 export default function Page() {
