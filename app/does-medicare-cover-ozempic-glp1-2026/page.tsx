@@ -91,7 +91,7 @@ export const metadata: Metadata = {
   },
 };
 
-const post = {
+const postData = {
   slug: "does-medicare-cover-ozempic-glp1-2026",
   title: "Does Medicare Cover Ozempic and GLP-1 Drugs in 2026? What Changed and What to Do Now",
   excerpt:
@@ -223,6 +223,19 @@ const post = {
       href: "/free-medicare-enrollment-help-brandon-fl/",
       category: "Enrollment" as const,
     },
+  ],
+};
+
+const post = { ...postData,
+  serviceAreas: [
+    "Brandon 33510",
+    "Brandon 33511",
+    "Brandon 33527",
+    "Valrico 33594",
+    "Riverview 33578",
+    "Seffner 33584",
+    "Hillsborough County",
+    "Tampa Bay Area",
   ],
 };
 
