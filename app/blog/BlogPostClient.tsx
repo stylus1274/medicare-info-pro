@@ -530,8 +530,6 @@ export default function BlogPostClient({ post }: Props) {
               </a>
             </div>
 
-            {/* Related Posts */}
-            {post.relatedPosts.length > 0 && (
             {post.serviceAreas && post.serviceAreas.length > 0 && (
               <section aria-label="Service areas" className="bg-blue-50 border border-blue-100 rounded-2xl p-5 mb-10">
                 <p className="text-[0.7rem] font-bold uppercase tracking-wider text-[#1a3fa8] mb-3">
