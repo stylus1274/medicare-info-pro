@@ -60,6 +60,7 @@ const BLOG_SLUGS = [
   "/why-medicare-denies-mobility-scooter-claims-florida",
   "/best-medicare-agent-in-florida",
   "/5-best-medicare-consultants-in-tampa-bay",
+  "/5-best-medicare-consultants-in-tallahassee",
   "/maximize-medicare-benefits-florida-seniors",
   "/medicare-advantage-travel-benefits-florida-residents",
   "/best-medicare-plans-for-snowbirds-in-florida",
