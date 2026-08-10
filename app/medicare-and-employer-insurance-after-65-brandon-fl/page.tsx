@@ -3,11 +3,11 @@ import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "headline": "Medicare and Employer Insurance After 65 in Brandon FL: How They Work Together",
-  "url": "https://medicareinfopro.com/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+  "url": "https://medicareinfopro.com/medicare-and-employer-insurance-after-65-brandon-fl/",
   "datePublished": "2026-06-01",
-  "dateModified": "2026-06-01",
+  "dateModified": "2026-08-01",
   "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
   "author": {
     "@type": "Person",
@@ -23,16 +23,98 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-and-employer-insurance-after-65-brandon-fl"
+    "@id": "https://medicareinfopro.com/medicare-and-employer-insurance-after-65-brandon-fl/"
   }
+} as const;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/medicare-and-employer-insurance-after-65-brandon-fl/#localbusiness",
+  "name": "Medicare Information Pro",
+  "description": "Licensed Medicare specialists in Brandon, FL helping workers over 65 coordinate Medicare with employer insurance. Free consultations at 915 Oakfield Dr, Brandon.",
+  "url": "https://medicareinfopro.com/medicare-and-employer-insurance-after-65-brandon-fl/",
+  "telephone": "+1-813-699-5559",
+  "priceRange": "Free consultation",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "915 Oakfield Dr",
+    "addressLocality": "Brandon",
+    "addressRegion": "FL",
+    "postalCode": "33511",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9378,
+    "longitude": -82.2859
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Brandon"},
+    {"@type": "City", "name": "Valrico"},
+    {"@type": "City", "name": "Riverview"},
+    {"@type": "City", "name": "Seffner"}
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Medicare Information Pro",
+    "@id": "https://medicareinfopro.com/#organization"
+  }
+} as const;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I keep my employer insurance and also have Medicare after 65 in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many workers in Brandon, Valrico, and Riverview keep both employer insurance and Medicare simultaneously. The coordination rules determine which plan pays first based on your employer's size. If your employer has 20 or more employees, your employer plan pays primary. If fewer than 20, Medicare pays primary. Our Brandon agents at 915 Oakfield Dr can review your specific situation for free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to enroll in Medicare at 65 if I still work in Brandon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your employer's size. If your employer has 20 or more employees, you can delay Part B without penalty while actively employed. If your employer has fewer than 20 employees, you should enroll in Part B at 65 to avoid coverage gaps and permanent penalties. Call MIP at 813-699-5559 for guidance specific to your employer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Part B late enrollment penalty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Part B late enrollment penalty is 10% of the standard premium for every 12-month period you were eligible but not enrolled without qualifying employer coverage. This penalty is permanent. At the 2026 standard premium of $185.00, a 2-year delay adds $37.00 per month for life."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does COBRA count as employer coverage for Medicare purposes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. COBRA is continuation coverage, not active employer coverage. It does not qualify for purposes of delaying Part B enrollment. Your 8-month Special Enrollment Period starts when you lose your active employer coverage, regardless of whether you take COBRA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I get free Medicare help for workers over 65 in Brandon, FL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511 and provides free Medicare consultations for workers over 65 throughout Brandon (ZIP codes 33510, 33511, 33527), Valrico (33594), Riverview (33578), and Seffner (33584). Call 813-699-5559 or schedule online at medicareinfopro.com."
+      }
+    }
+  ]
 } as const;
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Medicare + Employer Insurance After 65 in Brandon, FL — Avoid the Penalty Trap',
+  title: 'Medicare and Employer Insurance After 65 in Brandon, FL (33510, 33511, 33527)',
   description:
-    'Still working at 65 in Brandon? The wrong enrollment decision can mean a permanent Part B penalty. MIP agents explain exactly when to enroll and how your plans coordinate.',
+    'Still working at 65 in Brandon, Valrico, or Riverview? The wrong enrollment decision can mean a permanent Part B penalty. MIP agents at 915 Oakfield Dr, Brandon explain exactly when to enroll and how your plans coordinate.',
   keywords: [
     "Medicare and employer insurance after 65 Brandon FL",
     "Medicare employer coverage coordination Brandon",
@@ -64,7 +146,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/medicare-and-employer-insurance-after-65-brandon-fl",
+      "https://medicareinfopro.com/medicare-and-employer-insurance-after-65-brandon-fl/",
   },
 };
 
@@ -72,7 +154,7 @@ const POST = {
   slug: "medicare-and-employer-insurance-after-65-brandon-fl",
   title: "Medicare and Employer Insurance After 65 in Brandon, FL: How They Work Together",
   excerpt:
-    "If you are still working at 65 and covered by employer insurance in Brandon or anywhere in the Tampa Bay area, you face a set of Medicare decisions that can have lasting financial consequences. Enrolling in the wrong combination of coverage, or missing a deadline, can result in permanent penalties or unexpected coverage gaps. This guide explains how Medicare and employer insurance coordinate, and what decisions you need to make.",
+    "If you are still working at 65 and covered by employer insurance in Brandon, Valrico, or Riverview, you face a set of Medicare decisions that can have lasting financial consequences. Enrolling in the wrong combination of coverage, or missing a deadline, can result in permanent penalties or unexpected coverage gaps. This guide explains how Medicare and employer insurance coordinate, and what decisions you need to make. Our office is at 915 Oakfield Dr, Brandon, FL 33511 — call 813-699-5559 for a free consultation.",
   category: "Enrollment" as const,
   author: GREG_WOHL,
   date: "June 2026",
@@ -83,7 +165,7 @@ const POST = {
     {
       type: "intro" as const,
       content:
-        "The Tampa Bay area, including Brandon and surrounding Hillsborough County communities, has a large population of active workers over 65. Many are covered by employer-sponsored health insurance and are unsure how Medicare fits into the picture.\n\nThe rules for coordinating Medicare with employer insurance depend heavily on the size of your employer. Getting this wrong can result in a lifetime Part B penalty, unexpected out-of-pocket costs, or a gap in coverage when you retire.\n\nThis guide walks through the key rules, the decisions you need to make, and the common mistakes to avoid.",
+        "The Brandon, FL area — including communities along the US-301 and SR-60 corridors in ZIP codes 33510, 33511, and 33527 — has a large population of active workers over 65. Many are employed at businesses near Brandon Regional Hospital, the Westfield Brandon mall corridor, and the Crosstown Expressway employment centers, and are covered by employer-sponsored health insurance while approaching Medicare eligibility.\n\nThe rules for coordinating Medicare with employer insurance depend heavily on the size of your employer. Getting this wrong can result in a lifetime Part B penalty, unexpected out-of-pocket costs, or a gap in coverage when you retire.\n\nThis guide walks through the key rules, the decisions you need to make, and the common mistakes to avoid. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511 and provides free consultations for workers over 65 throughout Brandon, Valrico (33594), Riverview (33578), and Seffner (33584).",
     },
     {
       type: "keyTakeaways" as const,
@@ -148,7 +230,7 @@ const POST = {
       type: "summary" as const,
       heading: "The Bottom Line on Medicare and Employer Insurance After 65",
       content:
-        "Coordinating Medicare with employer insurance is manageable if you understand the key rules. Here is the essential guidance:\n\n<ul><li><strong>Employer with 20+ employees:</strong> You can delay Part B without penalty while actively employed; enroll within 8 months of losing coverage</li><li><strong>Employer with fewer than 20 employees:</strong> Enroll in Part B at 65 to avoid gaps and penalties</li><li><strong>HSA contributors:</strong> Delay all Medicare enrollment to continue HSA contributions; stop contributing 6 months before you plan to enroll</li><li><strong>COBRA does not extend your SEP:</strong> The 8-month clock starts when you lose active employer coverage, not when COBRA ends</li><li><strong>Retiree coverage is not qualifying employer coverage:</strong> Enroll in Part B when you retire, not when retiree coverage ends</li><li><strong>Spouse coverage:</strong> Plan for your spouse's coverage needs before you retire</li></ul>\n\nOur licensed independent specialists serve Brandon, Riverview, Valrico, and the greater Tampa Bay area. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get personalized guidance for your specific situation.",
+        "Coordinating Medicare with employer insurance is manageable if you understand the key rules. Here is the essential guidance:\n\n<ul><li><strong>Employer with 20+ employees:</strong> You can delay Part B without penalty while actively employed; enroll within 8 months of losing coverage</li><li><strong>Employer with fewer than 20 employees:</strong> Enroll in Part B at 65 to avoid gaps and penalties</li><li><strong>HSA contributors:</strong> Delay all Medicare enrollment to continue HSA contributions; stop contributing 6 months before you plan to enroll</li><li><strong>COBRA does not extend your SEP:</strong> The 8-month clock starts when you lose active employer coverage, not when COBRA ends</li><li><strong>Retiree coverage is not qualifying employer coverage:</strong> Enroll in Part B when you retire, not when retiree coverage ends</li><li><strong>Spouse coverage:</strong> Plan for your spouse's coverage needs before you retire</li></ul>\n\nMedicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511 and serves workers over 65 throughout Brandon (33510, 33511, 33527), Valrico (33594), Riverview (33578), and Seffner (33584). <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> or call 813-699-5559 for personalized guidance for your specific situation.",
     },
     {
       type: "faq" as const,
@@ -189,17 +271,22 @@ const POST = {
   relatedPosts: [
     {
       title: "Florida Medicare If Still Working at 65: What You Need to Know",
-      href: "/florida-medicare-if-still-working-at-65",
+      href: "/florida-medicare-if-still-working-at-65/",
       category: "Enrollment" as const,
     },
     {
       title: "Medicare Qualifications in Florida: Who Is Eligible?",
-      href: "/medicare-qualifications-florida",
+      href: "/medicare-qualifications-florida/",
       category: "Enrollment" as const,
     },
     {
       title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
-      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
+      category: "Enrollment" as const,
+    },
+    {
+      title: "Free Medicare Enrollment Help in Brandon, FL",
+      href: "/free-medicare-enrollment-help-brandon-fl/",
       category: "Enrollment" as const,
     },
   ],
@@ -211,6 +298,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BlogPostClient post={POST} />
     </>
