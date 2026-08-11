@@ -114,6 +114,9 @@ const LOCAL_PAGES: string[] = [
   "/comparing-medicare-plans-clermont",
   "/medicare-advantage-plans-clermont-florida",
   "/medicare-enrollment-assistance-clermont",
+  // Kissimmee cluster
+  "/medicare-agent-kissimmee",
+  "/medicare-supplement-insurance-plans-kissimmee",
   "/medicare-agent-tallahassee",
   "/medicare-supplement-insurance-plans-tallahassee",
   "/comparing-medicare-plans-tallahassee",

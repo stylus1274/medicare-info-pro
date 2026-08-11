@@ -68,18 +68,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
   const typeLabel = PAGE_TYPE_LABELS[config.pageType];
   const ctaLabel = PAGE_TYPE_CTA[config.pageType];
 
-  const testimonials = config.testimonials ?? [
-    {
-      name: "Sandra M.",
-      location: config.cityFull,
-      text: `I had no idea where to start with Medicare. Greg walked me through everything step by step and found me a plan that covers my doctors and costs less than I expected. Highly recommend.`,
-    },
-    {
-      name: "Thomas R.",
-      location: config.cityFull,
-      text: `They saved me over $1,200 a year by switching my Medigap plan to a different carrier with identical coverage. The whole process took about 20 minutes.`,
-    },
-  ];
+  const testimonials = config.testimonials ?? [];
 
   return (
     <div className="min-h-screen bg-white">
@@ -215,25 +204,27 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
             )}
 
             {/* Testimonials */}
-            <section>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What {config.city} Clients Say
-              </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {testimonials.map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
+            {testimonials.length > 0 && (
+              <section>
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                  What {config.city} Clients Say
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {testimonials.map(({ name, location, text }) => (
+                    <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                      <div className="flex gap-0.5 mb-3">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
+                        ))}
+                      </div>
+                      <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
+                      <div className="font-semibold text-gray-900 text-sm">{name}</div>
+                      <div className="text-gray-500 text-xs">{location}</div>
                     </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
-                  </div>
-                ))}
-              </div>
-            </section>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* FAQ */}
             <section>
