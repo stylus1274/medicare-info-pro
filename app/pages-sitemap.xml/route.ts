@@ -119,6 +119,7 @@ const LOCAL_PAGES: string[] = [
   "/medicare-supplement-insurance-plans-kissimmee",
   "/comparing-medicare-plans-kissimmee",
   "/medicare-advantage-plans-kissimmee-florida",
+  "/medicare-enrollment-assistance-kissimmee",
   "/medicare-agent-tallahassee",
   "/medicare-supplement-insurance-plans-tallahassee",
   "/comparing-medicare-plans-tallahassee",
