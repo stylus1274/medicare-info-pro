@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   ChevronRight, ChevronDown, Phone, ArrowRight, CheckCircle,
-  XCircle, Scale, MapPin, Shield, Star, Info
+  XCircle, Scale, MapPin, Shield, Info
 } from "lucide-react";
 
 interface CityData {
@@ -17,6 +17,7 @@ interface CityData {
   carriers: string[];
   neighboringCities: { name: string; slug: string }[];
   relatedCityLinks?: { label: string; href: string }[];
+  inlineResources?: { label: string; href: string }[];
 }
 
 const PLAN_COMPARISON = [
@@ -185,7 +186,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function CompareMedicarePlansTemplate({ data }: { data: CityData }) {
-  const { city, county, zip, carriers, neighboringCities, relatedCityLinks } = data;
+  const { city, county, zip, carriers, neighboringCities, relatedCityLinks, inlineResources } = data;
 
   return (
     <>
@@ -247,6 +248,19 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                 <p className="text-gray-700 leading-relaxed">
                   Our independent agents in {county} County compare every available plan against your specific situation, completely free of charge.
                 </p>
+                {inlineResources && inlineResources.length >= 2 && (
+                  <p className="text-gray-700 leading-relaxed mt-4">
+                    For a Kissimmee-specific starting point, review our{" "}
+                    <Link href={inlineResources[0].href} className="text-[#1a3fa8] underline underline-offset-2 hover:text-[#0d2260]">
+                      {inlineResources[0].label}
+                    </Link>{" "}
+                    and{" "}
+                    <Link href={inlineResources[1].href} className="text-[#1a3fa8] underline underline-offset-2 hover:text-[#0d2260]">
+                      {inlineResources[1].label}
+                    </Link>
+                    .
+                  </p>
+                )}
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {[
@@ -423,23 +437,6 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                   <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonial */}
-        <section className="py-10 bg-gray-50">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 text-center">
-              <div className="flex justify-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="text-[#f5a800] fill-[#f5a800]" />
-                ))}
-              </div>
-              <blockquote className="font-serif text-xl text-gray-800 italic leading-relaxed mb-4">
-                "I had no idea how many options I had until I spoke with Greg. He compared every plan available in my area and found one that covered all my doctors and saved me over $80 a month."
-              </blockquote>
-              <div className="text-sm font-semibold text-gray-700">- Medicare Information Project Client, {county} County</div>
             </div>
           </div>
         </section>

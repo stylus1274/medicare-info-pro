@@ -117,6 +117,8 @@ const LOCAL_PAGES: string[] = [
   // Kissimmee cluster
   "/medicare-agent-kissimmee",
   "/medicare-supplement-insurance-plans-kissimmee",
+  "/comparing-medicare-plans-kissimmee",
+  "/medicare-advantage-plans-kissimmee-florida",
   "/medicare-agent-tallahassee",
   "/medicare-supplement-insurance-plans-tallahassee",
   "/comparing-medicare-plans-tallahassee",
