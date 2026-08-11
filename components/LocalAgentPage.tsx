@@ -153,9 +153,10 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                 Medicare Information Project provides free, independent Medicare guidance to residents of {config.city} and the surrounding {config.county} communities. We are not employed by any insurance company, which means our recommendations are based entirely on what is best for you.
               </p>
               {config.bodyText && (
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {config.bodyText}
-                </p>
+                <p
+                  className="text-gray-700 leading-relaxed mb-6"
+                  dangerouslySetInnerHTML={{ __html: config.bodyText }}
+                />
               )}
               <div className="grid sm:grid-cols-2 gap-3">
                 {DEFAULT_SERVICES.map((service) => (
