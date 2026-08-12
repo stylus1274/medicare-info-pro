@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 // Child sitemaps are served by route handlers at:
 //   /pages-sitemap.xml  →  app/pages-sitemap.xml/route.ts
 //   /blog-sitemap.xml   →  app/blog-sitemap.xml/route.ts
+//   /faq-sitemap.xml    →  app/faq-sitemap.ts
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -12,6 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://medicareinfopro.com/post-sitemap.xml",
+    },
+    {
+      url: "https://medicareinfopro.com/faq-sitemap.xml",
     },
   ];
 }

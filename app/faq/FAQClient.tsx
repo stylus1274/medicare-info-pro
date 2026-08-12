@@ -55,6 +55,11 @@ const categories: Category[] = [
         link: { label: "Working Past 65 Guide", href: "/working-past-65" },
       },
       {
+        q: "Does COBRA count as employer coverage for Medicare?",
+        a: "No. COBRA is continuation coverage, not active employer coverage for Medicare Part B timing. It generally does not extend the 8-month Special Enrollment Period that begins when active employment or job-based coverage ends.",
+        link: { label: "Read the Medicare and COBRA FAQ", href: "/faqs/medicare-and-cobra" },
+      },
+      {
         q: "How do I enroll in Medicare if I am not collecting Social Security?",
         a: "If you are not yet receiving Social Security benefits, Medicare will not automatically enroll you. You must sign up yourself through Social Security online at ssa.gov, by calling 1-800-772-1213, or by visiting your local Social Security office.",
         link: { label: "Medicare Without Social Security", href: "/medicare-without-social-security" },
@@ -142,6 +147,11 @@ const categories: Category[] = [
         q: "Can I have both Medicare Advantage and a Medigap plan?",
         a: "No. It is illegal for an insurer to sell you a Medigap policy if you are enrolled in a Medicare Advantage plan. Medigap plans only work with Original Medicare (Parts A and B).",
       },
+      {
+        q: "What are Medigap guaranteed issue rights in Florida?",
+        a: "They are limited protections that can require an insurer to sell you certain Medicare Supplement policies without medical underwriting after specific coverage changes or during your initial Medigap Open Enrollment Period.",
+        link: { label: "Read the Florida guaranteed issue rights FAQ", href: "/faqs/medigap-guaranteed-issue-rights-florida" },
+      },
     ],
   },
   {
@@ -167,6 +177,7 @@ const categories: Category[] = [
       {
         q: "What is the Part D late enrollment penalty?",
         a: "If you go 63 or more consecutive days without creditable prescription drug coverage after your Initial Enrollment Period ends, you may owe a late enrollment penalty. The penalty is 1% of the national base beneficiary premium for each month you went without coverage, added permanently to your monthly Part D premium.",
+        link: { label: "Read the Part D late enrollment penalty FAQ", href: "/faqs/medicare-part-d-late-enrollment-penalty" },
       },
     ],
   },

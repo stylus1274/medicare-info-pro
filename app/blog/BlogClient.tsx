@@ -346,45 +346,6 @@ const ARTICLES: Article[] = [
     live: true,
   },
   {
-    slug: "/medicare-and-cobra",
-    title: "Medicare and COBRA: When to Enroll and How Coverage Works",
-    excerpt:
-      "COBRA can continue employer coverage after work ends, but it does not extend your Part B enrollment window. Learn the timing rules, creditable drug coverage requirements, and how to avoid costly gaps.",
-    category: "Enrollment",
-    author: "Greg Wohl",
-    date: "August 2026",
-    readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-    live: true,
-    sortOrder: 1,
-  },
-  {
-    slug: "/medigap-guaranteed-issue-rights-florida",
-    title: "Florida Medigap Guaranteed Issue Rights: When You Can Buy Without Underwriting",
-    excerpt:
-      "Learn when a Florida Medicare beneficiary may have a protected right to buy a Medicare Supplement policy after coverage changes, what proof to keep, and why timing matters.",
-    category: "Supplements",
-    author: "Greg Wohl",
-    date: "August 2026",
-    readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
-    live: true,
-    sortOrder: 1,
-  },
-  {
-    slug: "/medicare-part-d-late-enrollment-penalty",
-    title: "Medicare Part D Late Enrollment Penalty: How It Works and How to Avoid It",
-    excerpt:
-      "The Part D late enrollment penalty can stay with you as long as you have drug coverage. Learn the 63-day rule, the 2026 calculation, and how to appeal an incorrect penalty.",
-    category: "Part D",
-    author: "Greg Wohl",
-    date: "August 2026",
-    readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&q=80",
-    live: true,
-    sortOrder: 1,
-  },
-  {
     slug: "/medicare-secondary-payer-rules",
     title: "Medicare Secondary Payer Rules: When Medicare Pays Second",
     excerpt:
