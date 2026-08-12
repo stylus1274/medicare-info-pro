@@ -3,6 +3,9 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/medicare-and-cobra",
+  "/medigap-guaranteed-issue-rights-florida",
+  "/medicare-part-d-late-enrollment-penalty",
   "/medicare-secondary-payer-rules",
   "/medicare-supplement-plan-g-vs-plan-n",
   "/does-medicare-cover-zepbound",
