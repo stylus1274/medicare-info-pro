@@ -6,6 +6,8 @@ const FAQ_SLUGS = [
   "/faqs/medicare-and-cobra",
   "/faqs/medigap-guaranteed-issue-rights-florida",
   "/faqs/medicare-part-d-late-enrollment-penalty",
+  "/faqs/medicare-part-b-giveback",
+  "/faqs/medicare-advantage-open-enrollment",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

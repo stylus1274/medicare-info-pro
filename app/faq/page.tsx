@@ -103,6 +103,22 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      "name": "What is a Medicare Part B Giveback plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Medicare Part B Giveback, also called a Part B premium reduction, is a benefit offered by some Medicare Advantage plans that reduces part of a member's Part B premium. It is not available in every area or with every plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Medicare Advantage Open Enrollment Period?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Medicare Advantage Open Enrollment Period runs from January 1 through March 31 and is only for people already enrolled in a Medicare Advantage plan. You can switch plans or return to Original Medicare during this time."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is the difference between an HMO and a PPO Medicare Advantage plan?",
       "acceptedAnswer": {
         "@type": "Answer",

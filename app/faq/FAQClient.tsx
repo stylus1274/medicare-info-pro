@@ -111,6 +111,16 @@ const categories: Category[] = [
         link: { label: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage" },
       },
       {
+        q: "What is a Medicare Part B Giveback plan?",
+        a: "A Medicare Part B Giveback, also called a Part B premium reduction, is a benefit offered by some Medicare Advantage plans that reduces part of a member's Part B premium. It is not available in every area or with every plan.",
+        link: { label: "Read the Part B Giveback FAQ", href: "/faqs/medicare-part-b-giveback" },
+      },
+      {
+        q: "What is the Medicare Advantage Open Enrollment Period?",
+        a: "The Medicare Advantage Open Enrollment Period runs from January 1 through March 31 and is only for people already enrolled in a Medicare Advantage plan. You can switch plans or return to Original Medicare during this time.",
+        link: { label: "Read the Medicare Advantage Open Enrollment FAQ", href: "/faqs/medicare-advantage-open-enrollment" },
+      },
+      {
         q: "What is the difference between an HMO and a PPO Medicare Advantage plan?",
         a: "HMO plans require you to use in-network providers and typically require referrals to see specialists. PPO plans allow you to see out-of-network providers at a higher cost and generally do not require referrals. HMOs tend to have lower premiums; PPOs offer more flexibility.",
         link: { label: "Medicare HMO Plans", href: "/hmos" },
