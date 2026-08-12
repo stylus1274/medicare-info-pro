@@ -124,8 +124,8 @@ export default function KitSlideIn() {
           display: block;
           width: 100%;
           padding: 14px 16px;
-          background: #f5c841;
-          color: #0a1a3c;
+          background: #c2410c;
+          color: #ffffff;
           border-radius: 8px;
           font-size: 15px;
           font-weight: 800;
@@ -135,7 +135,7 @@ export default function KitSlideIn() {
           margin-bottom: 12px;
         }
         .kit-slide-btn:hover {
-          background: #ffd84d;
+          background: #9a3412;
           transform: translateY(-1px);
         }
         .kit-slide-disclaimer {
