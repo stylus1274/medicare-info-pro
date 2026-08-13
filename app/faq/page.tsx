@@ -284,6 +284,54 @@ const faqSchema = {
         "@type": "Answer",
         "text": "Yes, with conditions. Medicare Part A covers up to 100 days of SNF care per benefit period after a qualifying 3-day inpatient hospital stay. Days 1 through 20 are fully covered. Days 21 through 100 require a daily coinsurance of $212 in 2026."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover oxygen therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Medicare Part B can cover home oxygen equipment and supplies as durable medical equipment when a treating clinician documents medical necessity and Medicare's coverage criteria are met."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover diabetic shoes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when a person has diabetes and certain qualifying foot conditions. Medicare Part B can cover therapeutic shoes and inserts when the prescribing, certification, and supplier rules are met."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover lift chairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare may cover the motorized seat-lift mechanism when it is medically necessary, but it does not cover the chair's furniture frame, upholstery, or other non-mechanism components."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover bathroom safety devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Original Medicare generally excludes grab bars, shower chairs, and similar bathroom safety items, although a medically necessary commode chair may qualify as durable medical equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover in-home caregivers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Original Medicare does not generally pay for custodial personal care alone, but it can cover limited home health aide services when you qualify for skilled home health care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover incontinence supplies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Original Medicare generally does not cover adult diapers, briefs, pads, or other routine incontinence supplies, though certain medically necessary urological supplies may be covered."
+      }
     }
   ]
 } as const;
