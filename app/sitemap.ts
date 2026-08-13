@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 // Child sitemaps are served by route handlers at:
 //   /pages-sitemap.xml  →  app/pages-sitemap.xml/route.ts
 //   /blog-sitemap.xml   →  app/blog-sitemap.xml/route.ts
-//   /faq-sitemap.xml    →  app/faq-sitemap.ts
+//   /faq-sitemap.xml    →  app/faq-sitemap.xml/route.ts
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

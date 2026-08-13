@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://medicareinfopro.com";
-
-const FAQ_SLUGS = [
+export const FAQ_SLUGS = [
   "/faqs/medicare-and-cobra",
   "/faqs/medigap-guaranteed-issue-rights-florida",
   "/faqs/medicare-part-d-late-enrollment-penalty",
@@ -16,7 +15,7 @@ const FAQ_SLUGS = [
   "/faqs/does-medicare-cover-incontinence-supplies",
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function faqSitemapMetadata(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
   return FAQ_SLUGS.map((path) => ({
