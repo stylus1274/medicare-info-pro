@@ -124,18 +124,21 @@ export default function KitSlideIn() {
           display: block;
           width: 100%;
           padding: 14px 16px;
-          background: #c2410c;
+          background: linear-gradient(135deg, #fb8a24 0%, #e95b07 100%);
           color: #ffffff;
+          border: 1px solid #ffad5c;
           border-radius: 8px;
           font-size: 15px;
           font-weight: 800;
           text-align: center;
           text-decoration: none;
-          transition: background 0.15s, transform 0.1s;
+          box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
+          transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
           margin-bottom: 12px;
         }
         .kit-slide-btn:hover {
-          background: #9a3412;
+          background: linear-gradient(135deg, #ff9d3d 0%, #f36a12 100%);
+          box-shadow: 0 10px 24px rgba(249, 115, 22, 0.42);
           transform: translateY(-1px);
         }
         .kit-slide-disclaimer {
