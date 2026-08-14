@@ -66,7 +66,8 @@ export default function KitSlideIn() {
       <style>{`
         .kit-slide-in {
           position: fixed;
-          bottom: 80px;
+          top: 50%;
+          bottom: auto;
           right: 28px;
           width: 340px;
           min-height: 450px;
@@ -83,7 +84,7 @@ export default function KitSlideIn() {
         }
         @keyframes kitSlideUp {
           from { transform: translateY(120%); opacity: 0; }
-          to   { transform: translateY(0);    opacity: 1; }
+          to   { transform: translateY(-50%); opacity: 1; }
         }
         .kit-slide-close {
           position: absolute;
@@ -101,7 +102,7 @@ export default function KitSlideIn() {
         }
         .kit-slide-close:hover { color: #fff; background: rgba(255,255,255,0.15); }
         .kit-slide-eyebrow {
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 700;
           letter-spacing: 0.12em;
           color: #f5c841;
@@ -124,21 +125,19 @@ export default function KitSlideIn() {
           display: block;
           width: 100%;
           padding: 14px 16px;
-          background: linear-gradient(135deg, #fb8a24 0%, #e95b07 100%);
+          background: #f97316;
           color: #ffffff;
-          border: 1px solid #ffad5c;
+          border: none;
           border-radius: 8px;
           font-size: 15px;
           font-weight: 800;
           text-align: center;
           text-decoration: none;
-          box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
-          transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+          transition: background 0.15s, transform 0.1s;
           margin-bottom: 12px;
         }
         .kit-slide-btn:hover {
-          background: linear-gradient(135deg, #ff9d3d 0%, #f36a12 100%);
-          box-shadow: 0 10px 24px rgba(249, 115, 22, 0.42);
+          background: #ea580c;
           transform: translateY(-1px);
         }
         .kit-slide-disclaimer {
@@ -151,13 +150,19 @@ export default function KitSlideIn() {
         /* Mobile: full-width bottom sheet */
         @media (max-width: 480px) {
           .kit-slide-in {
+            top: auto;
             bottom: 0;
             right: 0;
             left: 0;
             width: 100%;
             border-radius: 18px 18px 0 0;
             border-top: 4px solid #f5c841;
+            animation: kitSlideUpMobile 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
           }
+        }
+        @keyframes kitSlideUpMobile {
+          from { transform: translateY(120%); opacity: 0; }
+          to   { transform: translateY(0); opacity: 1; }
         }
       `}</style>
     </>
