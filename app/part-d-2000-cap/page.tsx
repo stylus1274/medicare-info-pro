@@ -1,174 +1,232 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
+const canonicalUrl = "https://medicareinfopro.com/part-d-2000-cap";
+const publishedDate = "2026-01-01";
+const modifiedDate = "2026-08-16";
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
-  "url": "https://medicareinfopro.com/blog/part-d-2000-cap",
-  "datePublished": "2026-01-01",
-  "dateModified": "2026-01-01",
-  "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
-  "author": {
+  headline: "The Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
+  description:
+    "Learn how the 2026 $2,100 Medicare Part D out-of-pocket cap works, what counts, what does not count, and how the Medicare Prescription Payment Plan affects monthly bills.",
+  url: canonicalUrl,
+  datePublished: publishedDate,
+  dateModified: modifiedDate,
+  image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
+  author: {
     "@type": "Person",
-    "name": "Greg Wohl",
-    "jobTitle": "Licensed Medicare Specialist",
-    "url": "https://medicareinfopro.com/greg-wohl"
+    name: "Greg Wohl",
+    jobTitle: "Licensed Medicare Specialist",
+    url: "https://medicareinfopro.com/greg-wohl",
   },
-  "publisher": {
+  publisher: {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "url": "https://medicareinfopro.com",
-    "@id": "https://medicareinfopro.com/#organization"
+    name: "Medicare Information Project",
+    url: "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization",
   },
-  "mainEntityOfPage": {
+  mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/part-d-2000-cap"
-  }
+    "@id": canonicalUrl,
+  },
+} as const;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the Medicare Part D out-of-pocket cap in 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The annual out-of-pocket threshold for covered Part D drugs is $2,100 in 2026. After you reach it, you pay no cost sharing for covered Part D drugs for the rest of that calendar year.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do Part D premiums count toward the $2,100 cap?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. The monthly premium for your drug plan does not count toward the Part D out-of-pocket cap. The cap applies to covered prescription drug cost sharing, such as deductible, copayments, and coinsurance, along with certain qualifying payments made on your behalf.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does the Medicare Prescription Payment Plan lower drug costs?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. The Medicare Prescription Payment Plan can spread covered Part D drug costs across monthly bills, but it does not reduce the total amount you owe for those drugs or lower your plan premium.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does the Part D cap apply to all prescriptions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. It applies to Part D drugs covered by your plan. A drug that is excluded or not covered by your plan may not count toward the cap, so review the plan formulary and coverage rules.",
+      },
+    },
+  ],
 } as const;
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026) | MedicareInfoPro",
+  title: "Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
   description:
-    "In 2026, Medicare Part D caps your annual out-of-pocket drug costs at $2,100. Learn how the cap works, what counts toward it, and how to use the Medicare Prescription Payment Plan.",
+    "Understand the 2026 $2,100 Medicare Part D out-of-pocket cap, the $615 maximum deductible, what counts toward the cap, and the Medicare Prescription Payment Plan.",
   keywords: [
     "Medicare Part D 2100 cap",
     "Medicare drug out of pocket cap 2026",
     "Part D out of pocket maximum 2026",
-    "Medicare prescription drug cap",
     "Medicare Prescription Payment Plan",
-    "Inflation Reduction Act Medicare Part D",
+    "Part D deductible 2026",
   ],
   openGraph: {
-    title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
-    description: "Medicare Part D has a $2,100 annual cap on out-of-pocket drug costs in 2026. Here is exactly how it works, what counts toward the cap, and how to spread costs across the year.",
-    url: "https://medicareinfopro.com/blog/part-d-2000-cap",
+    title: "Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
+    description:
+      "A current explanation of the Part D cap, covered costs, plan premiums, the 2026 deductible limit, and the Medicare Prescription Payment Plan.",
+    url: canonicalUrl,
     type: "article",
-    images: [{ url: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80", width: 1200, height: 630, alt: "Prescription medication bottles representing Medicare Part D drug coverage" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Prescription medication bottles representing Medicare Part D drug costs",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image", title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)", description: "Medicare Part D has a $2,100 out-of-pocket cap in 2026. Here is how it works." },
-  alternates: { canonical: "https://medicareinfopro.com/blog/part-d-2000-cap" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
+    description: "How the 2026 Part D cap works, what counts toward it, and how payments can be spread across the year.",
+  },
+  alternates: { canonical: canonicalUrl },
 };
 
 const POST = {
   slug: "part-d-2000-cap",
-  title: "The Medicare Part D $2,100 Out-of-Pocket Cap Explained (2026)",
-  excerpt: "In 2026, Medicare Part D caps your annual out-of-pocket prescription drug costs at $2,100. This is the most significant change to Medicare drug coverage in decades. Here is exactly how it works, what counts toward the cap, and how the Medicare Prescription Payment Plan lets you spread costs across the year.",
+  title: "The Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
+  excerpt:
+    "In 2026, Medicare Part D limits your out-of-pocket cost sharing for covered drugs to $2,100 for the calendar year. Learn what counts, what does not, and how the Medicare Prescription Payment Plan changes the timing of bills rather than your total cost.",
   category: "Part D" as const,
   author: GREG_WOHL,
-  date: "January 2026",
-  readTime: "9 min read",
+  date: "August 16, 2026",
+  readTime: "10 min read",
   featuredImage: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
   image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80",
-  imageAlt: "Prescription medication bottles representing Medicare Part D drug coverage costs",
+  imageAlt: "Prescription medication bottles representing Medicare Part D drug costs",
   keyTakeaways: [
-    { label: "$2,100 Annual Cap (2026)", text: "Once you spend $2,100 out of pocket on covered Part D drugs in 2026, your plan covers 100 percent of drug costs for the rest of the year. The cap was $2,000 in 2025." },
-    { label: "Manufacturer Discounts Count", text: "Manufacturer discounts on brand-name drugs count toward your $2,100 cap in 2026, even though you do not pay them directly." },
-    { label: "Premiums Do Not Count", text: "Monthly Part D premiums do not count toward the $2,100 cap in 2026 — only pharmacy payments (deductibles, copays, coinsurance) count." },
-    { label: "Applies to All Part D Plans", text: "The cap applies to standalone Part D plans and Medicare Advantage plans with drug coverage (MAPD plans)." },
-    { label: "Spread Payments Option", text: "The optional Medicare Prescription Payment Plan lets you spread out-of-pocket costs into equal monthly payments throughout the year." },
+    {
+      label: "$2,100 threshold in 2026",
+      text: "After your covered Part D drug spending reaches the annual out-of-pocket threshold, you pay no cost sharing for covered Part D drugs for the rest of the calendar year.",
+    },
+    {
+      label: "Premiums do not count",
+      text: "Your monthly Part D premium is separate from the cap. The cap applies to covered-drug cost sharing and certain qualifying payments made on your behalf.",
+    },
+    {
+      label: "The deductible can be up to $615",
+      text: "A plan may have no deductible, but no Part D plan may have a deductible higher than $615 in 2026.",
+    },
+    {
+      label: "Payment plan changes timing, not price",
+      text: "The Medicare Prescription Payment Plan can spread covered drug costs over monthly bills, but it does not reduce what you owe overall or your monthly premium.",
+    },
   ],
   quickFacts: [
-    { label: "Annual Cap Amount", value: "$2,100 (2026)" },
-    { label: "Effective Date", value: "January 1, 2025" },
-    { label: "Applies To", value: "All Part D and MAPD plans" },
-    { label: "Premiums Count?", value: "No — pharmacy costs only" },
-    { label: "Cap Resets", value: "January 1 each year" },
+    { label: "2026 out-of-pocket threshold", value: "$2,100" },
+    { label: "2026 maximum deductible", value: "$615" },
+    { label: "After the threshold", value: "$0 cost sharing for covered Part D drugs" },
+    { label: "Cap resets", value: "January 1 each year" },
   ],
   sections: [
     {
-      type: "keyTakeaways" as const,
-      items: [
-        { label: "$2,100 Annual Cap (2026)", text: "Once you spend $2,100 out of pocket on covered Part D drugs in 2026, your plan covers 100 percent of drug costs for the rest of the year. The cap was $2,000 in 2025." },
-        { label: "Manufacturer Discounts Count", text: "Manufacturer discounts on brand-name drugs count toward your $2,100 cap in 2026, even though you do not pay them directly." },
-        { label: "Premiums Do Not Count", text: "Monthly Part D premiums do not count toward the $2,100 cap in 2026 — only pharmacy payments (deductibles, copays, coinsurance) count." },
-        { label: "Applies to All Part D Plans", text: "The cap applies to standalone Part D plans and Medicare Advantage plans with drug coverage (MAPD plans)." },
-        { label: "Spread Payments Option", text: "The optional Medicare Prescription Payment Plan lets you spread out-of-pocket costs into equal monthly payments throughout the year." },
-      ],
+      type: "intro" as const,
+      content: `Medicare Part D now has an annual limit on out-of-pocket cost sharing for covered prescription drugs. In 2026, that threshold is <strong>$2,100</strong>. Once you reach it, you pay no cost sharing for covered Part D drugs for the rest of the calendar year.<br /><br />The cap can offer meaningful protection if you use expensive medications. It does not mean every prescription is free, eliminate your plan premium, or replace the need to check whether a drug is on your plan's formulary. This guide explains the distinction so you can review your <a href='/coverage/prescription-drugs' class='text-[#1a3fa8] underline underline-offset-2'>Medicare prescription drug coverage</a> with realistic expectations.`,
     },
     {
       type: "section" as const,
-      heading: "How the $2,100 Cap Works in 2026",
-      content: `For decades, <a href='/coverage/prescription-drugs' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D</a> had no limit on how much a beneficiary could spend on prescription drugs in a single year. People taking expensive specialty medications for cancer, rheumatoid arthritis, or multiple sclerosis could face tens of thousands of dollars in annual drug costs with no ceiling in sight.
-
-The Part D out-of-pocket cap is a true maximum for covered drug costs. In 2026, the cap is $2,100 (up from $2,000 in 2025). Once the amounts you pay at the pharmacy total $2,100 in a calendar year, your plan pays 100 percent of the cost of covered drugs for the remainder of that year. You pay nothing at the pharmacy for covered drugs after reaching the cap.
-
-The cap applies to the deductible, copays, and coinsurance you pay for covered drugs. In 2026, the standard Part D deductible is $590. If your plan charges a deductible, that amount counts toward your $2,100 cap. Every copay and coinsurance payment you make at the pharmacy also counts.
-
-The cap resets on January 1 each year. There is no carryover from one year to the next. If you reach $2,100 in October, you benefit from free covered drugs in November and December, but you start over at $0 on January 1.`,
+      heading: "How the $2,100 Part D Cap Works",
+      content: `In 2026, Medicare drug plans and Medicare Advantage plans with drug coverage generally move through three stages: a deductible stage, an initial coverage stage, and catastrophic coverage. A Part D plan can have a deductible of up to <strong>$615</strong> in 2026, although some plans have a lower deductible or none at all.<br /><br />After you meet the deductible, the standard benefit generally uses 25% coinsurance until your out-of-pocket spending for covered Part D drugs reaches $2,100. At that point, you automatically enter catastrophic coverage and pay no cost sharing for covered Part D drugs for the remainder of that calendar year. The <a href='https://www.medicare.gov/health-drug-plans/part-d/basics/costs' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>official Medicare.gov Part D cost guide</a> explains the current stages and plan limits.<br /><br />The threshold resets on January 1. If you reach it in October, you have zero cost sharing for covered drugs in November and December, then a new annual cycle starts the next January.`,
     },
     {
       type: "section" as const,
-      heading: "How Manufacturer Discounts Count",
-      content: `One of the most beneficiary-friendly aspects of the new cap is how manufacturer discounts are counted. Drug manufacturers are required to provide discounts on brand-name drugs for Part D enrollees. Under the new rules, these manufacturer discounts count toward your $2,100 out-of-pocket cap in 2026, even though you do not pay them directly.
-
-This means that if you take an expensive brand-name specialty drug, the manufacturer's discount on that drug accelerates how quickly you reach the $2,100 cap. For example, if a specialty drug costs $3,000 per month and you pay 25 percent coinsurance ($750) while the manufacturer pays a $900 discount, both the $750 you paid and the $900 manufacturer discount count toward your $2,100 cap.
-
-This provision is particularly valuable for people taking expensive specialty medications for conditions like cancer, rheumatoid arthritis, multiple sclerosis, and psoriasis. Reviewing your <a href='/blog/2026-medicare-advantage-changes' class='text-[#1a3fa8] underline underline-offset-2'>2026 Medicare Advantage or Part D plan changes</a> each year during open enrollment ensures you are on the plan that best covers your specific drugs.`,
+      heading: "What Counts Toward the Cap, and What Does Not",
+      content: `Your deductible, copayments, and coinsurance for covered Part D drugs count toward the out-of-pocket threshold. Certain qualifying payments made on your behalf can count too, including some help available through <a href='/how-to-get-help-paying-for-medicare' class='text-[#1a3fa8] underline underline-offset-2'>Extra Help and other Medicare cost-assistance programs</a>.<br /><br />Your monthly Part D premium does <strong>not</strong> count toward the $2,100 threshold. The cap also does not make a drug count if your plan does not cover it. Drugs that are excluded from Part D, outside the plan's formulary, or obtained without following a required coverage rule may leave you with costs that do not count toward the cap. Check your formulary, pharmacy network, and any prior authorization or step-therapy requirements before assuming a medication will be covered.<br /><br />Your monthly Explanation of Benefits, or EOB, is an important record. It shows what you filled, what the plan paid, what you and others paid, your coverage stage, and the amounts that count toward your out-of-pocket costs.`,
+    },
+    {
+      type: "inlineCta" as const,
+      heading: "Not Sure Whether Your Drugs Are Covered?",
+      body: "A licensed independent Medicare specialist can help you compare formularies, pharmacy networks, estimated drug costs, and plan rules before you enroll. Call 813-699-5559 or request a free consultation.",
     },
     {
       type: "section" as const,
-      heading: "The Medicare Prescription Payment Plan",
-      content: `A new optional program called the Medicare Prescription Payment Plan (MPPP) allows you to spread your out-of-pocket drug costs across monthly payments throughout the year, rather than paying large amounts at the pharmacy early in the year.
-
-Without the MPPP, someone who takes expensive specialty drugs might reach their $2,100 cap by February or March, having paid large amounts at the pharmacy in January and February. The MPPP allows you to smooth those costs into equal monthly payments spread across the year.
-
-To use the MPPP, you must opt in through your Part D plan. Once enrolled, your plan pays the pharmacy on your behalf and then bills you monthly for your share of the costs, divided into equal payments. The total amount you pay over the year is the same, but the timing is spread out.
-
-The MPPP is optional and may not be beneficial for everyone. It is most useful for people who take expensive brand-name or specialty drugs and would otherwise face large pharmacy bills early in the year.`,
+      heading: "The Medicare Prescription Payment Plan Does Not Lower Drug Costs",
+      content: `The Medicare Prescription Payment Plan is an optional payment option offered by all Medicare drug plans and Medicare Advantage plans with drug coverage. It can help you manage the timing of drug bills by spreading your share of covered Part D drug costs across monthly bills during the calendar year.<br /><br />It does <strong>not</strong> lower your total drug cost, reduce your monthly plan premium, or change what your plan covers. You still pay your plan premium separately. Instead of paying the pharmacy at the time you fill a prescription, your plan pays the pharmacy and then bills you for your share. The amount of a monthly bill can change based on your remaining balance and the number of months left in the year, so it is not necessarily an identical payment every month.<br /><br />The official <a href='https://www.medicare.gov/prescription-payment-plan' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Prescription Payment Plan overview</a> can help you decide whether the cash-flow benefit fits your situation.`,
     },
     {
       type: "section" as const,
-      heading: "Who Benefits Most from the Cap",
-      content: `The $2,100 cap in 2026 is most impactful for people who take expensive specialty medications. Before the cap was introduced in 2025, a person taking a specialty drug costing $5,000 per month could face annual out-of-pocket drug costs of $10,000 or more. With the cap, their maximum exposure is $2,100 per year.
-
-People with cancer, rheumatoid arthritis, multiple sclerosis, psoriasis, and other conditions treated with high-cost specialty drugs benefit most from this change. For these individuals, the cap can represent savings of thousands of dollars per year.
-
-People who take only low-cost generic medications may not notice much difference. However, the cap provides valuable protection if your drug needs change due to a new diagnosis or a change in treatment. Understanding your full <a href='/costs-at-a-glance' class='text-[#1a3fa8] underline underline-offset-2'>Medicare costs for 2026</a> helps you budget for both premiums and pharmacy costs.`,
+      heading: "How the Cap Affects Plan Shopping",
+      content: `The cap protects you after you reach it, but it does not make every Part D plan equally suitable. Before enrolling, compare whether your medications are on the formulary, their tier, any utilization-management rules, preferred pharmacies, the premium, and the deductible. A plan with a low premium can still be a poor fit if it places your medication on a costly tier or does not cover it.<br /><br />Review your Annual Notice of Change each fall and use Medicare Plan Compare during the <a href='/annual-enrollment-period-guide' class='text-[#1a3fa8] underline underline-offset-2'>Annual Enrollment Period</a> if your drugs, pharmacies, or plan rules have changed. If you are considering whether to delay Part D enrollment, review the <a href='/faqs/medicare-part-d-late-enrollment-penalty' class='text-[#1a3fa8] underline underline-offset-2'>Part D late-enrollment penalty FAQ</a> before making a coverage decision.`,
     },
     {
       type: "section" as const,
-      heading: "Extra Help: Additional Assistance for Low-Income Beneficiaries",
-      content: `The Low Income Subsidy program, also called Extra Help, provides additional assistance with Part D costs for beneficiaries with limited income and resources. Extra Help pays some or all of the Part D premium, deductible, and copays.
-
-In 2026, beneficiaries who receive full Extra Help pay no more than $4.50 for generic drugs and $11.20 for brand-name drugs, regardless of the drug's actual cost. The $2,100 cap applies on top of Extra Help, though beneficiaries receiving full Extra Help are unlikely to reach the cap given their low copays.
-
-To qualify for Extra Help, your income must be below 150 percent of the federal poverty level and your resources must be below certain limits. You can apply through Social Security at ssa.gov or by calling 1-800-772-1213. A <a href='/get-help' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare advisor</a> can also help you determine whether you qualify and assist with the application.`,
+      heading: "Extra Help and Other Cost Assistance",
+      content: `Extra Help is a Medicare program for people with limited income and resources that can reduce Part D premiums, deductibles, and copayments. People who qualify for Medicaid, a Medicare Savings Program, or Supplemental Security Income generally qualify automatically. If you do not qualify automatically, you can apply.<br /><br />Cost-assistance programs can interact with the Part D threshold, but eligibility and the amount of help are individual. Do not assume that the $2,100 cap is the only protection available. Start with our <a href='/how-to-get-help-paying-for-medicare' class='text-[#1a3fa8] underline underline-offset-2'>guide to getting help paying for Medicare</a>, then verify the programs available to you through Medicare or Social Security.`,
     },
     {
       type: "summary" as const,
       heading: "Bottom Line",
-      content: "The Part D out-of-pocket cap (introduced at $2,000 in 2025 and rising to $2,100 in 2026) is the most significant improvement to Medicare drug coverage in decades. If you take expensive specialty medications, this change can save you thousands of dollars per year. Review your Part D plan annually during the Annual Enrollment Period to ensure your drugs are covered at the best possible cost, and ask your plan about the Medicare Prescription Payment Plan if you want to spread costs evenly throughout the year.",
+      content: "The 2026 Part D out-of-pocket threshold limits cost sharing for covered Part D drugs to $2,100 for the calendar year. It does not include plan premiums, and it does not make non-covered drugs count toward the threshold. Compare your actual medications, formulary rules, preferred pharmacies, premium, and deductible each year. Use the Medicare Prescription Payment Plan if spreading eligible drug bills would help your monthly budget, but remember that it changes payment timing rather than total cost.",
     },
     {
       type: "faq" as const,
       items: [
-        { question: "What is the Part D out-of-pocket cap in 2026?", answer: "In 2026, the annual out-of-pocket cap is $2,100 (up from $2,000 in 2025). It applies to all Part D coverage, including standalone Part D plans and Medicare Advantage plans that include drug coverage (MAPD plans)." },
-        { question: "Do my monthly premiums count toward the $2,100 cap?", answer: "No. Monthly Part D premiums do not count toward the $2,100 out-of-pocket cap in 2026. Only amounts you pay at the pharmacy, including deductibles, copays, and coinsurance, count toward the cap." },
-        { question: "What is the Medicare Prescription Payment Plan?", answer: "The Medicare Prescription Payment Plan (MPPP) is an optional program that allows you to spread your out-of-pocket drug costs into equal monthly payments throughout the year, rather than paying large amounts at the pharmacy early in the year. You must opt in through your Part D plan." },
-        { question: "Do manufacturer discounts count toward the $2,100 cap?", answer: "Yes. Discounts paid by drug manufacturers on brand-name drugs count toward your $2,100 out-of-pocket cap in 2026, even though you do not pay them directly. This can accelerate how quickly you reach the cap if you take expensive brand-name drugs." },
-        { question: "When does the cap reset?", answer: "The cap resets on January 1 each year. There is no carryover from one year to the next. If you reach the $2,100 cap in October, you benefit from free covered drugs in November and December, but you start over at $0 on January 1." },
-        { question: "What if I also have Extra Help?", answer: "If you receive the Low Income Subsidy (Extra Help), your copays are already very low. You are unlikely to reach the $2,100 cap, but the cap still applies as a backstop. Extra Help and the cap work together to protect low-income beneficiaries from high drug costs." },
+        {
+          question: "What is the Medicare Part D out-of-pocket cap in 2026?",
+          answer: "The annual out-of-pocket threshold is $2,100 in 2026. After you reach it, you pay no cost sharing for covered Part D drugs for the rest of that calendar year.",
+        },
+        {
+          question: "Do Part D premiums count toward the $2,100 cap?",
+          answer: "No. Your monthly Part D premium does not count. The threshold applies to covered-drug cost sharing such as the deductible, copayments, and coinsurance, plus certain qualifying payments made on your behalf.",
+        },
+        {
+          question: "Does the Part D cap apply to Medicare Advantage drug plans?",
+          answer: "Yes. The Part D benefit rules apply to standalone Part D plans and Medicare Advantage plans that include Part D drug coverage.",
+        },
+        {
+          question: "Does the Medicare Prescription Payment Plan save money?",
+          answer: "No. It can spread your share of covered Part D drug costs across monthly bills, but it does not reduce total drug costs, your premium, or the amount you owe for covered medications.",
+        },
+        {
+          question: "What happens if a drug is not on my plan formulary?",
+          answer: "A drug that is not covered by your plan may not count toward the Part D out-of-pocket threshold. Ask about formulary exceptions, covered alternatives, and your appeal rights before paying out of pocket.",
+        },
+        {
+          question: "When does the Part D cap reset?",
+          answer: "The threshold resets each January 1. There is no carryover from one calendar year to the next.",
+        },
       ],
     },
   ],
   relatedPosts: [
-    { title: "2026 Medicare Advantage Changes: What You Need to Know", href: "/2026-medicare-advantage-changes", category: "Plans" as const },
-    { title: "Annual Enrollment Period: Your Complete Guide", href: "/annual-enrollment-period-guide", category: "Enrollment" as const },
-    { title: "IRMAA Explained: How Income Affects Your Medicare Premiums", href: "/irmaa-explained", category: "Costs" as const },
-    { title: "Medicare Costs at a Glance: 2026 Premiums, Deductibles, and Copays", href: "/costs-at-a-glance", category: "Costs" as const },
+    { title: "Medicare Part D Late Enrollment Penalty", href: "/faqs/medicare-part-d-late-enrollment-penalty", category: "Part D" as const },
+    { title: "Annual Enrollment Period Guide", href: "/annual-enrollment-period-guide", category: "Enrollment" as const },
+    { title: "Help Paying for Medicare", href: "/how-to-get-help-paying-for-medicare", category: "Costs" as const },
+    { title: "Medicare Costs at a Glance", href: "/costs-at-a-glance", category: "Costs" as const },
   ],
 };
 
 export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <BlogPostClient post={POST} />
     </>
   );

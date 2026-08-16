@@ -132,13 +132,13 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/part-d-2000-cap",
-    title: "The $2,000 Part D Out-of-Pocket Cap: What It Means for You",
+    title: "The Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
     excerpt:
-      "Medicare Part D now has a $2,000 annual out-of-pocket cap , the most significant drug coverage change in decades. Here's how it works and who benefits most.",
+      "Understand the 2026 $2,100 Medicare Part D out-of-pocket cap, the $615 maximum deductible, what counts, and how the Medicare Prescription Payment Plan works.",
     category: "Part D",
-    author: "Sarah Mitchell",
-    date: "January 2026",
-    readTime: "7 min read",
+    author: "Greg Wohl",
+    date: "August 2026",
+    readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
     live: true,
   },
