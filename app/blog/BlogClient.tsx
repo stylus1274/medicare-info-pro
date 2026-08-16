@@ -988,14 +988,14 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/medicare-vs-medicaid",
-    title: "Medicare vs. Medicaid: Understanding the Difference",
+    title: "Medicare vs. Medicaid: Key Differences, Eligibility and Florida Help for 2026",
     excerpt:
-      "Medicare and Medicaid are two separate government programs that are often confused. We explain who qualifies for each, what they cover, and how they can work together for dual-eligible beneficiaries.",
+      "Compare Medicare and Medicaid eligibility, coverage, 2026 Medicare costs, dual eligibility, Medicare Savings Programs, and Florida application options.",
     category: "Coverage",
-    author: "David Chen",
-    date: "September 2025",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
+    author: "Greg Wohl",
+    date: "August 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
     live: true,
   },
 ];
