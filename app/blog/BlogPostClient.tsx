@@ -665,12 +665,12 @@ export default function BlogPostClient({ post }: Props) {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Covers Part A deductible ($1,676 in 2026)",
+                    "Covers Part A deductible ($1,736 in 2026)",
                     "Covers Part B coinsurance (20%)",
                     "Covers skilled nursing coinsurance",
                     "Up to $50,000 foreign travel emergency",
-                    "No network restrictions: any Medicare doctor",
-                    "Lower premiums than Plan F",
+                    "Does not cover the Part B deductible ($283 in 2026)",
+                    "High-deductible option: $2,950 in 2026",
                   ].map((fact, i) => (
                     <li key={i} className="flex items-start gap-2 text-[0.825rem] text-gray-800">
                       <CheckCircle2 size={14} className="text-amber-700 flex-shrink-0 mt-0.5" aria-hidden="true" />
