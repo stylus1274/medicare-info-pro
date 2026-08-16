@@ -144,13 +144,13 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/medigap-open-enrollment",
-    title: "Medigap Open Enrollment: Your One Chance for Guaranteed Coverage",
+    title: "Medigap Open Enrollment: 2026 Timing, Rights and Florida Rules",
     excerpt:
-      "Your 6-month Medigap Open Enrollment Period begins when you turn 65 and enroll in Part B. Miss it, and insurers can deny you coverage or charge higher premiums based on your health history.",
+      "Understand the six-month Medigap Open Enrollment Period, guaranteed issue protections, Florida Medicare Supplement rules, and what options may remain after the window closes.",
     category: "Supplements",
-    author: "Michael Torres",
-    date: "December 2025",
-    readTime: "8 min read",
+    author: "Greg Wohl",
+    date: "August 2026",
+    readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
     live: true,
   },
