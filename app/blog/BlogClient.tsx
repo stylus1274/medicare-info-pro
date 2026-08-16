@@ -156,13 +156,13 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/annual-enrollment-period-guide",
-    title: "Annual Enrollment Period Guide: How to Review and Switch Plans",
+    title: "Medicare Annual Enrollment Period: 2026 Dates, Deadlines and Checklist",
     excerpt:
-      "Every year from October 15 to December 7, Medicare beneficiaries can switch plans. Here's how to review your current coverage, compare alternatives, and make the best choice.",
+      "The Medicare Annual Enrollment Period runs October 15 through December 7. Learn what to review, what you can change, and how to prepare for 2027 coverage.",
     category: "Enrollment",
-    author: "Sarah Mitchell",
-    date: "October 2025",
-    readTime: "11 min read",
+    author: "Greg Wohl",
+    date: "August 2026",
+    readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80",
     live: true,
   },
