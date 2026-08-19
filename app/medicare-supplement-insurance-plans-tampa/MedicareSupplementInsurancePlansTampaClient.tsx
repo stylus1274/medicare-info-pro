@@ -93,6 +93,8 @@ const FAQS = [
   },
 ];
 
+const TAMPA_SUPPLEMENT_CALLBACK_HREF = "/local-consultation?city=Tampa&service=Medicare%20Supplement%20plan%20comparison&source=%2Fmedicare-supplement-insurance-plans-tampa%2F";
+
 
 const webpageSchema = {
   "@context": "https://schema.org",
@@ -174,7 +176,7 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href={TAMPA_SUPPLEMENT_CALLBACK_HREF}
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Compare Plans Free
@@ -356,7 +358,7 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
                 I compare Medigap rates from 17+ carriers to find the best price for the coverage you need. Free, no pressure.
               </p>
               <Link
-                href="/free-consultation"
+                href={TAMPA_SUPPLEMENT_CALLBACK_HREF}
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Compare Plans Free
@@ -421,7 +423,7 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href={TAMPA_SUPPLEMENT_CALLBACK_HREF}
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Compare Plans Free

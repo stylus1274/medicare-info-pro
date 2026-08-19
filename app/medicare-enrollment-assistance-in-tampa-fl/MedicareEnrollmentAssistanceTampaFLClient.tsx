@@ -60,6 +60,7 @@ const FAQS = [
   },
 ];
 
+const TAMPA_ENROLLMENT_CALLBACK_HREF = "/local-consultation?city=Tampa&service=Medicare%20enrollment%20assistance&source=%2Fmedicare-enrollment-assistance-in-tampa-fl%2F";
 
 const webpageSchema = {
   "@context": "https://schema.org",
@@ -141,7 +142,7 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href={TAMPA_ENROLLMENT_CALLBACK_HREF}
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Get Enrollment Help Now
@@ -313,7 +314,7 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
                 Enrollment windows close fast. Call or schedule a free consultation today to make sure you enroll on time and in the right plan.
               </p>
               <Link
-                href="/free-consultation"
+                href={TAMPA_ENROLLMENT_CALLBACK_HREF}
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Get Enrollment Help
@@ -378,7 +379,7 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href={TAMPA_ENROLLMENT_CALLBACK_HREF}
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Get Enrollment Help Now

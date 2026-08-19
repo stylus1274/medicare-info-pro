@@ -98,6 +98,8 @@ const NEIGHBORHOODS = [
   "Palma Ceia", "Channelside", "Harbour Island", "Temple Terrace",
 ];
 
+const TAMPA_AGENT_CALLBACK_HREF = "/local-consultation?city=Tampa&service=Medicare%20insurance%20agent&source=%2Fmedicare-insurance-agent-tampa-fl%2F";
+
 // Fix 2: Correct WebPage schema name
 const webpageSchema = {
   "@context": "https://schema.org",
@@ -199,7 +201,7 @@ export default function MedicareInsuranceAgentTampaClient() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href={TAMPA_AGENT_CALLBACK_HREF}
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Schedule Free Consultation
@@ -405,7 +407,7 @@ export default function MedicareInsuranceAgentTampaClient() {
                 Have questions about Medicare in Tampa? I offer free, no-pressure consultations by phone, video, or in person.
               </p>
               <Link
-                href="/free-consultation"
+                href={TAMPA_AGENT_CALLBACK_HREF}
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Schedule Free Consultation
@@ -486,7 +488,7 @@ export default function MedicareInsuranceAgentTampaClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href={TAMPA_AGENT_CALLBACK_HREF}
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Schedule Free Consultation

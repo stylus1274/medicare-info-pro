@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock } from "lucide-react";
@@ -65,8 +66,14 @@ const DEFAULT_SERVICES = [
 
 export default function LocalAgentPage({ config }: { config: LocalPageConfig }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const pathname = usePathname();
   const typeLabel = PAGE_TYPE_LABELS[config.pageType];
   const ctaLabel = PAGE_TYPE_CTA[config.pageType];
+  const localCallbackHref = `/local-consultation?${new URLSearchParams({
+    city: config.city,
+    service: typeLabel,
+    source: pathname || `/${config.slug}`,
+  }).toString()}`;
 
   const testimonials = config.testimonials ?? [];
 
@@ -95,7 +102,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href={localCallbackHref}
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   {ctaLabel}
@@ -274,7 +281,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                 Serving {config.city} and {config.county} for over 22 years. Free consultations, no pressure.
               </p>
               <Link
-                href="/free-consultation"
+                href={localCallbackHref}
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 {ctaLabel}
@@ -344,7 +351,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href={localCallbackHref}
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               {ctaLabel}
