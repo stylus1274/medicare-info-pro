@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Shield, Clock, Users, Award } from "lucide-react";
 
 const FAQS = [
   {
@@ -338,27 +338,21 @@ export default function MedicareInsuranceAgentTampaClient() {
               </div>
             </section>
 
-            {/* Testimonials */}
+            {/* Consultation expectations */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                What to Expect From a Tampa Medicare Consultation
               </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 {[
-                  { name: "Patricia M.", location: "South Tampa", text: "Greg took the time to explain every option clearly. I had been putting off dealing with Medicare for months because it seemed so complicated. He made it simple and I ended up saving over $200 a month." },
-                  { name: "Robert K.", location: "Westchase", text: "I called three different agencies before finding Medicare Information Project. The difference was night and day. They actually listened to what I needed instead of just pushing the most expensive plan." },
-                  { name: "Sandra L.", location: "New Tampa", text: "My husband and I both needed help switching plans during the Annual Enrollment Period. They handled everything for both of us and made sure all our doctors were covered. Highly recommend." },
-                  { name: "James T.", location: "Hyde Park", text: "I was skeptical that a free service could be this good. They compared over a dozen plans for me, explained the pros and cons of each, and never once pressured me. Outstanding service." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">&ldquo;{text}&rdquo;</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "A needs-based review", text: "Bring your doctor preferences, prescriptions, budget, and coverage priorities so the conversation starts with what matters to you." },
+                  { title: "Independent plan comparison", text: "Available options can be compared for your Tampa ZIP code, including networks, drug coverage, premiums, and out-of-pocket costs." },
+                  { title: "Clear next steps", text: "You can ask questions about enrollment timing and paperwork before deciding whether any plan is right for you." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-green-600 mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Clock } from "lucide-react";
 
 const PLANS = [
   {
@@ -293,25 +293,21 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
               </p>
             </section>
 
-            {/* Testimonials */}
+            {/* Comparison expectations */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                How We Compare Tampa Medigap Options
               </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 {[
-                  { name: "Barbara K.", location: "Hyde Park, Tampa", text: "I was paying $210 a month for a Plan G. They found me the exact same coverage with a different carrier for $148. Same benefits, $62 less every month. I wish I had called sooner." },
-                  { name: "James T.", location: "Westchase", text: "I did not understand the difference between Advantage and Supplement until they explained it. Once I understood the trade-offs, the decision was easy. Plan G was the right choice for me." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "Standardized benefits", text: "In most states, the same Medigap letter offers the same core benefits across insurers. The comparison focuses on the plan letter and your coverage needs." },
+                  { title: "Carrier pricing", text: "Premiums, household discounts, rating methods, and future rate history can differ by carrier, even when core plan benefits are standardized." },
+                  { title: "Enrollment timing", text: "Your six-month Medigap Open Enrollment Period and any guaranteed issue rights can affect which policies are available without medical underwriting." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-green-600 mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>

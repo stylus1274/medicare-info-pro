@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock, AlertTriangle } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Clock, AlertTriangle } from "lucide-react";
 
 const ENROLLMENT_WINDOWS = [
   {
@@ -249,25 +249,21 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
               </div>
             </section>
 
-            {/* Testimonials */}
+            {/* Enrollment expectations */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                How Tampa Enrollment Assistance Works
               </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 {[
-                  { name: "Linda S.", location: "Seminole Heights", text: "I almost missed my enrollment window because I did not realize my employer coverage situation was different from what I assumed. They caught it in time and saved me from a permanent penalty." },
-                  { name: "Tom W.", location: "Carrollwood", text: "The enrollment process seemed overwhelming until I called. They walked me through every step, handled the paperwork, and I had confirmation of my coverage within a week." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "Confirm your enrollment window", text: "Review whether an Initial, Special, or Annual Enrollment Period applies before choosing your next step." },
+                  { title: "Review plan details", text: "Compare available plan choices for your Tampa ZIP code, including provider networks, drug coverage, and expected costs." },
+                  { title: "Understand the process", text: "Get clear guidance on documents, deadlines, and what to expect after an enrollment request is submitted." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-green-600 mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>
