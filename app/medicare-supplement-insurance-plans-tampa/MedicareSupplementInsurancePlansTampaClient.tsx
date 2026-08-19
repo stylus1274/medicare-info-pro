@@ -114,23 +114,28 @@ const webpageSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-supplement-insurance-plans-tampa#localbusiness",
+  "@type": "InsuranceAgency",
+  "@id": "https://medicareinfopro.com/#insuranceagency",
   "name": "Medicare Information Pro",
   "description": "Licensed Medicare insurance specialists serving Tampa, FL.",
   "url": "https://medicareinfopro.com/medicare-supplement-insurance-plans-tampa",
-  "telephone": "+1-813-789-7700",
+  "telephone": "+1-813-699-5559",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Tampa",
+    "streetAddress": "915 Oakfield Dr, Suite A",
+    "addressLocality": "Brandon",
     "addressRegion": "FL",
-    "postalCode": "33602",
+    "postalCode": "33511",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Tampa"
-  },
+  "areaServed": [
+    { "@type": "City", "name": "Tampa" },
+    { "@type": "City", "name": "Brandon" },
+    { "@type": "AdministrativeArea", "name": "Hillsborough County" }
+  ],
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.9378, "longitude": -82.2859 },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }],
+  "priceRange": "$0 consultation",
   "serviceType": "Medicare Insurance Consulting",
   "parentOrganization": {
     "@type": "Organization",
@@ -182,11 +187,11 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
                   Compare Plans Free
                 </Link>
                 <a
-                  href="tel:8137897700"
+                  href="tel:8136995559"
                   className="inline-flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  813-789-7700
+                  813-699-5559
                 </a>
               </div>
             </div>
@@ -364,11 +369,11 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
                 Compare Plans Free
               </Link>
               <a
-                href="tel:8137897700"
+                href="tel:8136995559"
                 className="flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-blue-800 transition-colors text-sm"
               >
                 <Phone className="w-4 h-4" />
-                813-789-7700
+                813-699-5559
               </a>
             </div>
 
@@ -397,11 +402,11 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
               <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
-                  <span>Brandon, FL 33511<br />(Short drive from Tampa)</span>
+                  <span>915 Oakfield Dr, Suite A<br />Brandon, FL 33511<br />(Serving Tampa and Hillsborough County)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#1a3fa8] flex-shrink-0" />
-                  <a href="tel:8137897700" className="hover:text-[#1a3fa8]">813-789-7700</a>
+                  <a href="tel:8136995559" className="hover:text-[#1a3fa8]">813-699-5559</a>
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
@@ -429,11 +434,11 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
               Compare Plans Free
             </Link>
             <a
-              href="tel:8137897700"
+              href="tel:8136995559"
               className="inline-flex items-center justify-center gap-2 border border-blue-400 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              813-789-7700
+              813-699-5559
             </a>
           </div>
         </div>
