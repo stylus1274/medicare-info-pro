@@ -86,7 +86,7 @@ export default function MedicareEnrollmentAssistanceTheVillagesPage() {
           name: "Kelly Webb",
           title: "Licensed Medicare Agent",
           location: "Brandon, FL",
-          photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg",
+          photoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/vHaBgismTMBqborq.jpg",
         },
         ctaLabel: "Get Enrollment Assistance",
         relatedLinks: [

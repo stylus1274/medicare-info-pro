@@ -300,7 +300,7 @@ export default function MedicareAdvantagePlansGainesvilleClient() {
             <div className="bg-[#1a3fa8] rounded-2xl p-6 text-white sticky top-6">
               <div className="flex justify-center mb-4">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/vHaBgismTMBqborq.jpg"
                   alt="Kelly Webb, Licensed Medicare Agent"
                   className="w-20 h-20 rounded-full object-cover object-top flex-shrink-0"
                   style={{ border: "3px solid #f5a800" }}

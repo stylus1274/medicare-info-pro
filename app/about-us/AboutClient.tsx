@@ -118,7 +118,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W127785",
     phone: "727-560-8850",
-    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/vHaBgismTMBqborq.jpg",
     photoPos: "object-center",
   },
   {
@@ -127,7 +127,7 @@ const TEAM_MEMBERS = [
     title: "Licensed Independent Agent",
     license: "FL License # W336278",
     phone: "479-225-9566",
-    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg",
+    photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/jbHdOJHhDBcDkoQp.png",
     photoPos: "object-[center_15%]",
   },
   {

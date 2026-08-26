@@ -25,9 +25,9 @@ const RELATED_TEAM: { name: string; slug: string; photo: string | null }[] = [
   { name: "Jennifer Loader-Wohl", slug: "jennifer-loader-wohl", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/TSQcrEEFLcDPIxvF.jpeg" },
   { name: "JD Diaz", slug: "jd-diaz", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/umTZhAAQfOQACkLq.jpg" },
   { name: "Dutch VanHoesen", slug: "dutch-vanhoesen", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/JbVyyBCvRLIIuqgQ.jpg" },
-  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/PCkuyKVmJAxAsrQS.jpg" },
+  { name: "Valerie Justin-Hall", slug: "valerie-justin-hall", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/jbHdOJHhDBcDkoQp.png" },
   { name: "Mark VanHoesen", slug: "mark-vanhoesen", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/gISbkFqSnQEUvXao.jpg" },
-  { name: "Kelly Webb", slug: "kelly-webb", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/oJCXGjgdxUszeWbj.jpeg" },
+  { name: "Kelly Webb", slug: "kelly-webb", photo: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028505829/vHaBgismTMBqborq.jpg" },
 ];
 
 function Avatar({ photo, name, size = 48 }: { photo: string | null; name: string; size?: number }) {
