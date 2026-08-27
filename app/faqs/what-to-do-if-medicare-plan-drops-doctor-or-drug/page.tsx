@@ -18,6 +18,13 @@ const FAQ = {
     "Act promptly, but do not assume you have to change plans immediately. First confirm the change with your plan and the doctor or pharmacy, then ask for the written reason and your available options. If a drug is no longer covered, ask your prescriber about a covered alternative or a Part D formulary exception. If a doctor leaves a Medicare Advantage network, ask the plan whether a continuity-of-care option is available. You may have appeal rights or a Special Enrollment Period in some situations, but the timing and options depend on why the coverage changed.",
   category: "Plan Changes and Appeals",
   updated: "August 2026",
+  downloadable: {
+    title: "Medicare Plan Change Action Checklist",
+    description:
+      "Download a two-page printable checklist to organize your plan notice, medication or provider questions, call notes, and next steps before you request an exception, appeal a decision, or compare plan options.",
+    href: "/downloads/medicare-plan-change-action-checklist.pdf",
+    label: "Download the Checklist",
+  },
   sections: [
     {
       heading: "Start by confirming exactly what changed",

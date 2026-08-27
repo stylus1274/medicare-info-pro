@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ChevronRight, FileText, Phone, ShieldCheck } from "lucide-react";
+import { ArrowRight, ChevronRight, Download, FileText, Phone, ShieldCheck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -26,6 +26,12 @@ export interface FaqQuestionData {
   sections: FaqSection[];
   relatedFaqs: RelatedFaq[];
   officialSources: OfficialSource[];
+  downloadable?: {
+    title: string;
+    description: string;
+    href: string;
+    label: string;
+  };
 }
 
 interface Props {
@@ -90,6 +96,24 @@ export default function FaqQuestionPage({ faq }: Props) {
                 </div>
                 <p className="mt-4 text-lg leading-8 text-slate-700">{faq.shortAnswer}</p>
               </div>
+
+              {faq.downloadable && (
+                <section className="mt-6 rounded-2xl border border-[#c8d8ef] bg-[#edf4ff] p-6 md:flex md:items-center md:justify-between md:gap-7 md:p-7">
+                  <div className="max-w-2xl">
+                    <p className="text-sm font-bold uppercase tracking-[0.13em] text-[#1a3fa8]">Printable guide</p>
+                    <h2 className="mt-2 text-2xl font-extrabold leading-tight text-[#102149]">{faq.downloadable.title}</h2>
+                    <p className="mt-3 leading-7 text-slate-700">{faq.downloadable.description}</p>
+                  </div>
+                  <a
+                    href={faq.downloadable.href}
+                    download
+                    className="mt-5 inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-[#f5a800] px-5 py-3 font-bold text-[#102149] transition-colors hover:bg-[#e09700] md:mt-0"
+                  >
+                    <Download size={18} aria-hidden="true" />
+                    {faq.downloadable.label}
+                  </a>
+                </section>
+              )}
 
               <div className="mt-9 space-y-9">
                 {faq.sections.map((section) => (
