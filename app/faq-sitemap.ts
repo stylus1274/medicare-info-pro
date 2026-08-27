@@ -13,6 +13,7 @@ export const FAQ_SLUGS = [
   "/faqs/does-medicare-cover-bathroom-safety-devices",
   "/faqs/does-medicare-cover-in-home-caregivers",
   "/faqs/does-medicare-cover-incontinence-supplies",
+  "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug",
 ];
 
 export default function faqSitemapMetadata(): MetadataRoute.Sitemap {

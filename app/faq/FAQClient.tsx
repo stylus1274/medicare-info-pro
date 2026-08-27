@@ -137,6 +137,19 @@ const categories: Category[] = [
     ],
   },
   {
+    heading: "Plan Changes and Appeals",
+    faqs: [
+      {
+        q: "What should I do if my Medicare plan drops a doctor or drug?",
+        a: "Confirm the change with your plan and doctor or pharmacy, get the reason in writing, and ask about available options. A drug change may allow a formulary exception request, while a provider-network change may involve continuity-of-care options. Appeal and Special Enrollment rights depend on the specific situation.",
+        link: {
+          label: "Read the plan changes and appeals FAQ",
+          href: "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug",
+        },
+      },
+    ],
+  },
+  {
     heading: "Medigap (Medicare Supplement)",
     faqs: [
       {
