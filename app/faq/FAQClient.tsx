@@ -147,6 +147,14 @@ const categories: Category[] = [
           href: "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug",
         },
       },
+      {
+        q: "What is a Medicare plan non-renewal notice and what should I do next?",
+        a: "A Plan Non-Renewal Notice means your Medicare plan is leaving the Medicare program in the coming year. Your plan sends the notice in October. Compare coverage for next year promptly and use the applicable enrollment window to choose new coverage.",
+        link: {
+          label: "Read the plan non-renewal FAQ",
+          href: "/faqs/medicare-plan-non-renewal-notice",
+        },
+      },
     ],
   },
   {

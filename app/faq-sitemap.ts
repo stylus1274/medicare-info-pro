@@ -14,6 +14,7 @@ export const FAQ_SLUGS = [
   "/faqs/does-medicare-cover-in-home-caregivers",
   "/faqs/does-medicare-cover-incontinence-supplies",
   "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug",
+  "/faqs/medicare-plan-non-renewal-notice",
 ];
 
 export default function faqSitemapMetadata(): MetadataRoute.Sitemap {

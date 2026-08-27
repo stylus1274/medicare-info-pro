@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/medicare-prior-authorization-appeals",
   "/does-medicare-cover-zepbound",
   "/does-medicare-cover-wegovy",
   "/medicare-glp1-bridge-program",

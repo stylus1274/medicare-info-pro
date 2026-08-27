@@ -70,6 +70,19 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    slug: "/medicare-prior-authorization-appeals",
+    title: "Medicare Prior Authorization and Appeals: What to Do When Care Is Delayed or Denied",
+    excerpt:
+      "Learn how Medicare prior authorization, coverage determinations, Part D exceptions, grievances, and appeals work when a plan delays or denies care, supplies, or a prescription drug.",
+    category: "Coverage",
+    author: "Greg Wohl",
+    date: "August 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+    live: true,
+    sortOrder: 0,
+  },
+  {
     slug: "/working-past-65",
     title: "Working Past 65: When to Enroll in Medicare",
     excerpt:
