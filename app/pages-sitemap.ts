@@ -88,7 +88,6 @@ const LOCAL_PAGES = [
   "/medicare-agent-wimauma",
   // Medicare insurance agents (new format)
   "/medicare-insurance-agent-apollo-beach-fl",
-  "/medicare-insurance-agent-bartow-fl",
   "/medicare-insurance-agent-brandon-fl",
   "/medicare-insurance-agent-fish-hawk-fl",
   "/medicare-insurance-agent-gibsonton-fl",
@@ -112,7 +111,6 @@ const LOCAL_PAGES = [
   "/local-medicare-agent-valrico",
   // Medicare consulting services
   "/medicare-consulting-services-apollo-beach",
-  "/medicare-consulting-services-bartow",
   "/medicare-consulting-services-brandon",
   "/medicare-consulting-services-fish-hawk",
   "/medicare-consulting-services-gibsonton",
@@ -128,7 +126,6 @@ const LOCAL_PAGES = [
   "/medicare-consulting-services-wimauma",
   // Medicare enrollment assistance
   "/medicare-enrollment-assistance-apollo-beach",
-  "/medicare-enrollment-assistance-bartow",
   "/medicare-enrollment-assistance-brandon",
   "/medicare-enrollment-assistance-in-apollo-beach-fl",
   "/medicare-enrollment-assistance-in-brandon-fl",
@@ -144,7 +141,6 @@ const LOCAL_PAGES = [
   "/medicare-enrollment-assistance-valrico",
   // Medicare supplement insurance plans
   "/medicare-supplement-insurance-plans-apollo-beach",
-  "/medicare-supplement-insurance-plans-bartow",
   "/medicare-supplement-insurance-plans-brandon",
   "/medicare-supplement-insurance-plans-in-brandon-fl",
   "/medicare-supplement-insurance-plans-plant-city",
