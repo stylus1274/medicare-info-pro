@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import HomeLocalPreviewClient from "../HomeLocalPreviewClient";
+import HomeLocalPreviewClient from '../HomeLocalPreviewClient';
 
+/**
+ * Brandon-first homepage preview only.
+ * This noindex route exists for review and must not replace the live homepage until approved.
+ */
 export const metadata: Metadata = {
-  title: "Preview: Medicare Help in Tampa Bay and Brandon, FL | Medicare Information Pro",
+  title: 'Preview: Medicare Help for Brandon, FL Residents | Medicare Information Pro',
   description:
-    "Preview of proposed local-conversion updates for Medicare Information Pro. This page is not indexed and does not replace the live homepage.",
+    'Noindex review page showing a proposed Brandon-first homepage experience for Medicare Information Pro.',
   robots: {
     index: false,
     follow: false,
