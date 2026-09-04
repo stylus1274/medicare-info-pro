@@ -155,7 +155,7 @@ export default function HomeLocalPreviewClient() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1.06fr_0.94fr] gap-10 lg:gap-14 items-stretch">
-              <motion.div initial="hidden" animate="visible" variants={fadeUp} custom={0} className="flex flex-col justify-center py-3 lg:py-7">
+              <div className="flex flex-col justify-center py-3 lg:py-7">
                 <div className="flex items-center gap-2.5 mb-5" style={{ color: '#bcd0ff', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.13em', textTransform: 'uppercase' }}>
                   <MapPin size={16} style={{ color: '#f5a800' }} /> Brandon, Florida Medicare Guidance
                 </div>
@@ -186,9 +186,9 @@ export default function HomeLocalPreviewClient() {
                   <span className="inline-flex items-center gap-1.5"><MapPin size={15} style={{ color: '#f5a800' }} /> 915 Oakfield Dr Ste A, Brandon, FL 33511</span>
                   <a href={BRANDON_CALLBACK} className="underline underline-offset-4" style={{ color: '#ffffff' }}>Request a Brandon callback</a>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div initial="hidden" animate="visible" variants={fadeUp} custom={0.12} className="relative min-h-[390px] lg:min-h-0 rounded-3xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
+              <div className="relative min-h-[390px] lg:min-h-0 rounded-3xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
                 <img src={HERO_PHOTO} alt="A couple reviewing Medicare options with an advisor" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center top' }} />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(16,37,94,0.04) 25%, rgba(16,37,94,0.88) 100%)' }} />
                 <div className="absolute bottom-0 inset-x-0 p-6 sm:p-8">
@@ -209,7 +209,7 @@ export default function HomeLocalPreviewClient() {
                     </a>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
