@@ -72,12 +72,6 @@ const localBusinessSchema = {
     "Medicare Consulting",
   ],
   "priceRange": "Free",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "87",
-    "bestRating": "5",
-  },
   "sameAs": [
     "https://www.facebook.com/medicareinfopro",
   ],

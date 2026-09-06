@@ -58,12 +58,6 @@ const localBusinessSchema = {
     "https://www.facebook.com/medicareinfopro",
     "https://medicareinfopro.com"
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "127",
-    "bestRating": "5"
-  },
   "parentOrganization": {
     "@type": "Organization",
     "name": "Medicare Information Pro",
