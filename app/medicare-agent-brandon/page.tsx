@@ -144,18 +144,16 @@ export default function Page() {
           "South Tampa Care Center",
         ],
         neighborhoods: ["Brandon 33511", "Brandon 33510", "Valrico 33594", "Riverview 33578", "Seffner 33584", "Fish Hawk"],
-        testimonials: [
-          {
-            name: "Barbara K.",
-            location: "Brandon, FL",
-            text: "Greg took the time to explain every option clearly. I ended up saving over $80 a month compared to what I was paying before. He knows Brandon's doctors and hospitals inside and out.",
-          },
-          {
-            name: "Robert T.",
-            location: "Brandon, FL",
-            text: "I was overwhelmed by all the Medicare options. The team walked me through everything and found a plan that covers all my specialists at Brandon Regional. No pressure at all.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "Do I need a Medicare agent in Brandon, FL?",

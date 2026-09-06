@@ -81,18 +81,16 @@ export default function Page() {
           "St. Joseph's Hospital South",
         ],
         neighborhoods: ["Riverview 33578", "Riverview 33579", "Riverview 33569", "Gibsonton 33534", "Valrico 33594", "Brandon 33511"],
-        testimonials: [
-          {
-            name: "Carol M.",
-            location: "Riverview, FL",
-            text: "Greg helped me find a Medicare Advantage plan that covers my doctors at AdventHealth Riverview. I had no idea how many options were available in my ZIP code.",
-          },
-          {
-            name: "David H.",
-            location: "Riverview, FL",
-            text: "The team reviewed my current plan and found I was overpaying by $90 a month. The switch took less than 30 minutes and my coverage actually improved.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "What Medicare plans are available in Riverview, FL?",

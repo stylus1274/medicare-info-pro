@@ -81,18 +81,16 @@ export default function Page() {
           "AdventHealth Riverview",
         ],
         neighborhoods: ["Sun City Center 33573", "Ruskin 33570", "Apollo Beach 33572", "Wimauma 33598", "Gibsonton 33534"],
-        testimonials: [
-          {
-            name: "Margaret L.",
-            location: "Sun City Center, FL",
-            text: "As a Sun City Center resident, I needed a plan that covered my doctors here and specialists in Brandon. Greg found exactly what I needed and the consultation was completely free.",
-          },
-          {
-            name: "Frank D.",
-            location: "Sun City Center, FL",
-            text: "I have been on the same plan for 5 years. Greg reviewed it and found I was missing dental and vision benefits I could have had for the same premium. Very helpful.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "What Medicare plans are popular in Sun City Center?",

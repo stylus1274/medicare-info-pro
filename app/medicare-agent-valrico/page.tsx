@@ -81,18 +81,16 @@ export default function Page() {
           "Brandon Regional Medical Center",
         ],
         neighborhoods: ["Valrico 33594", "Valrico 33596", "Brandon 33511", "Seffner 33584", "Plant City 33563"],
-        testimonials: [
-          {
-            name: "Patricia N.",
-            location: "Valrico, FL",
-            text: "I live in Valrico and was worried about finding a plan that covered my doctors in Brandon. Greg checked every provider and found a plan that worked perfectly. Completely free service.",
-          },
-          {
-            name: "Richard B.",
-            location: "Valrico, FL",
-            text: "Very knowledgeable about the local area. He knew which plans had strong networks in Valrico and Brandon. Saved me a lot of research time.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "What Medicare plans are available in Valrico, FL?",

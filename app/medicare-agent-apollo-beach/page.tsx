@@ -81,18 +81,16 @@ export default function Page() {
           "Bayfront Health Sun City Center",
         ],
         neighborhoods: ["Apollo Beach 33572", "Ruskin 33570", "Sun City Center 33573", "Wimauma 33598", "Gibsonton 33534"],
-        testimonials: [
-          {
-            name: "Linda S.",
-            location: "Apollo Beach, FL",
-            text: "I was turning 65 and had no idea where to start. Greg explained everything clearly and found me a plan that covers my cardiologist in Riverview. The consultation was completely free.",
-          },
-          {
-            name: "James W.",
-            location: "Apollo Beach, FL",
-            text: "Switched from a plan I had for years and saved $1,400 annually with identical coverage. Wish I had called sooner.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "What Medicare plans are available in Apollo Beach, FL?",
