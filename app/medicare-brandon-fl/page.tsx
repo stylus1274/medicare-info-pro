@@ -209,23 +209,16 @@ export default function Page() {
             location: "Brandon, FL",
             photoUrl: "https://medicareinfopro.com/images/greg-wohl.jpg",
           },
-          testimonials: [
-            {
-              name: "Sandra M.",
-              location: "Brandon, FL 33511",
-              text: "I had no idea where to start with Medicare. Greg walked me through everything step by step and found me a plan that covers my doctors and costs less than I expected. Highly recommend.",
-            },
-            {
-              name: "Thomas R.",
-              location: "Brandon, FL 33510",
-              text: "They saved me over $1,200 a year by switching my Medigap plan to a different carrier with identical coverage. The whole process took about 20 minutes.",
-            },
-            {
-              name: "Patricia L.",
-              location: "Valrico, FL 33594",
-              text: "I was nervous about losing my doctors when I turned 65. The MIP team verified every one of my specialists was in-network before I enrolled. That peace of mind was worth everything.",
-            },
-          ],
+          guidanceSection: {
+            title: "Prepare for a Medicare Plan Conversation",
+            intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+            items: [
+              "Your current Medicare card and any plan materials you have received.",
+              "The names of doctors, hospitals, and pharmacies you prefer to use.",
+              "A current list of prescription medications, including dosage and quantity.",
+              "Questions about enrollment timing, plan costs, coverage, or provider access.",
+            ],
+          },
           faqs: [
             {
               q: "What Medicare plans are available in Brandon, FL?",

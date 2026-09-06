@@ -22,6 +22,11 @@ export interface LocalPageConfig {
   neighborhoods?: string[];   // neighborhoods/zip codes served
   faqs: { q: string; a: string }[];
   testimonials?: { name: string; location: string; text: string }[];
+  guidanceSection?: {
+    title: string;
+    intro: string;
+    items: string[];
+  };
   relatedLinks: { label: string; href: string }[];
   agent?: {
     name: string;
@@ -208,6 +213,25 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                     </div>
                   </>
                 )}
+              </section>
+            )}
+
+            {config.guidanceSection && (
+              <section className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  {config.guidanceSection.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {config.guidanceSection.intro}
+                </p>
+                <ul className="space-y-3">
+                  {config.guidanceSection.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-gray-700 text-sm leading-relaxed">
+                      <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </section>
             )}
 
