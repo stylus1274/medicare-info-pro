@@ -209,7 +209,7 @@ export default function TestimonialsClient() {
               See Our Google Reviews
             </h2>
             <p style={{ color: "#6b7280", marginBottom: "1.5rem", lineHeight: 1.7 }}>
-              Medicare Information Project is rated 5 stars on Google. Read more reviews from clients across Brandon, Riverview, Valrico, and Hillsborough County.
+              Read more reviews from clients across Brandon, Riverview, Valrico, and Hillsborough County.
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
               <a
