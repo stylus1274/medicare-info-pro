@@ -13,7 +13,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   ArrowRight, Star, CheckCircle, UserPlus, Briefcase, BadgeCheck,
-  MapPin, Clock, Quote, Phone, ChevronDown,
+  MapPin, Clock, Phone, ChevronDown,
   BookOpen, Heart, Stethoscope, DollarSign, Pill, Eye,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -249,29 +249,27 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* ── Testimonials ── */}
+      {/* ── Medicare Preparation ── */}
       <section className="py-20 lg:py-24" style={{ background: "#f8f9fb" }}>
         <div className="max-w-[1320px] mx-auto px-5 sm:px-8">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={0} className="text-center mb-14">
-            <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] mb-3" style={{ color: "#1a3fa8" }}>Real Stories</p>
-            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>What Our Clients Say</h2>
+            <p className="text-[0.8rem] font-bold uppercase tracking-[0.2em] mb-3" style={{ color: "#1a3fa8" }}>Plan with confidence</p>
+            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4" style={{ fontFamily: "var(--font-heading)" }}>Prepare for a Medicare Conversation</h2>
+            <p className="text-[1rem] text-gray-600 max-w-2xl mx-auto">Having a few details ready can make it easier to focus your questions and compare coverage options that fit your needs.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { quote: "I was completely overwhelmed by Medicare options when I turned 65. The guides on this site helped me understand exactly what I needed before I even spoke to an agent.", name: "Margaret T.", link: "New to Medicare", stars: 5 },
-              { quote: "I kept working past 65 and had no idea how Medicare relates to my employer plan. The 'Working Past 65' section answered every question I had.", name: "Robert K.", link: "Working Past 65", stars: 5 },
-              { quote: "Switching from Plan F to Plan G saved me over $100/month. The comparison guide made it so easy - I didn't even need to call anyone.", name: "Linda M.", link: "Already Enrolled", stars: 5 },
-            ].map((r, i) => (
+              { title: "Your plan information", text: "Bring your Medicare card and any notices or plan materials you have received." },
+              { title: "Your care preferences", text: "Write down the doctors, hospitals, and pharmacies you want to continue using." },
+              { title: "Your medication list", text: "Prepare your prescriptions with the medication name, dosage, and how often you take each one." },
+            ].map((item, i) => (
               <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative">
-                <Quote size={32} className="absolute top-6 right-6" style={{ color: "rgba(26,63,168,0.1)" }} />
-                <div className="flex gap-0.5 mb-5">
-                  {Array.from({ length: r.stars }).map((_, j) => <Star key={j} size={18} className="text-amber-400" fill="currentColor" />)}
-                </div>
-                <p className="text-[0.95rem] text-gray-700 leading-relaxed mb-6 italic">&ldquo;{r.quote}&rdquo;</p>
-                <div className="flex items-center justify-between border-t border-gray-100 pt-5">
-                  <span className="text-[0.9rem] font-bold text-gray-900">{r.name}</span>
-                  <a href="#" className="text-[0.8rem] font-semibold hover:underline" style={{ color: "#1a3fa8" }}>{r.link} →</a>
+                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <CheckCircle size={26} className="mb-5" style={{ color: "#1a3fa8" }} />
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-[0.95rem] text-gray-700 leading-relaxed">{item.text}</p>
+                <div className="border-t border-gray-100 mt-6 pt-5">
+                  <Link href="/free-consultation" className="text-[0.85rem] font-semibold hover:underline" style={{ color: "#1a3fa8" }}>Prepare with a licensed advisor <ArrowRight size={14} className="inline" /></Link>
                 </div>
               </motion.div>
             ))}

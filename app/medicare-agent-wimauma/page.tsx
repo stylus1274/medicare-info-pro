@@ -81,18 +81,16 @@ export default function Page() {
           "Sun City Center Medical Center",
         ],
         neighborhoods: ["Wimauma 33598", "Sun City Center 33573", "Ruskin 33570", "Apollo Beach 33572"],
-        testimonials: [
-          {
-            name: "Rosa M.",
-            location: "Wimauma, FL",
-            text: "I was not sure which Medicare plan would cover my doctors in Sun City Center. Greg checked everything and found a plan that worked. The whole process was free and easy.",
-          },
-          {
-            name: "George P.",
-            location: "Wimauma, FL",
-            text: "Excellent service. Very patient and thorough. Found me a plan with better drug coverage than what I had before.",
-          },
-        ],
+        guidanceSection: {
+          title: "Prepare for a Medicare Plan Conversation",
+          intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
+          items: [
+            "Your current Medicare card and any plan materials you have received.",
+            "The names of doctors, hospitals, and pharmacies you prefer to use.",
+            "A current list of prescription medications, including dosage and quantity.",
+            "Questions about enrollment timing, plan costs, coverage, or provider access.",
+          ],
+        },
         faqs: [
           {
             q: "What Medicare plans are available in Wimauma, FL?",

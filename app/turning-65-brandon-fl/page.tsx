@@ -169,23 +169,16 @@ export default function Page() {
             "Seffner 33584",
             "Riverview 33578",
           ],
-          testimonials: [
-            {
-              name: "Patricia L.",
-              location: "Brandon, FL 33511",
-              text: "I was nervous about losing my doctors when I turned 65. The MIP team verified every one of my specialists was in-network before I enrolled. That peace of mind was worth everything.",
-            },
-            {
-              name: "Robert K.",
-              location: "Brandon, FL 33527",
-              text: "I had no idea my Medigap window was so short. Greg explained everything clearly and got me enrolled in Plan G before the window closed. I would have missed it without his help.",
-            },
-            {
-              name: "Sandra M.",
-              location: "Brandon, FL 33511",
-              text: "I had no idea where to start with Medicare. Greg walked me through everything step by step and found me a plan that covers my doctors and costs less than I expected.",
-            },
-          ],
+          guidanceSection: {
+            title: "Prepare for Your Medicare Enrollment Conversation",
+            intro: "A short preparation list can help you make the most of a Medicare conversation as you approach your 65th birthday.",
+            items: [
+              "Your Medicare card or enrollment materials, if you have them.",
+              "The names of doctors, hospitals, and pharmacies you prefer to use.",
+              "A current list of prescription medications, including dosage and quantity.",
+              "Questions about your enrollment window, employer coverage, or plan choices.",
+            ],
+          },
           faqs: [
             {
               q: "When should I start the Medicare process if I am turning 65 in Brandon?",

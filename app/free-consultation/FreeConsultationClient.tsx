@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { CheckCircle, Phone, Clock, Shield, Star, Users, Award, MapPin, ChevronRight } from "lucide-react";
+import { CheckCircle, Phone, Clock, Shield, Users, Award, MapPin, ChevronRight } from "lucide-react";
 
 const TRUST_ITEMS = [
   { icon: Shield, text: "Licensed & Independent", sub: "We work for you, not the insurance companies" },
@@ -21,27 +21,6 @@ const WHAT_WE_COVER = [
   "What changes in 2026 affect your current or future coverage",
   "How your income affects your Part B and Part D premiums (IRMAA)",
   "Coordination with employer coverage if you are still working",
-];
-
-const TESTIMONIALS = [
-  {
-    name: "Sandra M.",
-    location: "Brandon, FL",
-    stars: 5,
-    text: "Greg walked me through everything in plain English. I had no idea how many options I had. He saved me over $200 a month compared to what I almost signed up for on my own.",
-  },
-  {
-    name: "Robert & Carol T.",
-    location: "Riverview, FL",
-    stars: 5,
-    text: "We were completely overwhelmed turning 65. One call with the team and everything clicked. They compared plans side by side and never pressured us. Highly recommend.",
-  },
-  {
-    name: "Patricia H.",
-    location: "Valrico, FL",
-    stars: 5,
-    text: "I switched from a plan I had for years and saved $1,400 annually. I wish I had called sooner. The consultation took less than 30 minutes.",
-  },
 ];
 
 export default function FreeConsultationClient() {
@@ -255,22 +234,21 @@ export default function FreeConsultationClient() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Consultation Preparation */}
         <section className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-2xl font-extrabold text-[#1a2e5a] text-center mb-2">What Our Clients Say</h2>
-            <p className="text-gray-500 text-center mb-10 text-sm">Real reviews from people in Brandon, Riverview, and Valrico</p>
+            <h2 className="text-2xl font-extrabold text-[#1a2e5a] text-center mb-2">Prepare for Your Medicare Consultation</h2>
+            <p className="text-gray-500 text-center mb-10 text-sm">A few details can help you make the most of the conversation.</p>
             <div className="grid md:grid-cols-3 gap-6">
-              {TESTIMONIALS.map((t) => (
-                <div key={t.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                  <div className="flex gap-0.5 mb-3">
-                    {Array.from({ length: t.stars }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#f5a623] text-[#f5a623]" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-4 italic">"{t.text}"</p>
-                  <div className="font-bold text-[#1a2e5a] text-sm">{t.name}</div>
-                  <div className="text-gray-400 text-xs">{t.location}</div>
+              {[
+                { title: "Plan documents", text: "Have your Medicare card and any plan letters, notices, or current coverage information nearby." },
+                { title: "Providers and pharmacies", text: "List the doctors, specialists, hospitals, and pharmacies that matter most to you." },
+                { title: "Prescription medications", text: "Prepare medication names, dosages, and how often you take each prescription." },
+              ].map((item) => (
+                <div key={item.title} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                  <CheckCircle className="w-5 h-5 text-[#f5a623] mb-4" />
+                  <div className="font-bold text-[#1a2e5a] text-base mb-2">{item.title}</div>
+                  <p className="text-gray-700 text-sm leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>
