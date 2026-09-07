@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock, MessageSquare } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Clock, MessageSquare } from "lucide-react";
 
 const FAQS = [
   {
@@ -217,25 +217,25 @@ export default function MedicarePlanCounselingTampaClient() {
               </div>
             </section>
 
-            {/* Testimonials */}
+            {/* Counseling Preparation */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                Prepare for Medicare Plan Counseling
               </h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                A simple preparation list can help you use your counseling session to explore the plan features most relevant to your situation.
+              </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { name: "Patricia M.", location: "Palma Ceia, Tampa", text: "I had been putting off dealing with Medicare for months because it seemed so complicated. One session and everything clicked. They are patient, thorough, and genuinely helpful." },
-                  { name: "Robert D.", location: "Citrus Park", text: "I came in thinking I wanted Medicare Advantage. After the counseling session, I realized Medigap was a much better fit for my situation. I am glad I took the time to understand the difference." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "Current coverage", text: "Have your Medicare card, plan ID card, and any recent plan notices available if you have them." },
+                  { title: "Providers and pharmacies", text: "Write down the doctors, specialists, hospitals, and pharmacies you prefer to use." },
+                  { title: "Medication list", text: "Prepare prescription names, dosages, and frequency to support a more focused drug-coverage discussion." },
+                  { title: "Your questions", text: "Bring questions about plan types, enrollment timing, premiums, networks, or travel coverage." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-[#1a3fa8] mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>

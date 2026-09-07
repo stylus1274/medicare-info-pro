@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock, Users, BookOpen, FileText } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Clock, Users, BookOpen, FileText } from "lucide-react";
 
 const FAQS = [
   {
@@ -263,27 +263,25 @@ export default function MedicareConsultingServicesTampaClient() {
               </p>
             </section>
 
-            {/* Testimonials */}
+            {/* Consultation Preparation */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                Prepare for a Medicare Consulting Session
               </h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                Bringing a few key details can help you focus the conversation on the Medicare questions and coverage priorities that matter most to you.
+              </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { name: "Carol B.", location: "Westchase, Tampa", text: "I had no idea what I was doing when I first started looking at Medicare. The consulting session was like a masterclass. By the end I felt completely confident in my decision." },
-                  { name: "Michael R.", location: "South Tampa", text: "I appreciated that they never tried to push me toward any particular plan. They laid out all the options, explained the pros and cons of each, and let me decide. That is exactly what I needed." },
-                  { name: "Dorothy H.", location: "New Tampa", text: "I have been on Medicare for three years and never had an annual review until I found these folks. Turns out I was overpaying by $140 a month. Wish I had called sooner." },
-                  { name: "Frank M.", location: "Carrollwood", text: "My wife and I both needed help. They handled both of us in one session, made sure all our doctors were covered, and walked us through the enrollment process step by step." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "Enrollment timing", text: "Note your expected Medicare eligibility date and any questions about enrollment periods or employer coverage." },
+                  { title: "Care priorities", text: "List the doctors, specialists, hospitals, and pharmacies you would like to continue using." },
+                  { title: "Prescription details", text: "Prepare medication names, dosages, and how often you take each prescription." },
+                  { title: "Coverage questions", text: "Write down questions about plan costs, provider access, prescription coverage, or travel needs." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-[#1a3fa8] mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>

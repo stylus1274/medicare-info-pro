@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock, Award } from "lucide-react";
+import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Clock, Award } from "lucide-react";
 
 const FAQS = [
   {
@@ -217,25 +217,25 @@ export default function TampaMedicareSpecialistClient() {
               </div>
             </section>
 
-            {/* Testimonials */}
+            {/* Specialist Conversation Preparation */}
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Tampa Clients Say
+                Prepare for a Conversation with a Medicare Specialist
               </h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                Having your key coverage details nearby can make it easier to ask focused questions and understand the options available to you.
+              </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { name: "Helen W.", location: "South Tampa", text: "I called three different agents before calling Greg. He was the only one who actually explained things rather than just trying to sign me up for something. That made all the difference." },
-                  { name: "Charles B.", location: "New Tampa", text: "I have been working with Medicare Information Project for four years now. They call me every year before open enrollment, review my plan, and let me know if I should make any changes. That kind of ongoing service is rare." },
-                ].map(({ name, location, text }) => (
-                  <div key={name} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                    <div className="flex gap-0.5 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#f5a800] text-[#f5a800]" />
-                      ))}
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed mb-3 italic">"{text}"</p>
-                    <div className="font-semibold text-gray-900 text-sm">{name}</div>
-                    <div className="text-gray-500 text-xs">{location}</div>
+                  { title: "Medicare timing", text: "Note your expected eligibility date and any questions about enrollment periods or delayed enrollment." },
+                  { title: "Care and prescriptions", text: "List your doctors, specialists, preferred pharmacies, and current prescription medications." },
+                  { title: "Current plan details", text: "Bring current plan materials, notices, or an explanation of benefits if you are already enrolled." },
+                  { title: "Decision priorities", text: "Think about the benefits, costs, network access, and travel flexibility that matter most to you." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-[#1a3fa8] mb-3" />
+                    <div className="font-semibold text-gray-900 text-sm mb-2">{title}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
                   </div>
                 ))}
               </div>
