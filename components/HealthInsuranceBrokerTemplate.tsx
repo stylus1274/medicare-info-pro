@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   ChevronRight, ChevronDown, Phone, ArrowRight, CheckCircle,
-  Shield, Heart, Users, Star, MapPin, Info, Scale, Award, Clock
+  Shield, Heart, Users, MapPin, Info, Scale, Award, Clock
 } from "lucide-react";
 
 interface CityData {
@@ -304,19 +304,30 @@ export default function HealthInsuranceBrokerTemplate({ data }: { data: CityData
           </div>
         </section>
 
-        {/* Testimonial */}
+        {/* Broker Consultation Preparation */}
         <section className="py-10 bg-gray-50">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-[#e8edf8] border border-[#b8c8f0] rounded-2xl p-8 text-center">
-              <div className="flex justify-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="text-[#f5a800] fill-[#f5a800]" />
+            <div className="bg-[#e8edf8] border border-[#b8c8f0] rounded-2xl p-8">
+              <h2 className="font-serif text-2xl font-bold text-gray-900 text-center mb-3">
+                Prepare for a Health Insurance Broker Consultation
+              </h2>
+              <p className="text-gray-700 leading-relaxed text-center mb-6">
+                A few details can help your broker conversation focus on the coverage questions and priorities most relevant to you in {city}.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { title: "Current coverage", text: "Bring your insurance card, plan materials, and any recent coverage notices if you have them." },
+                  { title: "Providers and pharmacies", text: "List the doctors, specialists, hospitals, and pharmacies you prefer to use." },
+                  { title: "Medication details", text: "Prepare prescription names, dosages, and how often each medication is filled." },
+                  { title: "Decision priorities", text: "Consider the premium, out-of-pocket costs, network access, and benefits that matter most to you." },
+                ].map(({ title, text }) => (
+                  <div key={title} className="bg-white/70 rounded-xl p-4 border border-white">
+                    <CheckCircle size={18} className="text-[#1a3fa8] mb-2" />
+                    <div className="font-semibold text-gray-900 text-sm mb-1">{title}</div>
+                    <p className="text-sm text-gray-700 leading-relaxed">{text}</p>
+                  </div>
                 ))}
               </div>
-              <blockquote className="font-serif text-xl text-gray-800 italic leading-relaxed mb-4">
-                "I had no idea how many options I had. They compared everything and found me a plan that covered all my doctors and saved me over $80 a month."
-              </blockquote>
-              <div className="text-sm font-semibold text-gray-700">— Medicare Information Project Client, {county} County</div>
             </div>
           </div>
         </section>
