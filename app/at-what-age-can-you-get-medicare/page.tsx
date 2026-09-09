@@ -74,7 +74,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "At What Age Can You Get Medicare? Eligibility Rules Explained | Medicare Information Pro",
+  title: "At What Age Can You Get Medicare? Eligibility Rules Explained | Medicare Information Project",
   description: "Most people get Medicare at 65, but you can qualify earlier. Learn the exact age rules, disability exceptions, enrollment windows, and what happens if you delay.",
   keywords: [
     "at what age can you get medicare",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     description: "Most people get Medicare at 65, but you can qualify earlier. Learn the exact age rules, disability exceptions, enrollment windows, and what happens if you delay.",
     url: "https://medicareinfopro.com/at-what-age-can-you-get-medicare",
     type: "article",
-    siteName: "Medicare Information Pro",
+    siteName: "Medicare Information Project",
     images: [{ url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" }],
   },
   alternates: {

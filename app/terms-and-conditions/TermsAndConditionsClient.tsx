@@ -20,7 +20,7 @@ const webpageSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   }
 } as const;
@@ -55,7 +55,7 @@ export default function TermsAndConditionsClient() {
             <div style={{ color: "#374151", lineHeight: 1.85, fontSize: "0.97rem" }}>
 
               <p style={{ marginBottom: "1.5rem" }}>
-                Please read these Terms and Conditions carefully before using the Medicare Information Project website at medicareinfopro.com, operated by Insurance Central of Tampa Bay. By accessing or using our website, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website.
+                Please read these Terms and Conditions carefully before using the Medicare Information Project website at medicareinfopro.com. By accessing or using our website, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website.
               </p>
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>1. Use of the Website</h2>
@@ -87,7 +87,7 @@ export default function TermsAndConditionsClient() {
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>4. Intellectual Property</h2>
               <p style={{ marginBottom: "1rem" }}>
-                All content on this website, including text, graphics, logos, images, and software, is the property of Insurance Central of Tampa Bay or its content suppliers and is protected by applicable copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this site without our express written permission.
+                All content on this website, including text, graphics, logos, images, and software, is the property of Medicare Information Project or its content suppliers and is protected by applicable copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this site without our express written permission.
               </p>
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>5. Third-Party Links</h2>
@@ -97,12 +97,12 @@ export default function TermsAndConditionsClient() {
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>6. Limitation of Liability</h2>
               <p style={{ marginBottom: "1rem" }}>
-                To the fullest extent permitted by law, Insurance Central of Tampa Bay and its agents, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website or reliance on any information provided herein. Our total liability to you for any claim arising from your use of this site shall not exceed the amount you paid to us, if any, in the twelve months preceding the claim.
+                To the fullest extent permitted by law, Medicare Information Project and its agents, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website or reliance on any information provided herein. Our total liability to you for any claim arising from your use of this site shall not exceed the amount you paid to us, if any, in the twelve months preceding the claim.
               </p>
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>7. Indemnification</h2>
               <p style={{ marginBottom: "1rem" }}>
-                You agree to indemnify, defend, and hold harmless Insurance Central of Tampa Bay and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys' fees) arising from your use of this website, your violation of these Terms, or your violation of any rights of a third party.
+                You agree to indemnify, defend, and hold harmless Medicare Information Project and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys' fees) arising from your use of this website, your violation of these Terms, or your violation of any rights of a third party.
               </p>
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>8. Governing Law</h2>
@@ -122,7 +122,6 @@ export default function TermsAndConditionsClient() {
               <div style={{ background: "#f7f9fc", borderRadius: 10, padding: "1.25rem", marginTop: "0.75rem" }}>
                 <div style={{ fontWeight: 700, color: "#0d1f5c", marginBottom: "0.5rem" }}>Medicare Information Project</div>
                 <div style={{ color: "#374151", fontSize: "0.93rem", lineHeight: 1.8 }}>
-                  Insurance Central of Tampa Bay<br />
                   915 Oakfield Dr, Suite A<br />
                   Brandon, Florida 33511<br />
                   Phone: <a href="tel:8136995559" style={{ color: "#1a3fa8" }}>813-699-5559</a><br />

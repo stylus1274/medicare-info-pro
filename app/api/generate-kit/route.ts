@@ -83,7 +83,7 @@ function cb(page: Page, x: number, y: number, size = 9) {
 }
 function hdr(page: Page, f: Fonts, sectionLabel: string, pageNum: number, total: number) {
   r(page, 0, 760, 612, 32, WHITE); r(page, 0, 758, 612, 2, RULE_CLR);
-  t(page, "Medicare Information Pro", 50, 770, 9, NAVY_MID, f.bold);
+  t(page, "Medicare Information Project", 50, 770, 9, NAVY_MID, f.bold);
   const lw = f.bold.widthOfTextAtSize(sectionLabel.toUpperCase(), 8);
   t(page, sectionLabel.toUpperCase(), 562 - lw, 770, 8, MID_GRAY, f.bold);
   t(page, "medicareinfopro.com  |  813-699-5559", 50, 20, 7.5, MID_GRAY, f.reg);
@@ -102,7 +102,7 @@ function buildCover(pdfDoc: PDFDocument, f: Fonts, firstName: string, lastName: 
     const logo = pdfDoc.embedPngSync(logoBytes);
     const d = logo.scale(0.52);
     page.drawImage(logo, { x: 50, y: 700, width: d.width, height: d.height });
-  } catch { t(page, "Medicare Information Pro", 50, 712, 13, GOLD, f.bold); }
+  } catch { t(page, "Medicare Information Project", 50, 712, 13, GOLD, f.bold); }
   t(page, "YOUR TURNING 65 WORKBOOK", 50, 650, 9, GOLD, f.bold);
   t(page, "The Turning 65", 50, 605, 40, WHITE, f.bold);
   t(page, "Medicare Decision Kit", 50, 555, 40, GOLD, f.bold);
@@ -561,7 +561,7 @@ function buildSources(pdfDoc: PDFDocument, f: Fonts, logoBytes: Uint8Array) {
   r(page, 50, sy - 120, 512, 1, RULE_CLR);
   t(page, "IMPORTANT DISCLOSURE", 50, sy - 132, 7.5, NAVY_MID, f.bold);
   ml(page, "This workbook is for educational purposes only. It is not legal, tax or medical advice and does not determine eligibility, benefits or plan availability. Confirm dates and coverage with Medicare, Social Security, your employer benefits administrator or a licensed insurance agent. Plan benefits, costs, formularies and networks vary and may change.", 50, sy - 148, 7.5, BODY_TEXT, f.reg, 512, 11);
-  ml(page, "Medicare Information Pro is a licensed insurance agency. We are not affiliated with or endorsed by Medicare or any government agency. Medicare has neither reviewed nor endorsed this information.", 50, sy - 188, 7.5, BODY_TEXT, f.reg, 512, 11);
+  ml(page, "Medicare Information Project is a licensed insurance agency. We are not affiliated with or endorsed by Medicare or any government agency. Medicare has neither reviewed nor endorsed this information.", 50, sy - 188, 7.5, BODY_TEXT, f.reg, 512, 11);
   t(page, "Sources reviewed July 2026", 50, 36, 7.5, MID_GRAY, f.reg);
 }
 
@@ -588,7 +588,7 @@ export async function POST(req: NextRequest) {
 
     const pdfDoc = await PDFDocument.create();
     pdfDoc.setTitle(`Medicare Decision Kit — ${firstName} ${lastName}`);
-    pdfDoc.setAuthor("Medicare Information Pro");
+    pdfDoc.setAuthor("Medicare Information Project");
     pdfDoc.setSubject("Personalized Medicare Decision Kit");
     pdfDoc.setCreator("medicareinfopro.com");
 

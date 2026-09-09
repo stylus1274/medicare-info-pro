@@ -4,14 +4,14 @@ import AmIEligibleClient from "./AmIEligibleClient";
 const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "name": "Am I Eligible for Medicare? | Medicare Information Pro",
+  "name": "Am I Eligible for Medicare? | Medicare Information Project",
   "url": "https://medicareinfopro.com/am-i-eligible",
   "isPartOf": {
     "@id": "https://medicareinfopro.com/#website"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   },
   "description": "Find out if you qualify for Medicare. Use our free eligibility checker to learn about age requirements, disability pathways, ESRD, work history, and special enrollment situations.",
@@ -27,7 +27,7 @@ const webpageSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Am I Eligible for Medicare? | Medicare Information Pro",
+  title: "Am I Eligible for Medicare? | Medicare Information Project",
   description:
     "Find out if you qualify for Medicare. Use our free eligibility checker to learn about age requirements, disability pathways, ESRD, work history, and special enrollment situations.",
   keywords: [
@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     "Medicare eligibility checker",
   ],
   openGraph: {
-    title: "Am I Eligible for Medicare? | Medicare Information Pro",
+    title: "Am I Eligible for Medicare? | Medicare Information Project",
     description:
       "Find out if you qualify for Medicare. Use our free eligibility checker - covers age, disability, ESRD, work history, and special situations.",
     url: "https://medicareinfopro.com/am-i-eligible",
-    siteName: "Medicare Information Pro",
+    siteName: "Medicare Information Project",
     images: [
       {
         url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/eligible-hero-9oVMsdHrhZ3KWXrFjRcN3L.webp",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Am I Eligible for Medicare? | Medicare Information Pro",
+    title: "Am I Eligible for Medicare? | Medicare Information Project",
     description:
       "Use our free eligibility checker to find out if you qualify for Medicare - age, disability, ESRD, and more.",
     images: [

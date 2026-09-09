@@ -17,7 +17,7 @@ const articleSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "url": "https://medicareinfopro.com",
     "@id": "https://medicareinfopro.com/#organization"
   },

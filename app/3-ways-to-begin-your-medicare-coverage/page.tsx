@@ -11,7 +11,7 @@ const webpageSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   },
   "description": "Ready to start Medicare? Learn the 3 simple steps to begin your coverage: understand eligibility, learn the parts, and enroll. Free guidance from licensed agents in Brandon, FL.",

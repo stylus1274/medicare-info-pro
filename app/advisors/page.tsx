@@ -11,7 +11,7 @@ const webpageSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   },
   "description": "Meet the licensed Medicare advisors at Medicare Information Project. Our agents are bound by a strict Code of Ethics and committed to finding the plan that is genuinely right for you."

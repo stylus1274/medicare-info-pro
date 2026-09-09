@@ -36,7 +36,7 @@ const localBusinessSchema = {
   "priceRange": "Free consultation",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr",
+    "streetAddress": "915 Oakfield Dr Ste A",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",

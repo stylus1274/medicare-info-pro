@@ -20,7 +20,7 @@ const webpageSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   }
 } as const;
@@ -55,7 +55,7 @@ export default function PrivacyPolicyClient() {
             <div style={{ color: "#374151", lineHeight: 1.85, fontSize: "0.97rem" }}>
 
               <p style={{ marginBottom: "1.5rem" }}>
-                Medicare Information Project, operated by Insurance Central of Tampa Bay ("we," "us," or "our"), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at medicareinfopro.com or contact us for Medicare-related assistance.
+                Medicare Information Project ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at medicareinfopro.com or contact us for Medicare-related assistance.
               </p>
 
               <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>1. Information We Collect</h2>
@@ -122,7 +122,6 @@ export default function PrivacyPolicyClient() {
               <div style={{ background: "#f7f9fc", borderRadius: 10, padding: "1.25rem", marginTop: "0.75rem" }}>
                 <div style={{ fontWeight: 700, color: "#0d1f5c", marginBottom: "0.5rem" }}>Medicare Information Project</div>
                 <div style={{ color: "#374151", fontSize: "0.93rem", lineHeight: 1.8 }}>
-                  Insurance Central of Tampa Bay<br />
                   915 Oakfield Dr, Suite A<br />
                   Brandon, Florida 33511<br />
                   Phone: <a href="tel:8136995559" style={{ color: "#1a3fa8" }}>813-699-5559</a><br />

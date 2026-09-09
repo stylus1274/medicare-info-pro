@@ -29,7 +29,7 @@ const webpageSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/#organization",
+  "@id": "https://medicareinfopro.com/medicare-brandon-fl/#localbusiness",
   "name": "Medicare Information Pro",
   "alternateName": "MIP",
   "description":
@@ -39,7 +39,7 @@ const localBusinessSchema = {
   "email": "info@medicareinfopro.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr",
+    "streetAddress": "915 Oakfield Dr Ste A",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",

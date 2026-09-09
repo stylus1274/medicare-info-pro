@@ -179,7 +179,7 @@ export default function AboutClient() {
                 We employ a consultative approach to guide you through the various components of Medicare, including the supplemental coverages such as Medicare Supplements and Medicare Advantage plans. This approach is designed to safeguard both your health and financial well-being, giving you peace of mind about your healthcare coverage.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Medicare Information Project is a campaign run by Insurance Central of Tampa Bay, located in Brandon, FL. Our current service area includes: Florida, Georgia, Arkansas, North Carolina, Kansas, and Texas.
+                Medicare Information Project is based in Brandon, FL. Our current service area includes: Florida, Georgia, Arkansas, North Carolina, Kansas, and Texas.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 We are a team of trusted independent licensed insurance professionals that provide expert, independent assistance in navigating your Medicare options. We research networks and formularies to make sure your doctors, hospitals, and prescription drugs are covered. We provide information in an unbiased and objective manner with no obligation to you.

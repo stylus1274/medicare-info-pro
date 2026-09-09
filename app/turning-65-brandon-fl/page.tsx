@@ -28,14 +28,14 @@ const webpageSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/#organization",
+  "@id": "https://medicareinfopro.com/turning-65-brandon-fl/#localbusiness",
   "name": "Medicare Information Pro",
   "description": "Local Medicare guidance for Brandon, FL residents turning 65. Free consultations at 915 Oakfield Dr.",
   "url": "https://medicareinfopro.com/turning-65-brandon-fl/",
   "telephone": "+1-813-699-5559",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr",
+    "streetAddress": "915 Oakfield Dr Ste A",
     "addressLocality": "Brandon",
     "addressRegion": "FL",
     "postalCode": "33511",

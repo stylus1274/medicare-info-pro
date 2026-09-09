@@ -50,7 +50,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[0.95rem] leading-relaxed text-blue-200/70 mb-7 max-w-sm">
-              Medicare Information Project is a campaign run by Insurance Central of Tampa Bay. We are a team of trusted, independent, licensed insurance professionals providing expert assistance in navigating your Medicare options.
+              Medicare Information Project is a team of trusted, independent, licensed insurance professionals providing expert assistance in navigating your Medicare options.
             </p>
             <div className="space-y-3.5">
               <a href="tel:18138699559" className="flex items-center gap-3 text-[0.95rem] text-blue-200/80 hover:text-white transition-colors">
@@ -122,7 +122,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-blue-900/50 pt-7 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[0.8rem] text-blue-300/50 text-center sm:text-left max-w-2xl">
-            © {new Date().getFullYear()} Insurance Central of Tampa Bay. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government.
+            © {new Date().getFullYear()} Medicare Information Project. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government.
           </p>
           <div className="flex gap-6 text-[0.8rem] text-blue-300/50">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

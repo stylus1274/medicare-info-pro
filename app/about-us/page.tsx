@@ -11,7 +11,7 @@ const webpageSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "@id": "https://medicareinfopro.com/#organization"
   },
   "description": "Medicare Information Project is an independent Medicare insurance agency based in Brandon, FL. We represent 17 carriers and 149 Medicare products across 6 states. Free, unbiased guidance: no pressure."

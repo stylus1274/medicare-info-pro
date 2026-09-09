@@ -2,6 +2,39 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  webpack(config, { webpack }) {
+    const { Compilation, sources } = webpack;
+
+    config.plugins.push({
+      apply(compiler) {
+        compiler.hooks.thisCompilation.tap("PublicBrandNameStandardization", (compilation) => {
+          compilation.hooks.processAssets.tap(
+            {
+              name: "PublicBrandNameStandardization",
+              stage: Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE,
+            },
+            (assets) => {
+              for (const [assetName, asset] of Object.entries(assets)) {
+                if (!/\.(?:html|js|json|txt|xml)$/i.test(assetName)) continue;
+
+                const source = asset.source().toString();
+                const standardized = source
+                  .replace(/Medicare Information Pro(?!ject)/g, "Medicare Information Project")
+                  .replaceAll("Insurance Central of Tampa Bay", "Medicare Information Project")
+                  .replaceAll("MedicareInfoPro", "Medicare Information Project");
+
+                if (source !== standardized) {
+                  compilation.updateAsset(assetName, new sources.RawSource(standardized));
+                }
+              }
+            }
+          );
+        });
+      },
+    });
+
+    return config;
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

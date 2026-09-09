@@ -6,8 +6,8 @@ import KitSlideIn from "@/components/KitSlideIn";
 export const metadata: Metadata = {
   metadataBase: new URL("https://medicareinfopro.com"),
   title: {
-    default: "Medicare Information Pro | Understand Your Medicare Options",
-    template: "%s | Medicare Information Pro",
+    default: "Medicare Information Project | Understand Your Medicare Options",
+    template: "%s | Medicare Information Project",
   },
   description: "Expert Medicare guidance to help you understand your options, avoid costly mistakes, and choose the right coverage.",
   alternates: {
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "Medicare Information Pro",
-    title: "Medicare Information Pro | Understand Your Medicare Options",
+    siteName: "Medicare Information Project",
+    title: "Medicare Information Project | Understand Your Medicare Options",
     description: "Expert Medicare guidance to help you understand your options, avoid costly mistakes, and choose the right coverage.",
     url: "https://medicareinfopro.com",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Medicare Information Pro | Understand Your Medicare Options",
+    title: "Medicare Information Project | Understand Your Medicare Options",
     description: "Expert Medicare guidance to help you understand your options, avoid costly mistakes, and choose the right coverage.",
   },
   icons: {
@@ -46,11 +46,11 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness", "InsuranceAgency"],
   "@id": "https://medicareinfopro.com/#organization",
-  name: "Medicare Information Pro",
+  name: "Medicare Information Project",
   url: "https://medicareinfopro.com",
   logo: "https://medicareinfopro.com/apple-touch-icon.png",
   description:
-    "Medicare Information Pro provides expert Medicare guidance to Florida residents, helping seniors understand their options and choose the right coverage.",
+    "Medicare Information Project provides expert Medicare guidance to Florida residents, helping seniors understand their options and choose the right coverage.",
   telephone: "+18136995559",
   email: "info@medicareinfopro.com",
   address: {
