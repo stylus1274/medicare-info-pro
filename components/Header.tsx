@@ -8,7 +8,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Search, Phone, ArrowRight, Shield, Star, X, Menu } from "lucide-react";
+import { ChevronDown, Search, Phone, ArrowRight, Shield, X, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { searchContent, SearchResult } from "@/lib/searchIndex";
 
@@ -86,7 +86,7 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "Coverage", href: "/coverage-qa",
     megaMenu: {
-      featured: { title: "Coverage Search Center", desc: "Search our database of 100+ coverage questions, organized by category.", cta: "Search Coverage", href: "/coverage-qa" },
+      featured: { title: "Coverage Search Center", desc: "Browse Medicare coverage guides by topic.", cta: "Search Coverage", href: "/coverage-qa" },
       columns: [
         { heading: "Common Questions", links: [
           { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
@@ -107,7 +107,7 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "Resources", href: "/resources",
     megaMenu: {
-      featured: { title: "Medicare Resource Library", desc: "Expert-written guides, videos, and tools — all reviewed by licensed professionals.", cta: "Browse Library", href: "/blog" },
+      featured: { title: "Medicare Resource Library", desc: "Medicare guides, videos, and tools.", cta: "Browse Library", href: "/blog" },
       columns: [
         { heading: "Learn", links: [
           { label: "Blog & Articles", href: "/blog", desc: "Latest Medicare news" },
@@ -227,9 +227,8 @@ export default function Header() {
               <Shield size={12} style={{ color: "#7b9de0" }} /> Licensed Independent Agents
             </span>
             <span style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-              <Star size={12} style={{ color: "#f5a800", fill: "#f5a800" }} /> BBB A+ Rated
+              <Shield size={12} style={{ color: "#7b9de0" }} /> BBB Accredited, A+ Rated
             </span>
-            <span className="hidden md:inline">Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN &amp; TX</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
             <a href="tel:8136995559" style={{ color: "#c8d6f5", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem", letterSpacing: "0.01em" }}>

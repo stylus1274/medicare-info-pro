@@ -104,7 +104,7 @@ export default function Footer() {
           <a
             href="https://www.bbb.org/us/fl/brandon/profile/health-insurance/medicare-information-project-0653-90450280/#sealclick"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="nofollow noopener noreferrer"
             aria-label="Medicare Information Project BBB Business Review"
           >
             <img
@@ -115,10 +115,6 @@ export default function Footer() {
           </a>
           <div className="flex items-center gap-2.5 text-[0.9rem] text-blue-200/70">
             <Shield size={18} className="text-amber-400" />
-            100+ Plans Represented
-          </div>
-          <div className="flex items-center gap-2.5 text-[0.9rem] text-blue-200/70">
-            <Shield size={18} className="text-amber-400" />
             No-Cost Consultations
           </div>
         </div>
@@ -126,12 +122,12 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-blue-900/50 pt-7 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[0.8rem] text-blue-300/50 text-center sm:text-left max-w-2xl">
-            © {new Date().getFullYear()} Insurance Central of Tampa Bay. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government. We represent 17 organizations.
+            © {new Date().getFullYear()} Insurance Central of Tampa Bay. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government.
           </p>
           <div className="flex gap-6 text-[0.8rem] text-blue-300/50">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Use</Link>
-            <Link href="/testimonials" className="hover:text-white transition-colors">Testimonials</Link>
+            <Link href="/testimonials" className="hover:text-white transition-colors">Medicare Planning Resources</Link>
           </div>
         </div>
       </div>
