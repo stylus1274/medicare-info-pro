@@ -23,7 +23,7 @@ const localBusinessSchema = {
   "@type": "InsuranceAgency",
   "@id": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Trusted independent Medicare insurance brokers in Brandon, FL. A+ BBB rating, 500+ clients served, 17+ carriers compared. Located at 915 Oakfield Dr, Brandon.",
+  "description": "Trusted independent Medicare insurance brokers in Brandon, FL. BBB Accredited, A+ Rated, with comparisons across multiple carriers. Located at 915 Oakfield Dr, Brandon.",
   "url": "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon/",
   "telephone": "+1-813-699-5559",
   "priceRange": "Free consultation",
@@ -74,7 +74,7 @@ const faqSchema = {
       "name": "How do I find a trusted Medicare insurance broker in Brandon, FL?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Look for an independent broker who represents multiple carriers, is licensed in Florida, and has verifiable local reviews. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511, holds an A+ BBB rating, and has served 500+ clients across Brandon and Hillsborough County. Call 813-699-5559."
+        "text": "Look for an independent broker who represents multiple carriers, is licensed in Florida, and has verifiable local reviews. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511, and is BBB Accredited with an A+ rating. Call 813-699-5559."
       }
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
       "name": "How is Medicare Information Pro different from other brokers in Brandon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MIP is an independent agency with a physical office in Brandon at 915 Oakfield Dr. We represent 17+ carriers, have served 500+ local clients, and provide ongoing support after enrollment — not just at sign-up. Our agents live and work in the Brandon community."
+        "text": "MIP is an independent agency with a physical office in Brandon at 915 Oakfield Dr. We compare options from multiple carriers and provide ongoing support after enrollment."
       }
     }
   ]
@@ -106,8 +106,8 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Trusted Medicare Brokers in Brandon, FL — 500+ Clients, A+ BBB Rating',
-  description: '500+ clients served across Brandon and Hillsborough County. MIP\'s independent brokers compare 17+ carriers — Medicare Advantage, Medigap, Part D — at no cost. A+ BBB.',
+  title: 'Trusted Medicare Brokers in Brandon, FL | BBB Accredited',
+  description: 'Independent Medicare brokers in Brandon and Hillsborough County. Compare Medicare Advantage, Medigap, and Part D options at no cost. BBB Accredited, A+ Rated.',
 };
 
 export default function Page() {

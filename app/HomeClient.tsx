@@ -12,7 +12,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
-  ArrowRight, Star, CheckCircle, UserPlus, Briefcase, BadgeCheck,
+  ArrowRight, CheckCircle, UserPlus, Briefcase, BadgeCheck,
   MapPin, Clock, Phone, ChevronDown,
   BookOpen, Heart, Stethoscope, DollarSign, Pill, Eye,
 } from "lucide-react";
@@ -139,27 +139,6 @@ export default function HomeClient() {
           {/* Right Photo Panel */}
           <div className="min-h-[280px] lg:min-h-0" style={{ position: "relative", overflow: "hidden" }}>
             <img src={HERO_PHOTO} alt="Senior couple meeting with a Medicare advisor" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
-            {/* Stats badge — hidden on mobile to avoid overlap, shown on lg+ */}
-            <div className="hidden lg:block" style={{
-              position: "absolute", bottom: 32, left: 32,
-              background: "rgba(255,255,255,0.95)", backdropFilter: "blur(12px)",
-              borderRadius: 14, padding: "1rem 1.4rem",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.15)", minWidth: 180,
-            }}>
-              <div style={{ fontSize: "2rem", fontWeight: 800, color: "#1a3a1a", lineHeight: 1 }}>10,000+</div>
-              <div style={{ fontSize: "0.78rem", color: "#6b7280", marginTop: "0.25rem", fontWeight: 500 }}>Clients helped statewide</div>
-              <div style={{ display: "flex", gap: "0.2rem", marginTop: "0.5rem" }}>
-                {[1,2,3,4,5].map(i => <Star key={i} size={12} style={{ color: "#f5c842", fill: "#f5c842" }} />)}
-              </div>
-            </div>
-          </div>
-          {/* Stats badge for mobile — shown below hero image */}
-          <div className="lg:hidden flex items-center gap-4 px-6 py-4" style={{ background: "#f8f9fb", borderTop: "1px solid #e8eaf0" }}>
-            <div style={{ display: "flex", gap: "0.2rem" }}>
-              {[1,2,3,4,5].map(i => <Star key={i} size={14} style={{ color: "#f5c842", fill: "#f5c842" }} />)}
-            </div>
-            <div style={{ fontSize: "1rem", fontWeight: 800, color: "#ffffff" }}>10,000+</div>
-            <div style={{ fontSize: "0.8rem", color: "#6b7280", fontWeight: 500 }}>Clients helped statewide</div>
           </div>
         </div>
       </section>

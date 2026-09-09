@@ -271,7 +271,6 @@ const RELATED_POSTS = [
 const TRUST_ITEMS = [
   { icon: <Shield className="w-4 h-4 text-[#1a3fa8]" aria-hidden="true" />, text: "Licensed Independent Agents" },
   { icon: <Star className="w-4 h-4 text-[#f5a800]" aria-hidden="true" />, text: "BBB A+ Rated" },
-  { icon: <Users className="w-4 h-4 text-green-600" aria-hidden="true" />, text: "60,000+ Clients Helped" },
   { icon: <CheckCircle className="w-4 h-4 text-green-600" aria-hidden="true" />, text: "100% Free Service" },
 ];
 

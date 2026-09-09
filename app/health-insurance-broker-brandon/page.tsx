@@ -23,7 +23,7 @@ const localBusinessSchema = {
   "@type": "InsuranceAgency",
   "@id": "https://medicareinfopro.com/health-insurance-broker-brandon/#localbusiness",
   "name": "Medicare Information Pro",
-  "description": "Independent Medicare insurance broker in Brandon, FL. Free comparison of Medicare Advantage, Medigap, and Part D plans from 17+ carriers. 500+ clients served.",
+  "description": "Independent Medicare insurance broker in Brandon, FL. Free comparison of Medicare Advantage, Medigap, and Part D plans from multiple carriers.",
   "url": "https://medicareinfopro.com/health-insurance-broker-brandon/",
   "telephone": "+1-813-699-5559",
   "priceRange": "Free consultation",
