@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/how-to-read-medicare-annual-notice-of-change",
   "/medicare-prior-authorization-appeals",
   "/medicare-secondary-payer-rules",
   "/medicare-supplement-plan-g-vs-plan-n",
@@ -92,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
   return BLOG_SLUGS.map((path) => ({
-    url: `${BASE_URL}${path}`,
+    url: `${BASE_URL}${path}/`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
