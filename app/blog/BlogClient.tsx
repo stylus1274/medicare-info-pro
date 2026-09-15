@@ -70,6 +70,19 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    slug: "/moving-to-brandon-fl-with-medicare",
+    title: "Moving to Brandon, FL With Medicare: What to Update and Review",
+    excerpt:
+      "Moving to Brandon with Medicare? Use this practical checklist to update your address, review plan service areas, check providers and pharmacies, and organize move-related questions.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "September 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80",
+    live: true,
+    sortOrder: -1,
+  },
+  {
     slug: "/how-to-get-shine-medicare-counseling-hillsborough-county",
     title: "How to Get Free, Unbiased Medicare Counseling Through SHINE in Hillsborough County",
     excerpt:

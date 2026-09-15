@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/moving-to-brandon-fl-with-medicare",
   "/how-to-get-shine-medicare-counseling-hillsborough-county",
   "/how-to-read-medicare-annual-notice-of-change",
   "/medicare-prior-authorization-appeals",
