@@ -27,6 +27,19 @@ export interface LocalPageConfig {
     intro: string;
     items: string[];
   };
+  localSupportSection?: {
+    nextSteps: {
+      title: string;
+      description: string;
+      href: string;
+    }[];
+    resources: {
+      title: string;
+      description: string;
+      href: string;
+      external?: boolean;
+    }[];
+  };
   relatedLinks: { label: string; href: string }[];
   agent?: {
     name: string;
@@ -233,6 +246,61 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                   ))}
                 </ul>
               </section>
+            )}
+
+            {config.localSupportSection && (
+              <>
+                <section>
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Start With the Medicare Question You Need Answered
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    Medicare decisions often begin with one practical question. Choose the guide that matches your situation, then bring your plan materials and questions to your next conversation.
+                  </p>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {config.localSupportSection.nextSteps.map(({ title, description, href }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        className="block rounded-xl border border-gray-200 bg-white p-5 transition-colors hover:border-blue-300 hover:bg-blue-50"
+                      >
+                        <span className="block font-semibold text-[#1a3fa8] mb-2">{title}</span>
+                        <span className="block text-sm leading-relaxed text-gray-600">{description}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="bg-blue-50 rounded-2xl p-6 border border-blue-100">
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                    Hillsborough County Medicare Resources
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-5">
+                    These resources can help Brandon residents find current public information, counseling, and plan details. Confirm time-sensitive information directly with the organization providing the resource.
+                  </p>
+                  <div className="space-y-3">
+                    {config.localSupportSection.resources.map(({ title, description, href, external }) => {
+                      const linkClass = "block rounded-xl border border-blue-100 bg-white p-4 transition-colors hover:border-blue-300 hover:bg-blue-50";
+                      const content = (
+                        <>
+                          <span className="block font-semibold text-[#1a3fa8] mb-1">{title}</span>
+                          <span className="block text-sm leading-relaxed text-gray-600">{description}</span>
+                        </>
+                      );
+
+                      return external ? (
+                        <a key={href} href={href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                          {content}
+                        </a>
+                      ) : (
+                        <Link key={href} href={href} className={linkClass}>
+                          {content}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </section>
+              </>
             )}
 
             {/* Testimonials */}

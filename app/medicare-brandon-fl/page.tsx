@@ -219,6 +219,59 @@ export default function Page() {
               "Questions about enrollment timing, plan costs, coverage, or provider access.",
             ],
           },
+          localSupportSection: {
+            nextSteps: [
+              {
+                title: "Turning 65 or new to Medicare",
+                description: "Review your Initial Enrollment Period, the parts of Medicare, and the documents that can help you prepare.",
+                href: "/turning-65-and-becoming-eligible-for-medicare/",
+              },
+              {
+                title: "Working past 65 or preparing to retire",
+                description: "Understand the questions to ask about employer coverage, Part B timing, and prescription coverage before retirement.",
+                href: "/medicare-and-employer-insurance-after-65-brandon-fl/",
+              },
+              {
+                title: "Reviewing plan changes for next year",
+                description: "Use your Annual Notice of Change to identify costs, benefits, providers, pharmacies, and prescription changes to review.",
+                href: "/how-to-read-medicare-annual-notice-of-change/",
+              },
+              {
+                title: "Need help with drug coverage or Medicare costs",
+                description: "Read the Part D and cost-assistance guides before comparing your own medications, pharmacy preferences, and available resources.",
+                href: "/understanding-part-d/",
+              },
+              {
+                title: "Had a recent change in your situation",
+                description: "Learn how a move, loss of coverage, or another qualifying event may affect Medicare enrollment timing.",
+                href: "/what-is-the-special-enrollment-period/",
+              },
+              {
+                title: "Looking for help paying Medicare costs",
+                description: "Review Extra Help and Medicare Savings Program information, then confirm eligibility through the appropriate public agency.",
+                href: "/how-to-get-help-paying-for-medicare/",
+              },
+            ],
+            resources: [
+              {
+                title: "Free SHINE Medicare counseling in Hillsborough County",
+                description: "Learn about free, unbiased, and confidential Medicare counseling resources, including how to prepare for an appointment.",
+                href: "/how-to-get-shine-medicare-counseling-hillsborough-county/",
+              },
+              {
+                title: "Hillsborough County SHINE counseling sites",
+                description: "Review the official directory for current appointment-based counseling options in Brandon and nearby communities.",
+                href: "https://www.floridashine.org/counseling-sites/hillsborough.aspx",
+                external: true,
+              },
+              {
+                title: "Medicare.gov",
+                description: "Use the official Medicare website for current enrollment information, plan details, and federal program resources.",
+                href: "https://www.medicare.gov/",
+                external: true,
+              },
+            ],
+          },
           faqs: [
             {
               q: "What Medicare plans are available in Brandon, FL?",
