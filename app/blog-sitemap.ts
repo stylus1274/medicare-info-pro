@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/how-to-get-shine-medicare-counseling-hillsborough-county",
   "/how-to-read-medicare-annual-notice-of-change",
   "/medicare-prior-authorization-appeals",
   "/medicare-secondary-payer-rules",

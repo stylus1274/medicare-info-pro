@@ -70,6 +70,19 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    slug: "/how-to-get-shine-medicare-counseling-hillsborough-county",
+    title: "How to Get Free, Unbiased Medicare Counseling Through SHINE in Hillsborough County",
+    excerpt:
+      "Florida SHINE offers free, unbiased, and confidential Medicare counseling. Learn what SHINE can help with, where to find Hillsborough County locations, and what to bring to an appointment.",
+    category: "Enrollment",
+    author: "Greg Wohl",
+    date: "September 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
+    live: true,
+    sortOrder: 0,
+  },
+  {
     slug: "/medicare-prior-authorization-appeals",
     title: "Medicare Prior Authorization and Appeals: What to Do When Care Is Delayed or Denied",
     excerpt:
