@@ -113,7 +113,6 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Blog & Articles", href: "/blog", desc: "Latest Medicare news" },
           { label: "In-Depth Guides", href: "/guides", desc: "Comprehensive resources" },
           { label: "FAQ Center", href: "/faq", desc: "Quick answers" },
-          { label: "About Us", href: "/about-us", desc: "Meet our team" },
         ]},
         { heading: "Tools", links: [
           { label: "Plan Comparison Tool", href: "/plan-comparison", desc: "Side-by-side compare" },
@@ -124,6 +123,7 @@ const NAV_ITEMS: NavItem[] = [
       ],
     },
   },
+  { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact-us" },
 ];
 
@@ -503,19 +503,29 @@ export default function Header() {
             <div className="p-5 space-y-1 max-h-[80vh] overflow-y-auto">
               {NAV_ITEMS.map((item) => (
                 <div key={item.label}>
-                  <button
-                    className={`w-full flex items-center justify-between px-4 py-3.5 rounded-xl text-left font-semibold transition-all ${
-                      mobileExpanded === item.label ? "bg-blue-50 text-[#1a3fa8]" : "text-gray-700 hover:bg-gray-50"
-                    }`}
-                    style={{ fontSize: "1rem" }}
-                    onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
-                  >
-                    {item.label}
-                    <ChevronDown
-                      size={18}
-                      className={`transition-transform text-gray-400 ${mobileExpanded === item.label ? "rotate-180" : ""}`}
-                    />
-                  </button>
+                  {item.megaMenu ? (
+                    <button
+                      className={`w-full flex items-center justify-between px-4 py-3.5 rounded-xl text-left font-semibold transition-all ${
+                        mobileExpanded === item.label ? "bg-blue-50 text-[#1a3fa8]" : "text-gray-700 hover:bg-gray-50"
+                      }`}
+                      style={{ fontSize: "1rem" }}
+                      onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                    >
+                      {item.label}
+                      <ChevronDown
+                        size={18}
+                        className={`transition-transform text-gray-400 ${mobileExpanded === item.label ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="w-full flex items-center px-4 py-3.5 rounded-xl text-left font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                      style={{ fontSize: "1rem" }}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                   <AnimatePresence>
                     {mobileExpanded === item.label && item.megaMenu && (
                       <motion.div
