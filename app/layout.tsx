@@ -111,6 +111,7 @@ export default function RootLayout({
       <body>
         {children}
         <KitSlideIn />
+        <Script src="/analytics-tracker.js" strategy="afterInteractive" />
       </body>
     </html>
   );
