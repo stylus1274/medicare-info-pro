@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 
-const EXCLUDED_PATHS = ["/free-medicare-kit", "/get-started"];
+const EXCLUDED_PATHS = ["/free-medicare-kit", "/get-started", "/homepage-preview"];
 
 export default function KitSlideIn() {
   const pathname = usePathname();
