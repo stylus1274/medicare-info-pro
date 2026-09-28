@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, HeartHandshake } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import styles from "./preview.module.css";
 
 export const metadata: Metadata = {
@@ -39,11 +41,7 @@ export default function HomepagePreview() {
   return <div className={styles.page}>
     <a className={styles.skip} href="#preview-main">Skip to content</a>
     <div className={styles.previewBar}>Homepage concept preview <span>For review</span><a href="https://medicareinfopro.com/">View current homepage ↗</a></div>
-    <header className={styles.header}>
-      <a className={styles.logo} href="https://medicareinfopro.com/" aria-label="Medicare Information Project current homepage"><img src={`${cdn}logo-white_bb567c3d.png`} alt="Medicare Information Project" width="210" height="58" /></a>
-      <nav aria-label="Preview navigation"><a href="#start">Start Here</a><a href="#plans">Medicare Plans</a><a href="#local">Local Help</a><a href="#team">Our Team</a><a href="#resources">Resources</a></nav>
-      <a className={styles.headerPhone} href="tel:+18136995559"><Phone size={17} />813-699-5559</a>
-    </header>
+    <Header />
     <main id="preview-main">
       <section className={styles.hero}>
         <div className={styles.wrap + " " + styles.heroGrid}>
@@ -89,6 +87,6 @@ export default function HomepagePreview() {
       <section className={styles.faq}><div className={styles.wrap + " " + styles.two}><div><p className={styles.eyebrow}>BEFORE WE TALK</p><h2>A few questions you might have.</h2><p>Have something else on your mind?<br /><a href="tel:+18136995559">Call us at 813-699-5559.</a></p></div><div>{faqs.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></div></section>
       <section id="consultation" className={styles.consultation}><div className={styles.wrap + " " + styles.two}><div><p className={styles.eyebrow}>LET’S FIND YOUR NEXT STEP</p><h2>You bring the questions.<br />We’ll help you sort through them.</h2><p>No-cost Medicare guidance from our Brandon team.</p></div><div className={styles.contactCard}><h3>Talk with a local agent.</h3><a className={styles.primary} href="tel:+18136995559"><Phone size={18} />Call 813-699-5559</a><a className={styles.contactLink} href="/contact/">Prefer to write? Contact our team <ArrowRight size={18} /></a><p>915 Oakfield Dr, Suite A<br />Brandon, FL 33511<br /><small>Office visits by appointment.</small></p></div></div></section>
     </main>
-    <footer className={styles.footer}><div className={styles.wrap}><div className={styles.footerTop}><div><strong>Medicare Information Project</strong><p>Local guidance. Informed choices.</p><a href="tel:+18136995559">813-699-5559</a></div><nav aria-label="Footer navigation"><a href="/our-team/">Our team</a><a href="/resources/">Resources</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy policy</a><a href="/terms-and-conditions/">Terms of use</a></nav></div><p className={styles.disclosure}>We do not offer every plan available in your area. Currently we represent 17 organizations which offer 149 products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options. We are not part of, affiliated with, reviewed, or endorsed by CMS. A non-government entity.</p><small>© {new Date().getFullYear()} Medicare Information Project. 915 Oakfield Dr, Suite A, Brandon, FL 33511.</small></div></footer>
+    <Footer />
   </div>;
 }
