@@ -82,8 +82,8 @@
 .eyebrow{font-size:12px}
 .small{font-size:14px}
 .previewBar{font-size:14px;line-height:1.5;padding:10px 20px}
-.primary{background:#9b6100;color:#fff;box-shadow:none;font-size:16px}
-.primary:hover{background:#805000}
+.primary{background:var(--gold);color:#fff;box-shadow:none;font-size:16px}
+.primary:hover{background:#f8b92a}
 .secondary{font-size:16px}
 .photoNote span{font-size:14px}
 .card p,.step p,.journeyBody p,.localCard p,.resourceCard p,.faq p{font-size:18px;line-height:1.75}
