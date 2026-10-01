@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, HeartHandshake } from "lucide-react";
+import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, HeartHandshake, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "./PreviewFooter";
 import styles from "./preview.module.css";
@@ -41,14 +41,15 @@ const faqs = [
 ];
 
 const BBB_PROFILE = "https://www.bbb.org/us/fl/brandon/profile/health-insurance/medicare-information-project-0653-90450280";
-const BBB_REVIEWS = BBB_PROFILE + "/customer-reviews";
 const OFFICE_DIRECTIONS = "https://www.google.com/maps/dir/?api=1&destination=915+Oakfield+Dr+Suite+A+Brandon+FL+33511";
 
-// These are short, attributed excerpts from the BBB customer review page,
-// checked September 30, 2026. No fabricated reviews or self-serving rating schema.
+// Transcribed verbatim from the four Google review screenshots supplied by the user.
+// Display each review's rating without dates or an aggregate rating claim.
 const customerReviews = [
-  { name: "Russell K", date: "March 9, 2025", text: "Professional and friendly. Always there to help." },
-  { name: "Dawn T", date: "March 4, 2025", text: "Understood my options. This made it easier to pick the right plan." },
+  { name: "gus sails", rating: 5, text: "Greg is a very knowledgeable, thorough, trustworthy and pleasant person in all aspects, specially regarding my Insurance needs.\nWe have become trusted friends.\nGus." },
+  { name: "April Angel", rating: 5, text: "My rep, Mark looks out for my best interest year after year! So refreshing to find a trusted and honest person. Thank you Mark!!" },
+  { name: "Juan Cueto", rating: 5, text: "Jennifer and her team are some of the nicest people I've ever met in the best in the business thank you so much Juan" },
+  { name: "Dennis Bowlin", rating: 5, text: "Valerie is very knowledgeable about Medicare plans and to help you find the right one. Goes above and beyond to get the right one for you and your needs." },
 ];
 
 const webpageSchema = {
@@ -100,8 +101,21 @@ export default function HomepagePreviewV3() {
             <a className={styles.proofCard} href={BBB_PROFILE} target="_blank" rel="noopener noreferrer"><CalendarDays size={28} /><h3>Established in 2010</h3><p>Our BBB profile lists the agency’s business start date as January 1, 2010, with an office here in Brandon.</p><span className={styles.textLink}>See our business history</span></a>
             <a className={styles.proofCard} href="/our-team/"><Users size={28} /><h3>Licensed, Independent Agents</h3><p>Meet the people behind MIP. Review agent profiles, Florida license details, and areas of experience.</p><span className={styles.textLink}>Meet our licensed team</span></a>
           </div>
-          <div className={styles.reviewHeading}><h3>What Customers Have Shared on BBB</h3><a className={styles.textLink} href={BBB_REVIEWS} target="_blank" rel="noopener noreferrer">Read the full customer reviews</a></div>
-          <div className={styles.reviewGrid}>{customerReviews.map(review => <figure className={styles.reviewCard} key={review.name}><blockquote><p>“{review.text}”</p></blockquote><figcaption><strong>{review.name}</strong><span>BBB review excerpt · {review.date}</span></figcaption></figure>)}</div>
+          <div className={styles.reviewHeading}><h3>What Customers Have Shared on Google</h3></div>
+          <div className={styles.reviewGrid}>{customerReviews.map(review => <figure className={styles.reviewCard} key={review.name}>
+            <div className={styles.reviewMeta}>
+              <span className={styles.reviewStars} role="img" aria-label={`${review.rating} out of 5 stars`}>{Array.from({ length: review.rating }, (_, i) => <Star key={i} size={20} fill="currentColor" strokeWidth={0} aria-hidden="true" />)}</span>
+              <span className={styles.googleBrand} role="img" aria-label="Google">
+                <svg width="24" height="24" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                  <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z" />
+                  <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6C44.4 38.02 46.98 31.86 46.98 24.55Z" />
+                  <path fill="#FBBC05" d="M10.53 28.59A14.41 14.41 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.87 23.87 0 0 0 0 24c0 3.87.93 7.53 2.56 10.78l7.97-6.19Z" />
+                  <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.91-5.8l-7.73-6c-2.15 1.45-4.92 2.3-8.18 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z" />
+                </svg><span aria-hidden="true">Google</span>
+              </span>
+            </div>
+            <blockquote><p>“{review.text}”</p></blockquote><figcaption><strong>{review.name}</strong><span>Google review</span></figcaption>
+          </figure>)}</div>
         </div>
       </section>
       <section id="team" className={styles.teamSection}><div className={styles.wrap}>
