@@ -96,8 +96,13 @@
 .reviewHeading{margin:42px 0 18px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .reviewHeading h3{margin:0}.reviewHeading .textLink{margin:0}
 .reviewGrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.reviewCard{margin:0;border-left:4px solid var(--gold);background:#f8f9fb;border-radius:0 12px 12px 0;padding:28px}
-.reviewCard blockquote p{font-size:20px;line-height:1.6;color:var(--navy);font-weight:600;margin:0 0 20px}
+.reviewCard{display:flex;flex-direction:column;margin:0;border-left:4px solid var(--gold);background:#f8f9fb;border-radius:0 12px 12px 0;padding:28px}
+.reviewCard blockquote p{white-space:pre-line;font-size:20px;line-height:1.6;color:var(--navy);font-weight:600;margin:0 0 20px}
+.reviewCard figcaption{margin-top:auto}
+.reviewMeta{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.reviewStars{display:inline-flex;gap:3px;color:var(--gold)}
+.googleBrand{display:inline-flex;align-items:center;gap:7px;font-size:16px;font-weight:600;color:#52617a}
+.googleBrand svg{flex-shrink:0}
 .reviewCard figcaption strong{display:block;font-size:16px;color:var(--navy)}
 .reviewCard figcaption span{display:block;font-size:14px;color:#52617a;margin-top:3px}
 .agentCard p{font-size:14px;line-height:1.6}
