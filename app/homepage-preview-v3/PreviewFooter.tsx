@@ -20,7 +20,7 @@ const FOOTER_LINKS = [
       { label: "Turning 65", href: "/enrollment-timeline#iep" },
       { label: "Annual Enrollment", href: "/enrollment-timeline#aep" },
       { label: "Special Enrollment", href: "/enrollment-timeline#sep" },
-      { label: "Avoid Penalties", href: "/enrollment-timeline#penalty-partb" },
+      { label: "Avoid Penalties", href: "/enrollment-timeline#penalty-part-b" },
       { label: "How to Enroll", href: "/enrollment-calculator" },
     ],
   },
@@ -32,7 +32,7 @@ const FOOTER_LINKS = [
       { label: "Medicare 101", href: "/medicare-101" },
       { label: "FAQ Center", href: "/faq" },
       { label: "About Us", href: "/about-us" },
-      { label: "Contact Us", href: "/contact-us" },
+      { label: "Contact Us", href: "/contact/" },
     ],
   },
 ];

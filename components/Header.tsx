@@ -75,8 +75,8 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Open Enrollment", href: "/enrollment-timeline#oepa", desc: "Jan 1 – Mar 31 each year" },
         ]},
         { heading: "Avoid Penalties", links: [
-          { label: "Part B Late Penalty", href: "/enrollment-timeline#penalty-partb", desc: "10% per year late" },
-          { label: "Part D Late Penalty", href: "/enrollment-timeline#penalty-partd", desc: "1% per month late" },
+          { label: "Part B Late Penalty", href: "/enrollment-timeline#penalty-part-b", desc: "10% per year late" },
+          { label: "Part D Late Penalty", href: "/enrollment-timeline#penalty-part-d", desc: "1% per month late" },
           { label: "Working Past 65", href: "/working-past-65", desc: "Employer coverage rules" },
           { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
         ]},
@@ -124,7 +124,7 @@ const NAV_ITEMS: NavItem[] = [
     },
   },
   { label: "About Us", href: "/about-us" },
-  { label: "Contact", href: "/contact-us" },
+  { label: "Contact", href: "/contact/" },
 ];
 
 const SUGGESTION_CATEGORY_COLORS: Record<string, { bg: string; text: string }> = {
@@ -569,7 +569,7 @@ export default function Header() {
                   Get Started <ArrowRight size={16} />
                 </Link>
                 <a
-                  href="tel:18138699559"
+                  href="tel:+18136995559"
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold border-2 border-[#1a3fa8] text-[#1a3fa8]"
                   style={{ fontSize: "0.95rem" }}
                 >
