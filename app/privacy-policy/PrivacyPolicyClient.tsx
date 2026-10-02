@@ -1,29 +1,38 @@
 "use client";
-/* ==========================================================================
-   Privacy Policy — /privacy-policy
-   Design: navy/gold MIP brand, clean legal layout
-   ========================================================================== */
+/* ===========================================================================
+   Privacy Policy | /privacy-policy
+   =========================================================================== */
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const LAST_UPDATED = "January 1, 2025";
-
+const LAST_UPDATED = "June 2026";
 
 const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Privacy Policy",
-  "url": "https://medicareinfopro.com/privacy-policy",
+  "url": "https://medicareinfopro.com/privacy-policy/",
   "isPartOf": {
-    "@id": "https://medicareinfopro.com/#website"
+    "@id": "https://medicareinfopro.com/#website",
   },
   "publisher": {
     "@type": "Organization",
     "name": "Medicare Information Project",
-    "@id": "https://medicareinfopro.com/#organization"
-  }
+    "@id": "https://medicareinfopro.com/#organization",
+  },
 } as const;
+
+const sectionHeadingStyle = {
+  fontSize: "1.2rem",
+  fontWeight: 700,
+  color: "#0d1f5c",
+  marginTop: "2rem",
+  marginBottom: "0.75rem",
+} as const;
+
+const paragraphStyle = { marginBottom: "1rem" } as const;
+const listStyle = { margin: "0 0 1rem 1.25rem", paddingLeft: "0.75rem" } as const;
 
 export default function PrivacyPolicyClient() {
   return (
@@ -34,7 +43,6 @@ export default function PrivacyPolicyClient() {
       />
       <Header />
       <main style={{ background: "#f7f9fc", minHeight: "100vh" }}>
-        {/* Hero */}
         <div style={{ background: "linear-gradient(135deg, #0d1f5c 0%, #1a3fa8 100%)", color: "#fff", padding: "3rem 0 4rem" }}>
           <div className="max-w-[860px] mx-auto px-5 sm:px-8">
             <nav style={{ fontSize: "0.8rem", color: "#93aee8", marginBottom: "1.25rem" }}>
@@ -49,93 +57,159 @@ export default function PrivacyPolicyClient() {
           </div>
         </div>
 
-        {/* Content */}
         <div className="max-w-[860px] mx-auto px-5 sm:px-8 py-12">
-          <div style={{ background: "#fff", borderRadius: 16, padding: "2.5rem", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+          <article style={{ background: "#fff", borderRadius: 16, padding: "2.5rem", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
             <div style={{ color: "#374151", lineHeight: 1.85, fontSize: "0.97rem" }}>
-
               <p style={{ marginBottom: "1.5rem" }}>
-                Medicare Information Project ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at medicareinfopro.com or contact us for Medicare-related assistance.
+                Medicare Information Project ("Company," "we," "our," or "us") is committed to protecting and preserving the privacy of visitors to our website, social media pages, and any individuals who communicate with us electronically.
+              </p>
+              <p style={paragraphStyle}>
+                This Privacy Policy explains how we collect, use, protect, and disclose personal information that you voluntarily provide to us, as well as certain information that may be collected automatically when you visit our website. By using our website, submitting information through our website or social media pages, or otherwise communicating with us electronically, you consent to the practices described in this Privacy Policy.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>1. Information We Collect</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                We may collect personal information that you voluntarily provide to us when you fill out a contact form, request a consultation, call our office, or otherwise interact with our website. This information may include your name, phone number, email address, zip code, date of birth, Medicare number, and information about your current health coverage.
+              <h2 style={sectionHeadingStyle}>Information We Collect</h2>
+              <p style={paragraphStyle}>
+                We may collect personal information from you when you register on our site, subscribe to our newsletter, fill out a form, submit a contact or inquiry request, communicate with us through our website or social media pages, or otherwise provide information to us.
               </p>
-              <p style={{ marginBottom: "1rem" }}>
-                We also automatically collect certain technical information when you visit our site, including your IP address, browser type, operating system, referring URLs, and pages viewed. This information is collected through standard web server logs and analytics tools and is used solely to improve our website and user experience.
-              </p>
-
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>2. How We Use Your Information</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                We use the information we collect to respond to your inquiries, provide Medicare plan comparisons and enrollment assistance, schedule consultations with our licensed agents, send you information you have requested about Medicare plans and options, and comply with applicable laws and regulations.
-              </p>
-              <p style={{ marginBottom: "1rem" }}>
-                We do not sell, rent, or trade your personal information to third parties for their marketing purposes. We may share your information with insurance carriers and plan administrators as necessary to provide the services you have requested, and with service providers who assist us in operating our website and business, subject to confidentiality agreements.
-              </p>
-
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>3. Medicare and HIPAA Compliance</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                As a licensed Medicare insurance agency, we handle health-related information with care. While we are not a covered entity under HIPAA in all circumstances, we treat all health information you share with us as confidential and use it only for the purpose of helping you select and enroll in a Medicare plan.
-              </p>
-              <p style={{ marginBottom: "1rem" }}>
-                We are licensed by the Centers for Medicare and Medicaid Services (CMS) and comply with all applicable CMS marketing and privacy guidelines. We do not share your Medicare number or health information with unauthorized parties.
+              <p style={paragraphStyle}>The information you provide may include, but is not limited to:</p>
+              <ul style={listStyle}>
+                <li>Name</li>
+                <li>Mailing address</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Information related to a Medicare inquiry or request for services</li>
+                <li>Other information you voluntarily choose to provide</li>
+              </ul>
+              <p style={paragraphStyle}>Any information requested that is not required will be identified as voluntary or optional when appropriate.</p>
+              <p style={paragraphStyle}>
+                You may also visit our website anonymously. However, like many websites, we may use cookies and similar technologies to enhance your experience, gather general visitor information, and track visits to our website.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>4. Cookies and Tracking Technologies</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                Our website uses cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand how visitors use our site. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. If you do not accept cookies, some portions of our site may not function properly.
+              <h2 style={sectionHeadingStyle}>How We Use Your Information</h2>
+              <p style={paragraphStyle}>We may use the information we collect from you for the following purposes:</p>
+              <ul style={listStyle}>
+                <li>To provide information, products, or services that you request from us</li>
+                <li>To contact you regarding your inquiry or service request</li>
+                <li>To personalize your experience and better respond to your individual needs</li>
+                <li>To improve our website, services, communications, and customer experience</li>
+                <li>To improve customer service and respond more effectively to requests and support needs</li>
+                <li>To send periodic emails, newsletters, updates, or other communications</li>
+                <li>To comply with applicable laws, regulations, and legal obligations</li>
+                <li>To enforce our site policies and protect our rights, property, safety, and the rights, property, and safety of others</li>
+              </ul>
+
+              <h2 style={sectionHeadingStyle}>Medicare Insurance Contact Consent</h2>
+              <p style={paragraphStyle}>
+                By submitting your phone number or other contact information through a contact request form, inquiry form, or similar form, and by clicking the applicable submit button, you acknowledge and agree that such action may constitute your written consent for Medicare Information Project, its representatives, affiliates, or authorized advocates to contact you regarding Medicare insurance products, services, or related information.
               </p>
-              <p style={{ marginBottom: "1rem" }}>
-                We may use third-party analytics services such as Google Analytics to help us understand how visitors use our site. These services may collect information about your use of our site and other websites. You can opt out of Google Analytics by installing the Google Analytics opt-out browser add-on.
+              <p style={paragraphStyle}>
+                You agree that we may contact you by phone, email, text message/SMS, prerecorded message, or other electronic communication at any phone number or email address you provide, including wireless numbers. This consent applies even if your phone number is listed on a federal, state, or internal do-not-call list.
+              </p>
+              <p style={paragraphStyle}>
+                You represent and warrant that you are the primary user and subscriber of any phone number you submit. You also agree that we may contact you using automated technology, including an autodialer, where permitted by law.
+              </p>
+              <p style={paragraphStyle}>
+                You understand that you are not required to submit a form or agree to receive marketing communications as a condition of purchasing or receiving any property, goods, or services. You may revoke your consent at any time by contacting us using reasonable means, including by calling <a href="tel:8136995559" style={{ color: "#1a3fa8" }}>813.699.5559</a> or emailing <a href="mailto:info@medicareinfopro.com" style={{ color: "#1a3fa8" }}>info@medicareinfopro.com</a> with the subject line "REVOKE."
+              </p>
+              <p style={paragraphStyle}>By submitting a contact request form, you also agree to be bound by this Privacy Policy.</p>
+
+              <h2 style={sectionHeadingStyle}>Cookies</h2>
+              <p style={paragraphStyle}>
+                Yes, we use cookies. Cookies are small files that a website or its service provider transfers to your computer&apos;s hard drive through your web browser, if you allow, that enable the website&apos;s systems to recognize your browser and capture and remember certain information.
+              </p>
+              <p style={paragraphStyle}>We may use cookies to:</p>
+              <ul style={listStyle}>
+                <li>Enhance your browsing experience</li>
+                <li>Understand and save user preferences for future visits</li>
+                <li>Gather general website traffic and visitor information</li>
+                <li>Track visits to our website</li>
+                <li>Improve our website and services</li>
+              </ul>
+              <p style={paragraphStyle}>You may choose to disable cookies through your browser settings. However, disabling cookies may affect how certain parts of our website function.</p>
+
+              <h2 style={sectionHeadingStyle}>How We Protect Your Information</h2>
+              <p style={paragraphStyle}>
+                We implement a variety of reasonable security measures to help maintain the safety of your personal information when you submit a request or enter, submit, or access your personal information.
+              </p>
+              <p style={paragraphStyle}>
+                These measures may include password-protected directories and databases, secure servers, SSL encryption, and other security practices designed to help protect against unauthorized access, misuse, disclosure, alteration, or destruction of personal information.
+              </p>
+              <p style={paragraphStyle}>
+                Any sensitive information submitted through our website is transmitted using Secure Sockets Layer (SSL) technology where available and is intended to be accessible only by those authorized with special access rights to our systems who are required to keep the information confidential.
+              </p>
+              <p style={paragraphStyle}>
+                Although we take reasonable steps to protect your information, transmission of information over the internet is not completely secure. We cannot guarantee the security of information transmitted to our website, and any transmission is made at your own risk. Once we receive your information, we use reasonable procedures and security features to help prevent unauthorized access.
+              </p>
+              <p style={paragraphStyle}>
+                After a transaction, private information such as credit card numbers, Social Security numbers, financial information, or similar sensitive information will not be stored on our servers unless retention is required or permitted by law and appropriate safeguards are in place.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>5. Data Security</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Our website uses SSL encryption for data transmission. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+              <h2 style={sectionHeadingStyle}>Disclosure of Your Information</h2>
+              <p style={paragraphStyle}>We do not sell, rent, trade, or otherwise transfer your personally identifiable information to outside parties for their independent marketing purposes.</p>
+              <p style={paragraphStyle}>
+                This does not include trusted third parties who assist us in operating our website, conducting our business, servicing you, responding to your requests, or providing services on our behalf, so long as these parties agree to keep this information confidential and use it only for authorized purposes.
+              </p>
+              <p style={paragraphStyle}>We may also disclose your information when we believe disclosure is appropriate or necessary to:</p>
+              <ul style={listStyle}>
+                <li>Comply with applicable law, regulation, legal process, or governmental request</li>
+                <li>Enforce our site policies</li>
+                <li>Protect our rights, property, or safety</li>
+                <li>Protect the rights, property, or safety of others</li>
+                <li>Prevent fraud, abuse, security threats, or other harmful activity</li>
+              </ul>
+              <p style={paragraphStyle}>Non-personally identifiable visitor information may be used or shared for marketing, advertising, analytics, or other lawful business purposes.</p>
+
+              <h2 style={sectionHeadingStyle}>Third-Party Links</h2>
+              <p style={paragraphStyle}>
+                Occasionally, at our discretion, we may include or offer third-party products, services, links, or resources on our website or social media pages. These third-party websites and services have separate and independent privacy policies.
+              </p>
+              <p style={paragraphStyle}>
+                We are not responsible or liable for the content, privacy practices, or activities of these third-party websites or services. Nonetheless, we seek to protect the integrity of our website and welcome feedback about any third-party links or resources we provide.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>6. Third-Party Links</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                Our website may contain links to third-party websites, including Medicare.gov, Social Security Administration, and insurance carrier websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.
+              <h2 style={sectionHeadingStyle}>Social Media Sites</h2>
+              <p style={paragraphStyle}>
+                If you interact with us through social media platforms, the information you provide may also be subject to the privacy policies, terms, and data practices of those third-party platforms. We encourage you to review the privacy policies of any social media platform you use to communicate with us.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>7. Children's Privacy</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                Our services are intended for adults aged 65 and older or individuals with qualifying disabilities. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete that information.
+              <h2 style={sectionHeadingStyle}>Your Rights and Access to Your Personal Information</h2>
+              <p style={paragraphStyle}>
+                You may contact us to request access to, correction of, or deletion of personal information that we may maintain about you, subject to applicable legal, regulatory, contractual, and recordkeeping requirements.
+              </p>
+              <p style={paragraphStyle}>If you believe we have handled your information improperly, you may contact us so that we can review and respond to your concern.</p>
+
+              <h2 style={sectionHeadingStyle}>Email Communications and CAN-SPAM Compliance</h2>
+              <p style={paragraphStyle}>We are committed to complying with the CAN-SPAM Act and other applicable email marketing laws. We do not knowingly send misleading email communications.</p>
+              <p style={paragraphStyle}>If you receive marketing or newsletter emails from us, you may unsubscribe or opt out by following the instructions included in the email or by contacting us directly.</p>
+
+              <h2 style={sectionHeadingStyle}>Children&apos;s Privacy</h2>
+              <p style={paragraphStyle}>
+                We comply with the requirements of the Children&apos;s Online Privacy Protection Act. We do not knowingly collect information from anyone under 18 years of age. Our website, products, and services are directed to individuals who are at least 18 years old.
               </p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>8. Your Rights and Choices</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                You have the right to access, correct, or request deletion of your personal information that we hold. You may also opt out of receiving marketing communications from us at any time by contacting us directly or by following the unsubscribe instructions in any email we send you. To exercise these rights, please contact us using the information below.
-              </p>
+              <h2 style={sectionHeadingStyle}>Online Privacy Policy Only</h2>
+              <p style={paragraphStyle}>This Privacy Policy applies to information collected through our website, social media pages, electronic communications, and online forms. It does not apply to information collected offline unless otherwise stated.</p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>9. Changes to This Policy</h2>
-              <p style={{ marginBottom: "1rem" }}>
-                We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page with an updated effective date. We encourage you to review this policy periodically.
-              </p>
+              <h2 style={sectionHeadingStyle}>Your Consent</h2>
+              <p style={paragraphStyle}>By using our website, submitting information through our website or social media pages, or communicating with us electronically, you consent to this Privacy Policy.</p>
 
-              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0d1f5c", marginTop: "2rem", marginBottom: "0.75rem" }}>10. Contact Us</h2>
-              <p style={{ marginBottom: "0.5rem" }}>
-                If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
-              </p>
-              <div style={{ background: "#f7f9fc", borderRadius: 10, padding: "1.25rem", marginTop: "0.75rem" }}>
-                <div style={{ fontWeight: 700, color: "#0d1f5c", marginBottom: "0.5rem" }}>Medicare Information Project</div>
-                <div style={{ color: "#374151", fontSize: "0.93rem", lineHeight: 1.8 }}>
-                  915 Oakfield Dr, Suite A<br />
-                  Brandon, Florida 33511<br />
-                  Phone: <a href="tel:8136995559" style={{ color: "#1a3fa8" }}>813-699-5559</a><br />
-                  Email: <a href="mailto:info@medicareinfopro.com" style={{ color: "#1a3fa8" }}>info@medicareinfopro.com</a>
-                </div>
-              </div>
+              <h2 style={sectionHeadingStyle}>Changes to This Privacy Policy</h2>
+              <p style={paragraphStyle}>We may update this Privacy Policy from time to time. If we make changes, we will post the revised Privacy Policy on this page and update the date below. Where appropriate, we may also notify you by email.</p>
+              <p style={paragraphStyle}>Policy changes will apply only to information collected after the effective date of the change unless otherwise stated. Please check this page periodically for updates.</p>
 
-              <div style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #e8eaf0", fontSize: "0.85rem", color: "#6b7280" }}>
-                <p>
-                  We do not offer every plan available in your area. Currently we represent 17 organizations which offer 149 products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options. We are not part of, affiliated with, reviewed, or endorsed by CMS. A non-government entity.
-                </p>
-              </div>
+              <h2 style={sectionHeadingStyle}>Privacy Policy Customer Pledge</h2>
+              <p style={paragraphStyle}>We pledge to our customers and website visitors that we make a dedicated effort to maintain privacy practices consistent with applicable privacy laws, regulations, and recognized privacy principles, including:</p>
+              <ul style={listStyle}>
+                <li>Federal Trade Commission Fair Information Practices</li>
+                <li>Children&apos;s Online Privacy Protection Act</li>
+                <li>CAN-SPAM Act</li>
+                <li>Applicable privacy and marketing laws and regulations</li>
+              </ul>
+              <p style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #e8eaf0", fontSize: "0.9rem", color: "#4b5563", fontWeight: 700 }}>
+                This policy was last modified in June 2026.
+              </p>
             </div>
-          </div>
+          </article>
         </div>
       </main>
       <Footer />
