@@ -147,7 +147,7 @@ export default function PrivacyPolicyClient() {
               <h2 style={sectionHeadingStyle}>Disclosure of Your Information</h2>
               <p style={paragraphStyle}>We do not sell, rent, trade, or otherwise transfer your personally identifiable information to outside parties for their independent marketing purposes.</p>
               <p style={paragraphStyle}>
-                This does not include trusted third parties who assist us in operating our website, conducting our business, servicing you, responding to your requests, or providing services on our behalf, so long as these parties agree to keep this information confidential and use it only for authorized purposes.
+                This does not include trusted third parties who assist us in operating our website, conducting our business, servicing you, responding to your requests, or providing services on our behalf, so long as those parties agree to keep this information confidential and use it only for authorized purposes.
               </p>
               <p style={paragraphStyle}>We may also disclose your information when we believe disclosure is appropriate or necessary to:</p>
               <ul style={listStyle}>
@@ -194,7 +194,7 @@ export default function PrivacyPolicyClient() {
               <p style={paragraphStyle}>By using our website, submitting information through our website or social media pages, or communicating with us electronically, you consent to this Privacy Policy.</p>
 
               <h2 style={sectionHeadingStyle}>Changes to This Privacy Policy</h2>
-              <p style={paragraphStyle}>We may update this Privacy Policy from time to time. If we make changes, we will post the revised Privacy Policy on this page and update the date below. Where appropriate, we may also notify you by email.</p>
+              <p style={paragraphStyle}>We may update this Privacy Policy from time to time. If we make changes, we will post the revised Privacy Policy on this page and update the modification date below. Where appropriate, we may also notify you by email.</p>
               <p style={paragraphStyle}>Policy changes will apply only to information collected after the effective date of the change unless otherwise stated. Please check this page periodically for updates.</p>
 
               <h2 style={sectionHeadingStyle}>Privacy Policy Customer Pledge</h2>
@@ -206,7 +206,7 @@ export default function PrivacyPolicyClient() {
                 <li>Applicable privacy and marketing laws and regulations</li>
               </ul>
               <p style={{ marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #e8eaf0", fontSize: "0.9rem", color: "#4b5563", fontWeight: 700 }}>
-                This policy was last modified in June 2026.
+                This policy was last modified on 06/2026.
               </p>
             </div>
           </article>
