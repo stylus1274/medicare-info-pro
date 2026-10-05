@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import FaqQuestionPage from "@/components/FaqQuestionPage";
 
 export const dynamic = "force-dynamic";
@@ -53,6 +54,10 @@ const FAQ = {
     },
   ],
   relatedFaqs: [
+    {
+      question: "How do I check Medicare doctor and hospital networks in Brandon?",
+      href: "/check-medicare-doctor-hospital-networks-brandon-fl/",
+    },
     {
       question: "What is a Medicare Special Enrollment Period?",
       href: "/what-is-the-special-enrollment-period",

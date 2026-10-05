@@ -119,7 +119,7 @@ const faqSchema = {
       "name": "Which hospitals in Brandon accept Medicare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "HCA Florida Brandon Hospital and AdventHealth Brandon both accept Original Medicare. Most Medicare Advantage plans in Hillsborough County also include these hospitals in-network, but network participation varies by carrier and plan year. Our agents verify your specific hospital and doctor networks before recommending any plan.",
+        "text": "For planned care at HCA Florida Brandon Hospital or another facility, confirm that the hospital takes your coverage. With Medicare Advantage, check the exact plan and coverage year with the insurer and hospital. Confirm separately billing clinicians and outpatient facilities as well; a general insurer list does not establish participation in every Medicare plan.",
       },
     },
     {
@@ -222,6 +222,11 @@ export default function Page() {
           localSupportSection: {
             nextSteps: [
               {
+                title: "Checking your doctor and hospital networks",
+                description: "Verify your exact Medicare plan, coverage year, office locations, and preferred hospital before choosing or changing coverage.",
+                href: "/check-medicare-doctor-hospital-networks-brandon-fl/",
+              },
+              {
                 title: "Turning 65 or new to Medicare",
                 description: "Review your Initial Enrollment Period, the parts of Medicare, and the documents that can help you prepare.",
                 href: "/turning-65-and-becoming-eligible-for-medicare/",
@@ -291,7 +296,7 @@ export default function Page() {
             },
             {
               q: "Which hospitals in Brandon accept Medicare?",
-              a: "HCA Florida Brandon Hospital and AdventHealth Brandon both accept Original Medicare. Most Medicare Advantage plans in Hillsborough County include these hospitals in-network, but network participation varies by carrier and plan year. Our agents verify your specific hospital and doctor networks before recommending any plan.",
+              a: "For planned care at HCA Florida Brandon Hospital or another facility, confirm that the hospital takes your coverage. With Medicare Advantage, check the exact plan and coverage year with the insurer and hospital. Confirm separately billing clinicians and outpatient facilities as well; a general insurer list does not establish participation in every Medicare plan.",
             },
             {
               q: "Is working with a Medicare agent in Brandon free?",

@@ -10,6 +10,13 @@ export interface SearchResult {
 }
 
 export const SEARCH_INDEX: SearchResult[] = [
+  {
+    title: "Check Medicare Doctor and Hospital Networks in Brandon, FL",
+    description: "Verify your exact plan, doctors, office locations, and hospital before choosing or changing Medicare coverage.",
+    url: "/check-medicare-doctor-hospital-networks-brandon-fl/",
+    category: "Guide",
+    tags: ["Brandon", "doctor", "hospital", "provider", "network", "HMO", "PPO", "accepts Medicare", "HCA", "Valrico", "Riverview", "Seffner"],
+  },
   // Local services connected to the homepage.
   {"title": "Medicare in Brandon, FL", "description": "Explore local Medicare coverage options and enrollment guidance from our Brandon office.", "url": "/medicare-brandon-fl", "category": "Local Services", "tags": ["brandon local medicare insurance agent office"]},
   {"title": "Turning 65 in Brandon", "description": "Prepare for your first Medicare enrollment and compare coverage options.", "url": "/turning-65-brandon-fl", "category": "Local Services", "tags": ["brandon turning 65 enrollment new medicare"]},

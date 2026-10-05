@@ -136,7 +136,7 @@ interface RelatedPost {
 interface Author {
   name: string;
   title: string;
-  photo: string;
+  photo?: string;
 }
 
 const GREG_WOHL: Author = {
@@ -158,6 +158,7 @@ interface BlogPost {
   sections: PostSection[];
   relatedPosts: RelatedPost[];
   serviceAreas?: string[];
+  consultation?: { heading: string; body: string; href: string; label: string };
 }
 
 const JENNIFER_LOADER_WOHL: Author = {
@@ -270,7 +271,7 @@ export default function BlogPostClient({ post }: Props) {
 
           <h1
             className="text-[1.9rem] sm:text-[2.6rem] font-bold leading-tight mb-4 max-w-3xl text-white"
-            style={{ fontFamily: "'Merriweather', serif" }}
+            style={{ fontFamily: "'Merriweather', serif", textWrap: "balance" }}
           >
             {post.title}
           </h1>
@@ -336,11 +337,11 @@ export default function BlogPostClient({ post }: Props) {
 
             {/* Written By */}
             <div className="flex items-center gap-3 pb-6 mb-6 border-b border-gray-100">
-              <img
+              {post.author.photo && <img
                 src={post.author.photo}
                 alt={`Photo of ${post.author.name}`}
                 className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border-2 border-gray-100"
-              />
+              />}
               <div>
                 <p className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-500 mb-0.5">Written By</p>
                 <p className="font-bold text-gray-900 text-[0.95rem] leading-tight">{post.author.name}</p>
@@ -494,7 +495,7 @@ export default function BlogPostClient({ post }: Props) {
                     <a
                       href="tel:8136995559"
                       aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
-                      className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
+                      className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a800] text-white font-bold text-[0.9rem] hover:bg-[#ffb31a] transition-colors"
                     >
                       <Phone size={16} aria-hidden="true" />
                       Call (813) 699-5559
@@ -515,15 +516,15 @@ export default function BlogPostClient({ post }: Props) {
                 className="text-[1.3rem] font-bold mb-2"
                 style={{ fontFamily: "'Merriweather', serif" }}
               >
-                Ready to Compare Medicare Plans?
+                {post.consultation?.heading ?? "Ready to Compare Medicare Plans?"}
               </h3>
               <p className="text-white/90 text-[0.9rem] mb-5 leading-relaxed">
-                Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you.
+                {post.consultation?.body ?? "Our licensed Medicare specialists will compare plans from multiple carriers at no cost to you."}
               </p>
               <a
                 href="tel:8136995559"
                 aria-label="Call MIP at (813) 699-5559 to compare Medicare plans"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.9rem] hover:bg-[#e09515] transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#f5a800] text-white font-bold text-[0.9rem] hover:bg-[#ffb31a] transition-colors"
               >
                 <Phone size={16} aria-hidden="true" />
                 Call (813) 699-5559
@@ -637,24 +638,24 @@ export default function BlogPostClient({ post }: Props) {
                 style={{ background: "linear-gradient(135deg, #0d1f5c 0%, #1a3fa8 100%)" }}
               >
                 <h3 className="text-[1rem] font-bold mb-2" style={{ fontFamily: "'Merriweather', serif" }}>
-                  Get a Free Quote
+                  {post.consultation?.heading ?? "Get a Free Quote"}
                 </h3>
                 <p className="text-[0.85rem] text-white/90 mb-4 leading-relaxed">
-                  Compare Medicare plan rates from multiple carriers. Our specialists are available at no cost to you.
+                  {post.consultation?.body ?? "Compare Medicare plan rates from multiple carriers. Our specialists are available at no cost to you."}
                 </p>
                 <a
                   href="tel:8136995559"
-                  aria-label="Call MIP at (813) 699-5559 for a free Medicare quote"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#f5a623] text-[#0d1f5c] font-bold text-[0.875rem] hover:bg-[#e09515] transition-colors w-full justify-center mb-2"
+                  aria-label="Call MIP at (813) 699-5559 for Medicare help"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#f5a800] text-white font-bold text-[0.875rem] hover:bg-[#ffb31a] transition-colors w-full justify-center mb-2"
                 >
                   <Phone size={15} aria-hidden="true" />
                   813-699-5559
                 </a>
                 <Link
-                  href="/do-i-need-a-supplement"
+                  href={post.consultation?.href ?? "/do-i-need-a-supplement"}
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/40 text-white font-semibold text-[0.875rem] hover:bg-white/10 transition-colors w-full justify-center"
                 >
-                  Do I Need a Supplement? <ArrowRight size={13} aria-hidden="true" />
+                  {post.consultation?.label ?? "Do I Need a Supplement?"} <ArrowRight size={13} aria-hidden="true" />
                 </Link>
               </div>
 

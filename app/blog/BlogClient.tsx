@@ -70,6 +70,18 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    slug: "/check-medicare-doctor-hospital-networks-brandon-fl/",
+    title: "How to Check Medicare Doctor and Hospital Networks in Brandon, FL",
+    excerpt: "Check your exact Medicare plan, doctors, office locations, and preferred hospital with this practical Brandon provider-network checklist.",
+    category: "Coverage",
+    author: "Medicare Information Project",
+    date: "October 2026",
+    readTime: "9 min read",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/mip-hero-couple_181d53a9.jpg",
+    live: true,
+    sortOrder: -2,
+  },
+  {
     slug: "/moving-to-brandon-fl-with-medicare",
     title: "Moving to Brandon, FL With Medicare: What to Update and Review",
     excerpt:
