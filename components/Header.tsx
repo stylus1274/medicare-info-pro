@@ -243,7 +243,7 @@ export default function Header() {
         <div style={{ display: "flex", alignItems: "stretch", justifyContent: "space-between", height: 88, minWidth: 0, width: "100%" }}>
           {/* Logo */}
           <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", flexShrink: 0, minWidth: 0 }}>
-            <div className="ml-3 sm:ml-6 lg:ml-[100px]" style={{
+            <div className="ml-3 sm:ml-6 2xl:ml-[100px]" style={{
               background: "#1a3fa8", borderRadius: 10, padding: "0.4rem 0.75rem",
               display: "flex", alignItems: "center", justifyContent: "center",
               border: "2px solid #2a52c4", marginRight: "0.75rem",
@@ -254,7 +254,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex" style={{ alignItems: "center", flex: 1, padding: "0 0.5rem", justifyContent: "center" }}>
+          <nav className="hidden 2xl:flex" style={{ alignItems: "center", flex: 1, padding: "0 0.5rem", justifyContent: "center" }}>
             {NAV_ITEMS.map((item) => (
               <div
                 key={item.label}
@@ -266,7 +266,7 @@ export default function Header() {
                   href={item.href}
                   style={{
                     display: "flex", alignItems: "center", gap: "0.25rem",
-                    padding: "0 0.75rem", height: "100%",
+                    padding: "0 0.5rem", height: "100%",
                     color: activeMenu === item.label ? "#1a3fa8" : "#1a2340",
                     textDecoration: "none", fontSize: "0.9rem", fontWeight: 700,
                     whiteSpace: "nowrap", transition: "color 0.15s",
@@ -467,7 +467,7 @@ export default function Header() {
 
             <Link
               href="/get-started"
-              className="hidden lg:inline-flex"
+              className="hidden 2xl:inline-flex"
               style={{
                 background: "#f5a800", color: "#ffffff",
                 padding: "0.55rem 1.25rem", borderRadius: 999, textDecoration: "none",
@@ -479,7 +479,7 @@ export default function Header() {
               Free Consultation <ArrowRight size={14} />
             </Link>
             <button
-              className="lg:hidden p-2.5 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+              className="2xl:hidden p-2.5 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -497,7 +497,7 @@ export default function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="lg:hidden w-full border-b bg-white shadow-xl overflow-hidden"
+            className="2xl:hidden w-full border-b bg-white shadow-xl overflow-hidden"
             style={{ position: "sticky", top: 88, zIndex: 99 }}
           >
             <div className="p-5 space-y-1 max-h-[80vh] overflow-y-auto">

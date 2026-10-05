@@ -159,6 +159,8 @@ interface BlogPost {
   relatedPosts: RelatedPost[];
   serviceAreas?: string[];
   consultation?: { heading: string; body: string; href: string; label: string };
+  sidebarFacts?: { heading: string; items: string[] };
+  sidebarTools?: { label: string; href: string; desc: string }[];
 }
 
 const JENNIFER_LOADER_WOHL: Author = {
@@ -662,17 +664,17 @@ export default function BlogPostClient({ post }: Props) {
               {/* Quick Facts */}
               <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5">
                 <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-amber-800 mb-4">
-                  Plan G Quick Facts
+                  {post.sidebarFacts?.heading ?? "Plan G Quick Facts"}
                 </h3>
                 <ul className="space-y-3">
-                  {[
+                  {(post.sidebarFacts?.items ?? [
                     "Covers Part A deductible ($1,736 in 2026)",
                     "Covers Part B coinsurance (20%)",
                     "Covers skilled nursing coinsurance",
                     "Up to $50,000 foreign travel emergency",
                     "Does not cover the Part B deductible ($283 in 2026)",
                     "High-deductible option: $2,950 in 2026",
-                  ].map((fact, i) => (
+                  ]).map((fact, i) => (
                     <li key={i} className="flex items-start gap-2 text-[0.825rem] text-gray-800">
                       <CheckCircle2 size={14} className="text-amber-700 flex-shrink-0 mt-0.5" aria-hidden="true" />
                       {fact}
@@ -685,11 +687,11 @@ export default function BlogPostClient({ post }: Props) {
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
                 <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-600 mb-4">Related Tools</h3>
                 <ul className="space-y-3">
-                  {[
+                  {(post.sidebarTools ?? [
                     { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Medigap decision guide" },
                     { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums and deductibles" },
                     { label: "Original vs. Advantage", href: "/original-vs-advantage", desc: "Compare your options" },
-                  ].map((tool) => (
+                  ]).map((tool) => (
                     <li key={tool.href}>
                       <Link
                         href={tool.href}

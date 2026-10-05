@@ -70,6 +70,15 @@ const POST = {
   readTime: "9 min read",
   image: IMAGE,
   imageAlt: IMAGE_ALT,
+  sidebarFacts: {
+    heading: "Provider Check Checklist",
+    items: ["Exact plan name and ID", "Coverage year", "Doctor and practice name", "Office street address", "Hospital and outpatient facilities", "Plan and provider confirmation"],
+  },
+  sidebarTools: [
+    { label: "Brandon Medicare Resources", href: "/medicare-brandon-fl/", desc: "Your local coverage starting point" },
+    { label: "Compare Brandon Plans", href: "/comparing-medicare-plans-brandon/", desc: "Review coverage, providers, and costs" },
+    { label: "If a Doctor Leaves Your Plan", href: "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug/", desc: "Questions and next steps" },
+  ],
   consultation: {
     heading: "Get Help Checking Your Providers",
     body: "Bring your doctors, office addresses, preferred hospital, and exact plan details to a free consultation with our Brandon team.",
