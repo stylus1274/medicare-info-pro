@@ -158,7 +158,7 @@ const POST = {
     },
   ],
   relatedPosts: [
-    { title: "Medicare in Brandon, FL", href: "/medicare-brandon-fl/", category: "Enrollment" as const },
+    { title: "Helping a Parent Choose Medicare in Brandon", href: "/helping-parent-choose-medicare-brandon-fl/", category: "Enrollment" as const },
     { title: "Medicare Advantage Plans in Brandon", href: "/medicare-advantage-plans-brandon-florida/", category: "Plans" as const },
     { title: "Comparing Medicare Plans in Brandon", href: "/comparing-medicare-plans-brandon/", category: "Plans" as const },
   ],

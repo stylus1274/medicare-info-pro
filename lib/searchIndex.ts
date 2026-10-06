@@ -11,6 +11,13 @@ export interface SearchResult {
 
 export const SEARCH_INDEX: SearchResult[] = [
   {
+    title: "Helping a Parent Choose Medicare in Brandon, FL",
+    description: "Prepare for a family Medicare consultation, compare coverage, and check your parent's doctors, prescriptions, and costs.",
+    url: "/helping-parent-choose-medicare-brandon-fl/",
+    category: "Guide",
+    tags: ["parent", "parents", "family", "adult children", "caregiver", "Brandon", "Medicare", "permission", "consultation", "compare plans"],
+  },
+  {
     title: "Check Medicare Doctor and Hospital Networks in Brandon, FL",
     description: "Verify your exact plan, doctors, office locations, and hospital before choosing or changing Medicare coverage.",
     url: "/check-medicare-doctor-hospital-networks-brandon-fl/",

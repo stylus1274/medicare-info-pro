@@ -70,6 +70,18 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+    slug: "/helping-parent-choose-medicare-brandon-fl/",
+    title: "Helping a Parent Choose Medicare in Brandon, FL",
+    excerpt: "Help a parent prepare documents, compare coverage and costs, check doctors and prescriptions, and plan a family Medicare consultation in Brandon.",
+    category: "Enrollment",
+    author: "Medicare Information Project",
+    date: "October 2026",
+    readTime: "9 min read",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/mip-hero-couple_181d53a9.jpg",
+    live: true,
+    sortOrder: -3,
+  },
+  {
     slug: "/check-medicare-doctor-hospital-networks-brandon-fl/",
     title: "How to Check Medicare Doctor and Hospital Networks in Brandon, FL",
     excerpt: "Check your exact Medicare plan, doctors, office locations, and preferred hospital with this practical Brandon provider-network checklist.",

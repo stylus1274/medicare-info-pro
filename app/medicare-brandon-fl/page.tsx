@@ -222,6 +222,11 @@ export default function Page() {
           localSupportSection: {
             nextSteps: [
               {
+                title: "Helping a parent choose Medicare",
+                description: "Prepare for a family consultation, compare costs, and organize your parent's doctors, prescriptions, and coverage questions.",
+                href: "/helping-parent-choose-medicare-brandon-fl/",
+              },
+              {
                 title: "Checking your doctor and hospital networks",
                 description: "Verify your exact Medicare plan, coverage year, office locations, and preferred hospital before choosing or changing coverage.",
                 href: "/check-medicare-doctor-hospital-networks-brandon-fl/",
