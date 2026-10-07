@@ -12,6 +12,7 @@ export default function robots(): MetadataRoute.Robots {
       "https://medicareinfopro.com/sitemap.xml",
       "https://medicareinfopro.com/pages-sitemap.xml",
       "https://medicareinfopro.com/post-sitemap.xml",
+      "https://medicareinfopro.com/faq-sitemap.xml",
     ],
   };
 }
