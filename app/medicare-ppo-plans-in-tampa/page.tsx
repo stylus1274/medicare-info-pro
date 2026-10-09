@@ -25,33 +25,6 @@ const webpageSchema = {
 } as const;
 
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/medicare-ppo-plans-in-tampa#localbusiness",
-  "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Tampa, FL.",
-  "url": "https://medicareinfopro.com/medicare-ppo-plans-in-tampa",
-  "telephone": "+1-813-699-5559",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Tampa",
-    "addressRegion": "FL",
-    "postalCode": "33602",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Tampa"
-  },
-  "serviceType": "Medicare Insurance Consulting",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  }
-} as const;
-
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -92,11 +65,7 @@ export default function PPOPlansPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <PPOPlansClient />
+<PPOPlansClient />
     </>
   );
 }

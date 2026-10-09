@@ -117,38 +117,6 @@ const webpageSchema = {
 } as const;
 
 // Fix 3: Correct LocalBusiness address to actual Brandon office
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/#insuranceagency",
-  "name": "Medicare Information Project",
-  "description": "Independent, licensed Medicare insurance agents serving Tampa and the greater Tampa Bay area. We compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers.",
-  "url": "https://medicareinfopro.com/medicare-insurance-agent-tampa-fl",
-  "telephone": "+1-813-699-5559",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr, Suite A",
-    "addressLocality": "Brandon",
-    "addressRegion": "FL",
-    "postalCode": "33511",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Tampa" },
-    { "@type": "City", "name": "Brandon" },
-    { "@type": "City", "name": "Riverview" },
-    { "@type": "AdministrativeArea", "name": "Hillsborough County" }
-  ],
-  "geo": { "@type": "GeoCoordinates", "latitude": 27.9378, "longitude": -82.2859 },
-  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }],
-  "priceRange": "$0 consultation",
-  "serviceType": "Medicare Insurance Consulting",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Medicare Information Project",
-    "@id": "https://medicareinfopro.com/#organization"
-  }
-} as const;
 
 // Fix 4: FAQ schema
 const faqSchema = {
@@ -173,11 +141,7 @@ export default function MedicareInsuranceAgentTampaClient() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
+<script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />

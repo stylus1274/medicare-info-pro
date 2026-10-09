@@ -1,32 +1,6 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://medicareinfopro.com/local-medicare-agent-plant-city#localbusiness",
-  "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Plant City, FL.",
-  "url": "https://medicareinfopro.com/local-medicare-agent-plant-city",
-  "telephone": "+1-813-699-5559",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Plant City",
-    "addressRegion": "FL",
-    "postalCode": "33563",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Plant City"
-  },
-  "serviceType": "Medicare Insurance Consulting",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  }
-} as const;
 
 export const dynamic = "force-dynamic";
 
@@ -38,11 +12,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-    <LocalAgentPage
+<LocalAgentPage
       config={{
         city: "Plant City",
         cityFull: "Plant City, FL",

@@ -78,38 +78,6 @@ const webpageSchema = {
 } as const;
 
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/#insuranceagency",
-  "name": "Medicare Information Pro",
-  "description": "Licensed Medicare insurance specialists serving Tampa, FL.",
-  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-in-tampa-fl",
-  "telephone": "+1-813-699-5559",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr, Suite A",
-    "addressLocality": "Brandon",
-    "addressRegion": "FL",
-    "postalCode": "33511",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Tampa" },
-    { "@type": "City", "name": "Brandon" },
-    { "@type": "AdministrativeArea", "name": "Hillsborough County" }
-  ],
-  "geo": { "@type": "GeoCoordinates", "latitude": 27.9378, "longitude": -82.2859 },
-  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }],
-  "priceRange": "$0 consultation",
-  "serviceType": "Medicare Insurance Consulting",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  }
-} as const;
-
 export default function MedicareEnrollmentAssistanceTampaFLClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -119,11 +87,7 @@ export default function MedicareEnrollmentAssistanceTampaFLClient() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-    <div className="min-h-screen bg-white">
+<div className="min-h-screen bg-white">
       <Header />
 
       {/* Hero */}
