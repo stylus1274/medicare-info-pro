@@ -1,5 +1,36 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
+
+const canonicalUrl = "https://medicareinfopro.com/2025-medicare-scams-florida/";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "Medicare Scams in Florida 2026: How to Spot and Avoid Them",
+  description:
+    "Medicare fraud costs billions of dollars each year and Florida is one of the most targeted states. Learn the most common Medicare scams in 2026, the red flags to watch for, and exactly what to do if you are targeted.",
+  url: canonicalUrl,
+  datePublished: "2026-06-04",
+  dateModified: "2026-06-05",
+  image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80",
+  author: {
+    "@type": "Person",
+    name: "Greg Wohl",
+    jobTitle: "Licensed Medicare Specialist",
+    url: "https://medicareinfopro.com/greg-wohl",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Medicare Information Project",
+    url: "https://medicareinfopro.com",
+    "@id": "https://medicareinfopro.com/#organization",
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+} as const;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -179,5 +210,13 @@ const POST = {
 };
 
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }

@@ -5,6 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Out-of-Pocket Costs: Your Guide to Copays, Deductibles, and Maximizing Savings",
+  "description": "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to limit your annual costs.",
   "url": "https://medicareinfopro.com/medicare-out-of-pocket-costs/",
   "datePublished": "2026-06-19",
   "dateModified": "2026-06-19",
@@ -17,7 +18,7 @@ const articleSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "url": "https://medicareinfopro.com",
     "@id": "https://medicareinfopro.com/#organization"
   },
@@ -249,5 +250,13 @@ const POST = {
 };
 
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }

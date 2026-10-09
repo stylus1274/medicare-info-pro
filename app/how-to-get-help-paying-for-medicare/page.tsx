@@ -5,6 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
+  "description": "Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs. Learn about Extra Help, the Low Income Subsidy, and Medicare Savings Programs and how to apply.",
   "url": "https://medicareinfopro.com/how-to-get-help-paying-for-medicare/",
   "datePublished": "2026-06-19",
   "dateModified": "2026-06-19",
@@ -17,7 +18,7 @@ const articleSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Medicare Information Pro",
+    "name": "Medicare Information Project",
     "url": "https://medicareinfopro.com",
     "@id": "https://medicareinfopro.com/#organization"
   },
@@ -243,5 +244,13 @@ const POST = {
 };
 
 export default function Page() {
-  return <BlogPostClient post={POST} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <BlogPostClient post={POST} />
+    </>
+  );
 }
