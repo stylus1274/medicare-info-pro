@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Florida Health Insurance Cost in 2026: What to Expect",
-  "url": "https://medicareinfopro.com/blog/florida-health-insurance-cost",
+  "url": "https://medicareinfopro.com/florida-health-insurance-cost/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/florida-health-insurance-cost"
+    "@id": "https://medicareinfopro.com/florida-health-insurance-cost/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Florida Health Insurance Cost in 2026: What to Expect",
     description:
       "ACA marketplace premiums, Medicare costs, employer plan costs, and strategies to reduce what you pay in Florida in 2026.",
-    url: "https://medicareinfopro.com/blog/florida-health-insurance-cost",
+    url: "https://medicareinfopro.com/florida-health-insurance-cost/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "ACA marketplace premiums, Medicare costs, employer plan costs, and strategies to reduce what you pay in Florida in 2026.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/florida-health-insurance-cost",
+    canonical: "https://medicareinfopro.com/florida-health-insurance-cost/",
   },
 };
 

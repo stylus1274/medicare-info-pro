@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Are There So Many Medicare Plan Letters? A-N Explained",
-  "url": "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters",
+  "url": "https://medicareinfopro.com/medicare-why-are-there-so-many-letters/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters"
+    "@id": "https://medicareinfopro.com/medicare-why-are-there-so-many-letters/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Are There So Many Medicare Plan Letters? A-N Explained",
     description:
       "Medicare plan letters A through N explained. What each Medigap plan covers, why so many exist, and which plans are most popular in Florida.",
-    url: "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters",
+    url: "https://medicareinfopro.com/medicare-why-are-there-so-many-letters/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Medicare plan letters A through N explained. What each Medigap plan covers and which are most popular in Florida.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-why-are-there-so-many-letters",
+    canonical: "https://medicareinfopro.com/medicare-why-are-there-so-many-letters/",
   },
 };
 

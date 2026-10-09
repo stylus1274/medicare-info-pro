@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
-  "url": "https://medicareinfopro.com/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
+  "url": "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare"
+    "@id": "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
     description:
       "You can return to Original Medicare from Medicare Advantage, but the window and Medigap rules are critical. Here is everything Florida beneficiaries need to know.",
-    url: "https://medicareinfopro.com/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
+    url: "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
+      "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
   },
 };
 

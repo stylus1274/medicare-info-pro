@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medigap Premium Increases: Why They Happen and How to Manage Them",
-  "url": "https://medicareinfopro.com/blog/medigap-premium-increases",
+  "url": "https://medicareinfopro.com/medigap-premium-increases/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medigap-premium-increases"
+    "@id": "https://medicareinfopro.com/medigap-premium-increases/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medigap Premium Increases: Why They Happen and How to Manage Them",
     description:
       "Why Medigap premiums increase, how rating methods affect long-term costs, and strategies to manage or reduce your Medicare supplement premium in Florida.",
-    url: "https://medicareinfopro.com/blog/medigap-premium-increases",
+    url: "https://medicareinfopro.com/medigap-premium-increases/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Why Medigap premiums increase and strategies to manage your Medicare supplement premium in Florida.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medigap-premium-increases",
+    canonical: "https://medicareinfopro.com/medigap-premium-increases/",
   },
 };
 

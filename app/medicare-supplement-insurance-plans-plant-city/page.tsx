@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Supplement Insurance Plans Plant City FL | Medicare Information Project",
   description: "Compare Medicare Supplement (Medigap) insurance plans in Plant City, FL. We help you find the right plan to cover the gaps in Original Medicare at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-supplement-insurance-plans-plant-city/" },};
 
 export default function Page() {
   return (

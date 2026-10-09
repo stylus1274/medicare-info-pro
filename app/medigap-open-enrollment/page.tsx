@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
-const canonicalUrl = "https://medicareinfopro.com/medigap-open-enrollment";
+const canonicalUrl = "https://medicareinfopro.com/medigap-open-enrollment/";
 const publishedDate = "2026-02-01";
 const modifiedDate = "2026-08-16";
 

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Can I Have Both Medicare and Medicaid? Dual Eligibility Explained",
-  "url": "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid",
+  "url": "https://medicareinfopro.com/can-i-have-both-medicare-and-medicaid/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid"
+    "@id": "https://medicareinfopro.com/can-i-have-both-medicare-and-medicaid/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Can I Have Both Medicare and Medicaid? Dual Eligibility Explained",
     description:
       "How dual eligibility works in Florida, what benefits you receive, and how Medicare and Medicaid coordinate for dual-eligible beneficiaries.",
-    url: "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid",
+    url: "https://medicareinfopro.com/can-i-have-both-medicare-and-medicaid/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "How dual eligibility works in Florida, what benefits you receive, and how the programs coordinate.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/can-i-have-both-medicare-and-medicaid",
+    canonical: "https://medicareinfopro.com/can-i-have-both-medicare-and-medicaid/",
   },
 };
 

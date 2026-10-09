@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
-  "url": "https://medicareinfopro.com/medicare-advantage-vs-medigap",
+  "url": "https://medicareinfopro.com/medicare-advantage-vs-medigap/",
   "datePublished": "2026-06-26",
   "dateModified": "2026-06-26",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/medicare-advantage-vs-medigap"
+    "@id": "https://medicareinfopro.com/medicare-advantage-vs-medigap/"
   }
 } as const;
 
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
     description:
       "Medicare Advantage and Medigap are the two main ways to supplement Original Medicare. Compare costs, coverage, flexibility, and which option is better for your health situation in 2026.",
-    url: "https://medicareinfopro.com/medicare-advantage-vs-medigap",
+    url: "https://medicareinfopro.com/medicare-advantage-vs-medigap/",
     type: "article",
     images: [
       {
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
       "Medicare Advantage and Medigap are the two main ways to supplement Original Medicare. Compare costs, coverage, and flexibility for 2026.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/medicare-advantage-vs-medigap",
+    canonical: "https://medicareinfopro.com/medicare-advantage-vs-medigap/",
   },
 };
 

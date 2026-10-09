@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Coverage for Cancer Treatment: What Is Covered in 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment",
+  "url": "https://medicareinfopro.com/medicare-plans-cancer-treatment/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment"
+    "@id": "https://medicareinfopro.com/medicare-plans-cancer-treatment/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Coverage for Cancer Treatment: What Is Covered in 2026",
     description:
       "Medicare covers most cancer treatments, but costs vary significantly by plan type. Learn what is covered, what you will pay, and how to choose the right plan if you have cancer.",
-    url: "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment",
+    url: "https://medicareinfopro.com/medicare-plans-cancer-treatment/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare covers most cancer treatments. Learn what is covered, what you will pay, and how to choose the right plan.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-plans-cancer-treatment",
+    canonical: "https://medicareinfopro.com/medicare-plans-cancer-treatment/",
   },
 };
 

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Set-Aside Explained: What It Is and When You Need One",
-  "url": "https://medicareinfopro.com/blog/medicare-set-aside-explained",
+  "url": "https://medicareinfopro.com/medicare-set-aside-explained/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-set-aside-explained"
+    "@id": "https://medicareinfopro.com/medicare-set-aside-explained/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Set-Aside Explained: What It Is and When You Need One",
     description:
       "Learn what a Medicare Set-Aside is, when it is required in personal injury or workers compensation settlements, and how to handle it correctly.",
-    url: "https://medicareinfopro.com/blog/medicare-set-aside-explained",
+    url: "https://medicareinfopro.com/medicare-set-aside-explained/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "What a Medicare Set-Aside is, when it is required, and how to handle it correctly in personal injury and workers compensation settlements.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-set-aside-explained",
+    canonical: "https://medicareinfopro.com/medicare-set-aside-explained/",
   },
 };
 

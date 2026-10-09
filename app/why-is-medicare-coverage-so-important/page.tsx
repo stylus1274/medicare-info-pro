@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Is Medicare Coverage So Important? 7 Reasons That Matter",
-  "url": "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important",
+  "url": "https://medicareinfopro.com/why-is-medicare-coverage-so-important/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important"
+    "@id": "https://medicareinfopro.com/why-is-medicare-coverage-so-important/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Why Is Medicare Coverage So Important? 7 Reasons That Matter",
     description:
       "Medicare coverage protects seniors from catastrophic medical costs, provides access to preventive care, and is the foundation of retirement financial security. Here is why it matters.",
-    url: "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important",
+    url: "https://medicareinfopro.com/why-is-medicare-coverage-so-important/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Medicare protects seniors from catastrophic costs, provides preventive care access, and is the foundation of retirement financial security.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/why-is-medicare-coverage-so-important",
+    canonical: "https://medicareinfopro.com/why-is-medicare-coverage-so-important/",
   },
 };
 

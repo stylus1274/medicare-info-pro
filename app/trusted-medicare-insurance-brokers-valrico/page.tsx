@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Trusted Medicare Insurance Brokers Valrico FL | Medicare Information Project",
   description: "Find trusted Medicare insurance brokers in Valrico, FL. Independent brokers compare 17+ carriers at no cost to find the right plan for you.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/trusted-medicare-insurance-brokers-valrico/" },};
 
 export default function Page() {
   return (

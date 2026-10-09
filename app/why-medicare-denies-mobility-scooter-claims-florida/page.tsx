@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Medicare Denies Mobility Scooter Claims in Florida",
-  "url": "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida",
+  "url": "https://medicareinfopro.com/why-medicare-denies-mobility-scooter-claims-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida"
+    "@id": "https://medicareinfopro.com/why-medicare-denies-mobility-scooter-claims-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Medicare Denies Mobility Scooter Claims in Florida",
     description:
       "The top reasons Medicare denies mobility scooter claims, what documentation you need to get approved, and how to appeal a denied claim in Florida.",
-    url: "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida",
+    url: "https://medicareinfopro.com/why-medicare-denies-mobility-scooter-claims-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/why-medicare-denies-mobility-scooter-claims-florida",
+      "https://medicareinfopro.com/why-medicare-denies-mobility-scooter-claims-florida/",
   },
 };
 

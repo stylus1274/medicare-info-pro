@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
-  "url": "https://medicareinfopro.com/blog/does-medicare-cover-home-health-care",
+  "url": "https://medicareinfopro.com/does-medicare-cover-home-health-care/",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17",
   "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/does-medicare-cover-home-health-care"
+    "@id": "https://medicareinfopro.com/does-medicare-cover-home-health-care/"
   }
 } as const;
 
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
     description:
       "Medicare covers skilled home health care when you meet specific criteria. Learn what services are covered, what is excluded, how long coverage lasts, and how Medicare Advantage may expand your benefits.",
-    url: "https://medicareinfopro.com/blog/does-medicare-cover-home-health-care",
+    url: "https://medicareinfopro.com/does-medicare-cover-home-health-care/",
     type: "article",
     images: [
       {
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
       "Medicare covers skilled home health care when you meet specific criteria. Learn what services are covered, what is excluded, how long coverage lasts, and how Medicare Advantage may expand your benefits.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/does-medicare-cover-home-health-care",
+    canonical: "https://medicareinfopro.com/does-medicare-cover-home-health-care/",
   },
 };
 

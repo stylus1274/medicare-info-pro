@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Understanding Medicare Part B: Coverage, Costs and Enrollment in 2026",
-  "url": "https://medicareinfopro.com/blog/understanding-medicare-part-b",
+  "url": "https://medicareinfopro.com/understanding-medicare-part-b/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/understanding-medicare-part-b"
+    "@id": "https://medicareinfopro.com/understanding-medicare-part-b/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Understanding Medicare Part B: Coverage, Costs, and Enrollment in 2026",
     description:
       "What Medicare Part B covers, what it costs in 2026, how to enroll, and how to avoid the late enrollment penalty.",
-    url: "https://medicareinfopro.com/blog/understanding-medicare-part-b",
+    url: "https://medicareinfopro.com/understanding-medicare-part-b/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What Medicare Part B covers, what it costs in 2026, and how to enroll without penalties.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/understanding-medicare-part-b",
+    canonical: "https://medicareinfopro.com/understanding-medicare-part-b/",
   },
 };
 

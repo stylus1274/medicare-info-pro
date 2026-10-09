@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026",
-  "url": "https://medicareinfopro.com/does-medicare-cover-dental",
+  "url": "https://medicareinfopro.com/does-medicare-cover-dental/",
   "datePublished": "2026-06-26",
   "dateModified": "2026-06-26",
   "image": "https://images.unsplash.com/photo-1588776814546-1ffbb172d936?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/does-medicare-cover-dental"
+    "@id": "https://medicareinfopro.com/does-medicare-cover-dental/"
   }
 } as const;
 
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026",
     description:
       "Original Medicare does not cover routine dental care. Learn what Medicare Parts A and B cover for dental, how Medicare Advantage fills the gap, and your options for getting dental coverage in 2026.",
-    url: "https://medicareinfopro.com/does-medicare-cover-dental",
+    url: "https://medicareinfopro.com/does-medicare-cover-dental/",
     type: "article",
     images: [
       {
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
       "Original Medicare does not cover routine dental care. Learn how Medicare Advantage fills the gap and your options for dental coverage in 2026.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/does-medicare-cover-dental",
+    canonical: "https://medicareinfopro.com/does-medicare-cover-dental/",
   },
 };
 

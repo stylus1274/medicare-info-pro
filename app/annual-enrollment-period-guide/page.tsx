@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
-const canonicalUrl = "https://medicareinfopro.com/annual-enrollment-period-guide";
+const canonicalUrl = "https://medicareinfopro.com/annual-enrollment-period-guide/";
 const publishedDate = "2023-10-26";
 const modifiedDate = "2026-08-16";
 

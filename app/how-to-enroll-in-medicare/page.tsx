@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Enroll in Medicare: A Complete Step-by-Step Guide for 2026",
-  "url": "https://medicareinfopro.com/how-to-enroll-in-medicare",
+  "url": "https://medicareinfopro.com/how-to-enroll-in-medicare/",
   "datePublished": "2026-07-01",
   "dateModified": "2026-07-01",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -22,7 +22,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/how-to-enroll-in-medicare"
+    "@id": "https://medicareinfopro.com/how-to-enroll-in-medicare/"
   }
 };
 
@@ -86,13 +86,13 @@ export const metadata: Metadata = {
   description:
     "Learn exactly how to enroll in Medicare in 2026. Covers the Initial Enrollment Period, Special Enrollment Period, General Enrollment Period, how to apply online, and how to avoid late penalties.",
   alternates: {
-    canonical: "https://medicareinfopro.com/how-to-enroll-in-medicare",
+    canonical: "https://medicareinfopro.com/how-to-enroll-in-medicare/",
   },
   openGraph: {
     title: "How to Enroll in Medicare: Step-by-Step Guide for 2026",
     description:
       "A complete guide to Medicare enrollment windows, application steps, deadlines, and how to avoid costly late penalties.",
-    url: "https://medicareinfopro.com/how-to-enroll-in-medicare",
+    url: "https://medicareinfopro.com/how-to-enroll-in-medicare/",
     type: "article",
     images: [
       {

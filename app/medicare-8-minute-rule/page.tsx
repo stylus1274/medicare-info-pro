@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare's 8-Minute Rule: What It Is and How It Affects Your Ambulance Bill",
-  "url": "https://medicareinfopro.com/medicare-8-minute-rule",
+  "url": "https://medicareinfopro.com/medicare-8-minute-rule/",
   "datePublished": "2026-07-06",
   "dateModified": "2026-07-06",
   "image": "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=1200&q=80",
@@ -22,7 +22,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/medicare-8-minute-rule"
+    "@id": "https://medicareinfopro.com/medicare-8-minute-rule/"
   }
 };
 
@@ -104,13 +104,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare's 8-Minute Rule: FAQ and Coverage Guide",
     description: "What is Medicare's 8-minute rule? Learn how it affects ambulance billing, ALS vs BLS reimbursement, what you owe, and what to do if your claim is denied.",
-    url: "https://medicareinfopro.com/medicare-8-minute-rule",
+    url: "https://medicareinfopro.com/medicare-8-minute-rule/",
     type: "article",
     siteName: "Medicare Information Pro",
     images: [{ url: "https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=1200&q=80" }],
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/medicare-8-minute-rule",
+    canonical: "https://medicareinfopro.com/medicare-8-minute-rule/",
   },
 };
 

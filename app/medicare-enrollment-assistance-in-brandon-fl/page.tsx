@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Medicare Enrollment Assistance in Brandon, FL — Avoid Costly Penalties',
   description: 'Late Medicare enrollment means permanent premium surcharges. Brandon-based independent agents help you enroll on time and choose the right plan from 17+ carriers. Free.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-in-brandon-fl/" },};
 
 export default function Page() {
   return (

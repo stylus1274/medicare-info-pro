@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Which Medicare Advantage Plans in Tampa Offer Free Post-Hospital Meals",
-  "url": "https://medicareinfopro.com/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
+  "url": "https://medicareinfopro.com/which-medicare-advantage-plans-tampa-free-post-hospital-meals/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals"
+    "@id": "https://medicareinfopro.com/which-medicare-advantage-plans-tampa-free-post-hospital-meals/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Which Medicare Advantage Plans in Tampa Offer Free Post-Hospital Meals?",
     description:
       "Learn which Medicare Advantage plans in Tampa include post-hospital meal delivery, how the benefit works, and how to compare plans.",
-    url: "https://medicareinfopro.com/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
+    url: "https://medicareinfopro.com/which-medicare-advantage-plans-tampa-free-post-hospital-meals/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/which-medicare-advantage-plans-tampa-free-post-hospital-meals",
+      "https://medicareinfopro.com/which-medicare-advantage-plans-tampa-free-post-hospital-meals/",
   },
 };
 

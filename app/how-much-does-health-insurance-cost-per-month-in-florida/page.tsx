@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How Much Does Health Insurance Cost Per Month in Florida?",
-  "url": "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+  "url": "https://medicareinfopro.com/how-much-does-health-insurance-cost-per-month-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida"
+    "@id": "https://medicareinfopro.com/how-much-does-health-insurance-cost-per-month-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How Much Does Health Insurance Cost Per Month in Florida?",
     description:
       "See 2026 average monthly premiums for ACA, Medicare, and employer plans in Florida — plus strategies to reduce what you pay.",
-    url: "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    url: "https://medicareinfopro.com/how-much-does-health-insurance-cost-per-month-in-florida/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "2026 average monthly premiums for ACA, Medicare, and employer plans in Florida, plus tips to lower your costs.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/how-much-does-health-insurance-cost-per-month-in-florida",
+    canonical: "https://medicareinfopro.com/how-much-does-health-insurance-cost-per-month-in-florida/",
   },
 };
 

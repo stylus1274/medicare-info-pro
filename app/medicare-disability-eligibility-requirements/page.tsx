@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Disability Eligibility Requirements 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements",
+  "url": "https://medicareinfopro.com/medicare-disability-eligibility-requirements/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements"
+    "@id": "https://medicareinfopro.com/medicare-disability-eligibility-requirements/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Disability Eligibility Requirements 2026",
     description:
       "Complete guide to Medicare disability eligibility. SSDI 24-month wait, ESRD and ALS pathways, and how to enroll before age 65.",
-    url: "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements",
+    url: "https://medicareinfopro.com/medicare-disability-eligibility-requirements/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Complete guide to Medicare disability eligibility. SSDI 24-month wait, ESRD and ALS pathways, and how to enroll before age 65.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-disability-eligibility-requirements",
+    canonical: "https://medicareinfopro.com/medicare-disability-eligibility-requirements/",
   },
 };
 

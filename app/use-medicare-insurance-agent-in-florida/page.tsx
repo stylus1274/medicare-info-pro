@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Use a Medicare Insurance Agent in Florida?",
-  "url": "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida",
+  "url": "https://medicareinfopro.com/use-medicare-insurance-agent-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida"
+    "@id": "https://medicareinfopro.com/use-medicare-insurance-agent-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Why Use a Medicare Insurance Agent in Florida?",
     description:
       "A Medicare insurance agent in Florida can help you navigate hundreds of plan options and avoid costly enrollment mistakes.",
-    url: "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida",
+    url: "https://medicareinfopro.com/use-medicare-insurance-agent-in-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/use-medicare-insurance-agent-in-florida",
+      "https://medicareinfopro.com/use-medicare-insurance-agent-in-florida/",
   },
 };
 

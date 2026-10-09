@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Broker vs. Agent: What's the Difference?",
-  "url": "https://medicareinfopro.com/blog/medicare-broker-vs-agent",
+  "url": "https://medicareinfopro.com/medicare-broker-vs-agent/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-broker-vs-agent"
+    "@id": "https://medicareinfopro.com/medicare-broker-vs-agent/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Broker vs. Agent: What's the Difference?",
     description:
       "Medicare broker and agent are often used interchangeably, but there are important differences. Learn which type of help is best for you.",
-    url: "https://medicareinfopro.com/blog/medicare-broker-vs-agent",
+    url: "https://medicareinfopro.com/medicare-broker-vs-agent/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Learn the difference between a Medicare broker and agent, and which type of help is best for your situation.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-broker-vs-agent",
+    canonical: "https://medicareinfopro.com/medicare-broker-vs-agent/",
   },
 };
 

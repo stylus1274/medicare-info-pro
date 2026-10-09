@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Best Medicare Plans for Snowbirds in Florida 2026",
-  "url": "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida",
+  "url": "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida"
+    "@id": "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Best Medicare Plans for Snowbirds in Florida 2026",
     description:
       "The best Medicare plan options for Florida snowbirds who split time between two states, and how to avoid coverage gaps.",
-    url: "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida",
+    url: "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "The best Medicare plan options for Florida snowbirds who split time between two states.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/best-medicare-plans-for-snowbirds-in-florida",
+    canonical: "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
   },
 };
 

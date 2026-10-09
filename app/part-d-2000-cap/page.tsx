@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
-const canonicalUrl = "https://medicareinfopro.com/part-d-2000-cap";
+const canonicalUrl = "https://medicareinfopro.com/part-d-2000-cap/";
 const publishedDate = "2026-01-01";
 const modifiedDate = "2026-08-16";
 

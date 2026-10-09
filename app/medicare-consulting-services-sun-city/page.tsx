@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Consulting Services Sun City FL | Medicare Information Project",
   description: "Expert Medicare consulting services in Sun City Center, FL. We help retirees understand their options and choose the right plan at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-consulting-services-sun-city/" },};
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Do You Need to Work With a Medicare Insurance Agent?",
-  "url": "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+  "url": "https://medicareinfopro.com/do-you-need-to-work-with-a-medicare-insurance-agent/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent"
+    "@id": "https://medicareinfopro.com/do-you-need-to-work-with-a-medicare-insurance-agent/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Do You Need to Work With a Medicare Insurance Agent?",
     description:
       "Working with an independent Medicare agent is free and can save you from costly mistakes. Learn when an agent adds real value.",
-    url: "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+    url: "https://medicareinfopro.com/do-you-need-to-work-with-a-medicare-insurance-agent/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/do-you-need-to-work-with-a-medicare-insurance-agent",
+      "https://medicareinfopro.com/do-you-need-to-work-with-a-medicare-insurance-agent/",
   },
 };
 

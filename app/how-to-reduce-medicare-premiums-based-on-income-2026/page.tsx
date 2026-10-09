@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Reduce Medicare Premiums Based on Income 2026",
-  "url": "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+  "url": "https://medicareinfopro.com/how-to-reduce-medicare-premiums-based-on-income-2026/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026"
+    "@id": "https://medicareinfopro.com/how-to-reduce-medicare-premiums-based-on-income-2026/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Reduce Medicare Premiums Based on Income 2026",
     description:
       "Learn how IRMAA surcharges work and 5 strategies to legally reduce your Medicare Part B and Part D premiums in 2026.",
-    url: "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+    url: "https://medicareinfopro.com/how-to-reduce-medicare-premiums-based-on-income-2026/",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/how-to-reduce-medicare-premiums-based-on-income-2026",
+      "https://medicareinfopro.com/how-to-reduce-medicare-premiums-based-on-income-2026/",
   },
 };
 

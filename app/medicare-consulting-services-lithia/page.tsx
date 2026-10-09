@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Consulting Services Lithia FL | Medicare Information Project",
   description: "Expert Medicare consulting services in Lithia, FL. We help you understand your options, avoid penalties, and choose the right plan at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-consulting-services-lithia/" },};
 
 export default function Page() {
   return (

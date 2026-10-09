@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "What Is the Medicare Special Enrollment Period and When Can You Use It?",
-  "url": "https://medicareinfopro.com/blog/what-is-the-special-enrollment-period",
+  "url": "https://medicareinfopro.com/what-is-the-special-enrollment-period/",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/what-is-the-special-enrollment-period"
+    "@id": "https://medicareinfopro.com/what-is-the-special-enrollment-period/"
   }
 } as const;
 
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
     title: "What Is the Medicare Special Enrollment Period and When Can You Use It?",
     description:
       "The Medicare Special Enrollment Period lets you sign up for Part B or change your plan outside standard windows. Learn every qualifying trigger, how long each window lasts, and what happens if you miss it.",
-    url: "https://medicareinfopro.com/blog/what-is-the-special-enrollment-period",
+    url: "https://medicareinfopro.com/what-is-the-special-enrollment-period/",
     type: "article",
     images: [
       {
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
       "The Medicare Special Enrollment Period lets you sign up for Part B or change your plan outside standard windows. Learn every qualifying trigger, how long each window lasts, and what happens if you miss it.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/what-is-the-special-enrollment-period",
+    canonical: "https://medicareinfopro.com/what-is-the-special-enrollment-period/",
   },
 };
 

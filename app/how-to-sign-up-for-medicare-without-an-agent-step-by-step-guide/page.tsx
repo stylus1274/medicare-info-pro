@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
-  "url": "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+  "url": "https://medicareinfopro.com/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide"
+    "@id": "https://medicareinfopro.com/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
     description:
       "A clear, step-by-step guide to enrolling in Medicare Parts A, B, C, and D on your own. Includes enrollment windows, deadlines, and what to watch out for.",
-    url: "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+    url: "https://medicareinfopro.com/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      "https://medicareinfopro.com/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
   },
 };
 

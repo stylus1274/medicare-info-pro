@@ -116,7 +116,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Medigap Plans in Brandon, FL — Lowest Premium for Your Coverage Level',
   description: 'Brandon-based independent agents compare every Medigap carrier to find your lowest premium. Plan G, Plan N, Plan D — no cost, no obligation. Call 813-699-5559.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-supplement-insurance-plans-brandon/" },};
 
 export default function Page() {
   return (

@@ -108,7 +108,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Medicare Agent in Brandon, FL — Greg Wohl & Team, No Cost',
   description: 'Greg Wohl and the MIP team are based in Brandon, FL. Independent guidance across 17+ carriers — Medicare Advantage, Medigap, and Part D. No cost, no pressure. Call today.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-agent-brandon/" },};
 
 export default function Page() {
   return (

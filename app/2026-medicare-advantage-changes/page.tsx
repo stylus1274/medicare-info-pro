@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "2026 Medicare Advantage Changes: What You Need to Know",
-  "url": "https://medicareinfopro.com/blog/2026-medicare-advantage-changes",
+  "url": "https://medicareinfopro.com/2026-medicare-advantage-changes/",
   "datePublished": "2026-06-05",
   "dateModified": "2026-06-05",
   "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/2026-medicare-advantage-changes"
+    "@id": "https://medicareinfopro.com/2026-medicare-advantage-changes/"
   }
 } as const;
 
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   title: "2026 Medicare Advantage Changes: What You Need to Know",
   description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.",
   keywords: ["Medicare Advantage", "2026 changes", "Medicare updates", "health insurance", "Medicare plans"],
-  openGraph: { title: "2026 Medicare Advantage Changes: What You Need to Know", description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.", url: "https://medicareinfopro.com/blog/2026-medicare-advantage-changes", type: "article", images: [{ url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80", width: 1200, height: 630, alt: "Medicare general" }] },
+  openGraph: { title: "2026 Medicare Advantage Changes: What You Need to Know", description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.", url: "https://medicareinfopro.com/2026-medicare-advantage-changes/", type: "article", images: [{ url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80", width: 1200, height: 630, alt: "Medicare general" }] },
   twitter: { card: "summary_large_image", title: "2026 Medicare Advantage Changes: What You Need to Know", description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs." },
-  alternates: { canonical: "https://medicareinfopro.com/blog/2026-medicare-advantage-changes" },
+  alternates: { canonical: "https://medicareinfopro.com/2026-medicare-advantage-changes/" },
 };
 const POST = {
   slug: "2026-medicare-advantage-changes",

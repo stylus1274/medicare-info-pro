@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medigap Plan G: The Complete Guide for 2026",
-  "url": "https://medicareinfopro.com/blog/plan-g-complete-guide",
+  "url": "https://medicareinfopro.com/plan-g-complete-guide/",
   "datePublished": "2026-03-01",
   "dateModified": "2026-03-01",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/plan-g-complete-guide"
+    "@id": "https://medicareinfopro.com/plan-g-complete-guide/"
   }
 } as const;
 
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medigap Plan G: The Complete Guide for 2026",
     description: "Plan G covers virtually all Medicare cost-sharing except the Part B deductible. Here is what to know before you enroll.",
-    url: "https://medicareinfopro.com/blog/plan-g-complete-guide",
+    url: "https://medicareinfopro.com/plan-g-complete-guide/",
     type: "article",
     images: [{ url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80", width: 1200, height: 630, alt: "Medicare Supplement Plan G insurance documents on a desk" }],
   },
   twitter: { card: "summary_large_image", title: "Medigap Plan G: The Complete Guide for 2026", description: "Plan G covers virtually all Medicare cost-sharing except the Part B deductible. Here is what to know." },
-  alternates: { canonical: "https://medicareinfopro.com/blog/plan-g-complete-guide" },
+  alternates: { canonical: "https://medicareinfopro.com/plan-g-complete-guide/" },
 };
 
 const POST = {

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Working Past 65: When to Enroll in Medicare",
-  "url": "https://medicareinfopro.com/blog/working-past-65",
+  "url": "https://medicareinfopro.com/working-past-65/",
   "datePublished": "2026-04-01",
   "dateModified": "2026-04-01",
   "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/working-past-65"
+    "@id": "https://medicareinfopro.com/working-past-65/"
   }
 } as const;
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Working Past 65: When to Enroll in Medicare",
     description:
       "If your employer has 20 or more employees, you can delay Medicare Part B without penalty. But the rules are nuanced and the COBRA trap is real. Here is what you need to know.",
-    url: "https://medicareinfopro.com/blog/working-past-65",
+    url: "https://medicareinfopro.com/working-past-65/",
     type: "article",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     images: ["https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"],
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/working-past-65",
+    canonical: "https://medicareinfopro.com/working-past-65/",
   },
 };
 

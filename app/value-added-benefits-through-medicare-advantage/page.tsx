@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Value-Added Benefits Through Medicare Advantage 2026",
-  "url": "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage",
+  "url": "https://medicareinfopro.com/value-added-benefits-through-medicare-advantage/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage"
+    "@id": "https://medicareinfopro.com/value-added-benefits-through-medicare-advantage/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Value-Added Benefits Through Medicare Advantage 2026",
     description:
       "What extra benefits Medicare Advantage plans offer in 2026, which benefits were reduced, and how to find plans with the best supplemental coverage in Florida.",
-    url: "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage",
+    url: "https://medicareinfopro.com/value-added-benefits-through-medicare-advantage/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/value-added-benefits-through-medicare-advantage",
+      "https://medicareinfopro.com/value-added-benefits-through-medicare-advantage/",
   },
 };
 

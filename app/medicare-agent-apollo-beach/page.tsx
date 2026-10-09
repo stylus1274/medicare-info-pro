@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Agent Apollo Beach FL | Medicare Information Project",
   description: "Free Medicare guidance for Apollo Beach, FL residents. Independent agents compare 17+ carriers to find the right Medicare Advantage, Supplement, or Part D plan for you.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-agent-apollo-beach/" },};
 
 export default function Page() {
   return (

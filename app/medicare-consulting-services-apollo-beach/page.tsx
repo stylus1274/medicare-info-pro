@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Consulting Services Apollo Beach FL | Medicare Information Project",
   description: "Expert Medicare consulting services in Apollo Beach, FL. We help you understand your options, avoid penalties, and choose the right plan at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-consulting-services-apollo-beach/" },};
 
 export default function Page() {
   return (

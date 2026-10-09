@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Trusted Medicare Insurance Brokers Apollo Beach FL | Medicare Information Project",
   description: "Find trusted Medicare insurance brokers in Apollo Beach, FL. Independent brokers compare 17+ carriers at no cost to find the right plan for you.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/trusted-medicare-insurance-brokers-apollo-beach/" },};
 
 export default function Page() {
   return (

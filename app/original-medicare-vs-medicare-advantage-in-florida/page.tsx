@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Original Medicare vs. Medicare Advantage in Florida 2026",
-  "url": "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida",
+  "url": "https://medicareinfopro.com/original-medicare-vs-medicare-advantage-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida"
+    "@id": "https://medicareinfopro.com/original-medicare-vs-medicare-advantage-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Original Medicare vs. Medicare Advantage in Florida 2026",
     description:
       "Detailed comparison of Original Medicare and Medicare Advantage in Florida. Costs, provider access, coverage gaps, and which is better for your situation.",
-    url: "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida",
+    url: "https://medicareinfopro.com/original-medicare-vs-medicare-advantage-in-florida/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Detailed comparison of Original Medicare and Medicare Advantage in Florida. Costs, provider access, coverage gaps, and which is better for your situation.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/original-medicare-vs-medicare-advantage-in-florida",
+    canonical: "https://medicareinfopro.com/original-medicare-vs-medicare-advantage-in-florida/",
   },
 };
 

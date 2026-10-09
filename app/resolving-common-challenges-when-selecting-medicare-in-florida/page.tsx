@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Resolving Common Challenges When Selecting Medicare in Florida",
-  "url": "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+  "url": "https://medicareinfopro.com/resolving-common-challenges-when-selecting-medicare-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida"
+    "@id": "https://medicareinfopro.com/resolving-common-challenges-when-selecting-medicare-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Resolving Common Challenges When Selecting Medicare in Florida",
     description:
       "How to navigate the most common Medicare selection problems Florida beneficiaries face, from network issues to enrollment timing mistakes.",
-    url: "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+    url: "https://medicareinfopro.com/resolving-common-challenges-when-selecting-medicare-in-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/resolving-common-challenges-when-selecting-medicare-in-florida",
+      "https://medicareinfopro.com/resolving-common-challenges-when-selecting-medicare-in-florida/",
   },
 };
 

@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Trusted Medicare Insurance Agent Health Insurance Services Sun City FL | Medicare Information Project",
   description: "Trusted Medicare insurance agent and health insurance services in Sun City, FL. Independent, unbiased guidance from local experts at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/trusted-medicare-insurance-agent-health-insurance-services-sun-city/" },};
 
 export default function Page() {
   return (

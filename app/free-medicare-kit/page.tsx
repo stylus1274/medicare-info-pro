@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     siteName: "Medicare Information Pro",
     type: "website",
   },
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/free-medicare-kit/" },};
 
 const webpageSchema = {
   "@context": "https://schema.org",

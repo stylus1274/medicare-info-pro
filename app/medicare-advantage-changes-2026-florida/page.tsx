@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
-  "url": "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida",
+  "url": "https://medicareinfopro.com/medicare-advantage-changes-2026-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida"
+    "@id": "https://medicareinfopro.com/medicare-advantage-changes-2026-florida/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
     description:
       "Key Medicare Advantage changes for 2026 that affect Florida enrollees: new OOP limits, plan exits, benefit reductions, and what to do during AEP.",
-    url: "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida",
+    url: "https://medicareinfopro.com/medicare-advantage-changes-2026-florida/",
     type: "article",
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/medicare-advantage-changes-2026-florida",
+      "https://medicareinfopro.com/medicare-advantage-changes-2026-florida/",
   },
 };
 

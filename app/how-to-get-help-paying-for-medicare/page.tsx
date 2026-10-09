@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
-  "url": "https://medicareinfopro.com/blog/how-to-get-help-paying-for-medicare",
+  "url": "https://medicareinfopro.com/how-to-get-help-paying-for-medicare/",
   "datePublished": "2026-06-19",
   "dateModified": "2026-06-19",
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/how-to-get-help-paying-for-medicare"
+    "@id": "https://medicareinfopro.com/how-to-get-help-paying-for-medicare/"
   }
 } as const;
 
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Savings Programs",
     description:
       "Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs. Learn about Extra Help, the Low Income Subsidy, and Medicare Savings Programs and how to apply.",
-    url: "https://medicareinfopro.com/blog/how-to-get-help-paying-for-medicare",
+    url: "https://medicareinfopro.com/how-to-get-help-paying-for-medicare/",
     type: "article",
     images: [
       {
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
       "Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs. Learn about Extra Help, the Low Income Subsidy, and Medicare Savings Programs and how to apply.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/how-to-get-help-paying-for-medicare",
+    canonical: "https://medicareinfopro.com/how-to-get-help-paying-for-medicare/",
   },
 };
 

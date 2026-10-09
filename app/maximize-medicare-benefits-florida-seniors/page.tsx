@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Maximize Your Medicare Benefits in Florida 2026",
-  "url": "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors",
+  "url": "https://medicareinfopro.com/maximize-medicare-benefits-florida-seniors/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors"
+    "@id": "https://medicareinfopro.com/maximize-medicare-benefits-florida-seniors/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How to Maximize Your Medicare Benefits in Florida 2026",
     description:
       "Most Medicare beneficiaries leave money on the table every year. Here is how to get full value from your Medicare coverage in Florida.",
-    url: "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors",
+    url: "https://medicareinfopro.com/maximize-medicare-benefits-florida-seniors/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Most Medicare beneficiaries leave money on the table every year. Here is how to get full value from your coverage.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/maximize-medicare-benefits-florida-seniors",
+    canonical: "https://medicareinfopro.com/maximize-medicare-benefits-florida-seniors/",
   },
 };
 

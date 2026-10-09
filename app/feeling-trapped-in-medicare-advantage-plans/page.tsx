@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Older Americans Say They Feel Trapped in Medicare Advantage Plans",
-  "url": "https://medicareinfopro.com/blog/feeling-trapped-in-medicare-advantage-plans",
+  "url": "https://medicareinfopro.com/feeling-trapped-in-medicare-advantage-plans/",
   "datePublished": "2026-06-19",
   "dateModified": "2026-06-19",
   "image": "https://images.unsplash.com/photo-1573497019418-b400bb3ab074?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/feeling-trapped-in-medicare-advantage-plans"
+    "@id": "https://medicareinfopro.com/feeling-trapped-in-medicare-advantage-plans/"
   }
 } as const;
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Why Older Americans Feel Trapped in Medicare Advantage Plans",
     description:
       "Restrictive networks, prior authorization denials, and Medigap underwriting barriers leave many seniors feeling stuck. Here is what Florida beneficiaries need to know.",
-    url: "https://medicareinfopro.com/blog/feeling-trapped-in-medicare-advantage-plans",
+    url: "https://medicareinfopro.com/feeling-trapped-in-medicare-advantage-plans/",
     type: "article",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/feeling-trapped-in-medicare-advantage-plans",
+      "https://medicareinfopro.com/feeling-trapped-in-medicare-advantage-plans/",
   },
 };
 

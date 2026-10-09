@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
-  "url": "https://medicareinfopro.com/blog/does-medicare-cover-cataract-surgery",
+  "url": "https://medicareinfopro.com/does-medicare-cover-cataract-surgery/",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17",
   "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/does-medicare-cover-cataract-surgery"
+    "@id": "https://medicareinfopro.com/does-medicare-cover-cataract-surgery/"
   }
 } as const;
 
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
     description:
       "Medicare Part B covers medically necessary cataract surgery. Learn what Medicare pays, what you owe, and how to minimize out-of-pocket costs.",
-    url: "https://medicareinfopro.com/blog/does-medicare-cover-cataract-surgery",
+    url: "https://medicareinfopro.com/does-medicare-cover-cataract-surgery/",
     type: "article",
     images: [
       {
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
       "Medicare Part B covers medically necessary cataract surgery. Learn what Medicare pays, what you owe, and how to minimize out-of-pocket costs.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/does-medicare-cover-cataract-surgery",
+    canonical: "https://medicareinfopro.com/does-medicare-cover-cataract-surgery/",
   },
 };
 

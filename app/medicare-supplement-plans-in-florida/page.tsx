@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Supplement Plans in Florida 2026: Complete Guide",
-  "url": "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida",
+  "url": "https://medicareinfopro.com/medicare-supplement-plans-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida"
+    "@id": "https://medicareinfopro.com/medicare-supplement-plans-in-florida/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Supplement Plans in Florida 2026: Complete Guide",
     description:
       "Compare Medigap Plans G, N, and F in Florida for 2026. Understand premiums, enrollment windows, and how to choose the right supplement plan.",
-    url: "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida",
+    url: "https://medicareinfopro.com/medicare-supplement-plans-in-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Compare Medigap Plans G, N, and F in Florida. Understand premiums, enrollment windows, and how to choose the right supplement plan.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-supplement-plans-in-florida",
+    canonical: "https://medicareinfopro.com/medicare-supplement-plans-in-florida/",
   },
 };
 

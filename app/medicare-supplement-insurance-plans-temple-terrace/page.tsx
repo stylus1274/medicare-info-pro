@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Supplement Insurance Plans Temple Terrace FL | Medicare Information Project",
   description: "Compare Medicare Supplement (Medigap) insurance plans in Temple Terrace, FL. Independent agents help you find the lowest premium for the coverage you need.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-supplement-insurance-plans-temple-terrace/" },};
 
 export default function Page() {
   return (

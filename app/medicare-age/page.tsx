@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "What Age Do You Get Medicare? Eligibility Ages Explained 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-age",
+  "url": "https://medicareinfopro.com/medicare-age/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-age"
+    "@id": "https://medicareinfopro.com/medicare-age/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "What Age Do You Get Medicare? Eligibility Ages Explained 2026",
     description:
       "The standard Medicare age is 65, but there are several ways to qualify earlier. Learn all the eligibility rules and enrollment windows.",
-    url: "https://medicareinfopro.com/blog/medicare-age",
+    url: "https://medicareinfopro.com/medicare-age/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "The standard Medicare age is 65, but there are several ways to qualify earlier. Learn all the eligibility rules and enrollment windows.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-age",
+    canonical: "https://medicareinfopro.com/medicare-age/",
   },
 };
 

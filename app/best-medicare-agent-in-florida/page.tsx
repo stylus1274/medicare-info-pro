@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Find the Best Medicare Agent in Florida 2026",
-  "url": "https://medicareinfopro.com/blog/best-medicare-agent-in-florida",
+  "url": "https://medicareinfopro.com/best-medicare-agent-in-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/best-medicare-agent-in-florida"
+    "@id": "https://medicareinfopro.com/best-medicare-agent-in-florida/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "How to Find the Best Medicare Agent in Florida 2026",
     description:
       "What to look for in a Medicare agent, questions to ask, red flags to avoid, and why working with an independent agent matters in Florida.",
-    url: "https://medicareinfopro.com/blog/best-medicare-agent-in-florida",
+    url: "https://medicareinfopro.com/best-medicare-agent-in-florida/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What to look for in a Medicare agent, questions to ask, and red flags to avoid in Florida.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/best-medicare-agent-in-florida",
+    canonical: "https://medicareinfopro.com/best-medicare-agent-in-florida/",
   },
 };
 

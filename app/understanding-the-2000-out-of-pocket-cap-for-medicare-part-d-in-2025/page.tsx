@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Understanding the Medicare Part D Out-of-Pocket Cap in 2026",
-  "url": "https://medicareinfopro.com/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+  "url": "https://medicareinfopro.com/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025"
+    "@id": "https://medicareinfopro.com/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Understanding the Medicare Part D Out-of-Pocket Cap in 2026",
     description:
       "How the $2,100 Part D cap works in 2026, what counts toward it, and how the Medicare Prescription Payment Plan lets you spread costs across the year.",
-    url: "https://medicareinfopro.com/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+    url: "https://medicareinfopro.com/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
+      "https://medicareinfopro.com/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025/",
   },
 };
 

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Best Medicare Advantage Plans in Hillsborough County for 2026",
-  "url": "https://medicareinfopro.com/blog/best-medicare-advantage-plans-hillsborough-county",
+  "url": "https://medicareinfopro.com/best-medicare-advantage-plans-hillsborough-county/",
   "datePublished": "2026-06-24",
   "dateModified": "2026-06-24",
   "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/best-medicare-advantage-plans-hillsborough-county"
+    "@id": "https://medicareinfopro.com/best-medicare-advantage-plans-hillsborough-county/"
   }
 } as const;
 
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
     title: "Best Medicare Advantage Plans in Hillsborough County for 2026",
     description:
       "58 Medicare Advantage plans are available in Hillsborough County, FL in 2026. Compare HMO vs PPO, top carriers, extra benefits, and how to choose the right plan for your doctors and budget.",
-    url: "https://medicareinfopro.com/blog/best-medicare-advantage-plans-hillsborough-county",
+    url: "https://medicareinfopro.com/best-medicare-advantage-plans-hillsborough-county/",
     type: "article",
     images: [
       {
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
       "58 Medicare Advantage plans are available in Hillsborough County, FL in 2026. Compare HMO vs PPO, top carriers, extra benefits, and how to choose the right plan.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/best-medicare-advantage-plans-hillsborough-county",
+    canonical: "https://medicareinfopro.com/best-medicare-advantage-plans-hillsborough-county/",
   },
 };
 

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare and VA Benefits for Veterans in Tampa 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa",
+  "url": "https://medicareinfopro.com/medicare-issues-for-veterans-tampa/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa"
+    "@id": "https://medicareinfopro.com/medicare-issues-for-veterans-tampa/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare and VA Benefits for Veterans in Tampa 2026",
     description:
       "How VA benefits and Medicare work together for Tampa veterans. When you need both, enrollment rules, and how to avoid costly mistakes.",
-    url: "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa",
+    url: "https://medicareinfopro.com/medicare-issues-for-veterans-tampa/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "How VA benefits and Medicare work together for Tampa veterans. When you need both, enrollment rules, and how to avoid costly mistakes.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-issues-for-veterans-tampa",
+    canonical: "https://medicareinfopro.com/medicare-issues-for-veterans-tampa/",
   },
 };
 

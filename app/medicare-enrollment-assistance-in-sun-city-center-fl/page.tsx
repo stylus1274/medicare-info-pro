@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Enrollment Assistance in Sun City Center FL | Medicare Information Project",
   description: "Free Medicare enrollment assistance in Sun City Center, FL. We help retirees enroll on time, avoid penalties, and choose the right plan.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-in-sun-city-center-fl/" },};
 
 export default function Page() {
   return (

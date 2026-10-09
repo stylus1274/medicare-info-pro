@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Insurance Agent Fish Hawk FL | Medicare Information Project",
   description: "Licensed Medicare insurance agents in Fish Hawk, FL. Compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-insurance-agent-fish-hawk-fl/" },};
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "5 Best Medicare Consultants in Tampa Bay 2026",
-  "url": "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay",
+  "url": "https://medicareinfopro.com/5-best-medicare-consultants-in-tampa-bay/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay"
+    "@id": "https://medicareinfopro.com/5-best-medicare-consultants-in-tampa-bay/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "5 Best Medicare Consultants in Tampa Bay 2026",
     description:
       "What separates the best Medicare consultants in Tampa Bay from the rest, and how to find the right specialist for your situation.",
-    url: "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay",
+    url: "https://medicareinfopro.com/5-best-medicare-consultants-in-tampa-bay/",
     type: "article",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "What separates the best Medicare consultants in Tampa Bay from the rest, and how to find the right specialist.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/5-best-medicare-consultants-in-tampa-bay",
+    canonical: "https://medicareinfopro.com/5-best-medicare-consultants-in-tampa-bay/",
   },
 };
 

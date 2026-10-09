@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Medicare Supplement Plans in Brandon, FL — Compare Plan G, N & D Costs',
   description: 'Brandon Medigap premiums range from $65–$803/month depending on age and plan. Local MIP agents compare Plan G, Plan N, and Plan D from all major carriers. Free quotes.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-supplement-insurance-plans-in-brandon-fl/" },};
 
 export default function Page() {
   return (

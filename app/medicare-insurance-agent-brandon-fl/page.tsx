@@ -124,7 +124,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Local Medicare Agent in Brandon, FL — Free, No-Pressure Help',
   description: 'MIP\'s office is at 915 Oakfield Dr, Brandon. Independent agents compare 17+ carriers — Medicare Advantage, Medigap, and Part D — at no cost to you. Call 813-699-5559.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/" },};
 
 export default function Page() {
   return (

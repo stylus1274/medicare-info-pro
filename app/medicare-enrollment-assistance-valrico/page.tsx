@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Enrollment Assistance Valrico FL | Medicare Information Project",
   description: "Free Medicare enrollment assistance in Valrico, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-valrico/" },};
 
 export default function Page() {
   return (

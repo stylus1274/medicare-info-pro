@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "At What Age Can You Get Medicare? Eligibility Rules Explained",
-  "url": "https://medicareinfopro.com/at-what-age-can-you-get-medicare",
+  "url": "https://medicareinfopro.com/at-what-age-can-you-get-medicare/",
   "datePublished": "2026-07-05",
   "dateModified": "2026-07-05",
   "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80",
@@ -22,7 +22,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/at-what-age-can-you-get-medicare"
+    "@id": "https://medicareinfopro.com/at-what-age-can-you-get-medicare/"
   }
 };
 
@@ -88,13 +88,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "At What Age Can You Get Medicare? Eligibility Rules Explained",
     description: "Most people get Medicare at 65, but you can qualify earlier. Learn the exact age rules, disability exceptions, enrollment windows, and what happens if you delay.",
-    url: "https://medicareinfopro.com/at-what-age-can-you-get-medicare",
+    url: "https://medicareinfopro.com/at-what-age-can-you-get-medicare/",
     type: "article",
     siteName: "Medicare Information Project",
     images: [{ url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" }],
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/at-what-age-can-you-get-medicare",
+    canonical: "https://medicareinfopro.com/at-what-age-can-you-get-medicare/",
   },
 };
 

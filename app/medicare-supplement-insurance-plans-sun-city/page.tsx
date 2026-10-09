@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Supplement Insurance Plans Sun City FL | Medicare Information Project",
   description: "Compare Medicare Supplement (Medigap) insurance plans in Sun City Center, FL. Independent agents help retirees find the lowest premium for the coverage they need.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-supplement-insurance-plans-sun-city/" },};
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why Is Health Insurance So Expensive in Florida?",
-  "url": "https://medicareinfopro.com/blog/why-is-health-insurance-so-expensive-in-florida",
+  "url": "https://medicareinfopro.com/why-is-health-insurance-so-expensive-in-florida/",
   "datePublished": "2026-06-03",
   "dateModified": "2026-06-03",
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/why-is-health-insurance-so-expensive-in-florida"
+    "@id": "https://medicareinfopro.com/why-is-health-insurance-so-expensive-in-florida/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Why Is Health Insurance So Expensive in Florida?",
     description:
       "Florida has some of the highest health insurance premiums in the country. Here are the real reasons why and what you can do about it.",
-    url: "https://medicareinfopro.com/blog/why-is-health-insurance-so-expensive-in-florida",
+    url: "https://medicareinfopro.com/why-is-health-insurance-so-expensive-in-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Florida's health insurance premiums rank among the highest in the US. Learn the key cost drivers and how to reduce what you pay.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/why-is-health-insurance-so-expensive-in-florida",
+    canonical: "https://medicareinfopro.com/why-is-health-insurance-so-expensive-in-florida/",
   },
 };
 

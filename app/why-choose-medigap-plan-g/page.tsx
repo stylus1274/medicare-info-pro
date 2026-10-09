@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
-const canonicalUrl = "https://medicareinfopro.com/why-choose-medigap-plan-g";
+const canonicalUrl = "https://medicareinfopro.com/why-choose-medigap-plan-g/";
 const publishedDate = "2024-08-01";
 const modifiedDate = "2026-08-16";
 

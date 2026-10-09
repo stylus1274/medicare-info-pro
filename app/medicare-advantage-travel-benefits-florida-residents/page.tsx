@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Advantage Travel Benefits for Florida Residents 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents",
+  "url": "https://medicareinfopro.com/medicare-advantage-travel-benefits-florida-residents/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents"
+    "@id": "https://medicareinfopro.com/medicare-advantage-travel-benefits-florida-residents/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Travel Benefits for Florida Residents 2026",
     description:
       "How Medicare Advantage covers you when you travel, what is and is not covered, and how to choose a plan that works for frequent travelers.",
-    url: "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents",
+    url: "https://medicareinfopro.com/medicare-advantage-travel-benefits-florida-residents/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/medicare-advantage-travel-benefits-florida-residents",
+      "https://medicareinfopro.com/medicare-advantage-travel-benefits-florida-residents/",
   },
 };
 

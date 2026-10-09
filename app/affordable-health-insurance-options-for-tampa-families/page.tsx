@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Affordable Health Insurance Options for Tampa Families",
-  "url": "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families",
+  "url": "https://medicareinfopro.com/affordable-health-insurance-options-for-tampa-families/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families"
+    "@id": "https://medicareinfopro.com/affordable-health-insurance-options-for-tampa-families/"
   }
 } as const;
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Affordable Health Insurance Options for Tampa Families",
     description:
       "Tampa families have more health insurance options than many realize. Learn how to find affordable coverage that fits your budget.",
-    url: "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families",
+    url: "https://medicareinfopro.com/affordable-health-insurance-options-for-tampa-families/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://medicareinfopro.com/blog/affordable-health-insurance-options-for-tampa-families",
+      "https://medicareinfopro.com/affordable-health-insurance-options-for-tampa-families/",
   },
 };
 

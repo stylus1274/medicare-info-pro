@@ -7,7 +7,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Local Medicare Agent Riverview FL | Medicare Information Project",
   description: "Find a local Medicare agent in Riverview, FL. Independent agents compare 17+ carriers at no cost to help you find the right Medicare plan.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/local-medicare-agent-riverview/" },};
 
 export default function Page() {
   return (

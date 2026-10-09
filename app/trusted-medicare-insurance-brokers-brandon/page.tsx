@@ -108,7 +108,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Trusted Medicare Brokers in Brandon, FL | BBB Accredited',
   description: 'Independent Medicare brokers in Brandon and Hillsborough County. Compare Medicare Advantage, Medigap, and Part D options at no cost. BBB Accredited, A+ Rated.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/trusted-medicare-insurance-brokers-brandon/" },};
 
 export default function Page() {
   return (

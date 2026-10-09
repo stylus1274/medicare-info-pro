@@ -26,7 +26,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Paul Eckstein | Licensed Medicare Agent | Medicare Information Project",
   description: "Meet Paul Eckstein, a licensed Medicare insurance agent with 20+ years of experience serving the Brandon and Tampa Bay area. Free consultations available.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/paul-eckstein/" },};
 
 const MEMBER = {
   name: "Paul Eckstein",

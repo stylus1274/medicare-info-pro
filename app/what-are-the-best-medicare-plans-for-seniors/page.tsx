@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "What Are the Best Medicare Plans for Seniors?",
-  "url": "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors",
+  "url": "https://medicareinfopro.com/what-are-the-best-medicare-plans-for-seniors/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors"
+    "@id": "https://medicareinfopro.com/what-are-the-best-medicare-plans-for-seniors/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "What Are the Best Medicare Plans for Seniors?",
     description:
       "Compare Original Medicare, Medicare Advantage, and Medigap to find the best plan for your health needs and budget in 2026.",
-    url: "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors",
+    url: "https://medicareinfopro.com/what-are-the-best-medicare-plans-for-seniors/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "A clear comparison of Original Medicare, Medicare Advantage, and Medigap to help you choose the right plan in 2026.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/what-are-the-best-medicare-plans-for-seniors",
+    canonical: "https://medicareinfopro.com/what-are-the-best-medicare-plans-for-seniors/",
   },
 };
 

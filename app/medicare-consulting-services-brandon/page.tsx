@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: 'Medicare Consulting in Brandon, FL — Expert Guidance, No Cost',
   description: 'Confused by Medicare\'s moving parts? Brandon-based MIP consultants walk you through every option — Advantage, Medigap, Part D — and help you avoid costly mistakes. Free.',
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-consulting-services-brandon/" },};
 
 export default function Page() {
   return (

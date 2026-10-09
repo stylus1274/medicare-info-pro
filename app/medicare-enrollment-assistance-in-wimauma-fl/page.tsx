@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Enrollment Assistance in Wimauma FL | Medicare Information Project",
   description: "Free Medicare enrollment assistance in Wimauma, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-in-wimauma-fl/" },};
 
 export default function Page() {
   return (

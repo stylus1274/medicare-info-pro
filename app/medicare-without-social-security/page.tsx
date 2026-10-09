@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Apply for Medicare Without Social Security in 2026",
-  "url": "https://medicareinfopro.com/blog/medicare-without-social-security",
+  "url": "https://medicareinfopro.com/medicare-without-social-security/",
   "datePublished": "2026-05-01",
   "dateModified": "2026-05-01",
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-without-social-security"
+    "@id": "https://medicareinfopro.com/medicare-without-social-security/"
   }
 } as const;
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "How to Apply for Medicare Without Social Security in 2026",
     description:
       "If you are not receiving Social Security at 65, Medicare enrollment is not automatic. Learn the steps, timing, and how to avoid permanent late penalties.",
-    url: "https://medicareinfopro.com/blog/medicare-without-social-security",
+    url: "https://medicareinfopro.com/medicare-without-social-security/",
     type: "article",
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     images: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"],
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-without-social-security",
+    canonical: "https://medicareinfopro.com/medicare-without-social-security/",
   },
 };
 

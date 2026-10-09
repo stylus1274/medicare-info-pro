@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Insurance Agent Gibsonton FL | Medicare Information Project",
   description: "Licensed Medicare insurance agents in Gibsonton, FL. Compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-insurance-agent-gibsonton-fl/" },};
 
 export default function Page() {
   return (

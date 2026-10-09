@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How Medicare Premiums Are Calculated in 2026",
-  "url": "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated",
+  "url": "https://medicareinfopro.com/how-medicare-premiums-are-calculated/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated"
+    "@id": "https://medicareinfopro.com/how-medicare-premiums-are-calculated/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "How Medicare Premiums Are Calculated in 2026",
     description:
       "Exactly how Medicare Part A, Part B, Part D, and Medicare Advantage premiums are calculated, including IRMAA income brackets and strategies to lower your costs.",
-    url: "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated",
+    url: "https://medicareinfopro.com/how-medicare-premiums-are-calculated/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "How Medicare Part A, Part B, Part D, and Medicare Advantage premiums are calculated, including IRMAA brackets and cost-reduction strategies.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/how-medicare-premiums-are-calculated",
+    canonical: "https://medicareinfopro.com/how-medicare-premiums-are-calculated/",
   },
 };
 

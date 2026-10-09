@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Out-of-Pocket Costs: Your Guide to Copays, Deductibles, and Maximizing Savings",
-  "url": "https://medicareinfopro.com/blog/medicare-out-of-pocket-costs",
+  "url": "https://medicareinfopro.com/medicare-out-of-pocket-costs/",
   "datePublished": "2026-06-19",
   "dateModified": "2026-06-19",
   "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-out-of-pocket-costs"
+    "@id": "https://medicareinfopro.com/medicare-out-of-pocket-costs/"
   }
 } as const;
 
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     title: "Medicare Out-of-Pocket Costs: Copays, Deductibles, and How to Save in 2026",
     description:
       "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to limit your annual costs.",
-    url: "https://medicareinfopro.com/blog/medicare-out-of-pocket-costs",
+    url: "https://medicareinfopro.com/medicare-out-of-pocket-costs/",
     type: "article",
     images: [
       {
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
       "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to limit your annual costs.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-out-of-pocket-costs",
+    canonical: "https://medicareinfopro.com/medicare-out-of-pocket-costs/",
   },
 };
 

@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Agent Sun City FL | Medicare Information Project",
   description: "Free Medicare guidance for Sun City Center, FL residents. Independent agents compare 17+ carriers to find the right Medicare plan for your retirement community.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-agent-sun-city/" },};
 
 export default function Page() {
   return (

@@ -26,7 +26,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Chris Gallimore | Licensed Medicare Agent | Medicare Information Project",
   description: "Meet Chris Gallimore, a licensed Medicare insurance agent serving the Tampa Bay area for nearly 10 years. Get expert Medicare guidance at no cost.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/chris-gallimore/" },};
 
 const MEMBER = {
   name: "Chris Gallimore",

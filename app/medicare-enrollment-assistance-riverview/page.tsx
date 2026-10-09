@@ -23,7 +23,8 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Medicare Enrollment Assistance Riverview FL | Medicare Information Project",
   description: "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-};
+
+  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-riverview/" },};
 
 export default function Page() {
   return (

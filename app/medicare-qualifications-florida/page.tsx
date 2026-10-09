@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Qualifications in Florida: Who Is Eligible?",
-  "url": "https://medicareinfopro.com/blog/medicare-qualifications-florida",
+  "url": "https://medicareinfopro.com/medicare-qualifications-florida/",
   "datePublished": "2026-06-01",
   "dateModified": "2026-06-01",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/blog/medicare-qualifications-florida"
+    "@id": "https://medicareinfopro.com/medicare-qualifications-florida/"
   }
 } as const;
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Qualifications in Florida: Who Is Eligible?",
     description:
       "A complete guide to Medicare eligibility requirements in Florida. Covers age, work history, disability, ESRD, and special enrollment situations.",
-    url: "https://medicareinfopro.com/blog/medicare-qualifications-florida",
+    url: "https://medicareinfopro.com/medicare-qualifications-florida/",
     type: "article",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Complete guide to Medicare eligibility in Florida. Age, work history, disability, ESRD, and special enrollment rules explained.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog/medicare-qualifications-florida",
+    canonical: "https://medicareinfopro.com/medicare-qualifications-florida/",
   },
 };
 
