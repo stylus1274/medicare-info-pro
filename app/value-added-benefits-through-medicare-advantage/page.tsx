@@ -118,7 +118,7 @@ const POST = {
       type: "section" as const,
       heading: "Dental Benefits: What Medicare Advantage Plans Cover",
       content:
-        "Dental coverage is one of the most sought-after extra benefits in Medicare Advantage, since Original Medicare covers almost no dental care.\n\n<strong>Preventive dental (most plans):</strong> Most Medicare Advantage plans cover preventive dental services at 100% with no cost-sharing. This typically includes two cleanings per year, annual X-rays, and oral exams.\n\n<strong>Comprehensive dental (fewer plans):</strong> Coverage for fillings, extractions, crowns, root canals, and dentures is less common and varies significantly. Plans that offer comprehensive dental usually have an annual benefit limit of $1,000 to $2,000. Major procedures like implants and dentures can cost far more than these limits.\n\n<strong>What to watch for:</strong> Some plans advertise dental benefits prominently but only cover preventive care. Read the Evidence of Coverage carefully to understand what is actually covered and what the annual limit is.\n\nFor a full comparison of Medicare Advantage and Original Medicare, see our guide on <a href='/blog/original-medicare-vs-medicare-advantage-in-florida' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare vs. Medicare Advantage in Florida</a>.",
+        "Dental coverage is one of the most sought-after extra benefits in Medicare Advantage, since Original Medicare covers almost no dental care.\n\n<strong>Preventive dental (most plans):</strong> Most Medicare Advantage plans cover preventive dental services at 100% with no cost-sharing. This typically includes two cleanings per year, annual X-rays, and oral exams.\n\n<strong>Comprehensive dental (fewer plans):</strong> Coverage for fillings, extractions, crowns, root canals, and dentures is less common and varies significantly. Plans that offer comprehensive dental usually have an annual benefit limit of $1,000 to $2,000. Major procedures like implants and dentures can cost far more than these limits.\n\n<strong>What to watch for:</strong> Some plans advertise dental benefits prominently but only cover preventive care. Read the Evidence of Coverage carefully to understand what is actually covered and what the annual limit is.\n\nFor a full comparison of Medicare Advantage and Original Medicare, see our guide on <a href='/original-medicare-vs-medicare-advantage-in-florida/' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare vs. Medicare Advantage in Florida</a>.",
     },
     {
       type: "section" as const,
@@ -142,13 +142,13 @@ const POST = {
       type: "section" as const,
       heading: "How to Evaluate Extra Benefits When Comparing Plans",
       content:
-        "Extra benefits should be evaluated carefully, not just taken at face value from marketing materials.\n\n<strong>Step 1: Identify which benefits you will actually use.</strong> A generous dental allowance is worthless if you have your own dental insurance. An OTC allowance is valuable if you regularly purchase eligible items.\n\n<strong>Step 2: Read the Evidence of Coverage, not just the Summary of Benefits.</strong> The Summary of Benefits highlights the best features. The Evidence of Coverage contains the actual coverage rules, limitations, and exclusions.\n\n<strong>Step 3: Calculate the dollar value of benefits you will use.</strong> If a plan has a $25/month OTC allowance and a $100/year vision allowance, that is $400 per year in extra value. Compare that against the plan's premium and cost-sharing differences versus other plans.\n\n<strong>Step 4: Do not let extra benefits distract from core coverage.</strong> The plan's network, formulary, and out-of-pocket maximum matter far more than extra benefits. A plan with a $150/month OTC allowance but a $9,350 out-of-pocket maximum is not a good deal if you have significant healthcare needs.\n\nFor help comparing plans in your area, <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
+        "Extra benefits should be evaluated carefully, not just taken at face value from marketing materials.\n\n<strong>Step 1: Identify which benefits you will actually use.</strong> A generous dental allowance is worthless if you have your own dental insurance. An OTC allowance is valuable if you regularly purchase eligible items.\n\n<strong>Step 2: Read the Evidence of Coverage, not just the Summary of Benefits.</strong> The Summary of Benefits highlights the best features. The Evidence of Coverage contains the actual coverage rules, limitations, and exclusions.\n\n<strong>Step 3: Calculate the dollar value of benefits you will use.</strong> If a plan has a $25/month OTC allowance and a $100/year vision allowance, that is $400 per year in extra value. Compare that against the plan's premium and cost-sharing differences versus other plans.\n\n<strong>Step 4: Do not let extra benefits distract from core coverage.</strong> The plan's network, formulary, and out-of-pocket maximum matter far more than extra benefits. A plan with a $150/month OTC allowance but a $9,350 out-of-pocket maximum is not a good deal if you have significant healthcare needs.\n\nFor help comparing plans in your area, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
     },
     {
       type: "summary" as const,
       heading: "The Bottom Line on Medicare Advantage Extra Benefits",
       content:
-        "Medicare Advantage extra benefits are real and can provide meaningful value, but they have been scaled back in 2026 and should not be the primary reason to choose a plan. Here is the key guidance:\n\n<ul><li><strong>Preventive dental, vision, and hearing</strong> are still widely available and genuinely valuable since Original Medicare does not cover them</li><li><strong>OTC allowances</strong> have decreased but are still available on many plans, typically $25 to $75 per quarter</li><li><strong>Transportation and fitness</strong> benefits remain on some plans but have been reduced on many others</li><li><strong>Evaluate benefits you will actually use</strong> and calculate their dollar value before comparing plans</li><li><strong>Do not let extra benefits override core coverage decisions</strong> about network, formulary, and out-of-pocket maximum</li></ul>\n\nOur licensed specialists can identify which Florida plans offer the best combination of core coverage and supplemental benefits for your specific situation. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get a personalized plan comparison.",
+        "Medicare Advantage extra benefits are real and can provide meaningful value, but they have been scaled back in 2026 and should not be the primary reason to choose a plan. Here is the key guidance:\n\n<ul><li><strong>Preventive dental, vision, and hearing</strong> are still widely available and genuinely valuable since Original Medicare does not cover them</li><li><strong>OTC allowances</strong> have decreased but are still available on many plans, typically $25 to $75 per quarter</li><li><strong>Transportation and fitness</strong> benefits remain on some plans but have been reduced on many others</li><li><strong>Evaluate benefits you will actually use</strong> and calculate their dollar value before comparing plans</li><li><strong>Do not let extra benefits override core coverage decisions</strong> about network, formulary, and out-of-pocket maximum</li></ul>\n\nOur licensed specialists can identify which Florida plans offer the best combination of core coverage and supplemental benefits for your specific situation. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get a personalized plan comparison.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "Best Medicare Advantage Plans in Florida 2026",
-      href: "/best-medicare-advantage-plans-florida",
+      href: "/best-medicare-advantage-plans-florida/",
       category: "Plans" as const,
     },
     {
       title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
-      href: "/medicare-advantage-changes-2026-florida",
+      href: "/medicare-advantage-changes-2026-florida/",
       category: "Plans" as const,
     },
     {
       title: "Pros and Cons of Enrolling in a Medicare Advantage Plan in Florida",
-      href: "/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida",
+      href: "/the-pros-and-cons-of-enrolling-in-a-medicare-advantage-plan-in-florida/",
       category: "Plans" as const,
     },
   ],

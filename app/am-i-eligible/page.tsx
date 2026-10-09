@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Am I Eligible for Medicare? | Medicare Information Project",
     description:
       "Find out if you qualify for Medicare. Use our free eligibility checker - covers age, disability, ESRD, work history, and special situations.",
-    url: "https://medicareinfopro.com/am-i-eligible",
+    url: "https://medicareinfopro.com/am-i-eligible/",
     siteName: "Medicare Information Project",
     images: [
       {

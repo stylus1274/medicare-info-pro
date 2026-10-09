@@ -280,7 +280,7 @@ export default function UnderstandingPartDClient() {
           <nav className="flex items-center gap-2 text-white/60 text-sm mb-4" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span aria-hidden="true">/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span aria-hidden="true">/</span>
             <span className="text-white" aria-current="page">Understanding Part D</span>
           </nav>
@@ -709,19 +709,19 @@ export default function UnderstandingPartDClient() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                href: "/costs-at-a-glance",
+                href: "/costs-at-a-glance/",
                 label: "Costs at a Glance",
                 desc: "All 2026 premiums, deductibles, and out-of-pocket limits, including Part D cost details.",
                 tag: "Cost Reference",
               },
               {
-                href: "/do-i-need-a-supplement",
+                href: "/do-i-need-a-supplement/",
                 label: "Do I Need a Supplement?",
                 desc: "If you choose Original Medicare, a Medigap plan covers what Part B doesn't, but not drugs.",
                 tag: "Key Decision",
               },
               {
-                href: "/original-vs-advantage",
+                href: "/original-vs-advantage/",
                 label: "Original vs. Advantage",
                 desc: "Most Medicare Advantage plans include drug coverage. Compare your options before choosing.",
                 tag: "Plan Comparison",

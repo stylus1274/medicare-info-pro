@@ -421,10 +421,10 @@ export default function ContactClient() {
               </h3>
               <div className="space-y-2">
                 {[
-                  { label: "Take the Medicare Quiz", href: "/medicare-quiz" },
-                  { label: "Compare Original vs. Advantage", href: "/original-vs-advantage" },
-                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-                  { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+                  { label: "Take the Medicare Quiz", href: "/medicare-quiz/" },
+                  { label: "Compare Original vs. Advantage", href: "/original-vs-advantage/" },
+                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+                  { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
                 ].map((link) => (
                   <Link
                     key={link.href}

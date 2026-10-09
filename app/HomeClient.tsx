@@ -35,7 +35,7 @@ const DECISION_TILES = [
     icon: <UserPlus size={22} />,
     label: "I'm turning 65 and new to Medicare",
     desc: "Understand your options, deadlines, and first steps before your Initial Enrollment Period closes.",
-    href: "/am-i-eligible",
+    href: "/am-i-eligible/",
     color: "#1a3fa8",
   },
   {
@@ -56,7 +56,7 @@ const DECISION_TILES = [
     icon: <DollarSign size={22} />,
     label: "I need help understanding Medicare costs",
     desc: "Break down premiums, deductibles, copays, and out-of-pocket maximums across plan types.",
-    href: "/costs-at-a-glance",
+    href: "/costs-at-a-glance/",
     color: "#d97706",
   },
   {
@@ -115,9 +115,9 @@ export default function HomeClient() {
               </p>
               <div style={{ display: "flex", flexDirection: "row", gap: "0.5rem", marginTop: "1.5rem", flexWrap: "wrap", maxWidth: "100%" }}>
                 {[
-                  { label: "I'm New to Medicare", icon: <UserPlus size={16} style={{ color: "#3b82f6", flexShrink: 0 }} />, href: "/get-started" },
-                  { label: "Working Past 65", icon: <Briefcase size={16} style={{ color: "#f59e0b", flexShrink: 0 }} />, href: "/get-started" },
-                  { label: "Already Enrolled", icon: <BadgeCheck size={16} style={{ color: "#10b981", flexShrink: 0 }} />, href: "/get-started" },
+                  { label: "I'm New to Medicare", icon: <UserPlus size={16} style={{ color: "#3b82f6", flexShrink: 0 }} />, href: "/get-started/" },
+                  { label: "Working Past 65", icon: <Briefcase size={16} style={{ color: "#f59e0b", flexShrink: 0 }} />, href: "/get-started/" },
+                  { label: "Already Enrolled", icon: <BadgeCheck size={16} style={{ color: "#10b981", flexShrink: 0 }} />, href: "/get-started/" },
                 ].map((btn) => (
                   <Link key={btn.label} href={btn.href} style={{
                     display: "inline-flex", alignItems: "center", gap: "0.5rem",
@@ -196,8 +196,8 @@ export default function HomeClient() {
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/blog-scooter-hero_48088844.jpg", category: "Coverage & Claims", title: "Why Medicare Denies Mobility Scooter Claims in Florida (And How to Appeal)", desc: "The most common reasons Medicare turns down scooter requests - and a step-by-step guide to filing a successful appeal.", date: "Updated Apr 2026", href: "/blog-post" },
-              { img: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&h=400&fit=crop", category: "Tool", title: "Medicare Enrollment Timeline Calculator", desc: "Enter your birthday and employment status to see exactly when you should enroll and what deadlines to watch.", date: "Updated Jan 2026", href: "/enrollment-calculator" },
+              { img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/blog-scooter-hero_48088844.jpg", category: "Coverage & Claims", title: "Why Medicare Denies Mobility Scooter Claims in Florida (And How to Appeal)", desc: "The most common reasons Medicare turns down scooter requests - and a step-by-step guide to filing a successful appeal.", date: "Updated Apr 2026", href: "/why-medicare-denies-mobility-scooter-claims-florida/" },
+              { img: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&h=400&fit=crop", category: "Tool", title: "Medicare Enrollment Timeline Calculator", desc: "Enter your birthday and employment status to see exactly when you should enroll and what deadlines to watch.", date: "Updated Jan 2026", href: "/enrollment-calculator/" },
               { img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop", category: "News", title: "2026 Medicare Advantage Changes in Florida", desc: "Key changes to Medicare Advantage plans in Florida for 2026, including new benefits and network updates.", date: "Updated Jan 2026", href: "#" },
             ].map((a, i) => (
               <motion.a key={i} href={a.href} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
@@ -218,7 +218,7 @@ export default function HomeClient() {
             ))}
           </div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={3} className="flex justify-center mt-10">
-            <a href="/resources" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl border-2 font-bold text-[0.95rem] transition-all duration-200"
+            <a href="/resources/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl border-2 font-bold text-[0.95rem] transition-all duration-200"
               style={{ borderColor: "#1a3fa8", color: "#1a3fa8", backgroundColor: "transparent" }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = "#1a3fa8"; (e.currentTarget as HTMLElement).style.color = "#ffffff"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = "transparent"; (e.currentTarget as HTMLElement).style.color = "#1a3fa8"; }}>
@@ -248,7 +248,7 @@ export default function HomeClient() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-[0.95rem] text-gray-700 leading-relaxed">{item.text}</p>
                 <div className="border-t border-gray-100 mt-6 pt-5">
-                  <Link href="/free-consultation" className="text-[0.85rem] font-semibold hover:underline" style={{ color: "#1a3fa8" }}>Prepare with a licensed advisor <ArrowRight size={14} className="inline" /></Link>
+                  <Link href="/get-started/" className="text-[0.85rem] font-semibold hover:underline" style={{ color: "#1a3fa8" }}>Prepare with a licensed advisor <ArrowRight size={14} className="inline" /></Link>
                 </div>
               </motion.div>
             ))}
@@ -272,7 +272,7 @@ export default function HomeClient() {
               <a href="tel:18138699559" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#ffffff" }}>
                 <Phone size={18} /> Call Us Now
               </a>
-              <Link href="/get-started" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold text-white border-2 border-white/25 hover:border-white/50 transition-colors">
+              <Link href="/get-started/" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-[1rem] font-bold text-white border-2 border-white/25 hover:border-white/50 transition-colors">
                 Get Started Online <ArrowRight size={18} />
               </Link>
             </div>
@@ -318,7 +318,7 @@ function CommonMistakesSection() {
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
-          <a href="/resources" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.85rem 2rem", borderRadius: 10, background: "#f5a800", color: "#0d1f5c", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}>
+          <a href="/resources/" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.85rem 2rem", borderRadius: 10, background: "#f5a800", color: "#0d1f5c", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}>
             Learn How to Avoid These
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </a>
@@ -371,7 +371,7 @@ function CostEstimatorSection() {
                 </div>
                 <div style={{ fontSize: "0.8rem", color: "#6b7280", marginBottom: "1.25rem" }}>Typical plan type: <strong style={{ color: "#374151" }}>{active.planType}</strong></div>
                 <p style={{ fontSize: "0.9rem", color: "#4b5563", lineHeight: 1.7, marginBottom: "1.5rem" }}>{active.result}</p>
-                <Link href="/get-started" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.75rem 1.5rem", borderRadius: 9, background: active.color, color: "#fff", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}>
+                <Link href="/get-started/" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.75rem 1.5rem", borderRadius: 9, background: active.color, color: "#fff", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}>
                   Find Plans in Your Area
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </Link>
@@ -469,7 +469,7 @@ function FAQBlock() {
                 <a href="tel:18138699559" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-bold mb-3" style={{ background: "linear-gradient(135deg, #f5a800 0%, #f59e0b 100%)", color: "#ffffff" }}>
                   <Phone size={16} /> Call Us Now
                 </a>
-                <Link href="/get-started" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-semibold text-white border-2 border-white/20 hover:border-white/40 transition-colors">
+                <Link href="/get-started/" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-[0.95rem] font-semibold text-white border-2 border-white/20 hover:border-white/40 transition-colors">
                   Get Started Online <ArrowRight size={16} />
                 </Link>
               </div>

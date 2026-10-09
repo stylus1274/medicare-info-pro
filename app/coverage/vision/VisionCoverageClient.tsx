@@ -134,22 +134,22 @@ const FAQ: { q: string; a: string }[] = [
 const RELATED_LINKS = [
   {
     label: "Does Medicare Cover Dental?",
-    href: "/coverage/dental",
+    href: "/coverage/dental/",
     desc: "Routine dental is also excluded from Original Medicare",
   },
   {
     label: "Original vs. Medicare Advantage",
-    href: "/original-vs-advantage",
+    href: "/original-vs-advantage/",
     desc: "Compare the two main Medicare paths",
   },
   {
     label: "Costs at a Glance",
-    href: "/costs-at-a-glance",
+    href: "/costs-at-a-glance/",
     desc: "2025 premiums and deductibles",
   },
   {
     label: "Coverage Q&A Hub",
-    href: "/coverage-qa",
+    href: "/coverage-qa/",
     desc: "Browse all coverage questions",
   },
 ];
@@ -202,7 +202,7 @@ export default function VisionCoverageClient() {
               Home
             </Link>
             <ChevronRight size={12} />
-            <Link href="/coverage-qa" className="hover:text-white/80 transition-colors">
+            <Link href="/coverage-qa/" className="hover:text-white/80 transition-colors">
               Coverage Q&A
             </Link>
             <ChevronRight size={12} />
@@ -317,7 +317,7 @@ export default function VisionCoverageClient() {
                 worth comparing dental benefits at the same time.
               </p>
               <Link
-                href="/coverage/dental"
+                href="/coverage/dental/"
                 className="inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
               >
                 Does Medicare Cover Dental? <ArrowRight size={14} />
@@ -413,7 +413,7 @@ export default function VisionCoverageClient() {
                   813-699-5559
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors w-full justify-center"
                 >
                   Take the Quiz <ArrowRight size={13} />
@@ -458,7 +458,7 @@ export default function VisionCoverageClient() {
                   more.
                 </p>
                 <Link
-                  href="/coverage-qa"
+                  href="/coverage-qa/"
                   className="flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
                 >
                   Coverage Q&A Hub <ArrowRight size={13} />

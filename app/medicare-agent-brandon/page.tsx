@@ -182,12 +182,12 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101 Overview", href: "/medicare-101" },
-          { label: "Plan Comparison Tool", href: "/plan-comparison" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico/" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101 Overview", href: "/medicare-101/" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison/" },
         ],
       }}
     />

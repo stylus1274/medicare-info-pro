@@ -149,7 +149,7 @@ const POST = {
       type: "summary" as const,
       heading: "Your Medicare Enrollment Checklist",
       content:
-        "Use this checklist to make sure you complete every step:\n\n<ul><li><strong>Determine your enrollment scenario</strong> (turning 65, already on Social Security, working with employer coverage, or under 65 with disability)</li><li><strong>Identify your Initial Enrollment Period</strong> or Special Enrollment Period dates</li><li><strong>Apply for Parts A and B</strong> at ssa.gov or by calling 1-800-772-1213</li><li><strong>Decide between Medicare Advantage and Original Medicare</strong> based on your doctors, drugs, and health needs</li><li><strong>Use Medicare Plan Finder</strong> (medicare.gov/plan-compare) to compare Part D or Medicare Advantage plans with your actual medications entered</li><li><strong>Enroll in your chosen plan</strong> before your enrollment window closes</li><li><strong>If you chose Original Medicare, enroll in Medigap</strong> during your 6-month Open Enrollment Period</li><li><strong>Confirm your coverage is active</strong> by logging into mymedicare.gov after your start date</li></ul>\n\nIf at any point you are unsure about which plan to choose, an independent Medicare advisor can help you compare options at no cost. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> with our licensed specialists.",
+        "Use this checklist to make sure you complete every step:\n\n<ul><li><strong>Determine your enrollment scenario</strong> (turning 65, already on Social Security, working with employer coverage, or under 65 with disability)</li><li><strong>Identify your Initial Enrollment Period</strong> or Special Enrollment Period dates</li><li><strong>Apply for Parts A and B</strong> at ssa.gov or by calling 1-800-772-1213</li><li><strong>Decide between Medicare Advantage and Original Medicare</strong> based on your doctors, drugs, and health needs</li><li><strong>Use Medicare Plan Finder</strong> (medicare.gov/plan-compare) to compare Part D or Medicare Advantage plans with your actual medications entered</li><li><strong>Enroll in your chosen plan</strong> before your enrollment window closes</li><li><strong>If you chose Original Medicare, enroll in Medigap</strong> during your 6-month Open Enrollment Period</li><li><strong>Confirm your coverage is active</strong> by logging into mymedicare.gov after your start date</li></ul>\n\nIf at any point you are unsure about which plan to choose, an independent Medicare advisor can help you compare options at no cost. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> with our licensed specialists.",
     },
     {
       type: "faq" as const,
@@ -190,17 +190,17 @@ const POST = {
   relatedPosts: [
     {
       title: "Medicare Qualifications in Florida: Who Is Eligible?",
-      href: "/medicare-qualifications-florida",
+      href: "/medicare-qualifications-florida/",
       category: "Enrollment" as const,
     },
     {
       title: "Best Medicare Advantage Plans in Florida 2026",
-      href: "/best-medicare-advantage-plans-florida",
+      href: "/best-medicare-advantage-plans-florida/",
       category: "Plans" as const,
     },
     {
       title: "Is Reinstating a Part D Plan Possible?",
-      href: "/is-reinstating-a-part-d-plan-possible",
+      href: "/is-reinstating-a-part-d-plan-possible/",
       category: "Part D" as const,
     },
   ],

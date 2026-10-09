@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I enroll in Medicare if I am still working in Seffner?", a: "Yes, but the rules are different if you have employer coverage. We help Seffner residents who are still working understand how their employer plan coordinates with Medicare and when to enroll to avoid penalties." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Insurance Agent Plant City", href: "/medicare-insurance-agent-plant-city-fl" },
-          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl" },
-          { label: "Still Working?", href: "/still-working" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Insurance Agent Plant City", href: "/medicare-insurance-agent-plant-city-fl/" },
+          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl/" },
+          { label: "Still Working?", href: "/still-working/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What Special Needs Plans are available in Valrico?", a: "Special Needs Plans (SNPs) are available in Hillsborough County for people with certain chronic conditions. We help Valrico residents identify whether an SNP might be a better fit than a standard Medicare Advantage plan." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico" },
-          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Special Needs Plans", href: "/special-needs-plans" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico/" },
+          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico/" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Special Needs Plans", href: "/medicare-snp-plans/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

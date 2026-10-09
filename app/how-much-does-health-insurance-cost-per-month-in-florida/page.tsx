@@ -147,7 +147,7 @@ const POST = {
       type: "summary" as const,
       heading: "Bottom Line: What to Expect in 2026",
       content:
-        "Here is a quick reference for what different Florida residents typically pay per month in 2026:\n\n<ul><li><strong>Under 65, no employer coverage, income qualifies for subsidy:</strong> $0 to $250/month for a Silver plan</li><li><strong>Under 65, no employer coverage, no subsidy:</strong> $330 to $1,050/month depending on age</li><li><strong>Employer coverage (employee share):</strong> $130 to $550/month depending on employer and plan</li><li><strong>Medicare only (Part A + B):</strong> $185/month for most people</li><li><strong>Medicare Advantage (Part B + $0 plan):</strong> $185/month total</li><li><strong>Medicare + Medigap Plan G + Part D:</strong> $330 to $450/month total</li></ul>\n\nThe most important step you can take is to <strong>compare your options every year</strong> rather than auto-renewing. Plans change, subsidies change, and your circumstances change. An independent broker can run this comparison for you at no cost.\n\n<a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> with our licensed specialists to find out exactly what you should be paying.",
+        "Here is a quick reference for what different Florida residents typically pay per month in 2026:\n\n<ul><li><strong>Under 65, no employer coverage, income qualifies for subsidy:</strong> $0 to $250/month for a Silver plan</li><li><strong>Under 65, no employer coverage, no subsidy:</strong> $330 to $1,050/month depending on age</li><li><strong>Employer coverage (employee share):</strong> $130 to $550/month depending on employer and plan</li><li><strong>Medicare only (Part A + B):</strong> $185/month for most people</li><li><strong>Medicare Advantage (Part B + $0 plan):</strong> $185/month total</li><li><strong>Medicare + Medigap Plan G + Part D:</strong> $330 to $450/month total</li></ul>\n\nThe most important step you can take is to <strong>compare your options every year</strong> rather than auto-renewing. Plans change, subsidies change, and your circumstances change. An independent broker can run this comparison for you at no cost.\n\n<a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> with our licensed specialists to find out exactly what you should be paying.",
     },
     {
       type: "faq" as const,
@@ -188,17 +188,17 @@ const POST = {
   relatedPosts: [
     {
       title: "Why Is Health Insurance So Expensive in Florida?",
-      href: "/why-is-health-insurance-so-expensive-in-florida",
+      href: "/why-is-health-insurance-so-expensive-in-florida/",
       category: "Costs" as const,
     },
     {
       title: "Best Medicare Advantage Plans in Florida",
-      href: "/best-medicare-advantage-plans-florida",
+      href: "/best-medicare-advantage-plans-florida/",
       category: "Plans" as const,
     },
     {
       title: "Does Medicare Cover Ambulance Rides in 2026?",
-      href: "/does-medicare-cover-ambulance-rides",
+      href: "/does-medicare-cover-ambulance-rides/",
       category: "Coverage" as const,
     },
   ],

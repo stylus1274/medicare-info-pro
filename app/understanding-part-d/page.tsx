@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Understanding Medicare Part D: Prescription Drug Coverage",
     description:
       "How Part D works, formulary tiers, the $2,100 out-of-pocket cap, and how to choose the right drug plan for your medications in 2026.",
-    url: "https://medicareinfopro.com/understanding-part-d",
+    url: "https://medicareinfopro.com/understanding-part-d/",
     type: "article",
     images: [
       {

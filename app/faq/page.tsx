@@ -355,7 +355,7 @@ export const metadata: Metadata = {
     title: "Medicare FAQ Center | MedicareInfoPro",
     description:
       "Searchable answers to the most common Medicare questions, organized by topic: eligibility, enrollment, plan types, costs, and coverage.",
-    url: "https://medicareinfopro.com/faq",
+    url: "https://medicareinfopro.com/faq/",
     siteName: "MedicareInfoPro",
     type: "website",
   },

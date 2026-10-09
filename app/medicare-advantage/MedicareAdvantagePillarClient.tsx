@@ -179,10 +179,10 @@ const FAQ_ITEMS = [
 // ---- Related Guides ---------------------------------------------------------
 
 const RELATED_GUIDES = [
-  { label: "Do I Need a Supplement?", icon: <BookOpen size={13} />, href: "/do-i-need-a-supplement" },
-  { label: "Understanding Part D", icon: <FileText size={13} />, href: "/understanding-part-d" },
-  { label: "Enrollment Timeline", icon: <Calendar size={13} />, href: "/enrollment-timeline" },
-  { label: "Costs at a Glance", icon: <FileText size={13} />, href: "/costs-at-a-glance" },
+  { label: "Do I Need a Supplement?", icon: <BookOpen size={13} />, href: "/do-i-need-a-supplement/" },
+  { label: "Understanding Part D", icon: <FileText size={13} />, href: "/understanding-part-d/" },
+  { label: "Enrollment Timeline", icon: <Calendar size={13} />, href: "/enrollment-timeline/" },
+  { label: "Costs at a Glance", icon: <FileText size={13} />, href: "/costs-at-a-glance/" },
 ];
 
 // ---- FAQ Accordion ----------------------------------------------------------
@@ -526,7 +526,7 @@ export default function MedicareAdvantagePillarClient() {
               </div>
               <div className="mt-4">
                 <Link
-                  href="/original-vs-advantage"
+                  href="/original-vs-advantage/"
                   className="inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
                 >
                   Read the Full Comparison Guide <ArrowRight size={14} />
@@ -570,7 +570,7 @@ export default function MedicareAdvantagePillarClient() {
               </div>
               <div className="mt-5">
                 <Link
-                  href="/enrollment-timeline"
+                  href="/enrollment-timeline/"
                   className="inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
                 >
                   View the Full Enrollment Timeline <ArrowRight size={14} />
@@ -611,7 +611,7 @@ export default function MedicareAdvantagePillarClient() {
               </div>
               <div className="flex gap-3 shrink-0">
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-[#1a3fa8] hover:bg-white/90 transition-colors"
                 >
                   Take the Quiz
@@ -684,7 +684,7 @@ export default function MedicareAdvantagePillarClient() {
                   <Phone size={14} /> 813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold border border-white/30 text-white hover:bg-white/10 transition-colors"
                 >
                   Take the Quiz <ArrowRight size={13} />

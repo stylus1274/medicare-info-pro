@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage (Part C): The Complete Guide",
     description:
       "Everything you need to know about Medicare Advantage plans, including how they work, plan types, costs, and enrollment periods.",
-    url: "https://medicareinfopro.com/medicare-advantage",
+    url: "https://medicareinfopro.com/medicare-advantage/",
     type: "article",
     images: [
       {

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Medicare Consultation | Brandon, FL | MedicareInfoPro",
     description: "Get a free, no-obligation Medicare consultation from a licensed advisor in Brandon, FL. We compare every plan available in your zip code.",
-    url: "https://medicareinfopro.com/free-consultation/",
+    url: "https://medicareinfopro.com/get-started/",
     type: "website",
     images: [{ url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80", width: 1200, height: 630, alt: "Licensed Medicare advisor meeting with a client in Brandon FL" }],
   },

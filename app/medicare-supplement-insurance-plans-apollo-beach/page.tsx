@@ -59,11 +59,11 @@ export default function Page() {
           { q: "How does Medigap compare to Medicare Advantage in Apollo Beach?", a: "Medigap plans have higher premiums but cover most out-of-pocket costs and allow you to see any Medicare-accepting doctor nationwide. Medicare Advantage plans typically have lower premiums but require network restrictions and copays. We help you compare both options." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Medicare Supplement Plans Sun City", href: "/medicare-supplement-insurance-plans-sun-city" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Medicare Supplement Plans Sun City", href: "/medicare-supplement-insurance-plans-sun-city/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

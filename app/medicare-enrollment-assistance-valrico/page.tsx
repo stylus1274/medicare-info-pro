@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico" },
-          { label: "Medicare Consulting Valrico", href: "/medicare-consulting-services-valrico" },
-          { label: "Medicare Enrollment Assistance in Valrico FL", href: "/medicare-enrollment-assistance-in-valrico-fl" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
+          { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico/" },
+          { label: "Medicare Consulting Valrico", href: "/medicare-consulting-services-valrico/" },
+          { label: "Medicare Enrollment Assistance in Valrico FL", href: "/medicare-enrollment-assistance-in-valrico-fl/" },
+          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
         ],
       }}
     />

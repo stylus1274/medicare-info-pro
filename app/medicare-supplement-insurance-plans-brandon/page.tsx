@@ -160,11 +160,11 @@ export default function Page() {
           { q: "Can I switch Medigap plans in Brandon?", a: "Outside of your initial Medigap Open Enrollment Period, switching plans may require medical underwriting. We help Brandon residents understand their options and timing for switching Medigap plans." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Supplement Plans Riverview", href: "/medicare-supplement-insurance-plans-riverview" },
-          { label: "Medicare Advantage vs Medigap", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Supplement Plans Riverview", href: "/medicare-supplement-insurance-plans-riverview/" },
+          { label: "Medicare Advantage vs Medigap", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

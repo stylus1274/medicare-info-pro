@@ -84,12 +84,12 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Medicare Agent Wimauma", href: "/medicare-agent-wimauma" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101 Overview", href: "/medicare-101" },
-          { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Medicare Agent Wimauma", href: "/medicare-agent-wimauma/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101 Overview", href: "/medicare-101/" },
+          { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
         ],
       }}
     />

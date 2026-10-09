@@ -170,7 +170,7 @@ const POST = {
       type: "section" as const,
       heading: "What Is Medicare Home Health Care?",
       content:
-        "Home health care under <a href='/what-is-medicare' class='text-[#1a3fa8] underline underline-offset-2'>Medicare</a> refers to a specific set of skilled medical services delivered in your home by a Medicare-certified home health agency. This is different from general home care or personal assistance services.\n\nThe program is designed for people who are recovering from an illness, injury, or surgery, or who have a chronic condition that requires ongoing skilled medical attention. The goal is to allow patients to receive necessary medical care in the comfort of their own home rather than in a hospital or skilled nursing facility.\n\nBoth <a href='/medicare-part-a' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part A</a> and <a href='/medicare-part-b' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part B</a> cover home health services. Which part pays depends on whether you recently had a qualifying hospital or skilled nursing facility stay, but the covered services and eligibility criteria are the same either way.",
+        "Home health care under <a href='/what-is-medicare/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare</a> refers to a specific set of skilled medical services delivered in your home by a Medicare-certified home health agency. This is different from general home care or personal assistance services.\n\nThe program is designed for people who are recovering from an illness, injury, or surgery, or who have a chronic condition that requires ongoing skilled medical attention. The goal is to allow patients to receive necessary medical care in the comfort of their own home rather than in a hospital or skilled nursing facility.\n\nBoth <a href='/medicare-part-a/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part A</a> and <a href='/medicare-part-b/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part B</a> cover home health services. Which part pays depends on whether you recently had a qualifying hospital or skilled nursing facility stay, but the covered services and eligibility criteria are the same either way.",
     },
     {
       type: "section" as const,
@@ -187,7 +187,7 @@ const POST = {
     {
       type: "proTip" as const,
       content:
-        "If you need both skilled care and personal care assistance, Medicare will cover the personal care provided by a home health aide as part of your plan of care. The key is that skilled care must be the primary reason for the home health visit. Once skilled care ends, Medicare will no longer cover the home health aide, even if you still need help with bathing or dressing. Plan ahead by identifying other resources before your skilled care period ends. A <a href='/find-an-agent' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare specialist</a> can help you understand what your specific plan covers.",
+        "If you need both skilled care and personal care assistance, Medicare will cover the personal care provided by a home health aide as part of your plan of care. The key is that skilled care must be the primary reason for the home health visit. Once skilled care ends, Medicare will no longer cover the home health aide, even if you still need help with bathing or dressing. Plan ahead by identifying other resources before your skilled care period ends. A <a href='/find-an-agent/' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare specialist</a> can help you understand what your specific plan covers.",
     },
     {
       type: "section" as const,
@@ -199,13 +199,13 @@ const POST = {
       type: "section" as const,
       heading: "What Does Medicare Home Health Care Cost?",
       content:
-        "For most covered home health services under Original Medicare, your out-of-pocket cost is zero. Medicare pays 100% of the approved amount for skilled nursing, therapy, and home health aide services when all eligibility criteria are met.\n\nThe one exception is durable medical equipment (DME) ordered as part of your home health plan of care. For DME, Medicare pays 80% of the approved amount and you pay the remaining 20% after your <a href='/medicare-part-b' class='text-[#1a3fa8] underline underline-offset-2'>Part B deductible</a> is met. In 2026, the Part B deductible is $257.\n\nIf you have a <a href='/medicare-supplement-plans' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement (Medigap) plan</a>, it may cover the 20% DME cost-sharing depending on which plan you have. <a href='/medicare-supplement-plan-g' class='text-[#1a3fa8] underline underline-offset-2'>Plan G</a>, for example, covers the Part B coinsurance after you meet the deductible.",
+        "For most covered home health services under Original Medicare, your out-of-pocket cost is zero. Medicare pays 100% of the approved amount for skilled nursing, therapy, and home health aide services when all eligibility criteria are met.\n\nThe one exception is durable medical equipment (DME) ordered as part of your home health plan of care. For DME, Medicare pays 80% of the approved amount and you pay the remaining 20% after your <a href='/medicare-part-b/' class='text-[#1a3fa8] underline underline-offset-2'>Part B deductible</a> is met. In 2026, the Part B deductible is $257.\n\nIf you have a <a href='/medicare-supplement/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement (Medigap) plan</a>, it may cover the 20% DME cost-sharing depending on which plan you have. <a href='/plan-g-complete-guide/' class='text-[#1a3fa8] underline underline-offset-2'>Plan G</a>, for example, covers the Part B coinsurance after you meet the deductible.",
     },
     {
       type: "section" as const,
       heading: "Medicare Advantage and Home Health Care",
       content:
-        "If you are enrolled in a <a href='/medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage</a> plan, your plan must cover all the same home health services that Original Medicare covers. However, the cost-sharing and network rules may differ.\n\nMany Medicare Advantage plans also offer supplemental home-based benefits that go beyond Original Medicare, including:\n\n<ul><li>Personal care assistance (help with bathing, dressing, and grooming)</li><li>Meal delivery after a hospitalization or for chronically ill enrollees</li><li>Home safety modifications such as grab bars or ramps</li><li>Transportation to medical appointments</li><li>Remote patient monitoring</li></ul>\n\nThese supplemental benefits vary significantly by plan and by county. If home-based care is important to you, comparing Advantage plans based on their supplemental benefits is worth the effort. Our <a href='/find-an-agent' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare agents</a> can pull up the specific benefits available in your zip code.",
+        "If you are enrolled in a <a href='/medicare-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage</a> plan, your plan must cover all the same home health services that Original Medicare covers. However, the cost-sharing and network rules may differ.\n\nMany Medicare Advantage plans also offer supplemental home-based benefits that go beyond Original Medicare, including:\n\n<ul><li>Personal care assistance (help with bathing, dressing, and grooming)</li><li>Meal delivery after a hospitalization or for chronically ill enrollees</li><li>Home safety modifications such as grab bars or ramps</li><li>Transportation to medical appointments</li><li>Remote patient monitoring</li></ul>\n\nThese supplemental benefits vary significantly by plan and by county. If home-based care is important to you, comparing Advantage plans based on their supplemental benefits is worth the effort. Our <a href='/find-an-agent/' class='text-[#1a3fa8] underline underline-offset-2'>licensed Medicare agents</a> can pull up the specific benefits available in your zip code.",
     },
     {
       type: "section" as const,
@@ -217,7 +217,7 @@ const POST = {
       type: "summary" as const,
       heading: "Home Health Care Coverage: Quick Reference",
       content:
-        "<ul><li><strong>Covered:</strong> Skilled nursing, physical therapy, occupational therapy, speech therapy, medical social services, home health aide (with skilled care), and DME (at 80%)</li><li><strong>Not covered:</strong> 24-hour care, custodial care alone, homemaker services, meal delivery (Original Medicare)</li><li><strong>Eligibility:</strong> Must be homebound, need skilled care, have a physician's order, and use a Medicare-certified agency</li><li><strong>Duration:</strong> No fixed limit; continues as long as you qualify; reviewed in 60-day episodes</li><li><strong>Cost:</strong> $0 for covered services; 20% coinsurance for DME after the Part B deductible</li><li><strong>Advantage plans:</strong> May offer additional home-based benefits beyond Original Medicare</li></ul>\n\nIf you are trying to understand whether a specific service qualifies for Medicare home health coverage, or if you want to compare Medicare Advantage plans with strong home care benefits in the Tampa Bay area, <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with one of our licensed Medicare specialists.",
+        "<ul><li><strong>Covered:</strong> Skilled nursing, physical therapy, occupational therapy, speech therapy, medical social services, home health aide (with skilled care), and DME (at 80%)</li><li><strong>Not covered:</strong> 24-hour care, custodial care alone, homemaker services, meal delivery (Original Medicare)</li><li><strong>Eligibility:</strong> Must be homebound, need skilled care, have a physician's order, and use a Medicare-certified agency</li><li><strong>Duration:</strong> No fixed limit; continues as long as you qualify; reviewed in 60-day episodes</li><li><strong>Cost:</strong> $0 for covered services; 20% coinsurance for DME after the Part B deductible</li><li><strong>Advantage plans:</strong> May offer additional home-based benefits beyond Original Medicare</li></ul>\n\nIf you are trying to understand whether a specific service qualifies for Medicare home health coverage, or if you want to compare Medicare Advantage plans with strong home care benefits in the Tampa Bay area, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with one of our licensed Medicare specialists.",
     },
     {
       type: "faq" as const,
@@ -263,17 +263,17 @@ const POST = {
   relatedPosts: [
     {
       title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
-      href: "/does-medicare-cover-cataract-surgery",
+      href: "/does-medicare-cover-cataract-surgery/",
       category: "Coverage" as const,
     },
     {
       title: "Does Medicare Cover Ambulance Rides in 2026?",
-      href: "/does-medicare-cover-ambulance-rides",
+      href: "/does-medicare-cover-ambulance-rides/",
       category: "Coverage" as const,
     },
     {
       title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
-      href: "/medicare-advantage-changes-2026-florida",
+      href: "/medicare-advantage-changes-2026-florida/",
       category: "Plans" as const,
     },
   ],

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Sun City Center enrollment specialist help me switch plans?", a: "Yes. The Annual Enrollment Period (October 15 to December 7) allows you to switch plans each year. We review your current coverage and compare alternatives to ensure you have the best plan for your needs." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
-          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Medicare Enrollment Apollo Beach", href: "/medicare-enrollment-assistance-in-apollo-beach-fl" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city/" },
+          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Medicare Enrollment Apollo Beach", href: "/medicare-enrollment-assistance-in-apollo-beach-fl/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

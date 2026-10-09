@@ -19,17 +19,17 @@ const FAQ = {
     {
       heading: "Who may qualify for therapeutic shoes and inserts?",
       content:
-        "Medicare requires both diabetes and at least one qualifying foot condition. Examples listed by Medicare and CMS include a previous partial or complete foot amputation, a history of foot ulceration, pre-ulcerative calluses, peripheral neuropathy with evidence of callus formation, foot deformity, or poor circulation. The clinician treating your diabetes must certify that you have diabetes and need therapeutic shoes or inserts because of your condition.<br><br>This is more specific than simply having diabetes or wanting a more comfortable shoe. If you use Medicare for diabetes medications, you may also find our <a href='/does-medicare-cover-ozempic' class='text-[#1a3fa8] underline underline-offset-2'>Ozempic coverage guide</a> and <a href='/does-medicare-cover-wegovy' class='text-[#1a3fa8] underline underline-offset-2'>Wegovy coverage guide</a> useful for understanding how prescription coverage works separately from Part B equipment benefits.",
+        "Medicare requires both diabetes and at least one qualifying foot condition. Examples listed by Medicare and CMS include a previous partial or complete foot amputation, a history of foot ulceration, pre-ulcerative calluses, peripheral neuropathy with evidence of callus formation, foot deformity, or poor circulation. The clinician treating your diabetes must certify that you have diabetes and need therapeutic shoes or inserts because of your condition.<br><br>This is more specific than simply having diabetes or wanting a more comfortable shoe. If you use Medicare for diabetes medications, you may also find our <a href='/does-medicare-cover-ozempic/' class='text-[#1a3fa8] underline underline-offset-2'>Ozempic coverage guide</a> and <a href='/does-medicare-cover-wegovy/' class='text-[#1a3fa8] underline underline-offset-2'>Wegovy coverage guide</a> useful for understanding how prescription coverage works separately from Part B equipment benefits.",
     },
     {
       heading: "What does Medicare typically cover each year?",
       content:
-        "For eligible people, Medicare may cover one pair of custom-molded shoes and three pairs of inserts, or one pair of extra-depth shoes and three pairs of inserts, during a calendar year. Medicare can also cover separate insert replacements in certain circumstances. The exact item must be prescribed and furnished by qualified practitioners and suppliers who meet Medicare's requirements.<br><br>Therapeutic footwear is part of the broader Part B durable medical equipment benefit. Visit our <a href='/coverage/medical-equipment' class='text-[#1a3fa8] underline underline-offset-2'>medical equipment coverage page</a> for a broader explanation of supplier enrollment, assignment, and Part B cost-sharing.",
+        "For eligible people, Medicare may cover one pair of custom-molded shoes and three pairs of inserts, or one pair of extra-depth shoes and three pairs of inserts, during a calendar year. Medicare can also cover separate insert replacements in certain circumstances. The exact item must be prescribed and furnished by qualified practitioners and suppliers who meet Medicare's requirements.<br><br>Therapeutic footwear is part of the broader Part B durable medical equipment benefit. Visit our <a href='/coverage/medical-equipment/' class='text-[#1a3fa8] underline underline-offset-2'>medical equipment coverage page</a> for a broader explanation of supplier enrollment, assignment, and Part B cost-sharing.",
     },
     {
       heading: "How much will you pay?",
       content:
-        "After you meet the Part B deductible, you generally pay 20% of the Medicare-approved amount when the supplier accepts assignment. A Medigap policy may help pay some or all of the Part B coinsurance, depending on the plan. A Medicare Advantage plan must cover Medicare-covered therapeutic shoes, but it may use network suppliers, prior authorization, and different copays or coinsurance.<br><br>Compare the cost protections in <a href='/medicare-advantage-vs-medigap' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage versus Medigap</a> and use our <a href='/medicare-supplement-plan-g-vs-plan-n' class='text-[#1a3fa8] underline underline-offset-2'>Plan G versus Plan N guide</a> if you are comparing Medigap cost-sharing options.",
+        "After you meet the Part B deductible, you generally pay 20% of the Medicare-approved amount when the supplier accepts assignment. A Medigap policy may help pay some or all of the Part B coinsurance, depending on the plan. A Medicare Advantage plan must cover Medicare-covered therapeutic shoes, but it may use network suppliers, prior authorization, and different copays or coinsurance.<br><br>Compare the cost protections in <a href='/medicare-advantage-vs-medigap/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage versus Medigap</a> and use our <a href='/medicare-supplement-plan-g-vs-plan-n/' class='text-[#1a3fa8] underline underline-offset-2'>Plan G versus Plan N guide</a> if you are comparing Medigap cost-sharing options.",
     },
     {
       heading: "How can you avoid a coverage problem?",
@@ -38,10 +38,10 @@ const FAQ = {
     },
   ],
   relatedFaqs: [
-    { question: "Does Medicare cover oxygen therapy?", href: "/faqs/does-medicare-cover-oxygen-therapy" },
-    { question: "Does Medicare cover lift chairs?", href: "/faqs/does-medicare-cover-lift-chairs" },
-    { question: "How does Medicare Part B work?", href: "/medicare-part-b" },
-    { question: "Does Medicare cover prescription drugs?", href: "/coverage/prescription-drugs" },
+    { question: "Does Medicare cover oxygen therapy?", href: "/faqs/does-medicare-cover-oxygen-therapy/" },
+    { question: "Does Medicare cover lift chairs?", href: "/faqs/does-medicare-cover-lift-chairs/" },
+    { question: "How does Medicare Part B work?", href: "/medicare-part-b/" },
+    { question: "Does Medicare cover prescription drugs?", href: "/coverage/prescription-drugs/" },
   ],
   officialSources: [
     { label: "Medicare.gov: Therapeutic shoes and inserts", href: "https://www.medicare.gov/coverage/therapeutic-shoes-inserts" },

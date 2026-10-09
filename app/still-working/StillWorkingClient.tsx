@@ -107,7 +107,7 @@ export default function StillWorkingClient() {
               <a href="tel:8137897700" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem" }}>
                 <Phone size={16} /> Talk to an Agent: 813-789-7700
               </a>
-              <Link href="/free-consultation" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.12)", color: "#fff", fontWeight: 600, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem", border: "1px solid rgba(255,255,255,0.25)" }}>
+              <Link href="/get-started/" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.12)", color: "#fff", fontWeight: 600, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.95rem", border: "1px solid rgba(255,255,255,0.25)" }}>
                 Free Consultation <ChevronRight size={16} />
               </Link>
             </div>
@@ -233,7 +233,7 @@ export default function StillWorkingClient() {
                   <Phone size={14} style={{ display: "inline", marginRight: 6 }} />
                   813-789-7700
                 </a>
-                <Link href="/free-consultation" style={{ display: "block", background: "rgba(255,255,255,0.1)", color: "#fff", fontWeight: 600, padding: "0.75rem", borderRadius: 10, textDecoration: "none", fontSize: "0.88rem", border: "1px solid rgba(255,255,255,0.2)" }}>
+                <Link href="/get-started/" style={{ display: "block", background: "rgba(255,255,255,0.1)", color: "#fff", fontWeight: 600, padding: "0.75rem", borderRadius: 10, textDecoration: "none", fontSize: "0.88rem", border: "1px solid rgba(255,255,255,0.2)" }}>
                   Schedule a Free Consultation
                 </Link>
               </div>
@@ -262,11 +262,11 @@ export default function StillWorkingClient() {
                 <h3 style={{ fontWeight: 700, color: "#0d1f5c", marginBottom: "1rem", fontSize: "0.95rem" }}>Related Pages</h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
                   {[
-                    { href: "/enrollment-timeline", label: "Enrollment Timeline" },
-                    { href: "/enrollment-calculator", label: "Penalty Calculator" },
-                    { href: "/am-i-eligible", label: "Am I Eligible?" },
-                    { href: "/medicare-part-b", label: "Medicare Part B Guide" },
-                    { href: "/do-i-need-a-supplement", label: "Do I Need a Supplement?" },
+                    { href: "/enrollment-timeline/", label: "Enrollment Timeline" },
+                    { href: "/enrollment-calculator/", label: "Penalty Calculator" },
+                    { href: "/am-i-eligible/", label: "Am I Eligible?" },
+                    { href: "/medicare-part-b/", label: "Medicare Part B Guide" },
+                    { href: "/do-i-need-a-supplement/", label: "Do I Need a Supplement?" },
                   ].map((l) => (
                     <Link key={l.href} href={l.href} style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#1a3fa8", textDecoration: "none", fontSize: "0.88rem", fontWeight: 500 }}>
                       <ChevronRight size={14} /> {l.label}

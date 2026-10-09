@@ -354,7 +354,7 @@ export default function CoverageQAClient() {
               Coverage varies significantly between Original Medicare and Medicare Advantage plans. Advantage plans often include extra benefits like dental, vision, and hearing that Original Medicare does not cover.
             </p>
             <Link
-              href="/original-vs-advantage"
+              href="/original-vs-advantage/"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a3fa8] hover:text-blue-800 transition-colors"
             >
               Compare your options <ChevronRight className="w-4 h-4" />
@@ -368,7 +368,7 @@ export default function CoverageQAClient() {
               Original Medicare leaves you responsible for deductibles and coinsurance. A Medigap supplement plan can cover most of those out-of-pocket costs, giving you more predictable expenses.
             </p>
             <Link
-              href="/do-i-need-a-supplement"
+              href="/do-i-need-a-supplement/"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-800 hover:text-amber-900 transition-colors"
             >
               Do I need a supplement? <ChevronRight className="w-4 h-4" />
@@ -392,7 +392,7 @@ export default function CoverageQAClient() {
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
             <a
-              href="/contact"
+              href="/contact/"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
             >
               Get a Free Consultation

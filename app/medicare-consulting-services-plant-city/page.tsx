@@ -74,9 +74,9 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Agent — Plant City", href: "/medicare-insurance-agent-plant-city-fl" },
-          { label: "Do I Need Medicare?", href: "/do-i-need-medicare" },
+          { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Agent — Plant City", href: "/medicare-insurance-agent-plant-city-fl/" },
+          { label: "Do I Need Medicare?", href: "/do-i-need-medicare/" },
         ],
       }}
     />

@@ -111,7 +111,7 @@ export default function Turning65Client() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Free Consultation <ArrowRight size={15} />
               </Link>
             </div>
@@ -243,7 +243,7 @@ export default function Turning65Client() {
               <div>
                 <div className="font-bold text-gray-900 mb-1">Not Sure Which Path Is Right for You?</div>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Our licensed agents compare both options side by side based on your specific doctors, medications, and budget. The consultation is free and there is no obligation to enroll in anything. <Link href="/free-consultation" className="text-[#1a3fa8] font-semibold hover:underline">Schedule a call today.</Link>
+                  Our licensed agents compare both options side by side based on your specific doctors, medications, and budget. The consultation is free and there is no obligation to enroll in anything. <Link href="/get-started/" className="text-[#1a3fa8] font-semibold hover:underline">Schedule a call today.</Link>
                 </p>
               </div>
             </div>
@@ -279,7 +279,7 @@ export default function Turning65Client() {
                 <p className="text-gray-700 text-sm leading-relaxed">
                   Many people skip Part D because they do not currently take prescription drugs. This is a mistake. If you go without creditable drug coverage and later need medications, you will face a permanent late enrollment penalty of 1% per month for every month you went without coverage. Enrolling in a low-cost Part D plan now protects you from this penalty.
                 </p>
-                <Link href="/medicare-part-d" className="inline-flex items-center gap-2 text-[#b45309] font-semibold text-sm mt-3 hover:underline">
+                <Link href="/medicare-part-d/" className="inline-flex items-center gap-2 text-[#b45309] font-semibold text-sm mt-3 hover:underline">
                   Learn About Part D <ArrowRight size={13} />
                 </Link>
               </div>
@@ -300,7 +300,7 @@ export default function Turning65Client() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>

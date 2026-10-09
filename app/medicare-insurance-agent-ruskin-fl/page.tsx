@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Ruskin Medicare agent help me compare Medigap plans?", a: "Yes. We compare Medigap plans alongside Medicare Advantage options so you can choose the coverage type that best fits your healthcare needs and budget." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl" },
-          { label: "Medigap Plans", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl/" },
+          { label: "Medigap Plans", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

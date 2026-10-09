@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview" },
-          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview" },
-          { label: "Medicare Enrollment Assistance in Riverview FL", href: "/medicare-enrollment-assistance-in-riverview-fl" },
-          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator" },
+          { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview/" },
+          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview/" },
+          { label: "Medicare Enrollment Assistance in Riverview FL", href: "/medicare-enrollment-assistance-in-riverview-fl/" },
+          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
         ],
       }}
     />

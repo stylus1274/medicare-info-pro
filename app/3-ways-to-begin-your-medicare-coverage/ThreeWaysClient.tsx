@@ -20,7 +20,7 @@ const STEPS = [
       { label: "ESRD or ALS", desc: "End-Stage Renal Disease and ALS qualify you for Medicare at any age, often without a waiting period." },
     ],
     tip: "Your Initial Enrollment Period is a 7-month window: 3 months before your 65th birthday, your birthday month, and 3 months after. Enrolling in the first 3 months ensures your coverage starts on time.",
-    cta: { label: "Check Your Eligibility", href: "/do-i-need-medicare" },
+    cta: { label: "Check Your Eligibility", href: "/do-i-need-medicare/" },
   },
   {
     number: "02",
@@ -37,7 +37,7 @@ const STEPS = [
       { label: "Part D: Drug Coverage", desc: "Covers prescription drugs. Sold by private insurers. Each plan has its own formulary (list of covered drugs) and premium." },
     ],
     tip: "Most people choose either Original Medicare (Parts A + B) with a Medigap supplement and Part D, or Medicare Advantage (Part C) which bundles everything. Our agents can help you compare both paths.",
-    cta: { label: "Explore the Parts", href: "/what-is-medicare" },
+    cta: { label: "Explore the Parts", href: "/what-is-medicare/" },
   },
   {
     number: "03",
@@ -53,7 +53,7 @@ const STEPS = [
       { label: "In Person", desc: "Visit your local Social Security office. Bring your birth certificate, proof of U.S. citizenship or legal residency, and your Social Security card." },
     ],
     tip: "Before you enroll in a standalone Part D or Medicare Advantage plan, call us first. We can compare every plan available in your area and find the one that covers your specific medications at the lowest cost.",
-    cta: { label: "Get Help Enrolling", href: "/free-consultation" },
+    cta: { label: "Get Help Enrolling", href: "/get-started/" },
   },
 ];
 
@@ -95,7 +95,7 @@ export default function ThreeWaysClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Free Consultation <ArrowRight size={15} />
               </Link>
             </div>
@@ -190,7 +190,7 @@ export default function ThreeWaysClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>

@@ -141,7 +141,7 @@ export default function CancerTreatmentClient() {
             <nav className="text-sm text-blue-200 mb-6 flex items-center gap-2 flex-wrap">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/coverage-qa" className="hover:text-white transition-colors">Coverage Q&A</Link>
+              <Link href="/coverage-qa/" className="hover:text-white transition-colors">Coverage Q&A</Link>
               <span>/</span>
               <span className="text-white">Cancer Treatment</span>
             </nav>
@@ -150,7 +150,7 @@ export default function CancerTreatmentClient() {
                 Cancer Treatment Coverage
               </span>
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage", href: "/coverage-qa" }, { label: "Cancer Treatment" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage", href: "/coverage-qa/" }, { label: "Cancer Treatment" }]} className="mb-4" />
             <h1
               className="text-3xl md:text-5xl font-bold mb-4 leading-tight"
               style={{ fontFamily: "'Merriweather', serif" }}
@@ -313,7 +313,7 @@ export default function CancerTreatmentClient() {
                       <p className="font-bold text-blue-900 mb-1">Medigap Plan G: The Most Protective Option for Cancer Patients</p>
                       <p className="text-blue-800 text-sm leading-relaxed">
                         Medigap Plan G covers the 20% Part B coinsurance entirely after the $283 annual deductible. For someone undergoing active cancer treatment, this can save $10,000 or more per year compared to Original Medicare alone.{" "}
-                        <Link href="/do-i-need-a-supplement" className="underline font-medium hover:text-blue-900">
+                        <Link href="/do-i-need-a-supplement/" className="underline font-medium hover:text-blue-900">
                           Learn more about Medigap plans.
                         </Link>
                       </p>
@@ -355,13 +355,13 @@ export default function CancerTreatmentClient() {
                 <div className="mb-12 bg-amber-50 border border-amber-200 rounded-2xl px-6 py-5">
                   <p className="font-bold text-amber-900 mb-2">Related Coverage Questions</p>
                   <div className="flex flex-wrap gap-3 mt-3">
-                    <Link href="/coverage/mental-health" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                    <Link href="/coverage/mental-health/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                       <ArrowRight className="w-4 h-4" /> Does Medicare Cover Mental Health?
                     </Link>
-                    <Link href="/coverage/prescription-drugs" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                    <Link href="/coverage/prescription-drugs/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                       <ArrowRight className="w-4 h-4" /> Does Medicare Cover Prescription Drugs?
                     </Link>
-                    <Link href="/do-i-need-a-supplement" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                    <Link href="/do-i-need-a-supplement/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                       <ArrowRight className="w-4 h-4" /> Do I Need a Medigap Plan?
                     </Link>
                   </div>
@@ -419,7 +419,7 @@ export default function CancerTreatmentClient() {
                       813-789-7700
                     </a>
                     <Link
-                      href="/do-i-need-a-supplement"
+                      href="/do-i-need-a-supplement/"
                       className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                     >
                       Compare Medigap Plans
@@ -472,7 +472,7 @@ export default function CancerTreatmentClient() {
                       813-789-7700
                     </a>
                     <Link
-                      href="/do-i-need-a-supplement"
+                      href="/do-i-need-a-supplement/"
                       className="flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium px-4 py-2.5 rounded-xl transition-colors w-full text-sm"
                     >
                       Compare Medigap Plans
@@ -485,11 +485,11 @@ export default function CancerTreatmentClient() {
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Related Pages</p>
                     <div className="space-y-2">
                       {[
-                        { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement" },
-                        { label: "Does Medicare Cover Prescription Drugs?", href: "/coverage/prescription-drugs" },
-                        { label: "Does Medicare Cover Mental Health?", href: "/coverage/mental-health" },
-                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
-                        { label: "Coverage Q&A Hub", href: "/coverage-qa" },
+                        { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement/" },
+                        { label: "Does Medicare Cover Prescription Drugs?", href: "/coverage/prescription-drugs/" },
+                        { label: "Does Medicare Cover Mental Health?", href: "/coverage/mental-health/" },
+                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
+                        { label: "Coverage Q&A Hub", href: "/coverage-qa/" },
                       ].map((link) => (
                         <Link
                           key={link.href}

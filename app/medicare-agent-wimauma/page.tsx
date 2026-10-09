@@ -84,12 +84,12 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city" },
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101 Overview", href: "/medicare-101" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city/" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101 Overview", href: "/medicare-101/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
         ],
       }}
     />

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Sun City, FL | Medicare Information Project",
     description: "Independent agents in Sun City, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicareinfopro.com/health-insurance-sun-city",
+    url: "https://medicareinfopro.com/health-insurance-sun-city/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/health-insurance-sun-city" },

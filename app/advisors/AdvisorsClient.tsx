@@ -149,7 +149,7 @@ export default function AdvisorsClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Schedule a Consultation <ArrowRight size={15} />
               </Link>
             </div>
@@ -284,7 +284,7 @@ export default function AdvisorsClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Schedule a Consultation <ArrowRight size={16} />
               </Link>
             </div>

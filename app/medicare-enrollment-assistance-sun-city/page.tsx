@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
-          { label: "Medicare Enrollment Assistance Sun City Center FL", href: "/medicare-enrollment-assistance-in-sun-city-center-fl" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
+          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city/" },
+          { label: "Medicare Enrollment Assistance Sun City Center FL", href: "/medicare-enrollment-assistance-in-sun-city-center-fl/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
+          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
         ],
       }}
     />

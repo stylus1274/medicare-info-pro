@@ -1329,7 +1329,7 @@ export default function BlogClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/enrollment-calculator"
+                  href="/enrollment-calculator/"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/30 text-white font-semibold text-[0.875rem] hover:bg-white/10 transition-colors w-full justify-center"
                 >
                   Enrollment Calculator <ArrowRight size={13} aria-hidden="true" />
@@ -1341,10 +1341,10 @@ export default function BlogClient() {
                 <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-400 mb-4">Popular Tools</h3>
                 <ul className="space-y-3">
                   {[
-                    { label: "Enrollment Timeline Calculator", href: "/enrollment-calculator", desc: "Find your personal enrollment dates" },
-                    { label: "First Steps Checklist", href: "/first-steps-checklist", desc: "Your 30-step action plan" },
-                    { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums & deductibles" },
-                    { label: "Am I Eligible?", href: "/am-i-eligible", desc: "Check your Medicare eligibility" },
+                    { label: "Enrollment Timeline Calculator", href: "/enrollment-calculator/", desc: "Find your personal enrollment dates" },
+                    { label: "First Steps Checklist", href: "/first-steps-checklist/", desc: "Your 30-step action plan" },
+                    { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2026 premiums & deductibles" },
+                    { label: "Am I Eligible?", href: "/am-i-eligible/", desc: "Check your Medicare eligibility" },
                   ].map((tool) => (
                     <li key={tool.href}>
                       <Link

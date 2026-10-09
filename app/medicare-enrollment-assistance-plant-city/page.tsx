@@ -74,9 +74,9 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city" },
-          { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
+          { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city/" },
+          { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city/" },
+          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
         ],
       }}
     />

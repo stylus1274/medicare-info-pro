@@ -39,11 +39,11 @@ export default function Page() {
           { q: "When can Riverview residents change Medicare plans?", a: "The Annual Enrollment Period runs October 15 through December 7. New enrollees have a 7-month Initial Enrollment Period around their 65th birthday. Special Enrollment Periods apply for qualifying events." },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach" },
-          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach/" },
+          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Valrico, FL | Medicare Information Project",
     description: "Independent health insurance broker in Valrico, FL — comparing every plan at no cost to you.",
-    url: "https://medicareinfopro.com/health-insurance-broker-valrico",
+    url: "https://medicareinfopro.com/health-insurance-broker-valrico/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-valrico" },

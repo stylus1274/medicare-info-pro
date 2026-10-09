@@ -158,7 +158,7 @@ const postData = {
       type: "section" as const,
       heading: "What to Do If Your Plan Does Not Cover Your GLP-1 Medication",
       content:
-        "If your current Part D plan does not cover Ozempic, Wegovy, or another GLP-1 drug you need, you have several options.\n\nFirst, ask your doctor to submit a formulary exception request. If you have tried covered alternatives and they were not effective or caused side effects, your doctor can document this and request that your plan cover the drug as an exception. This process takes time but is worth pursuing.\n\nSecond, compare plans during the Annual Enrollment Period (October 15 to December 7). Use <a href='https://www.medicare.gov/plan-compare' class='text-[#1a3fa8] underline underline-offset-2' target='_blank' rel='noopener noreferrer'>Medicare Plan Finder</a> to search for Part D plans that include your specific medication on their formulary. Filter by your drugs to see total estimated annual costs including premiums and cost-sharing. Our agents can run this comparison for you at no cost.\n\nThird, check whether you qualify for Extra Help (also called the Low Income Subsidy). If your income and assets fall below certain thresholds, Extra Help significantly reduces your Part D premiums, deductibles, and cost-sharing for all covered drugs. See our guide to <a href='/blog/how-to-reduce-medicare-premiums-based-on-income-2026' class='text-[#1a3fa8] underline underline-offset-2'>reducing Medicare costs based on income</a> for eligibility details.",
+        "If your current Part D plan does not cover Ozempic, Wegovy, or another GLP-1 drug you need, you have several options.\n\nFirst, ask your doctor to submit a formulary exception request. If you have tried covered alternatives and they were not effective or caused side effects, your doctor can document this and request that your plan cover the drug as an exception. This process takes time but is worth pursuing.\n\nSecond, compare plans during the Annual Enrollment Period (October 15 to December 7). Use <a href='https://www.medicare.gov/plan-compare' class='text-[#1a3fa8] underline underline-offset-2' target='_blank' rel='noopener noreferrer'>Medicare Plan Finder</a> to search for Part D plans that include your specific medication on their formulary. Filter by your drugs to see total estimated annual costs including premiums and cost-sharing. Our agents can run this comparison for you at no cost.\n\nThird, check whether you qualify for Extra Help (also called the Low Income Subsidy). If your income and assets fall below certain thresholds, Extra Help significantly reduces your Part D premiums, deductibles, and cost-sharing for all covered drugs. See our guide to <a href='/how-to-reduce-medicare-premiums-based-on-income-2026/' class='text-[#1a3fa8] underline underline-offset-2'>reducing Medicare costs based on income</a> for eligibility details.",
     },
     {
       type: "inlineCta" as const,
@@ -215,7 +215,7 @@ const postData = {
     },
     {
       title: "How to Reduce Medicare Premiums Based on Income 2026",
-      href: "/blog/how-to-reduce-medicare-premiums-based-on-income-2026/",
+      href: "/how-to-reduce-medicare-premiums-based-on-income-2026/",
       category: "Costs" as const,
     },
     {

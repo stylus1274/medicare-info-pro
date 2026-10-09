@@ -84,11 +84,11 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare Supplement Plans", href: "/do-i-need-a-supplement" },
-          { label: "Plan Comparison Tool", href: "/plan-comparison" },
+          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare Supplement Plans", href: "/do-i-need-a-supplement/" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison/" },
         ],
       }}
     />

@@ -86,7 +86,7 @@ export default function MedicarePlanCounselingTampaClient() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href="/get-started/"
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Schedule Free Counseling Session
@@ -256,7 +256,7 @@ export default function MedicarePlanCounselingTampaClient() {
                 I offer free, no-pressure Medicare plan counseling sessions by phone, video, or in person. Let me help you make sense of your options.
               </p>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Schedule Free Session
@@ -274,12 +274,12 @@ export default function MedicarePlanCounselingTampaClient() {
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Related Pages</div>
               <ul className="space-y-2">
                 {[
-                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl" },
-                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa" },
-                  { label: "Plan Comparison Tool", href: "/plan-comparison" },
-                  { label: "Cost Estimator", href: "/cost-estimator" },
-                  { label: "Tampa Medicare Specialist", href: "/tampa-medicare-specialist" },
-                  { label: "Free Consultation", href: "/free-consultation" },
+                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl/" },
+                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa/" },
+                  { label: "Plan Comparison Tool", href: "/plan-comparison/" },
+                  { label: "Cost Estimator", href: "/cost-estimator/" },
+                  { label: "Tampa Medicare Specialist", href: "/tampa-medicare-specialist/" },
+                  { label: "Free Consultation", href: "/get-started/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} className="text-[#1a3fa8] hover:underline text-sm">
@@ -321,7 +321,7 @@ export default function MedicarePlanCounselingTampaClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Schedule Free Session

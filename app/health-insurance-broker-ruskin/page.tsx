@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Ruskin, FL | Medicare Information Project",
     description: "Independent health insurance broker in Ruskin, FL — comparing every plan at no cost to you.",
-    url: "https://medicareinfopro.com/health-insurance-broker-ruskin",
+    url: "https://medicareinfopro.com/health-insurance-broker-ruskin/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-ruskin" },

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Find a Licensed Medicare Agent Near You",
     description:
       "Work with an independent, licensed Medicare agent with 27+ years of experience. Free consultations, no pressure, 17 carriers represented. Serving FL, GA, NC, SC, VA, OH, MI, AL, AR, KS, MD, TN, and TX.",
-    url: "https://medicareinfopro.com/find-an-agent",
+    url: "https://medicareinfopro.com/find-an-agent/",
     type: "website",
     images: [
       {

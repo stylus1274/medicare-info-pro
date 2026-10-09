@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Health Insurance Broker Riverview", href: "/health-insurance-broker-riverview" },
-          { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview" },
-          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Health Insurance Broker Riverview", href: "/health-insurance-broker-riverview/" },
+          { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview/" },
+          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview/" },
         ],
       }}
     />

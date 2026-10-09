@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get a Medigap plan in Fish Hawk?", a: "Yes. Medigap plans are available in Fish Hawk and allow you to see any Medicare-accepting doctor nationwide. We compare Medigap options alongside Medicare Advantage so you can choose the right fit." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Insurance Agent Lithia", href: "/medicare-insurance-agent-lithia-fl" },
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Insurance Agent Lithia", href: "/medicare-insurance-agent-lithia-fl/" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What makes your Medicare consulting different in Brandon?", a: "We are local. Our consultants live and work in Brandon and know the local healthcare landscape. We represent 17+ carriers and have no incentive to steer you toward any particular plan." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101", href: "/medicare-101" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101", href: "/medicare-101/" },
         ],
       }}
     />

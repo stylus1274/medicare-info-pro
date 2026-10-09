@@ -19,7 +19,7 @@ const FAQ = {
     {
       heading: "What does Medicare mean by custodial care?",
       content:
-        "Custodial care means help with activities of daily living, such as bathing, dressing, using the bathroom, eating, moving around the home, or supervision for safety. Original Medicare does not generally cover this type of care when that is the only service you need. It also does not ordinarily pay a family member or another informal caregiver for routine personal assistance.<br><br>This limitation is different from the home health benefit. Our <a href='/does-medicare-cover-home-health-care' class='text-[#1a3fa8] underline underline-offset-2'>Medicare home health care guide</a> explains how skilled nursing, therapy, homebound status, and a clinician-established plan of care can affect coverage.",
+        "Custodial care means help with activities of daily living, such as bathing, dressing, using the bathroom, eating, moving around the home, or supervision for safety. Original Medicare does not generally cover this type of care when that is the only service you need. It also does not ordinarily pay a family member or another informal caregiver for routine personal assistance.<br><br>This limitation is different from the home health benefit. Our <a href='/does-medicare-cover-home-health-care/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare home health care guide</a> explains how skilled nursing, therapy, homebound status, and a clinician-established plan of care can affect coverage.",
     },
     {
       heading: "When can Medicare cover a home health aide?",
@@ -29,19 +29,19 @@ const FAQ = {
     {
       heading: "What about Medicare Advantage in-home support benefits?",
       content:
-        "Some Medicare Advantage plans offer supplemental benefits that can include limited in-home support, meal benefits, adult day services, home modifications, or other services for qualifying members. Availability, eligibility, dollar limits, network rules, and prior authorization vary significantly by plan. These benefits are not a substitute for assuming Original Medicare will pay for full-time caregiving.<br><br>Use our <a href='/coverage/medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage coverage overview</a> and <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare versus Medicare Advantage comparison</a> to understand the difference between required Medicare coverage and optional supplemental benefits.",
+        "Some Medicare Advantage plans offer supplemental benefits that can include limited in-home support, meal benefits, adult day services, home modifications, or other services for qualifying members. Availability, eligibility, dollar limits, network rules, and prior authorization vary significantly by plan. These benefits are not a substitute for assuming Original Medicare will pay for full-time caregiving.<br><br>Use our <a href='/coverage/medicare-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage coverage overview</a> and <a href='/original-vs-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare versus Medicare Advantage comparison</a> to understand the difference between required Medicare coverage and optional supplemental benefits.",
     },
     {
       heading: "What options help with long-term caregiver needs?",
       content:
-        "For ongoing help at home, many families combine Medicare-covered skilled services with private-pay home care, Medicaid programs when eligible, long-term care insurance, community resources, or support from family and friends. Medicare itself is not designed as a long-term custodial-care program. Our <a href='/coverage/long-term-care' class='text-[#1a3fa8] underline underline-offset-2'>long-term care coverage guide</a> explains the larger planning issue, while our <a href='/faqs/does-medicare-cover-bathroom-safety-devices' class='text-[#1a3fa8] underline underline-offset-2'>bathroom safety devices FAQ</a> can help you assess equipment costs that sometimes accompany a home-care plan.<br><br>If a hospital or skilled nursing stay is involved, see our <a href='/coverage/skilled-nursing' class='text-[#1a3fa8] underline underline-offset-2'>skilled nursing coverage guide</a> to understand that benefit’s different eligibility and time limits.",
+        "For ongoing help at home, many families combine Medicare-covered skilled services with private-pay home care, Medicaid programs when eligible, long-term care insurance, community resources, or support from family and friends. Medicare itself is not designed as a long-term custodial-care program. Our <a href='/coverage/long-term-care/' class='text-[#1a3fa8] underline underline-offset-2'>long-term care coverage guide</a> explains the larger planning issue, while our <a href='/faqs/does-medicare-cover-bathroom-safety-devices/' class='text-[#1a3fa8] underline underline-offset-2'>bathroom safety devices FAQ</a> can help you assess equipment costs that sometimes accompany a home-care plan.<br><br>If a hospital or skilled nursing stay is involved, see our <a href='/coverage/skilled-nursing/' class='text-[#1a3fa8] underline underline-offset-2'>skilled nursing coverage guide</a> to understand that benefit’s different eligibility and time limits.",
     },
   ],
   relatedFaqs: [
-    { question: "Does Medicare cover bathroom safety devices?", href: "/faqs/does-medicare-cover-bathroom-safety-devices" },
-    { question: "Does Medicare cover incontinence supplies?", href: "/faqs/does-medicare-cover-incontinence-supplies" },
-    { question: "Does Medicare cover home health care?", href: "/does-medicare-cover-home-health-care" },
-    { question: "Does Medicare cover long-term care?", href: "/coverage/long-term-care" },
+    { question: "Does Medicare cover bathroom safety devices?", href: "/faqs/does-medicare-cover-bathroom-safety-devices/" },
+    { question: "Does Medicare cover incontinence supplies?", href: "/faqs/does-medicare-cover-incontinence-supplies/" },
+    { question: "Does Medicare cover home health care?", href: "/does-medicare-cover-home-health-care/" },
+    { question: "Does Medicare cover long-term care?", href: "/coverage/long-term-care/" },
   ],
   officialSources: [
     { label: "Medicare.gov: Home health services", href: "https://www.medicare.gov/coverage/home-health-services" },

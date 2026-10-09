@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city" },
-          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
-          { label: "Our Advisors", href: "/advisors" },
+          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city/" },
+          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
+          { label: "Our Advisors", href: "/advisors/" },
         ],
       }}
     />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Free Personalized Medicare Decision Kit",
     description:
       "Get your exact Medicare enrollment dates, coverage comparison, and personalized action plan in a free 14-page PDF. Built around your birthday.",
-    url: "https://medicareinfopro.com/free-medicare-kit",
+    url: "https://medicareinfopro.com/free-medicare-kit/",
     siteName: "Medicare Information Pro",
     type: "website",
   },
@@ -21,7 +21,7 @@ const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Free Personalized Medicare Decision Kit | Medicare Information Pro",
-  url: "https://medicareinfopro.com/free-medicare-kit",
+  url: "https://medicareinfopro.com/free-medicare-kit/",
   description:
     "Download a free 14-page personalized Medicare Decision Kit with your exact enrollment deadlines and a personalized action plan.",
   isPartOf: {

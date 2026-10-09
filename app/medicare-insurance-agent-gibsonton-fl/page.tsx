@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Gibsonton Medicare agent help me compare drug plans?", a: "Yes. We compare all Part D plans available in ZIP 33534 against your specific medications to find the plan with the lowest total drug cost for you." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Part D Drug Plans", href: "/part-d" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Part D Drug Plans", href: "/medicare-part-d/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Medicare Consulting — Sun City Center", href: "/medicare-consulting-services-sun-city-center" },
-          { label: "Medicare Agent — Ruskin", href: "/medicare-insurance-agent-ruskin-fl" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
+          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Medicare Consulting — Sun City Center", href: "/medicare-consulting-services-sun-city-center/" },
+          { label: "Medicare Agent — Ruskin", href: "/medicare-insurance-agent-ruskin-fl/" },
+          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
         ],
       }}
     />

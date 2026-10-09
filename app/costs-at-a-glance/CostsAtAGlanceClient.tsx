@@ -326,7 +326,7 @@ export default function CostsAtAGlanceClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span aria-hidden="true">/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span aria-hidden="true">/</span>
             <span className="text-white" aria-current="page">Costs at a Glance</span>
           </nav>
@@ -650,9 +650,9 @@ export default function CostsAtAGlanceClient() {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/original-vs-advantage", label: "Original vs. Advantage", desc: "Compare the two main ways to get Medicare and decide which is right for you.", tag: "Plan Comparison" },
-              { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
-              { href: "/do-i-need-a-supplement", label: "Do I Need a Supplement?", desc: "Learn when a Medigap plan makes sense and which plan is right for your situation.", tag: "Medigap Guide" },
+              { href: "/original-vs-advantage/", label: "Original vs. Advantage", desc: "Compare the two main ways to get Medicare and decide which is right for you.", tag: "Plan Comparison" },
+              { href: "/enrollment-timeline/", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
+              { href: "/do-i-need-a-supplement/", label: "Do I Need a Supplement?", desc: "Learn when a Medigap plan makes sense and which plan is right for your situation.", tag: "Medigap Guide" },
             ].map((link) => (
               <Link
                 key={link.href}

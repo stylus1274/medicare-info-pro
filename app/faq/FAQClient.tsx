@@ -42,32 +42,32 @@ const categories: Category[] = [
       {
         q: "When am I eligible for Medicare?",
         a: "Most people become eligible for Medicare at age 65. You may also qualify before 65 if you have received Social Security Disability Insurance (SSDI) for 24 months, or if you have end-stage renal disease (ESRD) or ALS (Lou Gehrig's disease).",
-        link: { label: "Am I Eligible for Medicare?", href: "/am-i-eligible" },
+        link: { label: "Am I Eligible for Medicare?", href: "/am-i-eligible/" },
       },
       {
         q: "When should I enroll in Medicare?",
         a: "Your Initial Enrollment Period (IEP) is a 7-month window: 3 months before the month you turn 65, the month you turn 65, and 3 months after. Enrolling during the first 3 months of your IEP ensures your coverage starts on the first day of your birthday month. Enrolling late can result in permanent premium penalties.",
-        link: { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+        link: { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
       },
       {
         q: "Do I have to enroll in Medicare at 65 if I am still working?",
         a: "Not necessarily. If you or your spouse has employer-sponsored health coverage through a current employer with 20 or more employees, you can delay Medicare enrollment without penalty. However, you must enroll within 8 months of losing that coverage. If your employer has fewer than 20 employees, Medicare becomes your primary insurance at 65 and you should enroll.",
-        link: { label: "Working Past 65 Guide", href: "/working-past-65" },
+        link: { label: "Working Past 65 Guide", href: "/working-past-65/" },
       },
       {
         q: "Does COBRA count as employer coverage for Medicare?",
         a: "No. COBRA is continuation coverage, not active employer coverage for Medicare Part B timing. It generally does not extend the 8-month Special Enrollment Period that begins when active employment or job-based coverage ends.",
-        link: { label: "Read the Medicare and COBRA FAQ", href: "/faqs/medicare-and-cobra" },
+        link: { label: "Read the Medicare and COBRA FAQ", href: "/faqs/medicare-and-cobra/" },
       },
       {
         q: "How do I enroll in Medicare if I am not collecting Social Security?",
         a: "If you are not yet receiving Social Security benefits, Medicare will not automatically enroll you. You must sign up yourself through Social Security online at ssa.gov, by calling 1-800-772-1213, or by visiting your local Social Security office.",
-        link: { label: "Medicare Without Social Security", href: "/medicare-without-social-security" },
+        link: { label: "Medicare Without Social Security", href: "/medicare-without-social-security/" },
       },
       {
         q: "What is the Annual Enrollment Period?",
         a: "The Annual Enrollment Period (AEP) runs from October 15 through December 7 each year. During this period, you can switch between Original Medicare and Medicare Advantage, change Medicare Advantage plans, or change your Part D drug plan. Changes take effect January 1 of the following year.",
-        link: { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+        link: { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
       },
       {
         q: "What is a Special Enrollment Period?",
@@ -81,12 +81,12 @@ const categories: Category[] = [
       {
         q: "What does Medicare Part A cover?",
         a: "Medicare Part A covers inpatient hospital care, skilled nursing facility care (after a qualifying hospital stay), hospice care, and home health services. Most people pay no premium for Part A if they or their spouse paid Medicare taxes for at least 10 years.",
-        link: { label: "Medicare Part A Guide", href: "/medicare-part-a" },
+        link: { label: "Medicare Part A Guide", href: "/medicare-part-a/" },
       },
       {
         q: "What does Medicare Part B cover?",
         a: "Medicare Part B covers outpatient medical services including doctor visits, preventive care, lab tests, durable medical equipment, mental health services, and physical therapy. The standard Part B premium in 2026 is $202.90 per month.",
-        link: { label: "Medicare Part B Guide", href: "/medicare-part-b" },
+        link: { label: "Medicare Part B Guide", href: "/medicare-part-b/" },
       },
       {
         q: "What is the Medicare Part B deductible in 2026?",
@@ -108,22 +108,22 @@ const categories: Category[] = [
       {
         q: "What is Medicare Advantage?",
         a: "Medicare Advantage (Part C) is an alternative to Original Medicare offered by private insurance companies approved by Medicare. Plans must cover everything Original Medicare covers, but most also include prescription drug coverage, dental, vision, and hearing benefits. You pay a monthly premium to the plan in addition to your Part B premium.",
-        link: { label: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage" },
+        link: { label: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage/" },
       },
       {
         q: "What is a Medicare Part B Giveback plan?",
         a: "A Medicare Part B Giveback, also called a Part B premium reduction, is a benefit offered by some Medicare Advantage plans that reduces part of a member's Part B premium. It is not available in every area or with every plan.",
-        link: { label: "Read the Part B Giveback FAQ", href: "/faqs/medicare-part-b-giveback" },
+        link: { label: "Read the Part B Giveback FAQ", href: "/faqs/medicare-part-b-giveback/" },
       },
       {
         q: "What is the Medicare Advantage Open Enrollment Period?",
         a: "The Medicare Advantage Open Enrollment Period runs from January 1 through March 31 and is only for people already enrolled in a Medicare Advantage plan. You can switch plans or return to Original Medicare during this time.",
-        link: { label: "Read the Medicare Advantage Open Enrollment FAQ", href: "/faqs/medicare-advantage-open-enrollment" },
+        link: { label: "Read the Medicare Advantage Open Enrollment FAQ", href: "/faqs/medicare-advantage-open-enrollment/" },
       },
       {
         q: "What is the difference between an HMO and a PPO Medicare Advantage plan?",
         a: "HMO plans require you to use in-network providers and typically require referrals to see specialists. PPO plans allow you to see out-of-network providers at a higher cost and generally do not require referrals. HMOs tend to have lower premiums; PPOs offer more flexibility.",
-        link: { label: "Medicare HMO Plans", href: "/hmos" },
+        link: { label: "Medicare HMO Plans", href: "/hmos/" },
       },
       {
         q: "Can I switch from Medicare Advantage back to Original Medicare?",
@@ -132,7 +132,7 @@ const categories: Category[] = [
       {
         q: "What is a Medicare Special Needs Plan (SNP)?",
         a: "SNPs are a type of Medicare Advantage plan designed for people with specific chronic conditions (C-SNP), those who are dual-eligible for Medicare and Medicaid (D-SNP), or those living in certain institutions (I-SNP). They offer benefits tailored to the specific needs of their target population.",
-        link: { label: "Medicare SNP Plans", href: "/medicare-snp-plans" },
+        link: { label: "Medicare SNP Plans", href: "/medicare-snp-plans/" },
       },
     ],
   },
@@ -144,7 +144,7 @@ const categories: Category[] = [
         a: "Confirm the change with your plan and doctor or pharmacy, get the reason in writing, and ask about available options. A drug change may allow a formulary exception request, while a provider-network change may involve continuity-of-care options. Appeal and Special Enrollment rights depend on the specific situation.",
         link: {
           label: "Read the plan changes and appeals FAQ",
-          href: "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug",
+          href: "/faqs/what-to-do-if-medicare-plan-drops-doctor-or-drug/",
         },
       },
       {
@@ -152,7 +152,7 @@ const categories: Category[] = [
         a: "A Plan Non-Renewal Notice means your Medicare plan is leaving the Medicare program in the coming year. Your plan sends the notice in October. Compare coverage for next year promptly and use the applicable enrollment window to choose new coverage.",
         link: {
           label: "Read the plan non-renewal FAQ",
-          href: "/faqs/medicare-plan-non-renewal-notice",
+          href: "/faqs/medicare-plan-non-renewal-notice/",
         },
       },
     ],
@@ -163,12 +163,12 @@ const categories: Category[] = [
       {
         q: "What is a Medigap plan?",
         a: "A Medigap plan (also called Medicare Supplement Insurance) is a private insurance policy that helps pay the cost-sharing gaps in Original Medicare, such as deductibles, coinsurance, and copayments. Medigap plans are standardized by letter (A, B, C, D, F, G, K, L, M, N) and sold by private insurers.",
-        link: { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement" },
+        link: { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement/" },
       },
       {
         q: "What is the best Medigap plan?",
         a: "Plan G is the most comprehensive Medigap plan available to new Medicare enrollees (Plan F is no longer available to those who became eligible after January 1, 2020). Plan G covers the Part A deductible, Part A coinsurance, Part B coinsurance, skilled nursing facility coinsurance, and foreign travel emergency care. You pay only the Part B deductible of $283 per year out of pocket.",
-        link: { label: "Why Choose Medigap Plan G?", href: "/why-choose-medigap-plan-g" },
+        link: { label: "Why Choose Medigap Plan G?", href: "/why-choose-medigap-plan-g/" },
       },
       {
         q: "When is the best time to buy a Medigap plan?",
@@ -181,7 +181,7 @@ const categories: Category[] = [
       {
         q: "What are Medigap guaranteed issue rights in Florida?",
         a: "They are limited protections that can require an insurer to sell you certain Medicare Supplement policies without medical underwriting after specific coverage changes or during your initial Medigap Open Enrollment Period.",
-        link: { label: "Read the Florida guaranteed issue rights FAQ", href: "/faqs/medigap-guaranteed-issue-rights-florida" },
+        link: { label: "Read the Florida guaranteed issue rights FAQ", href: "/faqs/medigap-guaranteed-issue-rights-florida/" },
       },
     ],
   },
@@ -191,7 +191,7 @@ const categories: Category[] = [
       {
         q: "What is Medicare Part D?",
         a: "Medicare Part D provides prescription drug coverage. It is offered through private insurance companies approved by Medicare. You can get Part D as a standalone plan (if you have Original Medicare) or as part of a Medicare Advantage plan that includes drug coverage (MAPD).",
-        link: { label: "Understanding Part D", href: "/understanding-part-d" },
+        link: { label: "Understanding Part D", href: "/understanding-part-d/" },
       },
       {
         q: "What is the Medicare Part D deductible in 2026?",
@@ -208,7 +208,7 @@ const categories: Category[] = [
       {
         q: "What is the Part D late enrollment penalty?",
         a: "If you go 63 or more consecutive days without creditable prescription drug coverage after your Initial Enrollment Period ends, you may owe a late enrollment penalty. The penalty is 1% of the national base beneficiary premium for each month you went without coverage, added permanently to your monthly Part D premium.",
-        link: { label: "Read the Part D late enrollment penalty FAQ", href: "/faqs/medicare-part-d-late-enrollment-penalty" },
+        link: { label: "Read the Part D late enrollment penalty FAQ", href: "/faqs/medicare-part-d-late-enrollment-penalty/" },
       },
     ],
   },
@@ -218,7 +218,7 @@ const categories: Category[] = [
       {
         q: "What are the Medicare costs in 2026?",
         a: "Key 2026 Medicare figures: Part B premium $202.90/month, Part B deductible $283/year, Part A deductible $1,736/benefit period, Part D out-of-pocket cap $2,100/year, SNF coinsurance (days 21-100) $212/day.",
-        link: { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
+        link: { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
       },
       {
         q: "What is the Medicare Savings Program?",
@@ -231,7 +231,7 @@ const categories: Category[] = [
       {
         q: "How can I reduce my Medicare costs?",
         a: "Strategies to reduce Medicare costs include: enrolling during your Initial Enrollment Period to avoid late penalties, choosing a Medigap plan to cap your out-of-pocket exposure, comparing Part D plans annually during AEP, using generic drugs when available, and applying for Medicare Savings Programs or Extra Help if you have limited income.",
-        link: { label: "How to Maximize Your Medicare Benefits", href: "/maximize-benefits" },
+        link: { label: "How to Maximize Your Medicare Benefits", href: "/maximize-benefits/" },
       },
     ],
   },
@@ -241,57 +241,57 @@ const categories: Category[] = [
       {
         q: "Does Medicare cover dental care?",
         a: "Original Medicare does not cover routine dental care such as cleanings, fillings, or dentures. However, many Medicare Advantage plans include dental benefits. Some standalone dental plans are also available to Medicare beneficiaries.",
-        link: { label: "Does Medicare Cover Dental?", href: "/coverage/dental" },
+        link: { label: "Does Medicare Cover Dental?", href: "/coverage/dental/" },
       },
       {
         q: "Does Medicare cover vision care?",
         a: "Original Medicare does not cover routine eye exams or eyeglasses, except after cataract surgery. Medicare Advantage plans often include vision benefits. Medicare does cover treatment for eye diseases such as glaucoma and macular degeneration.",
-        link: { label: "Does Medicare Cover Vision?", href: "/coverage/vision" },
+        link: { label: "Does Medicare Cover Vision?", href: "/coverage/vision/" },
       },
       {
         q: "Does Medicare cover hearing aids?",
         a: "Original Medicare does not cover hearing aids or routine hearing exams. Some Medicare Advantage plans include hearing aid benefits with an annual allowance. Costs for hearing aids can range from $1,000 to $6,000 or more per pair.",
-        link: { label: "Does Medicare Cover Hearing Aids?", href: "/coverage/hearing-aids" },
+        link: { label: "Does Medicare Cover Hearing Aids?", href: "/coverage/hearing-aids/" },
       },
       {
         q: "Does Medicare cover physical therapy?",
         a: "Yes. Medicare Part B covers medically necessary physical therapy, occupational therapy, and speech-language pathology with no annual visit cap. You pay 20% coinsurance after the Part B deductible.",
-        link: { label: "Does Medicare Cover Physical Therapy?", href: "/coverage/physical-therapy" },
+        link: { label: "Does Medicare Cover Physical Therapy?", href: "/coverage/physical-therapy/" },
       },
       {
         q: "Does Medicare cover skilled nursing facility care?",
         a: "Yes, with conditions. Medicare Part A covers up to 100 days of SNF care per benefit period after a qualifying 3-day inpatient hospital stay. Days 1 through 20 are fully covered. Days 21 through 100 require a daily coinsurance of $212 in 2026.",
-        link: { label: "Does Medicare Cover Skilled Nursing?", href: "/coverage/skilled-nursing" },
+        link: { label: "Does Medicare Cover Skilled Nursing?", href: "/coverage/skilled-nursing/" },
       },
       {
         q: "Does Medicare cover oxygen therapy?",
         a: "Yes. Medicare Part B can cover home oxygen equipment and supplies as durable medical equipment when a treating clinician documents medical necessity and Medicare's coverage criteria are met.",
-        link: { label: "Read the oxygen therapy FAQ", href: "/faqs/does-medicare-cover-oxygen-therapy" },
+        link: { label: "Read the oxygen therapy FAQ", href: "/faqs/does-medicare-cover-oxygen-therapy/" },
       },
       {
         q: "Does Medicare cover diabetic shoes?",
         a: "Yes, when a person has diabetes and certain qualifying foot conditions. Medicare Part B can cover therapeutic shoes and inserts when the prescribing, certification, and supplier rules are met.",
-        link: { label: "Read the diabetic shoes FAQ", href: "/faqs/does-medicare-cover-diabetic-shoes" },
+        link: { label: "Read the diabetic shoes FAQ", href: "/faqs/does-medicare-cover-diabetic-shoes/" },
       },
       {
         q: "Does Medicare cover lift chairs?",
         a: "Medicare may cover the motorized seat-lift mechanism when it is medically necessary, but it does not cover the chair's furniture frame, upholstery, or other non-mechanism components.",
-        link: { label: "Read the lift chairs FAQ", href: "/faqs/does-medicare-cover-lift-chairs" },
+        link: { label: "Read the lift chairs FAQ", href: "/faqs/does-medicare-cover-lift-chairs/" },
       },
       {
         q: "Does Medicare cover bathroom safety devices?",
         a: "Original Medicare generally excludes grab bars, shower chairs, and similar bathroom safety items, although a medically necessary commode chair may qualify as durable medical equipment.",
-        link: { label: "Read the bathroom safety devices FAQ", href: "/faqs/does-medicare-cover-bathroom-safety-devices" },
+        link: { label: "Read the bathroom safety devices FAQ", href: "/faqs/does-medicare-cover-bathroom-safety-devices/" },
       },
       {
         q: "Does Medicare cover in-home caregivers?",
         a: "Original Medicare does not generally pay for custodial personal care alone, but it can cover limited home health aide services when you qualify for skilled home health care.",
-        link: { label: "Read the in-home caregivers FAQ", href: "/faqs/does-medicare-cover-in-home-caregivers" },
+        link: { label: "Read the in-home caregivers FAQ", href: "/faqs/does-medicare-cover-in-home-caregivers/" },
       },
       {
         q: "Does Medicare cover incontinence supplies?",
         a: "Original Medicare generally does not cover adult diapers, briefs, pads, or other routine incontinence supplies, though certain medically necessary urological supplies may be covered.",
-        link: { label: "Read the incontinence supplies FAQ", href: "/faqs/does-medicare-cover-incontinence-supplies" },
+        link: { label: "Read the incontinence supplies FAQ", href: "/faqs/does-medicare-cover-incontinence-supplies/" },
       },
     ],
   },
@@ -446,7 +446,7 @@ export default function FAQClient() {
                       813-789-7700
                     </a>
                     <Link
-                      href="/medicare-quiz"
+                      href="/medicare-quiz/"
                       className="flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium px-4 py-2.5 rounded-xl transition-colors w-full text-sm"
                     >
                       Take the Medicare Quiz
@@ -459,11 +459,11 @@ export default function FAQClient() {
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Related Resources</p>
                     <div className="space-y-2">
                       {[
-                        { label: "In-Depth Guides", href: "/guides" },
-                        { label: "Coverage Q&A Hub", href: "/coverage-qa" },
-                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
-                        { label: "Plan Comparison Tool", href: "/plan-comparison" },
-                        { label: "Enrollment Calculator", href: "/enrollment-calculator" },
+                        { label: "In-Depth Guides", href: "/guides/" },
+                        { label: "Coverage Q&A Hub", href: "/coverage-qa/" },
+                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
+                        { label: "Plan Comparison Tool", href: "/plan-comparison/" },
+                        { label: "Enrollment Calculator", href: "/enrollment-calculator/" },
                       ].map((link) => (
                         <Link
                           key={link.href}

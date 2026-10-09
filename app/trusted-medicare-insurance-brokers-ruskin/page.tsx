@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Medicare broker in Ruskin help me compare Medigap plans?", a: "Yes. We compare Medigap plans alongside Medicare Advantage options so you can choose the coverage type that best fits your healthcare needs and budget." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Ruskin", href: "/medicare-insurance-agent-ruskin-fl" },
-          { label: "Trusted Brokers Apollo Beach", href: "/trusted-medicare-insurance-brokers-apollo-beach" },
-          { label: "Trusted Brokers Wimauma", href: "/trusted-medicare-insurance-brokers-wimauma" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Ruskin", href: "/medicare-insurance-agent-ruskin-fl/" },
+          { label: "Trusted Brokers Apollo Beach", href: "/trusted-medicare-insurance-brokers-apollo-beach/" },
+          { label: "Trusted Brokers Wimauma", href: "/trusted-medicare-insurance-brokers-wimauma/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

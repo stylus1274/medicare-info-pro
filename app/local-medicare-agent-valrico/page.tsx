@@ -39,11 +39,11 @@ export default function Page() {
           { q: "What if I have a chronic condition and live in Valrico?", a: "Special Needs Plans (SNPs) are available in Hillsborough County for people with certain chronic conditions such as diabetes, heart disease, or chronic lung disease. We help Valrico residents identify whether an SNP might be a better fit than a standard Medicare Advantage plan." },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Local Medicare Agent Plant City", href: "/local-medicare-agent-plant-city" },
-          { label: "Special Needs Plans", href: "/special-needs-plans" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico/" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Local Medicare Agent Plant City", href: "/local-medicare-agent-plant-city/" },
+          { label: "Special Needs Plans", href: "/medicare-snp-plans/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

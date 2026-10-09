@@ -130,7 +130,7 @@ const POST = {
       type: "section" as const,
       heading: "How to Get Ozempic Covered: Prior Authorization and Formulary Exceptions",
       content:
-        "Even if your diagnosis qualifies for coverage, most Part D plans require prior authorization for Ozempic. Here is how to navigate the process.\n\n<strong>Prior authorization steps:</strong>\n\n<ul><li>Your doctor submits a prior authorization request documenting your diagnosis, current A1C or other clinical measures, and why Ozempic is medically necessary</li><li>The plan reviews the request, typically within 72 hours (or 24 hours for urgent requests)</li><li>If approved, coverage begins; if denied, you have the right to appeal</li></ul>\n\n<strong>If your plan does not cover Ozempic:</strong> You can request a formulary exception. Your doctor must submit documentation explaining why covered alternatives are not appropriate for your condition. Formulary exceptions are not guaranteed but are worth pursuing with documented medical reasons.\n\n<strong>Switching plans during AEP:</strong> If your current plan does not cover Ozempic or places it on a high tier, compare plans during the Annual Enrollment Period (October 15 to December 7) using Medicare Plan Finder. Filter by your specific medications to find plans with the lowest total cost.\n\nFor help comparing Part D plans that cover your medications, <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
+        "Even if your diagnosis qualifies for coverage, most Part D plans require prior authorization for Ozempic. Here is how to navigate the process.\n\n<strong>Prior authorization steps:</strong>\n\n<ul><li>Your doctor submits a prior authorization request documenting your diagnosis, current A1C or other clinical measures, and why Ozempic is medically necessary</li><li>The plan reviews the request, typically within 72 hours (or 24 hours for urgent requests)</li><li>If approved, coverage begins; if denied, you have the right to appeal</li></ul>\n\n<strong>If your plan does not cover Ozempic:</strong> You can request a formulary exception. Your doctor must submit documentation explaining why covered alternatives are not appropriate for your condition. Formulary exceptions are not guaranteed but are worth pursuing with documented medical reasons.\n\n<strong>Switching plans during AEP:</strong> If your current plan does not cover Ozempic or places it on a high tier, compare plans during the Annual Enrollment Period (October 15 to December 7) using Medicare Plan Finder. Filter by your specific medications to find plans with the lowest total cost.\n\nFor help comparing Part D plans that cover your medications, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
     },
     {
       type: "section" as const,
@@ -142,13 +142,13 @@ const POST = {
       type: "section" as const,
       heading: "What to Do If Medicare Does Not Cover Your GLP-1 Medication",
       content:
-        "If your Part D plan does not cover Ozempic or Wegovy for your situation, you have several options worth exploring.\n\n<ul><li><strong>Manufacturer savings programs:</strong> Novo Nordisk offers patient assistance programs for eligible patients, but these typically exclude Medicare beneficiaries. Check the manufacturer's website for current eligibility rules.</li><li><strong>Switch to a covered alternative:</strong> Ask your doctor if a covered GLP-1 or other diabetes medication would be appropriate. Metformin, SGLT-2 inhibitors, and other diabetes drugs are generally well-covered by Part D.</li><li><strong>Request a formulary exception:</strong> If you have tried covered alternatives and they were not effective or caused side effects, your doctor can document this and request an exception to cover Ozempic.</li><li><strong>Compare plans during AEP:</strong> Use Medicare Plan Finder to find Part D plans that cover your specific medication at the lowest tier. Even a one-tier difference can save hundreds of dollars per year.</li><li><strong>Extra Help (Low Income Subsidy):</strong> If you qualify for Extra Help, your drug costs are significantly reduced regardless of tier placement. See our guide to <a href='/blog/how-to-reduce-medicare-premiums-based-on-income-2026' class='text-[#1a3fa8] underline underline-offset-2'>reducing Medicare costs based on income</a> for eligibility information.</li></ul>",
+        "If your Part D plan does not cover Ozempic or Wegovy for your situation, you have several options worth exploring.\n\n<ul><li><strong>Manufacturer savings programs:</strong> Novo Nordisk offers patient assistance programs for eligible patients, but these typically exclude Medicare beneficiaries. Check the manufacturer's website for current eligibility rules.</li><li><strong>Switch to a covered alternative:</strong> Ask your doctor if a covered GLP-1 or other diabetes medication would be appropriate. Metformin, SGLT-2 inhibitors, and other diabetes drugs are generally well-covered by Part D.</li><li><strong>Request a formulary exception:</strong> If you have tried covered alternatives and they were not effective or caused side effects, your doctor can document this and request an exception to cover Ozempic.</li><li><strong>Compare plans during AEP:</strong> Use Medicare Plan Finder to find Part D plans that cover your specific medication at the lowest tier. Even a one-tier difference can save hundreds of dollars per year.</li><li><strong>Extra Help (Low Income Subsidy):</strong> If you qualify for Extra Help, your drug costs are significantly reduced regardless of tier placement. See our guide to <a href='/how-to-reduce-medicare-premiums-based-on-income-2026/' class='text-[#1a3fa8] underline underline-offset-2'>reducing Medicare costs based on income</a> for eligibility information.</li></ul>",
     },
     {
       type: "summary" as const,
       heading: "Medicare and Ozempic: What You Need to Know",
       content:
-        "Here is a quick summary of the key points:\n\n<ul><li><strong>Ozempic for type 2 diabetes</strong> is generally covered by Medicare Part D plans that include it on their formulary</li><li><strong>Wegovy for weight loss alone</strong> has historically not been covered, but CMS now allows coverage for patients with cardiovascular disease and obesity</li><li><strong>Prior authorization is almost always required</strong> and your doctor must document medical necessity</li>          <li><strong>The $2,100 Part D OOP cap in 2026</strong> limits your maximum annual drug cost, which helps for expensive GLP-1 medications</li><li><strong>If your plan does not cover it</strong>, request a formulary exception, compare plans during AEP, or ask your doctor about covered alternatives</li></ul>\n\nOur licensed specialists can review your current Part D plan and help you find the best coverage for your medications. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> for a personalized plan comparison.",
+        "Here is a quick summary of the key points:\n\n<ul><li><strong>Ozempic for type 2 diabetes</strong> is generally covered by Medicare Part D plans that include it on their formulary</li><li><strong>Wegovy for weight loss alone</strong> has historically not been covered, but CMS now allows coverage for patients with cardiovascular disease and obesity</li><li><strong>Prior authorization is almost always required</strong> and your doctor must document medical necessity</li>          <li><strong>The $2,100 Part D OOP cap in 2026</strong> limits your maximum annual drug cost, which helps for expensive GLP-1 medications</li><li><strong>If your plan does not cover it</strong>, request a formulary exception, compare plans during AEP, or ask your doctor about covered alternatives</li></ul>\n\nOur licensed specialists can review your current Part D plan and help you find the best coverage for your medications. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> for a personalized plan comparison.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "Is Reinstating a Part D Plan Possible?",
-      href: "/is-reinstating-a-part-d-plan-possible",
+      href: "/is-reinstating-a-part-d-plan-possible/",
       category: "Part D" as const,
     },
     {
       title: "How to Reduce Medicare Premiums Based on Income 2026",
-      href: "/how-to-reduce-medicare-premiums-based-on-income-2026",
+      href: "/how-to-reduce-medicare-premiums-based-on-income-2026/",
       category: "Costs" as const,
     },
     {
       title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
-      href: "/medicare-advantage-changes-2026-florida",
+      href: "/medicare-advantage-changes-2026-florida/",
       category: "Plans" as const,
     },
   ],

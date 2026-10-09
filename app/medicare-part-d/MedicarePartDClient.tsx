@@ -66,7 +66,7 @@ export default function MedicarePartDClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Pill size={12} /> Prescription Drug Coverage
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "Medicare Part D" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101/" }, { label: "Medicare Part D" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Part D
             </h1>
@@ -77,7 +77,7 @@ export default function MedicarePartDClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/how-medicare-part-d-works" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/how-medicare-part-d-works/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 How Part D Works <ArrowRight size={15} />
               </Link>
             </div>
@@ -151,7 +151,7 @@ export default function MedicarePartDClient() {
               <div>
                 <div className="font-bold text-[#0d6e4f] mb-1">The Donut Hole Is Gone</div>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  The coverage gap (donut hole) that previously required beneficiaries to pay higher costs for drugs has been eliminated. Your out-of-pocket costs are now capped at $2,000 per year. After reaching that limit, you pay $0 for covered drugs for the rest of the year. <Link href="/how-medicare-part-d-works" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
+                  The coverage gap (donut hole) that previously required beneficiaries to pay higher costs for drugs has been eliminated. Your out-of-pocket costs are now capped at $2,000 per year. After reaching that limit, you pay $0 for covered drugs for the rest of the year. <Link href="/how-medicare-part-d-works/" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
                 </p>
               </div>
             </div>
@@ -212,9 +212,9 @@ export default function MedicarePartDClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/how-medicare-part-d-works", label: "How Part D Works", desc: "Drug tiers, the 3 coverage phases, and how to read your plan's formulary.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/medicare-supplement", label: "Medicare Supplement (Medigap)", desc: "How Medigap fills the gaps in Original Medicare and works alongside Part D.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A full overview of all four parts of Medicare and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/how-medicare-part-d-works/", label: "How Part D Works", desc: "Drug tiers, the 3 coverage phases, and how to read your plan's formulary.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/medicare-supplement/", label: "Medicare Supplement (Medigap)", desc: "How Medigap fills the gaps in Original Medicare and works alongside Part D.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A full overview of all four parts of Medicare and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -253,7 +253,7 @@ export default function MedicarePartDClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>

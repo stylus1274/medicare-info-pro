@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Vision and Eye Exams?",
     description:
       "Original Medicare covers very little routine vision care. Learn what is and is not covered and how to fill the gap with Medicare Advantage or a standalone vision plan.",
-    url: "https://medicareinfopro.com/coverage/vision",
+    url: "https://medicareinfopro.com/coverage/vision/",
     type: "article",
     images: [
       {

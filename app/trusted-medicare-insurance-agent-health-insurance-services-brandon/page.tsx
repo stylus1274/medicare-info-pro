@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
-          { label: "Health Insurance Broker Brandon", href: "/health-insurance-broker-brandon" },
-          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
+          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
+          { label: "Health Insurance Broker Brandon", href: "/health-insurance-broker-brandon/" },
+          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
         ],
       }}
     />

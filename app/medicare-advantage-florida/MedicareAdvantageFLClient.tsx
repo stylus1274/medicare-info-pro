@@ -116,7 +116,7 @@ export default function MedicareAdvantageFLClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <MapPin size={12} /> Florida Coverage
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison" }, { label: "Medicare Advantage Florida" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison/" }, { label: "Medicare Advantage Florida" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Advantage Plans in Florida
             </h1>
@@ -127,7 +127,7 @@ export default function MedicareAdvantageFLClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Compare Plans Free <ArrowRight size={15} />
               </Link>
             </div>
@@ -232,7 +232,7 @@ export default function MedicareAdvantageFLClient() {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   These extra benefits can be worth hundreds or even thousands of dollars per year. However, they should not be the primary reason you choose a plan — always make sure your doctors are in-network and your medications are covered first.
                 </p>
-                <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm">
+                <Link href="/get-started/" className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm">
                   Check what extra benefits are available in your zip code <ArrowRight size={14} />
                 </Link>
               </div>
@@ -284,9 +284,9 @@ export default function MedicareAdvantageFLClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/medicare-supplement", label: "Medicare Supplement (Medigap)", desc: "Compare Medigap vs. Medicare Advantage and find out which is right for you.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/medicare-part-d", label: "Medicare Part D", desc: "Add prescription drug coverage if your Advantage plan doesn't include it.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/medicare-supplement/", label: "Medicare Supplement (Medigap)", desc: "Compare Medigap vs. Medicare Advantage and find out which is right for you.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/medicare-part-d/", label: "Medicare Part D", desc: "Add prescription drug coverage if your Advantage plan doesn't include it.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -325,7 +325,7 @@ export default function MedicareAdvantageFLClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>

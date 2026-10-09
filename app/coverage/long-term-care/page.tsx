@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Long-Term Care? | Medicare Information Project",
     description:
       "Medicare covers limited short-term skilled nursing care but does not cover custodial long-term care. Learn what Medicare pays for and how to plan for long-term care costs.",
-    url: "https://medicareinfopro.com/coverage/long-term-care",
+    url: "https://medicareinfopro.com/coverage/long-term-care/",
     siteName: "Medicare Information Project",
     type: "website",
   },
@@ -77,7 +77,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Does Medicare Cover Long-Term Care?",
-  url: "https://medicareinfopro.com/coverage/long-term-care",
+  url: "https://medicareinfopro.com/coverage/long-term-care/",
   description:
     "Medicare covers limited short-term skilled nursing care but does not cover custodial long-term care. Learn what Medicare pays for and how to plan for long-term care costs in 2026.",
   publisher: {

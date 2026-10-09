@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get enrollment help by phone in Valrico?", a: "Yes. We offer free phone and video enrollment assistance for Valrico residents. Our Brandon office is also nearby if you prefer an in-person meeting." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Valrico", href: "/medicare-consulting-services-valrico" },
-          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Still Working?", href: "/still-working" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Valrico", href: "/medicare-consulting-services-valrico/" },
+          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl/" },
+          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Still Working?", href: "/still-working/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

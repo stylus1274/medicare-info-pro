@@ -222,7 +222,7 @@ export default function PenaltyCalculatorClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Calculator size={12} /> Free Tool
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Penalty Calculator" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources/" }, { label: "Penalty Calculator" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Late Enrollment Penalty Calculator
             </h1>
@@ -233,7 +233,7 @@ export default function PenaltyCalculatorClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/enrollment-calculator" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/enrollment-calculator/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Enrollment Date Calculator <ArrowRight size={15} />
               </Link>
             </div>
@@ -246,7 +246,7 @@ export default function PenaltyCalculatorClient() {
             <div className="flex items-start gap-3">
               <AlertCircle size={18} className="text-[#b45309] shrink-0 mt-0.5" />
               <p className="text-sm text-[#92400e] leading-relaxed">
-                <strong>Medicare penalties are permanent.</strong> Unlike most financial penalties, Medicare late enrollment penalties are added to your premium for life — not just for a limited period. The best way to avoid them is to enroll on time. If you are unsure of your enrollment window, <Link href="/enrollment-calculator" className="font-bold underline">use our enrollment date calculator</Link> or <Link href="/free-consultation" className="font-bold underline">speak with one of our agents</Link>.
+                <strong>Medicare penalties are permanent.</strong> Unlike most financial penalties, Medicare late enrollment penalties are added to your premium for life — not just for a limited period. The best way to avoid them is to enroll on time. If you are unsure of your enrollment window, <Link href="/enrollment-calculator/" className="font-bold underline">use our enrollment date calculator</Link> or <Link href="/get-started/" className="font-bold underline">speak with one of our agents</Link>.
               </p>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function PenaltyCalculatorClient() {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Our agents help hundreds of people each year navigate these decisions. A 15-minute conversation can save you hundreds of dollars per year in permanent penalties.
                 </p>
-                <Link href="/enrollment-calculator" className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm">
+                <Link href="/enrollment-calculator/" className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm">
                   Calculate Your Enrollment Dates <ArrowRight size={14} />
                 </Link>
               </div>
@@ -358,9 +358,9 @@ export default function PenaltyCalculatorClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/enrollment-calculator", label: "Enrollment Date Calculator", desc: "Enter your birthday to find your exact enrollment window and coverage start date.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D — eligibility, costs, and how they work together.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/faq", label: "Medicare FAQ Center", desc: "Answers to the most common Medicare questions, organized by topic.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/enrollment-calculator/", label: "Enrollment Date Calculator", desc: "Enter your birthday to find your exact enrollment window and coverage start date.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D — eligibility, costs, and how they work together.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/faq/", label: "Medicare FAQ Center", desc: "Answers to the most common Medicare questions, organized by topic.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -399,7 +399,7 @@ export default function PenaltyCalculatorClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Schedule a Consultation <ArrowRight size={16} />
               </Link>
             </div>

@@ -79,31 +79,31 @@ const phases: Phase[] = [
         id: "p1-1",
         text: "Learn the difference between Original Medicare and Medicare Advantage",
         detail: "This is the most important decision you'll make. Original Medicare gives you nationwide freedom; Advantage plans offer extra benefits with network restrictions.",
-        link: { label: "Read the comparison guide", href: "/original-vs-advantage" },
+        link: { label: "Read the comparison guide", href: "/original-vs-advantage/" },
       },
       {
         id: "p1-2",
         text: "Understand what Parts A, B, C, and D cover",
         detail: "Part A = hospital, Part B = medical, Part C = Advantage plans, Part D = prescription drugs. You need to know what each covers before choosing.",
-        link: { label: "Medicare 101 overview", href: "/medicare-101" },
+        link: { label: "Medicare 101 overview", href: "/medicare-101/" },
       },
       {
         id: "p1-3",
         text: "Review the 2026 Medicare costs: premiums, deductibles, and out-of-pocket limits",
         detail: "Part B costs $202.90/month in 2026. Part A is free for most people. Part D now has a $2,100 annual out-of-pocket cap.",
-        link: { label: "Costs at a Glance", href: "/costs-at-a-glance" },
+        link: { label: "Costs at a Glance", href: "/costs-at-a-glance/" },
       },
       {
         id: "p1-4",
         text: "Check whether you qualify for any Medicare Savings Programs or Extra Help",
         detail: "If your income is limited, you may qualify for programs that pay your premiums, deductibles, and copays - or reduce your drug costs significantly.",
-        link: { label: "See savings programs", href: "/costs-at-a-glance#savings" },
+        link: { label: "See savings programs", href: "/costs-at-a-glance/#savings" },
       },
       {
         id: "p1-5",
         text: "Find out if your income triggers IRMAA surcharges on Part B or Part D",
         detail: "If your 2024 income exceeded $109,000 (single) or $218,000 (joint), you'll pay more than the standard Part B premium in 2026.",
-        link: { label: "IRMAA brackets", href: "/costs-at-a-glance#irmaa" },
+        link: { label: "IRMAA brackets", href: "/costs-at-a-glance/#irmaa" },
       },
     ],
   },
@@ -121,13 +121,13 @@ const phases: Phase[] = [
         id: "p2-1",
         text: "Confirm your Medicare eligibility date (usually the 1st of the month you turn 65)",
         detail: "If your birthday is on the 1st of the month, your eligibility starts the 1st of the prior month.",
-        link: { label: "Check eligibility", href: "/am-i-eligible" },
+        link: { label: "Check eligibility", href: "/am-i-eligible/" },
       },
       {
         id: "p2-2",
         text: "Determine your Initial Enrollment Period (IEP) - the 7-month window around your 65th birthday",
         detail: "Your IEP starts 3 months before your birthday month, includes your birthday month, and ends 3 months after. Enrolling in the first 3 months means coverage starts on time.",
-        link: { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+        link: { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
         warning: "Missing your IEP can result in permanent late enrollment penalties.",
       },
       {
@@ -157,7 +157,7 @@ const phases: Phase[] = [
         id: "p3-1",
         text: "Decide between Original Medicare and Medicare Advantage",
         detail: "This is the fork in the road. Original Medicare + Medigap + Part D gives you maximum flexibility. Medicare Advantage gives you lower premiums and extra benefits with network restrictions.",
-        link: { label: "Compare your options", href: "/original-vs-advantage" },
+        link: { label: "Compare your options", href: "/original-vs-advantage/" },
       },
       {
         id: "p3-2",
@@ -704,7 +704,7 @@ export default function FirstStepsChecklistClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span aria-hidden="true">/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span aria-hidden="true">/</span>
             <span className="text-white" aria-current="page">First Steps Checklist</span>
           </nav>
@@ -880,9 +880,9 @@ export default function FirstStepsChecklistClient() {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
-              { href: "/original-vs-advantage", label: "Original vs. Advantage", desc: "Compare the two main ways to get Medicare and decide which is right for you.", tag: "Plan Comparison" },
-              { href: "/costs-at-a-glance", label: "Costs at a Glance", desc: "All 2026 premiums, deductibles, IRMAA brackets, and out-of-pocket limits.", tag: "Cost Reference" },
+              { href: "/enrollment-timeline/", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
+              { href: "/original-vs-advantage/", label: "Original vs. Advantage", desc: "Compare the two main ways to get Medicare and decide which is right for you.", tag: "Plan Comparison" },
+              { href: "/costs-at-a-glance/", label: "Costs at a Glance", desc: "All 2026 premiums, deductibles, IRMAA brackets, and out-of-pocket limits.", tag: "Cost Reference" },
             ].map((link) => (
               <Link
                 key={link.href}

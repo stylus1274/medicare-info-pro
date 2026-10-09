@@ -148,7 +148,7 @@ const POST = {
       type: "summary" as const,
       heading: "Am I Eligible for Medicare? Quick Reference",
       content:
-        "Use this summary to quickly identify your eligibility path:\n\n<ul><li><strong>Age 65+, U.S. citizen or 5-year resident, 40 work quarters:</strong> Eligible for premium-free Part A and Part B at standard premium</li><li><strong>Age 65+, fewer than 40 work quarters:</strong> Eligible for Part A with a monthly premium; eligible for Part B at standard premium</li><li><strong>Under 65, receiving SSDI for 24 months:</strong> Automatically enrolled in Parts A and B</li><li><strong>Any age, diagnosed with ESRD:</strong> Eligible for Medicare after 3 months of dialysis (or sooner with transplant)</li><li><strong>Any age, diagnosed with ALS and approved for SSDI:</strong> Eligible for Medicare immediately upon SSDI approval, no waiting period</li><li><strong>Age 65+, qualifying through spouse's work record:</strong> Eligible for premium-free Part A if spouse has 40+ quarters</li></ul>\n\nIf you are unsure which path applies to you, our licensed specialists can review your situation and help you understand your options. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> at no cost.",
+        "Use this summary to quickly identify your eligibility path:\n\n<ul><li><strong>Age 65+, U.S. citizen or 5-year resident, 40 work quarters:</strong> Eligible for premium-free Part A and Part B at standard premium</li><li><strong>Age 65+, fewer than 40 work quarters:</strong> Eligible for Part A with a monthly premium; eligible for Part B at standard premium</li><li><strong>Under 65, receiving SSDI for 24 months:</strong> Automatically enrolled in Parts A and B</li><li><strong>Any age, diagnosed with ESRD:</strong> Eligible for Medicare after 3 months of dialysis (or sooner with transplant)</li><li><strong>Any age, diagnosed with ALS and approved for SSDI:</strong> Eligible for Medicare immediately upon SSDI approval, no waiting period</li><li><strong>Age 65+, qualifying through spouse's work record:</strong> Eligible for premium-free Part A if spouse has 40+ quarters</li></ul>\n\nIf you are unsure which path applies to you, our licensed specialists can review your situation and help you understand your options. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> at no cost.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
-      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
       category: "Enrollment" as const,
     },
     {
       title: "Best Medicare Advantage Plans in Florida 2026",
-      href: "/best-medicare-advantage-plans-florida",
+      href: "/best-medicare-advantage-plans-florida/",
       category: "Plans" as const,
     },
     {
       title: "What Are the Best Medicare Plans for Seniors?",
-      href: "/what-are-the-best-medicare-plans-for-seniors",
+      href: "/what-are-the-best-medicare-plans-for-seniors/",
       category: "Plans" as const,
     },
   ],

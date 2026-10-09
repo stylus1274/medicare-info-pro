@@ -34,28 +34,28 @@ const categories = [
       {
         title: "Medicare 101: The Complete Beginner's Guide",
         desc: "Everything you need to know about Parts A, B, C, and D before you enroll.",
-        href: "/medicare-101",
+        href: "/medicare-101/",
         badge: "Foundation",
         badgeColor: "bg-blue-100 text-blue-800",
       },
       {
         title: "First Steps Checklist for New Medicare Enrollees",
         desc: "A step-by-step checklist to make sure you do not miss any enrollment deadlines.",
-        href: "/first-steps-checklist",
+        href: "/first-steps-checklist/",
         badge: "Checklist",
         badgeColor: "bg-green-100 text-green-800",
       },
       {
         title: "Am I Eligible for Medicare?",
         desc: "Understand age, disability, and ESRD eligibility rules before you apply.",
-        href: "/am-i-eligible",
+        href: "/am-i-eligible/",
         badge: "Eligibility",
         badgeColor: "bg-amber-100 text-amber-800",
       },
       {
         title: "Working Past 65: How Medicare Works When You Are Still Employed",
         desc: "If you or your spouse still has employer coverage, read this before enrolling.",
-        href: "/working-past-65",
+        href: "/working-past-65/",
         badge: "Employment",
         badgeColor: "bg-purple-100 text-purple-800",
       },
@@ -69,42 +69,42 @@ const categories = [
       {
         title: "Original Medicare vs. Medicare Advantage: Which Is Right for You?",
         desc: "A side-by-side comparison of the two main Medicare paths, with pros and cons of each.",
-        href: "/original-vs-advantage",
+        href: "/original-vs-advantage/",
         badge: "Comparison",
         badgeColor: "bg-blue-100 text-blue-800",
       },
       {
         title: "Do I Need a Medicare Supplement (Medigap) Plan?",
         desc: "Learn when a Medigap plan makes financial sense and which plan letter to choose.",
-        href: "/do-i-need-a-supplement",
+        href: "/do-i-need-a-supplement/",
         badge: "Medigap",
         badgeColor: "bg-green-100 text-green-800",
       },
       {
         title: "Why Choose Medigap Plan G?",
         desc: "Plan G is the most popular Medigap plan for new enrollees. Here is why.",
-        href: "/why-choose-medigap-plan-g",
+        href: "/why-choose-medigap-plan-g/",
         badge: "Medigap",
         badgeColor: "bg-green-100 text-green-800",
       },
       {
         title: "Understanding Medicare HMO Plans",
         desc: "How HMO plans work, what networks mean for your care, and when an HMO makes sense.",
-        href: "/hmos",
+        href: "/hmos/",
         badge: "Advantage",
         badgeColor: "bg-amber-100 text-amber-800",
       },
       {
         title: "Medicare PPO Plans in the Brandon Area",
         desc: "How PPO plans differ from HMOs and what to look for in a local PPO network.",
-        href: "/medicare-ppo-plans-in-tampa",
+        href: "/medicare-ppo-plans-in-tampa/",
         badge: "Advantage",
         badgeColor: "bg-amber-100 text-amber-800",
       },
       {
         title: "Medicare Special Needs Plans (SNPs)",
         desc: "SNPs are designed for people with specific chronic conditions or dual Medicare/Medicaid eligibility.",
-        href: "/medicare-snp-plans",
+        href: "/medicare-snp-plans/",
         badge: "Advantage",
         badgeColor: "bg-amber-100 text-amber-800",
       },
@@ -118,28 +118,28 @@ const categories = [
       {
         title: "Medicare Costs at a Glance: 2026 Premiums, Deductibles, and Coinsurance",
         desc: "A complete reference for all 2026 Medicare cost figures in one place.",
-        href: "/costs-at-a-glance",
+        href: "/costs-at-a-glance/",
         badge: "Costs",
         badgeColor: "bg-red-100 text-red-800",
       },
       {
         title: "Understanding Medicare Part D Drug Coverage",
         desc: "How formularies, tiers, and the coverage gap work for prescription drug plans.",
-        href: "/understanding-part-d",
+        href: "/understanding-part-d/",
         badge: "Part D",
         badgeColor: "bg-purple-100 text-purple-800",
       },
       {
         title: "How to Maximize Your Medicare Benefits",
         desc: "Strategies to get the most out of your Medicare coverage, from preventive care to appeals.",
-        href: "/maximize-benefits",
+        href: "/maximize-benefits/",
         badge: "Strategy",
         badgeColor: "bg-blue-100 text-blue-800",
       },
       {
         title: "Why Medicare Coverage Matters More Than You Think",
         desc: "The real financial risk of gaps in Medicare coverage and how to protect yourself.",
-        href: "/why-is-medicare-coverage-so-important",
+        href: "/why-is-medicare-coverage-so-important/",
         badge: "Planning",
         badgeColor: "bg-green-100 text-green-800",
       },
@@ -153,14 +153,14 @@ const categories = [
       {
         title: "Medicare Enrollment Timeline: Key Dates and Deadlines",
         desc: "Initial Enrollment Period, Annual Enrollment Period, Special Enrollment Period, and Open Enrollment explained.",
-        href: "/enrollment-timeline",
+        href: "/enrollment-timeline/",
         badge: "Enrollment",
         badgeColor: "bg-blue-100 text-blue-800",
       },
       {
         title: "Medicare Without Social Security: How to Enroll on Your Own",
         desc: "If you are not yet collecting Social Security, you must enroll in Medicare separately. Here is how.",
-        href: "/medicare-without-social-security",
+        href: "/medicare-without-social-security/",
         badge: "Enrollment",
         badgeColor: "bg-blue-100 text-blue-800",
       },
@@ -174,14 +174,14 @@ const categories = [
       {
         title: "Medicare Part A: Hospital Coverage Explained",
         desc: "Inpatient hospital, skilled nursing facility, hospice, and home health coverage under Part A.",
-        href: "/medicare-part-a",
+        href: "/medicare-part-a/",
         badge: "Part A",
         badgeColor: "bg-red-100 text-red-800",
       },
       {
         title: "Medicare Part B: Medical Coverage Explained",
         desc: "Outpatient care, preventive services, durable medical equipment, and the Part B premium.",
-        href: "/medicare-part-b",
+        href: "/medicare-part-b/",
         badge: "Part B",
         badgeColor: "bg-red-100 text-red-800",
       },
@@ -300,7 +300,7 @@ export default function GuidesClient() {
                       813-789-7700
                     </a>
                     <Link
-                      href="/medicare-quiz"
+                      href="/medicare-quiz/"
                       className="flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium px-4 py-2.5 rounded-xl transition-colors w-full text-sm"
                     >
                       Take the Medicare Quiz
@@ -313,12 +313,12 @@ export default function GuidesClient() {
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Also Explore</p>
                     <div className="space-y-2">
                       {[
-                        { label: "Coverage Q&A Hub", href: "/coverage-qa" },
-                        { label: "Blog and Articles", href: "/blog" },
-                        { label: "FAQ Center", href: "/faq" },
-                        { label: "Plan Comparison Tool", href: "/plan-comparison" },
-                        { label: "Cost Estimator", href: "/cost-estimator" },
-                        { label: "Enrollment Calculator", href: "/enrollment-calculator" },
+                        { label: "Coverage Q&A Hub", href: "/coverage-qa/" },
+                        { label: "Blog and Articles", href: "/blog/" },
+                        { label: "FAQ Center", href: "/faq/" },
+                        { label: "Plan Comparison Tool", href: "/plan-comparison/" },
+                        { label: "Cost Estimator", href: "/cost-estimator/" },
+                        { label: "Enrollment Calculator", href: "/enrollment-calculator/" },
                       ].map((link) => (
                         <Link
                           key={link.href}

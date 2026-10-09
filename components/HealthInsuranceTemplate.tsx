@@ -155,7 +155,7 @@ export default function HealthInsuranceTemplate({ data }: { data: CityData }) {
                 <Phone size={16} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
               >
                 Free Consultation <ArrowRight size={15} />
@@ -246,7 +246,7 @@ export default function HealthInsuranceTemplate({ data }: { data: CityData }) {
                   Here are the key terms you will encounter when comparing health insurance plans in {city}:
                 </p>
                 <Link
-                  href="/free-consultation"
+                  href="/get-started/"
                   className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm"
                 >
                   Talk to an Agent <ArrowRight size={14} />
@@ -369,7 +369,7 @@ export default function HealthInsuranceTemplate({ data }: { data: CityData }) {
                 <Phone size={17} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base"
               >
                 Schedule a Free Consultation <ArrowRight size={16} />

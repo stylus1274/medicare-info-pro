@@ -19,7 +19,7 @@ const articleSchema = {
     "@type": "Person",
     name: "Greg Wohl",
     jobTitle: "Licensed Medicare Specialist",
-    url: "https://medicareinfopro.com/greg-wohl",
+    url: "https://medicareinfopro.com/greg-wohl/",
   },
   publisher: {
     "@type": "Organization",
@@ -147,7 +147,7 @@ const POST = {
   sections: [
     {
       type: "intro" as const,
-      content: `Medicare Part D now has an annual limit on out-of-pocket cost sharing for covered prescription drugs. In 2026, that threshold is <strong>$2,100</strong>. Once you reach it, you pay no cost sharing for covered Part D drugs for the rest of the calendar year.<br /><br />The cap can offer meaningful protection if you use expensive medications. It does not mean every prescription is free, eliminate your plan premium, or replace the need to check whether a drug is on your plan's formulary. This guide explains the distinction so you can review your <a href='/coverage/prescription-drugs' class='text-[#1a3fa8] underline underline-offset-2'>Medicare prescription drug coverage</a> with realistic expectations.`,
+      content: `Medicare Part D now has an annual limit on out-of-pocket cost sharing for covered prescription drugs. In 2026, that threshold is <strong>$2,100</strong>. Once you reach it, you pay no cost sharing for covered Part D drugs for the rest of the calendar year.<br /><br />The cap can offer meaningful protection if you use expensive medications. It does not mean every prescription is free, eliminate your plan premium, or replace the need to check whether a drug is on your plan's formulary. This guide explains the distinction so you can review your <a href='/coverage/prescription-drugs/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare prescription drug coverage</a> with realistic expectations.`,
     },
     {
       type: "section" as const,
@@ -157,7 +157,7 @@ const POST = {
     {
       type: "section" as const,
       heading: "What Counts Toward the Cap, and What Does Not",
-      content: `Your deductible, copayments, and coinsurance for covered Part D drugs count toward the out-of-pocket threshold. Certain qualifying payments made on your behalf can count too, including some help available through <a href='/how-to-get-help-paying-for-medicare' class='text-[#1a3fa8] underline underline-offset-2'>Extra Help and other Medicare cost-assistance programs</a>.<br /><br />Your monthly Part D premium does <strong>not</strong> count toward the $2,100 threshold. The cap also does not make a drug count if your plan does not cover it. Drugs that are excluded from Part D, outside the plan's formulary, or obtained without following a required coverage rule may leave you with costs that do not count toward the cap. Check your formulary, pharmacy network, and any prior authorization or step-therapy requirements before assuming a medication will be covered.<br /><br />Your monthly Explanation of Benefits, or EOB, is an important record. It shows what you filled, what the plan paid, what you and others paid, your coverage stage, and the amounts that count toward your out-of-pocket costs.`,
+      content: `Your deductible, copayments, and coinsurance for covered Part D drugs count toward the out-of-pocket threshold. Certain qualifying payments made on your behalf can count too, including some help available through <a href='/how-to-get-help-paying-for-medicare/' class='text-[#1a3fa8] underline underline-offset-2'>Extra Help and other Medicare cost-assistance programs</a>.<br /><br />Your monthly Part D premium does <strong>not</strong> count toward the $2,100 threshold. The cap also does not make a drug count if your plan does not cover it. Drugs that are excluded from Part D, outside the plan's formulary, or obtained without following a required coverage rule may leave you with costs that do not count toward the cap. Check your formulary, pharmacy network, and any prior authorization or step-therapy requirements before assuming a medication will be covered.<br /><br />Your monthly Explanation of Benefits, or EOB, is an important record. It shows what you filled, what the plan paid, what you and others paid, your coverage stage, and the amounts that count toward your out-of-pocket costs.`,
     },
     {
       type: "inlineCta" as const,
@@ -172,12 +172,12 @@ const POST = {
     {
       type: "section" as const,
       heading: "How the Cap Affects Plan Shopping",
-      content: `The cap protects you after you reach it, but it does not make every Part D plan equally suitable. Before enrolling, compare whether your medications are on the formulary, their tier, any utilization-management rules, preferred pharmacies, the premium, and the deductible. A plan with a low premium can still be a poor fit if it places your medication on a costly tier or does not cover it.<br /><br />Review your Annual Notice of Change each fall and use Medicare Plan Compare during the <a href='/annual-enrollment-period-guide' class='text-[#1a3fa8] underline underline-offset-2'>Annual Enrollment Period</a> if your drugs, pharmacies, or plan rules have changed. If you are considering whether to delay Part D enrollment, review the <a href='/faqs/medicare-part-d-late-enrollment-penalty' class='text-[#1a3fa8] underline underline-offset-2'>Part D late-enrollment penalty FAQ</a> before making a coverage decision.`,
+      content: `The cap protects you after you reach it, but it does not make every Part D plan equally suitable. Before enrolling, compare whether your medications are on the formulary, their tier, any utilization-management rules, preferred pharmacies, the premium, and the deductible. A plan with a low premium can still be a poor fit if it places your medication on a costly tier or does not cover it.<br /><br />Review your Annual Notice of Change each fall and use Medicare Plan Compare during the <a href='/annual-enrollment-period-guide/' class='text-[#1a3fa8] underline underline-offset-2'>Annual Enrollment Period</a> if your drugs, pharmacies, or plan rules have changed. If you are considering whether to delay Part D enrollment, review the <a href='/faqs/medicare-part-d-late-enrollment-penalty/' class='text-[#1a3fa8] underline underline-offset-2'>Part D late-enrollment penalty FAQ</a> before making a coverage decision.`,
     },
     {
       type: "section" as const,
       heading: "Extra Help and Other Cost Assistance",
-      content: `Extra Help is a Medicare program for people with limited income and resources that can reduce Part D premiums, deductibles, and copayments. People who qualify for Medicaid, a Medicare Savings Program, or Supplemental Security Income generally qualify automatically. If you do not qualify automatically, you can apply.<br /><br />Cost-assistance programs can interact with the Part D threshold, but eligibility and the amount of help are individual. Do not assume that the $2,100 cap is the only protection available. Start with our <a href='/how-to-get-help-paying-for-medicare' class='text-[#1a3fa8] underline underline-offset-2'>guide to getting help paying for Medicare</a>, then verify the programs available to you through Medicare or Social Security.`,
+      content: `Extra Help is a Medicare program for people with limited income and resources that can reduce Part D premiums, deductibles, and copayments. People who qualify for Medicaid, a Medicare Savings Program, or Supplemental Security Income generally qualify automatically. If you do not qualify automatically, you can apply.<br /><br />Cost-assistance programs can interact with the Part D threshold, but eligibility and the amount of help are individual. Do not assume that the $2,100 cap is the only protection available. Start with our <a href='/how-to-get-help-paying-for-medicare/' class='text-[#1a3fa8] underline underline-offset-2'>guide to getting help paying for Medicare</a>, then verify the programs available to you through Medicare or Social Security.`,
     },
     {
       type: "summary" as const,
@@ -215,10 +215,10 @@ const POST = {
     },
   ],
   relatedPosts: [
-    { title: "Medicare Part D Late Enrollment Penalty", href: "/faqs/medicare-part-d-late-enrollment-penalty", category: "Part D" as const },
-    { title: "Annual Enrollment Period Guide", href: "/annual-enrollment-period-guide", category: "Enrollment" as const },
-    { title: "Help Paying for Medicare", href: "/how-to-get-help-paying-for-medicare", category: "Costs" as const },
-    { title: "Medicare Costs at a Glance", href: "/costs-at-a-glance", category: "Costs" as const },
+    { title: "Medicare Part D Late Enrollment Penalty", href: "/faqs/medicare-part-d-late-enrollment-penalty/", category: "Part D" as const },
+    { title: "Annual Enrollment Period Guide", href: "/annual-enrollment-period-guide/", category: "Enrollment" as const },
+    { title: "Help Paying for Medicare", href: "/how-to-get-help-paying-for-medicare/", category: "Costs" as const },
+    { title: "Medicare Costs at a Glance", href: "/costs-at-a-glance/", category: "Costs" as const },
   ],
 };
 

@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview" },
-          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Medicare Agent — Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl" },
-          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator" },
+          { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview/" },
+          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Medicare Agent — Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl/" },
+          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
         ],
       }}
     />

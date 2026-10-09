@@ -121,7 +121,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance Broker in Brandon, FL | Medicare Information Project",
     description: "Independent health insurance broker in Brandon, FL — comparing every plan at no cost to you.",
-    url: "https://medicareinfopro.com/health-insurance-broker-brandon",
+    url: "https://medicareinfopro.com/health-insurance-broker-brandon/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/health-insurance-broker-brandon" },

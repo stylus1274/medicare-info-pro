@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What is a Special Enrollment Period and do I qualify in Riverview?", a: "A Special Enrollment Period allows you to enroll outside of standard enrollment windows due to qualifying life events such as losing employer coverage, moving, or gaining eligibility for Medicaid. We help Riverview residents determine if they qualify." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview" },
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Still Working?", href: "/still-working" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview/" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Still Working?", href: "/still-working/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

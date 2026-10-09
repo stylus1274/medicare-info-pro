@@ -132,7 +132,7 @@ export default function PrescriptionDrugsClient() {
           <nav className="text-sm text-blue-200 mb-6 flex items-center gap-2 flex-wrap">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/coverage-qa" className="hover:text-white transition-colors">Coverage Q&A</Link>
+            <Link href="/coverage-qa/" className="hover:text-white transition-colors">Coverage Q&A</Link>
             <span>/</span>
             <span className="text-white">Prescription Drugs</span>
           </nav>
@@ -242,7 +242,7 @@ export default function PrescriptionDrugsClient() {
                     <p className="font-bold text-amber-900 mb-1">The Late Enrollment Penalty Is Permanent</p>
                     <p className="text-amber-800 text-sm leading-relaxed">
                       Unlike a one-time fee, the Part D penalty is added to your monthly premium for as long as you have Part D coverage. Enrolling on time: or maintaining creditable coverage through an employer plan: is the only way to avoid it. See the full{" "}
-                      <Link href="/enrollment-timeline#penalty-partd" className="underline font-medium hover:text-amber-900">
+                      <Link href="/enrollment-timeline/#penalty-partd" className="underline font-medium hover:text-amber-900">
                         Part D penalty explanation
                       </Link>.
                     </p>
@@ -346,10 +346,10 @@ export default function PrescriptionDrugsClient() {
                   Prescription drugs are not the only gap in Original Medicare. Dental and hearing coverage are also excluded from Parts A and B.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/coverage/dental" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                  <Link href="/coverage/dental/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                     <ArrowRight className="w-4 h-4" /> Does Medicare Cover Dental?
                   </Link>
-                  <Link href="/coverage/hearing-aids" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                  <Link href="/coverage/hearing-aids/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                     <ArrowRight className="w-4 h-4" /> Does Medicare Cover Hearing Aids?
                   </Link>
                 </div>
@@ -437,7 +437,7 @@ export default function PrescriptionDrugsClient() {
                     813-789-7700
                   </a>
                   <Link
-                    href="/medicare-quiz"
+                    href="/medicare-quiz/"
                     className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                   >
                     Take the Medicare Quiz
@@ -490,7 +490,7 @@ export default function PrescriptionDrugsClient() {
                     813-789-7700
                   </a>
                   <Link
-                    href="/medicare-quiz"
+                    href="/medicare-quiz/"
                     className="flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium px-4 py-2.5 rounded-xl transition-colors w-full text-sm"
                   >
                     Take the Medicare Quiz
@@ -503,11 +503,11 @@ export default function PrescriptionDrugsClient() {
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Related Pages</p>
                   <div className="space-y-2">
                     {[
-                      { label: "Understanding Part D", href: "/understanding-part-d" },
-                      { label: "Does Medicare Cover Dental?", href: "/coverage/dental" },
-                      { label: "Does Medicare Cover Hearing Aids?", href: "/coverage/hearing-aids" },
-                      { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
-                      { label: "Coverage Q&A Hub", href: "/coverage-qa" },
+                      { label: "Understanding Part D", href: "/understanding-part-d/" },
+                      { label: "Does Medicare Cover Dental?", href: "/coverage/dental/" },
+                      { label: "Does Medicare Cover Hearing Aids?", href: "/coverage/hearing-aids/" },
+                      { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
+                      { label: "Coverage Q&A Hub", href: "/coverage-qa/" },
                     ].map((link) => (
                       <Link
                         key={link.href}

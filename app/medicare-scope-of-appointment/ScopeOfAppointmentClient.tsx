@@ -261,7 +261,7 @@ export default function ScopeOfAppointmentClient() {
                     Our licensed agents follow all CMS marketing regulations, including the Scope of Appointment requirement. Free consultations, no pressure.
                   </p>
                   <Link
-                    href="/free-consultation/"
+                    href="/get-started/"
                     className="block w-full text-center bg-[#f5a800] text-white font-bold py-3 rounded-xl hover:bg-[#e09600] transition-colors mb-3"
                   >
                     Get a Free Consultation

@@ -240,7 +240,7 @@ export default function OurTeamClient() {
               All consultations are free, with no obligation. Our agents are independent, so we work for you, not the insurance companies.
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-consultation" style={{ background: "#f5a800", color: "#0d1f5c", borderRadius: 8, padding: "0.85rem 2rem", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}>
+              <Link href="/get-started/" style={{ background: "#f5a800", color: "#0d1f5c", borderRadius: 8, padding: "0.85rem 2rem", fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}>
                 Schedule a Free Consultation
               </Link>
               <a href="tel:8136995559" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", border: "1px solid rgba(255,255,255,0.3)", borderRadius: 8, padding: "0.85rem 2rem", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none" }}>

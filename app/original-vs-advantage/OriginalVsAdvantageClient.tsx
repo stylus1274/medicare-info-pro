@@ -498,7 +498,7 @@ export default function OriginalVsAdvantageClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span>/</span>
             <span className="text-white" aria-current="page">Original vs. Advantage</span>
           </nav>
@@ -860,9 +860,9 @@ export default function OriginalVsAdvantageClient() {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
-              { href: "/am-i-eligible", label: "Am I Eligible?", desc: "Find out if you qualify for Medicare and which eligibility path applies to you.", tag: "Eligibility" },
-              { href: "/medicare-101", label: "Medicare 101 Overview", desc: "A complete beginner's guide to Parts A, B, C, and D - everything in one place.", tag: "Beginner Guide" },
+              { href: "/enrollment-timeline/", label: "Enrollment Timeline", desc: "Key dates, enrollment windows, and how to avoid permanent late penalties.", tag: "Getting Started" },
+              { href: "/am-i-eligible/", label: "Am I Eligible?", desc: "Find out if you qualify for Medicare and which eligibility path applies to you.", tag: "Eligibility" },
+              { href: "/medicare-101/", label: "Medicare 101 Overview", desc: "A complete beginner's guide to Parts A, B, C, and D - everything in one place.", tag: "Beginner Guide" },
             ].map((link) => (
               <Link
                 key={link.href}

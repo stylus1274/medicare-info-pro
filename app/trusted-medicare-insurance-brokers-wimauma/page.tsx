@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Medicare broker in Wimauma help me compare dental and vision benefits?", a: "Yes. Many Medicare Advantage plans available in ZIP 33598 include dental, vision, and hearing benefits. We compare these extras alongside medical coverage to find the best overall value for you." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl" },
-          { label: "Trusted Brokers Ruskin", href: "/trusted-medicare-insurance-brokers-ruskin" },
-          { label: "Trusted Brokers Apollo Beach", href: "/trusted-medicare-insurance-brokers-apollo-beach" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl/" },
+          { label: "Trusted Brokers Ruskin", href: "/trusted-medicare-insurance-brokers-ruskin/" },
+          { label: "Trusted Brokers Apollo Beach", href: "/trusted-medicare-insurance-brokers-apollo-beach/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -148,7 +148,7 @@ const POST = {
       type: "summary" as const,
       heading: "How to Find the Best Plan for You",
       content:
-        "There is no single best Medicare Advantage plan in Florida. The right plan depends on your county, your doctors, your medications, and your health needs. Here is a practical checklist:\n\n<ul><li><strong>Start with your doctors:</strong> List every provider you want to keep and verify they are in-network before comparing anything else.</li><li><strong>Enter your drugs into Medicare Plan Finder:</strong> Go to medicare.gov/plan-compare and enter your exact medications to see real drug costs under each plan.</li><li><strong>Compare out-of-pocket maximums:</strong> Prioritize plans with lower caps if you have ongoing health needs.</li><li><strong>Check Star Ratings:</strong> Filter for plans with 4 or more stars for better quality and service.</li><li><strong>Value extra benefits:</strong> Add up the annual value of dental, vision, OTC, and fitness benefits when comparing total plan value.</li><li><strong>Review plan documents:</strong> Read the Summary of Benefits for any plan you are seriously considering before enrolling.</li></ul>\n\nOur licensed Medicare specialists can run a full comparison of every plan available in your ZIP code at no cost to you. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get a personalized recommendation.",
+        "There is no single best Medicare Advantage plan in Florida. The right plan depends on your county, your doctors, your medications, and your health needs. Here is a practical checklist:\n\n<ul><li><strong>Start with your doctors:</strong> List every provider you want to keep and verify they are in-network before comparing anything else.</li><li><strong>Enter your drugs into Medicare Plan Finder:</strong> Go to medicare.gov/plan-compare and enter your exact medications to see real drug costs under each plan.</li><li><strong>Compare out-of-pocket maximums:</strong> Prioritize plans with lower caps if you have ongoing health needs.</li><li><strong>Check Star Ratings:</strong> Filter for plans with 4 or more stars for better quality and service.</li><li><strong>Value extra benefits:</strong> Add up the annual value of dental, vision, OTC, and fitness benefits when comparing total plan value.</li><li><strong>Review plan documents:</strong> Read the Summary of Benefits for any plan you are seriously considering before enrolling.</li></ul>\n\nOur licensed Medicare specialists can run a full comparison of every plan available in your ZIP code at no cost to you. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get a personalized recommendation.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "What Are the Best Medicare Plans for Seniors?",
-      href: "/what-are-the-best-medicare-plans-for-seniors",
+      href: "/what-are-the-best-medicare-plans-for-seniors/",
       category: "Plans" as const,
     },
     {
       title: "Medicare Advantage Changes 2026: What Florida Enrollees Need to Know",
-      href: "/medicare-advantage-changes-2026-florida",
+      href: "/medicare-advantage-changes-2026-florida/",
       category: "Plans" as const,
     },
     {
       title: "How to Sign Up for Medicare Without an Agent",
-      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
       category: "Enrollment" as const,
     },
   ],

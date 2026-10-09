@@ -237,7 +237,7 @@ export default function MedicareAdvantageCoverageClient() {
           <nav className="flex items-center gap-2 text-blue-300 text-sm mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight size={14} />
-            <Link href="/coverage" className="hover:text-white transition-colors">Coverage</Link>
+            <Link href="/resources/" className="hover:text-white transition-colors">Coverage</Link>
             <ChevronRight size={14} />
             <span className="text-white">Medicare Advantage Extra Benefits</span>
           </nav>
@@ -261,7 +261,7 @@ export default function MedicareAdvantageCoverageClient() {
               Compare Plans: (813) 699-5559
             </a>
             <Link
-              href="/medicare-advantage"
+              href="/medicare-advantage/"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
             >
               Medicare Advantage Overview
@@ -411,7 +411,7 @@ export default function MedicareAdvantageCoverageClient() {
                   (813) 699-5559
                 </a>
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-5 py-3 rounded-xl transition-colors text-sm"
                 >
                   Request a Free Comparison
@@ -475,12 +475,12 @@ export default function MedicareAdvantageCoverageClient() {
               <h3 className="font-bold text-[#0d2260] text-sm mb-4 uppercase tracking-wider">Medicare Plan Types</h3>
               <ul className="space-y-2">
                 {[
-                  { label: "Medicare Advantage (Part C)", href: "/medicare-advantage" },
-                  { label: "Medicare Supplement (Medigap)", href: "/medicare-supplement" },
-                  { label: "Medicare Part D (Drug Coverage)", href: "/medicare-part-d" },
-                  { label: "Original vs. Advantage", href: "/original-vs-advantage" },
-                  { label: "Medicare Part A", href: "/medicare-part-a" },
-                  { label: "Medicare Part B", href: "/medicare-part-b" },
+                  { label: "Medicare Advantage (Part C)", href: "/medicare-advantage/" },
+                  { label: "Medicare Supplement (Medigap)", href: "/medicare-supplement/" },
+                  { label: "Medicare Part D (Drug Coverage)", href: "/medicare-part-d/" },
+                  { label: "Original vs. Advantage", href: "/original-vs-advantage/" },
+                  { label: "Medicare Part A", href: "/medicare-part-a/" },
+                  { label: "Medicare Part B", href: "/medicare-part-b/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link
@@ -500,15 +500,15 @@ export default function MedicareAdvantageCoverageClient() {
               <h3 className="font-bold text-[#0d2260] text-sm mb-4 uppercase tracking-wider">Coverage Topics</h3>
               <ul className="space-y-2">
                 {[
-                  { label: "Dental Coverage", href: "/coverage/dental" },
-                  { label: "Vision Coverage", href: "/coverage/vision" },
-                  { label: "Hearing Aid Coverage", href: "/coverage/hearing-aids" },
-                  { label: "Mental Health Coverage", href: "/coverage/mental-health" },
-                  { label: "Prescription Drugs", href: "/coverage/prescription-drugs" },
-                  { label: "Skilled Nursing", href: "/coverage/skilled-nursing" },
-                  { label: "Physical Therapy", href: "/coverage/physical-therapy" },
-                  { label: "Cancer Treatment", href: "/coverage/cancer-treatment" },
-                  { label: "Medical Equipment", href: "/coverage/medical-equipment" },
+                  { label: "Dental Coverage", href: "/coverage/dental/" },
+                  { label: "Vision Coverage", href: "/coverage/vision/" },
+                  { label: "Hearing Aid Coverage", href: "/coverage/hearing-aids/" },
+                  { label: "Mental Health Coverage", href: "/coverage/mental-health/" },
+                  { label: "Prescription Drugs", href: "/coverage/prescription-drugs/" },
+                  { label: "Skilled Nursing", href: "/coverage/skilled-nursing/" },
+                  { label: "Physical Therapy", href: "/coverage/physical-therapy/" },
+                  { label: "Cancer Treatment", href: "/coverage/cancer-treatment/" },
+                  { label: "Medical Equipment", href: "/coverage/medical-equipment/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link

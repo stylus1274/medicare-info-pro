@@ -148,7 +148,7 @@ const POST = {
       type: "summary" as const,
       heading: "Your Action Plan if You Need to Re-Enroll in Part D",
       content:
-        "Here is what to do depending on your situation:\n\n<ul><li><strong>You dropped Part D and it has been less than 63 days:</strong> Check whether you have a Special Enrollment Period. If so, enroll immediately to avoid the penalty.</li><li><strong>You dropped Part D and it has been more than 63 days:</strong> You will owe a late enrollment penalty. Enroll during the next Annual Enrollment Period (October 15 through December 7) to stop the penalty from growing.</li><li><strong>You never enrolled and have been on Medicare for years:</strong> Enroll during AEP. The penalty will apply, but stopping it now limits the long-term cost.</li><li><strong>You have VA or employer drug coverage:</strong> Confirm it is creditable. If it is, you are protected from the penalty as long as you maintain that coverage.</li><li><strong>You are not sure what coverage you have:</strong> Contact Medicare at 1-800-MEDICARE or work with an independent Medicare advisor to review your situation.</li></ul>\n\nOur licensed specialists can review your coverage history, calculate any potential penalty, and help you find the best Part D plan for your medications. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get started.",
+        "Here is what to do depending on your situation:\n\n<ul><li><strong>You dropped Part D and it has been less than 63 days:</strong> Check whether you have a Special Enrollment Period. If so, enroll immediately to avoid the penalty.</li><li><strong>You dropped Part D and it has been more than 63 days:</strong> You will owe a late enrollment penalty. Enroll during the next Annual Enrollment Period (October 15 through December 7) to stop the penalty from growing.</li><li><strong>You never enrolled and have been on Medicare for years:</strong> Enroll during AEP. The penalty will apply, but stopping it now limits the long-term cost.</li><li><strong>You have VA or employer drug coverage:</strong> Confirm it is creditable. If it is, you are protected from the penalty as long as you maintain that coverage.</li><li><strong>You are not sure what coverage you have:</strong> Contact Medicare at 1-800-MEDICARE or work with an independent Medicare advisor to review your situation.</li></ul>\n\nOur licensed specialists can review your coverage history, calculate any potential penalty, and help you find the best Part D plan for your medications. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get started.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "What Are the Best Medicare Plans for Seniors?",
-      href: "/what-are-the-best-medicare-plans-for-seniors",
+      href: "/what-are-the-best-medicare-plans-for-seniors/",
       category: "Plans" as const,
     },
     {
       title: "Understanding the Medicare Part D Out-of-Pocket Cap",
-      href: "/medicare-part-d-out-of-pocket-cap",
+      href: "/medicare-part-d-out-of-pocket-cap/",
       category: "Part D" as const,
     },
     {
       title: "How Much Does Health Insurance Cost Per Month in Florida?",
-      href: "/how-much-does-health-insurance-cost-per-month-in-florida",
+      href: "/how-much-does-health-insurance-cost-per-month-in-florida/",
       category: "Costs" as const,
     },
   ],

@@ -246,7 +246,7 @@ const POST = {
 
 <p>You enroll in Medicare Advantage or a standalone Part D plan directly with the private insurer — not through SSA. You can do this during your IEP, or during the Annual Enrollment Period (October 15 - December 7) each year.</p>
 
-<p>A <a href='/medicare-advantage-vs-medigap' class='text-[#1a3fa8] underline underline-offset-2'>detailed comparison of Medicare Advantage vs. Medigap</a> can help you decide which path is right for your situation.</p>`,
+<p>A <a href='/medicare-advantage-vs-medigap/' class='text-[#1a3fa8] underline underline-offset-2'>detailed comparison of Medicare Advantage vs. Medigap</a> can help you decide which path is right for your situation.</p>`,
     },
     {
       type: "section" as const,
@@ -282,7 +282,7 @@ const POST = {
 
 <p><strong>Example:</strong> If you delay Part B enrollment for 2 full years without a qualifying reason, your monthly Part B premium increases by 20% permanently. In 2026, the standard Part B premium is $185/month — a 20% penalty adds $37/month, or $444/year, for the rest of your life.</p>
 
-<p>Use our <a href='/medicare-penalty-calculator' class='text-[#1a3fa8] underline underline-offset-2'>Medicare penalty calculator</a> to estimate what a late enrollment could cost you.</p>`,
+<p>Use our <a href='/medicare-penalty-calculator/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare penalty calculator</a> to estimate what a late enrollment could cost you.</p>`,
     },
     {
       type: "section" as const,
@@ -300,7 +300,7 @@ const POST = {
 <p>People with ESRD (permanent kidney failure requiring dialysis or a transplant) qualify for Medicare at any age. Enrollment rules differ — contact Social Security or a Medicare specialist for guidance specific to your situation.</p>
 
 <h3 style="font-size:1.1rem;font-weight:600;margin:1.25rem 0 0.5rem;">Veterans With VA Coverage</h3>
-<p>VA benefits do not count as creditable coverage for Medicare purposes. Veterans who rely solely on VA care and skip Medicare Part B may face late penalties if they later want to add Part B. Many veterans choose to enroll in both to maximize their coverage options. See our guide on <a href='/medicare-issues-for-veterans-tampa' class='text-[#1a3fa8] underline underline-offset-2'>Medicare issues for veterans</a> for more detail.</p>`,
+<p>VA benefits do not count as creditable coverage for Medicare purposes. Veterans who rely solely on VA care and skip Medicare Part B may face late penalties if they later want to add Part B. Many veterans choose to enroll in both to maximize their coverage options. See our guide on <a href='/medicare-issues-for-veterans-tampa/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare issues for veterans</a> for more detail.</p>`,
     },
     {
       type: "section" as const,
@@ -315,7 +315,7 @@ const POST = {
 </ol>
 
 <div style="background:#f0f4ff;border-left:4px solid #1a3fa8;padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.25rem 0;">
-  <strong>Important:</strong> Your Medigap open enrollment window — the 6-month period after your Part B effective date when insurers cannot deny you or charge you more due to health conditions — is the single most valuable window in Medicare. Missing it means you may be subject to medical underwriting for the rest of your life. <a href='/medigap-open-enrollment' class='text-[#1a3fa8] underline underline-offset-2'>Learn more about Medigap open enrollment</a>.
+  <strong>Important:</strong> Your Medigap open enrollment window — the 6-month period after your Part B effective date when insurers cannot deny you or charge you more due to health conditions — is the single most valuable window in Medicare. Missing it means you may be subject to medical underwriting for the rest of your life. <a href='/medigap-open-enrollment/' class='text-[#1a3fa8] underline underline-offset-2'>Learn more about Medigap open enrollment</a>.
 </div>`,
     },
     {
@@ -345,32 +345,32 @@ const POST = {
   relatedPosts: [
     {
       title: "What Is the Special Enrollment Period?",
-      href: "/what-is-the-special-enrollment-period",
+      href: "/what-is-the-special-enrollment-period/",
       category: "Enrollment" as const,
     },
     {
       title: "Annual Enrollment Period Guide",
-      href: "/annual-enrollment-period-guide",
+      href: "/annual-enrollment-period-guide/",
       category: "Enrollment" as const,
     },
     {
       title: "Medicare Advantage vs. Medigap: A Side-by-Side Comparison",
-      href: "/medicare-advantage-vs-medigap",
+      href: "/medicare-advantage-vs-medigap/",
       category: "Plans" as const,
     },
     {
       title: "Medigap Open Enrollment: Your Most Important Window",
-      href: "/medigap-open-enrollment",
+      href: "/medigap-open-enrollment/",
       category: "Supplements" as const,
     },
     {
       title: "Medicare Penalty Calculator",
-      href: "/medicare-penalty-calculator",
+      href: "/medicare-penalty-calculator/",
       category: "Enrollment" as const,
     },
     {
       title: "Still Working at 65? Medicare and Employer Coverage Explained",
-      href: "/still-working",
+      href: "/still-working/",
       category: "Enrollment" as const,
     },
   ],

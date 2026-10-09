@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage Extra Benefits: OTC, Transportation, Fitness & More",
     description:
       "Discover what extra benefits Medicare Advantage plans offer beyond Original Medicare — OTC allowances, dental, vision, hearing, transportation, fitness memberships, and more.",
-    url: "https://medicareinfopro.com/coverage/medicare-advantage",
+    url: "https://medicareinfopro.com/coverage/medicare-advantage/",
     type: "article",
   },
 };

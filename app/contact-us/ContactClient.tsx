@@ -277,8 +277,8 @@ export default function ContactClient() {
                     </button>
                     <p className="text-xs text-gray-400 text-center leading-relaxed">
                       By submitting this form you consent to be contacted by a licensed insurance agent at Medicare Information Project about Medicare plans and related services. Consent is not a condition of purchase. You may also reach us by phone at 813-699-5559. View our{" "}
-                      <a href="/privacy-policy" className="underline">Privacy Policy</a> and{" "}
-                      <a href="/terms-and-conditions" className="underline">Terms and Conditions</a>.
+                      <a href="/privacy-policy/" className="underline">Privacy Policy</a> and{" "}
+                      <a href="/terms-and-conditions/" className="underline">Terms and Conditions</a>.
                     </p>
                   </form>
                 </>

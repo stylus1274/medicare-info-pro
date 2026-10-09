@@ -25,105 +25,105 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "New to Medicare", href: "/",
     megaMenu: {
-      featured: { title: "Start Your Medicare Journey", desc: "Not sure where to begin? We walk you through everything step by step — no jargon, no pressure.", cta: "Take the Quiz", href: "/medicare-quiz" },
+      featured: { title: "Start Your Medicare Journey", desc: "Not sure where to begin? We walk you through everything step by step — no jargon, no pressure.", cta: "Take the Quiz", href: "/medicare-quiz/" },
       columns: [
         { heading: "Getting Started", links: [
-          { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The basics explained simply" },
-          { label: "Am I Eligible?", href: "/am-i-eligible", desc: "Check your eligibility" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline", desc: "Key dates & deadlines" },
-          { label: "First Steps Checklist", href: "/first-steps-checklist", desc: "Your action plan" },
+          { label: "Medicare 101 Overview", href: "/medicare-101/", desc: "The basics explained simply" },
+          { label: "Am I Eligible?", href: "/am-i-eligible/", desc: "Check your eligibility" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/", desc: "Key dates & deadlines" },
+          { label: "First Steps Checklist", href: "/first-steps-checklist/", desc: "Your action plan" },
         ]},
         { heading: "Key Decisions", links: [
-          { label: "Original vs. Advantage", href: "/original-vs-advantage", desc: "Side-by-side comparison" },
-          { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Gap coverage explained" },
-          { label: "Understanding Part D", href: "/understanding-part-d", desc: "Drug coverage basics" },
-          { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "Premiums & deductibles" },
+          { label: "Original vs. Advantage", href: "/original-vs-advantage/", desc: "Side-by-side comparison" },
+          { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "Gap coverage explained" },
+          { label: "Understanding Part D", href: "/understanding-part-d/", desc: "Drug coverage basics" },
+          { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "Premiums & deductibles" },
         ]},
       ],
     },
   },
   {
-    label: "Medicare Plans", href: "/medicare-advantage",
+    label: "Medicare Plans", href: "/medicare-advantage/",
     megaMenu: {
-      featured: { title: "Find the Right Plan", desc: "Compare every Medicare plan type side by side with unbiased guidance from licensed agents.", cta: "Compare All Plans", href: "/medicare-advantage" },
+      featured: { title: "Find the Right Plan", desc: "Compare every Medicare plan type side by side with unbiased guidance from licensed agents.", cta: "Compare All Plans", href: "/medicare-advantage/" },
       columns: [
         { heading: "Original Medicare", links: [
-          { label: "Part A — Hospital", href: "/medicare-part-a", desc: "Inpatient coverage" },
-          { label: "Part B — Medical", href: "/medicare-part-b", desc: "Doctor visits & outpatient" },
-          { label: "Part C — Medicare Advantage", href: "/medicare-part-c", desc: "Private plan alternative" },
-          { label: "Medigap Supplements", href: "/do-i-need-a-supplement", desc: "Fill the gaps" },
-          { label: "Part D Drug Plans", href: "/understanding-part-d", desc: "Prescription coverage" },
+          { label: "Part A — Hospital", href: "/medicare-part-a/", desc: "Inpatient coverage" },
+          { label: "Part B — Medical", href: "/medicare-part-b/", desc: "Doctor visits & outpatient" },
+          { label: "Part C — Medicare Advantage", href: "/medicare-part-c/", desc: "Private plan alternative" },
+          { label: "Medigap Supplements", href: "/do-i-need-a-supplement/", desc: "Fill the gaps" },
+          { label: "Part D Drug Plans", href: "/understanding-part-d/", desc: "Prescription coverage" },
         ]},
         { heading: "Medicare Advantage", links: [
-          { label: "HMO Plans", href: "/hmos", desc: "Network-based coverage" },
-          { label: "PPO Plans", href: "/medicare-ppo-plans-in-tampa", desc: "More provider flexibility" },
-          { label: "SNP Plans", href: "/medicare-snp-plans", desc: "Special needs plans" },
-          { label: "Compare Plan Types", href: "/original-vs-advantage", desc: "See all options" },
+          { label: "HMO Plans", href: "/hmos/", desc: "Network-based coverage" },
+          { label: "PPO Plans", href: "/medicare-ppo-plans-in-tampa/", desc: "More provider flexibility" },
+          { label: "SNP Plans", href: "/medicare-snp-plans/", desc: "Special needs plans" },
+          { label: "Compare Plan Types", href: "/original-vs-advantage/", desc: "See all options" },
         ]},
       ],
     },
   },
   {
-    label: "Enrollment", href: "/enrollment-timeline",
+    label: "Enrollment", href: "/enrollment-timeline/",
     megaMenu: {
-      featured: { title: "Don't Miss Your Window", desc: "Missed deadlines can mean permanent penalties. Let us help you stay on track.", cta: "Check My Dates", href: "/enrollment-timeline" },
+      featured: { title: "Don't Miss Your Window", desc: "Missed deadlines can mean permanent penalties. Let us help you stay on track.", cta: "Check My Dates", href: "/enrollment-timeline/" },
       columns: [
         { heading: "Enrollment Periods", links: [
-          { label: "Turning 65", href: "/enrollment-timeline#iep", desc: "Initial enrollment window" },
-          { label: "Annual Enrollment", href: "/enrollment-timeline#aep", desc: "Oct 15 – Dec 7 each year" },
-          { label: "Special Enrollment", href: "/enrollment-timeline#sep", desc: "Qualifying life events" },
-          { label: "Open Enrollment", href: "/enrollment-timeline#oepa", desc: "Jan 1 – Mar 31 each year" },
+          { label: "Turning 65", href: "/enrollment-timeline/#iep", desc: "Initial enrollment window" },
+          { label: "Annual Enrollment", href: "/enrollment-timeline/#aep", desc: "Oct 15 – Dec 7 each year" },
+          { label: "Special Enrollment", href: "/enrollment-timeline/#sep", desc: "Qualifying life events" },
+          { label: "Open Enrollment", href: "/enrollment-timeline/#oepa", desc: "Jan 1 – Mar 31 each year" },
         ]},
         { heading: "Avoid Penalties", links: [
-          { label: "Part B Late Penalty", href: "/enrollment-timeline#penalty-part-b", desc: "10% per year late" },
-          { label: "Part D Late Penalty", href: "/enrollment-timeline#penalty-part-d", desc: "1% per month late" },
-          { label: "Working Past 65", href: "/working-past-65", desc: "Employer coverage rules" },
-          { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
+          { label: "Part B Late Penalty", href: "/enrollment-timeline/#penalty-part-b", desc: "10% per year late" },
+          { label: "Part D Late Penalty", href: "/enrollment-timeline/#penalty-part-d", desc: "1% per month late" },
+          { label: "Working Past 65", href: "/working-past-65/", desc: "Employer coverage rules" },
+          { label: "Enrollment Calculator", href: "/enrollment-calculator/", desc: "Find your window" },
         ]},
       ],
     },
   },
   {
-    label: "Coverage", href: "/coverage-qa",
+    label: "Coverage", href: "/coverage-qa/",
     megaMenu: {
-      featured: { title: "Coverage Search Center", desc: "Browse Medicare coverage guides by topic.", cta: "Search Coverage", href: "/coverage-qa" },
+      featured: { title: "Coverage Search Center", desc: "Browse Medicare coverage guides by topic.", cta: "Search Coverage", href: "/coverage-qa/" },
       columns: [
         { heading: "Common Questions", links: [
-          { label: "Dental Coverage", href: "/coverage/dental", desc: "What's covered?" },
-          { label: "Vision Coverage", href: "/coverage/vision", desc: "Exams & eyeglasses" },
-          { label: "Hearing Aids", href: "/coverage/hearing-aids", desc: "Coverage & alternatives" },
-          { label: "Prescription Drugs", href: "/coverage/prescription-drugs", desc: "Formulary & tiers" },
-          { label: "Mental Health", href: "/coverage/mental-health", desc: "Therapy & counseling" },
+          { label: "Dental Coverage", href: "/coverage/dental/", desc: "What's covered?" },
+          { label: "Vision Coverage", href: "/coverage/vision/", desc: "Exams & eyeglasses" },
+          { label: "Hearing Aids", href: "/coverage/hearing-aids/", desc: "Coverage & alternatives" },
+          { label: "Prescription Drugs", href: "/coverage/prescription-drugs/", desc: "Formulary & tiers" },
+          { label: "Mental Health", href: "/coverage/mental-health/", desc: "Therapy & counseling" },
         ]},
         { heading: "Specialized Care", links: [
-          { label: "Cancer Treatment", href: "/coverage/cancer-treatment", desc: "Chemo, radiation & more" },
-          { label: "Physical Therapy", href: "/coverage/physical-therapy", desc: "Rehab & recovery" },
-          { label: "Medical Equipment", href: "/coverage/medical-equipment", desc: "DME coverage rules" },
-          { label: "Skilled Nursing", href: "/coverage/skilled-nursing", desc: "Post-hospital care" },
+          { label: "Cancer Treatment", href: "/coverage/cancer-treatment/", desc: "Chemo, radiation & more" },
+          { label: "Physical Therapy", href: "/coverage/physical-therapy/", desc: "Rehab & recovery" },
+          { label: "Medical Equipment", href: "/coverage/medical-equipment/", desc: "DME coverage rules" },
+          { label: "Skilled Nursing", href: "/coverage/skilled-nursing/", desc: "Post-hospital care" },
         ]},
       ],
     },
   },
   {
-    label: "Resources", href: "/resources",
+    label: "Resources", href: "/resources/",
     megaMenu: {
-      featured: { title: "Medicare Resource Library", desc: "Medicare guides, videos, and tools.", cta: "Browse Library", href: "/blog" },
+      featured: { title: "Medicare Resource Library", desc: "Medicare guides, videos, and tools.", cta: "Browse Library", href: "/blog/" },
       columns: [
         { heading: "Learn", links: [
-          { label: "Blog & Articles", href: "/blog", desc: "Latest Medicare news" },
-          { label: "In-Depth Guides", href: "/guides", desc: "Comprehensive resources" },
-          { label: "FAQ Center", href: "/faq", desc: "Quick answers" },
+          { label: "Blog & Articles", href: "/blog/", desc: "Latest Medicare news" },
+          { label: "In-Depth Guides", href: "/guides/", desc: "Comprehensive resources" },
+          { label: "FAQ Center", href: "/faq/", desc: "Quick answers" },
         ]},
         { heading: "Tools", links: [
-          { label: "Plan Comparison Tool", href: "/plan-comparison", desc: "Side-by-side compare" },
-          { label: "Cost Estimator", href: "/cost-estimator", desc: "Estimate your costs" },
-          { label: "Enrollment Calculator", href: "/enrollment-calculator", desc: "Find your window" },
-          { label: "Coverage Search", href: "/coverage-qa", desc: "Does Medicare cover it?" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison/", desc: "Side-by-side compare" },
+          { label: "Cost Estimator", href: "/cost-estimator/", desc: "Estimate your costs" },
+          { label: "Enrollment Calculator", href: "/enrollment-calculator/", desc: "Find your window" },
+          { label: "Coverage Search", href: "/coverage-qa/", desc: "Does Medicare cover it?" },
         ]},
       ],
     },
   },
-  { label: "About Us", href: "/about-us" },
+  { label: "About Us", href: "/about-us/" },
   { label: "Contact", href: "/contact/" },
 ];
 
@@ -466,7 +466,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/get-started"
+              href="/get-started/"
               className="hidden 2xl:inline-flex"
               style={{
                 background: "#f5a800", color: "#ffffff",
@@ -561,7 +561,7 @@ export default function Header() {
               ))}
               <div className="pt-4 border-t border-gray-100 space-y-3">
                 <Link
-                  href="/get-started"
+                  href="/get-started/"
                   className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-white"
                   style={{ fontSize: "1rem" }}
                   onClick={() => setMobileOpen(false)}

@@ -403,7 +403,7 @@ export default function EnrollmentCalculatorClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-5">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/enrollment-timeline" className="hover:text-white transition-colors">Enrollment</Link>
+            <Link href="/enrollment-timeline/" className="hover:text-white transition-colors">Enrollment</Link>
             <span>/</span>
             <span className="text-white" aria-current="page">Enrollment Calculator</span>
           </nav>
@@ -745,7 +745,7 @@ export default function EnrollmentCalculatorClient() {
                         Call 813-699-5559
                       </a>
                       <Link
-                        href="/am-i-eligible"
+                        href="/am-i-eligible/"
                         className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-white/40 text-white font-bold text-sm hover:bg-white/10 transition-colors"
                       >
                         Check Eligibility <ArrowRight size={15} aria-hidden="true" />
@@ -810,12 +810,12 @@ export default function EnrollmentCalculatorClient() {
               </h3>
               <ul className="space-y-2">
                 {[
-                  { label: "Enrollment Timeline Guide", href: "/enrollment-timeline" },
-                  { label: "Am I Eligible?", href: "/am-i-eligible" },
-                  { label: "Original vs. Advantage", href: "/original-vs-advantage" },
-                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-                  { label: "Costs at a Glance", href: "/costs-at-a-glance" },
-                  { label: "Take the Medicare Quiz", href: "/quiz" },
+                  { label: "Enrollment Timeline Guide", href: "/enrollment-timeline/" },
+                  { label: "Am I Eligible?", href: "/am-i-eligible/" },
+                  { label: "Original vs. Advantage", href: "/original-vs-advantage/" },
+                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+                  { label: "Costs at a Glance", href: "/costs-at-a-glance/" },
+                  { label: "Take the Medicare Quiz", href: "/medicare-quiz/" },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link

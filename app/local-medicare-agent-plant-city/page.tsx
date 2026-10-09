@@ -39,11 +39,11 @@ export default function Page() {
           { q: "Can I get help with Medicare if I am still working in Plant City?", a: "Yes. If you have employer coverage, your enrollment rules are different. We help Plant City residents who are still working understand how their employer plan coordinates with Medicare and when to enroll." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico" },
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Still Working?", href: "/still-working" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico/" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Still Working?", href: "/still-working/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
         ],
       }}
     />

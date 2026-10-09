@@ -59,11 +59,11 @@ export default function Page() {
           { q: "When can I enroll in a Medicare plan in Apollo Beach?", a: "New enrollees have a 7-month Initial Enrollment Period around their 65th birthday. The Annual Enrollment Period runs October 15 through December 7 for plan changes." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach" },
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101", href: "/medicare-101" },
+          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach/" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101", href: "/medicare-101/" },
         ],
       }}
     />

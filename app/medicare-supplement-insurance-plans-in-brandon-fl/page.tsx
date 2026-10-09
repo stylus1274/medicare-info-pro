@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
-          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
+          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
         ],
       }}
     />

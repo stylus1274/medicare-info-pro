@@ -59,11 +59,11 @@ export default function Page() {
           { q: "When is the best time to enroll in a Medigap plan in Riverview?", a: "The best time to enroll in a Medigap plan is during your 6-month Medigap Open Enrollment Period, which starts when you are 65 and enrolled in Part B. During this window, no medical underwriting is required." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Medicare Supplement Plans Valrico", href: "/medicare-supplement-insurance-plans-valrico" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Medicare Supplement Plans Valrico", href: "/medicare-supplement-insurance-plans-valrico/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

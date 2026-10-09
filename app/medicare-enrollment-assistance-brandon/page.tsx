@@ -175,10 +175,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Enrollment Assistance in Brandon FL", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator" },
+          { label: "Medicare Enrollment Assistance in Brandon FL", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
         ],
       }}
     />

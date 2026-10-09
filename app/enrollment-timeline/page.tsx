@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Medicare Enrollment Timeline: When to Sign Up | Medicare Information Pro",
     description:
       "Every Medicare enrollment deadline explained - IEP, GEP, AEP, SEP, and OEP. Understand the 7-month window, late penalties, and key dates at a glance.",
-    url: "https://medicareinfopro.com/enrollment-timeline",
+    url: "https://medicareinfopro.com/enrollment-timeline/",
     siteName: "Medicare Information Pro",
     images: [
       {

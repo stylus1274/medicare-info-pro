@@ -261,7 +261,7 @@ export default function BlogPostClient({ post }: Props) {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[0.8rem] mb-5">
             <Link href="/" className="text-blue-300 hover:text-white transition-colors">Home</Link>
             <ChevronRight size={13} className="text-blue-500" aria-hidden="true" />
-            <Link href="/blog" className="text-blue-300 hover:text-white transition-colors">Blog</Link>
+            <Link href="/blog/" className="text-blue-300 hover:text-white transition-colors">Blog</Link>
             <ChevronRight size={13} className="text-blue-500" aria-hidden="true" />
             <span className="text-blue-200 truncate max-w-[240px]" aria-current="page">{post.title}</span>
           </nav>
@@ -688,9 +688,9 @@ export default function BlogPostClient({ post }: Props) {
                 <h3 className="text-[0.8rem] font-bold uppercase tracking-wider text-gray-600 mb-4">Related Tools</h3>
                 <ul className="space-y-3">
                   {(post.sidebarTools ?? [
-                    { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Medigap decision guide" },
-                    { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums and deductibles" },
-                    { label: "Original vs. Advantage", href: "/original-vs-advantage", desc: "Compare your options" },
+                    { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "Medigap decision guide" },
+                    { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2026 premiums and deductibles" },
+                    { label: "Original vs. Advantage", href: "/original-vs-advantage/", desc: "Compare your options" },
                   ]).map((tool) => (
                     <li key={tool.href}>
                       <Link

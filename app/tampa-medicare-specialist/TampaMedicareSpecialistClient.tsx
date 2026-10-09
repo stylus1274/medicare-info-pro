@@ -86,7 +86,7 @@ export default function TampaMedicareSpecialistClient() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/free-consultation"
+                  href="/get-started/"
                   className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
                 >
                   Speak with a Specialist
@@ -256,7 +256,7 @@ export default function TampaMedicareSpecialistClient() {
                 22+ years of Medicare experience. Free consultations by phone, video, or in person. No pressure, ever.
               </p>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="block text-center bg-[#f5a800] text-white font-bold px-4 py-3 rounded-lg hover:bg-amber-400 transition-colors mb-3"
               >
                 Speak with a Specialist
@@ -274,12 +274,12 @@ export default function TampaMedicareSpecialistClient() {
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Related Pages</div>
               <ul className="space-y-2">
                 {[
-                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl" },
-                  { label: "Medicare Plan Counseling Tampa", href: "/medicare-plan-counseling-tampa" },
-                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa" },
-                  { label: "Meet Greg Wohl", href: "/greg-wohl" },
-                  { label: "Our Team", href: "/our-team" },
-                  { label: "Free Consultation", href: "/free-consultation" },
+                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl/" },
+                  { label: "Medicare Plan Counseling Tampa", href: "/medicare-plan-counseling-tampa/" },
+                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa/" },
+                  { label: "Meet Greg Wohl", href: "/greg-wohl/" },
+                  { label: "Our Team", href: "/our-team/" },
+                  { label: "Free Consultation", href: "/get-started/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} className="text-[#1a3fa8] hover:underline text-sm">
@@ -321,7 +321,7 @@ export default function TampaMedicareSpecialistClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center bg-[#f5a800] text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors"
             >
               Schedule Free Consultation

@@ -77,24 +77,24 @@ const POST = {
       ]},
     { type: "section" as const, heading: "Introduction to 2026 Medicare Advantage Changes", content: `The landscape of Medicare Advantage plans is set to evolve significantly in 2026. These upcoming changes are designed to refine how healthcare services are delivered and covered for millions of Americans. It is important for current and prospective beneficiaries to understand the scope of these modifications.
 
-These adjustments could influence various aspects of your healthcare, from the types of benefits you receive to the network of doctors and hospitals available to you. Staying informed is the first step in ensuring your coverage continues to meet your health needs effectively. For a broader understanding of your options, consider exploring <a href='/medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage plans</a> in detail.
+These adjustments could influence various aspects of your healthcare, from the types of benefits you receive to the network of doctors and hospitals available to you. Staying informed is the first step in ensuring your coverage continues to meet your health needs effectively. For a broader understanding of your options, consider exploring <a href='/medicare-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage plans</a> in detail.
 
 Understanding these changes early allows for proactive planning and informed decision-making. This guide will help you navigate the key areas of impact and prepare for the 2026 updates.` },
     { type: "section" as const, heading: "Key Areas of Impact for Beneficiaries", content: `The 2026 changes to Medicare Advantage are expected to touch several critical areas. These include potential alterations to covered benefits, such as dental, vision, and hearing services, which are often integral to Advantage plans. Beneficiaries should pay close attention to any modifications in these supplemental offerings.
 
-Another significant area of impact will be the financial aspects, including premiums, deductibles, and out-of-pocket maximums. These cost adjustments can directly affect your annual healthcare expenses. It is always wise to compare these costs with those of <a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medicare supplement plans</a> to determine the most cost-effective option for your situation.
+Another significant area of impact will be the financial aspects, including premiums, deductibles, and out-of-pocket maximums. These cost adjustments can directly affect your annual healthcare expenses. It is always wise to compare these costs with those of <a href='/medicare-supplement/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare supplement plans</a> to determine the most cost-effective option for your situation.
 
 Provider networks may also see revisions, meaning some doctors or specialists currently in your plan might no longer be included. Verifying your preferred healthcare providers are still in-network will be a crucial step during the review process. This ensures continuity of care and avoids unexpected out-of-network charges.` },
     { type: "section" as const, heading: "Navigating Prescription Drug Coverage Updates", content: `For many beneficiaries, prescription drug coverage is a vital component of their Medicare Advantage plan. The 2026 changes may bring updates to formularies, drug tiers, and cost-sharing for medications. It is essential to review these aspects carefully to ensure your necessary prescriptions remain affordable and accessible.
 
-Any modifications to Part D drug coverage within Medicare Advantage plans could have a direct financial impact. Understanding these potential changes will help you budget for your medication costs. For more information on drug coverage, refer to our guide on <a href='/coverage/prescription-drugs' class='text-[#1a3fa8] underline underline-offset-2'>Part D drug coverage</a>.
+Any modifications to Part D drug coverage within Medicare Advantage plans could have a direct financial impact. Understanding these potential changes will help you budget for your medication costs. For more information on drug coverage, refer to our guide on <a href='/coverage/prescription-drugs/' class='text-[#1a3fa8] underline underline-offset-2'>Part D drug coverage</a>.
 
 If you have specific high-cost medications, it is particularly important to check how they will be covered under the new plan structures. This proactive approach can prevent surprises at the pharmacy counter.` },
     { type: "section" as const, heading: "Preparing for the Annual Enrollment Period", content: `The Annual Enrollment Period (AEP) will be your primary opportunity to make changes to your Medicare Advantage plan in response to the 2026 updates. This period typically runs from October 15 to December 7 each year. During this time, you can switch plans, enroll in a new plan, or return to Original Medicare.
 
 It is highly recommended to use the AEP to thoroughly compare all available plans in your area. Look beyond just the premium and consider the overall value, including benefits, network, and drug coverage. Resources are available to help you make an informed decision.
 
-Don't hesitate to <a href='/get-help' class='text-[#1a3fa8] underline underline-offset-2'>get help from a Medicare advisor</a> if you find the process overwhelming. They can provide personalized guidance and clarify how the 2026 changes specifically apply to your circumstances.` },
+Don't hesitate to <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>get help from a Medicare advisor</a> if you find the process overwhelming. They can provide personalized guidance and clarify how the 2026 changes specifically apply to your circumstances.` },
     { type: "summary" as const, heading: "Bottom Line", content: "The 2026 Medicare Advantage changes require careful attention from all beneficiaries. These updates will likely affect benefits, costs, and provider networks, making it essential to review your current plan and compare new options during the Annual Enrollment Period. Proactive engagement and seeking expert advice will ensure you maintain comprehensive and affordable healthcare coverage tailored to your needs." },
     { type: "faq" as const, items: [
       { question: "What are the most significant changes expected in 2026 Medicare Advantage plans?", answer: "Significant changes are anticipated in benefits, out-of-pocket costs, and provider networks. These updates aim to refine healthcare delivery and coverage for beneficiaries." },
@@ -106,9 +106,9 @@ Don't hesitate to <a href='/get-help' class='text-[#1a3fa8] underline underline-
     ]},
   ],
   relatedPosts: [
-    { title: "Original Medicare vs Advantage Comparison", href: "/original-vs-advantage", category: "Plans" as const },
-    { title: "Annual Enrollment Period Guide", href: "/annual-enrollment-period-guide", category: "Enrollment" as const },
-    { title: "Medicare Costs 2026", href: "/costs-at-a-glance", category: "Costs" as const }
+    { title: "Original Medicare vs Advantage Comparison", href: "/original-vs-advantage/", category: "Plans" as const },
+    { title: "Annual Enrollment Period Guide", href: "/annual-enrollment-period-guide/", category: "Enrollment" as const },
+    { title: "Medicare Costs 2026", href: "/costs-at-a-glance/", category: "Costs" as const }
   ],
 };
 export default function Page() {

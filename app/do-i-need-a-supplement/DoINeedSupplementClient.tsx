@@ -428,7 +428,7 @@ export default function DoINeedSupplementClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span>/</span>
             <span className="text-white" aria-current="page">Do I Need a Supplement?</span>
           </nav>
@@ -849,9 +849,9 @@ export default function DoINeedSupplementClient() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8" style={{ fontFamily: "'Merriweather', serif" }}>Related Guides</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/original-vs-advantage", label: "Original vs. Advantage", desc: "Decide between Original Medicare and Medicare Advantage before choosing a supplement.", tag: "Key Decision" },
-              { href: "/costs-at-a-glance", label: "Costs at a Glance", desc: "See all 2026 premiums, deductibles, and out-of-pocket limits for every part of Medicare.", tag: "Cost Reference" },
-              { href: "/enrollment-timeline", label: "Enrollment Timeline", desc: "Understand your enrollment windows and how they relate to your Medigap OEP.", tag: "Getting Started" },
+              { href: "/original-vs-advantage/", label: "Original vs. Advantage", desc: "Decide between Original Medicare and Medicare Advantage before choosing a supplement.", tag: "Key Decision" },
+              { href: "/costs-at-a-glance/", label: "Costs at a Glance", desc: "See all 2026 premiums, deductibles, and out-of-pocket limits for every part of Medicare.", tag: "Cost Reference" },
+              { href: "/enrollment-timeline/", label: "Enrollment Timeline", desc: "Understand your enrollment windows and how they relate to your Medigap OEP.", tag: "Getting Started" },
             ].map((link) => (
               <Link
                 key={link.href}

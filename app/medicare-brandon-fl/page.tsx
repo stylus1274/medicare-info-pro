@@ -326,7 +326,7 @@ export default function Page() {
             { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
             { label: "Health Insurance Broker Brandon", href: "/health-insurance-broker-brandon/" },
             { label: "Free Medicare Kit", href: "/free-medicare-kit/" },
-            { label: "Free Consultation", href: "/free-consultation/" },
+            { label: "Free Consultation", href: "/get-started/" },
           ],
         }}
       />

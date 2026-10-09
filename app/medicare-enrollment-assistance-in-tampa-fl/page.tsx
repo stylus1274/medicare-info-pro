@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare Enrollment Assistance in Tampa, FL | Medicare Information Pro",
     description: "Get free Medicare enrollment assistance in Tampa, FL. Licensed Medicare specialists help you enroll in the right plan during your Initial, Special, or Annual Enrollment Period.",
-    url: "https://medicareinfopro.com/medicare-enrollment-assistance-in-tampa-fl",
+    url: "https://medicareinfopro.com/medicare-enrollment-assistance-in-tampa-fl/",
     siteName: "Medicare Information Pro",
     type: "website",
   },

@@ -145,9 +145,9 @@ function FunnelFooter() {
         </p>
         <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}>
           {[
-            { label: "Privacy Policy", href: "/privacy-policy" },
-            { label: "Terms of Service", href: "/terms-and-conditions" },
-            { label: "Contact Us", href: "/contact-us" },
+            { label: "Privacy Policy", href: "/privacy-policy/" },
+            { label: "Terms of Service", href: "/terms-and-conditions/" },
+            { label: "Contact Us", href: "/contact/" },
           ].map(link => (
             <Link
               key={link.href}
@@ -551,7 +551,7 @@ function GetStartedInner() {
               {/* TCPA Disclaimer */}
               <p style={{ fontSize: "0.72rem", color: "#9ca3af", marginTop: "1.25rem", lineHeight: 1.5 }}>
                 By clicking &ldquo;Find My Plans&rdquo; you agree to receive calls and texts from Medicare Information Project at the number provided. Standard message and data rates may apply. You may opt out at any time.{" "}
-                <Link href="/privacy-policy" style={{ color: "#6b7280", textDecoration: "underline" }}>Privacy Policy</Link>.
+                <Link href="/privacy-policy/" style={{ color: "#6b7280", textDecoration: "underline" }}>Privacy Policy</Link>.
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "0.75rem", justifyContent: "center" }}>
                 <Shield size={13} style={{ color: "#9ca3af" }} />

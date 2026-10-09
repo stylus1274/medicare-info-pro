@@ -136,10 +136,10 @@ const FAQ: { q: string; a: string }[] = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Does Medicare Cover Dental?", href: "/coverage/dental", desc: "Routine dental care is also excluded from Original Medicare" },
-  { label: "Does Medicare Cover Vision?", href: "/coverage/vision", desc: "Routine eye exams and glasses are also not covered" },
-  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage", desc: "Compare the two main Medicare paths" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2025 and 2026 premiums and deductibles" },
+  { label: "Does Medicare Cover Dental?", href: "/coverage/dental/", desc: "Routine dental care is also excluded from Original Medicare" },
+  { label: "Does Medicare Cover Vision?", href: "/coverage/vision/", desc: "Routine eye exams and glasses are also not covered" },
+  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage/", desc: "Compare the two main Medicare paths" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2025 and 2026 premiums and deductibles" },
 ];
 
 // ─── FAQ Accordion ────────────────────────────────────────────────────────────
@@ -183,7 +183,7 @@ export default function HearingAidsCoverageClient() {
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/coverage-qa" className="hover:text-white/80 transition-colors">Coverage Q&A</Link>
+            <Link href="/coverage-qa/" className="hover:text-white/80 transition-colors">Coverage Q&A</Link>
             <ChevronRight size={12} />
             <span className="text-white/70">Hearing</span>
           </nav>
@@ -274,9 +274,9 @@ export default function HearingAidsCoverageClient() {
                 <p className="text-sm font-bold text-amber-900 mb-1">Also Missing from Original Medicare: Dental and Vision</p>
                 <p className="text-sm text-amber-800 leading-relaxed">
                   Like hearing aids, routine dental care and vision exams are also excluded from Original Medicare. Medicare Advantage plans often bundle all three benefits together.{" "}
-                  <Link href="/coverage/dental" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Dental?</Link>
+                  <Link href="/coverage/dental/" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Dental?</Link>
                   {" "}and{" "}
-                  <Link href="/coverage/vision" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Vision?</Link>
+                  <Link href="/coverage/vision/" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Vision?</Link>
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function HearingAidsCoverageClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors"
                 >
                   Take the Quiz
@@ -361,7 +361,7 @@ export default function HearingAidsCoverageClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -392,7 +392,7 @@ export default function HearingAidsCoverageClient() {
 
             {/* Browse More */}
             <Link
-              href="/coverage-qa"
+              href="/coverage-qa/"
               className="flex items-center justify-center gap-2 w-full border border-gray-200 hover:border-[#0d1f5c] text-gray-600 hover:text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors"
             >
               Browse All Coverage Topics
@@ -421,7 +421,7 @@ export default function HearingAidsCoverageClient() {
               Call 813-789-7700
             </a>
             <Link
-              href="/medicare-quiz"
+              href="/medicare-quiz/"
               className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors"
             >
               Take the Medicare Quiz

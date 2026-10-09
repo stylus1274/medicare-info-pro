@@ -109,11 +109,11 @@ const FAQ_ITEMS = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Medicare HMO Plans", href: "/plan-types/hmo", desc: "Network-based coverage with lower premiums" },
-  { label: "Medicare Advantage Overview", href: "/medicare-advantage", desc: "Complete guide to all Medicare Advantage plan types" },
-  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage", desc: "Side-by-side comparison to help you decide" },
-  { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums, deductibles, and coinsurance" },
-  { label: "Take the Medicare Quiz", href: "/medicare-quiz", desc: "Find out which plan type fits your situation" },
+  { label: "Medicare HMO Plans", href: "/hmos/", desc: "Network-based coverage with lower premiums" },
+  { label: "Medicare Advantage Overview", href: "/medicare-advantage/", desc: "Complete guide to all Medicare Advantage plan types" },
+  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage/", desc: "Side-by-side comparison to help you decide" },
+  { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/", desc: "2026 premiums, deductibles, and coinsurance" },
+  { label: "Take the Medicare Quiz", href: "/medicare-quiz/", desc: "Find out which plan type fits your situation" },
 ];
 
 const TOC = [
@@ -140,7 +140,7 @@ export default function PPOPlansClient() {
           <nav className="flex items-center gap-2 text-xs text-white/50 mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/medicare-advantage" className="hover:text-white transition-colors">Medicare Advantage</Link>
+            <Link href="/medicare-advantage/" className="hover:text-white transition-colors">Medicare Advantage</Link>
             <ChevronRight size={12} />
             <span className="text-white/80">PPO Plans</span>
           </nav>
@@ -148,7 +148,7 @@ export default function PPOPlansClient() {
             <Shield size={12} />
             Medicare Advantage Plan Type
           </div>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison" }, { label: "PPO Plans" }]} className="mb-4" />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison/" }, { label: "PPO Plans" }]} className="mb-4" />
           <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight" style={{ fontFamily: "'Merriweather', serif" }}>
             Medicare PPO Plans in Tampa, FL
           </h1>
@@ -336,7 +336,7 @@ export default function PPOPlansClient() {
               </table>
             </div>
             <p className="text-xs text-gray-400 mt-2">
-              Source: Centers for Medicare and Medicaid Services, 2026. Actual plan costs vary by carrier. For a full cost comparison, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
+              Source: Centers for Medicare and Medicaid Services, 2026. Actual plan costs vary by carrier. For a full cost comparison, see our <Link href="/costs-at-a-glance/" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
             </p>
           </section>
 
@@ -372,7 +372,7 @@ export default function PPOPlansClient() {
               <div>
                 <p className="text-sm font-bold text-gray-900 mb-1">Not sure which plan type fits you best?</p>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Take our free <Link href="/medicare-quiz" className="text-[#0d1f5c] font-semibold underline hover:no-underline">Medicare Quiz</Link> to get a personalized recommendation, or compare PPO and HMO plans side by side on our <Link href="/original-vs-advantage" className="text-[#0d1f5c] font-semibold underline hover:no-underline">Original vs. Advantage</Link> page.
+                  Take our free <Link href="/medicare-quiz/" className="text-[#0d1f5c] font-semibold underline hover:no-underline">Medicare Quiz</Link> to get a personalized recommendation, or compare PPO and HMO plans side by side on our <Link href="/original-vs-advantage/" className="text-[#0d1f5c] font-semibold underline hover:no-underline">Original vs. Advantage</Link> page.
                 </p>
               </div>
             </div>
@@ -434,7 +434,7 @@ export default function PPOPlansClient() {
                 813-699-5559
               </a>
               <Link
-                href="/medicare-quiz"
+                href="/medicare-quiz/"
                 className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors"
               >
                 Take the Medicare Quiz
@@ -494,7 +494,7 @@ export default function PPOPlansClient() {
               813-699-5559
             </a>
             <Link
-              href="/medicare-quiz"
+              href="/medicare-quiz/"
               className="flex items-center justify-center gap-2 w-full border border-gray-200 hover:bg-gray-50 text-gray-700 text-sm px-4 py-3 rounded-xl transition-colors"
             >
               Take the Medicare Quiz
@@ -536,7 +536,7 @@ export default function PPOPlansClient() {
               Call 813-699-5559
             </a>
             <Link
-              href="/medicare-quiz"
+              href="/medicare-quiz/"
               className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white px-7 py-3.5 rounded-xl transition-colors"
             >
               Take the Medicare Quiz

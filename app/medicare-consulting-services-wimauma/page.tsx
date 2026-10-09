@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Do Medicare Advantage plans in Wimauma cover dental and vision?", a: "Many Medicare Advantage plans available in ZIP 33598 include dental, vision, and hearing benefits. We compare these extras alongside medical coverage to find the best overall value for you." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl" },
-          { label: "Medicare Agent Wimauma", href: "/medicare-agent-wimauma" },
-          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
-          { label: "Dental Coverage", href: "/dental-coverage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl/" },
+          { label: "Medicare Agent Wimauma", href: "/medicare-agent-wimauma/" },
+          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city/" },
+          { label: "Dental Coverage", href: "/does-medicare-cover-dental/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

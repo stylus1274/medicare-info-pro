@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
-          { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city" },
-          { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city" },
-          { label: "Medicare Enrollment Assistance Plant City", href: "/medicare-enrollment-assistance-plant-city" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
+          { label: "Comparing Medicare Plans Plant City", href: "/comparing-medicare-plans-plant-city/" },
+          { label: "Medicare Consulting Plant City", href: "/medicare-consulting-services-plant-city/" },
+          { label: "Medicare Enrollment Assistance Plant City", href: "/medicare-enrollment-assistance-plant-city/" },
         ],
       }}
     />

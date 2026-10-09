@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Medicare broker in Apollo Beach help me switch plans?", a: "Yes. The Annual Enrollment Period (October 15 to December 7) is the main window to switch plans. We review your current coverage and compare all available alternatives each year." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon" },
-          { label: "Trusted Brokers Ruskin", href: "/trusted-medicare-insurance-brokers-ruskin" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon/" },
+          { label: "Trusted Brokers Ruskin", href: "/trusted-medicare-insurance-brokers-ruskin/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

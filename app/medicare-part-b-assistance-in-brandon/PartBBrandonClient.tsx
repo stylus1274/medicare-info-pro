@@ -74,7 +74,7 @@ export default function PartBBrandonClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <MapPin size={12} /> Brandon, FL
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare Part B", href: "/medicare-part-b" }, { label: "Part B Assistance Brandon" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare Part B", href: "/medicare-part-b/" }, { label: "Part B Assistance Brandon" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Part B Assistance in Brandon
             </h1>
@@ -85,7 +85,7 @@ export default function PartBBrandonClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Schedule a Consultation <ArrowRight size={15} />
               </Link>
             </div>
@@ -158,7 +158,7 @@ export default function PartBBrandonClient() {
               <div>
                 <div className="font-bold text-[#0d6e4f] mb-1">Medicare Savings Programs Can Pay Your Part B Premium</div>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  If your income is limited, you may qualify for a Medicare Savings Program (MSP) that pays your Part B premium and reduces other costs. Many eligible people in Brandon do not know they qualify. <Link href="/free-consultation" className="text-[#0d6e4f] font-semibold hover:underline">Contact us for a free eligibility check.</Link>
+                  If your income is limited, you may qualify for a Medicare Savings Program (MSP) that pays your Part B premium and reduces other costs. Many eligible people in Brandon do not know they qualify. <Link href="/get-started/" className="text-[#0d6e4f] font-semibold hover:underline">Contact us for a free eligibility check.</Link>
                 </p>
               </div>
             </div>
@@ -196,9 +196,9 @@ export default function PartBBrandonClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/medicare-supplement", label: "Medicare Supplement (Medigap)", desc: "Cover the 20% Part B coinsurance with a Medigap plan.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/medicare-advantage-florida", label: "Medicare Advantage Florida", desc: "An alternative to Original Medicare that may reduce your Part B out-of-pocket costs.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/medicare-supplement/", label: "Medicare Supplement (Medigap)", desc: "Cover the 20% Part B coinsurance with a Medigap plan.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/medicare-advantage-florida/", label: "Medicare Advantage Florida", desc: "An alternative to Original Medicare that may reduce your Part B out-of-pocket costs.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -237,7 +237,7 @@ export default function PartBBrandonClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Schedule a Consultation <ArrowRight size={16} />
               </Link>
             </div>

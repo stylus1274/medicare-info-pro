@@ -547,7 +547,7 @@ export default function EnrollmentTimelineClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span>/</span>
             <span className="text-white" aria-current="page">Enrollment Timeline</span>
           </nav>
@@ -989,19 +989,19 @@ export default function EnrollmentTimelineClient() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                href: "/am-i-eligible",
+                href: "/am-i-eligible/",
                 label: "Am I Eligible?",
                 desc: "Find out if you qualify for Medicare and which eligibility path applies to you.",
                 tag: "Eligibility",
               },
               {
-                href: "/medicare-101",
+                href: "/medicare-101/",
                 label: "Medicare 101 Overview",
                 desc: "A complete beginner's guide to Parts A, B, C, and D - everything in one place.",
                 tag: "Beginner Guide",
               },
               {
-                href: "/resources",
+                href: "/resources/",
                 label: "Medicare Resources",
                 desc: "Browse all our guides, articles, and tools to help you navigate Medicare.",
                 tag: "Resources",

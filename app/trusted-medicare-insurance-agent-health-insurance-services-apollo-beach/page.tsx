@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Health Insurance Broker Apollo Beach", href: "/health-insurance-broker-apollo-beach" },
-          { label: "Comparing Medicare Plans Apollo Beach", href: "/comparing-medicare-plans-apollo-beach" },
-          { label: "Our Advisors", href: "/advisors" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Health Insurance Broker Apollo Beach", href: "/health-insurance-broker-apollo-beach/" },
+          { label: "Comparing Medicare Plans Apollo Beach", href: "/comparing-medicare-plans-apollo-beach/" },
+          { label: "Our Advisors", href: "/advisors/" },
         ],
       }}
     />

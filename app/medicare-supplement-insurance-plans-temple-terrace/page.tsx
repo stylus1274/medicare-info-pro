@@ -59,11 +59,11 @@ export default function Page() {
           { q: "When is the best time to enroll in a Medigap plan in Temple Terrace?", a: "The best time to enroll in a Medigap plan is during your 6-month Medigap Open Enrollment Period, which starts when you are 65 and enrolled in Part B. During this window, no medical underwriting is required and you cannot be denied coverage." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace" },
-          { label: "Medicare Insurance Agent Temple Terrace", href: "/medicare-insurance-agent-temple-terrace-fl" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace/" },
+          { label: "Medicare Insurance Agent Temple Terrace", href: "/medicare-insurance-agent-temple-terrace-fl/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

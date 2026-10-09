@@ -118,7 +118,7 @@ const POST = {
       type: "section" as const,
       heading: "The Employer Size Rule: 20 or More vs. Fewer Than 20 Employees",
       content:
-        "The most important factor in your Medicare decision at 65 is your employer's size. Federal law treats these two situations very differently.\n\n<strong>Employers with 20 or more employees:</strong> Your employer group health plan is the primary payer and Medicare is secondary. Your employer plan pays first, and Medicare may cover some of what the employer plan leaves behind. You can delay enrolling in Medicare Part B without a late enrollment penalty as long as you maintain this qualifying employer coverage.\n\n<strong>Employers with fewer than 20 employees:</strong> Medicare becomes the primary payer at age 65, even if you are still working. If you do not enroll in Medicare Part B, your employer plan may refuse to pay claims that Medicare would have covered as primary. You should enroll in Medicare Part B during your Initial Enrollment Period.\n\n<strong>How to determine your employer's size:</strong> Count the total number of employees across all locations and subsidiaries, not just your office. If you are unsure, ask your HR department directly. The distinction between 19 and 20 employees can have significant financial consequences.\n\nFor a full overview of how Medicare enrollment works, see our <a href='/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide' class='text-[#1a3fa8] underline underline-offset-2'>step-by-step Medicare enrollment guide</a>.",
+        "The most important factor in your Medicare decision at 65 is your employer's size. Federal law treats these two situations very differently.\n\n<strong>Employers with 20 or more employees:</strong> Your employer group health plan is the primary payer and Medicare is secondary. Your employer plan pays first, and Medicare may cover some of what the employer plan leaves behind. You can delay enrolling in Medicare Part B without a late enrollment penalty as long as you maintain this qualifying employer coverage.\n\n<strong>Employers with fewer than 20 employees:</strong> Medicare becomes the primary payer at age 65, even if you are still working. If you do not enroll in Medicare Part B, your employer plan may refuse to pay claims that Medicare would have covered as primary. You should enroll in Medicare Part B during your Initial Enrollment Period.\n\n<strong>How to determine your employer's size:</strong> Count the total number of employees across all locations and subsidiaries, not just your office. If you are unsure, ask your HR department directly. The distinction between 19 and 20 employees can have significant financial consequences.\n\nFor a full overview of how Medicare enrollment works, see our <a href='/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/' class='text-[#1a3fa8] underline underline-offset-2'>step-by-step Medicare enrollment guide</a>.",
     },
     {
       type: "section" as const,
@@ -142,13 +142,13 @@ const POST = {
       type: "section" as const,
       heading: "Medicare and Spouse Coverage",
       content:
-        "Your Medicare decisions at 65 can also affect a spouse who is covered under your employer plan. It is important to plan for these transitions well in advance.\n\n<strong>If your spouse is under 65 and on your employer plan:</strong> If you retire and lose employer coverage, your spouse loses that coverage too. Your spouse will need alternative coverage, such as a marketplace plan, until they reach Medicare eligibility at 65.\n\n<strong>If your spouse is also 65 or older:</strong> Your spouse's Medicare enrollment decisions are independent of yours. Each person must enroll based on their own work history and employment status.\n\n<strong>If your spouse is the employee and you are the dependent:</strong> The same employer size rules apply. If your spouse works for an employer with 20 or more employees, you can delay your own Medicare Part B without penalty based on their active employment coverage.\n\nFor a full comparison of your coverage options at retirement, see our guide to <a href='/blog/what-are-the-best-medicare-plans-for-seniors' class='text-[#1a3fa8] underline underline-offset-2'>the best Medicare plans for seniors</a>.",
+        "Your Medicare decisions at 65 can also affect a spouse who is covered under your employer plan. It is important to plan for these transitions well in advance.\n\n<strong>If your spouse is under 65 and on your employer plan:</strong> If you retire and lose employer coverage, your spouse loses that coverage too. Your spouse will need alternative coverage, such as a marketplace plan, until they reach Medicare eligibility at 65.\n\n<strong>If your spouse is also 65 or older:</strong> Your spouse's Medicare enrollment decisions are independent of yours. Each person must enroll based on their own work history and employment status.\n\n<strong>If your spouse is the employee and you are the dependent:</strong> The same employer size rules apply. If your spouse works for an employer with 20 or more employees, you can delay your own Medicare Part B without penalty based on their active employment coverage.\n\nFor a full comparison of your coverage options at retirement, see our guide to <a href='/what-are-the-best-medicare-plans-for-seniors/' class='text-[#1a3fa8] underline underline-offset-2'>the best Medicare plans for seniors</a>.",
     },
     {
       type: "summary" as const,
       heading: "Working at 65: Your Medicare Decision Checklist",
       content:
-        "Use this checklist to determine your best course of action:\n\n<ul><li><strong>Determine your employer's size:</strong> 20 or more employees means you can delay Part B without penalty; fewer than 20 means you should enroll at 65</li><li><strong>Decide on Part A:</strong> Enroll at 65 unless you are contributing to an HSA and want to continue doing so</li><li><strong>Check your drug coverage:</strong> Ask your employer if your drug coverage is creditable; if yes, you can delay Part D without penalty</li><li><strong>Plan your SEP:</strong> Know that your 8-month Special Enrollment Period starts when your employment ends, not when COBRA or retiree coverage ends</li><li><strong>Coordinate with your spouse:</strong> If your spouse is on your employer plan, plan for their coverage transition when you retire</li><li><strong>Avoid the HSA timing trap:</strong> Stop HSA contributions at least 6 months before you plan to enroll in Medicare to avoid excess contribution penalties</li></ul>\n\nOur licensed Medicare specialists can review your specific employer coverage and help you build a transition plan. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> before you make any enrollment decisions.",
+        "Use this checklist to determine your best course of action:\n\n<ul><li><strong>Determine your employer's size:</strong> 20 or more employees means you can delay Part B without penalty; fewer than 20 means you should enroll at 65</li><li><strong>Decide on Part A:</strong> Enroll at 65 unless you are contributing to an HSA and want to continue doing so</li><li><strong>Check your drug coverage:</strong> Ask your employer if your drug coverage is creditable; if yes, you can delay Part D without penalty</li><li><strong>Plan your SEP:</strong> Know that your 8-month Special Enrollment Period starts when your employment ends, not when COBRA or retiree coverage ends</li><li><strong>Coordinate with your spouse:</strong> If your spouse is on your employer plan, plan for their coverage transition when you retire</li><li><strong>Avoid the HSA timing trap:</strong> Stop HSA contributions at least 6 months before you plan to enroll in Medicare to avoid excess contribution penalties</li></ul>\n\nOur licensed Medicare specialists can review your specific employer coverage and help you build a transition plan. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> before you make any enrollment decisions.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "How to Sign Up for Medicare Without an Agent: Step-by-Step Guide",
-      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
       category: "Enrollment" as const,
     },
     {
       title: "Medicare Qualifications in Florida: Who Is Eligible?",
-      href: "/medicare-qualifications-florida",
+      href: "/medicare-qualifications-florida/",
       category: "Enrollment" as const,
     },
     {
       title: "What Are the Best Medicare Plans for Seniors?",
-      href: "/what-are-the-best-medicare-plans-for-seniors",
+      href: "/what-are-the-best-medicare-plans-for-seniors/",
       category: "Plans" as const,
     },
   ],

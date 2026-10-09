@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What is a Special Enrollment Period and do I qualify in Wimauma?", a: "A Special Enrollment Period allows you to enroll outside of standard windows due to qualifying life events such as losing employer coverage, moving, or gaining eligibility for Medicaid. We help Wimauma residents determine if they qualify." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Wimauma", href: "/medicare-consulting-services-wimauma" },
-          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl" },
-          { label: "Medicare Enrollment Sun City Center", href: "/medicare-enrollment-assistance-in-sun-city-center-fl" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Wimauma", href: "/medicare-consulting-services-wimauma/" },
+          { label: "Medicare Insurance Agent Wimauma", href: "/medicare-insurance-agent-wimauma-fl/" },
+          { label: "Medicare Enrollment Sun City Center", href: "/medicare-enrollment-assistance-in-sun-city-center-fl/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

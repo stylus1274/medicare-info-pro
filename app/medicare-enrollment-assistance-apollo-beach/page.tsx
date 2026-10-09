@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Enrollment Assistance in Apollo Beach FL", href: "/medicare-enrollment-assistance-in-apollo-beach-fl" },
-          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach" },
-          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator" },
+          { label: "Medicare Enrollment Assistance in Apollo Beach FL", href: "/medicare-enrollment-assistance-in-apollo-beach-fl/" },
+          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach/" },
+          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
         ],
       }}
     />

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Contact Medicare Information Project",
     description:
       "Get a free Medicare consultation. Call 813-699-5559 or request an appointment online. No pressure, no obligation.",
-    url: "https://medicareinfopro.com/contact",
+    url: "https://medicareinfopro.com/contact/",
     type: "website",
     images: [
       {

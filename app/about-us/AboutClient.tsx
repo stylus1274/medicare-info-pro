@@ -332,7 +332,7 @@ export default function AboutClient() {
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
             <Link
-              href="/find-an-agent"
+              href="/find-an-agent/"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
             >
               Find an Agent <ChevronRight className="w-5 h-5" />

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What is the difference between Medicare Advantage and Medigap in Lithia?", a: "Medicare Advantage plans typically have lower premiums but require network restrictions and copays. Medigap plans have higher premiums but cover most out-of-pocket costs and allow you to see any Medicare-accepting doctor nationwide. We help you compare both." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Fish Hawk", href: "/medicare-insurance-agent-fish-hawk-fl" },
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Fish Hawk", href: "/medicare-insurance-agent-fish-hawk-fl/" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

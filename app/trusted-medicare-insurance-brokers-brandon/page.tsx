@@ -152,11 +152,11 @@ export default function Page() {
           { q: "Can a Brandon Medicare broker help me every year?", a: "Yes. We provide ongoing support to our clients. Each year during the Annual Enrollment Period, we review your current plan and compare alternatives to ensure you still have the best coverage for your needs." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Trusted Brokers Riverview", href: "/trusted-medicare-insurance-brokers-riverview" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Trusted Brokers Riverview", href: "/trusted-medicare-insurance-brokers-riverview/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms and Conditions | Medicare Information Pro",
     description: "Read the Medicare Information Pro terms and conditions governing use of our website and services.",
-    url: "https://medicareinfopro.com/terms-and-conditions",
+    url: "https://medicareinfopro.com/terms-and-conditions/",
     siteName: "Medicare Information Pro",
     type: "website",
   },

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What if I already have Medicare and live in Riverview?", a: "We help existing Medicare beneficiaries review their current coverage, compare alternatives during the Annual Enrollment Period, and address problems such as unexpected bills or coverage gaps." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

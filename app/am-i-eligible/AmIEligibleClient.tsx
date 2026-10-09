@@ -467,7 +467,7 @@ export default function AmIEligibleClient() {
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/60 text-sm mb-4">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/medicare-101" className="hover:text-white transition-colors">New to Medicare</Link>
+            <Link href="/medicare-101/" className="hover:text-white transition-colors">New to Medicare</Link>
             <span>/</span>
             <span className="text-white" aria-current="page">Am I Eligible?</span>
           </nav>
@@ -767,7 +767,7 @@ export default function AmIEligibleClient() {
                 Call (813) 699-5559
               </a>
               <Link
-                href="/medicare-101"
+                href="/medicare-101/"
                 className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg border border-white/20"
               >
                 Read Medicare 101

@@ -95,7 +95,7 @@ export default function TestimonialsClient() {
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#f5a800", color: "#0d1f5c", fontWeight: 700, padding: "0.85rem 1.5rem", borderRadius: 10, textDecoration: "none", fontSize: "0.92rem" }}
               >
                 Get Your Free Consultation <ChevronRight size={16} />
@@ -121,7 +121,7 @@ export default function TestimonialsClient() {
                 <Phone size={16} /> 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.12)", color: "#fff", fontWeight: 600, padding: "0.9rem 1.75rem", borderRadius: 10, textDecoration: "none", fontSize: "1rem", border: "1px solid rgba(255,255,255,0.25)" }}
               >
                 Request a Consultation

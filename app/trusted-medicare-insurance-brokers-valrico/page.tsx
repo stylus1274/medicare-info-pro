@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Medicare broker in Valrico help me with Special Needs Plans?", a: "Yes. Special Needs Plans (SNPs) are available in Hillsborough County for people with certain chronic conditions. We help Valrico residents identify whether an SNP might be a better fit than a standard Medicare Advantage plan." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl" },
-          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon" },
-          { label: "Trusted Brokers Riverview", href: "/trusted-medicare-insurance-brokers-riverview" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl/" },
+          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon/" },
+          { label: "Trusted Brokers Riverview", href: "/trusted-medicare-insurance-brokers-riverview/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

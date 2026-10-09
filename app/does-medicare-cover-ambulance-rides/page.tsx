@@ -187,22 +187,22 @@ const POST = {
   relatedPosts: [
     {
       title: "Medicare Supplement Plans in Florida: Pros and Cons",
-      href: "/medicare-supplement",
+      href: "/medicare-supplement/",
       category: "Plans" as const,
     },
     {
       title: "2026 Medicare Advantage Changes: What You Need to Know",
-      href: "/2026-medicare-advantage-changes",
+      href: "/2026-medicare-advantage-changes/",
       category: "Plans" as const,
     },
     {
       title: "What Will Medicare Cost Per Person in 2026?",
-      href: "/what-will-medicare-cost-per-person-in-2025",
+      href: "/costs-at-a-glance/",
       category: "Costs" as const,
     },
     {
       title: "Why Is Medicare Coverage So Important?",
-      href: "/why-is-medicare-coverage-so-important",
+      href: "/why-is-medicare-coverage-so-important/",
       category: "Coverage" as const,
     },
   ],

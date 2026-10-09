@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Medicare Advantage HMO Plans Explained | 2026",
     description:
       "HMO plans offer low premiums and extra benefits but require network-based care and referrals. Learn how they work, pros and cons, and whether one is right for you in 2026.",
-    url: "https://medicareinfopro.com/hmos",
+    url: "https://medicareinfopro.com/hmos/",
     siteName: "Medicare Information Pro",
     type: "article",
   },

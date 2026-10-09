@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace" },
-          { label: "Medicare Insurance Agent Temple Terrace FL", href: "/medicare-insurance-agent-temple-terrace-fl" },
-          { label: "Health Insurance Broker Temple Terrace", href: "/health-insurance-broker-temple-terrace" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
+          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace/" },
+          { label: "Medicare Insurance Agent Temple Terrace FL", href: "/medicare-insurance-agent-temple-terrace-fl/" },
+          { label: "Health Insurance Broker Temple Terrace", href: "/health-insurance-broker-temple-terrace/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
         ],
       }}
     />

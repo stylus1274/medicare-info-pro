@@ -173,7 +173,7 @@ const RELATED_POSTS = [
     date: "April 1, 2026",
     readTime: "9 min read",
     img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
-    href: "/why-choose-medigap-plan-g",
+    href: "/why-choose-medigap-plan-g/",
   },
   {
     category: "Medicare Advantage",
@@ -183,7 +183,7 @@ const RELATED_POSTS = [
     date: "March 15, 2026",
     readTime: "8 min read",
     img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
-    href: "/original-vs-advantage",
+    href: "/original-vs-advantage/",
   },
   {
     category: "Costs and Savings",
@@ -193,7 +193,7 @@ const RELATED_POSTS = [
     date: "February 10, 2026",
     readTime: "6 min read",
     img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
-    href: "/costs-at-a-glance",
+    href: "/costs-at-a-glance/",
   },
 ];
 
@@ -306,7 +306,7 @@ export default function MaximizeBenefitsClient() {
             <nav className="flex items-center justify-center gap-1.5 text-blue-200 text-sm mb-4" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <ChevronRight className="w-3.5 h-3.5" />
-              <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
+              <Link href="/blog/" className="hover:text-white transition-colors">Blog</Link>
               <ChevronRight className="w-3.5 h-3.5" />
               <span className="text-white">Maximize Benefits</span>
             </nav>
@@ -469,7 +469,7 @@ export default function MaximizeBenefitsClient() {
 
               <p className="text-gray-700 leading-relaxed mb-8">
                 The right choice depends on your health needs, your preferred doctors, and your budget. Our{" "}
-                <Link href="/original-vs-advantage" className="text-[#1a3fa8] underline hover:text-blue-800">
+                <Link href="/original-vs-advantage/" className="text-[#1a3fa8] underline hover:text-blue-800">
                   Original vs. Advantage comparison guide
                 </Link>{" "}
                 walks through this decision in more detail.
@@ -495,7 +495,7 @@ export default function MaximizeBenefitsClient() {
               </Callout>
               <p className="text-gray-700 leading-relaxed mt-6 mb-8">
                 Florida seniors should still compare Part D plans annually because formularies (the list of covered drugs) and costs can change. A plan that worked well for you this year might not be the best choice next year if your medications change or the plan's coverage changes. See our full{" "}
-                <Link href="/understanding-part-d" className="text-[#1a3fa8] underline hover:text-blue-800">
+                <Link href="/understanding-part-d/" className="text-[#1a3fa8] underline hover:text-blue-800">
                   Understanding Part D guide
                 </Link>{" "}
                 for a deeper dive.
@@ -542,7 +542,7 @@ export default function MaximizeBenefitsClient() {
                 <p className="text-amber-800 text-sm leading-relaxed">
                   <strong>Important:</strong> Missing these deadlines can result in coverage gaps and{" "}
                   <strong>permanent penalties</strong> that increase your premiums for as long as you have Medicare coverage. See the full{" "}
-                  <Link href="/enrollment-timeline" className="text-amber-900 underline hover:text-amber-700">
+                  <Link href="/enrollment-timeline/" className="text-amber-900 underline hover:text-amber-700">
                     Enrollment Timeline
                   </Link>{" "}
                   for exact dates.
@@ -572,7 +572,7 @@ export default function MaximizeBenefitsClient() {
               </Callout>
               <p className="text-gray-700 leading-relaxed mt-6 mb-8">
                 Learn more in our guide:{" "}
-                <Link href="/do-i-need-a-supplement" className="text-[#1a3fa8] underline hover:text-blue-800">
+                <Link href="/do-i-need-a-supplement/" className="text-[#1a3fa8] underline hover:text-blue-800">
                   Do I Need a Medicare Supplement?
                 </Link>
               </p>
@@ -713,7 +713,7 @@ export default function MaximizeBenefitsClient() {
                   <Phone className="w-5 h-5" /> Call 813-699-5559
                 </a>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
                 >
                   Get My Free Consultation
@@ -836,7 +836,7 @@ export default function MaximizeBenefitsClient() {
               <Phone className="w-5 h-5" /> Call 813-699-5559
             </a>
             <a
-              href="/contact"
+              href="/contact/"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
             >
               Get Started Online <ChevronRight className="w-5 h-5" />

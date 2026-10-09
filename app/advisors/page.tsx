@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Our Medicare Advisors",
     description:
       "Meet our licensed Medicare advisors. Independent agents bound by a strict Code of Ethics, committed to your best interest.",
-    url: "https://medicareinfopro.com/advisors",
+    url: "https://medicareinfopro.com/advisors/",
     type: "website",
   },
   alternates: {

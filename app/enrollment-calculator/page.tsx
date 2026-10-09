@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Medicare Enrollment Date Calculator: Find Your Exact Deadlines | Medicare Information Pro",
     description:
       "Enter your birthday and employment status to instantly calculate your Medicare enrollment window, coverage start date, Medigap open enrollment period, and late-penalty deadlines.",
-    url: "https://medicareinfopro.com/enrollment-calculator",
+    url: "https://medicareinfopro.com/enrollment-calculator/",
     siteName: "Medicare Information Pro",
     images: [
       {

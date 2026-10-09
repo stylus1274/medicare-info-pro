@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get enrollment help by phone in Apollo Beach?", a: "Yes. We offer free phone and video enrollment assistance for Apollo Beach residents who prefer not to travel to our Brandon office." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

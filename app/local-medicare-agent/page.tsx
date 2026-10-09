@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 };
 
 const cities = [
-  { name: "Brandon", href: "/local-medicare-agent-brandon" },
-  { name: "Apollo Beach", href: "/local-medicare-agent-apollo-beach" },
-  { name: "Riverview", href: "/local-medicare-agent-riverview" },
-  { name: "Sun City", href: "/local-medicare-agent-sun-city" },
-  { name: "Temple Terrace", href: "/local-medicare-agent-temple-terrace" },
-  { name: "Valrico", href: "/local-medicare-agent-valrico" },
-  { name: "Plant City", href: "/local-medicare-agent-plant-city" },
-  { name: "Ruskin", href: "/medicare-agent-ruskin" },
-  { name: "Wimauma", href: "/medicare-agent-wimauma" },
-  { name: "Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl" },
-  { name: "Seffner", href: "/medicare-insurance-agent-seffner-fl" },
-  { name: "Lithia", href: "/medicare-insurance-agent-lithia-fl" },
+  { name: "Brandon", href: "/medicare-agent-brandon/" },
+  { name: "Apollo Beach", href: "/local-medicare-agent-apollo-beach/" },
+  { name: "Riverview", href: "/local-medicare-agent-riverview/" },
+  { name: "Sun City", href: "/local-medicare-agent-sun-city/" },
+  { name: "Temple Terrace", href: "/local-medicare-agent-temple-terrace/" },
+  { name: "Valrico", href: "/local-medicare-agent-valrico/" },
+  { name: "Plant City", href: "/local-medicare-agent-plant-city/" },
+  { name: "Ruskin", href: "/medicare-insurance-agent-ruskin-fl/" },
+  { name: "Wimauma", href: "/medicare-agent-wimauma/" },
+  { name: "Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl/" },
+  { name: "Seffner", href: "/medicare-insurance-agent-seffner-fl/" },
+  { name: "Lithia", href: "/medicare-insurance-agent-lithia-fl/" },
 ];
 
 const benefits = [
@@ -99,7 +99,7 @@ export default function LocalMedicareAgentPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e09600] transition-colors text-lg"
             >
               Get Free Consultation
@@ -146,10 +146,10 @@ export default function LocalMedicareAgentPage() {
                 Medicare plans vary by region, and being based in Brandon means we have in-depth knowledge of the plans, provider networks, and carrier availability in your ZIP code. You get accurate, relevant information rather than generic national comparisons.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We believe in building lasting relationships. Many of our clients have been with us for years, returning each Annual Enrollment Period for a plan review and calling us whenever questions arise. Learn more about our team on the <Link href="/advisors" className="text-[#0d1f5c] font-semibold underline hover:text-[#f5a800] transition-colors">advisors page</Link>.
+                We believe in building lasting relationships. Many of our clients have been with us for years, returning each Annual Enrollment Period for a plan review and calling us whenever questions arise. Learn more about our team on the <Link href="/advisors/" className="text-[#0d1f5c] font-semibold underline hover:text-[#f5a800] transition-colors">advisors page</Link>.
               </p>
               <Link
-                href="/about-us"
+                href="/about-us/"
                 className="inline-flex items-center gap-2 text-[#0d1f5c] font-semibold hover:text-[#f5a800] transition-colors"
               >
                 About Medicare Information Project
@@ -227,12 +227,12 @@ export default function LocalMedicareAgentPage() {
           <h2 className="text-2xl font-bold text-[#0d1f5c] mb-6">Related Medicare Resources</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "What Is Medicare?", href: "/what-is-medicare" },
-              { label: "Do I Need Medicare?", href: "/do-i-need-medicare" },
-              { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
-              { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
-              { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida" },
-              { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator" },
+              { label: "What Is Medicare?", href: "/what-is-medicare/" },
+              { label: "Do I Need Medicare?", href: "/do-i-need-medicare/" },
+              { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
+              { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
+              { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida/" },
+              { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
             ].map((r) => (
               <Link
                 key={r.label}
@@ -258,7 +258,7 @@ export default function LocalMedicareAgentPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e09600] transition-colors text-lg"
             >
               Schedule Free Consultation

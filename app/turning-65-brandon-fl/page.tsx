@@ -221,7 +221,7 @@ export default function Page() {
             { label: "Medicare Agent in Brandon", href: "/medicare-agent-brandon/" },
             { label: "Turning 65 Guide (Full)", href: "/turning-65-and-becoming-eligible-for-medicare/" },
             { label: "Free Medicare Kit", href: "/free-medicare-kit/" },
-            { label: "Free Consultation", href: "/free-consultation/" },
+            { label: "Free Consultation", href: "/get-started/" },
           ],
         }}
       />

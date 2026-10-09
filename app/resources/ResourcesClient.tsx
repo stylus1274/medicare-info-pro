@@ -338,10 +338,10 @@ export default function ResourcesClient() {
           <p className="text-gray-600 text-sm mb-6">Use these interactive tools to get personalized answers in minutes.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { label: "Enrollment Calculator", desc: "Find your exact enrollment window and coverage start date.", href: "/enrollment-calculator", icon: Calendar, color: "bg-blue-600" },
-              { label: "Am I Eligible?", desc: "Check your eligibility for Medicare in under 2 minutes.", href: "/am-i-eligible", icon: Shield, color: "bg-green-600" },
-              { label: "Original vs. Advantage", desc: "Compare the two main Medicare paths side by side.", href: "/original-vs-advantage", icon: BookOpen, color: "bg-purple-600" },
-              { label: "Costs at a Glance", desc: "See all 2026 Medicare premiums and deductibles in one place.", href: "/costs-at-a-glance", icon: DollarSign, color: "bg-amber-600" },
+              { label: "Enrollment Calculator", desc: "Find your exact enrollment window and coverage start date.", href: "/enrollment-calculator/", icon: Calendar, color: "bg-blue-600" },
+              { label: "Am I Eligible?", desc: "Check your eligibility for Medicare in under 2 minutes.", href: "/am-i-eligible/", icon: Shield, color: "bg-green-600" },
+              { label: "Original vs. Advantage", desc: "Compare the two main Medicare paths side by side.", href: "/original-vs-advantage/", icon: BookOpen, color: "bg-purple-600" },
+              { label: "Costs at a Glance", desc: "See all 2026 Medicare premiums and deductibles in one place.", href: "/costs-at-a-glance/", icon: DollarSign, color: "bg-amber-600" },
             ].map((tool) => (
               <Link
                 key={tool.label}
@@ -383,7 +383,7 @@ export default function ResourcesClient() {
               <Phone size={18} aria-hidden="true" /> Call (813) 699-5559
             </a>
             <Link
-              href="/enrollment-calculator"
+              href="/enrollment-calculator/"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#1a2e6e] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-base border-2 border-[#1a2e6e]"
             >
               Use the Enrollment Calculator <ArrowRight size={16} aria-hidden="true" />

@@ -478,7 +478,7 @@ export default function FreeMedicareKitClient() {
 
                   <p className="text-xs text-center text-gray-400 leading-relaxed">
                     By downloading, you agree to our{" "}
-                    <Link href="/privacy-policy" className="underline hover:text-gray-600">
+                    <Link href="/privacy-policy/" className="underline hover:text-gray-600">
                       Privacy Policy
                     </Link>
                     . We will never sell your information. A licensed agent may follow up to answer questions.
@@ -564,9 +564,9 @@ export default function FreeMedicareKitClient() {
             Medicare has neither reviewed nor endorsed this information.
           </p>
           <div className="flex justify-center gap-6 mt-4 text-xs text-white/40">
-            <Link href="/privacy-policy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
-            <Link href="/terms-and-conditions" className="hover:text-white/70 transition-colors">Terms</Link>
-            <Link href="/contact-us" className="hover:text-white/70 transition-colors">Contact</Link>
+            <Link href="/privacy-policy/" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions/" className="hover:text-white/70 transition-colors">Terms</Link>
+            <Link href="/contact/" className="hover:text-white/70 transition-colors">Contact</Link>
           </div>
         </div>
       </footer>
@@ -597,7 +597,7 @@ function SuccessCard({ firstName }: { firstName: string }) {
       </p>
       <div className="space-y-3">
         <Link
-          href="/enrollment-timeline"
+          href="/enrollment-timeline/"
           className="flex items-center justify-center gap-2 w-full rounded-xl py-3 text-sm font-semibold transition-colors"
           style={{ background: "#f5c842", color: "#0a163c" }}
         >
@@ -606,7 +606,7 @@ function SuccessCard({ firstName }: { firstName: string }) {
           <ChevronRight className="h-4 w-4" />
         </Link>
         <Link
-          href="/get-started"
+          href="/get-started/"
           className="flex items-center justify-center gap-2 w-full rounded-xl py-3 text-sm font-semibold border transition-colors"
           style={{ borderColor: "#1a3fa8", color: "#1a3fa8" }}
         >

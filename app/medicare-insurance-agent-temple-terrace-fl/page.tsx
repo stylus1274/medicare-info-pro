@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get a Medigap plan in Temple Terrace?", a: "Yes. Medigap plans are available in Temple Terrace and allow you to see any Medicare-accepting doctor nationwide. We compare Medigap options alongside Medicare Advantage so you can choose the right fit." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace" },
-          { label: "Medicare Supplement Plans Temple Terrace", href: "/medicare-supplement-insurance-plans-temple-terrace" },
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Temple Terrace", href: "/local-medicare-agent-temple-terrace/" },
+          { label: "Medicare Supplement Plans Temple Terrace", href: "/medicare-supplement-insurance-plans-temple-terrace/" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

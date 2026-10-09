@@ -142,7 +142,7 @@ export default function FindAnAgentClient() {
               <Phone className="w-5 h-5" /> Call 813-789-7700
             </a>
             <a
-              href="/contact"
+              href="/contact/"
               className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
             >
               Request a Consultation <ChevronRight className="w-5 h-5" />
@@ -304,7 +304,7 @@ export default function FindAnAgentClient() {
           <p className="text-gray-500 text-sm">
             Not in one of these states?{" "}
             <a
-              href="/contact"
+              href="/contact/"
               className="text-[#1a3fa8] underline hover:text-blue-800"
             >
               Contact us
@@ -375,7 +375,7 @@ export default function FindAnAgentClient() {
                   <Phone className="w-4 h-4" /> Call Now: 813-789-7700
                 </a>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20 w-full"
                 >
                   Request Online Consultation
@@ -394,12 +394,12 @@ export default function FindAnAgentClient() {
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Am I Eligible for Medicare?", href: "/am-i-eligible" },
-              { label: "Original Medicare vs. Advantage", href: "/original-vs-advantage" },
-              { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-              { label: "Enrollment Timeline", href: "/enrollment-timeline" },
-              { label: "Understanding Part D", href: "/understanding-part-d" },
-              { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
+              { label: "Am I Eligible for Medicare?", href: "/am-i-eligible/" },
+              { label: "Original Medicare vs. Advantage", href: "/original-vs-advantage/" },
+              { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+              { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
+              { label: "Understanding Part D", href: "/understanding-part-d/" },
+              { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
             ].map((link) => (
               <Link
                 key={link.href}

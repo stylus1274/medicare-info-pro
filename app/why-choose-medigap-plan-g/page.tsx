@@ -19,7 +19,7 @@ const articleSchema = {
     "@type": "Person",
     name: "Greg Wohl",
     jobTitle: "Licensed Medicare Specialist",
-    url: "https://medicareinfopro.com/greg-wohl",
+    url: "https://medicareinfopro.com/greg-wohl/",
   },
   publisher: {
     "@type": "Organization",
@@ -137,7 +137,7 @@ const POST = {
   sections: [
     {
       type: "intro" as const,
-      content: `Medigap Plan G is a popular Medicare Supplement option because it pays many of the cost-sharing amounts left by Original Medicare. It can be a strong fit for someone who values broad provider access and more predictable medical cost sharing. It is not, however, automatically the best Medicare choice for every person.<br /><br />The right comparison starts with the facts: what Plan G covers, what it does not cover, what you still pay, when you can buy it, and how it differs from alternatives such as <a href='/medicare-supplement-plan-g-vs-plan-n' class='text-[#1a3fa8] underline underline-offset-2'>Medigap Plan N</a> or <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage</a>.`,
+      content: `Medigap Plan G is a popular Medicare Supplement option because it pays many of the cost-sharing amounts left by Original Medicare. It can be a strong fit for someone who values broad provider access and more predictable medical cost sharing. It is not, however, automatically the best Medicare choice for every person.<br /><br />The right comparison starts with the facts: what Plan G covers, what it does not cover, what you still pay, when you can buy it, and how it differs from alternatives such as <a href='/medicare-supplement-plan-g-vs-plan-n/' class='text-[#1a3fa8] underline underline-offset-2'>Medigap Plan N</a> or <a href='/original-vs-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage</a>.`,
     },
     {
       type: "keyTakeaways" as const,
@@ -163,12 +163,12 @@ const POST = {
     {
       type: "section" as const,
       heading: "What Does Medigap Plan G Cover in 2026?",
-      content: `Medigap is extra insurance sold by private companies to help pay your share of certain Original Medicare costs. In most states, policies with the same letter must offer the same standardized benefits. Standard Plan G covers the Part A coinsurance and hospital costs for up to an additional 365 days after Medicare benefits are used, Part B coinsurance or copayments, the first three pints of blood, Part A hospice coinsurance, skilled nursing facility care coinsurance, the Part A deductible, Part B excess charges, and 80% of eligible foreign travel emergency costs.<br /><br />The official <a href='https://www.medicare.gov/health-drug-plans/medigap/basics/compare-plan-benefits' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare.gov Medigap benefit chart</a> provides the standardized benefit comparison. It is the best source for confirming what a lettered plan covers before you compare premiums.<br /><br />Plan G generally works with Original Medicare. You cannot use a Medigap policy while you are enrolled in a Medicare Advantage plan. If you are weighing the two paths, review our <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare vs. Medicare Advantage guide</a> first.`,
+      content: `Medigap is extra insurance sold by private companies to help pay your share of certain Original Medicare costs. In most states, policies with the same letter must offer the same standardized benefits. Standard Plan G covers the Part A coinsurance and hospital costs for up to an additional 365 days after Medicare benefits are used, Part B coinsurance or copayments, the first three pints of blood, Part A hospice coinsurance, skilled nursing facility care coinsurance, the Part A deductible, Part B excess charges, and 80% of eligible foreign travel emergency costs.<br /><br />The official <a href='https://www.medicare.gov/health-drug-plans/medigap/basics/compare-plan-benefits' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare.gov Medigap benefit chart</a> provides the standardized benefit comparison. It is the best source for confirming what a lettered plan covers before you compare premiums.<br /><br />Plan G generally works with Original Medicare. You cannot use a Medigap policy while you are enrolled in a Medicare Advantage plan. If you are weighing the two paths, review our <a href='/original-vs-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare vs. Medicare Advantage guide</a> first.`,
     },
     {
       type: "section" as const,
       heading: "What Plan G Does Not Cover",
-      content: `Plan G does not cover the annual Medicare Part B deductible. In 2026, that deductible is <strong>$283</strong>. Once you meet it, Plan G pays the standardized Part B coinsurance or copayment benefit, subject to the terms of your policy and Medicare-covered services.<br /><br />Plan G also does not include Part D prescription drug coverage, routine dental, routine vision, routine hearing, private-duty nursing, or custodial long-term care. Some people obtain those services through separate coverage, while others choose a different Medicare path based on their priorities. Our <a href='/does-medicare-cover-dental' class='text-[#1a3fa8] underline underline-offset-2'>Medicare dental coverage guide</a> explains one common coverage gap.<br /><br />You will pay your Medigap premium in addition to your monthly Part B premium. A Medigap policy does not replace Original Medicare, and Medicare does not pay the Medigap premium for you.`,
+      content: `Plan G does not cover the annual Medicare Part B deductible. In 2026, that deductible is <strong>$283</strong>. Once you meet it, Plan G pays the standardized Part B coinsurance or copayment benefit, subject to the terms of your policy and Medicare-covered services.<br /><br />Plan G also does not include Part D prescription drug coverage, routine dental, routine vision, routine hearing, private-duty nursing, or custodial long-term care. Some people obtain those services through separate coverage, while others choose a different Medicare path based on their priorities. Our <a href='/does-medicare-cover-dental/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare dental coverage guide</a> explains one common coverage gap.<br /><br />You will pay your Medigap premium in addition to your monthly Part B premium. A Medigap policy does not replace Original Medicare, and Medicare does not pay the Medigap premium for you.`,
     },
     {
       type: "section" as const,
@@ -183,12 +183,12 @@ const POST = {
     {
       type: "section" as const,
       heading: "Plan G vs. Plan N and Medicare Advantage",
-      content: `Plan G and Plan N are both Medigap policies that work with Original Medicare. Plan N can have a lower premium, but it may include certain office and emergency room copayments and does not cover Part B excess charges. Plan G generally offers more complete standardized cost sharing, but the premium difference should be considered alongside your expected use of care. Read our direct <a href='/medicare-supplement-plan-g-vs-plan-n' class='text-[#1a3fa8] underline underline-offset-2'>Plan G vs. Plan N comparison</a> before choosing based on a single benefit or premium quote.<br /><br />Medicare Advantage is different. It is a private-plan way to receive Medicare benefits, often with provider networks, plan-specific cost sharing, and frequently a built-in Part D drug benefit. A Medigap policy is designed to supplement Original Medicare and does not work with Medicare Advantage. Neither approach is universally better. The decision should reflect your doctors, travel needs, prescriptions, budget, preferred providers, and comfort with medical cost sharing.`,
+      content: `Plan G and Plan N are both Medigap policies that work with Original Medicare. Plan N can have a lower premium, but it may include certain office and emergency room copayments and does not cover Part B excess charges. Plan G generally offers more complete standardized cost sharing, but the premium difference should be considered alongside your expected use of care. Read our direct <a href='/medicare-supplement-plan-g-vs-plan-n/' class='text-[#1a3fa8] underline underline-offset-2'>Plan G vs. Plan N comparison</a> before choosing based on a single benefit or premium quote.<br /><br />Medicare Advantage is different. It is a private-plan way to receive Medicare benefits, often with provider networks, plan-specific cost sharing, and frequently a built-in Part D drug benefit. A Medigap policy is designed to supplement Original Medicare and does not work with Medicare Advantage. Neither approach is universally better. The decision should reflect your doctors, travel needs, prescriptions, budget, preferred providers, and comfort with medical cost sharing.`,
     },
     {
       type: "section" as const,
       heading: "When Can You Buy Plan G?",
-      content: `You need Original Medicare Part A and Part B before you can buy a Medigap policy. Your one-time Medigap Open Enrollment Period lasts six months and starts the first day of the month you are both 65 or older and enrolled in Part B. During that window, insurance companies generally must sell you any Medigap policy they offer in your state, regardless of health conditions.<br /><br />Outside that window, your ability to buy a policy and the price you pay may depend on underwriting unless you have a guaranteed-issue right. Certain events, such as losing qualifying coverage or moving out of a Medicare Advantage plan's service area, can create protected rights with specific application deadlines. The official <a href='https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare.gov Medigap timing tool</a> can help you understand the federal rules. You can also review our <a href='/faqs/medigap-guaranteed-issue-rights-florida' class='text-[#1a3fa8] underline underline-offset-2'>Florida Medigap guaranteed-issue rights FAQ</a>.`,
+      content: `You need Original Medicare Part A and Part B before you can buy a Medigap policy. Your one-time Medigap Open Enrollment Period lasts six months and starts the first day of the month you are both 65 or older and enrolled in Part B. During that window, insurance companies generally must sell you any Medigap policy they offer in your state, regardless of health conditions.<br /><br />Outside that window, your ability to buy a policy and the price you pay may depend on underwriting unless you have a guaranteed-issue right. Certain events, such as losing qualifying coverage or moving out of a Medicare Advantage plan's service area, can create protected rights with specific application deadlines. The official <a href='https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare.gov Medigap timing tool</a> can help you understand the federal rules. You can also review our <a href='/faqs/medigap-guaranteed-issue-rights-florida/' class='text-[#1a3fa8] underline underline-offset-2'>Florida Medigap guaranteed-issue rights FAQ</a>.`,
     },
     {
       type: "summary" as const,
@@ -232,22 +232,22 @@ const POST = {
   relatedPosts: [
     {
       title: "Medicare Supplement Plan G vs. Plan N",
-      href: "/medicare-supplement-plan-g-vs-plan-n",
+      href: "/medicare-supplement-plan-g-vs-plan-n/",
       category: "Supplements" as const,
     },
     {
       title: "Medigap Open Enrollment: Your One Guaranteed Chance",
-      href: "/medigap-open-enrollment",
+      href: "/medigap-open-enrollment/",
       category: "Supplements" as const,
     },
     {
       title: "Original Medicare vs. Medicare Advantage",
-      href: "/original-vs-advantage",
+      href: "/original-vs-advantage/",
       category: "Plans" as const,
     },
     {
       title: "Florida Medicare Supplement Plans: 2026 Guide",
-      href: "/medicare-supplement-plans-florida-2026",
+      href: "/medicare-supplement-plans-florida-2026/",
       category: "Supplements" as const,
     },
   ],

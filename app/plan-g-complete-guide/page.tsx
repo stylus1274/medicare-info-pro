@@ -84,7 +84,7 @@ const POST = {
     {
       type: "section" as const,
       heading: "What Plan G Covers",
-      content: `<a href='/medicare-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement Plan G</a> is the most comprehensive Medigap plan available to new Medicare enrollees. It covers the Medicare Part A deductible ($1,736 in 2026), Part A coinsurance and hospital costs for up to 365 additional days after Medicare benefits are exhausted, and the Part B coinsurance (20 percent of the Medicare-approved amount for outpatient services).
+      content: `<a href='/medicare-supplement/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement Plan G</a> is the most comprehensive Medigap plan available to new Medicare enrollees. It covers the Medicare Part A deductible ($1,736 in 2026), Part A coinsurance and hospital costs for up to 365 additional days after Medicare benefits are exhausted, and the Part B coinsurance (20 percent of the Medicare-approved amount for outpatient services).
 
 Plan G also covers skilled nursing facility care coinsurance (days 21 through 100 of a skilled nursing stay), the first three pints of blood, and foreign travel emergency care at 80 percent up to plan limits. The only Medicare cost-sharing that Plan G does not cover is the Part B deductible, which is $283 in 2026 and is paid once per year.
 
@@ -97,7 +97,7 @@ Because Plan G works with Original Medicare rather than replacing it, you can se
 
 Plan N is a lower-premium alternative to Plan G. It covers most of the same costs but requires copays of up to $20 for office visits and up to $50 for emergency room visits that do not result in inpatient admission. Plan N also does not cover Part B excess charges, which occur when a provider charges more than the Medicare-approved amount.
 
-The right choice between Plan G and Plan N depends on how often you use healthcare services. If you see doctors frequently, Plan G's higher premium may result in lower total annual costs. If you are generally healthy and rarely visit doctors, <a href='/do-i-need-a-supplement' class='text-[#1a3fa8] underline underline-offset-2'>Plan N's lower premium may result in lower total costs</a>. A licensed Medicare advisor can run the numbers for your specific situation.`,
+The right choice between Plan G and Plan N depends on how often you use healthcare services. If you see doctors frequently, Plan G's higher premium may result in lower total annual costs. If you are generally healthy and rarely visit doctors, <a href='/do-i-need-a-supplement/' class='text-[#1a3fa8] underline underline-offset-2'>Plan N's lower premium may result in lower total costs</a>. A licensed Medicare advisor can run the numbers for your specific situation.`,
     },
     {
       type: "section" as const,
@@ -106,7 +106,7 @@ The right choice between Plan G and Plan N depends on how often you use healthca
 
 HD-G is attractive for people who are generally healthy and want catastrophic protection without paying for comprehensive coverage they may not use. If you have a year with significant healthcare needs and exceed the $2,870 deductible, the plan covers everything above that amount just like standard Plan G.
 
-The tradeoff is that in a bad year, you could pay up to $2,870 in cost-sharing before the plan kicks in. For people who can absorb that amount without financial hardship, HD-G can result in significant premium savings over time. Understanding your full <a href='/costs-at-a-glance' class='text-[#1a3fa8] underline underline-offset-2'>Medicare costs for 2026</a> helps you decide whether the standard or high-deductible version makes more sense.`,
+The tradeoff is that in a bad year, you could pay up to $2,870 in cost-sharing before the plan kicks in. For people who can absorb that amount without financial hardship, HD-G can result in significant premium savings over time. Understanding your full <a href='/costs-at-a-glance/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare costs for 2026</a> helps you decide whether the standard or high-deductible version makes more sense.`,
     },
     {
       type: "section" as const,
@@ -135,10 +135,10 @@ Premiums increase with age under most pricing structures. Some insurers use atta
     },
   ],
   relatedPosts: [
-    { title: "Medigap Open Enrollment: Your One Guaranteed Chance", href: "/medigap-open-enrollment", category: "Supplements" as const },
-    { title: "Do I Need a Medicare Supplement?", href: "/do-i-need-a-supplement", category: "Supplements" as const },
-    { title: "Original Medicare vs. Medicare Advantage: Which Is Right for You?", href: "/original-vs-advantage", category: "Plans" as const },
-    { title: "Medicare Costs at a Glance: 2026 Premiums, Deductibles, and Copays", href: "/costs-at-a-glance", category: "Costs" as const },
+    { title: "Medigap Open Enrollment: Your One Guaranteed Chance", href: "/medigap-open-enrollment/", category: "Supplements" as const },
+    { title: "Do I Need a Medicare Supplement?", href: "/do-i-need-a-supplement/", category: "Supplements" as const },
+    { title: "Original Medicare vs. Medicare Advantage: Which Is Right for You?", href: "/original-vs-advantage/", category: "Plans" as const },
+    { title: "Medicare Costs at a Glance: 2026 Premiums, Deductibles, and Copays", href: "/costs-at-a-glance/", category: "Costs" as const },
   ],
 };
 

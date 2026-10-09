@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Do I Need Medicare?",
     description:
       "Not sure if Medicare is required for you? Learn who must enroll, who can delay, and what the consequences are of skipping enrollment.",
-    url: "https://medicareinfopro.com/do-i-need-medicare",
+    url: "https://medicareinfopro.com/do-i-need-medicare/",
     type: "website",
   },
   alternates: {

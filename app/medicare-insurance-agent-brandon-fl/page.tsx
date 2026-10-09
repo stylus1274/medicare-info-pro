@@ -168,11 +168,11 @@ export default function Page() {
           { q: "Can a Brandon Medicare agent help me during the Annual Enrollment Period?", a: "Yes. The Annual Enrollment Period (October 15 to December 7) is our busiest time of year. We help Brandon residents review their current plan, compare alternatives, and switch if a better option is available." },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl" },
-          { label: "Medicare Advantage", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { label: "Medicare Advantage", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

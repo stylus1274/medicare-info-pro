@@ -140,7 +140,7 @@ export default function MentalHealthClient() {
           <nav className="text-sm text-blue-200 mb-6 flex items-center gap-2 flex-wrap">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/coverage-qa" className="hover:text-white transition-colors">Coverage Q&A</Link>
+            <Link href="/coverage-qa/" className="hover:text-white transition-colors">Coverage Q&A</Link>
             <span>/</span>
             <span className="text-white">Mental Health</span>
           </nav>
@@ -149,7 +149,7 @@ export default function MentalHealthClient() {
               Mental Health Coverage
             </span>
           </div>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage", href: "/coverage-qa" }, { label: "Mental Health" }]} className="mb-4" />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coverage", href: "/coverage-qa/" }, { label: "Mental Health" }]} className="mb-4" />
           <h1
             className="text-3xl md:text-5xl font-bold mb-4 leading-tight"
             style={{ fontFamily: "'Merriweather', serif" }}
@@ -301,7 +301,7 @@ export default function MentalHealthClient() {
                     <p className="font-bold text-blue-900 mb-1">Medigap Eliminates the 20% Coinsurance</p>
                     <p className="text-blue-800 text-sm leading-relaxed">
                       If you have Original Medicare plus a Medigap Plan G, your 20% coinsurance for outpatient mental health visits is covered entirely after the annual Part B deductible ($283 in 2026). For someone attending weekly therapy, this can save over $1,000 per year.{" "}
-                      <Link href="/do-i-need-a-supplement" className="underline font-medium hover:text-blue-900">
+                      <Link href="/do-i-need-a-supplement/" className="underline font-medium hover:text-blue-900">
                         Learn more about Medigap plans.
                       </Link>
                     </p>
@@ -316,13 +316,13 @@ export default function MentalHealthClient() {
                   Mental health is one of the few areas where Original Medicare provides meaningful coverage. Dental, vision, and hearing are not covered at all.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/coverage/dental" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                  <Link href="/coverage/dental/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                     <ArrowRight className="w-4 h-4" /> Does Medicare Cover Dental?
                   </Link>
-                  <Link href="/coverage/vision" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                  <Link href="/coverage/vision/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                     <ArrowRight className="w-4 h-4" /> Does Medicare Cover Vision?
                   </Link>
-                  <Link href="/coverage/hearing-aids" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
+                  <Link href="/coverage/hearing-aids/" className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 underline hover:text-amber-900">
                     <ArrowRight className="w-4 h-4" /> Does Medicare Cover Hearing Aids?
                   </Link>
                 </div>
@@ -410,7 +410,7 @@ export default function MentalHealthClient() {
                     813-789-7700
                   </a>
                   <Link
-                    href="/medicare-quiz"
+                    href="/medicare-quiz/"
                     className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                   >
                     Take the Medicare Quiz
@@ -463,7 +463,7 @@ export default function MentalHealthClient() {
                     813-789-7700
                   </a>
                   <Link
-                    href="/medicare-quiz"
+                    href="/medicare-quiz/"
                     className="flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium px-4 py-2.5 rounded-xl transition-colors w-full text-sm"
                   >
                     Take the Medicare Quiz
@@ -476,11 +476,11 @@ export default function MentalHealthClient() {
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Related Pages</p>
                   <div className="space-y-2">
                     {[
-                      { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement" },
-                      { label: "Does Medicare Cover Prescription Drugs?", href: "/coverage/prescription-drugs" },
-                      { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-                      { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
-                      { label: "Coverage Q&A Hub", href: "/coverage-qa" },
+                      { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement/" },
+                      { label: "Does Medicare Cover Prescription Drugs?", href: "/coverage/prescription-drugs/" },
+                      { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+                      { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
+                      { label: "Coverage Q&A Hub", href: "/coverage-qa/" },
                     ].map((link) => (
                       <Link
                         key={link.href}

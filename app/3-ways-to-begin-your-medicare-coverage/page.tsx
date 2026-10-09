@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "3 Ways to Begin Your Medicare Coverage",
     description:
       "A simple 3-step guide to starting your Medicare coverage: understand eligibility, learn the parts, and enroll without stress.",
-    url: "https://medicareinfopro.com/3-ways-to-begin-your-medicare-coverage",
+    url: "https://medicareinfopro.com/3-ways-to-begin-your-medicare-coverage/",
     type: "website",
   },
   alternates: {

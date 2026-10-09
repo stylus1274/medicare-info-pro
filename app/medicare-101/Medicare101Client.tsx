@@ -243,7 +243,7 @@ const RELATED_POSTS = [
     readTime: "12 min read",
     img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
     imgAlt: "Medical professional reviewing Medicare claim documents",
-    href: "/blog-post",
+    href: "/why-medicare-denies-mobility-scooter-claims-florida/",
     internal: true,
   },
   {
@@ -253,7 +253,7 @@ const RELATED_POSTS = [
     readTime: "10 min read",
     img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
     imgAlt: "Senior couple reviewing Medicare benefits paperwork",
-    href: "/maximize-medicare-benefits",
+    href: "/maximize-benefits/",
     internal: true,
   },
   {
@@ -263,7 +263,7 @@ const RELATED_POSTS = [
     readTime: "11 min read",
     img: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80",
     imgAlt: "Florida senior comparing Medicare Advantage plan options",
-    href: "https://medicareinfopro.com/best-medicare-advantage-plan-florida/",
+    href: "https://medicareinfopro.com/best-medicare-advantage-plans-florida/",
     internal: false,
   },
 ];
@@ -896,7 +896,7 @@ export default function Medicare101Client() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-serif text-2xl font-bold text-[#0d2060]">Related Guides</h2>
             <Link
-              href="/resources"
+              href="/resources/"
               className="text-[#1a3fa8] font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all"
             >
               View All Resources <ChevronRight className="w-4 h-4" aria-hidden="true" />

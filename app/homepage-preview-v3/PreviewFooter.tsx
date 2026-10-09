@@ -7,31 +7,31 @@ const FOOTER_LINKS = [
   {
     heading: "Medicare Plans",
     links: [
-      { label: "Original Medicare", href: "/medicare-part-a" },
-      { label: "Medicare Advantage", href: "/medicare-advantage" },
-      { label: "Medicare Supplement", href: "/do-i-need-a-supplement" },
-      { label: "Part D Drug Plans", href: "/understanding-part-d" },
-      { label: "Compare Plans", href: "/plan-comparison" },
+      { label: "Original Medicare", href: "/medicare-part-a/" },
+      { label: "Medicare Advantage", href: "/medicare-advantage/" },
+      { label: "Medicare Supplement", href: "/do-i-need-a-supplement/" },
+      { label: "Part D Drug Plans", href: "/understanding-part-d/" },
+      { label: "Compare Plans", href: "/plan-comparison/" },
     ],
   },
   {
     heading: "Enrollment",
     links: [
-      { label: "Turning 65", href: "/enrollment-timeline#iep" },
-      { label: "Annual Enrollment", href: "/enrollment-timeline#aep" },
-      { label: "Special Enrollment", href: "/enrollment-timeline#sep" },
-      { label: "Avoid Penalties", href: "/enrollment-timeline#penalty-part-b" },
-      { label: "How to Enroll", href: "/enrollment-calculator" },
+      { label: "Turning 65", href: "/enrollment-timeline/#iep" },
+      { label: "Annual Enrollment", href: "/enrollment-timeline/#aep" },
+      { label: "Special Enrollment", href: "/enrollment-timeline/#sep" },
+      { label: "Avoid Penalties", href: "/enrollment-timeline/#penalty-part-b" },
+      { label: "How to Enroll", href: "/enrollment-calculator/" },
     ],
   },
   {
     heading: "Resources",
     links: [
-      { label: "Blog & Articles", href: "/blog" },
-      { label: "Coverage Search", href: "/coverage-qa" },
-      { label: "Medicare 101", href: "/medicare-101" },
-      { label: "FAQ Center", href: "/faq" },
-      { label: "About Us", href: "/about-us" },
+      { label: "Blog & Articles", href: "/blog/" },
+      { label: "Coverage Search", href: "/coverage-qa/" },
+      { label: "Medicare 101", href: "/medicare-101/" },
+      { label: "FAQ Center", href: "/faq/" },
+      { label: "About Us", href: "/about-us/" },
       { label: "Contact Us", href: "/contact/" },
     ],
   },
@@ -125,9 +125,9 @@ export default function PreviewFooter() {
             © {new Date().getFullYear()} Medicare Information Project. Not affiliated with, reviewed or endorsed by Medicare.gov, CMS, or the federal government.
           </p>
           <div className="flex gap-6 text-[0.8rem] text-blue-300/50">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Use</Link>
-            <Link href="/testimonials" className="hover:text-white transition-colors">Medicare Planning Resources</Link>
+            <Link href="/privacy-policy/" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions/" className="hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/testimonials/" className="hover:text-white transition-colors">Medicare Planning Resources</Link>
           </div>
         </div>
       </div>

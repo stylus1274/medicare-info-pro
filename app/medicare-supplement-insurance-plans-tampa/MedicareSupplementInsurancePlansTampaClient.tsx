@@ -341,12 +341,12 @@ export default function MedicareSupplementInsurancePlansTampaClient() {
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Related Pages</div>
               <ul className="space-y-2">
                 {[
-                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-                  { label: "Medigap Open Enrollment", href: "/medigap-open-enrollment" },
-                  { label: "Plan G Complete Guide", href: "/plan-g-complete-guide" },
-                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl" },
-                  { label: "Plan Comparison Tool", href: "/plan-comparison" },
-                  { label: "Free Consultation", href: "/free-consultation" },
+                  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+                  { label: "Medigap Open Enrollment", href: "/medigap-open-enrollment/" },
+                  { label: "Plan G Complete Guide", href: "/plan-g-complete-guide/" },
+                  { label: "Medicare Insurance Agent Tampa FL", href: "/medicare-insurance-agent-tampa-fl/" },
+                  { label: "Plan Comparison Tool", href: "/plan-comparison/" },
+                  { label: "Free Consultation", href: "/get-started/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} className="text-[#1a3fa8] hover:underline text-sm">

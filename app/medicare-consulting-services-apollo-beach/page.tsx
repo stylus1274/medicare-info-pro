@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get Medicare consulting help by phone in Apollo Beach?", a: "Yes. We offer free phone and video consultations for Apollo Beach residents who prefer not to travel to our Brandon office." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl" },
-          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach" },
-          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Plan Comparison Tool", href: "/plan-comparison-tool" },
+          { label: "Medicare Insurance Agent Apollo Beach", href: "/medicare-insurance-agent-apollo-beach-fl/" },
+          { label: "Local Medicare Agent Apollo Beach", href: "/local-medicare-agent-apollo-beach/" },
+          { label: "Medicare Consulting Sun City", href: "/medicare-consulting-services-sun-city/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison/" },
         ],
       }}
     />

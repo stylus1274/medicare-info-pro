@@ -388,12 +388,12 @@ export default function MedicareInsuranceAgentTampaClient() {
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Related Pages</div>
               <ul className="space-y-2">
                 {[
-                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa" },
-                  { label: "Medicare Enrollment Assistance Tampa", href: "/medicare-enrollment-assistance-in-tampa-fl" },
-                  { label: "Medicare Supplement Plans Tampa", href: "/medicare-supplement-insurance-plans-tampa" },
-                  { label: "Tampa Medicare Specialist", href: "/tampa-medicare-specialist" },
-                  { label: "Medicare Plan Counseling Tampa", href: "/medicare-plan-counseling-tampa" },
-                  { label: "Free Consultation", href: "/free-consultation" },
+                  { label: "Medicare Consulting Services Tampa", href: "/medicare-consulting-services-tampa/" },
+                  { label: "Medicare Enrollment Assistance Tampa", href: "/medicare-enrollment-assistance-in-tampa-fl/" },
+                  { label: "Medicare Supplement Plans Tampa", href: "/medicare-supplement-insurance-plans-tampa/" },
+                  { label: "Tampa Medicare Specialist", href: "/tampa-medicare-specialist/" },
+                  { label: "Medicare Plan Counseling Tampa", href: "/medicare-plan-counseling-tampa/" },
+                  { label: "Free Consultation", href: "/get-started/" },
                 ].map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} className="text-[#1a3fa8] hover:underline text-sm">
@@ -408,12 +408,12 @@ export default function MedicareInsuranceAgentTampaClient() {
             <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
               <div className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wide">Medicare Plan Types</div>
               <ul className="space-y-2">
-                <li><Link href="/medicare-advantage" className="text-[#1a3fa8] hover:underline text-sm">Medicare Advantage Plans in Florida</Link></li>
-                <li><Link href="/medicare-supplement" className="text-[#1a3fa8] hover:underline text-sm">Medicare Supplement (Medigap) Plans</Link></li>
-                <li><Link href="/medicare-part-d" className="text-[#1a3fa8] hover:underline text-sm">Medicare Part D Drug Coverage</Link></li>
-                <li><Link href="/original-vs-advantage" className="text-[#1a3fa8] hover:underline text-sm">Original Medicare vs. Medicare Advantage</Link></li>
-                <li><Link href="/medicare-part-a" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part A Cover?</Link></li>
-                <li><Link href="/medicare-part-b" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part B Cover?</Link></li>
+                <li><Link href="/medicare-advantage/" className="text-[#1a3fa8] hover:underline text-sm">Medicare Advantage Plans in Florida</Link></li>
+                <li><Link href="/medicare-supplement/" className="text-[#1a3fa8] hover:underline text-sm">Medicare Supplement (Medigap) Plans</Link></li>
+                <li><Link href="/medicare-part-d/" className="text-[#1a3fa8] hover:underline text-sm">Medicare Part D Drug Coverage</Link></li>
+                <li><Link href="/original-vs-advantage/" className="text-[#1a3fa8] hover:underline text-sm">Original Medicare vs. Medicare Advantage</Link></li>
+                <li><Link href="/medicare-part-a/" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part A Cover?</Link></li>
+                <li><Link href="/medicare-part-b/" className="text-[#1a3fa8] hover:underline text-sm">What Does Medicare Part B Cover?</Link></li>
               </ul>
             </div>
 

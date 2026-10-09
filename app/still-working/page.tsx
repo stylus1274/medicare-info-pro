@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Still Working at 65? Medicare and Employer Coverage Explained",
     description: "If you are still working at 65 and have employer health insurance, you may be able to delay Medicare enrollment without penalty. Learn the rules and your options.",
-    url: "https://medicareinfopro.com/still-working",
+    url: "https://medicareinfopro.com/still-working/",
     siteName: "Medicare Information Pro",
     type: "website",
   },

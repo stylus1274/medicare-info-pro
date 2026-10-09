@@ -19,17 +19,17 @@ const FAQ = {
     {
       heading: "What part of a lift chair does Medicare cover?",
       content:
-        "A lift chair is partly furniture and partly durable medical equipment. Medicare can cover only the seat-lift mechanism that helps raise a person from a seated position. It does not cover the chair frame, cushion, upholstery, or other furniture components. This distinction is why a supplier may show both a covered amount for the mechanism and a separate amount you must pay for the chair itself.<br><br>For a broader overview of what qualifies as Part B equipment, see our <a href='/coverage/medical-equipment' class='text-[#1a3fa8] underline underline-offset-2'>Medicare medical equipment guide</a>. It also explains why coverage varies between a medically necessary device and an item primarily intended for convenience or comfort.",
+        "A lift chair is partly furniture and partly durable medical equipment. Medicare can cover only the seat-lift mechanism that helps raise a person from a seated position. It does not cover the chair frame, cushion, upholstery, or other furniture components. This distinction is why a supplier may show both a covered amount for the mechanism and a separate amount you must pay for the chair itself.<br><br>For a broader overview of what qualifies as Part B equipment, see our <a href='/coverage/medical-equipment/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare medical equipment guide</a>. It also explains why coverage varies between a medically necessary device and an item primarily intended for convenience or comfort.",
     },
     {
       heading: "Who can qualify for a covered seat-lift mechanism?",
       content:
-        "Medicare's policy says the person must generally have severe arthritis of the hip or knee, or a severe neuromuscular disease. The person must be completely unable to stand from a regular armchair or from any chair in the home, but able to walk once standing. A physician must prescribe the mechanism as part of an active treatment plan intended to improve or maintain the person's condition.<br><br>A diagnosis by itself does not guarantee coverage. The medical record and prescription need to show how the mechanism supports the treatment plan. If your mobility needs involve a power wheelchair or scooter instead, read our <a href='/medicare-coverage-for-scooters' class='text-[#1a3fa8] underline underline-offset-2'>Medicare scooter coverage guide</a> for the different criteria.",
+        "Medicare's policy says the person must generally have severe arthritis of the hip or knee, or a severe neuromuscular disease. The person must be completely unable to stand from a regular armchair or from any chair in the home, but able to walk once standing. A physician must prescribe the mechanism as part of an active treatment plan intended to improve or maintain the person's condition.<br><br>A diagnosis by itself does not guarantee coverage. The medical record and prescription need to show how the mechanism supports the treatment plan. If your mobility needs involve a power wheelchair or scooter instead, read our <a href='/medicare-coverage-for-scooters/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare scooter coverage guide</a> for the different criteria.",
     },
     {
       heading: "What will you pay for a lift chair?",
       content:
-        "After you meet the Part B deductible, Original Medicare generally pays 80% of the Medicare-approved amount for the covered seat-lift mechanism and you pay 20%. You are also responsible for the non-covered chair portion. Ask the supplier for a written breakdown before ordering so you can see the covered mechanism amount and the furniture amount separately.<br><br>A Medigap policy may help with the Part B coinsurance for the covered mechanism. Medicare Advantage plans must cover Medicare-covered DME, but their supplier networks, prior authorization rules, and cost-sharing can be different. Our <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare versus Medicare Advantage guide</a> explains those structural differences.",
+        "After you meet the Part B deductible, Original Medicare generally pays 80% of the Medicare-approved amount for the covered seat-lift mechanism and you pay 20%. You are also responsible for the non-covered chair portion. Ask the supplier for a written breakdown before ordering so you can see the covered mechanism amount and the furniture amount separately.<br><br>A Medigap policy may help with the Part B coinsurance for the covered mechanism. Medicare Advantage plans must cover Medicare-covered DME, but their supplier networks, prior authorization rules, and cost-sharing can be different. Our <a href='/original-vs-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare versus Medicare Advantage guide</a> explains those structural differences.",
     },
     {
       heading: "What should you ask the supplier and your clinician?",
@@ -38,10 +38,10 @@ const FAQ = {
     },
   ],
   relatedFaqs: [
-    { question: "Does Medicare cover oxygen therapy?", href: "/faqs/does-medicare-cover-oxygen-therapy" },
-    { question: "Does Medicare cover diabetic shoes?", href: "/faqs/does-medicare-cover-diabetic-shoes" },
-    { question: "Does Medicare cover bathroom safety devices?", href: "/faqs/does-medicare-cover-bathroom-safety-devices" },
-    { question: "Does Medicare cover skilled nursing care?", href: "/coverage/skilled-nursing" },
+    { question: "Does Medicare cover oxygen therapy?", href: "/faqs/does-medicare-cover-oxygen-therapy/" },
+    { question: "Does Medicare cover diabetic shoes?", href: "/faqs/does-medicare-cover-diabetic-shoes/" },
+    { question: "Does Medicare cover bathroom safety devices?", href: "/faqs/does-medicare-cover-bathroom-safety-devices/" },
+    { question: "Does Medicare cover skilled nursing care?", href: "/coverage/skilled-nursing/" },
   ],
   officialSources: [
     { label: "CMS: National Coverage Determination for seat-lift mechanisms", href: "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?NCDId=221" },

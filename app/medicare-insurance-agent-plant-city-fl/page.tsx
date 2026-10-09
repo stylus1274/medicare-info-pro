@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Plant City Medicare agent help with Part D drug plans?", a: "Yes. We compare all Part D plans available in your ZIP code against your specific medications to find the plan with the lowest total drug cost for you." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Plant City", href: "/local-medicare-agent-plant-city" },
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Medicare Insurance Agent Seffner", href: "/medicare-insurance-agent-seffner-fl" },
-          { label: "Part D Drug Plans", href: "/part-d" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Plant City", href: "/local-medicare-agent-plant-city/" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Medicare Insurance Agent Seffner", href: "/medicare-insurance-agent-seffner-fl/" },
+          { label: "Part D Drug Plans", href: "/medicare-part-d/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

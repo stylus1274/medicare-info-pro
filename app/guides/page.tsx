@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "In-Depth Medicare Guides | MedicareInfoPro",
     description:
       "Comprehensive Medicare guides organized by topic: getting started, choosing a plan, understanding costs, enrollment timing, and more.",
-    url: "https://medicareinfopro.com/guides",
+    url: "https://medicareinfopro.com/guides/",
     siteName: "MedicareInfoPro",
     type: "website",
   },

@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Lithia", href: "/medicare-consulting-services-lithia" },
-          { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview" },
-          { label: "Medicare Agent — Fish Hawk", href: "/medicare-insurance-agent-fish-hawk-fl" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare" },
+          { label: "Medicare Consulting — Lithia", href: "/medicare-consulting-services-lithia/" },
+          { label: "Medicare Consulting — Riverview", href: "/medicare-consulting-services-riverview/" },
+          { label: "Medicare Agent — Fish Hawk", href: "/medicare-insurance-agent-fish-hawk-fl/" },
+          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
         ],
       }}
     />

@@ -71,7 +71,7 @@ export default function FaqQuestionPage({ faq }: Props) {
             <nav className="mb-7 flex flex-wrap items-center gap-2 text-sm text-blue-100" aria-label="Breadcrumb">
               <Link href="/" className="transition-colors hover:text-white">Home</Link>
               <ChevronRight size={15} aria-hidden="true" />
-              <Link href="/faq" className="transition-colors hover:text-white">Medicare FAQ</Link>
+              <Link href="/faq/" className="transition-colors hover:text-white">Medicare FAQ</Link>
               <ChevronRight size={15} aria-hidden="true" />
               <span className="text-white">{faq.category}</span>
             </nav>
@@ -132,7 +132,7 @@ export default function FaqQuestionPage({ faq }: Props) {
                 <h2 className="mt-3 text-2xl font-extrabold">Talk through your Medicare options with a licensed specialist.</h2>
                 <p className="mt-3 max-w-2xl leading-7 text-blue-100">A short conversation can help you understand the enrollment dates, coverage choices, and plan rules that apply to you. There is no cost for the review.</p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Link href="/free-consultation" className="inline-flex items-center gap-2 rounded-lg bg-[#d4af37] px-5 py-3 font-bold text-[#102149] transition-colors hover:bg-[#f4cf57]">
+                  <Link href="/get-started/" className="inline-flex items-center gap-2 rounded-lg bg-[#d4af37] px-5 py-3 font-bold text-[#102149] transition-colors hover:bg-[#f4cf57]">
                     Schedule a Free Consultation <ArrowRight size={17} aria-hidden="true" />
                   </Link>
                   <a href="tel:8136995559" className="inline-flex items-center gap-2 rounded-lg border border-white/40 px-5 py-3 font-bold text-white transition-colors hover:bg-white/10">
@@ -155,7 +155,7 @@ export default function FaqQuestionPage({ faq }: Props) {
                     </li>
                   ))}
                 </ul>
-                <Link href="/faq" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:text-[#102149]">
+                <Link href="/faq/" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:text-[#102149]">
                   Browse all FAQs <ArrowRight size={15} aria-hidden="true" />
                 </Link>
               </section>

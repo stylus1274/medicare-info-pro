@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Fish Hawk", href: "/medicare-consulting-services-fish-hawk" },
-          { label: "Medicare Consulting — Valrico", href: "/medicare-consulting-services-valrico" },
-          { label: "Medicare Agent — Lithia", href: "/medicare-insurance-agent-lithia-fl" },
-          { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida" },
+          { label: "Medicare Consulting — Fish Hawk", href: "/medicare-consulting-services-fish-hawk/" },
+          { label: "Medicare Consulting — Valrico", href: "/medicare-consulting-services-valrico/" },
+          { label: "Medicare Agent — Lithia", href: "/medicare-insurance-agent-lithia-fl/" },
+          { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida/" },
         ],
       }}
     />

@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Do you help with Medicare Part D drug plans in Sun City Center?", a: "Yes. We compare all Part D plans available in ZIP 33573 against your specific medications to find the plan with the lowest total drug cost for you." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city" },
-          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Part D Drug Plans", href: "/part-d" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city/" },
+          { label: "Medicare Consulting Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Part D Drug Plans", href: "/medicare-part-d/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

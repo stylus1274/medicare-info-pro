@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What if I already have Medicare and live in Valrico?", a: "We help existing Medicare beneficiaries review their current coverage, compare alternatives during the Annual Enrollment Period, and address problems such as unexpected bills or coverage gaps." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl" },
-          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Special Needs Plans", href: "/special-needs-plans" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Valrico", href: "/medicare-insurance-agent-valrico-fl/" },
+          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico/" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Special Needs Plans", href: "/medicare-snp-plans/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

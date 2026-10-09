@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Medicare Supplement Insurance Plans in Tampa, FL | Medicare Information Pro",
     description: "Compare Medicare Supplement (Medigap) insurance plans in Tampa, FL. Licensed specialists help you find the best Plan G, Plan N, or other Medigap plan for your needs.",
-    url: "https://medicareinfopro.com/medicare-supplement-insurance-plans-tampa",
+    url: "https://medicareinfopro.com/medicare-supplement-insurance-plans-tampa/",
     siteName: "Medicare Information Pro",
     type: "website",
   },

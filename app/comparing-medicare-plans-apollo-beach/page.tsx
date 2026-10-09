@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comparing Medicare Plans in Apollo Beach, FL",
     description: "Independent Medicare agents in Apollo Beach, FL compare every available plan to find the right fit for your doctors, prescriptions, and budget.",
-    url: "https://medicareinfopro.com/comparing-medicare-plans-apollo-beach",
+    url: "https://medicareinfopro.com/comparing-medicare-plans-apollo-beach/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/comparing-medicare-plans-apollo-beach" },

@@ -217,7 +217,7 @@ export default function MedicareAdvantageBrandonPage() {
           <nav className="text-sm text-blue-200 mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/medicare-advantage-florida" className="hover:text-white transition-colors">Medicare Advantage Florida</Link>
+            <Link href="/medicare-advantage-florida/" className="hover:text-white transition-colors">Medicare Advantage Florida</Link>
             <span className="mx-2">/</span>
             <span className="text-white">Brandon</span>
           </nav>
@@ -232,7 +232,7 @@ export default function MedicareAdvantageBrandonPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e09600] transition-colors text-lg"
             >
               Compare Plans Free
@@ -263,7 +263,7 @@ export default function MedicareAdvantageBrandonPage() {
                 Medicare Advantage plans vary widely between carriers. Some focus on low monthly premiums. Others include added benefits like dental, vision, hearing, or prescription drug coverage. Sorting through those differences on your own can be frustrating. That is where experienced, local guidance makes a real difference.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our certified agents also guide you through enrollment and applications, helping ensure everything is completed correctly and submitted on time. Visit our <Link href="/advisors" className="text-[#0d1f5c] font-semibold underline hover:text-[#f5a800] transition-colors">advisors page</Link> to meet the team.
+                Our certified agents also guide you through enrollment and applications, helping ensure everything is completed correctly and submitted on time. Visit our <Link href="/advisors/" className="text-[#0d1f5c] font-semibold underline hover:text-[#f5a800] transition-colors">advisors page</Link> to meet the team.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
@@ -345,12 +345,12 @@ export default function MedicareAdvantageBrandonPage() {
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-3">Not Sure If Medicare Advantage Is Right for You?</h3>
                 <p className="text-blue-100 leading-relaxed">
-                  Medicare Advantage is not the right choice for everyone. Some Brandon residents are better served by Original Medicare paired with a Medigap plan. Our <Link href="/comparing-medicare-plans-brandon" className="text-[#f5a800] underline hover:text-yellow-300 transition-colors">comparing Medicare plans Brandon</Link> page walks through both options side by side, and our agents can help you decide based on your specific situation.
+                  Medicare Advantage is not the right choice for everyone. Some Brandon residents are better served by Original Medicare paired with a Medigap plan. Our <Link href="/comparing-medicare-plans-brandon/" className="text-[#f5a800] underline hover:text-yellow-300 transition-colors">comparing Medicare plans Brandon</Link> page walks through both options side by side, and our agents can help you decide based on your specific situation.
                 </p>
               </div>
               <div className="shrink-0">
                 <Link
-                  href="/comparing-medicare-plans-brandon"
+                  href="/comparing-medicare-plans-brandon/"
                   className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors"
                 >
                   Compare All Options
@@ -390,12 +390,12 @@ export default function MedicareAdvantageBrandonPage() {
           <h2 className="text-2xl font-bold text-[#0d1f5c] mb-6">Related Brandon Medicare Resources</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
-              { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon" },
-              { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-              { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-              { label: "Medicare Enrollment Assistance Brandon", href: "/medicare-enrollment-assistance-brandon" },
-              { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida" },
+              { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
+              { label: "Comparing Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon/" },
+              { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+              { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+              { label: "Medicare Enrollment Assistance Brandon", href: "/medicare-enrollment-assistance-brandon/" },
+              { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida/" },
             ].map((r) => (
               <Link
                 key={r.label}
@@ -421,7 +421,7 @@ export default function MedicareAdvantageBrandonPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/free-consultation"
+              href="/get-started/"
               className="inline-flex items-center justify-center gap-2 bg-[#f5a800] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e09600] transition-colors text-lg"
             >
               Schedule Free Consultation

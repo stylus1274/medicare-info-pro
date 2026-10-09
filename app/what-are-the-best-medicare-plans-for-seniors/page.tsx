@@ -136,7 +136,7 @@ const POST = {
       type: "section" as const,
       heading: "Medigap: The Best Protection Against Large Bills",
       content:
-        "Medigap (Medicare Supplement) plans are private insurance policies that pay most or all of the costs that Original Medicare leaves behind. They do not replace Medicare; they work alongside it.\n\n<strong>Plan G is the most popular Medigap plan</strong> for people newly eligible for Medicare. It covers:\n\n<ul><li>Part A deductible ($1,676 per benefit period in 2026)</li><li>Part B coinsurance (the 20% you would otherwise owe)</li><li>Skilled nursing facility coinsurance</li><li>Foreign travel emergency coverage (up to $50,000 lifetime)</li></ul>\n\nWith Plan G, your only out-of-pocket exposure is the Part B deductible ($257 in 2026). After that, <strong>you pay nothing for covered Medicare services</strong>, no matter how much care you receive.\n\nPlan N is a lower-premium alternative that requires small copays ($20 for office visits, $50 for emergency room visits) and does not cover Part B excess charges. It is a good option for people who want lower premiums and are comfortable with modest cost-sharing.\n\n<strong>The critical enrollment window:</strong> You have a guaranteed-issue right to buy any Medigap plan at the best available rate during your 6-month Medigap Open Enrollment Period, which begins the month you turn 65 and enroll in Part B. After that window closes, insurers can medically underwrite you and may deny coverage or charge more based on health conditions. <a href='/medicare-supplement-insurance-plans-in-brandon-fl' class='text-[#1a3fa8] underline underline-offset-2'>Learn more about Medigap plan options in Florida</a>.",
+        "Medigap (Medicare Supplement) plans are private insurance policies that pay most or all of the costs that Original Medicare leaves behind. They do not replace Medicare; they work alongside it.\n\n<strong>Plan G is the most popular Medigap plan</strong> for people newly eligible for Medicare. It covers:\n\n<ul><li>Part A deductible ($1,676 per benefit period in 2026)</li><li>Part B coinsurance (the 20% you would otherwise owe)</li><li>Skilled nursing facility coinsurance</li><li>Foreign travel emergency coverage (up to $50,000 lifetime)</li></ul>\n\nWith Plan G, your only out-of-pocket exposure is the Part B deductible ($257 in 2026). After that, <strong>you pay nothing for covered Medicare services</strong>, no matter how much care you receive.\n\nPlan N is a lower-premium alternative that requires small copays ($20 for office visits, $50 for emergency room visits) and does not cover Part B excess charges. It is a good option for people who want lower premiums and are comfortable with modest cost-sharing.\n\n<strong>The critical enrollment window:</strong> You have a guaranteed-issue right to buy any Medigap plan at the best available rate during your 6-month Medigap Open Enrollment Period, which begins the month you turn 65 and enroll in Part B. After that window closes, insurers can medically underwrite you and may deny coverage or charge more based on health conditions. <a href='/medicare-supplement-insurance-plans-in-brandon-fl/' class='text-[#1a3fa8] underline underline-offset-2'>Learn more about Medigap plan options in Florida</a>.",
     },
     {
       type: "section" as const,
@@ -148,7 +148,7 @@ const POST = {
       type: "summary" as const,
       heading: "How to Choose the Right Plan for You",
       content:
-        "Use this framework to narrow down your options:\n\n<ul><li><strong>You travel frequently or split time between states:</strong> Original Medicare + Medigap Plan G + Part D. No network to worry about anywhere in the country.</li><li><strong>You are generally healthy and want low monthly costs:</strong> Medicare Advantage with a $0 or low-premium plan. Make sure your doctors are in-network.</li><li><strong>You have complex health needs or see multiple specialists:</strong> Original Medicare + Medigap Plan G. Predictable costs and no referral requirements.</li><li><strong>You want dental, vision, and hearing coverage:</strong> Medicare Advantage plans typically include these. Medigap does not.</li><li><strong>You are in a rural area with limited provider networks:</strong> Original Medicare + Medigap may be more practical if Medicare Advantage networks are thin in your area.</li></ul>\n\nThe best way to make this decision is to <strong>compare actual plans available in your specific ZIP code</strong> with your specific doctors and medications in mind. Our licensed specialists do this comparison for free. <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a no-obligation consultation</a> to get a personalized recommendation.",
+        "Use this framework to narrow down your options:\n\n<ul><li><strong>You travel frequently or split time between states:</strong> Original Medicare + Medigap Plan G + Part D. No network to worry about anywhere in the country.</li><li><strong>You are generally healthy and want low monthly costs:</strong> Medicare Advantage with a $0 or low-premium plan. Make sure your doctors are in-network.</li><li><strong>You have complex health needs or see multiple specialists:</strong> Original Medicare + Medigap Plan G. Predictable costs and no referral requirements.</li><li><strong>You want dental, vision, and hearing coverage:</strong> Medicare Advantage plans typically include these. Medigap does not.</li><li><strong>You are in a rural area with limited provider networks:</strong> Original Medicare + Medigap may be more practical if Medicare Advantage networks are thin in your area.</li></ul>\n\nThe best way to make this decision is to <strong>compare actual plans available in your specific ZIP code</strong> with your specific doctors and medications in mind. Our licensed specialists do this comparison for free. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a no-obligation consultation</a> to get a personalized recommendation.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "How Much Does Health Insurance Cost Per Month in Florida?",
-      href: "/how-much-does-health-insurance-cost-per-month-in-florida",
+      href: "/how-much-does-health-insurance-cost-per-month-in-florida/",
       category: "Costs" as const,
     },
     {
       title: "Best Medicare Advantage Plans in Florida",
-      href: "/best-medicare-advantage-plans-florida",
+      href: "/best-medicare-advantage-plans-florida/",
       category: "Plans" as const,
     },
     {
       title: "Medicare Supplement Insurance Plans in Brandon, FL",
-      href: "/medicare-supplement-insurance-plans-in-brandon-fl",
+      href: "/medicare-supplement-insurance-plans-in-brandon-fl/",
       category: "Supplements" as const,
     },
   ],

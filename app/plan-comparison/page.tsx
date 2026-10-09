@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Medicare Plan Comparison Tool | MedicareInfoPro",
     description:
       "Compare Original Medicare, Medicare Advantage, and Medigap plans side by side with our interactive 2026 comparison tool.",
-    url: "https://medicareinfopro.com/plan-comparison",
+    url: "https://medicareinfopro.com/plan-comparison/",
     siteName: "MedicareInfoPro",
     type: "website",
   },

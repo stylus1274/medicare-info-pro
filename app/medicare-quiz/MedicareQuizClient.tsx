@@ -286,9 +286,9 @@ const RESULTS: Record<string, Result> = {
       "Higher monthly premium than Advantage, but very low out-of-pocket costs",
     ],
     nextSteps: [
-      { label: "Original vs. Advantage Comparison", href: "/original-vs-advantage" },
-      { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-      { label: "Understanding Part D", href: "/understanding-part-d" },
+      { label: "Original vs. Advantage Comparison", href: "/original-vs-advantage/" },
+      { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+      { label: "Understanding Part D", href: "/understanding-part-d/" },
     ],
   },
   advantage: {
@@ -310,9 +310,9 @@ const RESULTS: Record<string, Result> = {
       "Annual out-of-pocket cap protects against catastrophic costs",
     ],
     nextSteps: [
-      { label: "Original vs. Advantage Comparison", href: "/original-vs-advantage" },
-      { label: "Costs at a Glance", href: "/costs-at-a-glance" },
-      { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+      { label: "Original vs. Advantage Comparison", href: "/original-vs-advantage/" },
+      { label: "Costs at a Glance", href: "/costs-at-a-glance/" },
+      { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
     ],
   },
   medigap: {
@@ -334,9 +334,9 @@ const RESULTS: Record<string, Result> = {
       "Add a standalone Part D plan for prescription drug coverage",
     ],
     nextSteps: [
-      { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement" },
-      { label: "Understanding Part D", href: "/understanding-part-d" },
-      { label: "Costs at a Glance", href: "/costs-at-a-glance" },
+      { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/" },
+      { label: "Understanding Part D", href: "/understanding-part-d/" },
+      { label: "Costs at a Glance", href: "/costs-at-a-glance/" },
     ],
   },
   partd: {
@@ -358,9 +358,9 @@ const RESULTS: Record<string, Result> = {
       "You can switch plans every year during the Annual Enrollment Period (Oct 15 - Dec 7)",
     ],
     nextSteps: [
-      { label: "Understanding Part D", href: "/understanding-part-d" },
-      { label: "Costs at a Glance", href: "/costs-at-a-glance" },
-      { label: "Enrollment Timeline", href: "/enrollment-timeline" },
+      { label: "Understanding Part D", href: "/understanding-part-d/" },
+      { label: "Costs at a Glance", href: "/costs-at-a-glance/" },
+      { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
     ],
   },
 };
@@ -666,7 +666,7 @@ export default function MedicareQuizClient() {
           <div className="inline-block bg-[#f5a800] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Free · 2 Minutes · No Sign-Up
           </div>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Medicare Quiz" }]} className="mb-4" />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources/" }, { label: "Medicare Quiz" }]} className="mb-4" />
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
             Which Medicare Path Is Right for You?
           </h1>

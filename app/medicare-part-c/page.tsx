@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Medicare Part C (Medicare Advantage) Explained",
     description:
       "Medicare Part C is Medicare Advantage. Learn how it works, plan types (HMO, PPO, SNP), what it covers, 2026 costs, and how to enroll.",
-    url: "https://medicareinfopro.com/medicare-part-c",
+    url: "https://medicareinfopro.com/medicare-part-c/",
     siteName: "Medicare Information Pro",
     type: "article",
   },

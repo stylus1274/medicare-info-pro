@@ -84,12 +84,12 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon" },
-          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Original vs. Advantage", href: "/original-vs-advantage" },
-          { label: "Plan Comparison Tool", href: "/plan-comparison" },
+          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
+          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico/" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Original vs. Advantage", href: "/original-vs-advantage/" },
+          { label: "Plan Comparison Tool", href: "/plan-comparison/" },
         ],
       }}
     />

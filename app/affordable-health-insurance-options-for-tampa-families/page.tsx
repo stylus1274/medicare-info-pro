@@ -142,13 +142,13 @@ const POST = {
       type: "section" as const,
       heading: "Planning the Transition to Medicare at 65",
       content:
-        "For Tampa family members approaching 65, planning the transition from current coverage to Medicare is important to avoid gaps in coverage and enrollment penalties.\n\n<strong>Key transition planning points:</strong>\n\n<ul><li>Medicare eligibility begins at 65 regardless of whether you are still working</li><li>If you have employer coverage from an employer with 20 or more employees, you can delay Part B without penalty while you remain covered by the employer plan</li><li>If you have marketplace coverage, you must enroll in Medicare when you become eligible or you will face a Part B late enrollment penalty</li><li>Medigap Open Enrollment (the 6-month window when you can buy any Medigap plan without medical underwriting) begins when you are 65 and enrolled in Part B</li></ul>\n\nFor a full guide to Medicare enrollment timing, see our article on <a href='/blog/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide' class='text-[#1a3fa8] underline underline-offset-2'>how to sign up for Medicare</a>.\n\nFor information on how Medicare costs compare to marketplace coverage, see our guide on <a href='/blog/how-much-does-health-insurance-cost-per-month-in-florida' class='text-[#1a3fa8] underline underline-offset-2'>how much health insurance costs in Florida</a>.",
+        "For Tampa family members approaching 65, planning the transition from current coverage to Medicare is important to avoid gaps in coverage and enrollment penalties.\n\n<strong>Key transition planning points:</strong>\n\n<ul><li>Medicare eligibility begins at 65 regardless of whether you are still working</li><li>If you have employer coverage from an employer with 20 or more employees, you can delay Part B without penalty while you remain covered by the employer plan</li><li>If you have marketplace coverage, you must enroll in Medicare when you become eligible or you will face a Part B late enrollment penalty</li><li>Medigap Open Enrollment (the 6-month window when you can buy any Medigap plan without medical underwriting) begins when you are 65 and enrolled in Part B</li></ul>\n\nFor a full guide to Medicare enrollment timing, see our article on <a href='/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/' class='text-[#1a3fa8] underline underline-offset-2'>how to sign up for Medicare</a>.\n\nFor information on how Medicare costs compare to marketplace coverage, see our guide on <a href='/how-much-does-health-insurance-cost-per-month-in-florida/' class='text-[#1a3fa8] underline underline-offset-2'>how much health insurance costs in Florida</a>.",
     },
     {
       type: "summary" as const,
       heading: "The Bottom Line on Affordable Health Insurance for Tampa Families",
       content:
-        "Tampa families have more affordable health insurance options than many realize. Here is the quick guide:\n\n<ul><li><strong>ACA marketplace plans</strong> with premium tax credits are the primary option for families without employer coverage; many qualify for $0 to $100/month premiums</li><li><strong>Florida Medicaid</strong> covers adults earning up to 138% FPL at no cost since the 2023 expansion</li><li><strong>Florida KidCare (CHIP)</strong> covers children in families earning up to 210% FPL for $15-$20/month per child</li><li><strong>Employer coverage</strong> is often the most affordable option for working families; check whether family coverage costs more than 9.02% of income (if so, family members may qualify for marketplace subsidies)</li><li><strong>Short-term plans</strong> are a risky bridge option; not appropriate for families with pre-existing conditions or regular prescription needs</li><li><strong>Medicare at 65</strong> requires advance planning to avoid penalties and coverage gaps</li></ul>\n\nFor personalized guidance on Medicare options for family members approaching 65, <a href='/free-consultation' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with a licensed specialist.",
+        "Tampa families have more affordable health insurance options than many realize. Here is the quick guide:\n\n<ul><li><strong>ACA marketplace plans</strong> with premium tax credits are the primary option for families without employer coverage; many qualify for $0 to $100/month premiums</li><li><strong>Florida Medicaid</strong> covers adults earning up to 138% FPL at no cost since the 2023 expansion</li><li><strong>Florida KidCare (CHIP)</strong> covers children in families earning up to 210% FPL for $15-$20/month per child</li><li><strong>Employer coverage</strong> is often the most affordable option for working families; check whether family coverage costs more than 9.02% of income (if so, family members may qualify for marketplace subsidies)</li><li><strong>Short-term plans</strong> are a risky bridge option; not appropriate for families with pre-existing conditions or regular prescription needs</li><li><strong>Medicare at 65</strong> requires advance planning to avoid penalties and coverage gaps</li></ul>\n\nFor personalized guidance on Medicare options for family members approaching 65, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with a licensed specialist.",
     },
     {
       type: "faq" as const,
@@ -189,17 +189,17 @@ const POST = {
   relatedPosts: [
     {
       title: "How Much Does Health Insurance Cost Per Month in Florida?",
-      href: "/how-much-does-health-insurance-cost-per-month-in-florida",
+      href: "/how-much-does-health-insurance-cost-per-month-in-florida/",
       category: "Costs" as const,
     },
     {
       title: "How to Sign Up for Medicare Without an Agent",
-      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide",
+      href: "/how-to-sign-up-for-medicare-without-an-agent-step-by-step-guide/",
       category: "Enrollment" as const,
     },
     {
       title: "Why Is Health Insurance So Expensive in Florida?",
-      href: "/why-is-health-insurance-so-expensive-in-florida",
+      href: "/why-is-health-insurance-so-expensive-in-florida/",
       category: "Costs" as const,
     },
   ],

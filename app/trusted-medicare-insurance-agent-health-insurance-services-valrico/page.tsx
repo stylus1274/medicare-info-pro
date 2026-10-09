@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico" },
-          { label: "Health Insurance Broker Valrico", href: "/health-insurance-broker-valrico" },
-          { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico" },
-          { label: "Medicare Supplement Plans Valrico", href: "/medicare-supplement-insurance-plans-valrico" },
+          { label: "Medicare Agent Valrico", href: "/medicare-agent-valrico/" },
+          { label: "Health Insurance Broker Valrico", href: "/health-insurance-broker-valrico/" },
+          { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico/" },
+          { label: "Medicare Supplement Plans Valrico", href: "/medicare-supplement-insurance-plans-valrico/" },
         ],
       }}
     />

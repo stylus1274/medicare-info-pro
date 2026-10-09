@@ -97,7 +97,7 @@ const IRMAA_2025 = [
 const FAQ_ITEMS = [
   {
     q: "Can I delay Part B if I have employer coverage?",
-    a: "Yes. If you or your spouse is actively working and covered by a group health plan from an employer with 20 or more employees, you can delay Part B without penalty. You will have a Special Enrollment Period to sign up within 8 months of losing that coverage or stopping work, whichever comes first. See our <a href='/enrollment-timeline' class='text-blue-700 underline'>Medicare Enrollment Timeline</a> for full details.",
+    a: "Yes. If you or your spouse is actively working and covered by a group health plan from an employer with 20 or more employees, you can delay Part B without penalty. You will have a Special Enrollment Period to sign up within 8 months of losing that coverage or stopping work, whichever comes first. See our <a href='/enrollment-timeline/' class='text-blue-700 underline'>Medicare Enrollment Timeline</a> for full details.",
   },
   {
     q: "What is the Part B late enrollment penalty?",
@@ -109,11 +109,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "Does Part B cover prescription drugs?",
-    a: "Part B covers a limited set of drugs that are administered in a clinical setting, such as chemotherapy drugs given by infusion, certain injectable medications, and drugs used with durable medical equipment like nebulizers. It does not cover most prescription drugs you take at home. Those are covered by <a href='/understanding-part-d' class='text-blue-700 underline'>Medicare Part D</a>.",
+    a: "Part B covers a limited set of drugs that are administered in a clinical setting, such as chemotherapy drugs given by infusion, certain injectable medications, and drugs used with durable medical equipment like nebulizers. It does not cover most prescription drugs you take at home. Those are covered by <a href='/understanding-part-d/' class='text-blue-700 underline'>Medicare Part D</a>.",
   },
   {
     q: "What is the difference between Part A and Part B?",
-    a: "Part A is hospital insurance, covering inpatient stays, skilled nursing facility care, hospice, and some home health services. Part B is medical insurance, covering doctor visits, outpatient care, preventive services, and durable medical equipment. Together they make up Original Medicare. See our <a href='/medicare-part-a' class='text-blue-700 underline'>Medicare Part A</a> page for a full breakdown.",
+    a: "Part A is hospital insurance, covering inpatient stays, skilled nursing facility care, hospice, and some home health services. Part B is medical insurance, covering doctor visits, outpatient care, preventive services, and durable medical equipment. Together they make up Original Medicare. See our <a href='/medicare-part-a/' class='text-blue-700 underline'>Medicare Part A</a> page for a full breakdown.",
   },
   {
     q: "Are preventive services really free under Part B?",
@@ -122,12 +122,12 @@ const FAQ_ITEMS = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Medicare Part A: Hospital Insurance", href: "/medicare-part-a", desc: "Inpatient hospital stays, skilled nursing, and hospice" },
-  { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The complete beginner's guide to all parts of Medicare" },
-  { label: "Understanding Part D", href: "/understanding-part-d", desc: "Prescription drug coverage explained" },
-  { label: "Enrollment Timeline", href: "/enrollment-timeline", desc: "Key dates and deadlines for enrolling in Medicare" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums, deductibles, and coinsurance" },
-  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "How Medigap covers the 20% Part B coinsurance" },
+  { label: "Medicare Part A: Hospital Insurance", href: "/medicare-part-a/", desc: "Inpatient hospital stays, skilled nursing, and hospice" },
+  { label: "Medicare 101 Overview", href: "/medicare-101/", desc: "The complete beginner's guide to all parts of Medicare" },
+  { label: "Understanding Part D", href: "/understanding-part-d/", desc: "Prescription drug coverage explained" },
+  { label: "Enrollment Timeline", href: "/enrollment-timeline/", desc: "Key dates and deadlines for enrolling in Medicare" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2026 premiums, deductibles, and coinsurance" },
+  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "How Medigap covers the 20% Part B coinsurance" },
 ];
 
 const TOC = [
@@ -154,7 +154,7 @@ export default function MedicarePartBClient() {
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/medicare-101" className="hover:text-white/80 transition-colors">Medicare 101</Link>
+            <Link href="/medicare-101/" className="hover:text-white/80 transition-colors">Medicare 101</Link>
             <ChevronRight size={12} />
             <span className="text-white/70">Part B</span>
           </nav>
@@ -202,13 +202,13 @@ export default function MedicarePartBClient() {
                 What Is Medicare Part B?
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                Medicare Part B is the medical insurance portion of Original Medicare. It works alongside <Link href="/medicare-part-a" className="text-blue-700 underline hover:text-blue-900">Medicare Part A</Link> to form the foundation of your Medicare coverage. While Part A handles inpatient hospital care, Part B covers the outpatient and medical services you use on a day-to-day basis.
+                Medicare Part B is the medical insurance portion of Original Medicare. It works alongside <Link href="/medicare-part-a/" className="text-blue-700 underline hover:text-blue-900">Medicare Part A</Link> to form the foundation of your Medicare coverage. While Part A handles inpatient hospital care, Part B covers the outpatient and medical services you use on a day-to-day basis.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
                 Unlike Part A, which is free for most people, Part B requires a monthly premium. In 2026, the standard premium is $202.90 per month. This amount is typically deducted directly from your Social Security benefit if you are receiving it. If you are not yet receiving Social Security, you will receive a bill from Medicare.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                One of the most important things to understand about Part B is that it has no out-of-pocket maximum. After you meet the annual deductible, you pay 20% of the Medicare-approved amount for most covered services, with no cap. This is why many people choose to add a <Link href="/do-i-need-a-supplement" className="text-blue-700 underline hover:text-blue-900">Medigap supplement</Link> or enroll in a Medicare Advantage plan to limit their exposure.
+                One of the most important things to understand about Part B is that it has no out-of-pocket maximum. After you meet the annual deductible, you pay 20% of the Medicare-approved amount for most covered services, with no cap. This is why many people choose to add a <Link href="/do-i-need-a-supplement/" className="text-blue-700 underline hover:text-blue-900">Medigap supplement</Link> or enroll in a Medicare Advantage plan to limit their exposure.
               </p>
             </section>
 
@@ -249,9 +249,9 @@ export default function MedicarePartBClient() {
                 <Info size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-amber-900 leading-relaxed">
                   Dental, vision, and hearing are the three most common gaps people discover after enrolling in Original Medicare. Many Medicare Advantage plans include these benefits. See our coverage pages for{" "}
-                  <Link href="/coverage/dental" className="underline font-semibold">dental</Link>,{" "}
-                  <Link href="/coverage/vision" className="underline font-semibold">vision</Link>, and{" "}
-                  <Link href="/coverage/hearing-aids" className="underline font-semibold">hearing aids</Link> for full details.
+                  <Link href="/coverage/dental/" className="underline font-semibold">dental</Link>,{" "}
+                  <Link href="/coverage/vision/" className="underline font-semibold">vision</Link>, and{" "}
+                  <Link href="/coverage/hearing-aids/" className="underline font-semibold">hearing aids</Link> for full details.
                 </p>
               </div>
             </section>
@@ -282,7 +282,7 @@ export default function MedicarePartBClient() {
                 </table>
               </div>
               <p className="text-xs text-gray-400 mt-2">
-                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part A, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
+                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part A, see our <Link href="/costs-at-a-glance/" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
               </p>
             </section>
 
@@ -337,7 +337,7 @@ export default function MedicarePartBClient() {
               <div className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-5 py-4">
                 <AlertCircle size={16} className="text-red-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-red-900 leading-relaxed">
-                  COBRA and retiree health coverage do not qualify as active employer coverage for the purpose of delaying Part B. If you rely on COBRA after leaving a job, you should enroll in Part B during your IEP or SEP to avoid the permanent penalty. See our <Link href="/enrollment-timeline" className="underline font-semibold hover:text-red-900">Enrollment Timeline</Link> for the full breakdown.
+                  COBRA and retiree health coverage do not qualify as active employer coverage for the purpose of delaying Part B. If you rely on COBRA after leaving a job, you should enroll in Part B during your IEP or SEP to avoid the permanent penalty. See our <Link href="/enrollment-timeline/" className="underline font-semibold hover:text-red-900">Enrollment Timeline</Link> for the full breakdown.
                 </p>
               </div>
             </section>
@@ -357,13 +357,13 @@ export default function MedicarePartBClient() {
                 <div className="rounded-xl border border-gray-100 shadow-sm px-5 py-5">
                   <p className="text-sm font-bold text-gray-900 mb-2">Medigap Supplement Plans</p>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    Medigap plans (also called Medicare Supplement Insurance) pay after Original Medicare pays, covering some or all of your Part B coinsurance depending on the plan. Plan G is the most comprehensive option available to new enrollees. See our <Link href="/do-i-need-a-supplement" className="text-blue-700 underline">Do I Need a Supplement?</Link> guide.
+                    Medigap plans (also called Medicare Supplement Insurance) pay after Original Medicare pays, covering some or all of your Part B coinsurance depending on the plan. Plan G is the most comprehensive option available to new enrollees. See our <Link href="/do-i-need-a-supplement/" className="text-blue-700 underline">Do I Need a Supplement?</Link> guide.
                   </p>
                 </div>
                 <div className="rounded-xl border border-gray-100 shadow-sm px-5 py-5">
                   <p className="text-sm font-bold text-gray-900 mb-2">Medicare Advantage Plans</p>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    Medicare Advantage plans replace Original Medicare and typically have fixed copays instead of 20% coinsurance, plus an annual out-of-pocket maximum. They often include extra benefits like dental, vision, and hearing. See our <Link href="/original-vs-advantage" className="text-blue-700 underline">Original vs. Advantage</Link> comparison.
+                    Medicare Advantage plans replace Original Medicare and typically have fixed copays instead of 20% coinsurance, plus an annual out-of-pocket maximum. They often include extra benefits like dental, vision, and hearing. See our <Link href="/original-vs-advantage/" className="text-blue-700 underline">Original vs. Advantage</Link> comparison.
                   </p>
                 </div>
               </div>
@@ -396,7 +396,7 @@ export default function MedicarePartBClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -453,7 +453,7 @@ export default function MedicarePartBClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -500,7 +500,7 @@ export default function MedicarePartBClient() {
               Call 813-789-7700
             </a>
             <Link
-              href="/medicare-quiz"
+              href="/medicare-quiz/"
               className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors"
             >
               Take the Medicare Quiz

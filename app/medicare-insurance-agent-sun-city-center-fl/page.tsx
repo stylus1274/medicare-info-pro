@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Sun City Center Medicare agent help with Part D drug plans?", a: "Yes. We compare all Part D plans available in ZIP 33573 against your specific medications to find the plan with the lowest total drug cost for you." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city" },
-          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city" },
-          { label: "Medicare Insurance Agent Ruskin", href: "/medicare-insurance-agent-ruskin-fl" },
-          { label: "Part D Drug Plans", href: "/part-d" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city/" },
+          { label: "Medicare Agent Sun City", href: "/medicare-agent-sun-city/" },
+          { label: "Medicare Insurance Agent Ruskin", href: "/medicare-insurance-agent-ruskin-fl/" },
+          { label: "Part D Drug Plans", href: "/medicare-part-d/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

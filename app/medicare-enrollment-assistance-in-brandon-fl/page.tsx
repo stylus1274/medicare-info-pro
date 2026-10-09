@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can I get enrollment help if I missed my Medicare enrollment window in Brandon?", a: "Yes. If you missed your Initial Enrollment Period, you may qualify for a Special Enrollment Period depending on your circumstances. We help Brandon residents understand their options and minimize any penalties." },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl" },
-          { label: "Still Working?", href: "/still-working" },
-          { label: "Enrollment Timeline", href: "/enrollment-timeline" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Insurance Agent Brandon", href: "/medicare-insurance-agent-brandon-fl/" },
+          { label: "Still Working?", href: "/still-working/" },
+          { label: "Enrollment Timeline", href: "/enrollment-timeline/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

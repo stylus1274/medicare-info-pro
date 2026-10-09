@@ -19,7 +19,7 @@ const articleSchema = {
     "@type": "Person",
     name: "Greg Wohl",
     jobTitle: "Licensed Medicare Specialist",
-    url: "https://medicareinfopro.com/greg-wohl",
+    url: "https://medicareinfopro.com/greg-wohl/",
   },
   publisher: {
     "@type": "Organization",
@@ -158,12 +158,12 @@ const POST = {
     {
       type: "section" as const,
       heading: "What Is the Medicare Annual Enrollment Period?",
-      content: `The Medicare Annual Enrollment Period, commonly called AEP or Medicare Open Enrollment, is the fall window when people with Medicare can make certain health and drug plan changes. It runs from <strong>October 15 through December 7 every year</strong>. For the next cycle, changes you submit by December 7, 2026 take effect on January 1, 2027.<br /><br />This is not a window to sign up for Medicare Part A or Part B for the first time. Instead, it is primarily the time to review and change your <a href='/medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage coverage</a> or Medicare Part D prescription drug coverage. Medicare plans can change their premiums, copays, drug formularies, provider networks, and supplemental benefits from one year to the next, so a plan that worked well this year may not be the best fit for the next one.<br /><br />The official <a href='https://www.medicare.gov/health-drug-plans/open-enrollment' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Open Enrollment guidance</a> confirms the annual dates and explains that the plan must receive your enrollment request by December 7.`,
+      content: `The Medicare Annual Enrollment Period, commonly called AEP or Medicare Open Enrollment, is the fall window when people with Medicare can make certain health and drug plan changes. It runs from <strong>October 15 through December 7 every year</strong>. For the next cycle, changes you submit by December 7, 2026 take effect on January 1, 2027.<br /><br />This is not a window to sign up for Medicare Part A or Part B for the first time. Instead, it is primarily the time to review and change your <a href='/medicare-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage coverage</a> or Medicare Part D prescription drug coverage. Medicare plans can change their premiums, copays, drug formularies, provider networks, and supplemental benefits from one year to the next, so a plan that worked well this year may not be the best fit for the next one.<br /><br />The official <a href='https://www.medicare.gov/health-drug-plans/open-enrollment' target='_blank' rel='noopener noreferrer' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Open Enrollment guidance</a> confirms the annual dates and explains that the plan must receive your enrollment request by December 7.`,
     },
     {
       type: "section" as const,
       heading: "What You Can Change During AEP",
-      content: `During AEP, you can join, drop, or switch to another Medicare Advantage plan, with or without prescription drug coverage. You can also move from <a href='/original-vs-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare to Medicare Advantage</a>, or leave Medicare Advantage and return to Original Medicare.<br /><br />If you are in Original Medicare, you can join, switch, or drop a stand-alone Part D plan. If you leave a Medicare Advantage plan that includes drug coverage and return to Original Medicare, you may need to choose a separate Part D plan so you do not create a gap in prescription coverage. Review the plan's drug list carefully, especially if you take brand-name or specialty medications. Our <a href='/coverage/prescription-drugs' class='text-[#1a3fa8] underline underline-offset-2'>Medicare prescription drug coverage guide</a> explains the role Part D plays in your overall coverage.<br /><br />You do not have to make a change just because AEP is open. If your current plan is still offered and continues to fit your situation, keeping it can be the right decision.` ,
+      content: `During AEP, you can join, drop, or switch to another Medicare Advantage plan, with or without prescription drug coverage. You can also move from <a href='/original-vs-advantage/' class='text-[#1a3fa8] underline underline-offset-2'>Original Medicare to Medicare Advantage</a>, or leave Medicare Advantage and return to Original Medicare.<br /><br />If you are in Original Medicare, you can join, switch, or drop a stand-alone Part D plan. If you leave a Medicare Advantage plan that includes drug coverage and return to Original Medicare, you may need to choose a separate Part D plan so you do not create a gap in prescription coverage. Review the plan's drug list carefully, especially if you take brand-name or specialty medications. Our <a href='/coverage/prescription-drugs/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare prescription drug coverage guide</a> explains the role Part D plays in your overall coverage.<br /><br />You do not have to make a change just because AEP is open. If your current plan is still offered and continues to fit your situation, keeping it can be the right decision.` ,
     },
     {
       type: "section" as const,
@@ -178,12 +178,12 @@ const POST = {
     {
       type: "section" as const,
       heading: "Be Careful When Moving Back to Original Medicare",
-      content: `Returning to Original Medicare during AEP can be a good fit for some people, particularly those who want broad provider access. However, it may create two additional decisions. First, you may need a stand-alone Part D plan. Second, you may want to explore Medicare Supplement Insurance, also known as Medigap, to help with Original Medicare's deductibles and coinsurance.<br /><br />AEP does not create a broad guaranteed right to buy a Medigap policy. In Florida and many other states, insurers can use medical underwriting outside a protected enrollment or guaranteed-issue window. Read our <a href='/medigap-open-enrollment' class='text-[#1a3fa8] underline underline-offset-2'>Medigap Open Enrollment guide</a> before assuming a supplement will be available after you leave Medicare Advantage. This timing issue is one of the most important items to resolve before making a switch.` ,
+      content: `Returning to Original Medicare during AEP can be a good fit for some people, particularly those who want broad provider access. However, it may create two additional decisions. First, you may need a stand-alone Part D plan. Second, you may want to explore Medicare Supplement Insurance, also known as Medigap, to help with Original Medicare's deductibles and coinsurance.<br /><br />AEP does not create a broad guaranteed right to buy a Medigap policy. In Florida and many other states, insurers can use medical underwriting outside a protected enrollment or guaranteed-issue window. Read our <a href='/medigap-open-enrollment/' class='text-[#1a3fa8] underline underline-offset-2'>Medigap Open Enrollment guide</a> before assuming a supplement will be available after you leave Medicare Advantage. This timing issue is one of the most important items to resolve before making a switch.` ,
     },
     {
       type: "section" as const,
       heading: "What Happens If You Miss the December 7 Deadline?",
-      content: `If you miss the AEP deadline, you generally keep your current Medicare Advantage or Part D coverage for the next year, unless you qualify for a Special Enrollment Period because of a qualifying life event. Examples can include moving, losing other qualifying coverage, becoming eligible for Medicaid or Extra Help, or certain plan changes.<br /><br />If you are already enrolled in Medicare Advantage on January 1, a separate <a href='/faqs/medicare-advantage-open-enrollment' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage Open Enrollment Period</a> runs from January 1 through March 31. That window is more limited. It lets eligible Medicare Advantage members switch to another Medicare Advantage plan or return to Original Medicare, but it is not a second AEP for everyone.<br /><br />If your concern is Part D coverage or a potential late-enrollment penalty, review our FAQ on the <a href='/faqs/medicare-part-d-late-enrollment-penalty' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D late-enrollment penalty</a> before dropping drug coverage.` ,
+      content: `If you miss the AEP deadline, you generally keep your current Medicare Advantage or Part D coverage for the next year, unless you qualify for a Special Enrollment Period because of a qualifying life event. Examples can include moving, losing other qualifying coverage, becoming eligible for Medicaid or Extra Help, or certain plan changes.<br /><br />If you are already enrolled in Medicare Advantage on January 1, a separate <a href='/faqs/medicare-advantage-open-enrollment/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage Open Enrollment Period</a> runs from January 1 through March 31. That window is more limited. It lets eligible Medicare Advantage members switch to another Medicare Advantage plan or return to Original Medicare, but it is not a second AEP for everyone.<br /><br />If your concern is Part D coverage or a potential late-enrollment penalty, review our FAQ on the <a href='/faqs/medicare-part-d-late-enrollment-penalty/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Part D late-enrollment penalty</a> before dropping drug coverage.` ,
     },
     {
       type: "summary" as const,
@@ -227,22 +227,22 @@ const POST = {
   relatedPosts: [
     {
       title: "Medigap Open Enrollment: What You Need to Know",
-      href: "/medigap-open-enrollment",
+      href: "/medigap-open-enrollment/",
       category: "Supplements" as const,
     },
     {
       title: "Medicare Advantage Open Enrollment Period FAQ",
-      href: "/faqs/medicare-advantage-open-enrollment",
+      href: "/faqs/medicare-advantage-open-enrollment/",
       category: "Enrollment" as const,
     },
     {
       title: "What Is the Medicare Part D Late Enrollment Penalty?",
-      href: "/faqs/medicare-part-d-late-enrollment-penalty",
+      href: "/faqs/medicare-part-d-late-enrollment-penalty/",
       category: "Part D" as const,
     },
     {
       title: "Original Medicare vs. Medicare Advantage: A Comparison",
-      href: "/original-vs-advantage",
+      href: "/original-vs-advantage/",
       category: "Plans" as const,
     },
   ],

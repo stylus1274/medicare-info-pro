@@ -39,11 +39,11 @@ export default function Page() {
           { q: "Can I get a Medigap plan in Temple Terrace?", a: "Yes. Medigap plans are available in Temple Terrace and are sold by private insurers. We compare Medigap options alongside Medicare Advantage so you can make an informed decision." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement-insurance-plans-temple-terrace" },
-          { label: "Medicare Advantage", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Local Medicare Agent Valrico", href: "/local-medicare-agent-valrico/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement-insurance-plans-temple-terrace/" },
+          { label: "Medicare Advantage", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

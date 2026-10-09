@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Does Medicare Cover Dental Care?",
     description:
       "Original Medicare covers almost no routine dental care. Learn what is and isn't covered and how to fill the gap with Medicare Advantage or a standalone dental plan.",
-    url: "https://medicareinfopro.com/coverage/dental",
+    url: "https://medicareinfopro.com/coverage/dental/",
     type: "article",
     images: [
       {

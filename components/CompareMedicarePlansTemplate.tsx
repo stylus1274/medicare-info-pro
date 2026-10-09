@@ -222,7 +222,7 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                 <Phone size={16} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
               >
                 Free Plan Comparison <ArrowRight size={15} />
@@ -385,7 +385,7 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                   Unlike captive agents who only represent one company, our advisors are free to recommend any plan from any carrier. Our compensation is the same regardless of which plan you choose.
                 </p>
                 <Link
-                  href="/free-consultation"
+                  href="/get-started/"
                   className="inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#152f82] transition-colors text-sm"
                 >
                   Compare Plans With an Agent <ArrowRight size={14} />
@@ -492,12 +492,12 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
               <p className="text-gray-500 text-sm mt-1">Explore our in-depth guides to every part of Medicare.</p>
             </div>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/medicare-advantage" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Advantage Plans</Link>
-              <Link href="/medicare-supplement" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Supplement (Medigap)</Link>
-              <Link href="/medicare-part-d" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Part D Drug Coverage</Link>
-              <Link href="/original-vs-advantage" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Original Medicare vs. Advantage</Link>
-              <Link href="/medicare-part-a" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part A</Link>
-              <Link href="/medicare-part-b" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part B</Link>
+              <Link href="/medicare-advantage/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Advantage Plans</Link>
+              <Link href="/medicare-supplement/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Supplement (Medigap)</Link>
+              <Link href="/medicare-part-d/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Part D Drug Coverage</Link>
+              <Link href="/original-vs-advantage/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Original Medicare vs. Advantage</Link>
+              <Link href="/medicare-part-a/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part A</Link>
+              <Link href="/medicare-part-b/" className="inline-flex items-center gap-2 bg-[#e8edf8] text-[#1a3fa8] font-semibold px-4 py-2 rounded-xl hover:bg-[#d0daf5] transition-colors text-sm border border-[#b8c8f0]">Medicare Part B</Link>
             </div>
           </div>
         </section>
@@ -533,7 +533,7 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
                 <Phone size={17} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base"
               >
                 Schedule a Free Consultation <ArrowRight size={16} />

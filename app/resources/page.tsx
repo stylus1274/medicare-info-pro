@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Medicare Resources: Guides, FAQs & Tools | Medicare Information Pro",
     description:
       "Browse 200+ Medicare guides, FAQs, and free tools covering enrollment, costs, plan comparisons, and coverage.",
-    url: "https://medicareinfopro.com/resources",
+    url: "https://medicareinfopro.com/resources/",
     type: "website",
     images: [
       {

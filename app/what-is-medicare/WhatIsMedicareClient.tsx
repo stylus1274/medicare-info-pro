@@ -25,7 +25,7 @@ const PARTS = [
       "Some home health services",
     ],
     doesNotCover: ["Long-term custodial care", "Private-duty nursing", "Most dental and vision"],
-    href: "/medicare-part-a",
+    href: "/medicare-part-a/",
   },
   {
     letter: "B",
@@ -44,7 +44,7 @@ const PARTS = [
       "Mental health services",
     ],
     doesNotCover: ["Prescription drugs", "Routine dental, vision, hearing", "Cosmetic procedures"],
-    href: "/medicare-part-b",
+    href: "/medicare-part-b/",
   },
   {
     letter: "C",
@@ -62,7 +62,7 @@ const PARTS = [
       "May include fitness benefits",
     ],
     doesNotCover: ["Out-of-network care (HMO plans)", "Services outside plan area"],
-    href: "/medicare-advantage",
+    href: "/medicare-advantage/",
   },
   {
     letter: "D",
@@ -79,7 +79,7 @@ const PARTS = [
       "Vaccines not covered by Part B",
     ],
     doesNotCover: ["Drugs not on the formulary", "Some over-the-counter medications"],
-    href: "/understanding-part-d",
+    href: "/understanding-part-d/",
   },
 ];
 
@@ -263,7 +263,7 @@ export default function WhatIsMedicareClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Info size={12} /> Medicare 101
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "What Is Medicare" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101/" }, { label: "What Is Medicare" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               What Is Medicare?
             </h1>
@@ -278,7 +278,7 @@ export default function WhatIsMedicareClient() {
                 <Phone size={16} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20"
               >
                 Get a Free Consultation <ArrowRight size={15} />
@@ -413,7 +413,7 @@ export default function WhatIsMedicareClient() {
                 </p>
               </div>
               <Link
-                href="/do-i-need-a-supplement"
+                href="/do-i-need-a-supplement/"
                 className="shrink-0 inline-flex items-center gap-2 bg-[#1a3fa8] text-white font-semibold text-sm px-4 py-2.5 rounded-xl hover:bg-[#1535a0] transition-colors whitespace-nowrap"
               >
                 Learn About Medigap <ArrowRight size={14} />
@@ -473,7 +473,7 @@ export default function WhatIsMedicareClient() {
                   <div className="flex items-start gap-3">
                     <Info size={16} className="text-[#1a3fa8] shrink-0 mt-0.5" />
                     <p className="text-sm text-gray-600 leading-relaxed">
-                      Not sure if you qualify? We can check your eligibility in minutes. Call us at <a href="tel:8136995559" className="text-[#1a3fa8] font-semibold hover:underline">813-699-5559</a> or <Link href="/free-consultation" className="text-[#1a3fa8] font-semibold hover:underline">request a free consultation</Link>.
+                      Not sure if you qualify? We can check your eligibility in minutes. Call us at <a href="tel:8136995559" className="text-[#1a3fa8] font-semibold hover:underline">813-699-5559</a> or <Link href="/get-started/" className="text-[#1a3fa8] font-semibold hover:underline">request a free consultation</Link>.
                     </p>
                   </div>
                 </div>
@@ -519,7 +519,7 @@ export default function WhatIsMedicareClient() {
               </div>
             </div>
             <div className="mt-4 text-center">
-              <Link href="/enrollment-timeline" className="inline-flex items-center gap-2 text-[#1a3fa8] font-semibold hover:underline text-sm">
+              <Link href="/enrollment-timeline/" className="inline-flex items-center gap-2 text-[#1a3fa8] font-semibold hover:underline text-sm">
                 View the Full Enrollment Timeline <ArrowRight size={14} />
               </Link>
             </div>
@@ -602,7 +602,7 @@ export default function WhatIsMedicareClient() {
                 <Phone size={17} /> Call 813-699-5559
               </a>
               <Link
-                href="/free-consultation"
+                href="/get-started/"
                 className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base"
               >
                 Request a Consultation <ArrowRight size={16} />

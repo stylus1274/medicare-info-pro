@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Ruskin", href: "/medicare-consulting-services-ruskin" },
-          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach" },
-          { label: "Medicare Agent — Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida" },
+          { label: "Medicare Consulting — Ruskin", href: "/medicare-consulting-services-ruskin/" },
+          { label: "Medicare Consulting — Apollo Beach", href: "/medicare-consulting-services-apollo-beach/" },
+          { label: "Medicare Agent — Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Medicare Advantage Florida", href: "/medicare-advantage-florida/" },
         ],
       }}
     />

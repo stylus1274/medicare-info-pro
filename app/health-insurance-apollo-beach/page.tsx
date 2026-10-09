@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Health Insurance in Apollo Beach, FL | Medicare Information Project",
     description: "Independent agents in Apollo Beach, FL compare every health insurance option — Medicare, Marketplace, and private plans — completely free.",
-    url: "https://medicareinfopro.com/health-insurance-apollo-beach",
+    url: "https://medicareinfopro.com/health-insurance-apollo-beach/",
     type: "website",
   },
   alternates: { canonical: "https://medicareinfopro.com/health-insurance-apollo-beach" },

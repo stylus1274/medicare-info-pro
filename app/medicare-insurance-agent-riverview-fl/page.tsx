@@ -59,11 +59,11 @@ export default function Page() {
           { q: "What is the best Medicare plan in Riverview?", a: "The best plan depends on your specific doctors, medications, and budget. We compare all available options in your ZIP code and help you identify the plan that best fits your individual needs." },
         ],
         relatedLinks: [
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview" },
-          { label: "Medicare Insurance Agent Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Medicare Agent Riverview", href: "/medicare-agent-riverview/" },
+          { label: "Medicare Insurance Agent Gibsonton", href: "/medicare-insurance-agent-gibsonton-fl/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

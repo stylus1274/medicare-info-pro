@@ -110,11 +110,11 @@ const FAQ_ITEMS = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Medicare Part B: Medical Insurance", href: "/medicare-part-b", desc: "Doctor visits, outpatient care, and preventive services" },
-  { label: "Medicare 101 Overview", href: "/medicare-101", desc: "The complete beginner's guide to all parts of Medicare" },
-  { label: "Enrollment Timeline", href: "/enrollment-timeline", desc: "Key dates and deadlines for enrolling in Medicare" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2026 premiums, deductibles, and coinsurance" },
-  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "How Medigap fills Part A cost gaps" },
+  { label: "Medicare Part B: Medical Insurance", href: "/medicare-part-b/", desc: "Doctor visits, outpatient care, and preventive services" },
+  { label: "Medicare 101 Overview", href: "/medicare-101/", desc: "The complete beginner's guide to all parts of Medicare" },
+  { label: "Enrollment Timeline", href: "/enrollment-timeline/", desc: "Key dates and deadlines for enrolling in Medicare" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2026 premiums, deductibles, and coinsurance" },
+  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "How Medigap fills Part A cost gaps" },
 ];
 
 const TOC = [
@@ -141,7 +141,7 @@ export default function MedicarePartAClient() {
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/medicare-101" className="hover:text-white/80 transition-colors">Medicare 101</Link>
+            <Link href="/medicare-101/" className="hover:text-white/80 transition-colors">Medicare 101</Link>
             <ChevronRight size={12} />
             <span className="text-white/70">Part A</span>
           </nav>
@@ -189,7 +189,7 @@ export default function MedicarePartAClient() {
                 What Is Medicare Part A?
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                Medicare Part A is the hospital insurance portion of Original Medicare. It is one of the two parts of Original Medicare, alongside <Link href="/medicare-part-b" className="text-blue-700 underline hover:text-blue-900">Medicare Part B</Link>, which covers outpatient and medical services. Together, Parts A and B make up what is commonly called "Original Medicare" or "Traditional Medicare."
+                Medicare Part A is the hospital insurance portion of Original Medicare. It is one of the two parts of Original Medicare, alongside <Link href="/medicare-part-b/" className="text-blue-700 underline hover:text-blue-900">Medicare Part B</Link>, which covers outpatient and medical services. Together, Parts A and B make up what is commonly called "Original Medicare" or "Traditional Medicare."
               </p>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
                 Part A is administered by the federal government through the Centers for Medicare and Medicaid Services (CMS). It is funded primarily through payroll taxes paid by workers and employers throughout a person's working life. This is why most people who have worked at least 10 years qualify for premium-free Part A when they turn 65.
@@ -235,7 +235,7 @@ export default function MedicarePartAClient() {
               <div className="mt-4 flex items-start gap-3 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4">
                 <Info size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-amber-900 leading-relaxed">
-                  Long-term custodial care is one of the most significant gaps in Medicare coverage. If you need help with daily activities such as bathing, dressing, or eating on a long-term basis, Medicare will not pay for it. This is a key reason many people consider long-term care insurance or Medicaid planning. See our <Link href="/coverage/long-term-care" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Long-Term Care?</Link> page for a full breakdown.
+                  Long-term custodial care is one of the most significant gaps in Medicare coverage. If you need help with daily activities such as bathing, dressing, or eating on a long-term basis, Medicare will not pay for it. This is a key reason many people consider long-term care insurance or Medicaid planning. See our <Link href="/coverage/long-term-care/" className="underline font-semibold hover:text-amber-900">Does Medicare Cover Long-Term Care?</Link> page for a full breakdown.
                 </p>
               </div>
             </section>
@@ -266,7 +266,7 @@ export default function MedicarePartAClient() {
                 </table>
               </div>
               <p className="text-xs text-gray-400 mt-2">
-                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part B, see our <Link href="/costs-at-a-glance" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
+                Source: Centers for Medicare and Medicaid Services, 2026. For the full cost reference including Part B, see our <Link href="/costs-at-a-glance/" className="text-blue-700 underline hover:text-blue-900">Medicare Costs at a Glance</Link> page.
               </p>
             </section>
 
@@ -287,7 +287,7 @@ export default function MedicarePartAClient() {
               <div className="flex items-start gap-3 rounded-xl border border-blue-200 bg-blue-50 px-5 py-4">
                 <AlertCircle size={16} className="text-blue-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-blue-900 leading-relaxed">
-                  Unlike Part B, there is no late enrollment penalty for Part A if you qualify for premium-free coverage. However, if you must pay a premium for Part A and delay enrollment without a qualifying reason, a 10% penalty applies for twice the number of years you delayed. For a full enrollment timeline, see our <Link href="/enrollment-timeline" className="underline font-semibold hover:text-blue-900">Medicare Enrollment Timeline</Link>.
+                  Unlike Part B, there is no late enrollment penalty for Part A if you qualify for premium-free coverage. However, if you must pay a premium for Part A and delay enrollment without a qualifying reason, a 10% penalty applies for twice the number of years you delayed. For a full enrollment timeline, see our <Link href="/enrollment-timeline/" className="underline font-semibold hover:text-blue-900">Medicare Enrollment Timeline</Link>.
                 </p>
               </div>
             </section>
@@ -304,7 +304,7 @@ export default function MedicarePartAClient() {
                 Medicare Advantage plans may have different cost-sharing structures for inpatient hospital stays, such as a per-day copay instead of the Part A deductible. Some plans have lower out-of-pocket costs for short hospital stays; others may cost more for extended stays. Always review your plan's Summary of Benefits before enrolling.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                For a side-by-side comparison of how Original Medicare and Medicare Advantage handle hospital coverage and other benefits, see our <Link href="/original-vs-advantage" className="text-blue-700 underline hover:text-blue-900">Original Medicare vs. Medicare Advantage</Link> guide.
+                For a side-by-side comparison of how Original Medicare and Medicare Advantage handle hospital coverage and other benefits, see our <Link href="/original-vs-advantage/" className="text-blue-700 underline hover:text-blue-900">Original Medicare vs. Medicare Advantage</Link> guide.
               </p>
             </section>
 
@@ -364,7 +364,7 @@ export default function MedicarePartAClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -417,7 +417,7 @@ export default function MedicarePartAClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -464,7 +464,7 @@ export default function MedicarePartAClient() {
               Call 813-789-7700
             </a>
             <Link
-              href="/medicare-quiz"
+              href="/medicare-quiz/"
               className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors"
             >
               Take the Medicare Quiz

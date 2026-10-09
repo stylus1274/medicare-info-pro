@@ -108,11 +108,11 @@ const FAQ_ITEMS = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Medicare Part A: Hospital Insurance", href: "/medicare-part-a", desc: "Inpatient hospital, skilled nursing, and hospice coverage" },
-  { label: "Medicare Part B: Medical Insurance", href: "/medicare-part-b", desc: "Doctor visits, outpatient care, and preventive services" },
-  { label: "Medicare Part D: Drug Coverage", href: "/medicare-part-d", desc: "Prescription drug plans and the $2,000 out-of-pocket cap" },
-  { label: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage", desc: "Side-by-side comparison to help you choose" },
-  { label: "Medicare Advantage Plans in Florida", href: "/medicare-advantage-florida", desc: "Florida-specific plan options and guidance" },
+  { label: "Medicare Part A: Hospital Insurance", href: "/medicare-part-a/", desc: "Inpatient hospital, skilled nursing, and hospice coverage" },
+  { label: "Medicare Part B: Medical Insurance", href: "/medicare-part-b/", desc: "Doctor visits, outpatient care, and preventive services" },
+  { label: "Medicare Part D: Drug Coverage", href: "/medicare-part-d/", desc: "Prescription drug plans and the $2,000 out-of-pocket cap" },
+  { label: "Original Medicare vs. Medicare Advantage", href: "/original-vs-advantage/", desc: "Side-by-side comparison to help you choose" },
+  { label: "Medicare Advantage Plans in Florida", href: "/medicare-advantage-florida/", desc: "Florida-specific plan options and guidance" },
 ];
 
 const TOC = [
@@ -160,7 +160,7 @@ export default function MedicarePartCClient() {
               Call 813-789-7700
             </a>
             <Link
-              href="/medicare-advantage"
+              href="/medicare-advantage/"
               className="inline-flex items-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
             >
               View Medicare Advantage Plans
@@ -186,10 +186,10 @@ export default function MedicarePartCClient() {
                 Medicare Part C is the section of the Medicare program that allows private insurance companies, approved by the federal government, to deliver your Medicare benefits. When you enroll in a Part C plan, the private insurer takes over the coverage that would otherwise come directly from the federal government through Original Medicare (Parts A and B).
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                The program is universally marketed as <Link href="/medicare-advantage" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Advantage</Link>. The two terms are interchangeable. Every Medicare Advantage plan is a Part C plan, and every Part C plan is a Medicare Advantage plan.
+                The program is universally marketed as <Link href="/medicare-advantage/" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Advantage</Link>. The two terms are interchangeable. Every Medicare Advantage plan is a Part C plan, and every Part C plan is a Medicare Advantage plan.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                To enroll in Part C, you must already be enrolled in <Link href="/medicare-part-a" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Part A</Link> and <Link href="/medicare-part-b" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Part B</Link>. You continue paying your Part B premium, and the private plan may charge an additional monthly premium on top of that.
+                To enroll in Part C, you must already be enrolled in <Link href="/medicare-part-a/" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Part A</Link> and <Link href="/medicare-part-b/" className="text-[#0d1f5c] font-semibold hover:underline">Medicare Part B</Link>. You continue paying your Part B premium, and the private plan may charge an additional monthly premium on top of that.
               </p>
 
               {/* Key Facts Box */}
@@ -326,7 +326,7 @@ export default function MedicarePartCClient() {
                 Medicare Part C vs. Original Medicare
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                The most important decision for most new Medicare enrollees is whether to stay with <Link href="/original-vs-advantage" className="text-[#0d1f5c] font-semibold hover:underline">Original Medicare or switch to Medicare Advantage (Part C)</Link>. Here is a direct comparison of the key differences:
+                The most important decision for most new Medicare enrollees is whether to stay with <Link href="/original-vs-advantage/" className="text-[#0d1f5c] font-semibold hover:underline">Original Medicare or switch to Medicare Advantage (Part C)</Link>. Here is a direct comparison of the key differences:
               </p>
               <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm">
                 <table className="w-full text-sm">
@@ -415,7 +415,7 @@ export default function MedicarePartCClient() {
                     Call 813-789-7700
                   </a>
                   <Link
-                    href="/get-started"
+                    href="/get-started/"
                     className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
                   >
                     Get a Free Plan Comparison
@@ -479,10 +479,10 @@ export default function MedicarePartCClient() {
               <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Medicare Parts</p>
               <div className="space-y-2">
                 {[
-                  { label: "Part A", desc: "Hospital Insurance", href: "/medicare-part-a" },
-                  { label: "Part B", desc: "Medical Insurance", href: "/medicare-part-b" },
-                  { label: "Part C", desc: "Medicare Advantage", href: "/medicare-part-c", active: true },
-                  { label: "Part D", desc: "Drug Coverage", href: "/medicare-part-d" },
+                  { label: "Part A", desc: "Hospital Insurance", href: "/medicare-part-a/" },
+                  { label: "Part B", desc: "Medical Insurance", href: "/medicare-part-b/" },
+                  { label: "Part C", desc: "Medicare Advantage", href: "/medicare-part-c/", active: true },
+                  { label: "Part D", desc: "Drug Coverage", href: "/medicare-part-d/" },
                 ].map((part) => (
                   <Link
                     key={part.label}
@@ -522,7 +522,7 @@ export default function MedicarePartCClient() {
                   813-789-7700
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors"
                 >
                   Take the Medicare Quiz
@@ -568,7 +568,7 @@ export default function MedicarePartCClient() {
               Call 813-789-7700
             </a>
             <Link
-              href="/get-started"
+              href="/get-started/"
               className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors"
             >
               Get a Free Plan Comparison

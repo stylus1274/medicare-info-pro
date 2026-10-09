@@ -184,7 +184,7 @@ export default function PlanComparisonClient() {
             <nav className="text-sm text-blue-200 mb-6 flex items-center gap-2 flex-wrap">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/resources" className="hover:text-white transition-colors">Resources</Link>
+              <Link href="/resources/" className="hover:text-white transition-colors">Resources</Link>
               <span>/</span>
               <span className="text-white">Plan Comparison Tool</span>
             </nav>
@@ -321,11 +321,11 @@ export default function PlanComparisonClient() {
                 <p className="font-bold text-gray-900 text-sm mb-3">Related Tools and Guides</p>
                 <div className="space-y-2">
                   {[
-                    { label: "Cost Estimator: Estimate Your Annual Medicare Costs", href: "/cost-estimator" },
-                    { label: "Original Medicare vs. Medicare Advantage Guide", href: "/original-vs-advantage" },
-                    { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement" },
-                    { label: "Enrollment Calculator: Find Your Enrollment Window", href: "/enrollment-calculator" },
-                    { label: "Medicare Costs at a Glance (2026)", href: "/costs-at-a-glance" },
+                    { label: "Cost Estimator: Estimate Your Annual Medicare Costs", href: "/cost-estimator/" },
+                    { label: "Original Medicare vs. Medicare Advantage Guide", href: "/original-vs-advantage/" },
+                    { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement/" },
+                    { label: "Enrollment Calculator: Find Your Enrollment Window", href: "/enrollment-calculator/" },
+                    { label: "Medicare Costs at a Glance (2026)", href: "/costs-at-a-glance/" },
                   ].map((link) => (
                     <Link
                       key={link.href}
@@ -360,7 +360,7 @@ export default function PlanComparisonClient() {
                 Call 813-789-7700
               </a>
               <Link
-                href="/medicare-quiz"
+                href="/medicare-quiz/"
                 className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Take the Medicare Quiz

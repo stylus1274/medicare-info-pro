@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Can a Medicare broker in Riverview help me every year?", a: "Yes. We provide ongoing support to our clients. Each year during the Annual Enrollment Period, we review your current plan and compare alternatives to ensure you still have the best coverage for your needs." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl" },
-          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon" },
-          { label: "Trusted Brokers Valrico", href: "/trusted-medicare-insurance-brokers-valrico" },
-          { label: "Our Team", href: "/our-team" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
+          { label: "Trusted Brokers Brandon", href: "/trusted-medicare-insurance-brokers-brandon/" },
+          { label: "Trusted Brokers Valrico", href: "/trusted-medicare-insurance-brokers-valrico/" },
+          { label: "Our Team", href: "/our-team/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

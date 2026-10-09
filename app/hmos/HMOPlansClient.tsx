@@ -106,7 +106,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What happens if I need care while traveling?",
-    a: "HMO plans cover emergency and urgent care anywhere in the United States. However, routine and non-urgent care outside your plan's service area is generally not covered. If you travel frequently or split time between states, a <a href='/plan-types/ppo' class='text-blue-700 underline'>PPO plan</a> may be a better fit.",
+    a: "HMO plans cover emergency and urgent care anywhere in the United States. However, routine and non-urgent care outside your plan's service area is generally not covered. If you travel frequently or split time between states, a <a href='/medicare-advantage/' class='text-blue-700 underline'>PPO plan</a> may be a better fit.",
   },
   {
     q: "Can I switch from an HMO to a PPO?",
@@ -118,16 +118,16 @@ const FAQ_ITEMS = [
   },
   {
     q: "What is the difference between an HMO and a Medigap plan?",
-    a: "A Medicare Advantage HMO replaces Original Medicare and manages your care through a network. A Medigap plan works alongside Original Medicare to cover cost-sharing gaps like the 20% Part B coinsurance. They are fundamentally different approaches. See our <a href='/do-i-need-a-supplement' class='text-blue-700 underline'>Do I Need a Supplement?</a> guide for a full comparison.",
+    a: "A Medicare Advantage HMO replaces Original Medicare and manages your care through a network. A Medigap plan works alongside Original Medicare to cover cost-sharing gaps like the 20% Part B coinsurance. They are fundamentally different approaches. See our <a href='/do-i-need-a-supplement/' class='text-blue-700 underline'>Do I Need a Supplement?</a> guide for a full comparison.",
   },
 ];
 
 const RELATED_LINKS = [
-  { label: "PPO Plans", href: "/plan-types/ppo", desc: "More provider flexibility, higher premiums" },
-  { label: "SNP Plans", href: "/plan-types/snp", desc: "Tailored plans for special needs populations" },
-  { label: "Medicare Advantage Overview", href: "/medicare-advantage", desc: "The complete guide to all Advantage plan types" },
-  { label: "Original vs. Advantage", href: "/original-vs-advantage", desc: "Side-by-side comparison of both approaches" },
-  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Medigap vs. Medicare Advantage explained" },
+  { label: "PPO Plans", href: "/medicare-advantage/", desc: "More provider flexibility, higher premiums" },
+  { label: "SNP Plans", href: "/medicare-snp-plans/", desc: "Tailored plans for special needs populations" },
+  { label: "Medicare Advantage Overview", href: "/medicare-advantage/", desc: "The complete guide to all Advantage plan types" },
+  { label: "Original vs. Advantage", href: "/original-vs-advantage/", desc: "Side-by-side comparison of both approaches" },
+  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "Medigap vs. Medicare Advantage explained" },
 ];
 
 const TOC = [
@@ -151,7 +151,7 @@ export default function HMOPlansClient() {
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/medicare-advantage" className="hover:text-white/80 transition-colors">Medicare Advantage</Link>
+            <Link href="/medicare-advantage/" className="hover:text-white/80 transition-colors">Medicare Advantage</Link>
             <ChevronRight size={12} />
             <span className="text-white/70">HMO Plans</span>
           </nav>
@@ -197,10 +197,10 @@ export default function HMOPlansClient() {
                 What Is a Medicare Advantage HMO Plan?
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                A Medicare Advantage HMO plan is a type of <Link href="/medicare-advantage" className="text-blue-700 underline hover:text-blue-900">Medicare Advantage</Link> (Part C) plan that delivers your Medicare benefits through a managed care network. When you enroll in an HMO, you choose a primary care physician (PCP) who becomes the central coordinator of your healthcare. Most specialist visits require a referral from your PCP, and all non-emergency care must be received from providers within the plan's network.
+                A Medicare Advantage HMO plan is a type of <Link href="/medicare-advantage/" className="text-blue-700 underline hover:text-blue-900">Medicare Advantage</Link> (Part C) plan that delivers your Medicare benefits through a managed care network. When you enroll in an HMO, you choose a primary care physician (PCP) who becomes the central coordinator of your healthcare. Most specialist visits require a referral from your PCP, and all non-emergency care must be received from providers within the plan's network.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                HMO plans are offered by private insurance companies approved by Medicare. They must cover everything <Link href="/medicare-part-a" className="text-blue-700 underline hover:text-blue-900">Part A</Link> and <Link href="/medicare-part-b" className="text-blue-700 underline hover:text-blue-900">Part B</Link> cover, and most include additional benefits such as dental, vision, hearing, and fitness programs that Original Medicare does not provide.
+                HMO plans are offered by private insurance companies approved by Medicare. They must cover everything <Link href="/medicare-part-a/" className="text-blue-700 underline hover:text-blue-900">Part A</Link> and <Link href="/medicare-part-b/" className="text-blue-700 underline hover:text-blue-900">Part B</Link> cover, and most include additional benefits such as dental, vision, hearing, and fitness programs that Original Medicare does not provide.
               </p>
               <p className="text-sm text-gray-600 leading-relaxed">
                 HMO plans are the most widely available Medicare Advantage plan type and account for the majority of Medicare Advantage enrollments nationwide. Their combination of low premiums and comprehensive benefits makes them the default choice for many Medicare beneficiaries, particularly in markets like Florida where competition among plans is strong.
@@ -307,7 +307,7 @@ export default function HMOPlansClient() {
               <div className="mt-4 flex items-start gap-3 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4">
                 <Info size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-amber-900 leading-relaxed">
-                  If you want more provider flexibility, a <Link href="/plan-types/ppo" className="underline font-semibold">Medicare Advantage PPO plan</Link> allows you to see out-of-network providers at a higher cost-sharing level and typically does not require referrals.
+                  If you want more provider flexibility, a <Link href="/medicare-advantage/" className="underline font-semibold">Medicare Advantage PPO plan</Link> allows you to see out-of-network providers at a higher cost-sharing level and typically does not require referrals.
                 </p>
               </div>
             </section>
@@ -351,7 +351,7 @@ export default function HMOPlansClient() {
                   <Phone size={15} />
                   813-789-7700
                 </a>
-                <Link href="/medicare-quiz" className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors">
+                <Link href="/medicare-quiz/" className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors">
                   Take the Medicare Quiz
                   <ArrowRight size={14} />
                 </Link>
@@ -396,7 +396,7 @@ export default function HMOPlansClient() {
                   <Phone size={14} />
                   813-789-7700
                 </a>
-                <Link href="/medicare-quiz" className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors">
+                <Link href="/medicare-quiz/" className="flex items-center justify-center gap-2 w-full border border-[#0d1f5c]/20 hover:bg-[#0d1f5c]/5 text-[#0d1f5c] font-semibold text-sm py-3 rounded-xl transition-colors">
                   Take the Medicare Quiz
                   <ArrowRight size={13} />
                 </Link>
@@ -436,7 +436,7 @@ export default function HMOPlansClient() {
               <Phone size={16} />
               Call 813-789-7700
             </a>
-            <Link href="/medicare-quiz" className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors">
+            <Link href="/medicare-quiz/" className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors">
               Take the Medicare Quiz
               <ArrowRight size={15} />
             </Link>

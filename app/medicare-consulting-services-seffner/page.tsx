@@ -74,10 +74,10 @@ export default function Page() {
           },
         ],
         relatedLinks: [
-          { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon" },
-          { label: "Medicare Consulting — Plant City", href: "/medicare-consulting-services-plant-city" },
-          { label: "Medicare Agent — Seffner", href: "/medicare-insurance-agent-seffner-fl" },
-          { label: "Medicare Supplement Plans", href: "/medicare-supplement" },
+          { label: "Medicare Consulting — Brandon", href: "/medicare-consulting-services-brandon/" },
+          { label: "Medicare Consulting — Plant City", href: "/medicare-consulting-services-plant-city/" },
+          { label: "Medicare Agent — Seffner", href: "/medicare-insurance-agent-seffner-fl/" },
+          { label: "Medicare Supplement Plans", href: "/medicare-supplement/" },
         ],
       }}
     />

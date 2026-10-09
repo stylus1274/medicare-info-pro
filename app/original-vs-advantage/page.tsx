@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Original Medicare vs. Medicare Advantage: Side-by-Side Comparison | Medicare Information Pro",
     description:
       "An honest, plain-English comparison of Original Medicare and Medicare Advantage - costs, doctor access, drug coverage, extra benefits, and a 5-question quiz to find your best fit.",
-    url: "https://medicareinfopro.com/original-vs-advantage",
+    url: "https://medicareinfopro.com/original-vs-advantage/",
     siteName: "Medicare Information Pro",
     images: [
       {

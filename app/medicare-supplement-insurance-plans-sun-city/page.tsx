@@ -59,11 +59,11 @@ export default function Page() {
           { q: "Why do many Sun City Center retirees choose Medigap over Medicare Advantage?", a: "Many Sun City Center retirees prefer Medigap because it allows them to see any Medicare-accepting doctor or specialist nationwide without referrals or network restrictions. This is especially valuable for retirees who travel or have established relationships with specific specialists." },
         ],
         relatedLinks: [
-          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl" },
-          { label: "Medicare Supplement Plans Apollo Beach", href: "/medicare-supplement-insurance-plans-apollo-beach" },
-          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon" },
-          { label: "Medicare Advantage Plans", href: "/medicare-advantage" },
-          { label: "Free Consultation", href: "/free-consultation" },
+          { label: "Medicare Insurance Agent Sun City Center", href: "/medicare-insurance-agent-sun-city-center-fl/" },
+          { label: "Medicare Supplement Plans Apollo Beach", href: "/medicare-supplement-insurance-plans-apollo-beach/" },
+          { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+          { label: "Medicare Advantage Plans", href: "/medicare-advantage/" },
+          { label: "Free Consultation", href: "/get-started/" },
         ],
       }}
     />

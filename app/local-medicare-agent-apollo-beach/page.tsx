@@ -39,11 +39,11 @@ export default function Page() {
           { q: "When can I change my Medicare plan in Apollo Beach?", a: "The Annual Enrollment Period (October 15 to December 7) is the main window to switch plans. Special Enrollment Periods are available for qualifying life events such as moving or losing other coverage." },
         ],
         relatedLinks: [
-          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach" },
-          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city" },
-          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview" },
-          { label: "Free Consultation", href: "/free-consultation" },
-          { label: "Medicare 101 Overview", href: "/medicare-101" },
+          { label: "Medicare Agent Apollo Beach", href: "/medicare-agent-apollo-beach/" },
+          { label: "Local Medicare Agent Sun City", href: "/local-medicare-agent-sun-city/" },
+          { label: "Local Medicare Agent Riverview", href: "/local-medicare-agent-riverview/" },
+          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Medicare 101 Overview", href: "/medicare-101/" },
         ],
       }}
     />

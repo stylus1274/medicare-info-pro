@@ -94,14 +94,14 @@ export default function HowPartDWorksClient() {
             <div className="flex items-center gap-2 mb-5">
               <Link href="/" className="text-blue-300 hover:text-white text-sm transition-colors">Home</Link>
               <ChevronRight size={13} className="text-blue-500" />
-              <Link href="/medicare-part-d" className="text-blue-300 hover:text-white text-sm transition-colors">Medicare Part D</Link>
+              <Link href="/medicare-part-d/" className="text-blue-300 hover:text-white text-sm transition-colors">Medicare Part D</Link>
               <ChevronRight size={13} className="text-blue-500" />
               <span className="text-blue-200 text-sm">How Part D Works</span>
             </div>
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Pill size={12} /> Part D Deep Dive
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101" }, { label: "How Part D Works" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare 101", href: "/medicare-101/" }, { label: "How Part D Works" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               How Medicare Part D Works
             </h1>
@@ -112,7 +112,7 @@ export default function HowPartDWorksClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/medicare-part-d" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/medicare-part-d/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Medicare Part D Overview <ArrowRight size={15} />
               </Link>
             </div>
@@ -250,9 +250,9 @@ export default function HowPartDWorksClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/medicare-part-d", label: "Medicare Part D Overview", desc: "Eligibility, costs, the Extra Help program, and how to enroll in Florida.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/medicare-supplement", label: "Medicare Supplement (Medigap)", desc: "How Medigap plans fill the gaps in Original Medicare coverage.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A complete overview of all four parts of Medicare and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/medicare-part-d/", label: "Medicare Part D Overview", desc: "Eligibility, costs, the Extra Help program, and how to enroll in Florida.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/medicare-supplement/", label: "Medicare Supplement (Medigap)", desc: "How Medigap plans fill the gaps in Original Medicare coverage.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A complete overview of all four parts of Medicare and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -289,7 +289,7 @@ export default function HowPartDWorksClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>

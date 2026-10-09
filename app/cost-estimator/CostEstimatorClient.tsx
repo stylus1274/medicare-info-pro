@@ -143,7 +143,7 @@ export default function CostEstimatorClient() {
             <nav className="text-sm text-blue-200 mb-6 flex items-center gap-2 flex-wrap">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/resources" className="hover:text-white transition-colors">Resources</Link>
+              <Link href="/resources/" className="hover:text-white transition-colors">Resources</Link>
               <span>/</span>
               <span className="text-white">Cost Estimator</span>
             </nav>
@@ -152,7 +152,7 @@ export default function CostEstimatorClient() {
                 Interactive Tool
               </span>
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Cost Estimator" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources/" }, { label: "Cost Estimator" }]} className="mb-4" />
             <h1
               className="text-3xl md:text-5xl font-bold mb-4 leading-tight"
               style={{ fontFamily: "'Merriweather', serif" }}
@@ -457,10 +457,10 @@ export default function CostEstimatorClient() {
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Related Tools</p>
                     <div className="space-y-2">
                       {[
-                        { label: "Plan Comparison Tool", href: "/plan-comparison" },
-                        { label: "Enrollment Calculator", href: "/enrollment-calculator" },
-                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance" },
-                        { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement" },
+                        { label: "Plan Comparison Tool", href: "/plan-comparison/" },
+                        { label: "Enrollment Calculator", href: "/enrollment-calculator/" },
+                        { label: "Medicare Costs at a Glance", href: "/costs-at-a-glance/" },
+                        { label: "Do I Need a Medigap Plan?", href: "/do-i-need-a-supplement/" },
                       ].map((link) => (
                         <Link
                           key={link.href}
@@ -497,7 +497,7 @@ export default function CostEstimatorClient() {
                 Call 813-789-7700
               </a>
               <Link
-                href="/medicare-quiz"
+                href="/medicare-quiz/"
                 className="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Take the Medicare Quiz

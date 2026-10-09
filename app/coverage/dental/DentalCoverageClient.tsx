@@ -125,10 +125,10 @@ const FAQ: { q: string; a: string }[] = [
 ];
 
 const RELATED_LINKS = [
-  { label: "Does Medicare Cover Vision?", href: "/coverage/vision", desc: "Routine eye exams and glasses are also excluded" },
-  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage", desc: "Compare the two main Medicare paths" },
-  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement", desc: "Learn about Medigap coverage gaps" },
-  { label: "Costs at a Glance", href: "/costs-at-a-glance", desc: "2025 premiums and deductibles" },
+  { label: "Does Medicare Cover Vision?", href: "/coverage/vision/", desc: "Routine eye exams and glasses are also excluded" },
+  { label: "Original vs. Medicare Advantage", href: "/original-vs-advantage/", desc: "Compare the two main Medicare paths" },
+  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "Learn about Medigap coverage gaps" },
+  { label: "Costs at a Glance", href: "/costs-at-a-glance/", desc: "2025 premiums and deductibles" },
 ];
 
 // ─── FAQ Accordion ────────────────────────────────────────────────────────────
@@ -172,7 +172,7 @@ export default function DentalCoverageClient() {
           <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/coverage-qa" className="hover:text-white/80 transition-colors">Coverage Q&A</Link>
+            <Link href="/coverage-qa/" className="hover:text-white/80 transition-colors">Coverage Q&A</Link>
             <ChevronRight size={12} />
             <span className="text-white/70">Dental & Vision</span>
           </nav>
@@ -268,7 +268,7 @@ export default function DentalCoverageClient() {
                 benefits at the same time.
               </p>
               <Link
-                href="/coverage/vision"
+                href="/coverage/vision/"
                 className="inline-flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
               >
                 Does Medicare Cover Vision? <ArrowRight size={14} />
@@ -344,7 +344,7 @@ export default function DentalCoverageClient() {
                   813-699-5559
                 </a>
                 <Link
-                  href="/medicare-quiz"
+                  href="/medicare-quiz/"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors w-full justify-center"
                 >
                   Take the Quiz <ArrowRight size={13} />
@@ -384,7 +384,7 @@ export default function DentalCoverageClient() {
                   See what Medicare covers across dental, vision, mental health, home care, and more.
                 </p>
                 <Link
-                  href="/coverage-qa"
+                  href="/coverage-qa/"
                   className="flex items-center gap-2 text-sm font-bold text-[#1a3fa8] hover:gap-3 transition-all"
                 >
                   Coverage Q&A Hub <ArrowRight size={13} />

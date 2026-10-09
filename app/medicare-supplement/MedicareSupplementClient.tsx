@@ -123,7 +123,7 @@ export default function MedicareSupplementClient() {
             <div className="inline-flex items-center gap-2 bg-[#f5a800]/20 text-[#f5a800] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5 border border-[#f5a800]/30">
               <Shield size={12} /> Medigap Plans
             </div>
-            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison" }, { label: "Medicare Supplement" }]} className="mb-4" />
+            <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison/" }, { label: "Medicare Supplement" }]} className="mb-4" />
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-5 leading-tight max-w-3xl">
               Medicare Supplement (Medigap) Plans
             </h1>
@@ -134,7 +134,7 @@ export default function MedicareSupplementClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
                 Compare Plans Free <ArrowRight size={15} />
               </Link>
             </div>
@@ -286,7 +286,7 @@ export default function MedicareSupplementClient() {
               </table>
             </div>
             <div className="mt-5 text-center">
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 text-[#1a3fa8] font-semibold text-sm hover:underline">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 text-[#1a3fa8] font-semibold text-sm hover:underline">
                 Talk to an agent to compare both options for your situation <ArrowRight size={13} />
               </Link>
             </div>
@@ -301,9 +301,9 @@ export default function MedicareSupplementClient() {
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { href: "/medicare-part-d", label: "Medicare Part D", desc: "Add prescription drug coverage to your Medigap plan. Compare plans based on your medications.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-                { href: "/how-medicare-part-d-works", label: "How Part D Works", desc: "Drug tiers, the 2025 $2,000 out-of-pocket cap, and enrollment periods explained.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-                { href: "/what-is-medicare", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
+                { href: "/medicare-part-d/", label: "Medicare Part D", desc: "Add prescription drug coverage to your Medigap plan. Compare plans based on your medications.", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
+                { href: "/how-medicare-part-d-works/", label: "How Part D Works", desc: "Drug tiers, the 2025 $2,000 out-of-pocket cap, and enrollment periods explained.", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
+                { href: "/what-is-medicare/", label: "What Is Medicare?", desc: "A full overview of Parts A, B, C, and D and how they work together.", color: "#7c3aed", bg: "#f3eeff", border: "#d4b8f8" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="rounded-2xl border p-5 hover:shadow-md transition-shadow block" style={{ background: link.bg, borderColor: link.border }}>
                   <div className="font-bold mb-1" style={{ color: link.color }}>{link.label}</div>
@@ -342,7 +342,7 @@ export default function MedicareSupplementClient() {
               <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
+              <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>
