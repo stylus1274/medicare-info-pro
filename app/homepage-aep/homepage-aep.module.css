@@ -1,7 +1,7 @@
 .page{--navy:#0d1f5c;--blue:#1a3fa8;--gold:#f5a800;background:#fff;color:#25334c;font-family:'Plus Jakarta Sans','Inter',sans-serif;font-size:18px;line-height:1.75}
 .page a{text-decoration:none}.page a:focus-visible,.page summary:focus-visible{outline:3px solid #bd7900;outline-offset:5px}
-.aepAnnouncement{position:relative;z-index:60;overflow:hidden;background:var(--gold);color:var(--navy);border-bottom:1px solid #d99400;white-space:nowrap}
-.aepAnnouncementTrack{display:flex;align-items:center;width:max-content;padding:0.65rem 0;font-size:0.875rem;font-weight:800;letter-spacing:0.01em;animation:aepAnnouncementScroll 24s linear infinite}
+.aepAnnouncement{position:relative;z-index:60;overflow:hidden;background:var(--gold);color:#fff;border-bottom:1px solid #d99400;white-space:nowrap}
+.aepAnnouncementTrack{display:flex;align-items:center;width:max-content;padding:0.65rem 0;font-size:0.875rem;font-weight:800;letter-spacing:0.01em;animation:aepAnnouncementScroll 32s linear infinite}
 .aepAnnouncementGroup{display:flex;align-items:center;gap:2.5rem;padding-right:2.5rem;flex-shrink:0}.aepAnnouncementTrack span{display:inline-flex;align-items:center}.aepAnnouncementTrack a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;display:inline-flex;align-items:center;flex-shrink:0}.aepAnnouncementTrack a:hover{color:#fff}
 @keyframes aepAnnouncementScroll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .wrap{max-width:1320px;margin:auto;padding:0 40px}
