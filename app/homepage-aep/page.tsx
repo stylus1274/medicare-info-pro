@@ -3,7 +3,7 @@ import HomepageAep from "./HomepageAep";
 
 const title = "AEP Homepage Preview | Medicare Information Project";
 const description = "An unpublished homepage preview for Medicare Information Project's Annual Enrollment Period campaign.";
-const socialImage = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/mip-hero-couple_181d53a9.jpg";
+const socialImage = "https://medicareinfopro.com/images/aep-plan-review-hero.webp";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Medicare Information Project",
     type: "website",
     locale: "en_US",
-    images: [{ url: socialImage, alt: "A couple discussing their Medicare options" }],
+    images: [{ url: socialImage, alt: "An older couple reviewing insurance plan information with an advisor" }],
   },
   twitter: { card: "summary_large_image", title, description, images: [socialImage] },
 };

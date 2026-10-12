@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, HeartHandshake, Star } from "lucide-react";
+import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, Star } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "./AepFooter";
 import styles from "./homepage-aep.module.css";
@@ -101,7 +101,7 @@ export default function HomepageAep() {
             <div className={styles.actions}><a className={styles.primary} href="/contact/">Get Free Annual Enrollment Help <ArrowRight size={18} /></a></div>
             <p className={styles.small}>Phone, video, or an appointment at our Brandon office.</p>
           </div>
-          <div className={styles.heroPhoto}><img src={`${cdn}mip-hero-couple_181d53a9.jpg`} alt="A couple discussing their Medicare options" width="900" height="800" fetchPriority="high" /><div className={styles.photoNote}><HeartHandshake size={30} /><div><strong>A little clarity goes a long way.</strong><span>Real conversations. A team in your corner.</span></div></div></div>
+          <div className={styles.heroPhoto}><img src="/images/aep-plan-review-hero.webp" alt="An older couple reviewing insurance plan information with an advisor" width="1672" height="941" fetchPriority="high" /></div>
         </div>
       </section>
       <div className={styles.trust}><span><ShieldCheck /> Licensed independent agents</span><span><MapPin /> A local office in Brandon</span><span><Check /> No-cost consultations</span></div>
