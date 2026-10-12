@@ -98,7 +98,7 @@ export default function HomepageAep() {
           <div className={styles.heroCopy}><p className={styles.eyebrow}><MapPin size={16} /> BRANDON ROOTS. TAMPA BAY REACH.</p>
             <h1>Annual Enrollment Is Here.<span className={styles.heroHeadingSupport}>Let’s Review Your Medicare Options.</span></h1>
             <p className={styles.intro}>Medicare Annual Enrollment runs <u>October 15 through December 7, 2026</u>. Review your Medicare Advantage or Part D coverage for <u>January 1, 2027</u>.</p>
-            <div className={styles.actions}><a className={styles.primary} href="/contact/">Request a free consultation <ArrowRight size={18} /></a><a className={styles.secondary} href="tel:+18136995559"><Phone size={17} /> Call a local agent</a></div>
+            <div className={styles.actions}><a className={styles.primary} href="/contact/">Get Free Annual Enrollment Help <ArrowRight size={18} /></a></div>
             <p className={styles.small}>Phone, video, or an appointment at our Brandon office.</p>
           </div>
           <div className={styles.heroPhoto}><img src={`${cdn}mip-hero-couple_181d53a9.jpg`} alt="A couple discussing their Medicare options" width="900" height="800" fetchPriority="high" /><div className={styles.photoNote}><HeartHandshake size={30} /><div><strong>A little clarity goes a long way.</strong><span>Real conversations. A team in your corner.</span></div></div></div>
