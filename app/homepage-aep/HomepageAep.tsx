@@ -69,6 +69,26 @@ export default function HomepageAep() {
   const pageSchema = webpageSchema;
   return <div className={styles.page}>
     <a className={styles.skip} href="#main-content">Skip to content</a>
+    <div className={styles.aepAnnouncement} aria-label="Annual Enrollment Period announcement">
+      <div className={styles.aepAnnouncementTrack}>
+        <div className={styles.aepAnnouncementGroup}>
+          <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
+          <a href="/contact/">Talk to a Medicare Specialist</a>
+        </div>
+        <div className={styles.aepAnnouncementGroup} aria-hidden="true">
+          <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
+          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+        </div>
+        <div className={styles.aepAnnouncementGroup} aria-hidden="true">
+          <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
+          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+        </div>
+        <div className={styles.aepAnnouncementGroup} aria-hidden="true">
+          <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
+          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+        </div>
+      </div>
+    </div>
     <Header />
     <main id="main-content">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
