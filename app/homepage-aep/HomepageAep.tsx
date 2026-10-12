@@ -96,7 +96,7 @@ export default function HomepageAep() {
       <section className={styles.hero}>
         <div className={styles.wrap + " " + styles.heroGrid}>
           <div className={styles.heroCopy}><p className={styles.eyebrow}><MapPin size={16} /> BRANDON ROOTS. TAMPA BAY REACH.</p>
-            <h1>Annual Enrollment<br />Period Is Here<br /><span>Review Your Medicare Options</span></h1>
+            <h1>Annual Enrollment<br />Is Here.<br /><span>Let’s Review Your Medicare Options.</span></h1>
             <p className={styles.heroTagline}>Medicare questions? Let’s make sense of them. Together.</p><p className={styles.intro}>Compare Medicare Advantage, Medicare Supplement (Medigap), and Part D plans we represent with a licensed local agent. Start with your doctors, prescriptions, current coverage, and budget.</p>
             <div className={styles.actions}><a className={styles.primary} href="/contact/">Request a free consultation <ArrowRight size={18} /></a><a className={styles.secondary} href="tel:+18136995559"><Phone size={17} /> Call a local agent</a></div>
             <p className={styles.small}>Phone, video, or an appointment at our Brandon office.</p>
