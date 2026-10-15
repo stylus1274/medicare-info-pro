@@ -46,13 +46,22 @@ const customerReviews = [
 const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://medicareinfopro.com/homepage-aep/#webpage",
-  name: "Medicare Information Project AEP Homepage Preview",
-  url: "https://medicareinfopro.com/homepage-aep/",
+  "@id": "https://medicareinfopro.com/#webpage",
+  name: "Annual Enrollment Period Medicare Help in Brandon, FL",
+  url: "https://medicareinfopro.com/",
   about: { "@id": "https://medicareinfopro.com/#organization" },
   publisher: { "@id": "https://medicareinfopro.com/#organization" },
   isPartOf: { "@id": "https://medicareinfopro.com/#website" },
-  description: "Independent Medicare insurance agents in Brandon, FL. Compare Medicare Advantage, Medigap, and Part D plans with local guidance.",
+  description: "Annual Enrollment Period Medicare plan review help from independent agents in Brandon, FL.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://medicareinfopro.com/#website",
+  name: "Medicare Information Project",
+  url: "https://medicareinfopro.com/",
+  publisher: { "@id": "https://medicareinfopro.com/#organization" },
 };
 
 
@@ -65,8 +74,10 @@ const faqSchema = {
   })),
 };
 
-export default function HomepageAep() {
-  const pageSchema = webpageSchema;
+export default function HomepageAep({ preview = false }: { preview?: boolean }) {
+  const pageSchema = preview
+    ? { ...webpageSchema, "@id": "https://medicareinfopro.com/homepage-aep/#webpage", url: "https://medicareinfopro.com/homepage-aep/" }
+    : webpageSchema;
   return <div className={styles.page}>
     <a className={styles.skip} href="#main-content">Skip to content</a>
     <div className={styles.aepAnnouncement} aria-label="Annual Enrollment Period announcement">
@@ -91,6 +102,7 @@ export default function HomepageAep() {
     </div>
     <Header />
     <main id="main-content">
+      {!preview && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
       <section className={styles.hero}>

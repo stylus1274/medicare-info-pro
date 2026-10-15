@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import HomepageV3 from "./homepage-preview-v3/HomepageV3";
+import HomepageAep from "./homepage-aep/HomepageAep";
 
-const title = "Medicare Agents in Brandon, FL | Medicare Information Project";
-const description = "Compare Medicare Advantage, Medigap and Part D with independent agents in Brandon, FL. No-cost consultations by appointment, phone or video.";
+const title = "Medicare Annual Enrollment Period Help in Brandon, FL | Medicare Information Project";
+const description = "Annual Enrollment Period is here. Review Medicare Advantage, Medigap, and Part D plan options with independent licensed agents in Brandon, FL.";
 const socialImage = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/mip-hero-couple_181d53a9.jpg";
 
 export const metadata: Metadata = {
@@ -22,5 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <HomepageV3 />;
+  return <HomepageAep />;
 }

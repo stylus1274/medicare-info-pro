@@ -27,5 +27,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomepageAepPage() {
-  return <HomepageAep />;
+  return <HomepageAep preview />;
 }
