@@ -239,7 +239,7 @@ export default function Header() {
       </div>
 
       {/* ── Main Navigation ── */}
-      <header style={{ background: "#fff", position: "sticky", top: 0, zIndex: 100, borderBottom: "1px solid #e8eaf0", overflow: "visible", isolation: "isolate" }}>
+      <header style={{ background: "#fff", position: "sticky", top: "var(--aep-announcement-height, 0px)", zIndex: 100, borderBottom: "1px solid #e8eaf0", overflow: "visible", isolation: "isolate" }}>
         <div style={{ display: "flex", alignItems: "stretch", justifyContent: "space-between", height: 88, minWidth: 0, width: "100%" }}>
           {/* Logo */}
           <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", flexShrink: 0, minWidth: 0 }}>
@@ -498,7 +498,7 @@ export default function Header() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="2xl:hidden w-full border-b bg-white shadow-xl overflow-hidden"
-            style={{ position: "sticky", top: 88, zIndex: 99 }}
+            style={{ position: "sticky", top: "calc(var(--aep-announcement-height, 0px) + 88px)", zIndex: 99 }}
           >
             <div className="p-5 space-y-1 max-h-[80vh] overflow-y-auto">
               {NAV_ITEMS.map((item) => (
