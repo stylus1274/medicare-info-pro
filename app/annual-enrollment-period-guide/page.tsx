@@ -135,6 +135,11 @@ const POST = {
   ],
   sections: [
     {
+      type: "section" as const,
+      heading: "Compare Your 2027 Prescription Costs",
+      content: "Bring your exact medication list and preferred pharmacy locations into your plan review. Our <a href='/compare-medicare-prescription-costs-brandon/'>2027 Medicare prescription cost comparison for Brandon residents</a> explains how to compare estimated annual costs, check drug restrictions, and record questions before enrolling.",
+    },
+    {
       type: "keyTakeaways" as const,
       items: [
         {

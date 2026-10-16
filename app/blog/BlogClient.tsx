@@ -70,6 +70,18 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+  "slug": "/compare-medicare-prescription-costs-brandon/",
+  "title": "How to Compare Medicare Prescription Costs for 2027 in Brandon, FL",
+  "excerpt": "Compare your exact prescriptions, pharmacies, coverage rules, and estimated annual costs for 2027 before the December 7 Annual Enrollment deadline.",
+  "category": "Part D",
+  "author": "Medicare Information Project",
+  "date": "October 16, 2026",
+  "readTime": "8 min read",
+  "image": "/images/compare-medicare-prescription-costs-2027-brandon.webp",
+  "live": true,
+  "sortOrder": -4
+},
+  {
     slug: "/helping-parent-choose-medicare-brandon-fl/",
     title: "Helping a Parent Choose Medicare in Brandon, FL",
     excerpt: "Help a parent prepare documents, compare coverage and costs, check doctors and prescriptions, and plan a family Medicare consultation in Brandon.",

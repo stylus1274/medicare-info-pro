@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Your 2027 Prescription Comparison</title>
+  <desc id="desc">Compare annual costs, your pharmacy, and coverage rules. Use the same medications and coverage year for every option. Check what each estimate includes.</desc>
+  <rect width="1200" height="675" rx="24" fill="#f0f4fc"/>
+  <path d="M24 0h1152a24 24 0 0 1 24 24v154H0V24A24 24 0 0 1 24 0" fill="#0d1f5c"/>
+  <rect x="48" y="36" width="54" height="6" rx="3" fill="#f5a800"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="91" font-size="40" font-weight="700" fill="#fff">Your 2027 Prescription Comparison</text>
+    <text x="48" y="137" font-size="25" fill="#dce6fb">Check these three areas before choosing a plan.</text>
+    <rect x="48" y="214" width="352" height="322" rx="16" fill="#fff" stroke="#c9d5ec"/>
+    <rect x="424" y="214" width="352" height="322" rx="16" fill="#fff" stroke="#c9d5ec"/>
+    <rect x="800" y="214" width="352" height="322" rx="16" fill="#fff" stroke="#c9d5ec"/>
+    <g fill="#f5a800"><circle cx="100" cy="268" r="26"/><circle cx="476" cy="268" r="26"/><circle cx="852" cy="268" r="26"/></g>
+    <g font-size="24" font-weight="700" fill="#0d1f5c" text-anchor="middle"><text x="100" y="276">1</text><text x="476" y="276">2</text><text x="852" y="276">3</text></g>
+    <g fill="#0d1f5c" font-size="29" font-weight="700"><text x="76" y="332">Annual Costs</text><text x="452" y="332">Your Pharmacy</text><text x="828" y="332">Coverage Rules</text></g>
+    <g fill="#344563" font-size="24">
+      <text x="76" y="380"><tspan x="76">Premiums and</tspan><tspan x="76" dy="33">drug spending</tspan></text>
+      <text x="452" y="380"><tspan x="452">Exact location</tspan><tspan x="452" dy="33">and refill supply</tspan></text>
+      <text x="828" y="380"><tspan x="828">Formulary, tier</tspan><tspan x="828" dy="33">and restrictions</tspan></text>
+    </g>
+    <g stroke="#e2e8f3" stroke-width="2"><path d="M76 441h296"/><path d="M452 441h296"/><path d="M828 441h296"/></g>
+    <g fill="#1a3fa8" font-size="22" font-weight="700">
+      <text x="76" y="479"><tspan x="76">Check what the</tspan><tspan x="76" dy="29">estimate includes.</tspan></text>
+      <text x="452" y="479"><tspan x="452">Compare preferred</tspan><tspan x="452" dy="29">network options.</tspan></text>
+      <text x="828" y="479"><tspan x="828">Resolve missing</tspan><tspan x="828" dy="29">drug estimates.</tspan></text>
+    </g>
+    <text x="600" y="586" text-anchor="middle" font-size="24" font-weight="700" fill="#0d1f5c">Use the same medications and coverage year for every option.</text>
+    <text x="600" y="632" text-anchor="middle" font-size="20" fill="#53627c">Medicare Information Project  |  medicareinfopro.com</text>
+  </g>
+</svg>
