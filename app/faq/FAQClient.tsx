@@ -40,6 +40,14 @@ const categories: Category[] = [
     heading: "Eligibility and Enrollment",
     faqs: [
       {
+  "q": "Can I Change My Medicare Plan Again Before December 7?",
+  "a": "Yes. If you are eligible for the Medicare Annual Enrollment Period, you can make another eligible Medicare Advantage or Part D choice before December 7, even if you already submitted an application. Generally, the last valid enrollment request determines the coverage that takes effect. For the 2026 fall period, confirm the plan receives your request by December 7, 2026, and verify your January 1, 2027 coverage with the plan or Medicare.",
+  "link": {
+    "label": "Changing your AEP choice",
+    "href": "/faqs/change-medicare-plan-again-before-december-7/"
+  }
+},
+      {
         q: "When am I eligible for Medicare?",
         a: "Most people become eligible for Medicare at age 65. You may also qualify before 65 if you have received Social Security Disability Insurance (SSDI) for 24 months, or if you have end-stage renal disease (ESRD) or ALS (Lou Gehrig's disease).",
         link: { label: "Am I Eligible for Medicare?", href: "/am-i-eligible/" },
@@ -355,6 +363,17 @@ export default function FAQClient() {
             </div>
           </div>
         </section>
+
+        <nav aria-label="Current Annual Enrollment questions" className="mx-auto max-w-6xl px-4 pt-8">
+          <div className="rounded-xl border border-blue-200 bg-blue-50 p-5">
+            <h2 className="font-bold text-[#0d2d6b] mb-3">Planning Your 2027 Coverage?</h2>
+            <div className="flex flex-col sm:flex-row gap-4 text-sm font-semibold text-[#1a3fa8] underline underline-offset-4">
+              <Link href="/faqs/change-medicare-plan-again-before-december-7/">Can I change my choice before December 7?</Link>
+              <Link href="/faqs/medicare-plan-non-renewal-notice/">What if my plan is not renewed?</Link>
+              <Link href="/after-enrolling-medicare-plan-brandon/">What happens after I enroll?</Link>
+            </div>
+          </div>
+        </nav>
 
         {/* FAQ Content */}
         <section className="py-12 md:py-16">

@@ -1,11 +1,12 @@
+import type { Metadata } from "next";
 import FaqQuestionPage from "@/components/FaqQuestionPage";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "What Is a Medicare Plan Non-Renewal Notice and What Should I Do Next? | MedicareInfoPro FAQ",
+  title: { absolute: "Medicare Plan Non-Renewal: 2027 Help in Brandon | MIP" },
   description:
-    "Learn what a Medicare plan non-renewal notice means, when your plan sends it, how to compare coverage for next year, and the enrollment window that may apply after a plan leaves Medicare.",
+    "Received a Medicare plan non-renewal notice? Review 2027 coverage, enrollment timing, doctors, and prescriptions with local help in Brandon, FL.",
   alternates: {
     canonical:
       "https://medicareinfopro.com/faqs/medicare-plan-non-renewal-notice/",
@@ -17,8 +18,12 @@ const FAQ = {
   shortAnswer:
     "A Plan Non-Renewal Notice means your Medicare Advantage, Medicare drug, or Medicare Cost Plan is leaving the Medicare program in the coming year. Your plan sends the notice in October. Start comparing coverage for the next plan year as soon as you receive it. You may use the Annual Enrollment Period to choose new coverage, and Medicare also lists a plan non-renewal enrollment opportunity from December 8 through the last day of February of the following year.",
   category: "Plan Changes and Appeals",
-  updated: "August 2026",
+  updated: "October 19, 2026",
   sections: [
+    {
+  "heading": "Prepare for 2027 coverage in Brandon",
+  "content": "For the current fall review, Annual Enrollment runs <u>October 15 through December 7, 2026</u>, for eligible changes effective <u>January 1, 2027</u>. Read the exact coverage end date and instructions in your notice. If a special window applies, confirm your own deadline and start date with Medicare or the plan.<br><br>Bring the non-renewal notice, current plan ID, doctor names and office addresses, medications, and pharmacy locations to an <a href=\"/medicare-consulting-services-brandon/\">annual Medicare plan review in Brandon</a>. Check the <a href=\"/check-medicare-doctor-hospital-networks-brandon-fl/\">exact doctor and hospital networks for Brandon-area care</a> and compare <a href=\"/compare-medicare-prescription-costs-brandon/\">your 2027 prescription costs</a> before selecting replacement coverage.<br><br>Our office at 915 Oakfield Dr, Suite A, Brandon, FL 33511 welcomes visits by appointment. Call <a href=\"tel:+18136995559\">813-699-5559</a> before visiting, or use our <a href=\"/medicare-brandon-fl/\">Brandon Medicare resource hub</a>. We compare the plans we represent. Medicare.gov and Florida SHINE can help you explore additional options."
+},
     {
       heading: "What the notice means",
       content:

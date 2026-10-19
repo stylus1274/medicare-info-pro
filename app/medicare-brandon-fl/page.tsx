@@ -1,335 +1,185 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
-
-// ─── Schema: WebPage ─────────────────────────────────────────────────────────
-const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://medicareinfopro.com/medicare-brandon-fl/#webpage",
-  "name": "Medicare in Brandon, FL — Plans, Agents & Enrollment Help",
-  "url": "https://medicareinfopro.com/medicare-brandon-fl/",
-  "isPartOf": { "@id": "https://medicareinfopro.com/#website" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization",
+const CONFIG = {
+  "city": "Brandon",
+  "cityFull": "Brandon, FL",
+  "county": "Hillsborough County",
+  "slug": "brandon",
+  "pageType": "local-agent" as const,
+  "headline": "Medicare Help in Brandon, FL",
+  "subheadline": "Get help comparing Medicare coverage with an independent team at 915 Oakfield Dr, Suite A, Brandon. Review your doctors, prescriptions, pharmacies, and costs for the plans we represent. Consultations are available by appointment.",
+  "bodyText": "Your Medicare choices should reflect your everyday care. Bring the doctors and pharmacy locations you use in Brandon, Valrico, Riverview, or Seffner, along with your current medication list. We can explain Medicare Advantage, Medigap, and Part D options and help you prepare questions to confirm with the plan. For 2027 coverage, compare the actual plan details for your home address and eligibility.",
+  "servicesIntro": "Medicare Information Project helps Brandon residents prepare for Medicare enrollment, compare coverage, and review an existing plan. We explain the plans we represent, identify details that need confirmation, and help with eligible enrollment changes. A review does not require you to switch plans.",
+  "benefits": [
+    "Independent, licensed insurance agents",
+    "No agency consultation fee",
+    "Provider and prescription review for the exact plan and year",
+    "Support for annual reviews and enrollment questions",
+    "Brandon office serving nearby Hillsborough County communities",
+    "Compare the plans we represent"
+  ],
+  "metaTitle": "Medicare Help in Brandon, FL | Plans and Local Agents",
+  "metaDescription": "Get Medicare help in Brandon, FL. Compare coverage, check prescriptions and doctors, and schedule a free plan review at our local office.",
+  "nearbyLandmarks": [
+    "HCA Florida Brandon Hospital",
+    "BayCare Medical Group locations",
+    "Nearby specialists and outpatient facilities"
+  ],
+  "neighborhoods": [
+    "Brandon",
+    "Valrico",
+    "Riverview",
+    "Seffner"
+  ],
+  "officeNotes": [
+    "Office visits by appointment",
+    "Call before visiting"
+  ],
+  "agent": {
+    "name": "Greg Wohl",
+    "title": "Licensed Medicare Insurance Agent",
+    "location": "Brandon, FL",
+    "photoUrl": "/images/greg-wohl.webp",
+    "description": "Meet Greg Wohl and the independent Medicare Information Project team. Visit by appointment or request a phone or video consultation."
   },
-  "description":
-    "Complete guide to Medicare in Brandon, FL. Compare Medicare Advantage, Medigap, and Part D plans across ZIP codes 33510, 33511, 33527, and 33594. Free help from local independent agents.",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://medicareinfopro.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Medicare in Brandon, FL", "item": "https://medicareinfopro.com/medicare-brandon-fl/" },
+  "guidanceSection": {
+    "title": "Prepare for Your Brandon Medicare Appointment",
+    "intro": "Bring the information that helps us understand your current coverage and the care you want to keep.",
+    "items": [
+      "Current Medicare and insurance plan information",
+      "Annual Notice of Change or non-renewal notice",
+      "Medication names, strengths, quantities, and refill schedules",
+      "Your doctors, office addresses, preferred hospital, and pharmacies",
+      "Questions about bills, ongoing treatment, or next year’s changes"
+    ]
+  },
+  "localSupportSection": {
+    "nextSteps": [
+      {
+        "title": "Annual Medicare plan reviews",
+        "description": "Review next year’s changes, doctors, prescriptions, pharmacies, and expected costs with a Brandon agent.",
+        "href": "/medicare-consulting-services-brandon/"
+      },
+      {
+        "title": "Compare 2027 prescription costs",
+        "description": "Use your exact medications and preferred pharmacies to compare annual estimates and coverage restrictions.",
+        "href": "/compare-medicare-prescription-costs-brandon/"
+      },
+      {
+        "title": "Check doctor and hospital networks",
+        "description": "Verify the exact Medicare plan, coverage year, providers, and office locations.",
+        "href": "/check-medicare-doctor-hospital-networks-brandon-fl/"
+      },
+      {
+        "title": "Turning 65 in Brandon",
+        "description": "Prepare for your first Medicare enrollment and the coverage decisions that follow.",
+        "href": "/turning-65-brandon-fl/"
+      },
+      {
+        "title": "Working past 65 or retiring",
+        "description": "Review employer coverage and Medicare timing before your current benefits change.",
+        "href": "/medicare-and-employer-insurance-after-65-brandon-fl/"
+      },
+      {
+        "title": "Helping a parent choose Medicare",
+        "description": "Organize questions, documents, providers, and medications for a family consultation.",
+        "href": "/helping-parent-choose-medicare-brandon-fl/"
+      }
     ],
+    "resources": [
+      {
+  "title": "After your 2027 Medicare enrollment",
+  "description": "Check confirmation, cards, providers, prescriptions, and payments.",
+  "href": "/after-enrolling-medicare-plan-brandon/"
+},
+      {
+  "title": "Changing your AEP choice",
+  "description": "Understand another eligible change before December 7.",
+  "href": "/faqs/change-medicare-plan-again-before-december-7/"
+},
+      {
+        "title": "Meet our licensed agents",
+        "description": "Read team profiles and choose who you would like to speak with.",
+        "href": "/our-team/"
+      },
+      {
+        "title": "Office appointments and directions",
+        "description": "Confirm the office address and request an appointment before visiting.",
+        "href": "/contact/"
+      },
+      {
+        "title": "Free SHINE counseling in Hillsborough County",
+        "description": "Explore independent public counseling resources and appointment preparation.",
+        "href": "/how-to-get-shine-medicare-counseling-hillsborough-county/"
+      },
+      {
+        "title": "Official Medicare plan comparison",
+        "description": "Use Medicare.gov for information about the options available in your area.",
+        "href": "https://www.medicare.gov/plan-compare/",
+        "external": true
+      }
+    ]
   },
-} as const;
-
-// ─── Schema: LocalBusiness ────────────────────────────────────────────────────
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/medicare-brandon-fl/#localbusiness",
-  "name": "Medicare Information Pro",
-  "alternateName": "MIP",
-  "description":
-    "Independent Medicare insurance agency serving Brandon, FL and Hillsborough County. We compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers at no cost.",
-  "url": "https://medicareinfopro.com/medicare-brandon-fl/",
-  "telephone": "+1-813-699-5559",
-  "email": "info@medicareinfopro.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr Ste A",
-    "addressLocality": "Brandon",
-    "addressRegion": "FL",
-    "postalCode": "33511",
-    "addressCountry": "US",
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 27.9378,
-    "longitude": -82.2859,
-  },
-  "openingHoursSpecification": [
+  "faqs": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "17:00",
+      "q": "What Medicare plans can Brandon residents compare?",
+      "a": "Depending on eligibility and your home address, you may compare Medicare Advantage plans, standalone Part D drug plans, or Original Medicare with a Medicare Supplement policy. Availability, premiums, providers, and enrollment rules vary by plan and year. Our team helps review the plans we represent."
     },
+    {
+      "q": "Where is your Brandon Medicare office?",
+      "a": "Medicare Information Project is at 915 Oakfield Dr, Suite A, Brandon, FL 33511. Visits are by appointment. Call 813-699-5559 to arrange an office, phone, or video consultation."
+    },
+    {
+      "q": "Can you help if I already have Medicare?",
+      "a": "Yes. Bring your current plan information, annual notices, prescriptions, preferred pharmacies, and provider names. We can review your coverage and the alternatives we represent. Your ability to change plans depends on your enrollment period and circumstances."
+    },
+    {
+      "q": "When is Annual Enrollment for 2027 Medicare coverage?",
+      "a": "The fall Annual Enrollment Period runs October 15 through December 7, 2026, for eligible Medicare Advantage and Part D changes effective January 1, 2027. Medigap follows separate enrollment rules."
+    },
+    {
+      "q": "How do I check whether my Brandon doctor is in network?",
+      "a": "Use your exact Medicare Advantage plan name, plan ID, coverage year, doctor, and office address. Confirm with the plan and the practice. Check hospitals and separately billing clinicians too. A practice accepting Medicare does not establish participation in every Advantage plan."
+    },
+    {
+      "q": "Does a consultation cost anything?",
+      "a": "Our consultations and enrollment assistance have no agency consultation fee. Agents are compensated by insurance carriers. Plan premiums and other coverage costs still apply. We do not offer every plan available in the area."
+    }
   ],
-  "areaServed": [
-    { "@type": "City", "name": "Brandon", "containedInPlace": { "@type": "State", "name": "Florida" } },
-    { "@type": "City", "name": "Valrico" },
-    { "@type": "City", "name": "Riverview" },
-    { "@type": "City", "name": "Seffner" },
-  ],
-  "serviceType": [
-    "Medicare Advantage Plan Comparison",
-    "Medicare Supplement (Medigap) Enrollment",
-    "Medicare Part D Prescription Drug Plans",
-    "Medicare Enrollment Assistance",
-    "Medicare Consulting",
-  ],
-  "priceRange": "Free",
-  "sameAs": [
-    "https://www.facebook.com/medicareinfopro",
-  ],
-} as const;
-
-// ─── Schema: FAQ ──────────────────────────────────────────────────────────────
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "relatedLinks": [
     {
-      "@type": "Question",
-      "name": "What Medicare plans are available in Brandon, FL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brandon residents in ZIP codes 33510, 33511, 33527, and 33594 have access to Medicare Advantage HMO and PPO plans, Medicare Supplement (Medigap) plans A through N, and Part D prescription drug plans. For 2026, Hillsborough County has approximately 90 Medicare Advantage plans from 7 carriers, with an average premium around $11.50 per month.",
-      },
+      "label": "Compare Medicare Plans in Brandon",
+      "href": "/comparing-medicare-plans-brandon/"
     },
     {
-      "@type": "Question",
-      "name": "Is there a Medicare agent physically located in Brandon, FL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed agents serve Brandon, Valrico, Riverview, and Seffner. You can call us at 813-699-5559 or schedule a free in-person, phone, or video consultation.",
-      },
+      "label": "Medicare Enrollment Help in Brandon",
+      "href": "/medicare-enrollment-assistance-brandon/"
     },
     {
-      "@type": "Question",
-      "name": "When can I enroll in Medicare if I am turning 65 in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your Initial Enrollment Period (IEP) is a 7-month window that starts 3 months before the month you turn 65, includes your birthday month, and ends 3 months after. Enrolling in Part B late results in a permanent 10% premium surcharge for each 12-month period you delayed. Our Brandon agents can calculate your exact enrollment window at no cost.",
-      },
+      "label": "Medicare Supplement Plans in Brandon",
+      "href": "/medicare-supplement-insurance-plans-brandon/"
     },
     {
-      "@type": "Question",
-      "name": "What is the difference between Medicare Advantage and Medigap in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Advantage (Part C) replaces Original Medicare with a private plan that often includes dental, vision, and drug coverage, typically for a low monthly premium. Medigap supplements Original Medicare by covering most out-of-pocket costs like copays and deductibles. The right choice depends on your doctors, prescriptions, travel habits, and budget. Brandon-based MIP agents compare both paths side-by-side at no cost.",
-      },
+      "label": "Annual Plan Reviews in Brandon",
+      "href": "/medicare-consulting-services-brandon/"
     },
     {
-      "@type": "Question",
-      "name": "Which hospitals in Brandon accept Medicare?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For planned care at HCA Florida Brandon Hospital or another facility, confirm that the hospital takes your coverage. With Medicare Advantage, check the exact plan and coverage year with the insurer and hospital. Confirm separately billing clinicians and outpatient facilities as well; a general insurer list does not establish participation in every Medicare plan.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Is working with a Medicare agent in Brandon free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, completely free. Insurance carriers pay our agents a commission. Your monthly premium is identical whether you enroll through us or directly with the carrier. There is no fee, no obligation, and no pressure.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "What is the Annual Enrollment Period and how does it affect Brandon residents?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Annual Enrollment Period (AEP) runs October 15 through December 7 each year. During this window, Medicare beneficiaries in Brandon can switch Medicare Advantage plans, switch from Medicare Advantage back to Original Medicare, or change their Part D drug plan. Changes take effect January 1. Our Brandon office is open extended hours during AEP.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Can I keep my Brandon doctors if I switch Medicare plans?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the plan. Original Medicare with a Medigap policy gives you the broadest access since any provider that accepts Medicare is covered. Medicare Advantage plans have specific networks. Our agents check your exact doctors and specialists against every plan's current provider directory before making a recommendation.",
-      },
-    },
-  ],
-} as const;
-
-export const dynamic = "force-dynamic";
-
-export const metadata: Metadata = {
-  title: "Medicare in Brandon, FL — Plans, Agents & Free Enrollment Help",
-  description:
-    "Complete Medicare guide for Brandon, FL (33510, 33511, 33527). Compare 90+ Advantage plans, Medigap rates, and Part D options with a local independent agent at 915 Oakfield Dr. Free.",
-  alternates: { canonical: "https://medicareinfopro.com/medicare-brandon-fl/" },
+      "label": "Medicare Part D Coverage",
+      "href": "/medicare-part-d/"
+    }
+  ]
 };
-
+const URL = "https://medicareinfopro.com/medicare-brandon-fl/";
+export const metadata: Metadata = {
+  title: { absolute: CONFIG.metaTitle + " | MIP" }, description: CONFIG.metaDescription,
+  alternates: { canonical: URL }, robots: { index: true, follow: true },
+  openGraph: { title: CONFIG.metaTitle, description: CONFIG.metaDescription, url: URL, type: "website" },
+};
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <LocalAgentPage
-        config={{
-          city: "Brandon",
-          cityFull: "Brandon, FL",
-          county: "Hillsborough County",
-          slug: "brandon",
-          pageType: "local-agent",
-          headline: "Medicare in Brandon, FL",
-          subheadline:
-            "Brandon's locally-based independent Medicare agency. We compare every Medicare Advantage, Medigap, and Part D plan available in ZIP codes 33510, 33511, 33527, and 33594 — at no cost to you. Our office is at 915 Oakfield Dr, Brandon.",
-          bodyText:
-            "Hillsborough County has approximately 90 Medicare Advantage plans for 2026 from 7 carriers, with average premiums around $11.50 per month. Medigap premiums in Brandon range from $65 to $803 per month depending on your age, plan letter, and carrier. Our independent agents are not tied to any single carrier, so our only goal is finding the right plan for your doctors, prescriptions, and budget.",
-          metaTitle: "Medicare in Brandon, FL — Plans, Agents & Free Enrollment Help",
-          metaDescription:
-            "Complete Medicare guide for Brandon, FL (33510, 33511, 33527). Compare 90+ Advantage plans, Medigap rates, and Part D options with a local independent agent at 915 Oakfield Dr. Free.",
-          nearbyLandmarks: [
-            "HCA Florida Brandon Hospital",
-            "AdventHealth Brandon",
-            "BayCare Medical Group Brandon",
-            "St. Joseph's Hospital",
-            "Brandon Regional Medical Center",
-          ],
-          neighborhoods: [
-            "Brandon 33510",
-            "Brandon 33511",
-            "Brandon 33527",
-            "Valrico 33594",
-            "Seffner 33584",
-            "Riverview 33578",
-          ],
-          agent: {
-            name: "Greg Wohl",
-            title: "Licensed Medicare Insurance Agent",
-            location: "Brandon, FL",
-            photoUrl: "https://medicareinfopro.com/images/greg-wohl.jpg",
-          },
-          guidanceSection: {
-            title: "Prepare for a Medicare Plan Conversation",
-            intro: "A short preparation list can help you make the most of a Medicare conversation and compare options that fit your situation.",
-            items: [
-              "Your current Medicare card and any plan materials you have received.",
-              "The names of doctors, hospitals, and pharmacies you prefer to use.",
-              "A current list of prescription medications, including dosage and quantity.",
-              "Questions about enrollment timing, plan costs, coverage, or provider access.",
-            ],
-          },
-          localSupportSection: {
-            nextSteps: [
-              {
-                title: "Helping a parent choose Medicare",
-                description: "Prepare for a family consultation, compare costs, and organize your parent's doctors, prescriptions, and coverage questions.",
-                href: "/helping-parent-choose-medicare-brandon-fl/",
-              },
-              {
-                title: "Checking your doctor and hospital networks",
-                description: "Verify your exact Medicare plan, coverage year, office locations, and preferred hospital before choosing or changing coverage.",
-                href: "/check-medicare-doctor-hospital-networks-brandon-fl/",
-              },
-              {
-                title: "Turning 65 or new to Medicare",
-                description: "Review your Initial Enrollment Period, the parts of Medicare, and the documents that can help you prepare.",
-                href: "/turning-65-and-becoming-eligible-for-medicare/",
-              },
-              {
-                title: "Working past 65 or preparing to retire",
-                description: "Understand the questions to ask about employer coverage, Part B timing, and prescription coverage before retirement.",
-                href: "/medicare-and-employer-insurance-after-65-brandon-fl/",
-              },
-              {
-                title: "Reviewing plan changes for next year",
-                description: "Use your Annual Notice of Change to identify costs, benefits, providers, pharmacies, and prescription changes to review.",
-                href: "/how-to-read-medicare-annual-notice-of-change/",
-              },
-              {
-                title: "Need help with drug coverage or Medicare costs",
-                description: "Read the Part D and cost-assistance guides before comparing your own medications, pharmacy preferences, and available resources.",
-                href: "/understanding-part-d/",
-              },
-              {
-                title: "Had a recent change in your situation",
-                description: "Learn how a move, loss of coverage, or another qualifying event may affect Medicare enrollment timing.",
-                href: "/what-is-the-special-enrollment-period/",
-              },
-              {
-                title: "Looking for help paying Medicare costs",
-                description: "Review Extra Help and Medicare Savings Program information, then confirm eligibility through the appropriate public agency.",
-                href: "/how-to-get-help-paying-for-medicare/",
-              },
-            ],
-            resources: [
-              {
-                title: "Free SHINE Medicare counseling in Hillsborough County",
-                description: "Learn about free, unbiased, and confidential Medicare counseling resources, including how to prepare for an appointment.",
-                href: "/how-to-get-shine-medicare-counseling-hillsborough-county/",
-              },
-              {
-                title: "Hillsborough County SHINE counseling sites",
-                description: "Review the official directory for current appointment-based counseling options in Brandon and nearby communities.",
-                href: "https://www.floridashine.org/counseling-sites/hillsborough.aspx",
-                external: true,
-              },
-              {
-                title: "Medicare.gov",
-                description: "Use the official Medicare website for current enrollment information, plan details, and federal program resources.",
-                href: "https://www.medicare.gov/",
-                external: true,
-              },
-            ],
-          },
-          faqs: [
-            {
-              q: "What Medicare plans are available in Brandon, FL?",
-              a: "Brandon residents in ZIP codes 33510, 33511, 33527, and 33594 have access to Medicare Advantage HMO and PPO plans, Medigap plans A through N, and Part D prescription drug plans. For 2026, Hillsborough County has approximately 90 Medicare Advantage plans from 7 carriers, with an average premium around $11.50 per month.",
-            },
-            {
-              q: "Is there a Medicare agent physically located in Brandon?",
-              a: "Yes. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed agents serve Brandon, Valrico, Riverview, and Seffner. Call 813-699-5559 or schedule a free in-person, phone, or video consultation.",
-            },
-            {
-              q: "When can I enroll in Medicare if I am turning 65 in Brandon?",
-              a: "Your Initial Enrollment Period is a 7-month window: 3 months before your 65th birthday month, your birthday month itself, and 3 months after. Enrolling in Part B late results in a permanent 10% surcharge for each 12-month period you delayed. Our Brandon agents can calculate your exact window at no cost.",
-            },
-            {
-              q: "What is the difference between Medicare Advantage and Medigap in Brandon?",
-              a: "Medicare Advantage replaces Original Medicare with a private plan that often includes dental, vision, and drug coverage at a low monthly premium. Medigap supplements Original Medicare by covering most out-of-pocket costs. The right choice depends on your doctors, prescriptions, travel habits, and budget. Our agents compare both paths side-by-side at no cost.",
-            },
-            {
-              q: "Which hospitals in Brandon accept Medicare?",
-              a: "For planned care at HCA Florida Brandon Hospital or another facility, confirm that the hospital takes your coverage. With Medicare Advantage, check the exact plan and coverage year with the insurer and hospital. Confirm separately billing clinicians and outpatient facilities as well; a general insurer list does not establish participation in every Medicare plan.",
-            },
-            {
-              q: "Is working with a Medicare agent in Brandon free?",
-              a: "Yes, completely free. Insurance carriers pay our agents a commission. Your monthly premium is identical whether you enroll through us or directly with the carrier. There is no fee, no obligation, and no pressure.",
-            },
-            {
-              q: "What is the Annual Enrollment Period and how does it affect Brandon residents?",
-              a: "The Annual Enrollment Period runs October 15 through December 7 each year. During this window, Brandon beneficiaries can switch Medicare Advantage plans, switch back to Original Medicare, or change their Part D drug plan. Changes take effect January 1. Our Brandon office is open extended hours during AEP.",
-            },
-            {
-              q: "Can I keep my Brandon doctors if I switch Medicare plans?",
-              a: "It depends on the plan. Original Medicare with a Medigap policy gives you the broadest access since any provider that accepts Medicare is covered. Medicare Advantage plans have specific networks. Our agents check your exact doctors and specialists against every plan's current provider directory before making a recommendation.",
-            },
-          ],
-          relatedLinks: [
-            { label: "Medicare Agent in Brandon", href: "/medicare-agent-brandon/" },
-            { label: "Medicare Insurance Agent Brandon FL", href: "/medicare-insurance-agent-brandon-fl/" },
-            { label: "Medicare Advantage Plans Brandon", href: "/medicare-advantage-plans-brandon-florida/" },
-            { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
-            { label: "Medicare Enrollment Assistance Brandon", href: "/medicare-enrollment-assistance-brandon/" },
-            { label: "Compare Medicare Plans Brandon", href: "/comparing-medicare-plans-brandon/" },
-            { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
-            { label: "Health Insurance Broker Brandon", href: "/health-insurance-broker-brandon/" },
-            { label: "Free Medicare Kit", href: "/free-medicare-kit/" },
-            { label: "Free Consultation", href: "/get-started/" },
-          ],
-        }}
-      />
-    </>
-  );
+  const schema = [
+    { "@context": "https://schema.org", "@type": "WebPage", "@id": `${URL}#webpage`, name: CONFIG.metaTitle, description: CONFIG.metaDescription, url: URL, dateModified: "2026-10-19", about: { "@id": "https://medicareinfopro.com/#organization" } },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: CONFIG.faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://medicareinfopro.com/" }, { "@type": "ListItem", position: 2, name: "Medicare in Brandon", item: URL }] },
+  ];
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /><LocalAgentPage config={CONFIG} /></>;
 }

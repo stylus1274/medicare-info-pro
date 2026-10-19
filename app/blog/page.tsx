@@ -3,9 +3,9 @@ import BlogClient from "./BlogClient";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Blog & Guides | Medicare Information Pro",
+  title: { absolute: "Medicare Blog and Guides | Medicare Information Project" },
   description:
-    "Expert Medicare guides, explainers, and tools written by licensed Medicare specialists. Covering enrollment, plan comparisons, costs, supplements, and Part D , updated for 2026.",
+    "Medicare articles on enrollment, coverage, prescriptions, and costs. Find practical plan review resources and local Medicare guidance for Brandon, FL.",
   keywords: [
     "Medicare blog",
     "Medicare guides 2026",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/blog",
+    canonical: "https://medicareinfopro.com/blog/",
   },
 };
 

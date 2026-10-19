@@ -70,6 +70,18 @@ interface Article {
 
 const ARTICLES: Article[] = [
   {
+  "title": "What Happens After You Enroll in a 2027 Medicare Plan?",
+  "excerpt": "A practical checklist for Brandon residents: confirm enrollment, check your start date and member card, and prepare doctors, prescriptions, and payments for 2027.",
+  "category": "Enrollment",
+  "date": "October 19, 2026",
+  "readTime": "7 min read",
+  "image": "/images/aep-plan-review-hero.webp",
+  "slug": "/after-enrolling-medicare-plan-brandon/",
+  "author": "Medicare Information Project",
+  "live": true,
+  "sortOrder": -5
+},
+  {
   "slug": "/compare-medicare-prescription-costs-brandon/",
   "title": "How to Compare Medicare Prescription Costs for 2027 in Brandon, FL",
   "excerpt": "Compare your exact prescriptions, pharmacies, coverage rules, and estimated annual costs for 2027 before the December 7 Annual Enrollment deadline.",
@@ -546,7 +558,7 @@ const ARTICLES: Article[] = [
     author: "Greg Wohl",
     date: "June 2026",
     readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffbb172d936?w=800&q=80",
+    image: "/images/medicare-pharmacy-cost-review-brandon.webp",
     live: true,
     sortOrder: 1,
   },

@@ -11,6 +11,31 @@ export interface SearchResult {
 
 export const SEARCH_INDEX: SearchResult[] = [
   {
+  "title": "Can I Change My Medicare Plan Again Before December 7?",
+  "description": "Learn how another eligible AEP plan choice works before December 7 and confirm your final enrollment.",
+  "url": "/faqs/change-medicare-plan-again-before-december-7/",
+  "category": "FAQ",
+  "tags": [
+    "AEP",
+    "change plans again",
+    "December 7",
+    "Brandon"
+  ]
+},
+  {
+  "title": "What Happens After You Enroll in a 2027 Medicare Plan?",
+  "description": "A practical checklist for Brandon residents: confirm enrollment, check your start date and member card, and prepare doctors, prescriptions, and payments for 2027.",
+  "url": "/after-enrolling-medicare-plan-brandon/",
+  "category": "Blog",
+  "tags": [
+    "2027",
+    "after enrollment",
+    "new plan card",
+    "Brandon",
+    "January 1"
+  ]
+},
+  {
   "title": "How to Compare Medicare Prescription Costs for 2027 in Brandon, FL",
   "description": "Compare your exact prescriptions, pharmacies, coverage rules, and estimated annual costs for 2027 before the December 7 Annual Enrollment deadline.",
   "url": "/compare-medicare-prescription-costs-brandon/",

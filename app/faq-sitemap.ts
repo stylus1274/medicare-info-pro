@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
-import type { MetadataRoute } from "next";
+const BASE_URL = "https://medicareinfopro.com";
 
 export const FAQ_SLUGS = [
+  "/faqs/change-medicare-plan-again-before-december-7",
   "/faqs/medicare-and-cobra",
   "/faqs/medigap-guaranteed-issue-rights-florida",
   "/faqs/medicare-part-d-late-enrollment-penalty",

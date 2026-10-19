@@ -1,64 +1,21 @@
 import type { Metadata } from "next";
 import MedicarePartDClient from "./MedicarePartDClient";
+import { PART_D_FAQS } from "./content";
 
-const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Medicare Part D \u2014 Prescription Drug Coverage | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-part-d",
-  "isPartOf": {
-    "@id": "https://medicareinfopro.com/#website"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  },
-  "description": "Everything you need to know about Medicare Part D in Florida: eligibility, costs, the Extra Help program, enrollment periods, and how to find the right plan for your medications.",
-  "about": {
-    "@type": "MedicalCondition",
-    "name": "Medicare"
-  },
-  "audience": {
-    "@type": "Patient"
-  }
-} as const;
-
-export const dynamic = "force-dynamic";
-
+const URL = "https://medicareinfopro.com/medicare-part-d/";
+const TITLE = "Medicare Part D Coverage and Costs in Brandon, FL | MIP";
+const DESCRIPTION = "Review Medicare Part D coverage, 2026 and 2027 costs, pharmacies, and Extra Help. Get prescription plan comparison help in Brandon, FL.";
 export const metadata: Metadata = {
-  title: "Medicare Part D — Prescription Drug Coverage | Medicare Information Project",
-  description:
-    "Everything you need to know about Medicare Part D in Florida: eligibility, costs, the Extra Help program, enrollment periods, and how to find the right plan for your medications.",
-  keywords: [
-    "Medicare Part D",
-    "Medicare prescription drug coverage Florida",
-    "Medicare Part D plans Hillsborough County",
-    "Medicare Part D Extra Help",
-    "Medicare Part D enrollment",
-    "Medicare Part D costs 2025",
-    "Medicare Information Project",
-  ],
-  openGraph: {
-    title: "Medicare Part D — Prescription Drug Coverage",
-    description:
-      "Medicare Part D eligibility, costs, enrollment periods, the Extra Help program, and how to choose the right plan in Florida.",
-    url: "https://medicareinfopro.com/medicare-part-d/",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://medicareinfopro.com/medicare-part-d",
-  },
+  title: { absolute: TITLE }, description: DESCRIPTION,
+  alternates: { canonical: URL }, robots: { index: true, follow: true },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, siteName: "Medicare Information Project", type: "website" },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 
-export default function MedicarePartDPage() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
-      />
-      <MedicarePartDClient />
-    </>
-  );
+export default function Page() {
+  const schema = [
+    { "@context": "https://schema.org", "@type": "WebPage", "@id": `${URL}#webpage`, name: TITLE, description: DESCRIPTION, url: URL, dateModified: "2026-10-19", publisher: { "@id": "https://medicareinfopro.com/#organization" } },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: PART_D_FAQS.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  ];
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /><MedicarePartDClient /></>;
 }

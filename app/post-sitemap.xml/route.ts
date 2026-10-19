@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/after-enrolling-medicare-plan-brandon",
   "/compare-medicare-prescription-costs-brandon",
   "/helping-parent-choose-medicare-brandon-fl",
   "/check-medicare-doctor-hospital-networks-brandon-fl",

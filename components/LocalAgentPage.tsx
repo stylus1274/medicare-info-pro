@@ -14,6 +14,9 @@ export interface LocalPageConfig {
   slug: string;               // e.g. "brandon"
   headline: string;           // H1 text
   subheadline: string;        // Hero paragraph
+  benefits?: string[];
+  servicesIntro?: string;
+  officeNotes?: string[];
   bodyText?: string;           // Optional second paragraph in Services section
   metaTitle: string;
   metaDescription: string;
@@ -46,6 +49,7 @@ export interface LocalPageConfig {
     title: string;
     location: string;
     photoUrl: string;
+    description?: string;
   };
 }
 
@@ -137,14 +141,14 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
             <div className="bg-white/10 rounded-2xl p-6 border border-white/20">
               <div className="font-bold text-white mb-4">Why Choose an Independent Agent?</div>
               <ul className="space-y-3">
-                {[
+                {(config.benefits ?? [
                   `We represent 17+ carriers, not just one`,
                   `Our advice is free, your premium is unchanged`,
                   `We know ${config.city} doctors and hospital networks`,
                   `Annual reviews to keep your plan optimized`,
                   `Local office in Brandon, serving ${config.county}`,
                   `Licensed, independent, and no-pressure`,
-                ].map((item) => (
+                ]).map((item) => (
                   <li key={item} className="flex items-start gap-2 text-blue-100 text-sm">
                     <CheckCircle className="w-4 h-4 text-[#f5a800] mt-0.5 flex-shrink-0" />
                     {item}
@@ -175,7 +179,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                 Medicare Services in {config.city}
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Medicare Information Project provides free, independent Medicare guidance to residents of {config.city} and the surrounding {config.county} communities. We are not employed by any insurance company, which means our recommendations are based entirely on what is best for you.
+                {config.servicesIntro ?? `Medicare Information Project provides free, independent Medicare guidance to residents of ${config.city} and the surrounding ${config.county} communities. We help compare the plans we represent and explain the options and enrollment rules relevant to your situation.`}
               </p>
               {config.bodyText && (
                 <p
@@ -370,7 +374,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
               <div className="font-bold text-lg mb-0.5">{config.agent?.name ?? "Greg Wohl"}</div>
               <div className="text-blue-300 text-sm mb-4">{config.agent?.title ?? "Licensed Medicare Agent"}, {config.agent?.location ?? "Brandon FL"}</div>
               <p className="text-blue-100 text-sm leading-relaxed mb-5">
-                Serving {config.city} and {config.county} for over 22 years. Free consultations, no pressure.
+                {config.agent?.description ?? `Meet with a licensed agent serving ${config.city} and ${config.county}. Free consultations by appointment.`}
               </p>
               <Link
                 href={localCallbackHref}
@@ -425,7 +429,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#1a3fa8] mt-0.5 flex-shrink-0" />
-                  <span>Mon-Fri: 9am to 5pm<br />Sat: By appointment</span>
+                  <span>{config.officeNotes?.[0] ?? "Mon-Fri: 9am to 5pm"}<br />{config.officeNotes?.[1] ?? "Sat: By appointment"}</span>
                 </div>
               </div>
             </div>

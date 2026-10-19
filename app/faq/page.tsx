@@ -6,6 +6,14 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     {
+  "@type": "Question",
+  "name": "Can I Change My Medicare Plan Again Before December 7?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. If you are eligible for the Medicare Annual Enrollment Period, you can make another eligible Medicare Advantage or Part D choice before December 7, even if you already submitted an application. Generally, the last valid enrollment request determines the coverage that takes effect. For the 2026 fall period, confirm the plan receives your request by December 7, 2026, and verify your January 1, 2027 coverage with the plan or Medicare."
+  }
+},
+    {
       "@type": "Question",
       "name": "When am I eligible for Medicare?",
       "acceptedAnswer": {
@@ -339,9 +347,9 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare FAQ Center | MedicareInfoPro",
+  title: { absolute: "Medicare Questions and Answers | MIP FAQ Center" },
   description:
-    "Answers to the most common Medicare questions covering eligibility, enrollment, Parts A and B, Medicare Advantage, Medigap, Part D, costs, and coverage. Searchable FAQ for 2026.",
+    "Get answers about Medicare enrollment, plan changes, costs, and coverage. Explore 2027 Annual Enrollment questions and local resources for Brandon, FL.",
   keywords: [
     "Medicare FAQ",
     "Medicare frequently asked questions",
@@ -366,7 +374,7 @@ export const metadata: Metadata = {
       "Quick answers to the most common Medicare questions, searchable and organized by topic.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/faq",
+    canonical: "https://medicareinfopro.com/faq/",
   },
 };
 

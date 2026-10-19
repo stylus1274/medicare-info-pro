@@ -9,26 +9,12 @@ import {
   ArrowRight, Info, Pill, DollarSign, HelpCircle, Users
 } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
+import { PART_D_FAQS as FAQS } from "./content";
 
-const COSTS_2025 = [
-  { item: "Maximum Deductible", amount: "$590/year", note: "Many plans offer $0 deductible for Tier 1–2 drugs" },
-  { item: "Out-of-Pocket Cap", amount: "$2,100/year", note: "After this cap you pay $0 for covered drugs for the rest of the year" },
-  { item: "Average Monthly Premium", amount: "~$38.99/month", note: "Varies widely by plan and location" },
-  { item: "Late Enrollment Penalty", amount: "1% per month", note: "Permanent — added to your premium for life" },
-];
-
-const EXTRA_HELP_LEVELS = [
-  { level: "Full Extra Help", income: "Up to ~$22,590 (individual)", benefit: "$0 premium, $0 deductible, $1–$10 copays", color: "#0d6e4f", bg: "#e6f4ee", border: "#a8d8c2" },
-  { level: "Partial Extra Help", income: "Up to ~$33,885 (individual)", benefit: "Reduced premium and deductible, lower copays", color: "#1a3fa8", bg: "#e8edf8", border: "#b8c8f0" },
-];
-
-const FAQS = [
-  { q: "Who is eligible for Medicare Part D?", a: "Anyone enrolled in Medicare Part A and/or Part B is eligible for Part D. You must live in the plan's service area. Eligibility is not based on income — anyone with Medicare can enroll in a Part D plan." },
-  { q: "Can I have Part D with Medicare Advantage?", a: "Most Medicare Advantage plans include prescription drug coverage (called MAPD plans). If your Medicare Advantage plan includes drug coverage, you generally cannot also enroll in a standalone Part D plan. If your Advantage plan does not include drug coverage, you can add a standalone PDP." },
-  { q: "What is a formulary and why does it matter?", a: "A formulary is your plan's list of covered drugs. Each plan has its own formulary, and the same drug can be on different tiers (with different costs) across different plans. Before enrolling, always check that your specific medications are on the plan's formulary and note which tier they fall on." },
-  { q: "What happens if my drug is not on the formulary?", a: "You can request a formulary exception from your plan, asking them to cover the drug at a lower cost. Your doctor must provide documentation that the drug is medically necessary. You can also appeal if the exception is denied." },
-  { q: "How do I apply for Extra Help?", a: "You can apply for Extra Help through the Social Security Administration online at ssa.gov, by calling 1-800-772-1213, or in person at your local Social Security office. You can also contact us and we will help you determine your eligibility and walk you through the application." },
-  { q: "Can I switch Part D plans?", a: "Yes. During the Annual Enrollment Period (October 15 to December 7), you can switch to any Part D plan available in your area. Changes take effect January 1. We recommend reviewing your plan every year because formularies and premiums change annually." },
+const PART_D_COSTS = [
+  { item: "Maximum Annual Deductible", current: "$615", upcoming: "$700", note: "Some plans have a lower deductible or none. Check which drugs it applies to." },
+  { item: "Covered Part D Out-of-Pocket Threshold", current: "$2,100", upcoming: "$2,400", note: "After the threshold, covered Part D drugs have no further cost sharing that calendar year. Premiums and noncovered drugs are excluded." },
+  { item: "Monthly Plan Premium", current: "Varies by plan", upcoming: "Varies by plan", note: "Compare the actual plan premium and your medication estimates. Income-related charges or a late penalty may also apply." },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -71,10 +57,10 @@ export default function MedicarePartDClient() {
               Medicare Part D
             </h1>
             <p className="text-blue-200 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-              Medicare Part D provides prescription drug coverage for Medicare beneficiaries. Understanding your options, costs, and the 2026 out-of-pocket cap can save you thousands of dollars a year.
+              Review Medicare prescription coverage, your medications, and pharmacy costs with our Brandon team. Compare 2026 coverage with the 2027 plan details before making an Annual Enrollment decision.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
+              <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-[#0d2260] font-bold px-6 py-3 rounded-xl hover:bg-[#e09600] transition-colors">
                 <Phone size={16} /> Call 813-699-5559
               </a>
               <Link href="/how-medicare-part-d-works/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/20">
@@ -91,13 +77,13 @@ export default function MedicarePartDClient() {
               <div>
                 <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">What Does Part D Cover?</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Medicare Part D covers a wide range of prescription medications, including generic and brand-name drugs. Each plan has its own formulary — a list of covered drugs organized into tiers — which determines how much you pay for each medication.
+                  Medicare Part D covers a wide range of prescription medications, including generic and brand-name drugs. Each plan has its own formulary, a list of covered drugs organized into tiers , which determines how much you pay for each medication.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Part D is offered by private insurance companies approved by Medicare. Plans vary in their premiums, deductibles, formularies, and pharmacy networks. This is why comparing plans based on your specific medications is far more important than just comparing monthly premiums.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  The Inflation Reduction Act caps your annual out-of-pocket drug costs at $2,000. Once you hit that limit, you pay $0 for covered drugs for the rest of the year.
+                  For 2027, the covered Part D out-of-pocket threshold is $2,400; for 2026 it is $2,100. Premiums and noncovered medications are separate. Review your own drug list rather than assuming the threshold is your total yearly cost.
                 </p>
               </div>
               <div className="space-y-3">
@@ -106,8 +92,8 @@ export default function MedicarePartDClient() {
                   { icon: <CheckCircle size={15} className="text-[#0d6e4f]" />, title: "Specialty medications (with higher cost sharing)", bg: "#e6f4ee", border: "#a8d8c2" },
                   { icon: <CheckCircle size={15} className="text-[#0d6e4f]" />, title: "Vaccines not covered under Part B", bg: "#e6f4ee", border: "#a8d8c2" },
                   { icon: <Info size={15} className="text-[#b45309]" />, title: "Does NOT cover most over-the-counter drugs", bg: "#fef3e2", border: "#f8d49a" },
-                  { icon: <Info size={15} className="text-[#b45309]" />, title: "Does NOT cover drugs used while hospitalized (Part A covers those)", bg: "#fef3e2", border: "#f8d49a" },
-                  { icon: <Info size={15} className="text-[#b45309]" />, title: "Only covers drugs on your plan's formulary", bg: "#fef3e2", border: "#f8d49a" },
+                  { icon: <Info size={15} className="text-[#b45309]" />, title: "Some medications are covered under Part A or Part B rather than Part D", bg: "#fef3e2", border: "#f8d49a" },
+                  { icon: <Info size={15} className="text-[#b45309]" />, title: "Check formulary coverage and the plan’s exception process", bg: "#fef3e2", border: "#f8d49a" },
                 ].map(({ icon, title, bg, border }) => (
                   <div key={title} className="rounded-xl p-3.5 border flex items-center gap-3" style={{ background: bg, borderColor: border }}>
                     <div className="shrink-0">{icon}</div>
@@ -123,23 +109,25 @@ export default function MedicarePartDClient() {
         <section className="py-14 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2026 Part D Costs at a Glance</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">Key numbers to know when comparing Part D plans this year.</p>
+              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">2026 and 2027 Part D Costs at a Glance</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">Use the correct coverage year. These are program limits, not a personalized plan quote.</p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#0d2260] text-white">
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tl-xl">Cost Component</th>
-                    <th className="text-left px-5 py-3 font-semibold text-sm">2026 Amount</th>
+                    <th className="text-left px-5 py-3 font-semibold text-sm">2026</th>
+                    <th className="text-left px-5 py-3 font-semibold text-sm">2027</th>
                     <th className="text-left px-5 py-3 font-semibold text-sm rounded-tr-xl">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {COSTS_2025.map((row, i) => (
+                  {PART_D_COSTS.map((row, i) => (
                     <tr key={row.item} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="px-5 py-3.5 font-semibold text-gray-900 text-sm">{row.item}</td>
-                      <td className="px-5 py-3.5 font-bold text-[#1a3fa8] text-sm">{row.amount}</td>
+                      <td className="px-5 py-3.5 font-bold text-[#1a3fa8] text-sm">{row.current}</td>
+                      <td className="px-5 py-3.5 font-bold text-[#1a3fa8] text-sm">{row.upcoming}</td>
                       <td className="px-5 py-3.5 text-gray-600 text-sm">{row.note}</td>
                     </tr>
                   ))}
@@ -149,9 +137,9 @@ export default function MedicarePartDClient() {
             <div className="mt-5 bg-[#e6f4ee] border border-[#a8d8c2] rounded-2xl p-5 flex items-start gap-4">
               <CheckCircle size={18} className="text-[#0d6e4f] shrink-0 mt-0.5" />
               <div>
-                <div className="font-bold text-[#0d6e4f] mb-1">The Donut Hole Is Gone</div>
+                <div className="font-bold text-[#0d6e4f] mb-1">Understand What the Estimate Includes</div>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  The coverage gap (donut hole) that previously required beneficiaries to pay higher costs for drugs has been eliminated. Your out-of-pocket costs are now capped at $2,000 per year. After reaching that limit, you pay $0 for covered drugs for the rest of the year. <Link href="/how-medicare-part-d-works/" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
+                  Check the plan’s deductible, drug costs, and premium together. If an annual estimate already includes a cost, avoid adding it again. The Medicare Prescription Payment Plan spreads eligible drug bills over the calendar year; it does not reduce your total drug costs. <Link href="/how-medicare-part-d-works/" className="text-[#0d6e4f] font-semibold hover:underline">Learn how the phases work.</Link>
                 </p>
               </div>
             </div>
@@ -173,34 +161,36 @@ export default function MedicarePartDClient() {
                   Extra Help (also called the Low Income Subsidy or LIS) is a federal program that helps people with limited income and resources pay for Part D costs. If you qualify, you may pay little to nothing for your prescription medications.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Millions of people who qualify for Extra Help never apply because they do not know about it. Our agents can help you determine your eligibility and walk you through the application at no cost.
+                  Some people receive Extra Help automatically through Medicaid, a Medicare Savings Program, or SSI. Others can apply through Social Security. The agency can help you locate resources and prepare questions; Social Security and Medicare determine eligibility.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   You can apply through the Social Security Administration online, by phone at 1-800-772-1213, or in person at your local SSA office.
                 </p>
               </div>
               <div className="space-y-4">
-                {EXTRA_HELP_LEVELS.map((level) => (
-                  <div key={level.level} className="rounded-2xl border overflow-hidden" style={{ borderColor: level.border }}>
-                    <div className="px-5 py-3 font-bold" style={{ background: level.bg, color: level.color }}>{level.level}</div>
-                    <div className="px-5 py-4 bg-white space-y-2">
-                      <div className="flex items-start gap-2 text-sm">
-                        <DollarSign size={14} className="shrink-0 mt-0.5 text-gray-400" />
-                        <div><span className="font-semibold text-gray-700">Income limit: </span><span className="text-gray-600">{level.income}</span></div>
-                      </div>
-                      <div className="flex items-start gap-2 text-sm">
-                        <CheckCircle size={14} className="shrink-0 mt-0.5" style={{ color: level.color }} />
-                        <div><span className="font-semibold text-gray-700">Benefit: </span><span className="text-gray-600">{level.benefit}</span></div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start gap-3">
-                  <AlertCircle size={15} className="text-amber-600 shrink-0 mt-0.5" />
-                  <p className="text-sm text-amber-800 leading-relaxed">Income limits are approximate and adjusted annually. Asset limits also apply. Contact us for a free eligibility check.</p>
+                <div className="rounded-2xl bg-white border border-blue-200 p-6">
+                  <h3 className="font-bold text-gray-900 text-lg mb-3">Check the Current Eligibility Rules</h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">Income and resources are evaluated under current program rules. Do not rely on an old income chart or assume you cannot qualify without checking.</p>
+                  <a href="https://www.medicare.gov/basics/costs/help/drug-costs" target="_blank" rel="noopener noreferrer" className="text-[#1a3fa8] underline font-semibold">Read Medicare’s Extra Help guidance</a>
+                  <p className="mt-4"><a href="https://www.ssa.gov/medicare/part-d-extra-help" target="_blank" rel="noopener noreferrer" className="text-[#1a3fa8] underline font-semibold">Apply through Social Security</a></p>
                 </div>
+                <p className="text-sm text-gray-600">For local preparation and application resources, see our <Link href="/how-to-get-help-paying-for-medicare/" className="text-[#1a3fa8] underline">Medicare cost assistance information</Link>.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-12 bg-blue-50 border-y border-blue-100">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Compare Your 2027 Prescription Costs in Brandon</h2>
+            <p className="text-gray-700 leading-relaxed mb-5">Enter your exact medications, doses, refill quantities, and pharmacy locations. Then review estimated annual costs and restrictions for the correct plan year.</p>
+            <div className="flex flex-wrap gap-5 text-[#1a3fa8] font-semibold underline underline-offset-4">
+              <Link href="/compare-medicare-prescription-costs-brandon/">Use the prescription cost comparison worksheet</Link>
+              <Link href="/medicare-consulting-services-brandon/">Request an annual Medicare plan review in Brandon</Link>
+              <Link href="/comparing-medicare-plans-brandon/">Compare Medicare coverage options</Link>
+              <Link href="/medicare-brandon-fl/">Brandon Medicare resources</Link>
+            </div>
+            <p className="mt-6 text-sm text-gray-600">Reviewed October 19, 2026. <a className="text-[#1a3fa8] underline" href="https://www.medicare.gov/health-drug-plans/part-d/basics/costs" target="_blank" rel="noopener noreferrer">Official Medicare Part D cost information</a>.</p>
           </div>
         </section>
 
@@ -247,18 +237,18 @@ export default function MedicarePartDClient() {
               Let Us Find the Right Part D Plan for You
             </h2>
             <p className="text-blue-200 text-lg mb-8 leading-relaxed">
-              We compare every Part D plan available in your area based on your specific medications, preferred pharmacies, and budget. We also check your Extra Help eligibility. The consultation is completely free.
+              Our Brandon team compares the plans we represent using your medications, preferred pharmacies, and budget. Bring your plan notices and prescription list to a no-cost consultation. Plan premiums and other coverage costs still apply.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
+              <a href="tel:8136995559" className="inline-flex items-center gap-2 bg-[#f5a800] text-[#0d2260] font-bold px-7 py-3.5 rounded-xl hover:bg-[#e09600] transition-colors text-base">
                 <Phone size={17} /> Call 813-699-5559
               </a>
               <Link href="/get-started/" className="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-base">
                 Request a Consultation <ArrowRight size={16} />
               </Link>
             </div>
-            <p className="text-blue-300/60 text-xs mt-6">
-              We do not offer every plan available in your area. Currently we represent 17 organizations which offer 149 products in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local SHIP for information on all options.
+            <p className="text-blue-100 text-xs mt-6">
+              We do not offer every plan available in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local SHIP for information on all options.
             </p>
           </div>
         </section>

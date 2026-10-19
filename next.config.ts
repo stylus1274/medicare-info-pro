@@ -49,6 +49,16 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/images/greg-wohl.jpg", destination: "/images/greg-wohl.webp", permanent: true },
+      { source: "/maximize-medicare-benefits", destination: "/maximize-benefits/", permanent: true },
+      { source: "/best-medicare-advantage-plan-florida", destination: "/best-medicare-advantage-plans-florida/", permanent: true },
+      { source: "/coverage", destination: "/coverage-qa/", permanent: true },
+      { source: "/what-will-medicare-cost-per-person-in-2025", destination: "/costs-at-a-glance/", permanent: true },
+      { source: "/plan-types/ppo", destination: "/medicare-advantage/#plan-types", permanent: true },
+      { source: "/plan-types/snp", destination: "/medicare-snp-plans/", permanent: true },
+      { source: "/plan-types/hmo", destination: "/hmos/", permanent: true },
+      { source: "/part-d", destination: "/medicare-part-d/", permanent: true },
+      { source: "/special-needs-plans", destination: "/medicare-snp-plans/", permanent: true },
       {
         source: "/free-consultation",
         destination: "/get-started/",

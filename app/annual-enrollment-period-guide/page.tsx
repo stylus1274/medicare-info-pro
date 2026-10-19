@@ -75,7 +75,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Annual Enrollment Period: 2026 Dates, Deadlines and Checklist",
+  title: { absolute: "Medicare Annual Enrollment: 2026 Dates and 2027 Checklist | MIP" },
   description:
     "The Medicare Annual Enrollment Period runs October 15 through December 7. Learn what you can change, what to review, and how to prepare for 2027 coverage.",
   keywords: [
@@ -134,6 +134,11 @@ const POST = {
     { label: "Main decisions", value: "Medicare Advantage and Part D" },
   ],
   sections: [
+    {
+  "type": "section" as const,
+  "heading": "After You Choose Your 2027 Coverage",
+  "content": "Already submitted an application? Use our <a href=\"/after-enrolling-medicare-plan-brandon/\">after-enrollment checklist for Brandon residents</a> to confirm your start date, cards, prescriptions, and payments. If you find a problem while AEP is open, read <a href=\"/faqs/change-medicare-plan-again-before-december-7/\">how another eligible plan choice before December 7 works</a>. You can also request an <a href=\"/medicare-consulting-services-brandon/\">annual Medicare plan review in Brandon</a> before deciding."
+},
     {
       type: "section" as const,
       heading: "Compare Your 2027 Prescription Costs",
