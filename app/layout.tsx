@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import KitSlideIn from "@/components/KitSlideIn";
+import LeadAttribution from "@/components/LeadAttribution";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://medicareinfopro.com"),
@@ -109,6 +110,7 @@ export default function RootLayout({
         `}
       </Script>
       <body>
+        <LeadAttribution />
         {children}
         <KitSlideIn />
         <Script src="/analytics-tracker.js" strategy="afterInteractive" />

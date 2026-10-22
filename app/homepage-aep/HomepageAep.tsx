@@ -1,5 +1,6 @@
 import { ArrowRight, Phone, MapPin, ShieldCheck, BookOpen, BriefcaseBusiness, RefreshCw, Check, Users, CalendarDays, Star } from "lucide-react";
 import Header from "@/components/Header";
+import ConsultationForm from "./ConsultationForm";
 import Footer from "./AepFooter";
 import styles from "./homepage-aep.module.css";
 
@@ -84,19 +85,19 @@ export default function HomepageAep({ preview = false }: { preview?: boolean }) 
       <div className={styles.aepAnnouncementTrack}>
         <div className={styles.aepAnnouncementGroup}>
           <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
-          <a href="/contact/">Talk to a Medicare Specialist</a>
+          <a href="#consultation">Talk to a Medicare Specialist</a>
         </div>
         <div className={styles.aepAnnouncementGroup} aria-hidden="true">
           <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
-          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+          <a href="#consultation" tabIndex={-1}>Talk to a Medicare Specialist</a>
         </div>
         <div className={styles.aepAnnouncementGroup} aria-hidden="true">
           <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
-          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+          <a href="#consultation" tabIndex={-1}>Talk to a Medicare Specialist</a>
         </div>
         <div className={styles.aepAnnouncementGroup} aria-hidden="true">
           <span>Annual Enrollment Period is Here. Learn More About Your Options.</span>
-          <a href="/contact/" tabIndex={-1}>Talk to a Medicare Specialist</a>
+          <a href="#consultation" tabIndex={-1}>Talk to a Medicare Specialist</a>
         </div>
       </div>
     </div>
@@ -110,13 +111,14 @@ export default function HomepageAep({ preview = false }: { preview?: boolean }) 
           <div className={styles.heroCopy}><p className={styles.eyebrow}><MapPin size={16} /> BRANDON ROOTS. TAMPA BAY REACH.</p>
             <h1>Annual Enrollment Is Here.<span className={styles.heroHeadingSupport}>Let’s Review Your Medicare Options.</span></h1>
             <p className={styles.intro}>Medicare Annual Enrollment runs <u>October 15 through December 7, 2026</u>. Review your Medicare Advantage or Part D coverage for <u>January 1, 2027</u>.</p>
-            <div className={styles.actions}><a className={styles.primary} href="/contact/">Get Free Annual Enrollment Help <ArrowRight size={18} /></a></div>
+            <div className={styles.actions}><a className={styles.primary} href="#consultation">Request a Free Medicare Review <ArrowRight size={18} /></a><a className={styles.secondary} href="#callback">Request a Callback <Phone size={18} /></a></div>
             <p className={styles.small}>Phone, video, or an appointment at our Brandon office.</p>
           </div>
           <div className={styles.heroPhoto}><img src="/images/aep-plan-review-hero.webp" alt="An older couple reviewing insurance plan information with an advisor" width="1672" height="941" fetchPriority="high" /></div>
         </div>
       </section>
       <div className={styles.trust}><span><ShieldCheck /> Licensed independent agents</span><span><MapPin /> A local office in Brandon</span><span><Check /> No-cost consultations</span></div>
+      <ConsultationForm />
       <section id="start" className={styles.section}><div className={styles.wrap}>
         <div className={styles.centerHeading}><p className={styles.eyebrow}>YOUR NEXT CHAPTER STARTS HERE</p><h2>Medicare Looks Different for Everyone.</h2><p className={styles.lead}>Start with what’s happening in your life. We’ll help you find your way from there.</p></div>
         <div className={styles.three}>{journeys.map(({ Icon, title, image, text, link, cta }) => <a className={styles.journeyCard} href={link} key={title}><div className={styles.journeyPhoto}><img src={`${cdn}${image}`} alt="" width="600" height="380" loading="lazy" /><span><Icon size={17} />{title}</span></div><div className={styles.journeyBody}><h3>{title}</h3><p>{text}</p><span className={styles.textLink}>{cta}<ArrowRight size={18} /></span></div></a>)}</div>
@@ -174,7 +176,7 @@ export default function HomepageAep({ preview = false }: { preview?: boolean }) 
               <h3>Make Your Appointment More Useful</h3>
               <p>Bring the details that help us understand your everyday care and coverage needs.</p>
               <ul><li><Check size={19} />Your doctors, specialists, and preferred hospitals</li><li><Check size={19} />Prescriptions, dosages, and preferred pharmacies</li><li><Check size={19} />Your Medicare card and current insurance information</li><li><Check size={19} />Questions about costs, coverage, or enrollment</li></ul>
-              <a className={styles.secondary} href="/contact/">Request Your Free Consultation</a>
+              <a className={styles.secondary} href="#consultation">Request Your Free Consultation</a>
               <p className={styles.tampaNote}>Looking for guidance in Tampa? <a href="/medicare-insurance-agent-tampa-fl/">Explore our Tampa Medicare services.</a></p>
             </div>
           </div>
@@ -191,7 +193,7 @@ export default function HomepageAep({ preview = false }: { preview?: boolean }) 
         ].map(({ Icon, label, title, text, href }) => <a href={href} className={styles.resourceCard} key={href}><div className={styles.resourceArt}><Icon size={52} strokeWidth={1.5} /><span>{label}</span></div><div><h3>{title}</h3><p>{text}</p><span className={styles.textLink}>Take a look <ArrowRight size={18} /></span></div></a>)}
       </div><p className={styles.lead}>Reviewing prescriptions for 2027? <a className={styles.textLink} href="/compare-medicare-prescription-costs-brandon/">Compare Medicare prescription costs in Brandon <ArrowRight size={18} /></a></p></div></section>
       <section className={styles.faq}><div className={styles.wrap + " " + styles.two}><div><p className={styles.eyebrow}>BEFORE WE TALK</p><h2>Questions About Medicare Help in Brandon</h2><p>Have something else on your mind?<br /><a href="tel:+18136995559">Call us at 813-699-5559.</a></p></div><div>{faqs.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></div></section>
-      <section id="consultation" className={styles.consultation}><div className={styles.wrap + " " + styles.two}><div><p className={styles.eyebrow}>LET’S FIND YOUR NEXT STEP</p><h2>Ready to Talk With<br />a Brandon Medicare Agent?</h2><p>Request a no-cost consultation. We’ll help you understand your options and the next steps for your situation.</p></div><div className={styles.contactCard}><h3>Talk with a local agent.</h3><a className={styles.primary} href="tel:+18136995559"><Phone size={18} />Call 813-699-5559</a><a className={styles.contactLink} href="/contact/">Prefer to write? Contact our team <ArrowRight size={18} /></a><p>915 Oakfield Dr, Suite A<br />Brandon, FL 33511<br /><small>Office visits by appointment.</small></p></div></div></section>
+      <section id="next-step" className={styles.consultation}><div className={styles.wrap + " " + styles.two}><div><p className={styles.eyebrow}>LET’S FIND YOUR NEXT STEP</p><h2>Ready to Talk With<br />a Brandon Medicare Agent?</h2><p>Request a no-cost consultation. We’ll help you understand your options and the next steps for your situation.</p></div><div className={styles.contactCard}><h3>Talk with a local agent.</h3><a className={styles.primary} href="tel:+18136995559"><Phone size={18} />Call 813-699-5559</a><a className={styles.contactLink} href="#consultation">Request a review or a callback <ArrowRight size={18} /></a><p>915 Oakfield Dr, Suite A<br />Brandon, FL 33511<br /><small>Office visits by appointment.</small></p></div></div></section>
     </main>
     <Footer />
   </div>;
