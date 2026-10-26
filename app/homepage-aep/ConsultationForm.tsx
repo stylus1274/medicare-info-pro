@@ -9,14 +9,16 @@ import styles from "./homepage-aep.module.css";
 type Details = { name: string; phone: string; zip: string; email: string; reason: string; consent: boolean; website: string };
 const EMPTY: Details = { name: "", phone: "", zip: "", email: "", reason: "", consent: false, website: "" };
 
-export default function ConsultationForm() {
+export default function ConsultationForm({ service }: { service?: "enrollment" }) {
+  const enrollment = service === "enrollment";
+  const defaultReason = enrollment ? "Getting started with Medicare" : "";
   const [mode, setMode] = useState<RequestKind>("appointment");
   const [step, setStep] = useState(1);
   const [complete, setComplete] = useState(false);
   const [meeting, setMeeting] = useState("Phone");
   const [day, setDay] = useState("");
   const [time, setTime] = useState("No preference");
-  const [details, setDetails] = useState<Details>(EMPTY);
+  const [details, setDetails] = useState<Details>({ ...EMPTY, reason: defaultReason });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const submitting = useRef(false);
@@ -29,13 +31,13 @@ export default function ConsultationForm() {
     function syncHash() {
       const hash = window.location.hash;
       const next = hash === "#callback" ? "callback" : hash === "#client-help" ? "service" : hash === "#consultation" ? "appointment" : null;
-      if (next && !submitting.current) { setMode(next); setStep(1); setComplete(false); setError(""); setDetails(value => ({ ...value, reason: "", consent: false })); }
+      if (next && !submitting.current) { setMode(next); setStep(1); setComplete(false); setError(""); setDetails(value => ({ ...value, reason: next === "service" ? "" : defaultReason, consent: false })); }
     }
     captureLeadAttribution();
     syncHash();
     window.addEventListener("hashchange", syncHash);
     return () => window.removeEventListener("hashchange", syncHash);
-  }, []);
+  }, [defaultReason]);
 
   useEffect(() => {
     if (complete || error) feedback.current?.focus();
@@ -44,7 +46,7 @@ export default function ConsultationForm() {
   function choose(next: RequestKind) {
     if (submitting.current) return;
     setMode(next); setStep(1); setComplete(false); setError("");
-    setDetails(value => ({ ...value, reason: "", consent: false }));
+    setDetails(value => ({ ...value, reason: next === "service" ? "" : defaultReason, consent: false }));
     window.history.replaceState(null, "", next === "callback" ? "#callback" : next === "service" ? "#client-help" : "#consultation");
   }
 
@@ -76,7 +78,7 @@ export default function ConsultationForm() {
         // Send no names, contact details, ZIPs, reasons, or appointment dates to GA4.
         const analytics = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
         if (analytics) analytics("event", mode === "service" ? "client_service_request" : "generate_lead", {
-          form_id: "homepage_consultation", request_type: mode,
+          form_id: enrollment ? "brandon_enrollment_consultation" : "homepage_consultation", request_type: mode,
         });
       } catch { /* Analytics must never interrupt a delivered request. */ }
     } catch (failure) {
@@ -90,8 +92,8 @@ export default function ConsultationForm() {
     <div className={styles.wrap}><div className="mip-review-grid">
       <div className="mip-review-copy">
         <p className={styles.eyebrow}>LET’S MAKE YOUR NEXT STEP SIMPLE</p>
-        <h2>Request a Free Medicare Review.</h2>
-        <p>Tell us when you would like to talk. Review your current coverage, prepare for Medicare, or get help comparing the plans we represent.</p>
+        <h2>{enrollment ? "Request Medicare Enrollment Help." : "Request a Free Medicare Review."}</h2>
+        <p>{enrollment ? "Tell us where you are in the enrollment process. Our Brandon team can help organize your questions, review your next steps, and compare the plans we represent." : "Tell us when you would like to talk. Review your current coverage, prepare for Medicare, or get help comparing the plans we represent."}</p>
         <ul className="mip-review-benefits">
           <li><Check size={21} aria-hidden="true" />Phone, video, or a visit to our Brandon office.</li>
           <li><Check size={21} aria-hidden="true" />Your doctors, prescriptions, pharmacies, and costs.</li>
