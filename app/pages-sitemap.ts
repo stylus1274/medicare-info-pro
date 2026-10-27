@@ -142,7 +142,6 @@ const LOCAL_PAGES = [
   // Medicare supplement insurance plans
   "/medicare-supplement-insurance-plans-apollo-beach",
   "/medicare-supplement-insurance-plans-brandon",
-  "/medicare-supplement-insurance-plans-in-brandon-fl",
   "/medicare-supplement-insurance-plans-plant-city",
   "/medicare-supplement-insurance-plans-riverview",
   "/medicare-supplement-insurance-plans-sun-city",

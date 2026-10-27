@@ -9,9 +9,11 @@ import styles from "./homepage-aep.module.css";
 type Details = { name: string; phone: string; zip: string; email: string; reason: string; consent: boolean; website: string };
 const EMPTY: Details = { name: "", phone: "", zip: "", email: "", reason: "", consent: false, website: "" };
 
-export default function ConsultationForm({ service }: { service?: "enrollment" }) {
+export default function ConsultationForm({ service }: { service?: "enrollment" | "supplement" }) {
   const enrollment = service === "enrollment";
-  const defaultReason = enrollment ? "Getting started with Medicare" : "";
+  const supplement = service === "supplement";
+  const defaultReason = enrollment ? "Getting started with Medicare" : supplement ? "Medicare Supplement options" : "";
+  const formId = enrollment ? "brandon_enrollment_consultation" : supplement ? "brandon_supplement_consultation" : "homepage_consultation";
   const [mode, setMode] = useState<RequestKind>("appointment");
   const [step, setStep] = useState(1);
   const [complete, setComplete] = useState(false);
@@ -78,7 +80,7 @@ export default function ConsultationForm({ service }: { service?: "enrollment" }
         // Send no names, contact details, ZIPs, reasons, or appointment dates to GA4.
         const analytics = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
         if (analytics) analytics("event", mode === "service" ? "client_service_request" : "generate_lead", {
-          form_id: enrollment ? "brandon_enrollment_consultation" : "homepage_consultation", request_type: mode,
+          form_id: formId, request_type: mode,
         });
       } catch { /* Analytics must never interrupt a delivered request. */ }
     } catch (failure) {
@@ -92,8 +94,8 @@ export default function ConsultationForm({ service }: { service?: "enrollment" }
     <div className={styles.wrap}><div className="mip-review-grid">
       <div className="mip-review-copy">
         <p className={styles.eyebrow}>LET’S MAKE YOUR NEXT STEP SIMPLE</p>
-        <h2>{enrollment ? "Request Medicare Enrollment Help." : "Request a Free Medicare Review."}</h2>
-        <p>{enrollment ? "Tell us where you are in the enrollment process. Our Brandon team can help organize your questions, review your next steps, and compare the plans we represent." : "Tell us when you would like to talk. Review your current coverage, prepare for Medicare, or get help comparing the plans we represent."}</p>
+        <h2>{enrollment ? "Request Medicare Enrollment Help." : supplement ? "Compare Your Medicare Supplement Options." : "Request a Free Medicare Review."}</h2>
+        <p>{enrollment ? "Tell us where you are in the enrollment process. Our Brandon team can help organize your questions, review your next steps, and compare the plans we represent." : supplement ? "Talk with our Brandon team about Medigap benefits, premiums, and enrollment timing. We compare the policies we represent and explain what to check before applying or switching." : "Tell us when you would like to talk. Review your current coverage, prepare for Medicare, or get help comparing the plans we represent."}</p>
         <ul className="mip-review-benefits">
           <li><Check size={21} aria-hidden="true" />Phone, video, or a visit to our Brandon office.</li>
           <li><Check size={21} aria-hidden="true" />Your doctors, prescriptions, pharmacies, and costs.</li>

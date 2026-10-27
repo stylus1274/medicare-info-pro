@@ -49,6 +49,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/medicare-supplement-insurance-plans-in-brandon-fl", destination: "/medicare-supplement-insurance-plans-brandon/", permanent: true },
       { source: "/images/greg-wohl.jpg", destination: "/images/greg-wohl.webp", permanent: true },
       { source: "/maximize-medicare-benefits", destination: "/maximize-benefits/", permanent: true },
       { source: "/best-medicare-advantage-plan-florida", destination: "/best-medicare-advantage-plans-florida/", permanent: true },
