@@ -2,7 +2,7 @@ export const CONTACT_CONSENT = "I request a phone call from Medicare Information
 
 export const CONSULTATION_REASONS = [
   "Getting started with Medicare", "Annual plan review", "Prescription coverage",
-  "Medicare Supplement options", "Helping a family member", "Something else",
+  "Medicare Supplement options", "Medicare Advantage options", "Helping a family member", "Something else",
 ] as const;
 export const SERVICE_REASONS = ["Billing question", "Claims question", "Member card", "Other existing-client help"] as const;
 export const MEETING_TYPES = ["Phone", "Video", "Office appointment"] as const;
