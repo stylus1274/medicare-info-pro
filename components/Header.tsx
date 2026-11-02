@@ -110,6 +110,7 @@ const NAV_ITEMS: NavItem[] = [
       featured: { title: "Medicare Resource Library", desc: "Medicare guides, videos, and tools.", cta: "Browse Library", href: "/blog/" },
       columns: [
         { heading: "Learn", links: [
+          { label: "Medicare Help in Brandon", href: "/medicare-brandon-fl/", desc: "Local Medicare resource center" },
           { label: "Blog & Articles", href: "/blog/", desc: "Latest Medicare news" },
           { label: "In-Depth Guides", href: "/guides/", desc: "Comprehensive resources" },
           { label: "FAQ Center", href: "/faq/", desc: "Quick answers" },
