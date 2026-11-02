@@ -82,7 +82,7 @@ const faqSchema = {
       "name": "What Medicare plans are available in Brandon ZIP codes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brandon ZIP codes 33510, 33511, and 33527 have access to approximately 90 Medicare Advantage plans and multiple Medicare Supplement options from 17+ carriers for 2026. Plan availability and pricing vary by ZIP code, so it is important to compare plans specific to your address."
+        "text": "Brandon ZIP codes 33510 and 33511 have access to approximately 90 Medicare Advantage plans and multiple Medicare Supplement options from 17+ carriers for 2026. Plan availability and pricing vary by ZIP code, so it is important to compare plans specific to your address."
       }
     },
     {

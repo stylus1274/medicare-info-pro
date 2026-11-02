@@ -90,7 +90,7 @@ const faqSchema = {
       "name": "What Medicare plans are available in Brandon, FL?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brandon residents in ZIP codes 33510, 33511, and 33527 have access to Medicare Advantage plans, Medicare Supplement (Medigap) plans including Plan G and Plan N, and Part D prescription drug plans. Our agents compare all available options in your specific ZIP code."
+        "text": "Brandon residents in ZIP codes 33510 and 33511 have access to Medicare Advantage plans, Medicare Supplement (Medigap) plans including Plan G and Plan N, and Part D prescription drug plans. Our agents compare all available options in your specific ZIP code."
       }
     },
     {
@@ -163,7 +163,7 @@ export default function Page() {
         faqs: [
           { q: "What does a Medicare insurance agent in Brandon do?", a: "A licensed Medicare insurance agent in Brandon helps you compare Medicare Advantage, Medigap, and Part D plans from multiple carriers. We verify your doctors are in-network, review drug formularies, and explain your options so you can make an informed decision." },
           { q: "Is working with a Medicare insurance agent free in Brandon?", a: "Yes. Our service is completely free. Insurance carriers pay us a commission, not you. Your premium is the same whether you work with us or enroll directly." },
-          { q: "Which Medicare plans are available in Brandon, FL?", a: "Brandon residents across ZIP codes 33510, 33511, and 33527 have access to Medicare Advantage HMO and PPO plans, Medigap plans A through N, and Part D prescription drug plans from multiple carriers." },
+          { q: "Which Medicare plans are available in Brandon, FL?", a: "Brandon residents across ZIP codes 33510 and 33511 have access to Medicare Advantage HMO and PPO plans, Medigap plans A through N, and Part D prescription drug plans from multiple carriers." },
           { q: "How do I find a Medicare insurance agent near Brandon?", a: "Our office is located in Brandon, FL. You can reach us at 813-699-5559 or schedule a free consultation online. We also offer phone and video appointments." },
           { q: "Can a Brandon Medicare agent help me during the Annual Enrollment Period?", a: "Yes. The Annual Enrollment Period (October 15 to December 7) is our busiest time of year. We help Brandon residents review their current plan, compare alternatives, and switch if a better option is available." },
         ],
