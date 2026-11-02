@@ -147,7 +147,7 @@ export default function Page() {
           neighborhoods: [
             "Brandon 33510",
             "Brandon 33511",
-            "Brandon 33527",
+            "Dover 33527",
             "Valrico 33594",
             "Seffner 33584",
           ],

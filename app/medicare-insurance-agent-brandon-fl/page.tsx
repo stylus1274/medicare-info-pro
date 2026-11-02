@@ -159,7 +159,7 @@ export default function Page() {
           "BayCare Medical Group Brandon",
           "St. Joseph's Hospital",
         ],
-        neighborhoods: ["Brandon 33510", "Brandon 33511", "Brandon 33527", "Valrico 33594"],
+        neighborhoods: ["Brandon 33510", "Brandon 33511", "Dover 33527", "Valrico 33594"],
         faqs: [
           { q: "What does a Medicare insurance agent in Brandon do?", a: "A licensed Medicare insurance agent in Brandon helps you compare Medicare Advantage, Medigap, and Part D plans from multiple carriers. We verify your doctors are in-network, review drug formularies, and explain your options so you can make an informed decision." },
           { q: "Is working with a Medicare insurance agent free in Brandon?", a: "Yes. Our service is completely free. Insurance carriers pay us a commission, not you. Your premium is the same whether you work with us or enroll directly." },

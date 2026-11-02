@@ -1,230 +1,117 @@
 import type { Metadata } from "next";
 import LocalAgentPage from "@/components/LocalAgentPage";
 
-const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://medicareinfopro.com/turning-65-brandon-fl/#webpage",
-  "name": "Turning 65 in Brandon, FL — Your Medicare Guide",
-  "url": "https://medicareinfopro.com/turning-65-brandon-fl/",
-  "isPartOf": { "@id": "https://medicareinfopro.com/#website" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization",
+const url = "https://medicareinfopro.com/turning-65-brandon-fl/";
+const title = "Turning 65 in Brandon, FL | Medicare Enrollment Help";
+const description = "Turning 65 in Brandon, FL? Review Medicare enrollment timing, 2026 costs, employer coverage, and local help before choosing a plan.";
+const faqs = [
+  {
+    q: "When should I start the Medicare process if I am turning 65 in Brandon?",
+    a: "Start reviewing your situation 3 to 4 months before your 65th birthday month. For most people, the Initial Enrollment Period lasts seven months: the three months before the birthday month, that month, and the three months after it. A birthday on the first of the month can affect timing. Confirm your enrollment and coverage start dates with Medicare or Social Security.",
   },
-  "description":
-    "Turning 65 in Brandon, FL? This guide covers your Medicare enrollment window, plan options in Hillsborough County, local hospitals, and how to get free help from a licensed local agent.",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://medicareinfopro.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Medicare in Brandon, FL", "item": "https://medicareinfopro.com/medicare-brandon-fl/" },
-      { "@type": "ListItem", "position": 3, "name": "Turning 65 in Brandon", "item": "https://medicareinfopro.com/turning-65-brandon-fl/" },
-    ],
+  {
+    q: "Do I automatically get Medicare when I turn 65 in Brandon?",
+    a: "People receiving Social Security or Railroad Retirement Board benefits at least four months before turning 65 generally receive Parts A and B automatically. Others usually need to apply. Check your enrollment notice or Medicare card rather than assuming coverage has started. Most Part A and Part B applications go through Social Security; certain railroad beneficiaries use the Railroad Retirement Board.",
   },
-} as const;
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "@id": "https://medicareinfopro.com/turning-65-brandon-fl/#localbusiness",
-  "name": "Medicare Information Pro",
-  "description": "Local Medicare guidance for Brandon, FL residents turning 65. Free consultations at 915 Oakfield Dr.",
-  "url": "https://medicareinfopro.com/turning-65-brandon-fl/",
-  "telephone": "+1-813-699-5559",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "915 Oakfield Dr Ste A",
-    "addressLocality": "Brandon",
-    "addressRegion": "FL",
-    "postalCode": "33511",
-    "addressCountry": "US",
+  {
+    q: "What Medicare plans are available to Brandon residents turning 65?",
+    a: "Your choices may include Original Medicare with a separate Part D drug plan and, if eligible, a Medigap policy, or Medicare Advantage, which usually includes drug coverage. Availability and eligibility depend on your address, circumstances, and coverage year. Our agents compare the insurance plans the agency represents. There is no single plan count or premium that applies to everyone in Brandon.",
   },
-  "priceRange": "Free",
-  "areaServed": { "@type": "City", "name": "Brandon" },
-} as const;
-
-const faqSchema = {
+  {
+    q: "Will my Brandon doctors accept my new Medicare plan?",
+    a: "Accepting Original Medicare is different from participating in a specific Medicare Advantage network. Check your exact plan name, plan identifier, coverage year, doctor, and office address with both the plan and the practice. Confirm hospitals and separately billing clinicians too. Do not assume a familiar insurer or hospital name guarantees coverage.",
+  },
+  {
+    q: "What is the Medigap open enrollment window for Brandon residents?",
+    a: "Your six-month federal Medigap Open Enrollment Period begins the first month you are at least 65 and enrolled in Part B. During this period, an insurer cannot deny a policy it sells or charge more because of health problems. Outside this window, underwriting may apply, but guaranteed issue rights or state protections may offer other opportunities. Confirm your rights before changing coverage.",
+  },
+  {
+    q: "I am still working at 65 in Brandon. Do I need to enroll in Medicare?",
+    a: "Review coverage through your or your spouse’s current employment before deciding. Employer size, how the group plan pays with Medicare, and any HSA contributions can affect timing. Ask the benefits administrator and Social Security to confirm your situation before delaying Part B. COBRA and retiree coverage do not generally extend the Part B Special Enrollment Period tied to current employment.",
+  },
+  {
+    q: "How much does Medicare cost for someone turning 65 in Brandon?",
+    a: "For 2026, the standard Part B premium is $202.90 per month and the annual Part B deductible is $283. Higher-income beneficiaries may pay more. Most people qualify for premium-free Part A based on Medicare-covered work. Medicare Advantage, Medigap, and Part D premiums and other costs vary. If your coverage starts in a different year, confirm that year’s amounts before budgeting.",
+  },
+  {
+    q: "Where can I get free Medicare help in Brandon when I turn 65?",
+    a: "Medicare Information Project offers consultations by appointment at 915 Oakfield Dr, Suite A, Brandon, FL 33511, and by phone or video. Call 813-699-5559 to request help. There is no agency consultation fee; agents may receive carrier compensation when an enrollment is completed. Premiums and other coverage costs still apply. We compare the plans we represent, not every plan available.",
+  },
+];
+const schema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "When should I start the Medicare process if I am turning 65 in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Start 3 to 4 months before your 65th birthday. Your Initial Enrollment Period opens 3 months before your birthday month, so you can enroll in Part A and Part B before your coverage actually starts. This gives you time to also compare Medicare Advantage and Medigap plans with a local Brandon agent before your coverage begins.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Do I automatically get Medicare when I turn 65 in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you are already receiving Social Security benefits, you will be automatically enrolled in Medicare Part A and Part B starting the month you turn 65. If you are not yet collecting Social Security, you must actively enroll through Social Security. Our Brandon agents can walk you through the enrollment process at no cost.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "What Medicare plans are available to Brandon residents turning 65?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brandon residents turning 65 in ZIP codes 33510, 33511, 33527, and 33594 can choose from Original Medicare (Parts A and B) with or without a Medigap supplement and Part D drug plan, or a Medicare Advantage plan (Part C) that bundles hospital, medical, and often drug coverage. For 2026, Hillsborough County has approximately 90 Medicare Advantage plans from 7 carriers.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Will my Brandon doctors accept my new Medicare plan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All providers who accept Medicare accept Original Medicare. If you choose a Medicare Advantage plan, network participation varies by carrier and plan. HCA Florida Brandon Hospital and AdventHealth Brandon are in-network for most Hillsborough County Medicare Advantage plans, but your specific specialists may vary. Our agents verify your exact doctors before recommending any plan.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "What is the Medigap open enrollment window for Brandon residents?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your Medigap open enrollment window is a 6-month period that starts the month you are both 65 or older and enrolled in Medicare Part B. During this window, no insurer can deny you a Medigap policy or charge you more due to pre-existing conditions. After this window closes, you may be subject to medical underwriting. This is the most important window for Brandon residents to act in.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "I am still working at 65 in Brandon. Do I need to enroll in Medicare?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on your employer's size. If your employer has 20 or more employees, your employer plan is primary and you can delay Part B without penalty. If your employer has fewer than 20 employees, Medicare becomes primary and you should enroll during your Initial Enrollment Period to avoid a lifetime penalty. Call our Brandon office at 813-699-5559 for a free review of your specific situation.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "How much does Medicare cost for someone turning 65 in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most people pay $0 for Medicare Part A (hospital) if they or their spouse worked at least 40 quarters. Part B costs $185.00 per month in 2026 for most people (higher for higher incomes). Medicare Advantage plans in Hillsborough County average around $11.50 per month. Medigap plans in Brandon range from $65 to $803 per month depending on your age, plan letter, and carrier.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I get free Medicare help in Brandon when I turn 65?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed independent agents offer free in-person, phone, and video consultations. We compare every plan available in your ZIP code and help you enroll correctly. Call 813-699-5559 or visit medicareinfopro.com to schedule.",
-      },
-    },
+  "@graph": [
+    { "@type": "WebPage", "@id": `${url}#webpage`, name: title, url, description, dateModified: "2026-11-02", isPartOf: { "@id": "https://medicareinfopro.com/#website" }, publisher: { "@id": "https://medicareinfopro.com/#organization" }, breadcrumb: { "@id": `${url}#breadcrumb` } },
+    { "@type": "BreadcrumbList", "@id": `${url}#breadcrumb`, itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://medicareinfopro.com/" },
+      { "@type": "ListItem", position: 2, name: "Medicare in Brandon, FL", item: "https://medicareinfopro.com/medicare-brandon-fl/" },
+      { "@type": "ListItem", position: 3, name: "Turning 65 in Brandon", item: url },
+    ] },
+    { "@type": "FAQPage", mainEntity: faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ],
-} as const;
-
-export const dynamic = "force-dynamic";
+};
 
 export const metadata: Metadata = {
-  title: "Turning 65 in Brandon, FL — Your Complete Medicare Guide (2026)",
-  description:
-    "Turning 65 in Brandon? Your Medicare enrollment window opens 3 months before your birthday. Local MIP agents at 915 Oakfield Dr compare 90+ plans in Hillsborough County. Free help.",
-  alternates: { canonical: "https://medicareinfopro.com/turning-65-brandon-fl/" },
+  title: { absolute: title }, description,
+  alternates: { canonical: url }, robots: { index: true, follow: true },
+  openGraph: { title, description, url, type: "website" },
 };
 
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <LocalAgentPage
-        config={{
-          city: "Brandon",
-          cityFull: "Brandon, FL",
-          county: "Hillsborough County",
-          slug: "brandon",
-          pageType: "enrollment",
-          headline: "Turning 65 in Brandon, FL — Your Medicare Guide",
-          subheadline:
-            "Your Medicare enrollment window opens 3 months before your 65th birthday. Brandon-based MIP agents at 915 Oakfield Dr help you understand your options, compare every plan available in your ZIP code, and enroll correctly the first time. Missing this window means permanent penalties.",
-          bodyText:
-            "For 2026, Hillsborough County has approximately 90 Medicare Advantage plans from 7 carriers, averaging $11.50 per month. Medigap premiums for a 65-year-old in Brandon range from $65 to $803 per month depending on the plan letter and carrier. Part B costs $185.00 per month for most people. Your Medigap open enrollment window, which opens when you first enroll in Part B at 65, is the single most important window in your Medicare journey: it is the only time insurers cannot deny you coverage or charge more for pre-existing conditions. Our local agents help you use it wisely.",
-          metaTitle: "Turning 65 in Brandon, FL — Your Complete Medicare Guide (2026)",
-          metaDescription:
-            "Turning 65 in Brandon? Your Medicare enrollment window opens 3 months before your birthday. Local MIP agents at 915 Oakfield Dr compare 90+ plans in Hillsborough County. Free help.",
-          nearbyLandmarks: [
-            "HCA Florida Brandon Hospital",
-            "AdventHealth Brandon",
-            "BayCare Medical Group Brandon",
-            "St. Joseph's Hospital",
-          ],
-          neighborhoods: [
-            "Brandon 33510",
-            "Brandon 33511",
-            "Brandon 33527",
-            "Valrico 33594",
-            "Seffner 33584",
-            "Riverview 33578",
-          ],
-          guidanceSection: {
-            title: "Prepare for Your Medicare Enrollment Conversation",
-            intro: "A short preparation list can help you make the most of a Medicare conversation as you approach your 65th birthday.",
-            items: [
-              "Your Medicare card or enrollment materials, if you have them.",
-              "The names of doctors, hospitals, and pharmacies you prefer to use.",
-              "A current list of prescription medications, including dosage and quantity.",
-              "Questions about your enrollment window, employer coverage, or plan choices.",
-            ],
-          },
-          faqs: [
-            {
-              q: "When should I start the Medicare process if I am turning 65 in Brandon?",
-              a: "Start 3 to 4 months before your 65th birthday. Your Initial Enrollment Period opens 3 months before your birthday month, so you can enroll in Part A and Part B before your coverage actually starts. This gives you time to also compare Medicare Advantage and Medigap plans with a local Brandon agent before your coverage begins.",
-            },
-            {
-              q: "Do I automatically get Medicare when I turn 65 in Brandon?",
-              a: "If you are already receiving Social Security benefits, you will be automatically enrolled in Medicare Part A and Part B starting the month you turn 65. If you are not yet collecting Social Security, you must actively enroll through Social Security. Our Brandon agents can walk you through the enrollment process at no cost.",
-            },
-            {
-              q: "What Medicare plans are available to Brandon residents turning 65?",
-              a: "Brandon residents turning 65 in ZIP codes 33510, 33511, 33527, and 33594 can choose from Original Medicare (Parts A and B) with or without a Medigap supplement and Part D drug plan, or a Medicare Advantage plan (Part C) that bundles hospital, medical, and often drug coverage. For 2026, Hillsborough County has approximately 90 Medicare Advantage plans from 7 carriers.",
-            },
-            {
-              q: "Will my Brandon doctors accept my new Medicare plan?",
-              a: "All providers who accept Medicare accept Original Medicare. If you choose a Medicare Advantage plan, network participation varies by carrier and plan. HCA Florida Brandon Hospital and AdventHealth Brandon are in-network for most Hillsborough County Medicare Advantage plans, but your specific specialists may vary. Our agents verify your exact doctors before recommending any plan.",
-            },
-            {
-              q: "What is the Medigap open enrollment window for Brandon residents?",
-              a: "Your Medigap open enrollment window is a 6-month period that starts the month you are both 65 or older and enrolled in Medicare Part B. During this window, no insurer can deny you a Medigap policy or charge you more due to pre-existing conditions. After this window closes, you may be subject to medical underwriting. This is the most important window for Brandon residents to act in.",
-            },
-            {
-              q: "I am still working at 65 in Brandon. Do I need to enroll in Medicare?",
-              a: "It depends on your employer's size. If your employer has 20 or more employees, your employer plan is primary and you can delay Part B without penalty. If your employer has fewer than 20 employees, Medicare becomes primary and you should enroll during your Initial Enrollment Period to avoid a lifetime penalty. Call our Brandon office at 813-699-5559 for a free review of your specific situation.",
-            },
-            {
-              q: "How much does Medicare cost for someone turning 65 in Brandon?",
-              a: "Most people pay $0 for Medicare Part A if they or their spouse worked at least 40 quarters. Part B costs $185.00 per month in 2026 for most people. Medicare Advantage plans in Hillsborough County average around $11.50 per month. Medigap plans in Brandon range from $65 to $803 per month depending on your age, plan letter, and carrier.",
-            },
-            {
-              q: "Where can I get free Medicare help in Brandon when I turn 65?",
-              a: "Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed independent agents offer free in-person, phone, and video consultations. We compare every plan available in your ZIP code and help you enroll correctly. Call 813-699-5559 or visit medicareinfopro.com to schedule.",
-            },
-          ],
-          relatedLinks: [
-            { label: "Medicare in Brandon, FL (Hub)", href: "/medicare-brandon-fl/" },
-            { label: "Free Medicare Enrollment Help Brandon", href: "/free-medicare-enrollment-help-brandon-fl/" },
-            { label: "Medicare Advantage Plans Brandon", href: "/medicare-advantage-plans-brandon-florida/" },
-            { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
-            { label: "Medicare Agent in Brandon", href: "/medicare-agent-brandon/" },
-            { label: "Turning 65 Guide (Full)", href: "/turning-65-and-becoming-eligible-for-medicare/" },
-            { label: "Free Medicare Kit", href: "/free-medicare-kit/" },
-            { label: "Free Consultation", href: "/get-started/" },
-          ],
-        }}
-      />
-    </>
-  );
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <LocalAgentPage config={{
+      city: "Brandon", cityFull: "Brandon, FL", county: "Hillsborough County", slug: "brandon", pageType: "enrollment",
+      headline: "Turning 65 in Brandon, FL: Your Medicare Guide",
+      subheadline: "Preparing for Medicare starts with your current coverage and the dates that apply to you. Our Brandon team helps organize your enrollment questions and compare the plans we represent. Missing an initial deadline does not automatically mean a penalty; an applicable Special Enrollment Period may change your options.",
+      servicesIntro: "Medicare Information Project helps Brandon residents approaching 65 understand coverage choices and prepare for enrollment. We explain the plans we represent and help identify questions to confirm with Social Security, an employer benefits administrator, or an insurance plan.",
+      bodyText: 'For <strong>2026</strong>, the standard Part B premium is <strong>$202.90 per month</strong> and the annual Part B deductible is <strong>$283</strong>. Higher-income beneficiaries may pay more. Most people qualify for premium-free Part A based on Medicare-covered work. <a href="https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles" class="text-[#1a3fa8] underline">Check the official CMS 2026 figures</a>.<br /><br />Medicare Advantage, Medigap, and Part D costs vary by policy and personal circumstances. Request quotes for the year your coverage will start rather than relying on a broad local price range. These 2026 figures are not a quote for a later coverage year.<br /><br />Your Part A and Part B enrollment timing and your Medigap protections follow different rules. A Special Enrollment Period may apply to Part A or Part B, while guaranteed issue rights or state protections may provide Medigap opportunities outside the initial six-month window. Confirm what applies before delaying enrollment or ending existing coverage.',
+      benefits: [
+        "Independent, licensed insurance agents",
+        "No agency consultation fee",
+        "Compare the insurance plans we represent",
+        "Help organizing enrollment and coverage questions",
+        "Phone, video, and office appointments",
+        "Brandon office serving nearby communities",
+      ],
+      metaTitle: title, metaDescription: description,
+      nearbyLandmarks: ["HCA Florida Brandon Hospital", "BayCare Medical Group locations", "Nearby specialist and outpatient facilities"],
+      neighborhoods: ["Brandon 33510", "Brandon 33511", "Dover 33527", "Valrico 33594", "Seffner 33584", "Riverview 33578"],
+      officeNotes: ["Office visits by appointment", "Call before visiting"],
+      guidanceSection: {
+        title: "Prepare for Your Medicare Enrollment Conversation",
+        intro: "Information checked November 2, 2026. Bring the details that help clarify your next steps; do not send Medicare numbers or medical details through a general website form.",
+        items: [
+          "Any Medicare card, enrollment notice, or confirmed Part A and Part B start dates",
+          "Your current insurance and the dates any employer coverage will end",
+          "Doctor names, office locations, prescriptions, and preferred pharmacies",
+          "Questions about timing, HSA contributions, coverage costs, or eligibility",
+        ],
+      },
+      localSupportSection: {
+        nextSteps: [
+          { title: "Get Medicare enrollment help", description: "Organize your situation and request a conversation with the Brandon team.", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { title: "Working past 65 or retiring", description: "Prepare questions about employer coverage before deciding when to enroll.", href: "/medicare-and-employer-insurance-after-65-brandon-fl/" },
+          { title: "Review Medigap enrollment timing", description: "Learn why the supplement enrollment window is separate from other Medicare periods.", href: "/medigap-open-enrollment/" },
+        ],
+        resources: [
+          { title: "Official Medicare enrollment timing", description: "Check the enrollment periods and exceptions for your circumstances.", href: "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-can-i-sign-up-for-medicare", external: true },
+          { title: "Automatic enrollment or an application?", description: "Use Medicare’s guidance to check whether you need to sign up.", href: "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare", external: true },
+          { title: "Apply for Parts A and B through Social Security", description: "Review the official application steps and information to prepare.", href: "https://www.ssa.gov/medicare/sign-up", external: true },
+          { title: "Official Medigap buying protections", description: "Check federal rights and ask about any additional state protections.", href: "https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when", external: true },
+        ],
+      },
+      faqs,
+      relatedLinks: [
+        { label: "Medicare in Brandon, FL (Hub)", href: "/medicare-brandon-fl/" },
+        { label: "Free Medicare Enrollment Help Brandon", href: "/free-medicare-enrollment-help-brandon-fl/" },
+        { label: "Medicare Advantage Plans Brandon", href: "/medicare-advantage-plans-brandon-florida/" },
+        { label: "Medicare Supplement Plans Brandon", href: "/medicare-supplement-insurance-plans-brandon/" },
+        { label: "Medicare Agent in Brandon", href: "/medicare-agent-brandon/" },
+        { label: "Turning 65 Guide (Full)", href: "/turning-65-and-becoming-eligible-for-medicare/" },
+        { label: "Free Medicare Kit", href: "/free-medicare-kit/" },
+        { label: "Free Consultation", href: "/get-started/" },
+      ],
+    }} />
+  </>;
 }

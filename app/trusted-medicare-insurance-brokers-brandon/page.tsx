@@ -143,7 +143,7 @@ export default function Page() {
           "BayCare Medical Group Brandon",
           "St. Joseph's Hospital",
         ],
-        neighborhoods: ["Brandon 33510", "Brandon 33511", "Brandon 33527", "Valrico 33594"],
+        neighborhoods: ["Brandon 33510", "Brandon 33511", "Dover 33527", "Valrico 33594"],
         faqs: [
           { q: "What is the difference between a Medicare broker and a Medicare agent in Brandon?", a: "A Medicare broker represents multiple insurance carriers and can compare plans from many companies. A captive agent works for only one carrier. Our Brandon brokers are independent and represent 17+ carriers, so we can compare all available options in your ZIP code." },
           { q: "Is working with a Medicare broker free in Brandon?", a: "Yes. Our service is completely free. Insurance carriers compensate us, not you, and your premium is the same whether you work with us or enroll directly." },
