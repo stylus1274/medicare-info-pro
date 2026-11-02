@@ -69,6 +69,18 @@ interface Article {
 }
 
 const ARTICLES: Article[] = [
+{
+  "title": "Medicare Outpatient Surgery Coverage in Brandon: What You Need to Know",
+  "excerpt": "Planning outpatient surgery in Brandon? Learn what to confirm about Medicare coverage, facility fees, authorization, and estimated costs before scheduling.",
+  "category": "Coverage",
+  "date": "November 2, 2026",
+  "readTime": "9 min read",
+  "image": "/images/medicare-outpatient-surgery-brandon-featured.webp",
+  "slug": "/medicare-outpatient-surgery-coverage-brandon-fl/",
+  "author": "Medicare Information Project",
+  "live": true,
+  "sortOrder": -6
+},
   {
   "title": "What Happens After You Enroll in a 2027 Medicare Plan?",
   "excerpt": "A practical checklist for Brandon residents: confirm enrollment, check your start date and member card, and prepare doctors, prescriptions, and payments for 2027.",

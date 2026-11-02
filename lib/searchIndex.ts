@@ -10,6 +10,19 @@ export interface SearchResult {
 }
 
 export const SEARCH_INDEX: SearchResult[] = [
+{
+  "title": "Medicare Outpatient Surgery Coverage in Brandon: What You Need to Know",
+  "description": "Planning outpatient surgery in Brandon? Learn what to confirm about Medicare coverage, facility fees, authorization, and estimated costs before scheduling.",
+  "url": "/medicare-outpatient-surgery-coverage-brandon-fl/",
+  "category": "Blog",
+  "tags": [
+    "Brandon",
+    "outpatient surgery",
+    "Medicare Part B",
+    "facility fees",
+    "surgery costs"
+  ]
+},
   {
   "title": "Can I Change My Medicare Plan Again Before December 7?",
   "description": "Learn how another eligible AEP plan choice works before December 7 and confirm your final enrollment.",

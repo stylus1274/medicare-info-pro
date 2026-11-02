@@ -48,6 +48,7 @@ const journeys = [
   },
 ];
 const supporting = [
+  { title: "Plan for Outpatient Surgery", text: "Check coverage, authorization, facility fees, and cost estimates before scheduling.", href: "/medicare-outpatient-surgery-coverage-brandon-fl/" },
   { title: "After You Enroll", text: "Check confirmations, cards, providers, prescriptions, and payments.", href: "/after-enrolling-medicare-plan-brandon/" },
   { title: "Changing an AEP Choice", text: "Read about another eligible change before December 7.", href: "/faqs/change-medicare-plan-again-before-december-7/" },
   { title: "Helping a Parent", text: "Prepare questions and documents for a family consultation.", href: "/helping-parent-choose-medicare-brandon-fl/" },
@@ -61,7 +62,7 @@ const faqs = [
   { q: "Does a Consultation Cost Anything?", a: "There is no agency consultation fee. Agents may receive compensation from insurance carriers when an enrollment is completed. Insurance premiums and other coverage costs still apply. We compare the plans we represent and do not offer every plan available in the area." },
 ];
 const schema = { "@context": "https://schema.org", "@graph": [
-  { "@type": "CollectionPage", "@id": `${url}#webpage`, url, name: title, description, dateModified: "2026-10-28", isPartOf: { "@id": "https://medicareinfopro.com/#website" }, about: { "@id": "https://medicareinfopro.com/#organization" }, mainEntity: journeys.map(journey => ({ "@id": `${url}#${journey.id}-resources` })) },
+  { "@type": "CollectionPage", "@id": `${url}#webpage`, url, name: title, description, dateModified: "2026-11-02", isPartOf: { "@id": "https://medicareinfopro.com/#website" }, about: { "@id": "https://medicareinfopro.com/#organization" }, mainEntity: journeys.map(journey => ({ "@id": `${url}#${journey.id}-resources` })) },
   ...journeys.map(journey => ({ "@type": "ItemList", "@id": `${url}#${journey.id}-resources`, name: journey.label, itemListElement: [{ title: journey.action, href: journey.href }, ...journey.links].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: `https://medicareinfopro.com${item.href}` })) })),
   { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://medicareinfopro.com/" }, { "@type": "ListItem", position: 2, name: "Brandon Medicare Resource Center", item: url }] },
   { "@type": "FAQPage", mainEntity: faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },

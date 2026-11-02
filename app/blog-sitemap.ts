@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 const BLOG_SLUGS = [
+  "/medicare-outpatient-surgery-coverage-brandon-fl",
   "/after-enrolling-medicare-plan-brandon",
   "/compare-medicare-prescription-costs-brandon",
   "/moving-to-brandon-fl-with-medicare",
