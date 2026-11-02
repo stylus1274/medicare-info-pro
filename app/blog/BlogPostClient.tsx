@@ -194,7 +194,11 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
       {open && (
         /* pt-4 = 16px top padding (approx 20px visual with border) — ADA fix */
         <div className="px-5 pb-5 pt-4 bg-white border-t border-gray-100">
-          <p className="text-gray-700 leading-relaxed text-[0.925rem]">{answer}</p>
+          <div className="space-y-4">
+            {answer.split(/\n\n+/).filter(Boolean).map((paragraph, index) => (
+              <p key={index} className="text-gray-700 leading-relaxed text-[0.925rem]">{paragraph}</p>
+            ))}
+          </div>
         </div>
       )}
     </div>
