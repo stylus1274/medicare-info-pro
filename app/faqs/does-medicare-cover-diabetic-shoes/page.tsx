@@ -34,7 +34,7 @@ const FAQ = {
     {
       heading: "How can you avoid a coverage problem?",
       content:
-        "Before ordering, confirm that the clinician managing your diabetes will complete the required certification and that the prescribing practitioner and supplier are properly enrolled in Medicare. Ask the supplier whether it accepts assignment and request an estimate of your share before the items are made. Keep copies of the prescription, certification, and supplier paperwork.<br><br>Do not let a supplier substitute general comfort shoes for a covered therapeutic-shoe order without explaining the difference. The Medicare benefit has specific clinical and supplier rules, and ordinary footwear is not automatically covered.",
+        "Before ordering, confirm that the clinician managing your diabetes will complete the required certification and that the prescribing practitioner and supplier are properly enrolled in Medicare. Ask the supplier whether it accepts assignment and request an estimate of your share before the items are made. Keep copies of the prescription, certification, and supplier paperwork.<br><br>Do not let a supplier substitute general comfort shoes for a covered therapeutic-shoe order without explaining the difference. The Medicare benefit has specific clinical and supplier rules, and ordinary footwear is not automatically covered.<br><br>If a supplier asks you to sign an Advance Beneficiary Notice before providing an item or service under Original Medicare, read our <a href=\"/faqs/advance-beneficiary-notice/\" class=\"text-[#1a3fa8] underline underline-offset-2\">ABN FAQ</a> and ask the supplier to explain the listed item, estimated cost, and payment choices.",
     },
   ],
   relatedFaqs: [

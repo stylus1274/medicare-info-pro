@@ -184,6 +184,7 @@ export default function MedicarePartDClient() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Compare Your 2027 Prescription Costs in Brandon</h2>
             <p className="text-gray-700 leading-relaxed mb-5">Enter your exact medications, doses, refill quantities, and pharmacy locations. Then review estimated annual costs and restrictions for the correct plan year.</p>
+            <p className="text-gray-700 leading-relaxed mb-5">Comparing a pharmacy discount with your plan price? Read our <Link href="/faqs/goodrx-and-medicare-part-d/" className="text-[#1a3fa8] underline underline-offset-2">FAQ about using GoodRx instead of Medicare Part D</Link> before choosing how to pay for a prescription.</p>
             <div className="flex flex-wrap gap-5 text-[#1a3fa8] font-semibold underline underline-offset-4">
               <Link href="/compare-medicare-prescription-costs-brandon/">Use the prescription cost comparison worksheet</Link>
               <Link href="/medicare-consulting-services-brandon/">Request an annual Medicare plan review in Brandon</Link>

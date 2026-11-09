@@ -131,7 +131,7 @@ const POST = {
         },
         {
           heading: "5. Keep a Record and Recheck Before Care",
-          content: "Write down the date, representative's name, phone number, and call reference number. Request written confirmation or a secure message when available. Recheck when scheduling care, before a plan change, and during your annual review. Keep unresolved questions separate from confirmed results.",
+          content: "Write down the date, representative's name, phone number, and call reference number. Request written confirmation or a secure message when available. Recheck when scheduling care, before a plan change, and during your annual review. Keep unresolved questions separate from confirmed results.\n\nIf you are checking a specialist for another surgical consultation, use our <a href=\"/faqs/medicare-second-opinion-before-surgery/\">FAQ about Medicare coverage for a second surgical opinion</a> to prepare additional questions for the plan and doctor.",
         },
       ],
     },

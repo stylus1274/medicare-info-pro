@@ -34,7 +34,7 @@ const FAQ = {
     {
       heading: "What should you ask the supplier and your clinician?",
       content:
-        "Ask whether the supplier is enrolled in Medicare and accepts assignment, whether it will submit the claim for the seat-lift mechanism, and what documentation it needs from your physician. Ask your clinician whether the treatment plan and prescription clearly address the Medicare criteria. If you have Medicare Advantage, contact the plan before delivery to confirm supplier-network and prior-authorization requirements.<br><br>If the supplier says the entire chair is covered, ask for that statement in writing. Medicare's policy covers the mechanism only, so a clear itemized estimate can prevent an unexpected bill.",
+        "Ask whether the supplier is enrolled in Medicare and accepts assignment, whether it will submit the claim for the seat-lift mechanism, and what documentation it needs from your physician. Ask your clinician whether the treatment plan and prescription clearly address the Medicare criteria. If you have Medicare Advantage, contact the plan before delivery to confirm supplier-network and prior-authorization requirements.<br><br>If the supplier says the entire chair is covered, ask for that statement in writing. Medicare's policy covers the mechanism only, so a clear itemized estimate can prevent an unexpected bill.<br><br>If a supplier asks you to sign an Advance Beneficiary Notice before providing an item or service under Original Medicare, read our <a href=\"/faqs/advance-beneficiary-notice/\" class=\"text-[#1a3fa8] underline underline-offset-2\">ABN FAQ</a> and ask the supplier to explain the listed item, estimated cost, and payment choices.",
     },
   ],
   relatedFaqs: [
