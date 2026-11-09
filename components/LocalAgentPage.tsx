@@ -14,6 +14,7 @@ export interface LocalPageConfig {
   slug: string;               // e.g. "brandon"
   headline: string;           // H1 text
   subheadline: string;        // Hero paragraph
+  ctaLabel?: string;
   benefits?: string[];
   servicesIntro?: string;
   officeNotes?: string[];
@@ -29,6 +30,11 @@ export interface LocalPageConfig {
     title: string;
     intro: string;
     items: string[];
+  };
+  consultationSection?: {
+    title: string;
+    intro: string;
+    steps: { title: string; description: string }[];
   };
   localSupportSection?: {
     nextSteps: {
@@ -90,7 +96,7 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const pathname = usePathname();
   const typeLabel = PAGE_TYPE_LABELS[config.pageType];
-  const ctaLabel = PAGE_TYPE_CTA[config.pageType];
+  const ctaLabel = config.ctaLabel ?? PAGE_TYPE_CTA[config.pageType];
   const localCallbackHref = `/local-consultation?${new URLSearchParams({
     city: config.city,
     service: typeLabel,
@@ -230,6 +236,33 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                     </div>
                   </>
                 )}
+              </section>
+            )}
+
+            {config.consultationSection && (
+              <section>
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  {config.consultationSection.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {config.consultationSection.intro}
+                </p>
+                <ol className="space-y-4">
+                  {config.consultationSection.steps.map((step, index) => (
+                    <li key={step.title} className="flex items-start gap-4 rounded-xl border border-blue-100 bg-blue-50 p-5">
+                      <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1a3fa8] font-bold text-white">
+                        {index + 1}
+                      </span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-2">{step.title}</h3>
+                        <p className="text-sm leading-relaxed text-gray-700">{step.description}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+                <Link href={localCallbackHref} className="inline-flex items-center justify-center rounded-lg bg-[#f5a800] px-6 py-3 mt-6 font-bold text-white hover:bg-amber-400 transition-colors">
+                  {ctaLabel}
+                </Link>
               </section>
             )}
 

@@ -5,7 +5,7 @@ const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Medicare Insurance Agent Brandon FL | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl",
+  "url": "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/",
   "isPartOf": {
     "@id": "https://medicareinfopro.com/#website"
   },
@@ -65,65 +65,47 @@ const localBusinessSchema = {
   }
 } as const;
 
+const faqs = [
+  {
+    q: "What does a Medicare insurance agent in Brandon do?",
+    a: "A licensed Medicare insurance agent helps you understand coverage choices, compare plans the agency represents, review doctors and prescriptions, and complete an enrollment application when you are eligible. At Medicare Information Project, you can meet with an agent in Brandon or arrange a phone or video consultation.",
+  },
+  {
+    q: "Is working with a Medicare insurance agent free in Brandon?",
+    a: "Medicare Information Project does not charge you a consultation or enrollment fee. Insurance carriers compensate us when you enroll in a plan we represent. Your plan premium is the same whether you enroll through us or directly with that carrier. We can explain which carriers and plans we represent before you compare options.",
+  },
+  {
+    q: "What should I bring to a Medicare consultation?",
+    a: "Have your current coverage information, Medicare card if you have one, a list of doctors and hospitals, and your prescriptions with dosages ready. Include your preferred pharmacy and any questions about retirement, employer insurance, or an upcoming coverage change. Bring these materials to your appointment rather than submitting Medicare numbers through a general contact form.",
+  },
+  {
+    q: "Can you help check my Brandon doctors and prescriptions?",
+    a: "Yes. We help review provider networks, prescription drug formularies, and pharmacy options for the plans we represent. Have the exact plan name, your doctors' names and locations, and medication details available. Provider participation and drug coverage can change, so confirm details for the plan and coverage year you are considering.",
+  },
+  {
+    q: "Where is your Brandon office, and can I meet remotely?",
+    a: "Our office is at 915 Oakfield Dr, Suite A, Brandon, FL 33511. Call 813-699-5559 to arrange a consultation. Phone and video appointments are also available for residents of Brandon and surrounding Hillsborough County communities.",
+  },
+  {
+    q: "Can you help if I am turning 65 or leaving employer coverage?",
+    a: "Yes. We can discuss your current coverage, expected coverage end date, and Medicare enrollment questions. Your next steps depend on your circumstances. Bring employer coverage details and important dates so an agent can help you understand what to check before making a change.",
+  },
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do you have a Medicare insurance agent near Brandon, FL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. Our licensed agents serve Brandon, Valrico, Riverview, and Seffner at no cost to you. Call 813-699-5559 to speak with an agent today."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does it cost to use a Medicare agent in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our service is completely free. Medicare agents are compensated by the insurance carriers, not by you. You pay the same premium whether you enroll through an agent or directly with the carrier — and an independent agent can compare 17+ carriers to find you the best option."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Medicare plans are available in Brandon, FL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brandon residents in ZIP codes 33510 and 33511 have access to Medicare Advantage plans, Medicare Supplement (Medigap) plans including Plan G and Plan N, and Part D prescription drug plans. Our agents compare all available options in your specific ZIP code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can a Medicare agent help me during the Annual Enrollment Period?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The Annual Enrollment Period runs October 15 to December 7 each year. During this window you can switch Medicare Advantage plans, switch from Medicare Advantage to Original Medicare, or change your Part D plan. Our Brandon agents are available to review your options at no cost."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between an independent Medicare agent and a captive agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An independent agent like MIP represents multiple carriers and can compare plans across 17+ companies to find the best fit for your needs. A captive agent works for a single carrier and can only offer that company's plans. Independent agents typically have access to more options and can provide more objective comparisons."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Medicare Information Pro located in Brandon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Medicare Information Pro is located at 915 Oakfield Dr, Brandon, FL 33511. We serve Brandon, Valrico, Riverview, Seffner, and surrounding Hillsborough County communities. Call 813-699-5559 or visit our website to schedule a free consultation."
-      }
-    }
-  ]
-} as const;
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Local Medicare Agent in Brandon, FL — Free, No-Pressure Help',
-  description: 'MIP\'s office is at 915 Oakfield Dr, Brandon. Independent agents compare 17+ carriers — Medicare Advantage, Medigap, and Part D — at no cost to you. Call 813-699-5559.',
+  title: 'Medicare Insurance Agent in Brandon, FL | Free Consultation',
+  description: 'Meet a licensed Medicare insurance agent in Brandon, FL. Get help comparing plans, doctors, prescriptions, and enrollment at no cost to you.',
 
   alternates: { canonical: "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/" },};
 
@@ -150,7 +132,54 @@ export default function Page() {
         slug: "brandon",
         pageType: "insurance-agent",
         headline: "Medicare Insurance Agent in Brandon, FL",
-        subheadline: "Our licensed Medicare insurance agents in Brandon help you compare every available plan in your ZIP code. We represent 17+ carriers and our service is always free.",
+        subheadline: "Meet with a licensed Medicare insurance agent at our Brandon office or by phone or video. Get help comparing the plans we represent, checking your doctors and prescriptions, and understanding your enrollment options at no cost to you.",
+        ctaLabel: "Request a Free Consultation",
+        benefits: [
+          "A Brandon office at 915 Oakfield Dr, Suite A",
+          "Licensed, independent agents who explain the plans we represent",
+          "Help reviewing your doctors, prescriptions, and preferred pharmacy",
+          "Clear comparisons of premiums and other plan costs",
+          "No consultation or enrollment fee charged by our agency",
+          "Phone, video, and in-person appointments",
+        ],
+        servicesIntro: "Medicare Information Project helps Brandon residents compare Medicare options based on their coverage needs. Start with your doctors, medications, budget, and current insurance. We explain the plans we represent and help you understand the differences before you decide.",
+        bodyText: 'Preparing for a conversation? Use our <a href="/check-medicare-doctor-hospital-networks-brandon-fl/" class="text-[#1a3fa8] underline underline-offset-2">Brandon doctor and hospital network checklist</a> and <a href="/compare-medicare-prescription-costs-brandon/" class="text-[#1a3fa8] underline underline-offset-2">guide to comparing Medicare prescription costs in Brandon</a>. If you are retiring, review our <a href="/medicare-and-employer-insurance-after-65-brandon-fl/" class="text-[#1a3fa8] underline underline-offset-2">Brandon Medicare and employer insurance guide</a> before changing your coverage.',
+        consultationSection: {
+          title: "What Happens During Your Free Medicare Consultation",
+          intro: "You do not need to choose a plan before contacting us. The conversation starts with your situation and the questions you want answered.",
+          steps: [
+            {
+              title: "Tell us what you need help with",
+              description: "Let us know if you are new to Medicare, leaving employer insurance, moving to Brandon, or reviewing your current plan. We discuss your current coverage and any dates that may affect your next steps.",
+            },
+            {
+              title: "Review plans around your care and budget",
+              description: "We help compare the plans we represent using your doctors, prescriptions, preferred pharmacy, and expected costs. Ask about premiums, out-of-pocket expenses, and provider networks rather than choosing on the premium alone.",
+            },
+            {
+              title: "Understand your options and next steps",
+              description: "An agent explains the comparison and answers your questions. If you choose a plan we represent and are eligible to enroll, we can help with the application. You can also take time to consider your options without an obligation to enroll.",
+            },
+          ],
+        },
+        guidanceSection: {
+          title: "What to Have Ready for Your Appointment",
+          intro: "Bring these details to your in-person appointment or have them available for a phone or video call. Do not enter Medicare numbers or medical details into a general callback form.",
+          items: [
+            "Your Medicare card, if you have one, and information about your current insurance",
+            "Your doctors' names, office locations, and hospitals you want to check",
+            "Prescription names, dosages, refill frequency, and preferred pharmacy",
+            "Questions about plan costs, travel, or a change in your coverage",
+            "Any employer coverage end date or other enrollment dates you need to discuss",
+          ],
+        },
+        agent: {
+          name: "Greg Wohl",
+          title: "Licensed Medicare Agent",
+          location: "Brandon, FL",
+          photoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_13284fbb.png",
+          description: "Talk with Greg Wohl about your Medicare questions, the plans the agency represents, and what to review before enrolling. Consultations are available in Brandon, by phone, or by video.",
+        },
         metaTitle: "Medicare Insurance Agent Brandon FL | Medicare Information Project",
         metaDescription: "Licensed Medicare insurance agents in Brandon, FL. Compare Medicare Advantage, Medigap, and Part D plans from 17+ carriers at no cost.",
         nearbyLandmarks: [
@@ -160,19 +189,13 @@ export default function Page() {
           "St. Joseph's Hospital",
         ],
         neighborhoods: ["Brandon 33510", "Brandon 33511", "Dover 33527", "Valrico 33594"],
-        faqs: [
-          { q: "What does a Medicare insurance agent in Brandon do?", a: "A licensed Medicare insurance agent in Brandon helps you compare Medicare Advantage, Medigap, and Part D plans from multiple carriers. We verify your doctors are in-network, review drug formularies, and explain your options so you can make an informed decision." },
-          { q: "Is working with a Medicare insurance agent free in Brandon?", a: "Yes. Our service is completely free. Insurance carriers pay us a commission, not you. Your premium is the same whether you work with us or enroll directly." },
-          { q: "Which Medicare plans are available in Brandon, FL?", a: "Brandon residents across ZIP codes 33510 and 33511 have access to Medicare Advantage HMO and PPO plans, Medigap plans A through N, and Part D prescription drug plans from multiple carriers." },
-          { q: "How do I find a Medicare insurance agent near Brandon?", a: "Our office is located in Brandon, FL. You can reach us at 813-699-5559 or schedule a free consultation online. We also offer phone and video appointments." },
-          { q: "Can a Brandon Medicare agent help me during the Annual Enrollment Period?", a: "Yes. The Annual Enrollment Period (October 15 to December 7) is our busiest time of year. We help Brandon residents review their current plan, compare alternatives, and switch if a better option is available." },
-        ],
+        faqs,
         relatedLinks: [
-          { label: "Medicare Agent Brandon", href: "/medicare-agent-brandon/" },
-          { label: "Medicare Consulting Brandon", href: "/medicare-consulting-services-brandon/" },
-          { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
-          { label: "Medicare Advantage", href: "/medicare-advantage/" },
-          { label: "Free Consultation", href: "/get-started/" },
+          { label: "Check Brandon Doctors and Hospital Networks", href: "/check-medicare-doctor-hospital-networks-brandon-fl/" },
+          { label: "Compare Prescription Costs in Brandon", href: "/compare-medicare-prescription-costs-brandon/" },
+          { label: "Medicare Advantage Plans in Brandon", href: "/medicare-advantage-plans-brandon-florida/" },
+          { label: "Turning 65 in Brandon", href: "/turning-65-brandon-fl/" },
+          { label: "Medicare and Employer Insurance After 65", href: "/medicare-and-employer-insurance-after-65-brandon-fl/" },
         ],
       }}
     />
