@@ -11,6 +11,32 @@ export interface SearchResult {
 
 export const SEARCH_INDEX: SearchResult[] = [
 {
+  "title": "How Do I Pay Medicare Premiums if I’m Not Receiving Social Security?",
+  "description": "If you are not receiving Social Security or Railroad Retirement Board benefits, Medicare generally sends you a premium bill. You can pay through your Medicare account, Medicare Easy Pay, your bank’s bill-payment service, or the payment coupon by mail. Check who issued each bill, because premiums billed by a private insurer have separate payment instructions.",
+  "url": "/faqs/pay-medicare-premiums-without-social-security/",
+  "category": "FAQ",
+  "tags": [
+    "Brandon",
+    "Medicare",
+    "premium payments",
+    "Easy Pay",
+    "Social Security"
+  ]
+},
+{
+  "title": "What Is an Advance Beneficiary Notice, and Should I Sign It?",
+  "description": "An Advance Beneficiary Notice of Noncoverage, or ABN, warns that Original Medicare may not pay for a particular item or service and that you could owe the cost. It is not a final coverage denial. Before choosing an option and signing, ask the provider to explain the service, estimated charge, reason for possible noncoverage, and whether a claim will be sent to Medicare.",
+  "url": "/faqs/advance-beneficiary-notice/",
+  "category": "FAQ",
+  "tags": [
+    "Brandon",
+    "Medicare",
+    "ABN",
+    "Advance Beneficiary Notice",
+    "medical bills"
+  ]
+},
+{
   "title": "Medicare Outpatient Surgery Coverage in Brandon: What You Need to Know",
   "description": "Planning outpatient surgery in Brandon? Learn what to confirm about Medicare coverage, facility fees, authorization, and estimated costs before scheduling.",
   "url": "/medicare-outpatient-surgery-coverage-brandon-fl/",

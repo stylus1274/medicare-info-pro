@@ -5,6 +5,22 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+{
+  "@type": "Question",
+  "name": "How Do I Pay Medicare Premiums if I’m Not Receiving Social Security?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "If you are not receiving Social Security or Railroad Retirement Board benefits, Medicare generally sends you a premium bill. You can pay through your Medicare account, Medicare Easy Pay, your bank’s bill-payment service, or the payment coupon by mail. Check who issued each bill, because premiums billed by a private insurer have separate payment instructions."
+  }
+},
+{
+  "@type": "Question",
+  "name": "What Is an Advance Beneficiary Notice, and Should I Sign It?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "An Advance Beneficiary Notice of Noncoverage, or ABN, warns that Original Medicare may not pay for a particular item or service and that you could owe the cost. It is not a final coverage denial. Before choosing an option and signing, ask the provider to explain the service, estimated charge, reason for possible noncoverage, and whether a claim will be sent to Medicare."
+  }
+},
     {
   "@type": "Question",
   "name": "Can I Change My Medicare Plan Again Before December 7?",

@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 export const FAQ_SLUGS = [
+  "/faqs/pay-medicare-premiums-without-social-security",
+  "/faqs/advance-beneficiary-notice",
+
   "/faqs/change-medicare-plan-again-before-december-7",
   "/faqs/medicare-and-cobra",
   "/faqs/medigap-guaranteed-issue-rights-florida",

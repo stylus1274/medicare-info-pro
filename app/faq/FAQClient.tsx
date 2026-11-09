@@ -86,6 +86,14 @@ const categories: Category[] = [
   {
     heading: "Medicare Parts A and B",
     faqs: [
+{
+      "q": "What Is an Advance Beneficiary Notice, and Should I Sign It?",
+      "a": "An Advance Beneficiary Notice of Noncoverage, or ABN, warns that Original Medicare may not pay for a particular item or service and that you could owe the cost. It is not a final coverage denial. Before choosing an option and signing, ask the provider to explain the service, estimated charge, reason for possible noncoverage, and whether a claim will be sent to Medicare.",
+      "link": {
+            "label": "Read the full FAQ",
+            "href": "/faqs/advance-beneficiary-notice/"
+      }
+},
       {
         q: "What does Medicare Part A cover?",
         a: "Medicare Part A covers inpatient hospital care, skilled nursing facility care (after a qualifying hospital stay), hospice care, and home health services. Most people pay no premium for Part A if they or their spouse paid Medicare taxes for at least 10 years.",
@@ -223,6 +231,14 @@ const categories: Category[] = [
   {
     heading: "Costs and Savings",
     faqs: [
+{
+      "q": "How Do I Pay Medicare Premiums if I’m Not Receiving Social Security?",
+      "a": "If you are not receiving Social Security or Railroad Retirement Board benefits, Medicare generally sends you a premium bill. You can pay through your Medicare account, Medicare Easy Pay, your bank’s bill-payment service, or the payment coupon by mail. Check who issued each bill, because premiums billed by a private insurer have separate payment instructions.",
+      "link": {
+            "label": "Read the full FAQ",
+            "href": "/faqs/pay-medicare-premiums-without-social-security/"
+      }
+},
       {
         q: "What are the Medicare costs in 2026?",
         a: "Key 2026 Medicare figures: Part B premium $202.90/month, Part B deductible $283/year, Part A deductible $1,736/benefit period, Part D out-of-pocket cap $2,100/year, SNF coinsurance (days 21-100) $212/day.",
