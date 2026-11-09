@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
 export const FAQ_SLUGS = [
+  "/faqs/goodrx-and-medicare-part-d",
+  "/faqs/medicare-second-opinion-before-surgery",
+
   "/faqs/pay-medicare-premiums-without-social-security",
   "/faqs/advance-beneficiary-notice",
 

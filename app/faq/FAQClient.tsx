@@ -204,6 +204,14 @@ const categories: Category[] = [
   {
     heading: "Prescription Drug Coverage (Part D)",
     faqs: [
+{
+      "q": "Can I Use GoodRx Instead of My Medicare Part D Plan?",
+      "a": "Yes, you can often use a GoodRx discount instead of your Medicare drug coverage for an individual prescription, but you cannot combine both for that fill. Compare the exact pharmacy prices and restrictions first. Purchases made with a discount card instead of Medicare generally do not count toward your Part D deductible or out-of-pocket limit, and a discount card is not a replacement for drug insurance.",
+      "link": {
+            "label": "Read the full FAQ",
+            "href": "/faqs/goodrx-and-medicare-part-d/"
+      }
+},
       {
         q: "What is Medicare Part D?",
         a: "Medicare Part D provides prescription drug coverage. It is offered through private insurance companies approved by Medicare. You can get Part D as a standalone plan (if you have Original Medicare) or as part of a Medicare Advantage plan that includes drug coverage (MAPD).",
@@ -262,6 +270,14 @@ const categories: Category[] = [
   {
     heading: "Coverage Questions",
     faqs: [
+{
+      "q": "Does Medicare Cover a Second Opinion Before Surgery?",
+      "a": "In some cases, Medicare Part B covers a second opinion for medically necessary, non-emergency surgery. With Original Medicare, you generally pay 20% of the Medicare-approved amount after the Part B deductible. Medicare can also cover a third surgical opinion when the first two differ. If you have Medicare Advantage, confirm the plan’s provider, referral, authorization, and cost rules before scheduling.",
+      "link": {
+            "label": "Read the full FAQ",
+            "href": "/faqs/medicare-second-opinion-before-surgery/"
+      }
+},
       {
         q: "Does Medicare cover dental care?",
         a: "Original Medicare does not cover routine dental care such as cleanings, fillings, or dentures. However, many Medicare Advantage plans include dental benefits. Some standalone dental plans are also available to Medicare beneficiaries.",

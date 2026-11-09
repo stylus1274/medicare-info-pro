@@ -7,6 +7,22 @@ const faqSchema = {
   "mainEntity": [
 {
   "@type": "Question",
+  "name": "Can I Use GoodRx Instead of My Medicare Part D Plan?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes, you can often use a GoodRx discount instead of your Medicare drug coverage for an individual prescription, but you cannot combine both for that fill. Compare the exact pharmacy prices and restrictions first. Purchases made with a discount card instead of Medicare generally do not count toward your Part D deductible or out-of-pocket limit, and a discount card is not a replacement for drug insurance."
+  }
+},
+{
+  "@type": "Question",
+  "name": "Does Medicare Cover a Second Opinion Before Surgery?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In some cases, Medicare Part B covers a second opinion for medically necessary, non-emergency surgery. With Original Medicare, you generally pay 20% of the Medicare-approved amount after the Part B deductible. Medicare can also cover a third surgical opinion when the first two differ. If you have Medicare Advantage, confirm the plan’s provider, referral, authorization, and cost rules before scheduling."
+  }
+},
+{
+  "@type": "Question",
   "name": "How Do I Pay Medicare Premiums if I’m Not Receiving Social Security?",
   "acceptedAnswer": {
     "@type": "Answer",

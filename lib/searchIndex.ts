@@ -11,6 +11,34 @@ export interface SearchResult {
 
 export const SEARCH_INDEX: SearchResult[] = [
 {
+  "title": "Can I Use GoodRx Instead of My Medicare Part D Plan?",
+  "description": "Yes, you can often use a GoodRx discount instead of your Medicare drug coverage for an individual prescription, but you cannot combine both for that fill. Compare the exact pharmacy prices and restrictions first. Purchases made with a discount card instead of Medicare generally do not count toward your Part D deductible or out-of-pocket limit, and a discount card is not a replacement for drug insurance.",
+  "url": "/faqs/goodrx-and-medicare-part-d/",
+  "category": "FAQ",
+  "tags": [
+    "Brandon",
+    "Medicare",
+    "GoodRx",
+    "Part D",
+    "discount cards",
+    "pharmacy prices"
+  ]
+},
+{
+  "title": "Does Medicare Cover a Second Opinion Before Surgery?",
+  "description": "In some cases, Medicare Part B covers a second opinion for medically necessary, non-emergency surgery. With Original Medicare, you generally pay 20% of the Medicare-approved amount after the Part B deductible. Medicare can also cover a third surgical opinion when the first two differ. If you have Medicare Advantage, confirm the plan’s provider, referral, authorization, and cost rules before scheduling.",
+  "url": "/faqs/medicare-second-opinion-before-surgery/",
+  "category": "FAQ",
+  "tags": [
+    "Brandon",
+    "Medicare",
+    "second opinion",
+    "third opinion",
+    "surgery",
+    "specialist"
+  ]
+},
+{
   "title": "How Do I Pay Medicare Premiums if I’m Not Receiving Social Security?",
   "description": "If you are not receiving Social Security or Railroad Retirement Board benefits, Medicare generally sends you a premium bill. You can pay through your Medicare account, Medicare Easy Pay, your bank’s bill-payment service, or the payment coupon by mail. Check who issued each bill, because premiums billed by a private insurer have separate payment instructions.",
   "url": "/faqs/pay-medicare-premiums-without-social-security/",
