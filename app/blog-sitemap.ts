@@ -26,8 +26,6 @@ const BLOG_SLUGS = [
   "/medicare-out-of-pocket-costs",
   "/how-to-get-help-paying-for-medicare",
   "/feeling-trapped-in-medicare-advantage-plans",
-  "/2025-medicare-scams-florida",
-  "/understanding-the-2000-out-of-pocket-cap-for-medicare-part-d-in-2025",
   "/does-medicare-cover-ambulance-rides",
   "/why-is-health-insurance-so-expensive-in-florida",
   "/how-much-does-health-insurance-cost-per-month-in-florida",
