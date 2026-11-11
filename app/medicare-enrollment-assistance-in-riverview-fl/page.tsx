@@ -5,7 +5,7 @@ const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Medicare Enrollment Assistance in Riverview FL | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-in-riverview-fl",
+  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-in-riverview-fl/",
   "isPartOf": {
     "@id": "https://medicareinfopro.com/#website"
   },
@@ -14,15 +14,15 @@ const webpageSchema = {
     "name": "Medicare Information Pro",
     "@id": "https://medicareinfopro.com/#organization"
   },
-  "description": "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers."
+  "description": "Request no-cost Medicare enrollment help in Riverview, FL. Talk with a licensed agent about timing, coverage questions, and plan options."
 } as const;
 
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Enrollment Assistance in Riverview FL | Medicare Information Project",
-  description: "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
+  title: "Medicare Enrollment Assistance in Riverview, FL",
+  description: "Request no-cost Medicare enrollment help in Riverview, FL. Talk with a licensed agent about timing, coverage questions, and plan options.",
 
   alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-in-riverview-fl/" },};
 
@@ -41,9 +41,17 @@ export default function Page() {
         slug: "riverview",
         pageType: "enrollment",
         headline: "Medicare Enrollment Assistance in Riverview, FL",
-        subheadline: "Riverview is one of Florida's fastest-growing communities, and thousands of residents are approaching Medicare age each year. Our specialists help you identify your enrollment window, compare plans, and enroll without penalties.",
+        subheadline: "Get help from a licensed agent serving Riverview. Bring your coverage questions and your list of doctors and prescriptions so we can review the plans we represent together.",
+        servicesIntro: "An agent can help you prepare for enrollment, compare the insurance plans we represent for your ZIP code, and identify the coverage details you need to verify before you apply.",
+        ctaLabel: "Request Enrollment Help",
+        benefits: [
+          "Licensed agents serving Riverview",
+          "No agency consultation fee",
+          "Review plans the agency represents for your address",
+          "Help organizing questions about doctors, prescriptions, and costs",
+        ],
         metaTitle: "Medicare Enrollment Assistance in Riverview FL | Medicare Information Project",
-        metaDescription: "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
+        metaDescription: "Request no-cost Medicare enrollment help in Riverview, FL. Talk with a licensed agent about timing, coverage questions, and plan options.",
         nearbyLandmarks: [
           "AdventHealth Riverview",
           "HCA Florida Brandon Hospital",
@@ -52,13 +60,13 @@ export default function Page() {
         ],
         neighborhoods: ["Riverview 33569", "Riverview 33578", "Riverview 33579", "Gibsonton 33534"],
         faqs: [
-          { q: "When do I need to enroll in Medicare in Riverview?", a: "Your Initial Enrollment Period is a 7-month window starting 3 months before your 65th birthday month. Enrolling late results in permanent Part B penalties of 10% per 12-month delay." },
-          { q: "Is Medicare enrollment assistance free in Riverview?", a: "Yes. Our service is completely free. Insurance carriers compensate us, not you, and your premium is the same whether you work with us or enroll directly." },
-          { q: "What if I am still working when I turn 65 in Riverview?", a: "If you have employer coverage from an employer with 20 or more employees, you may be able to delay Part B without penalty. We help Riverview residents in this situation understand their options and determine the right time to enroll." },
-          { q: "What Medicare plans are available during enrollment in Riverview?", a: "Riverview residents across ZIP codes 33569, 33578, and 33579 have access to Medicare Advantage, Medigap, and Part D plans. We compare all available options for your specific ZIP code." },
-          { q: "What is a Special Enrollment Period and do I qualify in Riverview?", a: "A Special Enrollment Period allows you to enroll outside of standard enrollment windows due to qualifying life events such as losing employer coverage, moving, or gaining eligibility for Medicaid. We help Riverview residents determine if they qualify." },
+          { q: "What happens during a Medicare enrollment consultation for Riverview residents?", a: "Bring the names and office locations of the Riverview doctors you want to keep. We can review the exact network and drug coverage for the plans you are considering." },
+          { q: "Is Medicare enrollment assistance free in Riverview?", a: "Medicare Information Project does not charge an agency consultation fee. Plan premiums and other coverage costs still apply." },
+          { q: "Can I talk to an agent by phone?", a: "Yes. You can request a phone consultation. Share your ZIP code and the enrollment question you want to discuss when you request a callback." },
+          { q: "Can I get help comparing plans after I enroll in Medicare?", a: "Yes. Bring your current coverage details, providers, and prescriptions. An agent can review plans the agency represents and help identify the questions to confirm before switching." },
         ],
         relatedLinks: [
+          { label: "How to Enroll in Medicare in Riverview, FL", href: "/medicare-enrollment-assistance-riverview/" },
           { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview/" },
           { label: "Medicare Insurance Agent Riverview", href: "/medicare-insurance-agent-riverview-fl/" },
           { label: "Medicare Enrollment Brandon", href: "/medicare-enrollment-assistance-in-brandon-fl/" },

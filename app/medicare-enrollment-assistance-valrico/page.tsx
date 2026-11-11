@@ -1,86 +1,61 @@
-import type { Metadata } from "next";
-import LocalAgentPage from "@/components/LocalAgentPage";
+import MedicareEnrollmentGuide, {
+  enrollmentGuideMetadata,
+  type EnrollmentGuide,
+} from "@/components/MedicareEnrollmentGuide";
 
-const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Medicare Enrollment Assistance Valrico FL | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-valrico",
-  "isPartOf": {
-    "@id": "https://medicareinfopro.com/#website"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  },
-  "description": "Free Medicare enrollment assistance in Valrico, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers."
-} as const;
+const guide: EnrollmentGuide = {
+  "path": "/medicare-enrollment-assistance-valrico/",
+  "title": "How to Enroll in Medicare After Retirement in Valrico, FL",
+  "headline": "How to Enroll in Medicare After Retirement in Valrico, FL",
+  "description": "Retiring in Valrico? Organize your employer coverage dates, review the Part B application steps, and check coverage for your retirement.",
+  "city": "Valrico",
+  "intro": "If you are retiring in Valrico and leaving job-based coverage, start with the dates your employer gives you. Use those dates to prepare questions for Social Security and plan how your Medicare coverage will begin.",
+  "steps": [
+    {
+      "title": "Ask for the dates in writing",
+      "text": "Contact your employer or your spouse’s employer for the last day of work and the last day of active employee health coverage. Record any separate dates for retiree coverage or COBRA so you can describe each type of insurance accurately when asking about Medicare.",
+      "link": {
+        "label": "Review Medicare’s guidance on working past 65",
+        "href": "https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/working-past-65"
+      }
+    },
+    {
+      "title": "Confirm which Medicare application applies",
+      "text": "Check your Medicare card or account to see which parts you already have. If you have Part A and need to add Part B, ask Social Security which application and proof of employer coverage you need. Confirm your enrollment window and effective date for your situation.",
+      "link": {
+        "label": "Review Social Security’s Medicare application options",
+        "href": "https://www.ssa.gov/medicare/sign-up"
+      }
+    },
+    {
+      "title": "Compare coverage for retirement in Valrico",
+      "text": "List the doctors, hospitals, prescriptions, and pharmacy you expect to use after retirement. Compare options using your home ZIP code, such as 33594 or 33596, and check the exact plan and coverage year. Include costs for the services you use regularly.",
+      "link": {
+        "label": "Compare Medicare plans for your Valrico ZIP code",
+        "href": "https://www.medicare.gov/plan-compare/"
+      }
+    },
+    {
+      "title": "Review the transition before ending coverage",
+      "text": "Keep copies of forms and confirmations. Compare your employer coverage end date with your confirmed Medicare and plan start dates. Ask your employer or Social Security to clarify any gap or overlap before canceling existing coverage.",
+      "link": {
+        "label": "Review Medicare and employer coverage after 65",
+        "href": "/medicare-and-employer-insurance-after-65-brandon-fl/"
+      }
+    }
+  ],
+  "checklistTitle": "Valrico Retirement Coverage Checklist",
+  "checklist": [
+    "Last day of work and last day of active employee coverage",
+    "Existing Medicare card and start dates, if available",
+    "Employer contact for coverage verification",
+    "Current medications, doctors, and pharmacy"
+  ],
+  "servicePath": "/medicare-enrollment-assistance-in-valrico-fl/"
+};
 
-
-export const dynamic = "force-dynamic";
-
-export const metadata: Metadata = {
-  title: "Medicare Enrollment Assistance Valrico FL | Medicare Information Project",
-  description: "Free Medicare enrollment assistance in Valrico, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-
-  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-valrico/" },};
+export const metadata = enrollmentGuideMetadata(guide);
 
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
-      />
-<LocalAgentPage
-      config={{
-        city: "Valrico",
-        cityFull: "Valrico, FL",
-        county: "Hillsborough County",
-        slug: "valrico",
-        pageType: "enrollment",
-        headline: "Medicare Enrollment Assistance in Valrico, FL",
-        subheadline: "Valrico residents approaching Medicare eligibility can count on our independent enrollment specialists for honest, no-cost guidance. We compare plans from 17+ carriers, identify your exact enrollment window, and make sure you never pay a penalty you did not have to.",
-        metaTitle: "Medicare Enrollment Assistance Valrico FL | Medicare Information Project",
-        metaDescription: "Free Medicare enrollment assistance in Valrico, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-        nearbyLandmarks: [
-          "HCA Florida Brandon Hospital",
-          "AdventHealth Brandon",
-          "BayCare Medical Group Brandon",
-          "St. Joseph's Hospital",
-        ],
-        neighborhoods: ["Valrico 33594", "Valrico 33596", "Brandon 33511", "Seffner 33584"],
-        faqs: [
-          {
-            q: "When do I need to enroll in Medicare in Valrico?",
-            a: "Your Initial Enrollment Period is a 7-month window that starts 3 months before your 65th birthday month and ends 3 months after. A late Part B enrollment results in a permanent 10% penalty for each 12-month period you delayed. Visit our turning 65 guide for a complete enrollment timeline.",
-          },
-          {
-            q: "Is Medicare enrollment assistance free in Valrico?",
-            a: "Yes, completely free. Insurance carriers compensate us when you enroll, and your premium is the same whether you work with us or enroll directly.",
-          },
-          {
-            q: "What Medicare plans are available in Valrico?",
-            a: "Valrico residents in Hillsborough County have access to Medicare Advantage plans from Humana, UnitedHealthcare, Aetna, Cigna, Florida Blue, and other carriers, plus all standardized Medigap plan letters and Part D drug plans. See our comparing Medicare plans Valrico page for a full breakdown.",
-          },
-          {
-            q: "Can you help me if I am still working at 65 in Valrico?",
-            a: "Yes. If you have employer coverage from a company with 20 or more employees, you may be able to delay Part B without penalty. Our do I need Medicare page explains this scenario in detail.",
-          },
-          {
-            q: "Do you serve areas near Valrico?",
-            a: "Yes. We serve all of eastern Hillsborough County including Brandon, Seffner, Plant City, and the greater Tampa Bay area.",
-          },
-        ],
-        relatedLinks: [
-          { label: "Comparing Medicare Plans Valrico", href: "/comparing-medicare-plans-valrico/" },
-          { label: "Medicare Consulting Valrico", href: "/medicare-consulting-services-valrico/" },
-          { label: "Medicare Enrollment Assistance in Valrico FL", href: "/medicare-enrollment-assistance-in-valrico-fl/" },
-          { label: "Turning 65 Guide", href: "/turning-65-and-becoming-eligible-for-medicare/" },
-        ],
-      }}
-    />
-    </>
-  );
+  return <MedicareEnrollmentGuide guide={guide} />;
 }

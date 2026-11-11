@@ -1,86 +1,61 @@
-import type { Metadata } from "next";
-import LocalAgentPage from "@/components/LocalAgentPage";
+import MedicareEnrollmentGuide, {
+  enrollmentGuideMetadata,
+  type EnrollmentGuide,
+} from "@/components/MedicareEnrollmentGuide";
 
-const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Medicare Enrollment Assistance Riverview FL | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-enrollment-assistance-riverview",
-  "isPartOf": {
-    "@id": "https://medicareinfopro.com/#website"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "@id": "https://medicareinfopro.com/#organization"
-  },
-  "description": "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers."
-} as const;
+const guide: EnrollmentGuide = {
+  "path": "/medicare-enrollment-assistance-riverview/",
+  "title": "How to Enroll in Medicare in Riverview, FL",
+  "headline": "How to Enroll in Medicare in Riverview, FL",
+  "description": "Turning 65 in Riverview? Check when to enroll, confirm your Medicare start dates, and prepare to compare coverage for your ZIP code.",
+  "city": "Riverview",
+  "intro": "If you are turning 65 in Riverview, start with two questions: Do you need to apply for Medicare, and when should coverage begin? Use these steps to organize your application and compare coverage for your address.",
+  "steps": [
+    {
+      "title": "Check whether you need to apply",
+      "text": "Look for a Medicare card or enrollment notice if you already receive Social Security benefits. If you are unsure whether enrollment is automatic for you, confirm with Social Security. Write down any Part A and Part B start dates already shown on your paperwork.",
+      "link": {
+        "label": "Check Medicare enrollment with Social Security",
+        "href": "https://www.ssa.gov/medicare/sign-up"
+      }
+    },
+    {
+      "title": "Identify your enrollment window",
+      "text": "Review the Initial Enrollment Period for people approaching 65. If you have coverage through your or your spouse’s current job, ask the benefits administrator how that coverage works with Medicare and confirm your timing with Social Security before making a decision.",
+      "link": {
+        "label": "Check Medicare’s enrollment periods",
+        "href": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-can-i-sign-up-for-medicare"
+      }
+    },
+    {
+      "title": "Compare coverage for your address",
+      "text": "Use the ZIP code where you actually live, such as 33569, 33578, or 33579. Make a list of your Riverview doctors and preferred pharmacy. Compare coverage using each provider’s office address, the exact plan name, and the year your coverage will start.",
+      "link": {
+        "label": "Compare plans with Medicare Plan Finder",
+        "href": "https://www.medicare.gov/plan-compare/"
+      }
+    },
+    {
+      "title": "Keep a record of your application",
+      "text": "Save the submission confirmation and check your application status. When you receive your Medicare card or enrollment notice, compare the effective dates with the dates you expected. Ask Social Security to clarify any discrepancy before changing other insurance.",
+      "link": {
+        "label": "Review the Medicare enrollment timeline",
+        "href": "/enrollment-timeline/"
+      }
+    }
+  ],
+  "checklistTitle": "Riverview Medicare Enrollment Checklist",
+  "checklist": [
+    "Your residential ZIP code and the month you turn 65",
+    "Current insurance and the dates you expect it to end",
+    "Medicare card or enrollment notice, if received",
+    "Doctors, prescriptions, and preferred pharmacy"
+  ],
+  "servicePath": "/medicare-enrollment-assistance-in-riverview-fl/"
+};
 
-
-export const dynamic = "force-dynamic";
-
-export const metadata: Metadata = {
-  title: "Medicare Enrollment Assistance Riverview FL | Medicare Information Project",
-  description: "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-
-  alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-riverview/" },};
+export const metadata = enrollmentGuideMetadata(guide);
 
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
-      />
-<LocalAgentPage
-      config={{
-        city: "Riverview",
-        cityFull: "Riverview, FL",
-        county: "Hillsborough County",
-        slug: "riverview",
-        pageType: "enrollment",
-        headline: "Medicare Enrollment Assistance in Riverview, FL",
-        subheadline: "Riverview is one of the fastest-growing communities in Hillsborough County, and thousands of residents are reaching Medicare eligibility every year. Our independent enrollment specialists help you compare plans from 17+ carriers, identify your exact enrollment window, and enroll on time so you never face an avoidable penalty.",
-        metaTitle: "Medicare Enrollment Assistance Riverview FL | Medicare Information Project",
-        metaDescription: "Free Medicare enrollment assistance in Riverview, FL. We help you enroll on time, avoid penalties, and choose the right plan from 17+ carriers.",
-        nearbyLandmarks: [
-          "HCA Florida South Tampa Hospital",
-          "AdventHealth Brandon",
-          "St. Joseph's Hospital South",
-          "BayCare Medical Group Riverview",
-        ],
-        neighborhoods: ["Riverview 33569", "Riverview 33578", "Riverview 33579", "Gibsonton 33534"],
-        faqs: [
-          {
-            q: "When do I need to enroll in Medicare in Riverview?",
-            a: "Your Initial Enrollment Period is a 7-month window that starts 3 months before your 65th birthday month and ends 3 months after. A late Part B enrollment results in a permanent 10% penalty for each 12-month period you delayed. Our enrollment timeline page has a full breakdown of every enrollment period.",
-          },
-          {
-            q: "Is Medicare enrollment assistance free in Riverview?",
-            a: "Yes, completely free. Insurance carriers compensate us when you enroll, and your premium is the same whether you work with us or enroll directly. There is no cost to you at any stage.",
-          },
-          {
-            q: "What Medicare plans are available in Riverview?",
-            a: "Riverview residents in Hillsborough County have access to Medicare Advantage plans from Humana, UnitedHealthcare, Aetna, Cigna, Florida Blue, and other carriers, plus all standardized Medigap plan letters and Part D drug plans. See our comparing Medicare plans Riverview page for a full breakdown.",
-          },
-          {
-            q: "Can you help me if I am still working at 65 in Riverview?",
-            a: "Yes. If you have employer coverage from a company with 20 or more employees, you may be able to delay Part B without penalty. We help Riverview residents in this situation determine the right time to enroll. Our do I need Medicare page covers this scenario in detail.",
-          },
-          {
-            q: "Do you serve areas near Riverview?",
-            a: "Yes. We serve all of South Hillsborough County including Brandon, Gibsonton, Apollo Beach, Ruskin, and Sun City Center.",
-          },
-        ],
-        relatedLinks: [
-          { label: "Comparing Medicare Plans Riverview", href: "/comparing-medicare-plans-riverview/" },
-          { label: "Medicare Consulting Riverview", href: "/medicare-consulting-services-riverview/" },
-          { label: "Medicare Enrollment Assistance in Riverview FL", href: "/medicare-enrollment-assistance-in-riverview-fl/" },
-          { label: "Medicare Penalty Calculator", href: "/medicare-penalty-calculator/" },
-        ],
-      }}
-    />
-    </>
-  );
+  return <MedicareEnrollmentGuide guide={guide} />;
 }
