@@ -1,3 +1,4 @@
+import { sitemapLastmodXml } from "@/lib/sitemap-lastmod";
 import { NextResponse } from "next/server";
 
 const BASE_URL = "https://medicareinfopro.com";
@@ -12,6 +13,8 @@ const BLOG_SLUGS = [
   "/how-to-get-shine-medicare-counseling-hillsborough-county",
   "/how-to-read-medicare-annual-notice-of-change",
   "/medicare-prior-authorization-appeals",
+  "/medicare-secondary-payer-rules",
+  "/medicare-supplement-plan-g-vs-plan-n",
   "/does-medicare-cover-zepbound",
   "/does-medicare-cover-wegovy",
   "/medicare-glp1-bridge-program",
@@ -93,13 +96,10 @@ const BLOG_SLUGS = [
 ];
 
 export async function GET() {
-  const now = new Date().toISOString();
-
   const urls = BLOG_SLUGS.map(
     (path) => `
   <url>
-    <loc>${BASE_URL}${path}/</loc>
-    <lastmod>${now}</lastmod>
+    <loc>${BASE_URL}${path}/</loc>${sitemapLastmodXml(path)}
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`

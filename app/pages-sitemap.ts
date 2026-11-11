@@ -1,3 +1,4 @@
+import { sitemapLastModified } from "@/lib/sitemap-lastmod";
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://medicareinfopro.com";
@@ -192,32 +193,30 @@ const TEAM_PAGES = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
-
   const coreEntries: MetadataRoute.Sitemap = CORE_PAGES.map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: sitemapLastModified(path),
     changeFrequency: path === "/" ? "weekly" : "monthly",
     priority: path === "/" ? 1.0 : path.includes("free-consultation") ? 0.9 : 0.8,
   }));
 
   const coverageEntries: MetadataRoute.Sitemap = COVERAGE_SLUGS.map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: sitemapLastModified(path),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const localEntries: MetadataRoute.Sitemap = LOCAL_PAGES.map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: sitemapLastModified(path),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const teamEntries: MetadataRoute.Sitemap = TEAM_PAGES.map((path) => ({
     url: `${BASE_URL}${path}`,
-    lastModified: now,
+    lastModified: sitemapLastModified(path),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));

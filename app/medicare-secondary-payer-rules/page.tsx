@@ -5,9 +5,9 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Secondary Payer Rules: When Medicare Pays Second",
-  "url": "https://medicareinfopro.com/medicare-secondary-payer-rules",
+  "url": "https://medicareinfopro.com/medicare-secondary-payer-rules/",
   "datePublished": "2026-07-01",
-  "dateModified": "2026-07-01",
+  "dateModified": "2026-11-11",
   "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80",
   "author": {
     "@type": "Person",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/medicare-secondary-payer-rules"
+    "@id": "https://medicareinfopro.com/medicare-secondary-payer-rules/"
   }
 } as const;
 
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
       "When Medicare pays second and when it pays first. Covers employer plans, COBRA, workers comp, auto insurance, and VA benefits.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/medicare-secondary-payer-rules",
+    canonical: "https://medicareinfopro.com/medicare-secondary-payer-rules/",
   },
 };
 
@@ -115,7 +115,7 @@ const POST = {
       type: "section" as const,
       heading: "What Are Medicare Secondary Payer Rules?",
       content:
-        "Medicare Secondary Payer (MSP) is a set of federal laws that govern which payer is responsible for paying first when a Medicare beneficiary has more than one source of health coverage. The term \"primary payer\" refers to the insurer that pays first. The \"secondary payer\" pays after the primary payer has processed the claim, covering some or all of the remaining balance.\n\nCongress enacted the MSP statute in 1980 to reduce federal spending by ensuring that Medicare does not pay for services that another insurer is legally required to cover. Since then, the rules have expanded significantly and now cover a wide range of situations including employer group health plans, COBRA, workers compensation, no-fault auto insurance, liability insurance, and the Veterans Administration.\n\nFor Medicare beneficiaries, understanding MSP rules is essential for three reasons:\n\n<ul><li><strong>Claim denials:</strong> If you submit a claim to Medicare when another insurer is the primary payer, Medicare will deny the claim. You may then face unexpected bills if you do not know how to resubmit correctly.</li><li><strong>Repayment obligations:</strong> If Medicare makes a conditional payment (paying first when it should have paid second), Medicare has the right to recover that payment from you, your attorney, or any settlement proceeds.</li><li><strong>Enrollment decisions:</strong> MSP rules directly affect whether you should enroll in Medicare Part B when you turn 65, or whether you can safely delay enrollment without incurring a penalty.</li></ul>\n\nThe Centers for Medicare and Medicaid Services (CMS) maintains a <a href='https://www.cms.gov/medicare/coordination-of-benefits-and-recovery/coordination-of-benefits-and-recovery-overview/medicare-secondary-payer' class='text-[#1a3fa8] underline underline-offset-2' target='_blank' rel='noopener noreferrer'>Medicare Secondary Payer overview</a> with official guidance for providers, insurers, and beneficiaries.",
+        "Medicare Secondary Payer (MSP) is a set of federal laws that govern which payer is responsible for paying first when a Medicare beneficiary has more than one source of health coverage. The term \"primary payer\" refers to the insurer that pays first. The \"secondary payer\" pays after the primary payer has processed the claim, covering some or all of the remaining balance.\n\nCongress enacted the MSP statute in 1980 to reduce federal spending by ensuring that Medicare does not pay for services that another insurer is legally required to cover. Since then, the rules have expanded significantly and now cover a wide range of situations including employer group health plans, COBRA, workers compensation, no-fault auto insurance, liability insurance, and the Veterans Administration.\n\nFor Medicare beneficiaries, understanding MSP rules is essential for three reasons:\n\n<ul><li><strong>Claim denials:</strong> If you submit a claim to Medicare when another insurer is the primary payer, Medicare will deny the claim. You may then face unexpected bills if you do not know how to resubmit correctly.</li><li><strong>Repayment obligations:</strong> If Medicare makes a conditional payment (paying first when it should have paid second), Medicare has the right to recover that payment from you, your attorney, or any settlement proceeds.</li><li><strong>Enrollment decisions:</strong> MSP rules directly affect whether you should enroll in Medicare Part B when you turn 65, or whether you can safely delay enrollment without incurring a penalty.</li></ul>\n\nThe Centers for Medicare and Medicaid Services (CMS) maintains a <a href='https://www.cms.gov/medicare/coordination-benefits-recovery/overview/secondary-payer' class='text-[#1a3fa8] underline underline-offset-2' target='_blank' rel='noopener noreferrer'>Medicare Secondary Payer overview</a> with official guidance for providers, insurers, and beneficiaries.",
     },
     {
       type: "section" as const,

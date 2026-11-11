@@ -1,3 +1,4 @@
+import { sitemapLastmodXml } from "@/lib/sitemap-lastmod";
 import { NextResponse } from "next/server";
 
 const BASE_URL = "https://medicareinfopro.com";
@@ -185,13 +186,10 @@ const TEAM_PAGES: string[] = [
 ];
 
 export async function GET() {
-  const now = new Date().toISOString();
-
   const coreUrls = CORE_PAGES.map(
     ({ path, priority }) => `
   <url>
-    <loc>${sitemapUrl(path)}</loc>
-    <lastmod>${now}</lastmod>
+    <loc>${sitemapUrl(path)}</loc>${sitemapLastmodXml(path)}
     <changefreq>${path === "/" ? "weekly" : "monthly"}</changefreq>
     <priority>${priority.toFixed(1)}</priority>
   </url>`
@@ -200,8 +198,7 @@ export async function GET() {
   const coverageUrls = COVERAGE_PAGES.map(
     (path) => `
   <url>
-    <loc>${sitemapUrl(path)}</loc>
-    <lastmod>${now}</lastmod>
+    <loc>${sitemapUrl(path)}</loc>${sitemapLastmodXml(path)}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`
@@ -210,8 +207,7 @@ export async function GET() {
   const localUrls = LOCAL_PAGES.map(
     (path) => `
   <url>
-    <loc>${sitemapUrl(path)}</loc>
-    <lastmod>${now}</lastmod>
+    <loc>${sitemapUrl(path)}</loc>${sitemapLastmodXml(path)}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`
@@ -220,8 +216,7 @@ export async function GET() {
   const teamUrls = TEAM_PAGES.map(
     (path) => `
   <url>
-    <loc>${sitemapUrl(path)}</loc>
-    <lastmod>${now}</lastmod>
+    <loc>${sitemapUrl(path)}</loc>${sitemapLastmodXml(path)}
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>`

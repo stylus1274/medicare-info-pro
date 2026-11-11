@@ -5,7 +5,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Medicare Supplement Plan G vs. Plan N: Which Is Right for You?",
-  "url": "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n",
+  "url": "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n/",
   "datePublished": "2026-07-01",
   "dateModified": "2026-07-01",
   "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
@@ -23,7 +23,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n"
+    "@id": "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n/"
   }
 } as const;
 
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
       "Plan G and Plan N are the two most popular Medigap plans in 2026. Compare coverage, copays, and costs.",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n",
+    canonical: "https://medicareinfopro.com/medicare-supplement-plan-g-vs-plan-n/",
   },
 };
 

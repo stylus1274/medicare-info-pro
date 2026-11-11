@@ -1,3 +1,4 @@
+import { sitemapLastModified } from "@/lib/sitemap-lastmod";
 import type { MetadataRoute } from "next";
 const BASE_URL = "https://medicareinfopro.com";
 
@@ -25,11 +26,9 @@ export const FAQ_SLUGS = [
 ];
 
 export default function faqSitemapMetadata(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
-
   return FAQ_SLUGS.map((path) => ({
     url: `${BASE_URL}${path}/`,
-    lastModified: now,
+    lastModified: sitemapLastModified(path),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
