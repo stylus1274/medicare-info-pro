@@ -9,7 +9,7 @@ const callbackHref = `/local-consultation/?${new URLSearchParams({ city: "Brando
 const phoneHref = "tel:+18136995559";
 
 export const metadata: Metadata = {
-  title: "Medicare Consulting & Annual Plan Reviews in Brandon, FL",
+  title: "Medicare Consulting & Annual Plan Reviews in Brandon, FL | Medicare Information Project",
   description: "Get Medicare consulting and annual plan reviews in Brandon, FL. Check doctors, prescriptions, and costs with a licensed agent. Request a free review.",
   alternates: { canonical: PREVIEW_PATH },
   robots: { index: false, follow: true, googleBot: { index: false, follow: true } },

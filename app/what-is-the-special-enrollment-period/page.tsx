@@ -91,7 +91,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "What Is the Medicare Special Enrollment Period and When Can You Use It?",
+  title: "What Is the Medicare Special Enrollment Period and When Can You Use It? | Medicare Information Project",
   description:
     "The Medicare Special Enrollment Period lets you sign up for Part B or change your plan outside standard windows. Learn every qualifying trigger, how long each window lasts, and what happens if you miss it.",
   keywords: [

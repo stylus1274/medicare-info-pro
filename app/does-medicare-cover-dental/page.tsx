@@ -83,7 +83,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026",
+  title: "Does Medicare Cover Dental Care? What Is and Is Not Covered in 2026 | Medicare Information Project",
   description:
     "Original Medicare does not cover routine dental care. Learn what Medicare Parts A and B cover for dental, how Medicare Advantage fills the gap, and your options for getting dental coverage in 2026.",
   keywords: [

@@ -67,6 +67,7 @@ export default function Page() {
         <div className={styles.officeCard} style={{ marginTop: 30 }}><h3>Which Applications Go Through Social Security?</h3>
           <p>For most people, applications for Medicare Part A and Part B go through Social Security. If you already receive certain benefits, you may be enrolled automatically. Check your enrollment status and official effective dates before applying for additional coverage.</p>
           <p style={{ marginTop: 16 }}>MIP is an independent insurance agency. We do not issue Medicare cards, decide government eligibility, or guarantee a penalty waiver. We can explain plan choices and assist with eligible applications for the insurance plans we represent.</p>
+          <p style={{ marginTop: 16 }}>Have questions about adding Part B? See our <a href="/medicare-part-b-assistance-in-brandon/" style={{ color: "#1a3fa8", textDecoration: "underline" }}>Medicare Part B assistance in Brandon</a> page.</p>
           <a className={styles.textLink} href="https://www.ssa.gov/medicare/sign-up">Social Security’s Medicare sign-up information <ArrowRight size={18} /></a>
         </div>
       </div></section>

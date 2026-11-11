@@ -35,7 +35,7 @@ const faqSchema = {
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "Does Medicare Cover Life Alert Systems? Understanding Your Options",
+  title: "Does Medicare Cover Life Alert Systems? Understanding Your Options | Medicare Information Project",
   description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.",
   keywords: ["Medicare", "Life Alert", "medical alert systems", "Medicare coverage", "Medicare Advantage", "Original Medicare", "senior safety"],
   openGraph: { title: "Does Medicare Cover Life Alert Systems? Understanding Your Options", description: "Navigating Medicare coverage for medical alert systems like Life Alert can be complex. This guide clarifies what Original Medicare, Medicare Advantage, and other options offer for these essential safety devices.", url: "https://medicareinfopro.com/does-medicare-cover-life-alert/", type: "article", images: [{ url: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80", width: 1200, height: 630, alt: "Elderly person using a medical alert device" }] },

@@ -21,7 +21,7 @@ export type EnrollmentGuide = {
 export function enrollmentGuideMetadata(guide: EnrollmentGuide): Metadata {
   const url = siteUrl + guide.path;
   return {
-    title: guide.title,
+    title: `${guide.title} | Medicare Information Project`,
     description: guide.description,
     alternates: { canonical: url },
     openGraph: { title: guide.title, description: guide.description, url, type: "website" },

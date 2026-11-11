@@ -21,7 +21,7 @@ const webpageSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Enrollment Assistance in Riverview, FL",
+  title: "Medicare Enrollment Assistance in Riverview, FL | Medicare Information Project",
   description: "Request no-cost Medicare enrollment help in Riverview, FL. Talk with a licensed agent about timing, coverage questions, and plan options.",
 
   alternates: { canonical: "https://medicareinfopro.com/medicare-enrollment-assistance-in-riverview-fl/" },};

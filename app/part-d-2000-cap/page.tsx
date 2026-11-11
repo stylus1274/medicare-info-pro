@@ -75,7 +75,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide",
+  title: "Medicare Part D $2,100 Out-of-Pocket Cap: 2026 Guide | Medicare Information Project",
   description:
     "Understand the 2026 $2,100 Medicare Part D out-of-pocket cap, the $615 maximum deductible, what counts toward the cap, and the Medicare Prescription Payment Plan.",
   keywords: [

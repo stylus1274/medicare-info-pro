@@ -75,7 +75,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medigap Open Enrollment: 2026 Timing, Rights and Florida Rules",
+  title: "Medigap Open Enrollment: 2026 Timing, Rights and Florida Rules | Medicare Information Project",
   description:
     "Understand the six-month Medigap Open Enrollment Period, guaranteed issue rights, Florida Medicare Supplement rules, and options after the window closes.",
   keywords: [

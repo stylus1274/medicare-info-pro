@@ -92,7 +92,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Savings Programs",
+  title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Savings Programs | Medicare Information Project",
   description:
     "Millions of Medicare beneficiaries qualify for programs that reduce or eliminate their Medicare costs. Learn about Extra Help, the Low Income Subsidy, and Medicare Savings Programs and how to apply.",
   keywords: [

@@ -75,7 +75,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Is Medigap Plan G Right for You? 2026 Coverage, Costs and Tradeoffs",
+  title: "Is Medigap Plan G Right for You? 2026 Coverage, Costs and Tradeoffs | Medicare Information Project",
   description:
     "Learn what Medigap Plan G covers in 2026, its costs and limits, the $283 Part B deductible, and how Plan G compares with Plan N and Medicare Advantage.",
   keywords: [

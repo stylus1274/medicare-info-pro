@@ -6,10 +6,7 @@ import LeadAttribution from "@/components/LeadAttribution";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://medicareinfopro.com"),
-  title: {
-    default: "Medicare Information Project | Understand Your Medicare Options",
-    template: "%s | Medicare Information Project",
-  },
+  title: "Medicare Information Project | Understand Your Medicare Options",
   description: "Expert Medicare guidance to help you understand your options, avoid costly mistakes, and choose the right coverage.",
   alternates: {
     canonical: "/",

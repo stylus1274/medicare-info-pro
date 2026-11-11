@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import styles from "./preview.module.css";
 
 export const metadata: Metadata = {
-  title: "Homepage Preview | Brandon & Tampa Medicare Guidance",
+  title: "Homepage Preview | Brandon & Tampa Medicare Guidance | Medicare Information Project",
   description: "Design preview of a local-first Medicare Information Project homepage.",
   robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
   alternates: { canonical: "/homepage-preview/" },

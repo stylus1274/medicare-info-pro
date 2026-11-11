@@ -91,7 +91,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026",
+  title: "Does Medicare Cover Home Health Care? What You Need to Know in 2026 | Medicare Information Project",
   description:
     "Medicare covers skilled home health care when you meet specific criteria. Learn what services are covered, what is excluded, how long coverage lasts, and how Medicare Advantage may expand your benefits.",
   keywords: [

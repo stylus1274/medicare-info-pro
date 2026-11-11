@@ -6,7 +6,7 @@ import { searchContent } from "@/lib/searchIndex";
 import styles from "@/app/homepage-preview-v3/preview.module.css";
 
 export const metadata: Metadata = {
-  title: "Search Medicare Guides and Local Services",
+  title: "Search Medicare Guides and Local Services | Medicare Information Project",
   description: "Search Medicare Information Project for Medicare guides, enrollment tools, coverage answers, and Brandon services.",
   alternates: { canonical: "/search/" },
   robots: { index: false, follow: true, googleBot: { index: false, follow: true } },

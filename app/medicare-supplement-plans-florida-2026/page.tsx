@@ -85,7 +85,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Best Medicare Supplement Plans in Florida 2026 -- Carriers, Prices and Comparison",
+  title: "Best Medicare Supplement Plans in Florida 2026 -- Carriers, Prices and Comparison | Medicare Information Project",
   description:
     "Compare the best Medicare Supplement plans in Florida for 2026. Carrier ratings, Plan G and Plan N sample prices starting at $194/mo, market share data, and Florida state resources. Free help from local independent agents.",
   keywords: [

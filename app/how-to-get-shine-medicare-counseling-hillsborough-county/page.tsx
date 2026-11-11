@@ -33,7 +33,7 @@ const articleSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Free SHINE Medicare Counseling in Hillsborough County",
+  title: "Free SHINE Medicare Counseling in Hillsborough County | Medicare Information Project",
   description:
     "Learn how Florida SHINE provides free, unbiased Medicare counseling in Hillsborough County, including Brandon, Tampa, Temple Terrace, Ruskin, and Sun City Center.",
   keywords: [

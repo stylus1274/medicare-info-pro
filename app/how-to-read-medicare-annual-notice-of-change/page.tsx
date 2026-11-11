@@ -33,7 +33,7 @@ const articleSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "How to Read Your Medicare Annual Notice of Change (ANOC)",
+  title: "How to Read Your Medicare Annual Notice of Change (ANOC) | Medicare Information Project",
   description:
     "Learn what to review in your Medicare Annual Notice of Change before Open Enrollment, including costs, prescriptions, doctors, pharmacies, benefits, and plan rules.",
   keywords: [

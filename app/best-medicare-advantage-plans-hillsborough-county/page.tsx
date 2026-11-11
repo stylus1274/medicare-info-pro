@@ -91,7 +91,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "Best Medicare Advantage Plans in Hillsborough County for 2026",
+  title: "Best Medicare Advantage Plans in Hillsborough County for 2026 | Medicare Information Project",
   description:
     "58 Medicare Advantage plans are available in Hillsborough County, FL in 2026. Compare HMO vs PPO, top carriers, extra benefits, and how to choose the right plan for your doctors and budget.",
   keywords: [

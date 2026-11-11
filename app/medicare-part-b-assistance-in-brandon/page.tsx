@@ -5,7 +5,7 @@ const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "name": "Medicare Part B Assistance in Brandon, FL | Medicare Information Project",
-  "url": "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon",
+  "url": "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon/",
   "isPartOf": {
     "@id": "https://medicareinfopro.com/#website"
   },
@@ -28,7 +28,7 @@ const webpageSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Medicare Part B Help in Brandon, FL — Enrollment, Costs & Late Penalties',
+  title: 'Medicare Part B Help in Brandon, FL — Enrollment, Costs & Late Penalties | Medicare Information Project',
   description:
     'Part B has a 7-month enrollment window — miss it and pay a 10% penalty for life. Brandon-based MIP agents help you enroll on time and manage your Part B costs. Free.',
   keywords: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon",
+    canonical: "https://medicareinfopro.com/medicare-part-b-assistance-in-brandon/",
   },
 };
 

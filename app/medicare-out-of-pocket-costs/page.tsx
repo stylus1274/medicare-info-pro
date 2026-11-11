@@ -92,7 +92,7 @@ const faqSchema = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "Medicare Out-of-Pocket Costs: Copays, Deductibles, and How to Save in 2026",
+  title: "Medicare Out-of-Pocket Costs: Copays, Deductibles, and How to Save in 2026 | Medicare Information Project",
   description:
     "Medicare is not free. Learn exactly what you pay under Parts A, B, C, and D in 2026, why Original Medicare has no out-of-pocket maximum, and the best strategies to limit your annual costs.",
   keywords: [

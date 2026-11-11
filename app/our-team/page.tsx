@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import OurTeamClient from "./OurTeamClient";
 
 export const metadata: Metadata = {
-  title: "Our Medicare Team | Licensed Medicare Specialists in Tampa Bay",
+  title: "Our Medicare Team | Licensed Medicare Specialists in Tampa Bay | Medicare Information Project",
   description: "Meet the licensed Medicare insurance specialists at Medicare Information Pro serving Tampa Bay, Brandon, Riverview, and surrounding Florida communities.",
   alternates: {
     canonical: "https://medicareinfopro.com/our-team",

@@ -91,6 +91,7 @@ export default function Page() {
       localSupportSection: {
         nextSteps: [
           { title: "Get Medicare enrollment help", description: "Organize your situation and request a conversation with the Brandon team.", href: "/medicare-enrollment-assistance-in-brandon-fl/" },
+          { title: "Get Medicare Part B help in Brandon", description: "Review Part B enrollment and coverage questions before you apply.", href: "/medicare-part-b-assistance-in-brandon/" },
           { title: "Working past 65 or retiring", description: "Prepare questions about employer coverage before deciding when to enroll.", href: "/medicare-and-employer-insurance-after-65-brandon-fl/" },
           { title: "Review Medigap enrollment timing", description: "Learn why the supplement enrollment window is separate from other Medicare periods.", href: "/medigap-open-enrollment/" },
         ],

@@ -104,7 +104,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Medicare Insurance Agent in Brandon, FL | Free Consultation',
+  title: 'Medicare Insurance Agent in Brandon, FL | Free Consultation | Medicare Information Project',
   description: 'Meet a licensed Medicare insurance agent in Brandon, FL. Get help comparing plans, doctors, prescriptions, and enrollment at no cost to you.',
 
   alternates: { canonical: "https://medicareinfopro.com/medicare-insurance-agent-brandon-fl/" },};

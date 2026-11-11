@@ -33,7 +33,7 @@ const articleSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Moving to Brandon, FL With Medicare: What to Update and Review",
+  title: "Moving to Brandon, FL With Medicare: What to Update and Review | Medicare Information Project",
   description:
     "Moving to Brandon, FL with Medicare? Use this checklist to update your address, review your plan service area, pharmacy, doctors, prescriptions, and possible enrollment timing.",
   keywords: [

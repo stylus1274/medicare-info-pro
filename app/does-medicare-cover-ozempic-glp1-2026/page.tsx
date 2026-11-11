@@ -79,7 +79,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Does Medicare Cover Ozempic and GLP-1 Drugs in 2026? What Changed",
+  title: "Does Medicare Cover Ozempic and GLP-1 Drugs in 2026? What Changed | Medicare Information Project",
   description:
     "Updated 2026 guide: Medicare Part D can cover Ozempic for diabetes but not weight loss alone. Learn what changed with CMS rules, the $2,100 OOP cap, and how to find a plan that covers your GLP-1 medication.",
   alternates: { canonical: "https://medicareinfopro.com/does-medicare-cover-ozempic-glp1-2026/" },

@@ -93,7 +93,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026",
+  title: "Does Medicare Cover Cataract Surgery? What to Expect in 2026 | Medicare Information Project",
   description:
     "Medicare Part B covers cataract surgery when medically necessary. Learn what Medicare pays, what you owe, whether premium lenses are covered, and how to reduce your out-of-pocket costs in 2026.",
   keywords: [

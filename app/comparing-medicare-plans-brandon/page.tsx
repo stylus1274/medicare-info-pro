@@ -106,7 +106,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Compare Medicare Plans in Brandon, FL — Advantage vs. Medigap vs. Part D',
+  title: 'Compare Medicare Plans in Brandon, FL — Advantage vs. Medigap vs. Part D | Medicare Information Project',
   description:
     'Not sure whether Medicare Advantage or Medigap is right for you? Brandon-based MIP agents compare all three paths side-by-side — free, unbiased, no sales pressure.',
   keywords: ["comparing Medicare plans Brandon", "Medicare plans Brandon FL", "Medicare Advantage Brandon", "Medigap Brandon FL", "Medicare Part D Brandon"],

@@ -57,7 +57,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Medicare Scope of Appointment: What It Is and Why It Matters",
+  title: "Medicare Scope of Appointment: What It Is and Why It Matters | Medicare Information Project",
   description: "Learn what the Medicare Scope of Appointment form is, when it is required, the 48-hour rule, and what to do if an agent skips it. CMS consumer protection explained.",
   keywords: [
     "medicare scope of appointment",

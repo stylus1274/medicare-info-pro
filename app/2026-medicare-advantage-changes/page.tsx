@@ -35,7 +35,7 @@ const faqSchema = {
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "2026 Medicare Advantage Changes: What You Need to Know",
+  title: "2026 Medicare Advantage Changes: What You Need to Know | Medicare Information Project",
   description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.",
   keywords: ["Medicare Advantage", "2026 changes", "Medicare updates", "health insurance", "Medicare plans"],
   openGraph: { title: "2026 Medicare Advantage Changes: What You Need to Know", description: "Stay informed about the upcoming changes to Medicare Advantage plans in 2026. Understand how these updates may affect your coverage and costs.", url: "https://medicareinfopro.com/2026-medicare-advantage-changes/", type: "article", images: [{ url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80", width: 1200, height: 630, alt: "Medicare general" }] },

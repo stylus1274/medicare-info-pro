@@ -103,7 +103,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Free Medicare Enrollment Help in Brandon, FL — Avoid Lifetime Penalties",
+  title: "Free Medicare Enrollment Help in Brandon, FL — Avoid Lifetime Penalties | Medicare Information Project",
   description:
     "Missing your Medicare enrollment window means permanent premium surcharges. Brandon-based MIP agents at 915 Oakfield Dr walk you through every step. Free, same-day callbacks. Call 813-699-5559.",
   alternates: { canonical: "https://medicareinfopro.com/free-medicare-enrollment-help-brandon-fl/" },

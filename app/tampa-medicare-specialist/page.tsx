@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TampaMedicareSpecialistClient from "./TampaMedicareSpecialistClient";
 
 export const metadata: Metadata = {
-  title: "Tampa Medicare Specialist | Licensed Medicare Insurance Agent Tampa, FL",
+  title: "Tampa Medicare Specialist | Licensed Medicare Insurance Agent Tampa, FL | Medicare Information Project",
   description: "Work with a licensed Tampa Medicare specialist who can compare all available Medicare plans in your area. Free consultations with no pressure and no obligation.",
   alternates: {
     canonical: "https://medicareinfopro.com/tampa-medicare-specialist",

@@ -114,7 +114,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Independent Medicare Broker in Brandon, FL — 915 Oakfield Dr',
+  title: 'Independent Medicare Broker in Brandon, FL — 915 Oakfield Dr | Medicare Information Project',
   description:
     'Brandon\'s locally-based independent broker. We compare Medicare Advantage, Medigap, ACA, and private plans from 17+ carriers. Office at 915 Oakfield Dr. Free consultations.',
   keywords: ["health insurance broker Brandon FL", "health insurance broker Brandon", "Medicare broker Brandon FL", "independent insurance agent Brandon"],

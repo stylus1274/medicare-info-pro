@@ -98,7 +98,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Medicare Grocery Card: What It Is, Who Qualifies, and How to Get One",
+  title: "Medicare Grocery Card: What It Is, Who Qualifies, and How to Get One | Medicare Information Project",
   description: "Does Medicare cover a grocery card? Learn which plans offer a food allowance benefit, how much you can get, what you can buy, and how to qualify in 2026.",
   keywords: [
     "medicare grocery card",

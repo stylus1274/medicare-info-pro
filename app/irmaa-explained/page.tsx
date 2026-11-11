@@ -35,7 +35,7 @@ const faqSchema = {
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts",
+  title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts | Medicare Information Project",
   description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.",
   keywords: ["IRMAA", "Medicare premiums", "income-related monthly adjustment amount", "Medicare costs"],
   openGraph: { title: "IRMAA Explained: Understanding Medicare Income-Related Monthly Adjustment Amounts", description: "Learn about IRMAA, how it affects your Medicare premiums, and strategies to manage these costs.", url: "https://medicareinfopro.com/irmaa-explained/", type: "article", images: [{ url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80", width: 1200, height: 630, alt: "Money and documents" }] },

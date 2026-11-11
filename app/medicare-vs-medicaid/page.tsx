@@ -83,7 +83,7 @@ const faqSchema = {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Medicare vs. Medicaid: Key Differences, Eligibility and Florida Help for 2026",
+  title: "Medicare vs. Medicaid: Key Differences, Eligibility and Florida Help for 2026 | Medicare Information Project",
   description:
     "Understand Medicare vs. Medicaid in 2026. Compare eligibility, coverage, costs, dual eligibility, Medicare Savings Programs, and Florida application options.",
   keywords: [
