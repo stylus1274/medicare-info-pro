@@ -31,6 +31,7 @@ const CORE_PAGES = [
   "/enrollment-calculator",
   "/enrollment-timeline",
   "/medicare-advantage-open-enrollment",
+  "/medicare-advantage-open-enrollment/plan-review",
   "/cost-estimator",
   "/costs-at-a-glance",
   "/maximize-benefits",

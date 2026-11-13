@@ -1,6 +1,7 @@
 // Use documented editorial dates. Omit unknown dates and the shared legacy migration date.
 const editorialDates: Readonly<Record<string, string>> = {
   "/medicare-advantage-open-enrollment": "2026-11-13",
+  "/medicare-advantage-open-enrollment/plan-review": "2026-11-13",
   "/2026-medicare-advantage-changes": "2026-06-05",
   "/after-enrolling-medicare-plan-brandon": "2026-10-19",
   "/annual-enrollment-period-guide": "2026-08-16",

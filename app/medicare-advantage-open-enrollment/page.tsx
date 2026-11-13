@@ -35,7 +35,7 @@ const schema = {
 };
 
 const choices = [
-  { title: "Review My Current Plan", text: "Check whether your plan still works for your doctors, prescriptions, and budget.", href: "#review-your-plan", icon: ClipboardList },
+  { title: "Review My Current Plan", text: "Check whether your plan still works for your doctors, prescriptions, and budget.", href: "/medicare-advantage-open-enrollment/plan-review/", icon: ClipboardList },
   { title: "Switch Medicare Advantage Plans", text: "Compare available plans and confirm the new coverage start date before switching.", href: "/switch-medicare-advantage-florida/", icon: CalendarDays },
   { title: "Return to Original Medicare", text: "Check Part D, providers, and Medigap eligibility before leaving your plan.", href: "#return-to-original-medicare", icon: ShieldCheck },
 ];
@@ -97,6 +97,7 @@ export default function Page() {
             <ul className="mt-5 divide-y divide-gray-200 rounded-xl border border-gray-200">
               {checks.map(({ label, detail }) => <li key={label} className="px-5 py-4"><strong>{label}.</strong> {detail}</li>)}
             </ul>
+            <a href="/downloads/medicare-advantage-plan-review-worksheet.pdf" download className={textLink + " mt-5 inline-block"}>Download the Fillable Plan Review Worksheet</a>
             <p className="mt-5 text-gray-700">For example, if you see a specialist in Brandon, confirm that the specialist participates at the office you visit. Start with the <Link className={textLink} href="/check-medicare-doctor-hospital-networks-brandon-fl/">Brandon doctor and hospital network checklist</Link> and the <Link className={textLink} href="/compare-medicare-prescription-costs-brandon/">Brandon prescription cost comparison</Link>.</p>
           </section>
 
