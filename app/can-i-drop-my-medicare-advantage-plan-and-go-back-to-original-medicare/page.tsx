@@ -1,218 +1,130 @@
 import type { Metadata } from "next";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
+const slug = "can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare";
+const url = `https://medicareinfopro.com/${slug}/`;
+const title = "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?";
+const description = "Switch from Medicare Advantage to Original Medicare in Florida. Check enrollment dates, Part D, and Medigap eligibility with a printable checklist.";
+const image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80";
+const imageAlt = "Person reviewing Medicare plan options at a desk";
+const updated = "2026-11-13";
+const hub = "/medicare-advantage-open-enrollment/";
+const checklist = "/downloads/return-to-original-medicare-checklist.pdf";
+const enrollmentRules = "https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan";
+const medigapRules = "https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when";
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
-  "url": "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-06-01",
-  "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-  "author": {
+  headline: title,
+  description,
+  url,
+  datePublished: "2026-06-01",
+  dateModified: updated,
+  image,
+  author: {
     "@type": "Person",
-    "name": "Greg Wohl",
-    "jobTitle": "Licensed Medicare Specialist",
-    "url": "https://medicareinfopro.com/greg-wohl"
+    name: "Greg Wohl",
+    jobTitle: "Licensed Medicare Specialist",
+    url: "https://medicareinfopro.com/greg-wohl",
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "url": "https://medicareinfopro.com",
-    "@id": "https://medicareinfopro.com/#organization"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/"
-  }
-} as const;
+  publisher: { "@id": "https://medicareinfopro.com/#organization" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": url },
+};
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare? | MedicareInfoPro",
-  description:
-    "Yes, you can drop your Medicare Advantage plan and return to Original Medicare, but timing and Medigap rules matter. Learn the enrollment windows, Medigap guaranteed issue rights, and what to watch out for in Florida.",
-  keywords: [
-    "drop Medicare Advantage plan",
-    "go back to Original Medicare",
-    "switch from Medicare Advantage to Original Medicare",
-    "Medicare Advantage disenrollment",
-    "Medicare Advantage to Medigap",
-    "leave Medicare Advantage Florida",
-    "Medicare Advantage open enrollment period",
-  ],
-  openGraph: {
-    title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
-    description:
-      "You can return to Original Medicare from Medicare Advantage, but the window and Medigap rules are critical. Here is everything Florida beneficiaries need to know.",
-    url: "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
-    type: "article",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-        width: 1200,
-        height: 630,
-        alt: "Person reviewing Medicare plan options at a desk",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
-    description:
-      "Yes, but timing and Medigap rules matter. Learn the enrollment windows and what to watch out for in Florida.",
-  },
-  alternates: {
-    canonical:
-      "https://medicareinfopro.com/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/",
-  },
+  title: "How to Return to Original Medicare From Medicare Advantage",
+  description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, type: "article", modifiedTime: updated, images: [{ url: image, alt: imageAlt }] },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 const POST = {
-  slug: "can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare",
-  title: "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
-  excerpt:
-    "Yes, you can drop your Medicare Advantage plan and return to Original Medicare. But the timing of when you do it, and whether you can get a Medigap supplement afterward, depends on which enrollment window you use. Here is what Florida beneficiaries need to know.",
+  slug,
+  title,
+  excerpt: "Check when you can return to Original Medicare and how to coordinate your Part D, Medigap, and medical coverage dates in Florida.",
   category: "Plans" as const,
   author: GREG_WOHL,
-  date: "June 2026",
-  readTime: "9 min read",
-  image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-  imageAlt: "Person reviewing Medicare plan options at a desk considering switching coverage",
+  date: "Updated November 13, 2026",
+  readTime: "6 min read",
+  image,
+  imageAlt,
+  sidebarFacts: {
+    heading: "Dates to Confirm",
+    items: ["Last day of Medicare Advantage", "First day back on Original Medicare", "Part D start date, if enrolling", "Medigap start date, if approved"],
+  },
+  sidebarTools: [
+    { label: "OEP Resource Center", href: hub, desc: "Review your enrollment options" },
+    { label: "Plan Review Worksheet", href: hub + "plan-review/", desc: "Compare Medicare Advantage plans" },
+    { label: "Florida Medigap Rights", href: "/faqs/medigap-guaranteed-issue-rights-florida/", desc: "Check buying protections" },
+  ],
   sections: [
     {
       type: "intro" as const,
-      content:
-        "Many Florida Medicare beneficiaries enroll in a Medicare Advantage plan and later decide it is not the right fit. The network may be too restrictive, the plan may be leaving their county, or they may want the flexibility of Original Medicare when traveling or seeking specialist care.\n\nThe good news is that switching back to Original Medicare is possible. The critical issue is whether you can also get a Medigap supplement plan when you make the switch, because Original Medicare without Medigap leaves you exposed to significant out-of-pocket costs.\n\nThis guide explains the three enrollment windows for switching back, the Medigap guaranteed issue rights that apply in each window, and the specific rules that apply to Florida beneficiaries.",
-    },
-    {
-      type: "keyTakeaways" as const,
-      items: [
-        {
-          label: "You can switch back during two main annual windows",
-          text: "The Annual Enrollment Period (Oct 15 to Dec 7) and the Medicare Advantage Open Enrollment Period (Jan 1 to Mar 31) both allow you to drop your Medicare Advantage plan and return to Original Medicare.",
-        },
-        {
-          label: "The Medigap guaranteed issue right is the critical factor",
-          text: "When you return to Original Medicare, you will likely want a Medigap supplement to cover the 20% coinsurance and other cost-sharing. In Florida, Medigap insurers can use medical underwriting outside of guaranteed issue periods, which can result in higher premiums or denial.",
-        },
-        {
-          label: "Your first year in Medicare Advantage is the safest time to switch back",
-          text: "If you enrolled in Medicare Advantage for the first time and want to switch back within 12 months, you have a guaranteed issue right to buy Medigap Plans A, B, C, F, K, or L from any insurer in Florida.",
-        },
-        {
-          label: "Plan exits trigger a guaranteed issue right",
-          text: "If your Medicare Advantage plan is leaving your service area or losing its Medicare contract, you have a guaranteed issue right to buy certain Medigap plans regardless of your health status.",
-        },
-        {
-          label: "Part D coverage must be arranged separately when returning to Original Medicare",
-          text: "Original Medicare does not include prescription drug coverage. When you drop your Medicare Advantage plan, you must enroll in a standalone Part D plan or face a late enrollment penalty if you go without creditable coverage.",
-        },
-        {
-          label: "Florida does not have year-round Medigap guaranteed issue",
-          text: "Some states require Medigap insurers to accept all applicants year-round. Florida does not have this requirement. Outside of specific guaranteed issue periods, you can be denied or charged more based on your health history.",
-        },
-      ],
+      content: `Yes. You can leave Medicare Advantage and return to Original Medicare during an eligible enrollment period. If you already have Medicare Advantage, you can use the January 1 to March 31 Medicare Advantage Open Enrollment Period to make one eligible change. Your return to Original Medicare generally takes effect on the first day of the month after your request is received.
+
+Before you submit a change, confirm how you will get prescription coverage, whether you can buy Medigap if you want it, and when each part of your coverage would begin. The <a href='${hub}' class='font-semibold text-[#1a3fa8] underline'>Medicare Advantage Open Enrollment Resource Center</a> explains your other OEP options.`,
     },
     {
       type: "section" as const,
-      heading: "The Three Windows for Switching Back to Original Medicare",
-      content:
-        "There are three main situations in which you can drop your Medicare Advantage plan and return to Original Medicare. Each has different implications for your ability to get Medigap coverage.\n\n<strong>1. Annual Enrollment Period (AEP): October 15 to December 7</strong>\n\nDuring AEP, you can drop your Medicare Advantage plan and return to Original Medicare, effective January 1 of the following year. This is the most commonly used window. However, AEP does not automatically give you a guaranteed issue right for Medigap. You will need to apply for Medigap coverage and may face medical underwriting in Florida.\n\n<strong>2. Medicare Advantage Open Enrollment Period (MA OEP): January 1 to March 31</strong>\n\nIf you are already enrolled in a Medicare Advantage plan, you can use the MA OEP to switch to a different Medicare Advantage plan or to drop your plan and return to Original Medicare. Changes made during MA OEP take effect the first day of the following month. Like AEP, this window does not automatically trigger a Medigap guaranteed issue right.\n\n<strong>3. Special Enrollment Periods (SEPs)</strong>\n\nCertain life events trigger an SEP that allows you to leave Medicare Advantage outside of the standard windows. SEP-triggering events include your plan leaving your service area, your plan losing its Medicare contract, you moving out of the plan's service area, and qualifying for Extra Help or Medicaid. Some SEPs do come with guaranteed issue rights for Medigap.",
+      heading: "How to Return to Original Medicare During OEP",
+      content: `<ol><li><strong>Confirm your enrollment window.</strong> Check that you’re currently in Medicare Advantage and can still use your OEP change. Ask Medicare to confirm the last day of your plan and the first day you’d be back on Original Medicare.</li><li><strong>Check your doctors and planned care.</strong> Ask each doctor, hospital, and facility you expect to use if they accept Original Medicare at the location you visit. Ask the billing office how it would handle any treatment already scheduled.</li><li><strong>Check Part D and Medigap before changing coverage.</strong> If you need a stand-alone drug plan, compare your prescriptions and pharmacy. If you want Medigap, confirm your right to buy it or ask about underwriting and get the insurer’s written decision and proposed start date before relying on it.</li><li><strong>Submit the change through the right channel.</strong> If you return to Original Medicare during OEP by joining a stand-alone Part D plan, Medicare says your Medicare Advantage disenrollment happens automatically. If you’re returning without joining a drug plan, call <a href='tel:18006334227'>1-800-MEDICARE</a> for disenrollment help.</li><li><strong>Save the written confirmations.</strong> Verify the end of Medicare Advantage and the start of Original Medicare, Part D, and Medigap as applicable. Follow up on any mismatch before you rely on the new coverage.</li></ol>
+
+<div class='rounded-xl border border-blue-100 bg-blue-50 p-5'><p class='mb-3 text-gray-800'>Print the one-page checklist to record your dates, confirmation sources, and questions.</p><a href='${checklist}' download class='inline-flex rounded-lg bg-white px-4 py-2 font-semibold ring-1 ring-blue-200 hover:bg-blue-100'>Download the Return to Original Medicare Checklist (PDF)</a></div>
+
+See <a href='${enrollmentRules}'>Medicare’s enrollment rules</a> and its <a href='https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf'>Medicare Advantage booklet</a> for the official disenrollment guidance.`,
     },
     {
       type: "section" as const,
-      heading: "The Medigap Problem: Why Timing Matters So Much",
-      content:
-        "Original Medicare (Parts A and B) covers 80% of most medical costs after your deductible. The remaining 20% coinsurance has no annual cap. A serious illness or hospitalization can result in thousands of dollars in out-of-pocket costs under Original Medicare alone.\n\nMost people who return to Original Medicare want to add a Medigap supplement plan to cap their costs. The problem is that in Florida, Medigap insurers can use medical underwriting outside of guaranteed issue periods. If you have pre-existing conditions, you may be charged a higher premium or denied coverage entirely.\n\n<strong>When you DO have a guaranteed issue right for Medigap:</strong>\n\n<ul><li>Within the first 12 months of your first Medicare Advantage enrollment (trial right)</li><li>When your Medicare Advantage plan is discontinued or leaves your service area</li><li>When you lose employer or union coverage that supplemented Medicare Advantage</li><li>When you move out of your plan's service area</li></ul>\n\n<strong>When you do NOT have a guaranteed issue right:</strong> If you switch back to Original Medicare during AEP or MA OEP without a qualifying event, you do not have a guaranteed issue right in Florida. You must apply for Medigap and may face underwriting.\n\nFor a full overview of Medigap plan options and how to choose between them, see our <a href='/medicare-supplement/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement insurance guide</a>.",
+      heading: "How to Keep Prescription Coverage When You Switch",
+      content: `If your Medicare Advantage plan includes drug coverage, that coverage ends when you leave the plan. Original Medicare covers certain drugs in limited situations. If you need coverage for prescriptions you fill at a pharmacy, compare stand-alone Part D plans using <a href='https://www.medicare.gov/plan-compare/'>Medicare Plan Finder</a>. For each plan, check your exact prescriptions, pharmacy, and estimated annual costs.
+
+If you have prescription coverage through an employer, union, or other program, ask the benefits administrator whether it’s creditable and whether joining Part D would affect any coverage you or your dependents have. Keep a copy of the creditable coverage notice. Going 63 consecutive days or more without Part D or other creditable drug coverage may lead to a penalty if you enroll later. See <a href='https://www.medicare.gov/health-drug-plans/part-d/basics/choose-coverage/switch-drop-rejoin'>Medicare’s guidance on changing drug coverage</a>.`,
     },
     {
       type: "section" as const,
-      heading: "The Trial Right: Your Safest Window to Switch Back",
-      content:
-        "If you enrolled in Medicare Advantage for the first time and have been in the plan for less than 12 months, you have what Medicare calls a trial right. This is the most favorable window for switching back to Original Medicare.\n\n<strong>What the trial right gives you:</strong> You can return to Original Medicare and buy Medigap Plans A, B, C, F, K, or L from any insurer in Florida without medical underwriting. The insurer cannot deny you coverage or charge you more based on your health status.\n\n<strong>Important limitation:</strong> The trial right only applies to your first enrollment in Medicare Advantage. If you have previously been enrolled in Medicare Advantage and switched back before, the trial right does not apply again.\n\n<strong>How to use the trial right:</strong> Contact your Medicare Advantage plan to disenroll, then contact Medicare (1-800-MEDICARE) or your State Health Insurance Assistance Program (SHIP) to confirm your return to Original Medicare. Then apply for Medigap coverage within the guaranteed issue window.\n\nFor help comparing your Medigap options before making the switch, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
+      heading: "Check Your Medigap Rights in Florida Before Leaving",
+      content: `Original Medicare has no yearly limit on what you pay out of pocket for covered services unless you have other coverage that helps with those costs. Medigap is optional insurance that helps pay some Original Medicare deductibles, copays, or coinsurance. Medicare Advantage OEP does not automatically give you a protected right to buy Medigap.
+
+Two situations can qualify for a federal trial right. The policy options depend on which situation applies.
+
+<ul><li>You first joined Medicare Advantage when you became eligible for Medicare Part A at age 65 and decide to return to Original Medicare within the first year.</li><li>You dropped a Medigap policy to try Medicare Advantage for the first time and return to Original Medicare within the first year. You may be able to get your former policy back if the insurer still sells it. If it’s unavailable, check which policies your right covers.</li></ul>
+
+Other events may also give you a protected right, such as a plan leaving Medicare or stopping coverage in your service area. Keep any plan notices and ask which policies you can buy, what proof you need, and when to apply. Medigap cannot start while you’re still in Medicare Advantage. Outside protected periods, insurers may use medical underwriting.
+
+See <a href='${medigapRules}'>Medicare’s Medigap buying rules</a>, the <a href='https://www.myfloridacfo.com/division/consumers/understanding-insurance/medicare-supplement-insurance-overview'>Florida Department of Financial Services Medigap overview</a>, and our <a href='/faqs/medigap-guaranteed-issue-rights-florida/'>Florida guaranteed issue FAQ</a>. Florida residents can also get free counseling through <a href='https://www.floridashine.org/'>Florida SHINE</a>.`,
     },
     {
       type: "section" as const,
-      heading: "What Happens to Your Part D Coverage When You Switch Back",
-      content:
-        "Most Medicare Advantage plans include prescription drug coverage (MAPD plans). When you drop your Medicare Advantage plan and return to Original Medicare, you lose that drug coverage.\n\n<strong>You must enroll in a standalone Part D plan</strong> to maintain prescription drug coverage. If you go without creditable drug coverage for 63 or more consecutive days, you will face a late enrollment penalty when you eventually enroll in Part D. This penalty is permanent.\n\n<strong>Enrollment timing for Part D:</strong> When you return to Original Medicare during AEP (effective January 1), you can also enroll in a standalone Part D plan during the same AEP window. When you return during MA OEP (effective first of the following month), you have a special enrollment period to pick up a Part D plan.\n\nFor more on Part D enrollment rules and how to avoid the late enrollment penalty, see our guide on <a href='/is-reinstating-a-part-d-plan-possible/' class='text-[#1a3fa8] underline underline-offset-2'>reinstating a Part D plan</a>.",
-    },
-    {
-      type: "section" as const,
-      heading: "Step-by-Step: How to Switch Back to Original Medicare",
-      content:
-        "If you have decided to leave Medicare Advantage and return to Original Medicare, here is the process:\n\n<ul><li><strong>Step 1: Choose your enrollment window.</strong> Identify which window applies to your situation (AEP, MA OEP, or an SEP). Confirm the effective date of your disenrollment.</li><li><strong>Step 2: Assess your Medigap options before disenrolling.</strong> If you do not have a guaranteed issue right, research whether you can qualify for Medigap coverage based on your current health. Do this before you drop your Medicare Advantage plan.</li><li><strong>Step 3: Disenroll from your Medicare Advantage plan.</strong> Contact your plan directly or call 1-800-MEDICARE. You can also disenroll online at Medicare.gov.</li><li><strong>Step 4: Enroll in a standalone Part D plan.</strong> Use the Medicare Plan Finder at Medicare.gov to compare Part D plans in your county based on your specific medications.</li><li><strong>Step 5: Apply for Medigap coverage.</strong> If you have a guaranteed issue right, apply immediately. If you do not, apply as soon as possible and be prepared for underwriting.</li><li><strong>Step 6: Confirm your coverage is active.</strong> Verify that your Original Medicare, Part D, and Medigap (if applicable) are all active before your Medicare Advantage plan ends.</li></ul>\n\nFor a personalized walkthrough of this process, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our team.",
-    },
-    {
-      type: "summary" as const,
-      heading: "The Bottom Line on Switching Back to Original Medicare",
-      content:
-        "Switching back to Original Medicare from Medicare Advantage is possible and sometimes the right move. Here is what to remember:\n\n<ul><li>You can switch during AEP (Oct 15 to Dec 7) or MA OEP (Jan 1 to Mar 31)</li><li>The Medigap guaranteed issue right is the most important factor to evaluate before switching</li><li>Your first 12 months in Medicare Advantage is the safest window due to the trial right</li><li>Plan exits and service area changes also trigger guaranteed issue rights</li><li>You must enroll in a standalone Part D plan when you return to Original Medicare</li><li>Florida does not have year-round Medigap guaranteed issue, so health status matters outside of protected windows</li></ul>\n\nOur licensed specialists can review your specific situation, confirm which rights apply to you, and help you compare Medigap plans before you make the switch. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to get started.",
+      heading: "Other Enrollment Windows and Start Dates",
+      content: `During <a href='/annual-enrollment-period-guide/'>fall Annual Enrollment</a>, you can request an eligible change between October 15 and December 7 for coverage starting January 1. During Medicare Advantage OEP, a valid request received in February would generally take effect March 1.
+
+If you joined Medicare Advantage during your Initial Enrollment Period, you may also be able to return to Original Medicare in your first three months with both Part A and Part B. A qualifying event, such as moving out of your plan’s service area, may give you a <a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods'>Special Enrollment Period</a>. Confirm its deadline and effective date with Medicare.`,
     },
     {
       type: "faq" as const,
       items: [
-        {
-          question: "Can I switch from Medicare Advantage to Original Medicare at any time?",
-          answer:
-            "No. You can only switch during specific enrollment windows: the Annual Enrollment Period (Oct 15 to Dec 7), the Medicare Advantage Open Enrollment Period (Jan 1 to Mar 31), or during a Special Enrollment Period triggered by a qualifying event. Outside these windows, you generally cannot make changes to your Medicare coverage.",
-        },
-        {
-          question: "Will I be able to get a Medigap plan when I switch back to Original Medicare?",
-          answer:
-            "It depends on your situation. If you are within your first 12 months of Medicare Advantage enrollment, you have a guaranteed issue right for certain Medigap plans. If your plan is being discontinued or leaving your area, you also have a guaranteed issue right. Otherwise, in Florida, Medigap insurers can use medical underwriting and may deny coverage or charge higher premiums based on your health.",
-        },
-        {
-          question: "What happens to my prescription drug coverage when I leave Medicare Advantage?",
-          answer:
-            "Most Medicare Advantage plans include drug coverage. When you disenroll, you lose that coverage. You must enroll in a standalone Part D plan to maintain prescription drug coverage. If you go without creditable coverage for 63 or more days, you will face a permanent late enrollment penalty.",
-        },
-        {
-          question: "Can I go back to Medicare Advantage after returning to Original Medicare?",
-          answer:
-            "Yes. You can re-enroll in a Medicare Advantage plan during the next Annual Enrollment Period. However, if you used your trial right to get Medigap coverage when you returned to Original Medicare, you will not have that trial right again if you later switch back to Medicare Advantage and then try to return to Original Medicare a second time.",
-        },
-        {
-          question: "Is there a penalty for leaving Medicare Advantage?",
-          answer:
-            "There is no penalty for leaving a Medicare Advantage plan during an enrollment window. However, if you do not arrange Part D coverage when you return to Original Medicare and go without creditable drug coverage for 63 or more days, you will face a permanent Part D late enrollment penalty.",
-        },
-        {
-          question: "How do I know if my Medicare Advantage plan is leaving my area?",
-          answer:
-            "Medicare Advantage plans must notify you by October 1 each year if they are making significant changes or leaving your service area. You will receive an Annual Notice of Change (ANOC) letter. If your plan is exiting, you will also receive a notice explaining your guaranteed issue rights for Medigap coverage.",
-        },
+        { question: "Do I have to sign up for Parts A and B again?", answer: "Generally, no. If your Parts A and B are active, leaving Medicare Advantage changes how you receive those benefits. Confirm the effective date with Medicare and use your red, white, and blue Medicare card when Original Medicare resumes." },
+        { question: "Can I buy Medigap before Medicare Advantage ends?", answer: "You can ask about applying in advance, including whether you have a protected application window. A Medigap policy can take effect only after your Medicare Advantage coverage ends. Ask the insurer to confirm approval and the effective date in writing." },
+        { question: "How do I check if my Brandon doctor accepts Original Medicare?", answer: "Call the office you visit and ask whether the doctor accepts Original Medicare patients and accepts Medicare assignment. Ask about the hospital or facility separately if you have a procedure scheduled." },
+        { question: "Can I rejoin Medicare Advantage if I change my mind?", answer: "You can apply during a future enrollment period that allows you to join, such as fall Annual Enrollment or a qualifying Special Enrollment Period. Confirm the next available window with Medicare." },
       ],
     },
   ],
   relatedPosts: [
-    {
-      title: "How to Switch Medicare Advantage Plans in Florida",
-      href: "/switch-medicare-advantage-florida/",
-      category: "Plans" as const,
-    },
-    {
-      title: "What Are the Best Medicare Plans for Seniors?",
-      href: "/what-are-the-best-medicare-plans-for-seniors/",
-      category: "Plans" as const,
-    },
-    {
-      title: "Is Reinstating a Part D Plan Possible?",
-      href: "/is-reinstating-a-part-d-plan-possible/",
-      category: "Part D" as const,
-    },
+    { title: "How to Switch Medicare Advantage Plans in Florida", href: "/switch-medicare-advantage-florida/", category: "Plans" as const },
+    { title: "Original Medicare vs. Medicare Advantage in Florida", href: "/original-medicare-vs-medicare-advantage-in-florida/", category: "Plans" as const },
+    { title: "Compare Medicare Prescription Costs in Brandon", href: "/compare-medicare-prescription-costs-brandon/", category: "Part D" as const },
   ],
 };
 
 export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <BlogPostClient post={POST} />
     </>
   );

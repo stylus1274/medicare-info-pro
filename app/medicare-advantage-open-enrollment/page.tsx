@@ -11,6 +11,7 @@ const description = "See who can change Medicare Advantage plans from January 1 
 const pdf = "/downloads/2027-medicare-advantage-open-enrollment-quick-reference.pdf";
 const enrollmentRules = "https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan";
 const medigapRules = "https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when";
+const originalMedicareChecklist = "/downloads/return-to-original-medicare-checklist.pdf";
 const originalMedicareGuide = "/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/";
 const textLink = "font-semibold text-[#1a3fa8] underline underline-offset-4";
 const heading = "font-serif text-2xl font-bold text-[#0d2260] sm:text-3xl";
@@ -37,7 +38,7 @@ const schema = {
 const choices = [
   { title: "Review My Current Plan", text: "Check whether your plan still works for your doctors, prescriptions, and budget.", href: "/medicare-advantage-open-enrollment/plan-review/", icon: ClipboardList },
   { title: "Switch Medicare Advantage Plans", text: "Compare available plans and confirm the new coverage start date before switching.", href: "/switch-medicare-advantage-florida/", icon: CalendarDays },
-  { title: "Return to Original Medicare", text: "Check Part D, providers, and Medigap eligibility before leaving your plan.", href: "#return-to-original-medicare", icon: ShieldCheck },
+  { title: "Return to Original Medicare", text: "Check Part D, providers, and Medigap eligibility before leaving your plan.", href: originalMedicareGuide, icon: ShieldCheck },
 ];
 
 const checks = [
@@ -105,6 +106,7 @@ export default function Page() {
             <h2 className={heading}>What to Confirm Before Returning to Original Medicare</h2>
             <p className="mt-4">Check that your providers accept Original Medicare. If you need drug coverage, compare stand-alone Part D plans and confirm the start date. If you want Medigap, verify your eligibility and any applicable buying protections before leaving your current plan.</p>
             <p className="mt-3">Medigap buying protections depend on your circumstances. Review <a className={textLink} href={medigapRules}>Medicare’s Medigap rules</a>, our <Link className={textLink} href="/faqs/medigap-guaranteed-issue-rights-florida/">Florida guaranteed issue FAQ</Link>, and the <Link className={textLink} href={originalMedicareGuide}>steps for returning to Original Medicare</Link>.</p>
+            <a href={originalMedicareChecklist} download className={textLink + " mt-5 inline-block"}>Download the Return to Original Medicare Checklist (PDF)</a>
           </section>
 
           <section>
