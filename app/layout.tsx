@@ -110,7 +110,7 @@ export default function RootLayout({
         <LeadAttribution />
         {children}
         <KitSlideIn />
-        <Script src="/analytics-tracker.js" strategy="afterInteractive" />
+        <Script src="/mip-traffic.js?v=1" strategy="afterInteractive" />
       </body>
     </html>
   );
