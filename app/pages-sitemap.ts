@@ -30,6 +30,7 @@ const CORE_PAGES = [
   "/medicare-penalty-calculator",
   "/enrollment-calculator",
   "/enrollment-timeline",
+  "/medicare-advantage-open-enrollment",
   "/cost-estimator",
   "/costs-at-a-glance",
   "/maximize-benefits",

@@ -236,6 +236,11 @@ const POST = {
   ],
   relatedPosts: [
     {
+      title: "Medicare Advantage Open Enrollment Resource Center",
+      href: "/medicare-advantage-open-enrollment/",
+      category: "Enrollment" as const,
+    },
+    {
       title: "Medigap Open Enrollment: What You Need to Know",
       href: "/medigap-open-enrollment/",
       category: "Supplements" as const,

@@ -35,6 +35,7 @@ const FAQ = {
   relatedFaqs: [
     { question: "What is a Medicare Part B Giveback plan?", href: "/faqs/medicare-part-b-giveback/" },
     { question: "What is Medicare Advantage?", href: "/medicare-advantage/" },
+    { question: "Medicare Advantage Open Enrollment Resource Center", href: "/medicare-advantage-open-enrollment/" },
     { question: "What is the fall Medicare Open Enrollment Period?", href: "/annual-enrollment-period-guide/" },
     { question: "Can I go back to Original Medicare from Medicare Advantage?", href: "/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare/" },
   ],

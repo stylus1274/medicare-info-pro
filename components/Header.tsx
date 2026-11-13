@@ -72,7 +72,7 @@ const NAV_ITEMS: NavItem[] = [
           { label: "Turning 65", href: "/enrollment-timeline/#iep", desc: "Initial enrollment window" },
           { label: "Annual Enrollment", href: "/enrollment-timeline/#aep", desc: "Oct 15 – Dec 7 each year" },
           { label: "Special Enrollment", href: "/enrollment-timeline/#sep", desc: "Qualifying life events" },
-          { label: "Open Enrollment", href: "/enrollment-timeline/#oepa", desc: "Jan 1 – Mar 31 each year" },
+          { label: "Medicare Advantage Open Enrollment", href: "/medicare-advantage-open-enrollment/", desc: "January 1 through March 31" },
         ]},
         { heading: "Avoid Penalties", links: [
           { label: "Part B Late Penalty", href: "/enrollment-timeline/#penalty-part-b", desc: "10% per year late" },

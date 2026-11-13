@@ -37,6 +37,7 @@ const CORE_PAGES: { path: string; priority: number }[] = [
   { path: "/medicare-penalty-calculator", priority: 0.7 },
   { path: "/enrollment-calculator", priority: 0.7 },
   { path: "/enrollment-timeline", priority: 0.7 },
+  { path: "/medicare-advantage-open-enrollment", priority: 0.8 },
   { path: "/cost-estimator", priority: 0.7 },
   { path: "/costs-at-a-glance", priority: 0.7 },
   { path: "/maximize-benefits", priority: 0.7 },

@@ -725,6 +725,12 @@ export default function EnrollmentTimelineClient() {
                             ))}
                           </ul>
 
+                          {period.id === "oepa" && (
+                            <Link href="/medicare-advantage-open-enrollment/" className="mt-4 inline-block font-semibold text-[#1a3fa8] underline underline-offset-4">
+                              Medicare Advantage Open Enrollment Resource Center
+                            </Link>
+                          )}
+
                           {period.warning && (
                             <div className="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 flex items-start gap-2">
                               <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
