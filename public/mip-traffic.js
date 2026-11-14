@@ -65,6 +65,19 @@
       return { sid: sid, attr: attr };
     }
 
+    function send(ev) {
+      try {
+        fetch(ENDPOINT, {
+          method: 'POST',
+          mode: 'cors',
+          credentials: 'omit',
+          keepalive: true,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ events: [ev] })
+        }).catch(function () {});
+      } catch (e) {}
+    }
+
     var lastPath = null;
     function track() {
       var path = location.pathname || '/';
@@ -82,17 +95,41 @@
         utmCampaign: s.attr.utmCampaign,
         clickId: s.attr.clickId
       };
-      try {
-        fetch(ENDPOINT, {
-          method: 'POST',
-          mode: 'cors',
-          credentials: 'omit',
-          keepalive: true,
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ events: [ev] })
-        }).catch(function () {});
-      } catch (e) {}
+      send(ev);
     }
+
+    // Button clicks: any element marked data-track="<name>". Records the name, page and link path only.
+    document.addEventListener('click', function (e) {
+      try {
+        var t = e.target;
+        var el = t && t.closest ? t.closest('[data-track]') : null;
+        if (!el) return;
+        var path = location.pathname || '/';
+        if (SKIP.test(path)) return;
+        var name = String(el.getAttribute('data-track') || '').slice(0, 100);
+        if (!name) return;
+        var href = null;
+        try {
+          var raw = el.getAttribute('href');
+          if (raw) { var u = new URL(raw, location.href); href = u.origin === location.origin ? u.pathname : u.protocol + '//' + u.hostname + u.pathname; }
+        } catch (err) {}
+        var s = session();
+        send({
+          type: 'click',
+          name: name,
+          href: href ? href.slice(0, 500) : null,
+          eventId: rid(),
+          sessionId: s.sid,
+          path: path.slice(0, 500),
+          device: device(),
+          ref: s.attr.ref,
+          utmSource: s.attr.utmSource,
+          utmMedium: s.attr.utmMedium,
+          utmCampaign: s.attr.utmCampaign,
+          clickId: s.attr.clickId
+        });
+      } catch (err) {}
+    }, true);
 
     ['pushState', 'replaceState'].forEach(function (m) {
       var orig = history[m];
