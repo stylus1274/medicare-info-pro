@@ -468,6 +468,7 @@ export default function Header() {
 
             <Link
               href="/get-started/"
+              data-track="Header: Compare Plans"
               className="hidden 2xl:inline-flex"
               style={{
                 background: "#f5a800", color: "#ffffff",
