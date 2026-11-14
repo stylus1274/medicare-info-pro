@@ -477,7 +477,7 @@ export default function Header() {
                 boxShadow: "0 2px 10px rgba(245,168,0,0.4)",
               }}
             >
-              Free Consultation <ArrowRight size={14} />
+              Compare Plans <ArrowRight size={14} />
             </Link>
             <button
               className="2xl:hidden p-2.5 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
