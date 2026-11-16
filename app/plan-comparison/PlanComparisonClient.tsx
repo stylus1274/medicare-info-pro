@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Breadcrumb from "@/components/Breadcrumb";
 
 const GREG_PHOTO =
@@ -287,6 +288,10 @@ export default function PlanComparisonClient() {
                   Actual plan benefits, premiums, and networks vary by insurer and location. The figures above reflect 2026 Original Medicare benchmarks. Medicare Advantage plan details depend on the specific plan you choose. A licensed Medicare advisor can help you compare actual plans available in your area.
                 </p>
               </div>
+            </div>
+
+            <div className="mb-10">
+              <MedicareCoverageCta />
             </div>
 
             {/* Bottom CTA grid */}

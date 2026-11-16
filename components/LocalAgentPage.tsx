@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import { ChevronDown, ChevronUp, Phone, MapPin, CheckCircle, Star, Clock } from "lucide-react";
 
 export interface LocalPageConfig {
@@ -26,6 +27,7 @@ export interface LocalPageConfig {
   neighborhoods?: string[];   // neighborhoods/zip codes served
   faqs: { q: string; a: string }[];
   testimonials?: { name: string; location: string; text: string }[];
+  showCoverageCta?: boolean;
   guidanceSection?: {
     title: string;
     intro: string;
@@ -284,6 +286,8 @@ export default function LocalAgentPage({ config }: { config: LocalPageConfig }) 
                 </ul>
               </section>
             )}
+
+            {config.showCoverageCta && <MedicareCoverageCta />}
 
             {config.localSupportSection && (
               <>

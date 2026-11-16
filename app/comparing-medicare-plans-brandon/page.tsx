@@ -140,6 +140,7 @@ export default function Page() {
         slug: "brandon",
         county: "Hillsborough",
         zip: "33510",
+        showCoverageCta: true,
         carriers: ["Humana", "Aetna", "UnitedHealthcare", "Cigna", "WellCare", "Devoted Health", "Simply Healthcare", "Florida Blue", "Molina Healthcare", "Anthem BCBS"],
         neighboringCities: [
           { name: "Riverview", slug: "riverview" },

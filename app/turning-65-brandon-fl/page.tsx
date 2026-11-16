@@ -78,6 +78,7 @@ export default function Page() {
       nearbyLandmarks: ["HCA Florida Brandon Hospital", "BayCare Medical Group locations", "Nearby specialist and outpatient facilities"],
       neighborhoods: ["Brandon 33510", "Brandon 33511", "Dover 33527", "Valrico 33594", "Seffner 33584", "Riverview 33578"],
       officeNotes: ["Office visits by appointment", "Call before visiting"],
+      showCoverageCta: true,
       guidanceSection: {
         title: "Prepare for Your Medicare Enrollment Conversation",
         intro: "Information checked November 2, 2026. Bring the details that help clarify your next steps; do not send Medicare numbers or medical details through a general website form.",

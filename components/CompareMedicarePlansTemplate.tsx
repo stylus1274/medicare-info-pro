@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import {
   ChevronRight, ChevronDown, Phone, ArrowRight, CheckCircle,
   XCircle, Scale, MapPin, Shield, Info
@@ -17,6 +18,7 @@ interface CityData {
   carriers: string[];
   neighboringCities: { name: string; slug: string }[];
   relatedCityLinks?: { label: string; href: string }[];
+  showCoverageCta?: boolean;
   inlineResources?: { label: string; href: string }[];
 }
 
@@ -369,6 +371,12 @@ export default function CompareMedicarePlansTemplate({ data }: { data: CityData 
             </div>
           </div>
         </section>
+
+        {data.showCoverageCta && (
+          <div className="mx-auto max-w-5xl px-4 pb-14 sm:px-6 lg:px-8">
+            <MedicareCoverageCta />
+          </div>
+        )}
 
         {/* Local Carriers */}
         <section className="py-14 bg-gray-50">
