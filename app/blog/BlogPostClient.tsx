@@ -125,7 +125,8 @@ type PostSection =
   | { type: "summary"; heading: string; content: string }
   | { type: "faq"; items: { question: string; answer: string }[] }
   | { type: "proTip"; content: string }
-  | { type: "inlineCta"; heading?: string; body?: string };
+  | { type: "inlineCta"; heading?: string; body?: string }
+  | { type: "coverageCta"; heading: string; body: string; buttonLabel: string };
 
 interface RelatedPost {
   title: string;
@@ -478,6 +479,48 @@ export default function BlogPostClient({ post }: Props) {
                         <FaqItem key={i} question={item.question} answer={item.answer} />
                       ))}
                     </div>
+                  </section>
+                );
+              }
+
+              if (section.type === "coverageCta") {
+                const headingId = `coverage-options-${idx}`;
+                const zipId = `${headingId}-zip`;
+
+                return (
+                  <section
+                    key={idx}
+                    aria-labelledby={headingId}
+                    className="mb-10 rounded-2xl border border-[#243974] border-t-4 border-t-[#f5a800] bg-gradient-to-br from-[#0d1f5c] to-[#1a3fa8] px-6 py-7 text-white shadow-sm sm:px-8 sm:py-8"
+                  >
+                    <h2 id={headingId} className="text-2xl font-bold leading-tight sm:text-3xl" style={{ fontFamily: "'Merriweather', serif" }}>
+                      {section.heading}
+                    </h2>
+                    <p className="mt-3 max-w-lg text-base leading-relaxed text-blue-50">{section.body}</p>
+                    <form action="/get-started/" method="get" className="mt-5 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-end">
+                      <div className="sm:w-36">
+                        <label htmlFor={zipId} className="mb-1.5 block text-sm font-semibold">ZIP code</label>
+                        <input
+                          id={zipId}
+                          name="zip"
+                          type="text"
+                          inputMode="numeric"
+                          autoComplete="postal-code"
+                          pattern="[0-9]{5}"
+                          maxLength={5}
+                          title="Enter a five-digit ZIP code"
+                          required
+                          className="h-14 w-full rounded-lg border border-blue-200 bg-white px-4 text-lg text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg bg-[#f5a800] px-5 py-3 text-base font-bold text-[#0d1f5c] transition-colors hover:bg-[#ffb31a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        {section.buttonLabel}
+                        <ArrowRight size={19} aria-hidden="true" />
+                      </button>
+                    </form>
                   </section>
                 );
               }
