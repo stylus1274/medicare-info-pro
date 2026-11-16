@@ -11,6 +11,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Callout from "@/components/Callout";
@@ -631,6 +632,8 @@ export default function EnrollmentTimelineClient() {
                   <IEPTimeline />
                 </motion.div>
               </div>
+
+              <MedicareCoverageCta />
 
               {/* All Enrollment Periods */}
               <div id="periods">

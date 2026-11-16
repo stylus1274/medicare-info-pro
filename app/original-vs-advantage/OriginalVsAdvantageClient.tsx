@@ -9,6 +9,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -610,6 +611,8 @@ export default function OriginalVsAdvantageClient() {
                   </div>
                 </motion.div>
               </div>
+
+              <MedicareCoverageCta />
 
               {/* Detailed Comparison */}
               <div id="comparison">

@@ -10,6 +10,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -554,6 +555,9 @@ export default function AmIEligibleClient() {
             >
               <EligibilityChecker />
             </motion.div>
+          </div>
+          <div className="mt-12 max-w-3xl">
+            <MedicareCoverageCta />
           </div>
         </div>
       </section>

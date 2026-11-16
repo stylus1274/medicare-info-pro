@@ -12,6 +12,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Callout from "@/components/Callout";
@@ -783,6 +784,8 @@ export default function FirstStepsChecklistClient() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex gap-10 items-start">
             <article className="flex-1 min-w-0 space-y-6">
+              <MedicareCoverageCta />
+
               {phases.map((phase, i) => (
                 <div key={phase.id} id={phase.id}>
                   <motion.div

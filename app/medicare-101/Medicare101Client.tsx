@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import { motion } from "framer-motion";
 import {
   Phone, ChevronRight, ChevronDown, ChevronUp,
@@ -430,6 +431,10 @@ export default function Medicare101Client() {
                 paid Medicare taxes for at least 10 years receive Part A at no cost.
               </p>
             </motion.section>
+
+            <div className="mb-14">
+              <MedicareCoverageCta />
+            </div>
 
             {/* SECTION 2: Who Qualifies */}
             <motion.section

@@ -13,6 +13,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Callout from "@/components/Callout";
@@ -400,6 +401,8 @@ export default function UnderstandingPartDClient() {
                   </div>
                 </motion.div>
               </div>
+
+              <MedicareCoverageCta />
 
               {/* Formulary Tiers */}
               <div id="formulary-tiers">

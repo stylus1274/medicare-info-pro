@@ -120,12 +120,7 @@ const POST = {
       content:
         "Medicare is not a single plan. It is a system of coverage options that you assemble based on your needs. The core decision every new Medicare beneficiary faces is choosing between two fundamentally different approaches:\n\n<ul><li><span><strong>Original Medicare + Medigap + Part D:</strong> You keep the federal Medicare program (Parts A and B), add a private supplement to cover the gaps, and add a standalone drug plan. You can see any doctor in the country who accepts Medicare.</span></li><li><span><strong>Medicare Advantage (Part C):</strong> You replace Original Medicare with a private plan that bundles hospital, medical, and usually drug coverage. These plans typically have networks, lower premiums, and additional benefits like dental and vision.</span></li></ul>\n\nNeither approach is universally better. Each has real trade-offs that matter depending on your circumstances. The sections below break down each option in detail.",
     },
-    {
-      type: "coverageCta" as const,
-      heading: "Explore Your Medicare Coverage Options",
-      body: "Getting ready for Medicare? Explore coverage options in your area.",
-      buttonLabel: "Explore Medicare Options",
-    },
+    { type: "coverageCta" as const },
     {
       type: "section" as const,
       heading: "Original Medicare: The Foundation",

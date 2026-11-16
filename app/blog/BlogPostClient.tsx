@@ -18,6 +18,7 @@
  */
 
 import Link from "next/link";
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
 import { useState, useEffect, useRef } from "react";
 import {
   ChevronRight,
@@ -126,7 +127,7 @@ type PostSection =
   | { type: "faq"; items: { question: string; answer: string }[] }
   | { type: "proTip"; content: string }
   | { type: "inlineCta"; heading?: string; body?: string }
-  | { type: "coverageCta"; heading: string; body: string; buttonLabel: string };
+  | { type: "coverageCta" };
 
 interface RelatedPost {
   title: string;
@@ -484,26 +485,10 @@ export default function BlogPostClient({ post }: Props) {
               }
 
               if (section.type === "coverageCta") {
-                const headingId = `coverage-options-${idx}`;
-
                 return (
-                  <section
-                    key={idx}
-                    aria-labelledby={headingId}
-                    className="mb-10 rounded-2xl border border-[#243974] border-t-4 border-t-[#f5a800] bg-gradient-to-br from-[#0d1f5c] to-[#1a3fa8] px-6 py-7 text-white shadow-sm sm:px-8 sm:py-8"
-                  >
-                    <h2 id={headingId} className="text-2xl font-bold leading-tight sm:text-3xl" style={{ fontFamily: "'Merriweather', serif" }}>
-                      {section.heading}
-                    </h2>
-                    <p className="mt-3 max-w-lg text-base leading-relaxed text-blue-50">{section.body}</p>
-                    <Link
-                      href="/get-started/"
-                      className="mt-5 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-lg bg-[#f5a800] px-5 py-3 text-center text-base font-bold text-[#0d1f5c] transition-colors hover:bg-[#ffb31a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
-                    >
-                      {section.buttonLabel}
-                      <ArrowRight size={19} aria-hidden="true" />
-                    </Link>
-                  </section>
+                  <div key={idx} className="mb-10">
+                    <MedicareCoverageCta headingId={`coverage-options-${idx}`} />
+                  </div>
                 );
               }
 
