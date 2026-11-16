@@ -123,7 +123,7 @@ const POST = {
     {
       type: "coverageCta" as const,
       heading: "Explore Your Medicare Coverage Options",
-      body: "Getting ready for Medicare? Enter your ZIP code to explore coverage options in your area.",
+      body: "Getting ready for Medicare? Explore coverage options in your area.",
       buttonLabel: "Explore Medicare Options",
     },
     {

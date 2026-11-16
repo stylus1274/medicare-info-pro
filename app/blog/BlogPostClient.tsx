@@ -485,7 +485,6 @@ export default function BlogPostClient({ post }: Props) {
 
               if (section.type === "coverageCta") {
                 const headingId = `coverage-options-${idx}`;
-                const zipId = `${headingId}-zip`;
 
                 return (
                   <section
@@ -497,30 +496,13 @@ export default function BlogPostClient({ post }: Props) {
                       {section.heading}
                     </h2>
                     <p className="mt-3 max-w-lg text-base leading-relaxed text-blue-50">{section.body}</p>
-                    <form action="/get-started/" method="get" className="mt-5 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-end">
-                      <div className="sm:w-36">
-                        <label htmlFor={zipId} className="mb-1.5 block text-sm font-semibold">ZIP code</label>
-                        <input
-                          id={zipId}
-                          name="zip"
-                          type="text"
-                          inputMode="numeric"
-                          autoComplete="postal-code"
-                          pattern="[0-9]{5}"
-                          maxLength={5}
-                          title="Enter a five-digit ZIP code"
-                          required
-                          className="h-14 w-full rounded-lg border border-blue-200 bg-white px-4 text-lg text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg bg-[#f5a800] px-5 py-3 text-base font-bold text-[#0d1f5c] transition-colors hover:bg-[#ffb31a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                      >
-                        {section.buttonLabel}
-                        <ArrowRight size={19} aria-hidden="true" />
-                      </button>
-                    </form>
+                    <Link
+                      href="/get-started/"
+                      className="mt-5 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-lg bg-[#f5a800] px-5 py-3 text-center text-base font-bold text-[#0d1f5c] transition-colors hover:bg-[#ffb31a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
+                    >
+                      {section.buttonLabel}
+                      <ArrowRight size={19} aria-hidden="true" />
+                    </Link>
                   </section>
                 );
               }
