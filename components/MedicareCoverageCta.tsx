@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export default function MedicareCoverageCta({ headingId = "explore-medicare-coverage" }: { headingId?: string }) {
+export default function MedicareCoverageCta({
+  headingId = "explore-medicare-coverage",
+  description = "Getting ready for Medicare? Explore coverage options in your area.",
+}: { headingId?: string; description?: string }) {
   return (
     <section
       aria-labelledby={headingId}
@@ -11,7 +14,7 @@ export default function MedicareCoverageCta({ headingId = "explore-medicare-cove
         Explore Your Medicare Coverage Options
       </h2>
       <p className="mt-3 max-w-lg text-base leading-relaxed text-blue-50">
-        Getting ready for Medicare? Explore coverage options in your area.
+        {description}
       </p>
       <Link
         href="/get-started/"

@@ -127,7 +127,7 @@ type PostSection =
   | { type: "faq"; items: { question: string; answer: string }[] }
   | { type: "proTip"; content: string }
   | { type: "inlineCta"; heading?: string; body?: string }
-  | { type: "coverageCta" };
+  | { type: "coverageCta"; description?: string };
 
 interface RelatedPost {
   title: string;
@@ -487,7 +487,7 @@ export default function BlogPostClient({ post }: Props) {
               if (section.type === "coverageCta") {
                 return (
                   <div key={idx} className="mb-10">
-                    <MedicareCoverageCta headingId={`coverage-options-${idx}`} />
+                    <MedicareCoverageCta headingId={`coverage-options-${idx}`} description={section.description} />
                   </div>
                 );
               }
