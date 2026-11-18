@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import type { ComponentProps } from "react";
 import BlogPostClient from "../blog/BlogPostClient";
 
 const ARTICLE_URL = "https://medicareinfopro.com/compare-medicare-prescription-costs-brandon/";
 const META_TITLE = "Compare Medicare Drug Costs for 2027 in Brandon, FL | MIP";
-const DESCRIPTION = "Compare Medicare prescription costs for 2027 in Brandon, FL. Check medications, pharmacies, and annual plan costs before the December 7 AEP deadline.";
+const DESCRIPTION = "Compare 2027 Medicare prescription costs in Brandon, FL. Check Part D limits, drug coverage, pharmacies, annual costs, and enrollment dates.";
 const IMAGE = "https://medicareinfopro.com/images/compare-medicare-prescription-costs-2027-brandon.webp";
 const PUBLISHED = "2026-10-16";
+const MODIFIED = "2026-11-18";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -15,33 +17,33 @@ export const metadata: Metadata = {
   openGraph: {
     title: META_TITLE, description: DESCRIPTION, url: ARTICLE_URL,
     siteName: "Medicare Information Project", type: "article",
-    publishedTime: PUBLISHED, modifiedTime: PUBLISHED,
+    publishedTime: PUBLISHED, modifiedTime: MODIFIED,
     images: [{ url: IMAGE, width: 1672, height: 941, alt: "Older woman and her adult daughter reviewing prescription information beside a laptop and medication bottles." }],
   },
   twitter: { card: "summary_large_image", title: META_TITLE, description: DESCRIPTION, images: [IMAGE] },
 };
 
-const POST = {
+const POST: ComponentProps<typeof BlogPostClient>["post"] = {
   "slug": "compare-medicare-prescription-costs-brandon",
   "title": "How to Compare Medicare Prescription Costs for 2027 in Brandon, FL",
-  "excerpt": "Compare your exact prescriptions, pharmacies, coverage rules, and estimated annual costs for 2027 before the December 7 Annual Enrollment deadline.",
-  "category": "Part D" as const,
+  "excerpt": "Compare 2027 Part D costs, your exact prescriptions, and Brandon pharmacy options. Check the deductible, spending limit, coverage rules, and enrollment timing.",
+  "category": "Part D",
   "author": {
     "name": "Medicare Information Project",
     "title": "Brandon Medicare Guidance Team"
   },
-  "date": "October 16, 2026",
-  "readTime": "8 min read",
+  "date": "Updated November 18, 2026",
+  "readTime": "10 min read",
   "image": "/images/compare-medicare-prescription-costs-2027-brandon.webp",
   "imageAlt": "Older woman and her adult daughter reviewing prescription information beside a laptop and medication bottles.",
   "sections": [
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "Quick Answer",
       "content": "To compare Medicare prescription costs for 2027, enter your exact medications, dosages, and pharmacies into <a href=\"https://www.medicare.gov/plan-compare/\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare Plan Finder</a> using your home ZIP code and the 2027 coverage year. Compare estimated yearly costs and coverage rules alongside monthly premiums. Medicare Annual Enrollment runs <u>October 15 through December 7, 2026</u>, for changes taking effect <u>January 1, 2027</u>, provided the plan receives your enrollment request by December 7. <sup><a href=\"#official-sources\" aria-label=\"Official sources 1, 2\">[1, 2]</a></sup>\n\nIf you live in Brandon and want to keep using your usual pharmacy, start with that location and your current prescription list. A familiar plan name or low advertised premium cannot tell you what your particular medications will cost next year."
     },
     {
-      "type": "keyTakeaways" as const,
+      "type": "keyTakeaways",
       "items": [
         {
           "label": "Use 2027 details",
@@ -62,46 +64,61 @@ const POST = {
       ]
     },
     {
-      "type": "section" as const,
+      "type": "section",
+      "heading": "What Are the 2027 Part D Deductible and Spending Limit?",
+      "content": "Two national figures help you read plan estimates, but your actual costs still depend on your plan and prescriptions.\n\n<div class=\"overflow-x-auto rounded-xl border border-gray-200\" tabindex=\"0\" role=\"region\" aria-label=\"2027 Medicare Part D cost limits\"><table><caption>2027 Part D cost figures</caption><thead><tr><th scope=\"col\">Cost item</th><th scope=\"col\">2027 amount</th><th scope=\"col\">What it means</th></tr></thead><tbody><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Annual deductible</th><td>Up to $700</td><td>Some plans charge less or have no deductible. Check which drugs it applies to.</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Out-of-pocket threshold</th><td>$2,400</td><td>After qualifying spending reaches the threshold, you pay $0 for covered Part D drugs for the rest of 2027.</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Monthly premium</th><td>Varies by plan</td><td>Keep premiums separate from the covered-drug spending limit.</td></tr></tbody></table></div>\n\nThe deductible is part of qualifying drug spending, so do not add $700 on top of the $2,400 threshold. Premiums and noncovered drugs are outside that limit. Certain payments made on your behalf can count toward it. The threshold also does not cap Medicare Advantage medical copays. <sup><a href=\"#official-sources\" aria-label=\"Official sources 7, 8, 11\">[7, 8, 11]</a></sup>"
+    },
+    {
+      "type": "section",
       "heading": "Why Should You Recheck Prescription Coverage During AEP?",
       "content": "Your prescriptions may stay the same while your coverage changes. Next year's premium, deductible, covered-drug list, drug tiers, or pharmacy arrangements may differ from this year's.\n\nStart with your Annual Notice of Change, or ANOC. It describes changes to your existing coverage. Our explanation of <a href=\"/how-to-read-medicare-annual-notice-of-change/\">how to read your Annual Notice of Change</a> can help you identify questions to investigate.\n\nThen compare the renewal option against other suitable coverage. Reviewing does not mean you must switch. If your plan remains available and continues to meet your needs, keeping it may be appropriate.\n\nSee our <a href=\"/annual-enrollment-period-guide/\">Medicare Annual Enrollment dates and coverage changes</a> for the broader enrollment checklist. This prescription comparison gives you a closer look at one part of that decision."
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "What Information Do You Need Before Comparing Plans?",
       "content": "Gather these details before you begin:\n\n<ul><li><strong>Home ZIP code and current plan information.</strong> Use your residential location.</li><li><strong>Every prescription's exact details.</strong> Record the name, brand or generic version, strength, form, quantity, and refill frequency. A tablet and an extended-release tablet can be different entries.</li><li><strong>Pharmacy names and addresses.</strong> Include your usual location and any alternatives you would realistically consider.</li><li><strong>Mail-order preferences.</strong> Note whether delivery and a longer supply would suit you.</li><li><strong>Your ANOC and unresolved questions.</strong> Flag any prescription whose coverage or price concerns you.</li><li><strong>Extra Help or other drug coverage.</strong> These can affect estimates and enrollment decisions.</li></ul>\n\nIf someone helps manage your prescriptions, ask them to check the list with you. For background on the coverage itself, see our <a href=\"/medicare-part-d/\">Medicare Part D prescription coverage overview</a>.\n\nBring detailed medication information to an arranged consultation. Use the general website inquiry form to request an appointment rather than submitting Medicare numbers or private medical records."
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "How Do You Compare 2027 Drug Costs in Medicare Plan Finder?",
-      "content": "<a href=\"https://www.medicare.gov/basics/get-started-with-medicare/using-medicare/helpful-tools\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare's comparison tools</a> provide estimated monthly and yearly costs based on the prescriptions you enter. <sup><a href=\"#official-sources\" aria-label=\"Official sources 2\">[2]</a></sup> Use this process to make the results easier to evaluate:\n\n<ol><li><strong>Confirm the year and location.</strong> Select 2027 and enter your home ZIP code. Answer any location questions accurately.</li><li><strong>Choose the appropriate coverage comparison.</strong> Compare standalone drug plans or Medicare Advantage plans with drug coverage according to your situation.</li><li><strong>Enter your complete medication list.</strong> Check each strength, form, quantity, and refill schedule before continuing. An omitted prescription can make an estimate misleading.</li><li><strong>Select your actual pharmacies.</strong> Include the exact location you use and practical alternatives.</li><li><strong>Review annual estimates and individual drug details.</strong> Check what the total includes, what you might pay for each medication, and whether restrictions apply.</li><li><strong>Save the details.</strong> Record the comparison date, coverage year, exact plan name and ID, selected pharmacy, and unanswered questions.</li></ol>\n\n<strong>Avoid counting costs twice.</strong> If a displayed annual total already includes premiums and estimated drug spending, do not add those amounts again. Check how the deductible is reflected before adding it separately.\n\nAn estimate is a planning tool. Ask about anything missing, and consider how a new prescription or different refill pattern could change your costs.\n\nFor Medicare Advantage, also <a href=\"/check-medicare-doctor-hospital-networks-brandon-fl/\">check Medicare doctor and hospital networks in Brandon</a>, medical copayments, and other plan rules. Adding a standalone drug plan to certain Medicare Advantage coverage can disenroll you from that Advantage plan. Confirm how a proposed enrollment would affect your existing coverage first. <sup><a href=\"#official-sources\" aria-label=\"Official sources 3\">[3]</a></sup>\n\n<figure class=\"my-8\"><img src=\"/images/prescription-comparison-checklist.svg\" alt=\"Three areas to compare: annual costs, your exact pharmacy, and drug coverage rules.\" width=\"1200\" height=\"675\" loading=\"lazy\" decoding=\"async\" class=\"w-full h-auto rounded-2xl border border-gray-200\" /><figcaption class=\"mt-3 text-sm text-gray-600 leading-relaxed\">Use the same medication details and coverage year when reviewing each option. Check what the estimate includes.</figcaption></figure>"
+      "content": "<a href=\"https://www.medicare.gov/basics/get-started-with-medicare/using-medicare/helpful-tools\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare's comparison tools</a> provide estimated monthly and yearly costs based on the prescriptions you enter. <sup><a href=\"#official-sources\" aria-label=\"Official sources 2\">[2]</a></sup> Use this process to make the results easier to evaluate:\n\n<ol><li><strong>Confirm the year and location.</strong> Select 2027 and enter your home ZIP code. Answer any location questions accurately.</li><li><strong>Choose the appropriate coverage comparison.</strong> Compare standalone drug plans or Medicare Advantage plans with drug coverage according to your situation.</li><li><strong>Enter your complete medication list.</strong> Check each strength, form, quantity, and refill schedule before continuing. An omitted prescription can make an estimate misleading.</li><li><strong>Select your actual pharmacies.</strong> Include the exact location you use and practical alternatives.</li><li><strong>Review annual estimates and individual drug details.</strong> Check what the total includes, what you might pay for each medication, and whether restrictions apply.</li><li><strong>Save the details.</strong> Record the comparison date, coverage year, exact plan name and ID, selected pharmacy, and unanswered questions.</li></ol>\n\n<strong>Avoid counting costs twice.</strong> If a displayed annual total already includes premiums and estimated drug spending, do not add those amounts again. Check how the deductible is reflected before adding it separately.\n\nAn estimate is a planning tool. Ask about anything missing, and consider how a new prescription or different refill pattern could change your costs.\n\nFor Medicare Advantage, also <a href=\"/check-medicare-doctor-hospital-networks-brandon-fl/\">check Medicare doctor and hospital networks in Brandon</a>, medical copayments, and other plan rules. Review the <a href=\"/best-medicare-advantage-plans-hillsborough-county/\">2027 Hillsborough County Medicare Advantage comparison</a> to organize the medical side of your decision. Adding a standalone drug plan to certain Medicare Advantage coverage can disenroll you from that Advantage plan. Confirm how a proposed enrollment would affect your existing coverage first. <sup><a href=\"#official-sources\" aria-label=\"Official sources 3\">[3]</a></sup>\n\n<figure class=\"my-8\"><img src=\"/images/prescription-comparison-checklist.svg\" alt=\"Three areas to compare: annual costs, your exact pharmacy, and drug coverage rules.\" width=\"1200\" height=\"675\" loading=\"lazy\" decoding=\"async\" class=\"w-full h-auto rounded-2xl border border-gray-200\" /><figcaption class=\"mt-3 text-sm text-gray-600 leading-relaxed\">Use the same medication details and coverage year when reviewing each option. Check what the estimate includes.</figcaption></figure>"
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "Can Your Pharmacy Change the Cost Comparison?",
       "content": "<figure class=\"my-8\"><img src=\"/images/medicare-pharmacy-cost-review-brandon.webp\" alt=\"Older woman discussing a medication list with a pharmacist at a pharmacy counter.\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\" class=\"w-full h-auto rounded-2xl border border-gray-200\" /><figcaption class=\"mt-3 text-sm text-gray-600 leading-relaxed\">Check the exact pharmacy location and your plan’s 2027 cost sharing. Illustrative image.</figcaption></figure>\n\n<h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Preferred and Standard Network Pharmacies</h3>\n\nA pharmacy can be in a plan's network without having its preferred cost sharing. Preferred network pharmacies may charge less for covered prescriptions than standard network pharmacies under that same plan. <sup><a href=\"#official-sources\" aria-label=\"Official sources 4\">[4]</a></sup>\n\nCheck the exact plan and pharmacy address for 2027. Do not assume a pharmacy has the same status across different plans or that last year's arrangement continues.\n\nFor a Brandon resident, a lower estimate at another pharmacy is useful only if that location works in everyday life. Consider transportation, hours, and whether you want to move your prescriptions.\n\n<h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-3\">Retail and Mail-Order Options</h3>\n\nCompare the plan's retail and mail-order estimates when both are available for your medication. Use equivalent quantities or supply periods so the comparison is meaningful.\n\nMail order may offer convenience, but do not assume it is cheaper. Ask about delivery timing, refill arrangements, and any medication-specific handling needs before choosing it. <sup><a href=\"#official-sources\" aria-label=\"Official sources 4\">[4]</a></sup>\n\nIf you are also comparing a coupon price, read our <a href=\"/faqs/goodrx-and-medicare-part-d/\">GoodRx and Medicare Part D FAQ</a> for the payment choices and spending-limit questions to check before a fill."
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "What Should You Check Beyond the Estimated Price?",
       "content": "First, confirm each prescription appears on the plan's <strong>formulary</strong>, its list of covered drugs. Check the exact drug and its <strong>tier</strong>, the category used to determine cost sharing. A drug being covered does not mean every plan charges the same amount for it. <sup><a href=\"#official-sources\" aria-label=\"Official sources 5\">[5]</a></sup>\n\nThen look for these coverage rules:\n\n<ul><li><strong>Prior authorization:</strong> the plan requires approval before covering the drug.</li><li><strong>Step therapy:</strong> the plan may require trying another covered drug first, unless an exception is approved.</li><li><strong>Quantity limits:</strong> the plan limits how much it covers within a particular period. <sup><a href=\"#official-sources\" aria-label=\"Official sources 6\">[6]</a></sup></li></ul>\n\nAsk how any rule applies to your prescription and whether action is needed before your next refill. Discuss treatment alternatives with your prescriber or pharmacist.\n\nAlso check what the annual estimate leaves out. The Part D out-of-pocket limit applies to covered Part D drugs; it does not make premiums or noncovered medications disappear. A total with an unpriced medication needs further investigation. <sup><a href=\"#official-sources\" aria-label=\"Official sources 7\">[7]</a></sup>\n\nIf you receive <strong>Extra Help</strong>, confirm that the comparison reflects your status. If you have employer, retiree, or other drug coverage, check with its benefits administrator before changing coverage. <sup><a href=\"#official-sources\" aria-label=\"Official sources 2, 3\">[2, 3]</a></sup>"
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "Use This 2027 Prescription-Cost Comparison Worksheet",
-      "content": "Record the same information for each option. Leave a question marked unresolved until you receive a clear answer.\n\n<div class=\"overflow-x-auto rounded-xl border border-gray-200\" tabindex=\"0\" role=\"region\" aria-label=\"Prescription cost comparison worksheet\"><table style=\"min-width:580px\"><caption class=\"sr-only\">Compare your current plan’s 2027 option with two alternatives.</caption><thead><tr><th scope=\"col\">Item to Record</th><th scope=\"col\">Current Plan's 2027 Option</th><th scope=\"col\">Alternative A</th><th scope=\"col\">Alternative B</th></tr></thead><tbody><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Exact plan name and ID</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Comparison date and coverage year</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Monthly premium</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Estimated annual total and what it includes</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Selected pharmacy and address</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Medication not covered or not priced</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Restrictions to confirm</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Questions for the plan or pharmacy</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr></tbody></table></div>\n\nFor example, an option with a lower premium could still have a higher annual estimate because of your medications and pharmacy. Compare the completed columns before deciding which option deserves a closer look.\n\nIf you would like help interpreting the results, request a <a href=\"/comparing-medicare-plans-brandon/\">personalized Medicare plan comparison in Brandon</a>. For Medicare Advantage, review medical costs and provider access separately from this prescription worksheet."
+      "content": "Record the same information for each option. Leave a question marked unresolved until you receive a clear answer.\n\n<div class=\"overflow-x-auto rounded-xl border border-gray-200\" tabindex=\"0\" role=\"region\" aria-label=\"Prescription cost comparison worksheet\"><table style=\"min-width:580px\"><caption class=\"sr-only\">Compare your current plan’s 2027 option with two alternatives.</caption><thead><tr><th scope=\"col\">Item to Record</th><th scope=\"col\">Current Plan's 2027 Option</th><th scope=\"col\">Alternative A</th><th scope=\"col\">Alternative B</th></tr></thead><tbody><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Exact plan name and ID</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Comparison date and coverage year</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Monthly premium</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Estimated annual total and what it includes</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Selected pharmacy and address</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Medication not covered or not priced</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Restrictions to confirm</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Questions for the plan or pharmacy</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr><tr><th scope=\"row\" class=\"!bg-transparent !text-gray-900 !normal-case !tracking-normal !text-sm\">Deductible and affected drug tiers</th><td>&#160;</td><td>&#160;</td><td>&#160;</td></tr></tbody></table></div>\n\nFor example, a $15 monthly premium plus $600 in estimated yearly drug spending totals $780. A $35 premium plus $240 in yearly drug spending totals $660. The second option costs $120 less over the year. These are illustrative numbers, not plan quotes; the drug-spending estimates in this example already include any applicable deductible. Use your own prescriptions and pharmacies for a real comparison.\n\nIf you would like help interpreting the results, request a <a href=\"/comparing-medicare-plans-brandon/\">personalized Medicare plan comparison in Brandon</a>. For Medicare Advantage, review medical costs and provider access separately from this prescription worksheet."
     },
     {
-      type: "coverageCta" as const,
-      description: "Want help comparing prescription coverage? Start with your medications and preferred pharmacy.",
+      "type": "section",
+      "heading": "Can the Medicare Prescription Payment Plan Help With Monthly Bills?",
+      "content": "The Medicare Prescription Payment Plan is an optional way to spread covered Part D out-of-pocket costs across the calendar year. All Part D plans offer it, including Medicare Advantage plans with drug coverage. It changes when you pay; it does not reduce your total drug costs.\n\nIf you participate, your health or drug plan bills you for those prescription costs instead of collecting them at the pharmacy. You still pay any plan premium separately. Ask your plan how the monthly amounts are calculated and how to enroll. <sup><a href=\"#official-sources\" aria-label=\"Official source 9\">[9]</a></sup>\n\nWhen comparing plans, keep the full annual cost visible. A smaller monthly payment under this option should not be treated as a lower annual drug estimate. If affordability is the concern, ask about Extra Help as well."
     },
     {
-      "type": "section" as const,
+      "type": "section",
+      "heading": "When Can You Change Your Prescription Coverage?",
+      "content": "The fall Annual Enrollment Period runs <u>October 15 through December 7, 2026</u>, for coverage starting <u>January 1, 2027</u>.\n\nThe <a href=\"/medicare-advantage-open-enrollment/\">Medicare Advantage Open Enrollment Period</a> runs January 1 through March 31, 2027, for people already enrolled in Medicare Advantage. It generally allows one switch to another Advantage plan or a return to Original Medicare with the option to join a separate drug plan. It does not create a general standalone Part D switching window for someone already using Original Medicare.\n\nInitial and Special Enrollment Periods may offer other opportunities. Ask which enrollment period applies to you before changing coverage. <sup><a href=\"#official-sources\" aria-label=\"Official source 10\">[10]</a></sup>"
+    },
+    {
+      "type": "coverageCta",
+      "description": "Want help comparing prescription coverage? Start with your medications and preferred pharmacy."
+    },
+    {
+      "type": "section",
       "heading": "Get Help Comparing Prescription Coverage in Brandon",
-      "content": "Medicare Information Project helps Brandon residents and neighbors in Riverview, Valrico, and Seffner review Medicare coverage. Bring your medication list, pharmacy details, current plan information, and ANOC. Our team can help compare the plans we represent and identify coverage questions to confirm.\n\nAppointments are available at <strong>915 Oakfield Dr, Suite A, Brandon, FL 33511</strong>, by appointment only. Call <a href=\"tel:+18136995559\">813-699-5559</a> or request <a href=\"/medicare-enrollment-assistance-brandon/\">Medicare enrollment assistance in Brandon</a>.\n\n<strong><a href=\"/contact/\">Get Free Help Comparing My Prescription Coverage</a></strong>\n\nYou can also explore our <a href=\"/medicare-brandon-fl/\">Medicare resources for Brandon residents</a>. Allow time to resolve questions before the <u>December 7, 2026</u> AEP deadline for changes beginning <u>January 1, 2027</u>."
+      "content": "Medicare Information Project helps Brandon residents and neighbors in Riverview, Valrico, and Seffner review Medicare coverage. Bring your medication list, pharmacy details, current plan information, and ANOC. Our team can help compare the plans we represent and identify coverage questions to confirm.\n\nAppointments are available at <strong>915 Oakfield Dr, Suite A, Brandon, FL 33511</strong>, by appointment only. Call <a href=\"tel:+18136995559\">813-699-5559</a> or request <a href=\"/medicare-enrollment-assistance-brandon/\">Medicare enrollment assistance in Brandon</a>.\n\n<strong><a href=\"/get-started/\">Explore Medicare Options</a></strong>\n\nYou can also explore our <a href=\"/medicare-brandon-fl/\">Medicare resources for Brandon residents</a>. Allow time to resolve questions before the <u>December 7, 2026</u> AEP deadline for changes beginning <u>January 1, 2027</u>."
     },
     {
-      "type": "faq" as const,
+      "type": "faq",
       "items": [
         {
           "question": "How do I check whether my prescriptions are covered in 2027?",
@@ -126,30 +143,47 @@ const POST = {
         {
           "question": "Can someone help me compare drug costs if I have Medicare Advantage?",
           "answer": "Yes. Ask for a review that includes prescriptions, pharmacies, doctors, hospitals, and medical costs. Confirm the consequences of any proposed change before enrolling in separate drug coverage."
+        },
+        {
+          "question": "Is the 2027 Part D deductible added to the $2,400 spending limit?",
+          "answer": "No. Qualifying deductible spending counts toward the $2,400 Part D out-of-pocket threshold for 2027. Premiums and noncovered drugs are outside that limit. Certain payments made on your behalf can also count."
+        },
+        {
+          "question": "Does the Medicare Prescription Payment Plan lower my drug costs?",
+          "answer": "No. It spreads covered Part D out-of-pocket costs across the calendar year. Participation is optional, and premiums remain separate. Ask your health or drug plan about billing and how to participate."
+        },
+        {
+          "question": "Can I switch a standalone Part D plan during Medicare Advantage OEP?",
+          "answer": "The January 1 through March 31 Medicare Advantage Open Enrollment Period is for people already enrolled in Medicare Advantage. It does not give someone with Original Medicare a general opportunity to switch standalone Part D plans. Other enrollment periods may apply."
         }
       ]
     },
     {
-      "type": "section" as const,
+      "type": "section",
       "heading": "Official Sources",
-      "content": "Medicare guidance checked October 16, 2026. Sources are numbered to match the references above.\n\n<ol><li><a href=\"https://www.medicare.gov/health-drug-plans/open-enrollment\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Open Enrollment</a></li><li><a href=\"https://www.medicare.gov/basics/get-started-with-medicare/using-medicare/helpful-tools\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Helpful Tools</a> and <a href=\"https://www.medicare.gov/plan-compare/\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare Plan Finder</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/basics/choose-coverage\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Choose How You Get Drug Coverage</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/pharmacies\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: What Pharmacies Can I Use?</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/how-drug-plans-work\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: How Do Drug Plans Work?</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/plan-rules\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Drug Plan Rules</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/basics/costs\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: How Much Does Medicare Drug Coverage Cost?</a></li></ol>"
+      "content": "Medicare guidance and 2027 cost figures checked November 18, 2026. Sources are numbered to match the references above.\n\n<ol><li><a href=\"https://www.medicare.gov/health-drug-plans/open-enrollment\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Open Enrollment</a></li><li><a href=\"https://www.medicare.gov/basics/get-started-with-medicare/using-medicare/helpful-tools\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Helpful Tools</a> and <a href=\"https://www.medicare.gov/plan-compare/\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare Plan Finder</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/basics/choose-coverage\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Choose How You Get Drug Coverage</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/pharmacies\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: What Pharmacies Can I Use?</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/how-drug-plans-work\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: How Do Drug Plans Work?</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/plan-rules\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Drug Plan Rules</a></li><li><a href=\"https://www.medicare.gov/health-drug-plans/part-d/basics/costs\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: How Much Does Medicare Drug Coverage Cost?</a></li><li><a href=\"https://www.cms.gov/files/document/2027-announcement.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">CMS: Final 2027 Part D Benefit Parameters (PDF)</a></li><li><a href=\"https://www.medicare.gov/prescription-payment-plan\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Prescription Payment Plan</a></li><li><a href=\"https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare: Joining a Plan and Enrollment Periods</a></li><li><a href=\"https://www.medicare.gov/publications/10050-medicare-and-you.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Medicare &amp; You 2027: Drug Coverage and Costs (PDF)</a></li></ol>"
     }
   ],
   "relatedPosts": [
     {
       "title": "Medicare Annual Enrollment Dates and Checklist",
       "href": "/annual-enrollment-period-guide/",
-      "category": "Enrollment" as const
+      "category": "Enrollment"
     },
     {
       "title": "How to Read Your Annual Notice of Change",
       "href": "/how-to-read-medicare-annual-notice-of-change/",
-      "category": "Enrollment" as const
+      "category": "Enrollment"
     },
     {
       "title": "Check Medicare Doctor and Hospital Networks in Brandon",
       "href": "/check-medicare-doctor-hospital-networks-brandon-fl/",
-      "category": "Coverage" as const
+      "category": "Coverage"
+    },
+    {
+      "title": "2027 Medicare Advantage Plans in Hillsborough County",
+      "href": "/best-medicare-advantage-plans-hillsborough-county/",
+      "category": "Plans"
     }
   ],
   "serviceAreas": [
@@ -162,8 +196,8 @@ const POST = {
   "consultation": {
     "heading": "Get Help Comparing Prescription Coverage",
     "body": "Bring your medication list, pharmacy details, and current plan information. Our Brandon team helps compare the plans we represent at no cost.",
-    "href": "/contact/",
-    "label": "Get Free Prescription Coverage Help"
+    "href": "/get-started/",
+    "label": "Explore Medicare Options"
   },
   "sidebarFacts": {
     "heading": "Your 2027 Comparison Checklist",
@@ -191,6 +225,11 @@ const POST = {
       "label": "Brandon Medicare Resources",
       "href": "/medicare-brandon-fl/",
       "desc": "Local coverage and enrollment guidance"
+    },
+    {
+      "label": "2027 Hillsborough County Plans",
+      "href": "/best-medicare-advantage-plans-hillsborough-county/",
+      "desc": "Compare the medical side of Advantage coverage"
     }
   ]
 };
@@ -198,7 +237,7 @@ const POST = {
 const articleSchema = {
   "@context": "https://schema.org", "@type": "BlogPosting",
   "@id": `${ARTICLE_URL}#article`, headline: POST.title, description: DESCRIPTION,
-  url: ARTICLE_URL, datePublished: PUBLISHED, dateModified: PUBLISHED,
+  url: ARTICLE_URL, datePublished: PUBLISHED, dateModified: MODIFIED,
   image: [IMAGE, "https://medicareinfopro.com/images/medicare-pharmacy-cost-review-brandon.webp", "https://medicareinfopro.com/images/prescription-comparison-checklist.svg"],
   author: { "@type": "Organization", "@id": "https://medicareinfopro.com/#organization", name: "Medicare Information Project", url: "https://medicareinfopro.com/" },
   publisher: { "@id": "https://medicareinfopro.com/#organization" },

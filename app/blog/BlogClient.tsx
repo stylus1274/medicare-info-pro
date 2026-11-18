@@ -96,11 +96,11 @@ const ARTICLES: Article[] = [
   {
   "slug": "/compare-medicare-prescription-costs-brandon/",
   "title": "How to Compare Medicare Prescription Costs for 2027 in Brandon, FL",
-  "excerpt": "Compare your exact prescriptions, pharmacies, coverage rules, and estimated annual costs for 2027 before the December 7 Annual Enrollment deadline.",
+  "excerpt": "Compare 2027 Part D costs, your exact prescriptions, and Brandon pharmacy options. Check the deductible, spending limit, coverage rules, and enrollment timing.",
   "category": "Part D",
   "author": "Medicare Information Project",
-  "date": "October 16, 2026",
-  "readTime": "8 min read",
+  "date": "November 18, 2026",
+  "readTime": "10 min read",
   "image": "/images/compare-medicare-prescription-costs-2027-brandon.webp",
   "live": true,
   "sortOrder": -4

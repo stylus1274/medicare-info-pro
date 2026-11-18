@@ -11,7 +11,7 @@ const editorialDates: Readonly<Record<string, string>> = {
   "/best-medicare-advantage-plans-hillsborough-county": "2026-11-18",
   "/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare": "2026-11-13",
   "/check-medicare-doctor-hospital-networks-brandon-fl": "2026-10-05",
-  "/compare-medicare-prescription-costs-brandon": "2026-10-16",
+  "/compare-medicare-prescription-costs-brandon": "2026-11-18",
   "/does-medicare-cover-ambulance-rides": "2026-06-03",
   "/does-medicare-cover-cataract-surgery": "2026-06-17",
   "/does-medicare-cover-dental": "2026-06-26",
