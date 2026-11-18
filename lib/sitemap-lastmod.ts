@@ -8,7 +8,7 @@ const editorialDates: Readonly<Record<string, string>> = {
   "/after-enrolling-medicare-plan-brandon": "2026-10-19",
   "/annual-enrollment-period-guide": "2026-08-16",
   "/at-what-age-can-you-get-medicare": "2026-07-05",
-  "/best-medicare-advantage-plans-hillsborough-county": "2026-06-24",
+  "/best-medicare-advantage-plans-hillsborough-county": "2026-11-18",
   "/can-i-drop-my-medicare-advantage-plan-and-go-back-to-original-medicare": "2026-11-13",
   "/check-medicare-doctor-hospital-networks-brandon-fl": "2026-10-05",
   "/compare-medicare-prescription-costs-brandon": "2026-10-16",
