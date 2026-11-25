@@ -1,217 +1,193 @@
 import type { Metadata } from "next";
+import type { ComponentProps } from "react";
 import BlogPostClient, { GREG_WOHL } from "../blog/BlogPostClient";
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Best Medicare Plans for Snowbirds in Florida 2026",
-  "url": "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-06-01",
-  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-  "author": {
-    "@type": "Person",
-    "name": "Greg Wohl",
-    "jobTitle": "Licensed Medicare Specialist",
-    "url": "https://medicareinfopro.com/greg-wohl"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Medicare Information Pro",
-    "url": "https://medicareinfopro.com",
-    "@id": "https://medicareinfopro.com/#organization"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/"
-  }
-} as const;
-
 export const dynamic = "force-dynamic";
+const title = "Best Medicare Plans for Snowbirds in Florida";
+const description = "Compare Medicare coverage for Florida snowbirds. Check doctors in both states, PPO travel rules, Medigap, and pharmacy access with Tampa Bay help.";
+const url = "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/";
+const image = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80";
 
 export const metadata: Metadata = {
-  title: "Best Medicare Plans for Snowbirds in Florida 2026 | MedicareInfoPro",
-  description:
-    "Snowbirds who split time between Florida and another state face unique Medicare coverage challenges. This guide explains the best plan options for dual-state residents and how to avoid coverage gaps.",
-  keywords: [
-    "best Medicare plans snowbirds Florida",
-    "Medicare snowbird coverage",
-    "Medicare dual state residents",
-    "Medicare Advantage snowbird Florida",
-    "Medigap snowbird coverage",
-    "Medicare coverage two states",
-  ],
-  openGraph: {
-    title: "Best Medicare Plans for Snowbirds in Florida 2026",
-    description:
-      "The best Medicare plan options for Florida snowbirds who split time between two states, and how to avoid coverage gaps.",
-    url: "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
-    type: "article",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-        width: 1200,
-        height: 630,
-        alt: "Florida beach representing snowbird lifestyle",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Best Medicare Plans for Snowbirds in Florida 2026",
-    description:
-      "The best Medicare plan options for Florida snowbirds who split time between two states.",
-  },
-  alternates: {
-    canonical: "https://medicareinfopro.com/best-medicare-plans-for-snowbirds-in-florida/",
-  },
+  title: `${title} | 2027 | MIP`, description,
+  alternates: { canonical: url },
+  openGraph: { title, description, url, type: "article", publishedTime: "2026-06-01", modifiedTime: "2026-11-25", images: [{ url: image, width: 1200, height: 630, alt: "Florida beach representing seasonal travel" }] },
+  twitter: { card: "summary_large_image", title, description, images: [image] },
 };
 
-const POST = {
-  slug: "best-medicare-plans-for-snowbirds-in-florida",
-  title: "Best Medicare Plans for Snowbirds in Florida 2026: A Complete Guide",
-  excerpt:
-    "Snowbirds who split time between Florida and a northern state face a Medicare coverage challenge that most beneficiaries do not. The plan that works perfectly in Florida may leave you without coverage for routine care in your other home state. This guide explains your options and how to choose the plan that works best for your dual-state lifestyle.",
-  category: "Plans" as const,
-  author: GREG_WOHL,
-  date: "June 2026",
-  readTime: "10 min read",
-  image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-  imageAlt: "Florida beach scene representing Medicare plans for snowbirds visiting the state",
-  sections: [
+const POST: ComponentProps<typeof BlogPostClient>["post"] = {
+  "slug": "best-medicare-plans-for-snowbirds-in-florida",
+  "title": "Best Medicare Plans for Snowbirds in Florida",
+  "excerpt": "Compare coverage for care in Florida and your seasonal home. Check providers, prescriptions, travel rules, and costs before choosing 2027 Medicare coverage.",
+  "category": "Plans",
+  "author": GREG_WOHL,
+  "date": "Updated November 25, 2026",
+  "readTime": "11 min read",
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+  "imageAlt": "Florida beach representing seasonal travel between Florida and another state",
+  "sections": [
     {
-      type: "intro" as const,
-      content:
-        "Florida is home to one of the largest snowbird populations in the country. Hundreds of thousands of retirees spend the winter months in Florida and return to northern states for the summer. For Medicare beneficiaries, this lifestyle creates a coverage challenge that requires careful plan selection.\n\nThe core issue is that most Medicare Advantage plans are built around a local service area. A plan that covers you well in Hillsborough County may provide little or no coverage for routine care in Michigan or New York.\n\nThis guide explains the best Medicare plan options for Florida snowbirds and how to evaluate each option for your specific situation.",
+      "type": "intro",
+      "content": "If you spend winters in Brandon, Tampa, or Sun City Center and summers in another state, start with one question: can you get the care you expect in both places? The best Medicare coverage depends on your doctors, prescriptions, expected services, budget, and eligibility. Time spent away is only one part of that decision.\n\nFor 2027 planning, check the exact year's plan documents and provider directories. A familiar carrier name, a PPO label, or a travel benefit does not establish that a particular doctor or treatment will have in-network coverage."
     },
     {
-      type: "keyTakeaways" as const,
-      items: [
+      "type": "keyTakeaways",
+      "items": [
         {
-          label: "Original Medicare with Medigap is usually the best choice for snowbirds",
-          text: "Original Medicare covers you at any Medicare-accepting provider in the United States. A Medigap supplement fills the cost-sharing gaps. This combination provides consistent, predictable coverage in both states with no network restrictions.",
+          "label": "Compare care in both locations",
+          "text": "List the doctors, facilities, pharmacies, and recurring treatments you use in Florida and at your seasonal home."
         },
         {
-          label: "Medicare Advantage HMO plans are generally not suitable for snowbirds",
-          text: "HMO plans only cover non-emergency care within the plan's service area. If you spend 4 to 6 months per year in another state, you will have no coverage for routine doctor visits, specialist appointments, or elective procedures during that time.",
+          "label": "Routine care and urgent care have different rules",
+          "text": "Emergency coverage does not establish that scheduled visits, therapy, imaging, or follow-up care have the same coverage away from home."
         },
         {
-          label: "Medicare Advantage PPO plans with nationwide networks are a viable option",
-          text: "Some Medicare Advantage PPO plans offer nationwide networks where your in-network cost-sharing applies at providers across the country. These plans are a reasonable option for snowbirds who want MA benefits but need coverage in two states.",
+          "label": "PPO access requires specific checks",
+          "text": "Confirm the exact plan network, out-of-network costs, authorization rules, and any visitor arrangements."
         },
         {
-          label: "Medicare Advantage plans have service area residency requirements",
-          text: "Medicare Advantage plans require you to live in the plan's service area for most of the year. If your plan determines that you no longer primarily reside in the service area, it can disenroll you outside of the Annual Enrollment Period.",
+          "label": "Medigap eligibility matters before a switch",
+          "text": "Original Medicare offers broad U.S. provider access. A Medigap purchase can depend on your enrollment window, protections, and underwriting."
         },
         {
-          label: "Part D drug coverage works nationwide",
-          text: "Medicare Part D prescription drug plans cover your medications at any in-network pharmacy in the United States. Most major pharmacy chains (CVS, Walgreens, Walmart) participate in most Part D networks, so drug coverage is generally not a problem for snowbirds.",
-        },
-        {
-          label: "Medigap plans do not have network restrictions",
-          text: "Medigap plans are not tied to a local network. They supplement Original Medicare wherever you receive care in the United States. For snowbirds, this is one of the most valuable features of Medigap.",
-        },
-      ],
+          "label": "Ask about consecutive time away",
+          "text": "Extended absence rules and permanent residency requirements are separate from whether a service is covered."
+        }
+      ]
     },
     {
-      type: "section" as const,
-      heading: "Option 1: Original Medicare + Medigap (Best for Most Snowbirds)",
-      content:
-        "For most Florida snowbirds, Original Medicare combined with a Medigap supplement plan is the best choice. Here is why.\n\n<strong>Nationwide coverage with no network restrictions:</strong> Original Medicare covers you at any Medicare-accepting provider in the United States. There are no networks, no referrals, and no service area restrictions. You can see your Florida doctors in the winter and your northern doctors in the summer without any coverage complications.\n\n<strong>Predictable cost-sharing:</strong> Medigap plans fill the gaps in Original Medicare, including the Part A deductible, Part B coinsurance, and (for some plans) the Part B deductible. Plan G, the most popular Medigap plan, covers virtually all cost-sharing after the Part B deductible, giving you highly predictable out-of-pocket costs.\n\n<strong>No prior authorization for most services:</strong> Original Medicare does not require prior authorization for most services. Medicare Advantage plans frequently require prior authorization for specialist visits, imaging, and procedures, which can be difficult to manage when you are in a different state.\n\n<strong>The trade-off:</strong> Medigap plans have higher monthly premiums than Medicare Advantage plans. In Florida, Plan G premiums for a 65-year-old typically range from $110 to $180 per month depending on the insurer and rating method. You also need a separate Part D plan for prescription drug coverage.\n\nFor a full comparison of Medigap options, see our guide on <a href='/medicare-supplement-plans-florida-2026/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Supplement Plans Florida 2026: Plan G vs. N vs. F Compared</a>.",
+      "type": "section",
+      "heading": "Compare Medicare Coverage for Care in Two States",
+      "content": "Original Medicare and Medicare Advantage handle provider access differently. Use <a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/your-coverage-options/compare-original-medicare-medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s official coverage comparison</a> to review the main differences, then check the options available for your permanent home address.\n\n<div class='overflow-x-auto'><table class='w-full text-left border-collapse'><caption class='text-left font-semibold mb-3'>Questions for Florida snowbirds comparing coverage</caption><thead><tr><th class='border p-3'>Coverage path</th><th class='border p-3'>Routine care while away</th><th class='border p-3'>What to verify</th></tr></thead><tbody><tr><th class='border p-3'>Original Medicare, with optional Medigap and Part D</th><td class='border p-3'>Use providers that take Medicare throughout the U.S.</td><td class='border p-3'>Provider acceptance, Medicare coverage, supplemental benefits, premiums, and pharmacy access</td></tr><tr><th class='border p-3'>Medicare Advantage PPO</th><td class='border p-3'>Covered care is generally available out of network at higher cost</td><td class='border p-3'>Exact network, provider willingness, authorization, both medical limits, and visitor terms</td></tr><tr><th class='border p-3'>Medicare Advantage HMO or HMO-POS</th><td class='border p-3'>Generally network-based; specific exceptions and POS benefits may apply</td><td class='border p-3'>Routine care away, visitor benefits, referral rules, and the cost of any POS services</td></tr></tbody></table></div>\n\nA useful comparison includes annual premiums, expected medical and drug costs, and a higher-use year. Avoid choosing solely from a monthly premium or a list of extra benefits."
     },
     {
-      type: "section" as const,
-      heading: "Option 2: Medicare Advantage PPO with Nationwide Network",
-      content:
-        "For snowbirds who want the extra benefits of Medicare Advantage but need coverage in two states, a PPO plan with a nationwide network is the best MA option.\n\n<strong>How nationwide PPO networks work:</strong> Some Medicare Advantage PPO plans are contracted with provider networks that span the entire country. When you see a provider in that network, you pay in-network cost-sharing regardless of whether you are in Florida or another state.\n\n<strong>Which carriers offer nationwide PPO networks:</strong> UnitedHealthcare's AARP Medicare Advantage plans and Humana's Gold Plus PPO plans are the primary carriers offering nationwide PPO networks in Florida. Aetna and Cigna also offer PPO plans with broad national networks in some Florida counties.\n\n<strong>The trade-off vs. Medigap:</strong> Nationwide PPO plans still have an annual out-of-pocket maximum (typically $5,000 to $9,350 in 2026), which means you could face significant cost-sharing in a bad health year. Medigap Plan G essentially eliminates cost-sharing after the Part B deductible. For snowbirds with chronic conditions or high healthcare utilization, Medigap typically provides better financial protection.\n\n<strong>Residency requirement caution:</strong> Even with a nationwide PPO, your plan requires you to primarily reside in the service area. If you spend more than 6 months per year in your northern state, you may face disenrollment risk.\n\nFor a full comparison of MA plan types, see our guide on <a href='/medicare-advantage-travel-benefits-florida-residents/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage Travel Benefits for Florida Residents</a>.",
+      "type": "section",
+      "heading": "Original Medicare and Medigap for Florida Snowbirds",
+      "content": "Original Medicare lets you use doctors and hospitals that take Medicare across the United States. Ask whether each provider accepts Medicare assignment and is accepting patients. A Medicare-covered service still has to meet Medicare's coverage requirements. Referrals and advance approval are generally less common than with Medicare Advantage, but exceptions exist.\n\nMedigap helps pay certain Original Medicare cost-sharing according to the policy. It is separate from Medicare Advantage and cannot pay your Medicare Advantage cost-sharing. Medicare SELECT policies have additional network rules, so check whether your supplemental policy is SELECT before assuming it has the same flexibility.\n\nCompare actual Medigap quotes rather than a general Florida price range. Include Part B, the supplement, any standalone Part D premium, and remaining costs. Medigap policies sold after 2005 do not include prescription drug coverage.\n\n<strong>Before leaving Medicare Advantage:</strong> Confirm your right to buy Medigap, acceptance, premium, and start date. The federal Medigap Open Enrollment Period generally lasts six months beginning when you are at least 65 and enrolled in Part B. Outside that period, medical underwriting may apply unless you have a protection such as a guaranteed issue or trial right. Annual Enrollment does not itself guarantee a Medigap purchase. See <a href='https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s Medigap enrollment guidance</a> and our <a href='/medigap-open-enrollment/' class='text-[#1a3fa8] underline underline-offset-2'>Medigap enrollment resource</a>."
     },
     {
-      type: "section" as const,
-      heading: "Option 3: Medicare Advantage HMO (Generally Not Recommended for Snowbirds)",
-      content:
-        "Medicare Advantage HMO plans are generally not a good fit for snowbirds, but they may work in limited circumstances.\n\n<strong>Why HMO plans are problematic for snowbirds:</strong> HMO plans only cover non-emergency care within the plan's service area. If you spend 4 to 6 months per year in another state, you will have no coverage for routine doctor visits, specialist appointments, or elective procedures during that time. You will pay the full cost out of pocket.\n\n<strong>Emergency coverage is still provided:</strong> All MA plans, including HMOs, cover emergency care anywhere in the United States at in-network cost-sharing rates. If you have a medical emergency while in your northern state, you are covered.\n\n<strong>When an HMO might work:</strong> If you spend only 2 to 3 months per year in your northern state and are in good health, an HMO plan may be acceptable. You can plan routine care around your Florida residency and rely on emergency coverage for unexpected situations.\n\n<strong>The risk:</strong> Health problems do not follow a schedule. If you develop a new condition or need specialist care while in your northern state, the lack of non-emergency coverage can result in significant out-of-pocket costs.",
+      "type": "coverageCta",
+      "description": "Splitting time between Florida and another state? Explore Medicare options with your doctors, medications, and travel dates in mind."
     },
     {
-      type: "section" as const,
-      heading: "Prescription Drug Coverage for Snowbirds",
-      content:
-        "Prescription drug coverage is generally less complicated for snowbirds than medical coverage.\n\n<strong>Part D plans cover you nationwide:</strong> Medicare Part D prescription drug plans cover your medications at any in-network pharmacy in the United States. Most major pharmacy chains, including CVS, Walgreens, Rite Aid, and Walmart, participate in most Part D networks.\n\n<strong>Mail-order pharmacies:</strong> If you use a mail-order pharmacy for maintenance medications, your prescriptions can be delivered to either address regardless of where you are staying.\n\n<strong>If you have a Medicare Advantage plan with drug coverage:</strong> The drug coverage in your MA plan also works nationwide at in-network pharmacies. Check your plan's pharmacy directory to confirm that pharmacies in your northern state are in-network.\n\n<strong>90-day supplies before travel:</strong> Before leaving Florida for the summer, consider getting 90-day supplies of your maintenance medications to reduce the need to fill prescriptions in an unfamiliar pharmacy network.\n\nFor more on managing Part D costs, see our guide on <a href='/is-reinstating-a-part-d-plan-possible/' class='text-[#1a3fa8] underline underline-offset-2'>Is Reinstating a Part D Plan Possible</a>.",
+      "type": "section",
+      "heading": "Medicare Advantage PPO Travel Rules to Check",
+      "content": "A PPO may offer useful flexibility, but it is not automatically a nationwide in-network plan. Covered out-of-network services generally cost more, and a provider must be willing to treat you under the plan's arrangements. Confirm participation for the exact contract, plan, location, and coverage year.\n\nAsk whether a travel or visitor benefit includes your seasonal location, whether you must activate it, which providers qualify, and what cost-sharing applies. A broad carrier network used by another product does not prove that your Medicare plan has the same access.\n\nPPO plans do not require specialist referrals. Prior authorization is separate and may still apply to imaging, surgery, therapy, equipment, or other care. Check who submits the request and whether approval covers the provider and facility you intend to use.\n\nOur refreshed <a href='/medicare-ppo-plans-in-tampa/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare PPO plans in Tampa resource</a> includes verified 2027 Hillsborough County examples and cost-comparison steps. Use it alongside the plan's Evidence of Coverage, rather than as a guarantee of care in another state."
     },
     {
-      type: "section" as const,
-      heading: "How to Choose the Right Plan for Your Snowbird Situation",
-      content:
-        "The right plan depends on how much time you spend in each state and your health situation.\n\n<strong>If you spend 5 to 7 months per year in Florida and 5 to 7 months in another state:</strong> Original Medicare with Medigap Plan G and a standalone Part D plan is almost certainly your best option. The nationwide coverage, no network restrictions, and predictable cost-sharing are worth the higher premium.\n\n<strong>If you spend 8 to 10 months per year in Florida and 2 to 4 months in another state:</strong> A Medicare Advantage PPO with a nationwide network may be a cost-effective option if you are in good health. Compare the premium savings against the higher potential out-of-pocket costs.\n\n<strong>If you spend fewer than 2 months per year outside Florida:</strong> A local HMO plan may be acceptable. Emergency coverage is provided nationwide, and short trips are generally manageable with advance planning.\n\n<strong>If you have significant chronic conditions or high healthcare utilization:</strong> Medigap Plan G provides the most predictable cost-sharing regardless of where you receive care. The higher premium is typically worth it for beneficiaries with complex healthcare needs.\n\nFor personalized guidance on the best plan for your snowbird situation, <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>schedule a free consultation</a> with our licensed specialists.",
+      "type": "section",
+      "heading": "HMO Coverage: Separate Routine Care from Urgent Needs",
+      "content": "Medicare Advantage HMOs generally require network care. Exceptions include emergency care, out-of-area urgent care, and out-of-area dialysis. Some HMO-POS plans allow certain services out of network, usually at a higher cost. Any visitor benefit needs its own review. See <a href='https://www.medicare.gov/health-drug-plans/health-plans/your-coverage-options/compare' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s plan-type comparison</a>.\n\nAsk the plan to explain a scheduled primary care visit, specialist follow-up, therapy course, and any recurring treatment at your seasonal location. A follow-up appointment after an emergency may have different rules from the emergency itself.\n\nDo not treat a short trip or good current health as proof that an HMO will fit your needs. Consider what happens if you need ongoing care before you return to Florida. For an emergency, seek emergency care promptly; contact the plan for guidance about subsequent care when appropriate."
     },
     {
-      type: "summary" as const,
-      heading: "The Bottom Line on Medicare for Florida Snowbirds",
-      content:
-        "Choosing the right Medicare plan is especially important for snowbirds who split time between Florida and another state. Here is the key guidance:\n\n<ul><li><strong>Original Medicare + Medigap</strong> is the best choice for most snowbirds: nationwide coverage, no networks, predictable cost-sharing</li><li><strong>Medicare Advantage PPO with nationwide network</strong> is a viable option for healthy snowbirds who want MA extra benefits</li><li><strong>Medicare Advantage HMO plans</strong> are generally not suitable for snowbirds due to limited out-of-area coverage</li><li><strong>Part D drug coverage</strong> works nationwide at major pharmacy chains and is not typically a problem for snowbirds</li><li><strong>MA plans have residency requirements:</strong> spending more than 6 months per year outside the service area creates disenrollment risk</li></ul>\n\nOur licensed independent specialists can help you compare all options available in your area. <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>Schedule a free consultation</a> to find the plan that fits your snowbird lifestyle.",
+      "type": "section",
+      "heading": "Residency and Extended Absences from the Service Area",
+      "content": "Your permanent residence determines which local Medicare Advantage and Part D plans you can join. Owning a home in Hillsborough County does not by itself establish eligibility for a plan there. Keep your address information accurate and tell the plan about a permanent move.\n\nFor Medicare Advantage, a temporary absence exceeding six consecutive months generally leads to disenrollment. An eligible visitor/traveler program may extend that period up to 12 consecutive months, subject to its terms. This is a consecutive-absence rule, not simply a count of total months spent outside Florida in a calendar year.\n\nAsk the plan for its exact limit, how to report travel, what locations qualify, and what happens if you cannot return as expected. These enrollment rules do not establish that routine services while away are covered. <a href='https://www.cms.gov/files/document/cy-2026-cd-enrollment-and-disenrollment-guidance.pdf' class='text-[#1a3fa8] underline underline-offset-2'>CMS enrollment and disenrollment guidance</a> explains extended absences and visitor/traveler exceptions.\n\nA permanent move outside a plan's service area can create a Special Enrollment Period. A routine seasonal trip is different. Check <a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s moving and Special Enrollment Period rules</a> and our <a href='/moving-to-brandon-fl-with-medicare/' class='text-[#1a3fa8] underline underline-offset-2'>moving to Brandon with Medicare resource</a> before changing coverage."
     },
     {
-      type: "faq" as const,
-      items: [
-        {
-          question: "Can I keep my Florida Medicare Advantage plan when I am in another state for the summer?",
-          answer:
-            "You can keep the plan, but coverage for non-emergency care outside the service area depends on your plan type. HMO plans generally do not cover non-emergency care outside the service area. PPO plans with nationwide networks do. Emergency care is covered nationwide by all plan types.",
-        },
-        {
-          question: "What happens if my Medicare Advantage plan finds out I spend most of the year in another state?",
-          answer:
-            "Medicare Advantage plans require you to primarily reside in the service area. If your plan determines you no longer meet this requirement, it can disenroll you. This is more of a risk for beneficiaries who spend 6 or more months per year in another state.",
-        },
-        {
-          question: "Is Medigap really better than Medicare Advantage for snowbirds?",
-          answer:
-            "For most snowbirds, yes. Original Medicare with Medigap provides nationwide coverage at any Medicare-accepting provider with no network restrictions and predictable cost-sharing. Medicare Advantage plans are built around local service areas, which creates coverage complications for dual-state residents.",
-        },
-        {
-          question: "Can I have two Medicare Advantage plans, one for each state?",
-          answer:
-            "No. You can only be enrolled in one Medicare Advantage plan at a time. The plan must be available in your primary state of residence.",
-        },
-        {
-          question: "Does Medicare cover me if I have a medical emergency in Canada?",
-          answer:
-            "Original Medicare covers care in Canada only if you are traveling between Alaska and another U.S. state and a Canadian hospital is closer than a U.S. hospital. Medigap Plans C, D, F, G, M, and N include a foreign travel emergency benefit covering 80% of emergency costs outside the U.S. up to a $50,000 lifetime maximum.",
-        },
-        {
-          question: "How do I change from Medicare Advantage to Original Medicare as a snowbird?",
-          answer:
-            "You can switch from Medicare Advantage to Original Medicare during the Annual Enrollment Period (October 15 to December 7) or the Medicare Advantage Open Enrollment Period (January 1 to March 31). Note that if you switch to Original Medicare after age 65, Medigap insurers in most states can charge higher premiums or deny coverage based on health status.",
-        },
-      ],
+      "type": "section",
+      "heading": "Prescription Refills and Pharmacy Access in Both States",
+      "content": "Check the exact pharmacy near each home in your plan's directory. A chain name alone does not confirm participation. Preferred in-network pharmacies may have lower costs than other network pharmacies. Review each medication's formulary status, dose, quantity limits, and authorization requirements.\n\nBefore departure, ask the plan and pharmacy about an extended supply, refill-too-soon rules, a possible vacation override, and any restrictions for your medication. A 90-day supply or early refill is not automatic. If you use mail order, confirm delivery to your temporary address, timing, storage needs, and how to update delivery details.\n\nIf you must use an out-of-network pharmacy, contact the plan about coverage and reimbursement rules and save receipts. You may have to pay the full cost up front. Consult <a href='https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/pharmacies' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s pharmacy guidance</a> and our <a href='/compare-medicare-prescription-costs-brandon/' class='text-[#1a3fa8] underline underline-offset-2'>Brandon prescription cost comparison steps</a>."
     },
+    {
+      "type": "section",
+      "heading": "A Tampa Bay Snowbird Coverage Checklist",
+      "content": "Use two columns on a sheet of paper: Florida and your seasonal destination. Then record the following for each location.\n\n<ol class='list-decimal pl-6 space-y-3'><li><strong>Doctors and facilities:</strong> Names, addresses, specialties, and expected visits. Check the exact office and facility, including hospitals you may use.</li><li><strong>Recurring care:</strong> Therapy, dialysis, injections, equipment, imaging, and specialist follow-ups. Ask about referrals, authorization, and care coordination.</li><li><strong>Provider confirmation:</strong> Call the provider and plan with the exact plan name and ID. Record the date, representative, and reference number, and request written confirmation where available.</li><li><strong>Costs:</strong> Premiums, deductibles, visit and procedure cost-sharing, and applicable in-network and combined medical limits. Keep drug costs separate.</li><li><strong>Prescriptions:</strong> Medication list, pharmacies near both homes, refill dates, travel supplies, and delivery arrangements.</li><li><strong>Travel dates:</strong> Departure, expected return, consecutive time away, visitor-program steps, and a contact if the trip is extended.</li><li><strong>Coverage changes:</strong> Enrollment eligibility, any Medigap acceptance, and coordinated effective dates before ending existing coverage.</li></ol>\n\nFor example, a Brandon resident spending four months in Michigan should check both regular doctors and likely follow-up care there. Emergency coverage alone does not answer those questions. Someone wintering in Tampa while permanently residing elsewhere should start with plans serving that permanent residence.\n\nThe <a href='/check-medicare-doctor-hospital-networks-brandon-fl/' class='text-[#1a3fa8] underline underline-offset-2'>Brandon doctor and hospital network checklist</a> can help structure provider calls. Recheck participation for the new plan year and before significant scheduled care."
+    },
+    {
+      "type": "section",
+      "heading": "Travel Outside the United States Is a Separate Question",
+      "content": "Canada and other foreign destinations have different rules from travel between U.S. states. Original Medicare usually does not cover care outside the U.S., with limited exceptions. Some Medigap policies include foreign travel emergency benefits with conditions and limits. Some Medicare Advantage plans offer additional foreign emergency benefits; check the exact terms.\n\nDo not assume these benefits cover routine seasonal care abroad. Medicare drug plans do not cover prescriptions purchased outside the U.S. Review <a href='https://www.medicare.gov/coverage/travel-outside-the-u.s.' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s foreign travel coverage rules</a> and the policy documents before relying on coverage."
+    },
+    {
+      "type": "section",
+      "heading": "Review 2027 Coverage Before Making a Change",
+      "content": "Fall Annual Enrollment runs October 15 through December 7, 2026, for eligible changes taking effect January 1, 2027. People already enrolled in Medicare Advantage have a January 1 through March 31 Medicare Advantage Open Enrollment Period with limited change options. Other enrollment opportunities depend on your circumstances.\n\nCoordinate medical and drug coverage start dates. A seasonal return to Florida does not automatically create an enrollment opportunity or a Medigap protection. Our <a href='/medicare-advantage-open-enrollment/' class='text-[#1a3fa8] underline underline-offset-2'>Medicare Advantage OEP center</a> explains that period. Review <a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan' class='text-[#1a3fa8] underline underline-offset-2'>Medicare’s enrollment rules</a> before submitting a change.\n\nOur team can help compare the plans we represent for Brandon, Tampa, Riverview, and nearby Hillsborough communities. Bring both provider lists, medications, your current plan details, and travel dates. Office appointments are available at 915 Oakfield Dr, Suite A, Brandon, FL 33511. Call <a href='tel:+18136995559' class='text-[#1a3fa8] underline underline-offset-2'>813-699-5559</a> or <a href='/get-started/' class='text-[#1a3fa8] underline underline-offset-2'>explore your Medicare options</a>."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Can I use Medicare in Florida and another state?",
+          "answer": "Yes. Original Medicare can be used with providers that take Medicare across the U.S. With Medicare Advantage, routine care depends on the exact plan network and out-of-network or visitor benefits. Confirm providers and coverage in both locations."
+        },
+        {
+          "question": "Is a Medicare PPO automatically a nationwide network?",
+          "answer": "No. PPO describes a plan type, not a promise that every provider is in network. Out-of-network covered care generally costs more. Check each doctor, facility, service, authorization requirement, and cost for the exact plan and coverage year."
+        },
+        {
+          "question": "Does an HMO cover anything outside Florida?",
+          "answer": "Medicare Advantage HMOs generally use network providers, with exceptions for emergency care, out-of-area urgent care, and out-of-area dialysis. Some HMO-POS plans cover certain out-of-network services. Ask about any visitor benefit and its terms before relying on routine care away."
+        },
+        {
+          "question": "How long can I stay outside my Medicare Advantage service area?",
+          "answer": "A temporary absence exceeding six consecutive months generally triggers disenrollment, with exceptions such as an eligible visitor/traveler program that may allow up to 12 consecutive months. Ask your plan about its exact absence limit and reporting rules before an extended trip. A permanent move is a different situation."
+        },
+        {
+          "question": "Can I have one Medicare Advantage plan in each state?",
+          "answer": "You can only be enrolled in one Medicare Advantage plan at a time. It must serve your permanent residence. Tell the plan about a permanent move and ask about enrollment options rather than using a seasonal address to qualify for coverage."
+        },
+        {
+          "question": "Can I fill my prescriptions at a pharmacy near my seasonal home?",
+          "answer": "Check that specific pharmacy location in your plan network. Preferred pharmacies may have different costs. Ask about refill timing, extended supplies, prior authorization, and mail delivery before you travel. The same pharmacy chain can have different participation by plan."
+        },
+        {
+          "question": "Can I switch to Medigap when I return to Florida?",
+          "answer": "Returning from a seasonal trip does not by itself create guaranteed access to Medigap. Outside your Medigap Open Enrollment Period or a protection such as a guaranteed issue or trial right, an insurer may use medical underwriting. Confirm eligibility, acceptance, premiums, and effective dates before ending existing coverage."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Official Sources and Review Date",
+      "content": "Reviewed November 25, 2026, for 2027 coverage planning. Provider networks, pharmacy participation, benefits, and availability can change. Verify the exact plan's current documents before enrollment or scheduled care.\n\n<ul class='list-disc pl-6 space-y-2'><li><a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/your-coverage-options/compare-original-medicare-medicare-advantage' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Original Medicare and Medicare Advantage comparison</a></li><li><a href='https://www.medicare.gov/health-drug-plans/health-plans/your-coverage-options/compare' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Plan types and network exceptions</a></li><li><a href='https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Medigap enrollment and underwriting</a></li><li><a href='https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/pharmacies' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Pharmacy networks and supplies</a></li><li><a href='https://www.cms.gov/files/document/cy-2026-cd-enrollment-and-disenrollment-guidance.pdf' class='text-[#1a3fa8] underline underline-offset-2'>CMS: Enrollment, extended absences, and visitor/traveler programs</a></li><li><a href='https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Special Enrollment Periods</a></li><li><a href='https://www.medicare.gov/coverage/travel-outside-the-u.s.' class='text-[#1a3fa8] underline underline-offset-2'>Medicare: Travel outside the U.S.</a></li></ul>"
+    }
   ],
-  relatedPosts: [
+  "relatedPosts": [
     {
-      title: "Medicare Advantage Travel Benefits for Florida Residents",
-      href: "/medicare-advantage-travel-benefits-florida-residents/",
-      category: "Coverage" as const,
+      "title": "Medicare PPO Plans in Tampa, FL",
+      "href": "/medicare-ppo-plans-in-tampa/",
+      "category": "Plans"
     },
     {
-      title: "Original Medicare vs. Medicare Advantage in Florida 2026",
-      href: "/original-medicare-vs-medicare-advantage-in-florida/",
-      category: "Plans" as const,
+      "title": "Check Medicare Doctor and Hospital Networks in Brandon",
+      "href": "/check-medicare-doctor-hospital-networks-brandon-fl/",
+      "category": "Coverage"
     },
     {
-      title: "Pros and Cons of Florida Medicare Supplement Plans 2026",
-      href: "/pros-and-cons-of-florida-medicare-supplement-plans/",
-      category: "Plans" as const,
-    },
+      "title": "Moving to Brandon with Medicare",
+      "href": "/moving-to-brandon-fl-with-medicare/",
+      "category": "Enrollment"
+    }
   ],
+  "serviceAreas": [
+    "Brandon",
+    "Tampa",
+    "Riverview",
+    "Sun City Center",
+    "Hillsborough County"
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org", "@type": "BlogPosting",
+  headline: title, description, url, image,
+  datePublished: "2026-06-01", dateModified: "2026-11-25",
+  author: { "@type": "Person", name: "Greg Wohl", jobTitle: "Licensed Medicare Specialist", url: "https://medicareinfopro.com/greg-wohl/" },
+  publisher: { "@type": "Organization", name: "Medicare Information Project", "@id": "https://medicareinfopro.com/#organization" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": url },
+};
+const faqSchema = {
+  "@context": "https://schema.org", "@type": "FAQPage",
+  mainEntity: POST.sections.flatMap(section => section.type === "faq" ? section.items.map(item => ({
+    "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })) : []),
 };
 
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <BlogPostClient post={POST} />
-    </>
-  );
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+    <BlogPostClient post={POST} />
+  </>;
 }

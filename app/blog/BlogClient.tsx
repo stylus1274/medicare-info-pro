@@ -943,13 +943,13 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/best-medicare-plans-for-snowbirds-in-florida",
-    title: "Best Medicare Plans for Snowbirds in Florida 2026: A Complete Guide",
+    title: "Best Medicare Plans for Snowbirds in Florida",
     excerpt:
-      "Snowbirds who split time between Florida and a northern state face a Medicare coverage challenge that most beneficiaries do not. The plan that works perfectly in Florida may leave you without coverage for routine care in your other home state. This guide explains your options and how to choose the plan that works best for your dual-state lifestyle.",
+      "Compare coverage for care in Florida and your seasonal home. Check providers, prescriptions, travel rules, and costs before choosing 2027 Medicare coverage.",
     category: "Plans",
     author: "Greg Wohl",
-    date: "June 2026",
-    readTime: "10 min read",
+    date: "November 2026",
+    readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
     live: true,
   },
