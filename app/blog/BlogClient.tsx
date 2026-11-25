@@ -615,12 +615,12 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/how-to-get-help-paying-for-medicare",
-    title: "How to Get Help Paying for Medicare: Extra Help, LIS, and Medicare Savings Programs Explained",
+    title: "Help Paying for Medicare in Brandon, FL: Extra Help and Savings Programs",
     excerpt:
-      "If you have limited income or resources, you may qualify for programs that significantly reduce your Medicare costs. This guide explains every major assistance program, who qualifies, and exactly how to apply.",
+      "Find the right application route for Medicare cost assistance in Brandon and Hillsborough County. Review Extra Help, Medicare Buy-In, dated eligibility figures, and local counseling.",
     category: "Costs",
     author: "Greg Wohl",
-    date: "June 2026",
+    date: "November 2026",
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     live: true,

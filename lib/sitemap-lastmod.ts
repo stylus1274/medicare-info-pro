@@ -30,7 +30,7 @@ const editorialDates: Readonly<Record<string, string>> = {
   "/feeling-trapped-in-medicare-advantage-plans": "2026-06-19",
   "/helping-parent-choose-medicare-brandon-fl": "2026-10-06",
   "/how-to-enroll-in-medicare": "2026-07-01",
-  "/how-to-get-help-paying-for-medicare": "2026-06-19",
+  "/how-to-get-help-paying-for-medicare": "2026-11-25",
   "/how-to-get-shine-medicare-counseling-hillsborough-county": "2026-09-15",
   "/how-to-read-medicare-annual-notice-of-change": "2026-09-12",
   "/irmaa-explained": "2026-06-05",
