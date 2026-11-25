@@ -1,538 +1,150 @@
-"use client";
-
-/* ==========================================================================
-   SNPPlansClient: /medicare-snp-plans
-   Medicare Special Needs Plans (SNP): Comprehensive Guide
-   Design: MIP brand: navy/gold, pillar-style two-column editorial layout
-   No em dashes anywhere in this file.
-   All cost figures are 2026.
-   Brandon listed first in local signals.
-   ========================================================================== */
-
-import { useState } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
-import {
-  CheckCircle,
-  XCircle,
-  ChevronRight,
-  Phone,
-  ArrowRight,
-  Info,
-  AlertCircle,
-  MapPin,
-  Shield,
-  Heart,
-  Star,
-  Users,
-} from "lucide-react";
+import { ArrowRight, CheckCircle, MapPin, Phone, Shield } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-
-function FaqItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
-        aria-expanded={open}
-      >
-        <span className="text-sm font-bold text-gray-900 pr-4">{q}</span>
-        <ChevronRight
-          className={`w-4 h-4 text-gray-400 flex-shrink-0 transition-transform duration-200 ${open ? "rotate-90" : ""}`}
-        />
-      </button>
-      {open && (
-        <div className="px-5 pb-5">
-          <p className="text-sm text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: a }} />
-        </div>
-      )}
-    </div>
-  );
-}
-
-const SNP_TYPES = [
-  {
-    type: "C-SNP",
-    name: "Chronic Condition SNP",
-    color: "blue",
-    badge: "bg-blue-100 text-blue-800",
-    border: "border-blue-100",
-    bg: "bg-blue-50",
-    desc: "Designed for people with specific severe or disabling chronic conditions such as diabetes, heart failure, COPD, end-stage renal disease, or HIV/AIDS.",
-    examples: ["Diabetes", "Chronic heart failure", "COPD", "End-stage renal disease", "HIV/AIDS", "Dementia"],
-  },
-  {
-    type: "D-SNP",
-    name: "Dual Eligible SNP",
-    color: "purple",
-    badge: "bg-purple-100 text-purple-800",
-    border: "border-purple-100",
-    bg: "bg-purple-50",
-    desc: "For people who qualify for both Medicare and Medicaid (dual eligible). D-SNPs coordinate benefits across both programs to reduce gaps and out-of-pocket costs.",
-    examples: ["Full Medicaid", "Partial Medicaid (QMB, SLMB, QI)", "Medicaid for long-term care", "Extra Help for Part D"],
-  },
-  {
-    type: "I-SNP",
-    name: "Institutional SNP",
-    color: "green",
-    badge: "bg-green-100 text-green-800",
-    border: "border-green-100",
-    bg: "bg-green-50",
-    desc: "For people who live in or are expected to live in an institution such as a nursing facility, long-term care facility, or inpatient psychiatric facility for 90 days or more.",
-    examples: ["Nursing facility residents", "Long-term care facility residents", "Inpatient psychiatric facility", "ICF/IID residents"],
-  },
-];
-
-const PROS = [
-  { title: "Tailored benefits for your condition", desc: "SNPs are built around your specific health situation, so covered services, formularies, and care teams align with your needs." },
-  { title: "Coordinated care model", desc: "SNPs assign care coordinators who help manage your medications, specialist visits, and transitions between care settings." },
-  { title: "Lower out-of-pocket costs", desc: "Many SNPs, especially D-SNPs, have $0 premiums and significantly reduced cost sharing compared to standard Medicare Advantage plans." },
-  { title: "Specialized provider networks", desc: "Networks are built around providers experienced with your condition or care setting." },
-  { title: "Extra benefits", desc: "Many SNPs include transportation, meal delivery, over-the-counter allowances, and other supplemental benefits not available in standard plans." },
-];
-
-const CONS = [
-  { title: "Enrollment eligibility required", desc: "You must meet the specific eligibility criteria for the SNP type. Not everyone qualifies." },
-  { title: "Smaller provider networks", desc: "Specialized networks may be narrower than standard Medicare Advantage plans, limiting provider choice." },
-  { title: "Limited plan availability", desc: "SNPs are not available in every county. Availability in Hillsborough County varies by plan type and year." },
-  { title: "Annual eligibility verification", desc: "You must continue to meet eligibility requirements each year. A change in your health status or Medicaid status can affect enrollment." },
-  { title: "Restricted enrollment periods", desc: "Unlike standard Medicare Advantage plans, SNP enrollment may be limited to specific qualifying events." },
-];
-
-const FAQ_ITEMS = [
-  {
-    q: "Who qualifies for a Medicare Special Needs Plan?",
-    a: "Eligibility depends on the SNP type. C-SNPs require a diagnosis of a specific chronic condition such as diabetes, heart failure, or COPD. D-SNPs require dual eligibility for both Medicare and Medicaid. I-SNPs require residence in a qualifying institution for 90 or more days. A licensed Medicare advisor can confirm whether you qualify based on your specific situation.",
-  },
-  {
-    q: "Are Medicare SNP plans available in Brandon and Hillsborough County?",
-    a: "Yes. D-SNPs in particular are widely available in Hillsborough County for 2026. C-SNP and I-SNP availability varies by carrier and condition. Contact a local Medicare advisor to see which SNP plans are available at your specific address.",
-  },
-  {
-    q: "Do I still pay Medicare Part B premium if I enroll in an SNP?",
-    a: "Yes. You must continue paying your Medicare Part B premium ($202.90/month in 2026) even when enrolled in an SNP. However, many D-SNPs have $0 plan premiums, and some D-SNPs offer a Part B premium reduction benefit that offsets some or all of the Part B cost.",
-  },
-  {
-    q: "Can I switch from a regular Medicare Advantage plan to an SNP?",
-    a: "Yes, if you meet the eligibility requirements for the SNP. You can switch during the Annual Election Period (October 15 to December 7) or during a Special Enrollment Period if you experience a qualifying event such as gaining Medicaid eligibility or being diagnosed with a qualifying chronic condition.",
-  },
-  {
-    q: "What is a D-SNP and how does it help dual eligible beneficiaries?",
-    a: "A D-SNP (Dual Eligible Special Needs Plan) is designed for people who qualify for both Medicare and Medicaid. These plans coordinate benefits across both programs, often resulting in $0 premiums, $0 or very low copays, and extra benefits like transportation, dental, vision, and over-the-counter allowances. D-SNPs are one of the most comprehensive coverage options available for eligible beneficiaries.",
-  },
-  {
-    q: "What is a care coordinator and do all SNPs include one?",
-    a: "A care coordinator is a dedicated health professional assigned to help you manage your care. They help schedule appointments, coordinate between specialists, manage medication lists, and assist with transitions between care settings like hospital to home. Most SNPs include care coordination as a core feature, though the level of service varies by plan.",
-  },
-];
-
-const RELATED_LINKS = [
-  { label: "Medicare Advantage Overview", href: "/medicare-advantage/", desc: "Complete guide to all Medicare Advantage plan types" },
-  { label: "Medicare HMO Plans", href: "/hmos/", desc: "Network-based coverage with lower premiums" },
-  { label: "Medicare PPO Plans", href: "/medicare-ppo-plans-in-tampa/", desc: "Flexible coverage with no referral requirements" },
-  { label: "Do I Need a Supplement?", href: "/do-i-need-a-supplement/", desc: "Medigap vs. Medicare Advantage decision guide" },
-  { label: "Take the Medicare Quiz", href: "/medicare-quiz/", desc: "Find out which plan type fits your situation" },
-];
+import MedicareCoverageCta from "@/components/MedicareCoverageCta";
+import { SNP_COUNTS, SNP_FAQS, SNP_TITLE } from "./SNPContent";
 
 const TOC = [
-  { id: "what-is", label: "What Is a Medicare SNP?" },
-  { id: "snp-types", label: "The Three Types of SNPs" },
-  { id: "pros-cons", label: "Pros and Cons" },
-  { id: "eligibility", label: "Eligibility Requirements" },
-  { id: "enrollment", label: "How to Enroll" },
+  { id: "what-is", label: "What Is an SNP?" },
+  { id: "local", label: "2027 Hillsborough County Plans" },
+  { id: "snp-types", label: "D-SNP, C-SNP, and I-SNP Eligibility" },
+  { id: "enrollment", label: "Enrollment Periods" },
+  { id: "compare", label: "Your Local Comparison Checklist" },
+  { id: "costs", label: "Costs and Benefits" },
+  { id: "prepare", label: "Prepare for a Consultation" },
   { id: "faq", label: "Frequently Asked Questions" },
-  { id: "local", label: "SNP Plans in Brandon and Hillsborough County" },
+  { id: "sources", label: "Official Sources" },
 ];
 
+const TYPES = [
+  { type: "D-SNP", title: "Dual Eligible Special Needs Plans", color: "border-purple-100 bg-purple-50", text: "D-SNPs serve people with Medicare and qualifying Medicaid status. Plans accept specific Medicaid eligibility categories, so ask the insurer to verify yours. Extra Help alone does not establish D-SNP eligibility. For an integrated D-SNP, also check whether your Medicaid managed care coverage must align with the plan." },
+  { type: "C-SNP", title: "Chronic Condition Special Needs Plans", color: "border-blue-100 bg-blue-50", text: "C-SNPs serve people with specified severe or disabling chronic conditions. Examples include diabetes, chronic heart failure, chronic lung disorders, or ESRD. Each plan sets the conditions it serves within Medicare's rules. Your prescriber or other provider may need to confirm your diagnosis." },
+  { type: "I-SNP", title: "Institutional Special Needs Plans", color: "border-green-100 bg-green-50", text: "I-SNPs serve people who have needed, or are expected to need, a qualifying institutional level of care for at least 90 days. Some institutional-equivalent plans serve eligible people living in the community after a level-of-care assessment. Check the particular plan's care setting and facility requirements." },
+];
+
+function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+  return <section id={id} aria-labelledby={`${id}-heading`} className="scroll-mt-28 space-y-4">
+    <h2 id={`${id}-heading`} className="text-xl sm:text-2xl font-bold text-gray-900" style={{ fontFamily: "'Merriweather', serif" }}>{title}</h2>
+    {children}
+  </section>;
+}
+
+const paragraph = "text-base text-gray-700 leading-relaxed";
+const link = "font-semibold text-[#1a3fa8] underline underline-offset-2";
+
 export default function SNPPlansClient() {
-  return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
-
-      {/* Hero */}
-      <section className="bg-[#0d1f5c] text-white pt-12 pb-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-white/50 mb-4">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={12} />
-            <Link href="/medicare-advantage/" className="hover:text-white transition-colors">Medicare Advantage</Link>
-            <ChevronRight size={12} />
-            <span className="text-white/80">Special Needs Plans</span>
-          </nav>
-          <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 text-[#c9a84c] text-xs font-bold px-3 py-1.5 rounded-full mb-4">
-            <Shield size={12} />
-            Medicare Advantage Plan Type
-          </div>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Plan Types", href: "/plan-comparison/" }, { label: "SNP Plans" }]} className="mb-4" />
-          <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight" style={{ fontFamily: "'Merriweather', serif" }}>
-            Medicare Special Needs Plans (SNP)
-          </h1>
-          <p className="text-white/80 text-base max-w-2xl mb-6">
-            SNPs are a specialized type of Medicare Advantage plan built for people with specific chronic conditions, dual Medicare and Medicaid eligibility, or institutional care needs. Here is a complete guide to the three SNP types, who qualifies, and what to expect in 2026.
-          </p>
-          <div className="flex items-center gap-4 text-xs text-white/50">
-            <span>Updated for 2026</span>
-            <span>|</span>
-            <span>Reviewed by Greg Wohl, Licensed Medicare Advisor</span>
-            <span>|</span>
-            <span>9 min read</span>
-          </div>
-
-          {/* Stats bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
-            {[
-              { icon: <Heart size={16} />, stat: "3 Types", label: "C-SNP, D-SNP, I-SNP" },
-              { icon: <Shield size={16} />, stat: "$0", label: "Premium on many D-SNPs" },
-              { icon: <Star size={16} />, stat: "Coordinated", label: "Dedicated care team" },
-              { icon: <Users size={16} />, stat: "Dual eligible", label: "Medicare + Medicaid" },
-            ].map((item) => (
-              <div key={item.label} className="bg-white/10 rounded-xl px-4 py-3 text-center">
-                <div className="flex justify-center mb-1 text-[#c9a84c]">{item.icon}</div>
-                <p className="text-lg font-black text-white">{item.stat}</p>
-                <p className="text-xs text-white/60 mt-0.5">{item.label}</p>
-              </div>
-            ))}
-          </div>
+  return <div className="min-h-screen flex flex-col bg-white">
+    <Header />
+    <section className="bg-[#0d1f5c] text-white pt-12 pb-14 px-4">
+      <div className="max-w-5xl mx-auto">
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicare Advantage", href: "/medicare-advantage/" }, { label: "Special Needs Plans" }]} className="mb-5" />
+        <span className="inline-flex items-center gap-2 text-sm text-[#f5a800] font-bold mb-4"><Shield size={16} aria-hidden="true" /> BRANDON AND HILLSBOROUGH COUNTY</span>
+        <h1 className="text-3xl sm:text-4xl font-black mb-4 leading-tight" style={{ fontFamily: "'Merriweather', serif" }}>{SNP_TITLE}</h1>
+        <p className="text-white/85 text-base leading-relaxed max-w-2xl">Compare 2027 D-SNP, C-SNP, and I-SNP options around your Medicaid status, qualifying health needs, doctors, and prescriptions. Start with the eligibility rules for the exact plan.</p>
+        <p className="mt-5 text-sm text-white/70">Updated November 25, 2026 · Coverage year 2027</p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-7">
+          {[{ count: 72, label: "County SNP plan IDs" }, ...SNP_COUNTS.map(x => ({ count: x.count, label: x.label + " plans" }))].map(x => <div key={x.label} className="bg-white/10 rounded-xl p-4 text-center"><p className="text-2xl font-black">{x.count}</p><p className="text-xs sm:text-sm mt-1 text-white/75">{x.label}</p></div>)}
         </div>
-      </section>
-
-      {/* Body */}
-      <div className="max-w-5xl mx-auto px-4 py-12 w-full flex flex-col lg:flex-row gap-10">
-
-        <article className="flex-1 min-w-0 space-y-10">
-
-          {/* What Is an SNP */}
-          <section id="what-is">
-            <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
-              What Is a Medicare Special Needs Plan?
-            </h2>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              A Medicare Special Needs Plan (SNP) is a type of Medicare Advantage (Part C) plan that limits membership to people with specific diseases, conditions, or characteristics. SNPs tailor their benefits, provider networks, and drug formularies to best serve their target population.
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              Like all Medicare Advantage plans, SNPs cover everything Original Medicare covers (Parts A and B) and typically include prescription drug coverage (Part D). What makes them different is the level of specialization. An SNP for people with diabetes, for example, will have a formulary built around diabetes medications, a network of endocrinologists and diabetes educators, and care coordination focused on blood sugar management.
-            </p>
-            <div className="rounded-xl border border-blue-100 bg-blue-50 px-5 py-4 flex items-start gap-3">
-              <Info size={16} className="text-blue-600 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-blue-800 leading-relaxed">
-                SNPs are authorized by Congress and must be approved by CMS each year. They are required to have a Model of Care that addresses the specific needs of their target population, including individualized care planning and care coordination.
-              </p>
-            </div>
-          </section>
-
-          {/* Three Types */}
-          <section id="snp-types">
-            <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-              The Three Types of Medicare SNPs
-            </h2>
-            <div className="space-y-4">
-              {SNP_TYPES.map((snp) => (
-                <div key={snp.type} className={`rounded-xl border ${snp.border} ${snp.bg} p-5`}>
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${snp.badge}`}>{snp.type}</span>
-                    <p className="text-sm font-bold text-gray-900">{snp.name}</p>
-                  </div>
-                  <p className="text-sm text-gray-600 leading-relaxed mb-3">{snp.desc}</p>
-                  <div>
-                    <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Qualifying conditions or situations:</p>
-                    <div className="flex flex-wrap gap-2">
-                      {snp.examples.map((ex) => (
-                        <span key={ex} className="text-xs bg-white border border-gray-200 text-gray-700 px-2.5 py-1 rounded-full">{ex}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Pros and Cons */}
-          <section id="pros-cons">
-            <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-              Pros and Cons of Medicare SNPs
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="rounded-xl border border-green-100 bg-green-50 p-5">
-                <p className="text-sm font-bold text-green-800 mb-3 flex items-center gap-2">
-                  <CheckCircle size={15} /> Advantages
-                </p>
-                <ul className="space-y-3">
-                  {PROS.map((p) => (
-                    <li key={p.title}>
-                      <p className="text-sm font-semibold text-gray-900">{p.title}</p>
-                      <p className="text-xs text-gray-500 leading-relaxed">{p.desc}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-xl border border-red-100 bg-red-50 p-5">
-                <p className="text-sm font-bold text-red-800 mb-3 flex items-center gap-2">
-                  <XCircle size={15} /> Disadvantages
-                </p>
-                <ul className="space-y-3">
-                  {CONS.map((c) => (
-                    <li key={c.title}>
-                      <p className="text-sm font-semibold text-gray-900">{c.title}</p>
-                      <p className="text-xs text-gray-500 leading-relaxed">{c.desc}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Eligibility */}
-          <section id="eligibility">
-            <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-              SNP Eligibility Requirements
-            </h2>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              To enroll in an SNP, you must first meet the standard Medicare Advantage eligibility requirements: you must be enrolled in Medicare Parts A and B, live in the plan service area, and not have end-stage renal disease (with limited exceptions). Beyond that, each SNP type has its own eligibility criteria:
-            </p>
-            <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-[#0d1f5c] text-white">
-                    <th className="text-left px-5 py-3 font-bold">SNP Type</th>
-                    <th className="text-left px-5 py-3 font-bold">Eligibility Requirement</th>
-                    <th className="text-left px-5 py-3 font-bold hidden sm:table-cell">Verification</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { type: "C-SNP", req: "Diagnosis of a qualifying chronic condition (e.g., diabetes, heart failure, COPD)", verify: "Medical records or physician attestation" },
-                    { type: "D-SNP", req: "Dual eligibility for Medicare and full or partial Medicaid", verify: "Medicaid eligibility verified by the plan" },
-                    { type: "I-SNP", req: "Residing in or expected to reside in a qualifying institution for 90+ days", verify: "Institutional status confirmed by facility" },
-                  ].map((row, i) => (
-                    <tr key={row.type} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="px-5 py-3 font-bold text-gray-800">{row.type}</td>
-                      <td className="px-5 py-3 text-gray-700">{row.req}</td>
-                      <td className="px-5 py-3 text-gray-500 hidden sm:table-cell">{row.verify}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="mt-4 rounded-xl border border-amber-100 bg-amber-50 px-5 py-4 flex items-start gap-3">
-              <AlertCircle size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-amber-800 leading-relaxed">
-                If you lose eligibility during the year (for example, your Medicaid ends), you will receive a Special Enrollment Period to switch to a different Medicare Advantage plan or return to Original Medicare.
-              </p>
-            </div>
-          </section>
-
-          {/* Enrollment */}
-          <section id="enrollment">
-            <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-              How to Enroll in a Medicare SNP
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                {
-                  period: "Initial Enrollment Period",
-                  dates: "7-month window around your 65th birthday",
-                  desc: "If you already meet SNP eligibility criteria at age 65, you can enroll in an SNP during your IEP.",
-                  color: "border-blue-100 bg-blue-50",
-                },
-                {
-                  period: "Annual Election Period",
-                  dates: "October 15 to December 7 each year",
-                  desc: "The main window to switch to, from, or between Medicare Advantage plans including SNPs. Coverage starts January 1.",
-                  color: "border-green-100 bg-green-50",
-                },
-                {
-                  period: "Special Enrollment Period",
-                  dates: "Triggered by a qualifying event",
-                  desc: "Gaining Medicaid eligibility, being diagnosed with a qualifying condition, or moving into a nursing facility all trigger an SEP for SNP enrollment.",
-                  color: "border-purple-100 bg-purple-50",
-                },
-                {
-                  period: "Continuous SNP Enrollment",
-                  dates: "Year-round for D-SNPs",
-                  desc: "People who are dual eligible (Medicare and Medicaid) can enroll in a D-SNP at any time during the year, not just during open enrollment.",
-                  color: "border-amber-100 bg-amber-50",
-                },
-              ].map((item) => (
-                <div key={item.period} className={`rounded-xl border p-5 ${item.color}`}>
-                  <p className="text-sm font-bold text-gray-900 mb-1">{item.period}</p>
-                  <p className="text-xs font-semibold text-gray-500 mb-2">{item.dates}</p>
-                  <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 px-5 py-4 flex items-start gap-3">
-              <Info size={16} className="text-blue-600 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-blue-800 leading-relaxed">
-                D-SNP enrollees who are fully dual eligible can switch plans once per quarter during the first three quarters of the year (January, April, and July), in addition to the Annual Election Period. This gives dual eligible beneficiaries more flexibility than standard Medicare Advantage enrollees.
-              </p>
-            </div>
-          </section>
-
-          {/* FAQ */}
-          <section id="faq">
-            <h2 className="text-xl font-bold text-gray-900 mb-5" style={{ fontFamily: "'Merriweather', serif" }}>
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-3">
-              {FAQ_ITEMS.map((item) => (
-                <FaqItem key={item.q} q={item.q} a={item.a} />
-              ))}
-            </div>
-          </section>
-
-          {/* Local Section */}
-          <section id="local">
-            <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
-              Medicare SNP Plans in Brandon and Hillsborough County
-            </h2>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              Brandon and Hillsborough County residents have access to several SNP options in 2026, particularly D-SNPs for dual eligible beneficiaries. Hillsborough County has a significant population of Medicare and Medicaid dual eligible residents, and multiple carriers offer D-SNPs in the area with $0 premiums, $0 copays for most services, and extra benefits including transportation, dental, vision, and over-the-counter allowances.
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              C-SNP availability in the Brandon and Riverview area varies by condition and carrier. Common C-SNP conditions covered in Hillsborough County include diabetes, chronic heart failure, and COPD. If you have been diagnosed with one of these conditions, a licensed advisor can check which C-SNPs are available at your specific address.
-            </p>
-            <div className="rounded-xl border border-[#c9a84c]/30 bg-[#fdf8ee] px-5 py-4 flex items-start gap-3">
-              <MapPin size={16} className="text-[#c9a84c] flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-bold text-gray-900 mb-1">Serving Brandon, Riverview, and Hillsborough County</p>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Greg Wohl and the Medicare Information Pro team help Brandon, Riverview, Valrico, Apollo Beach, Sun City Center, and Tampa residents navigate SNP eligibility and enrollment. If you think you may qualify for a D-SNP or C-SNP, a free consultation can confirm your options.
-                </p>
-                <a href="tel:+18137897700" className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-[#0d1f5c] hover:underline">
-                  <Phone size={13} />
-                  Call 813-789-7700
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* Inline CTA */}
-          <div className="rounded-2xl bg-[#0d1f5c] text-white px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="flex-1">
-              <p className="text-lg font-bold mb-1">Find Out If You Qualify for an SNP</p>
-              <p className="text-sm text-white/70">A licensed Medicare specialist can check your eligibility and show you every SNP available in your area at no cost.</p>
-            </div>
-            <div className="flex flex-col gap-2 flex-shrink-0">
-              <a
-                href="tel:+18137897700"
-                className="flex items-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors"
-              >
-                <Phone size={15} />
-                813-789-7700
-              </a>
-              <Link
-                href="/medicare-quiz/"
-                className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white text-sm px-5 py-3 rounded-xl transition-colors"
-              >
-                Take the Medicare Quiz
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-          </div>
-
-        </article>
-
-        {/* Sidebar */}
-        <aside className="w-full lg:w-64 flex-shrink-0 space-y-6 lg:sticky lg:top-6 lg:self-start">
-
-          <div className="rounded-xl border border-gray-100 shadow-sm p-5">
-            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">On This Page</p>
-            <nav className="space-y-1">
-              {TOC.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="block text-sm text-gray-600 hover:text-[#0d1f5c] hover:font-semibold py-1 transition-colors"
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          <div className="rounded-xl border border-gray-100 shadow-sm p-5">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#c9a84c]">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028505829/WdenMMm9jE8SydxXzr6dkt/greg-wohl_0f68a894.png"
-                  alt="Greg Wohl"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div>
-                <p className="text-sm font-bold text-gray-900">Greg Wohl</p>
-                <p className="text-xs text-gray-500">Licensed Medicare Advisor</p>
-                <div className="flex items-center gap-0.5 mt-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-3 h-3 text-[#c9a84c] fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <a
-              href="tel:+18137897700"
-              className="flex items-center justify-center gap-2 w-full bg-[#0d1f5c] hover:bg-[#162a7a] text-white font-bold text-sm px-4 py-3 rounded-xl transition-colors mb-2"
-            >
-              <Phone size={14} />
-              813-789-7700
-            </a>
-            <Link
-              href="/medicare-quiz/"
-              className="flex items-center justify-center gap-2 w-full border border-gray-200 hover:bg-gray-50 text-gray-700 text-sm px-4 py-3 rounded-xl transition-colors"
-            >
-              Take the Medicare Quiz
-              <ArrowRight size={13} />
-            </Link>
-          </div>
-
-          <div className="rounded-xl border border-gray-100 shadow-sm p-5">
-            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Related Pages</p>
-            <div className="space-y-3">
-              {RELATED_LINKS.map((link) => (
-                <Link key={link.href} href={link.href} className="block group">
-                  <p className="text-sm font-semibold text-[#0d1f5c] group-hover:underline">{link.label}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{link.desc}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-        </aside>
+        <p className="mt-3 text-xs text-white/65">CMS November 2026 landscape file. Counts are not the number of plans every person can join.</p>
       </div>
+    </section>
 
-      {/* Bottom CTA Band */}
-      <section className="bg-[#0d1f5c] text-white py-14 px-4 mt-auto">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-2xl font-black mb-3" style={{ fontFamily: "'Merriweather', serif" }}>
-            Check Your SNP Eligibility for Free
-          </p>
-          <p className="text-white/70 text-sm mb-6 max-w-xl mx-auto">
-            Find out if you qualify for a Special Needs Plan in Brandon, Riverview, or anywhere in Hillsborough County. No cost, no obligation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="tel:+18137897700"
-              className="flex items-center justify-center gap-2 bg-[#c9a84c] hover:bg-[#b8973d] text-white font-bold px-7 py-3.5 rounded-xl transition-colors"
-            >
-              <Phone size={16} />
-              Call 813-789-7700
-            </a>
-            <Link
-              href="/medicare-quiz/"
-              className="flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white px-7 py-3.5 rounded-xl transition-colors"
-            >
-              Take the Medicare Quiz
-              <ArrowRight size={15} />
-            </Link>
+    <div className="max-w-5xl mx-auto px-4 py-12 w-full flex flex-col lg:flex-row gap-10">
+      <article className="flex-1 min-w-0 space-y-10">
+        <Section id="what-is" title="What Is a Medicare Special Needs Plan?">
+          <p className={paragraph}>An SNP is a Medicare Advantage plan with eligibility tied to Medicaid status, a specified chronic condition, or institutional care needs. SNPs include Parts A and B benefits, Part D drug coverage, and care coordination. They operate as HMO or PPO plans with their own provider and coverage rules.</p>
+          <p className={paragraph}>You need Parts A and B, an address in the service area, the plan's qualifying status, and an available enrollment period. <a className={link} href="https://www.medicare.gov/health-drug-plans/health-plans/your-health-plan-options/SNP">Medicare explains SNP coverage and eligibility</a>.</p>
+        </Section>
+
+        <Section id="local" title="2027 SNP Options in Hillsborough County">
+          <p className={paragraph}>The CMS landscape file lists 72 unique SNP contract-plan IDs for Hillsborough County. Brandon, Riverview, Valrico, Seffner, and Tampa residents should confirm options using their home address and individual eligibility.</p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a3fa8]" tabIndex={0} role="region" aria-label="Hillsborough County 2027 Special Needs Plan counts">
+            <table className="w-full text-sm text-left min-w-[440px]">
+              <caption className="text-left p-4 text-gray-700 font-semibold">Hillsborough County 2027 SNP inventory</caption>
+              <thead className="bg-[#0d1f5c] text-white"><tr><th scope="col" className="p-3">Type</th><th scope="col" className="p-3">Plan IDs</th><th scope="col" className="p-3">Eligibility to verify</th></tr></thead>
+              <tbody>{SNP_COUNTS.map(x => <tr key={x.type} className="border-t border-gray-100"><th scope="row" className="p-3 text-gray-900">{x.type}</th><td className="p-3">{x.count}</td><td className="p-3 text-gray-700">{x.check}</td></tr>)}</tbody>
+            </table>
           </div>
-        </div>
-      </section>
+          <p className="text-sm text-gray-600 leading-relaxed">Method: unique contract-plan IDs categorized as SNP, filtered to Florida and Hillsborough County in the <a className={link} href="https://www.cms.gov/files/zip/cy2027-landscape-202611.zip">CMS CY 2027 landscape download (ZIP)</a>, updated November 1, 2026. Employer-sponsored, Part B-only, and national PACE plans are excluded from the file. Availability can change.</p>
+          <p className={paragraph}>Use <a className={link} href="https://www.medicare.gov/plan-compare/">Medicare Plan Finder</a> and the insurer's 2027 documents to review your options. The <Link className={link} href="/best-medicare-advantage-plans-hillsborough-county/">Hillsborough County Medicare Advantage comparison</Link> explains the broader county inventory.</p>
+        </Section>
 
-      <Footer />
+        <Section id="snp-types" title="D-SNP, C-SNP, and I-SNP Eligibility">
+          <div className="space-y-4">{TYPES.map(x => <div key={x.type} className={`rounded-xl border p-5 ${x.color}`}><p className="text-xs font-bold text-gray-500 mb-2">{x.type}</p><h3 className="font-bold text-gray-900 mb-2">{x.title}</h3><p className={paragraph}>{x.text}</p></div>)}</div>
+          <p className="text-sm text-gray-600 leading-relaxed">See <a className={link} href="https://www.cms.gov/medicare/medicaid-coordination/about/dsnps">CMS D-SNP guidance</a> and the <a className={link} href="https://www.cms.gov/medicare/enrollment-renewal/special-needs-plans/institutional">institutional SNP requirements</a>. The insurer verifies plan eligibility; a consultation cannot guarantee acceptance.</p>
+          <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
+            <h3 className="font-bold text-gray-900 mb-2">ESRD is not a blanket exclusion</h3>
+            <p className={paragraph}>People with end-stage renal disease can consider Medicare Advantage. Confirm the particular SNP's requirements and check your dialysis facility, kidney specialist, and transplant care team. <a className={link} href="https://www.medicare.gov/basics/end-stage-renal-disease">Medicare's ESRD coverage information</a> explains the available coverage paths.</p>
+          </div>
+        </Section>
+
+        <Section id="enrollment" title="When Can You Enroll or Change Plans?">
+          <p className={paragraph}>The enrollment period depends on your situation and the action you want to take. Having a qualifying condition does not mean every plan change is available year-round.</p>
+          <ul className="list-disc pl-6 space-y-3 text-base text-gray-700 leading-relaxed">
+            <li><strong>Fall Annual Enrollment:</strong> October 15 through December 7, 2026, for eligible changes starting January 1, 2027.</li>
+            <li><strong>Initial enrollment:</strong> Your Medicare start dates and SNP eligibility determine when you can first join.</li>
+            <li><strong>Chronic-condition enrollment:</strong> An available C-SNP serving your qualifying condition may have a Special Enrollment Period. Ask when it applies and when that opportunity ends.</li>
+            <li><strong>Medicaid or Extra Help:</strong> Eligible people can make certain drug-plan changes once per calendar month, including joining a standalone drug plan and returning from Medicare Advantage with drug coverage to Original Medicare. This does not allow unrestricted monthly switching between all D-SNPs.</li>
+            <li><strong>Integrated D-SNP enrollment:</strong> Some people with full Medicaid benefits can join or switch to an integrated D-SNP monthly to align Medicare and Medicaid managed care coverage. Confirm the plan and Medicaid requirements first.</li>
+          </ul>
+          <p className="text-sm text-gray-600 leading-relaxed">CMS replaced the former quarterly Dual/LIS enrollment framework starting in 2025. Exceptions and restrictions apply. Review the <a className={link} href="https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods">official Special Enrollment Period rules</a> and <a className={link} href="https://www.cms.gov/medicare/medicaid-coordination/about/dsnps">CMS monthly enrollment guidance</a> before requesting a change.</p>
+          <p className={paragraph}>Our <Link className={link} href="/annual-enrollment-period-guide/">Annual Enrollment resource</Link> and <Link className={link} href="/medicare-advantage-open-enrollment/">Medicare Advantage OEP center</Link> explain the other common review windows. If you lose qualifying status, ask the plan about notices, continued eligibility, and any Special Enrollment Period.</p>
+        </Section>
+
+        <Section id="compare" title="Compare the Providers and Prescriptions You Use Locally">
+          <p className={paragraph}>A county listing is the starting point. Build your short list around the care you actually use:</p>
+          <ol className="list-decimal pl-6 space-y-3 text-base text-gray-700 leading-relaxed">
+            <li><strong>Confirm eligibility.</strong> Record the exact plan name and ID, 2027 coverage year, and the Medicaid category, diagnosis, or care-setting requirement to verify.</li>
+            <li><strong>Check each provider and office.</strong> List your primary care doctor, specialists, preferred hospital, therapy providers, and any dialysis or other regular treatment facility. Ask both the insurer and the provider to confirm participation in the exact plan.</li>
+            <li><strong>Check your prescriptions.</strong> Include names, strengths, quantities, refill frequency, and the exact pharmacy addresses you would use. Ask about prior authorization, step therapy, and quantity limits.</li>
+            <li><strong>Read the care rules.</strong> Ask about referrals, prior authorization, out-of-network care, and how to reach care coordination. Confirm what happens when your health or Medicaid status changes.</li>
+            <li><strong>Save the documents.</strong> Keep the Summary of Benefits, Evidence of Coverage, formulary, provider confirmations, and the date you reviewed them.</li>
+          </ol>
+          <p className={paragraph}>Use the <Link className={link} href="/check-medicare-doctor-hospital-networks-brandon-fl/">Brandon doctor and hospital network checklist</Link> and <Link className={link} href="/compare-medicare-prescription-costs-brandon/">prescription cost comparison steps</Link> to organize your questions. Mentioning a local hospital does not confirm it participates in a particular SNP.</p>
+        </Section>
+
+        <MedicareCoverageCta description="Explore coverage options in your area. Have your current coverage, providers, prescriptions, and eligibility questions ready." />
+
+        <Section id="costs" title="Check Costs, Care Coordination, and Extra Benefits">
+          <p className={paragraph}>Compare the plan premium, medical cost-sharing, drug costs, and applicable out-of-pocket limits. Medicaid or a Medicare Savings Program may help with the Part B premium and other costs. A $0 plan premium alone does not establish that all your care is free.</p>
+          <p className={paragraph}>Ask how the care team helps with specialist appointments, medications, or transitions from hospital to home. For advertised dental, transportation, meals, or other extras, check the eligibility conditions, participating providers, allowances, and limits in writing.</p>
+          <p className={paragraph}>Extra Help assists with Part D drug costs. Confirm assistance eligibility through the relevant government program, then check how the plan reflects your status. Medicare explains <a className={link} href="https://www.medicare.gov/basics/costs/help/drug-costs">help with drug costs</a> and <a className={link} href="https://www.medicare.gov/basics/costs/help/medicare-savings-programs">Medicare Savings Programs</a>.</p>
+        </Section>
+
+        <Section id="prepare" title="Prepare for a Brandon SNP Consultation">
+          <p className={paragraph}>Bring your current plan information, Medicare effective dates, Medicaid eligibility notices if applicable, provider list, medication list, and questions about expected care. For a C-SNP, ask what diagnosis confirmation the plan needs. For an I-SNP, ask which facility or assessment information is required.</p>
+          <p className={paragraph}>Our team can help compare the plans we represent and identify questions for the insurer, provider, or Medicaid program. Medicare.gov offers information about the full set of available options.</p>
+          <div className="rounded-xl border border-[#c9a84c]/30 bg-[#fdf8ee] p-5">
+            <h3 className="font-bold text-gray-900 flex items-center gap-2 mb-2"><MapPin size={17} aria-hidden="true" /> Meet locally or talk from home</h3>
+            <p className={paragraph}>Medicare Information Project, 915 Oakfield Dr, Suite A, Brandon, FL 33511. Office visits are by appointment. Phone and video conversations are also available for nearby Hillsborough County communities.</p>
+            <a href="tel:+18136995559" className="mt-4 inline-flex min-h-11 items-center gap-2 font-bold text-[#0d1f5c]"><Phone size={16} aria-hidden="true" /> 813-699-5559</a>
+          </div>
+        </Section>
+
+        <Section id="faq" title="Brandon Special Needs Plan FAQs">
+          <div className="space-y-3">{SNP_FAQS.map(x => <details key={x.question} className="group rounded-xl border border-gray-200 shadow-sm"><summary className="cursor-pointer p-5 font-bold text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a3fa8]">{x.question}</summary><p className="px-5 pb-5 text-base text-gray-700 leading-relaxed">{x.answer}</p></details>)}</div>
+        </Section>
+
+        <Section id="sources" title="Official Sources and Review Date">
+          <p className="text-sm text-gray-600 leading-relaxed">Reviewed November 25, 2026. Plan counts use the CMS November 1, 2026 landscape file for coverage year 2027. Rules and plan availability can change. Confirm your eligibility, providers, prescriptions, election period, and effective date before enrolling.</p>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li><a className={link} href="https://www.medicare.gov/health-drug-plans/health-plans/your-health-plan-options/SNP">Medicare: Special Needs Plans</a></li>
+            <li><a className={link} href="https://www.cms.gov/medicare/medicaid-coordination/about/dsnps">CMS: D-SNPs and enrollment updates</a></li>
+            <li><a className={link} href="https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods">Medicare: Special Enrollment Periods</a></li>
+            <li><a className={link} href="https://www.cms.gov/files/zip/cy2027-landscape-202611.zip">CMS: CY 2027 landscape data (ZIP)</a></li>
+          </ul>
+        </Section>
+      </article>
+
+      <aside className="w-full lg:w-64 shrink-0 space-y-6 lg:sticky lg:top-28 lg:self-start" aria-label="SNP resources">
+        <div className="rounded-xl border border-gray-200 p-5 shadow-sm"><h2 className="text-sm font-bold uppercase text-gray-500 mb-3">On This Page</h2><nav aria-label="Article sections" className="space-y-1">{TOC.map(x => <a key={x.id} href={`#${x.id}`} className="block py-2 text-sm text-gray-700 hover:text-[#1a3fa8] hover:underline">{x.label}</a>)}</nav></div>
+        <div className="rounded-xl bg-[#0d1f5c] text-white p-5"><p className="font-bold text-lg">Get Help Comparing SNP Options</p><p className="text-sm text-white/80 mt-3 leading-relaxed">Talk through the plans we represent for your eligibility, providers, and prescriptions.</p><Link href="/get-started/" className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 w-full rounded-lg bg-[#f5a800] px-4 py-3 font-bold text-[#0d1f5c]">Explore Medicare Options <ArrowRight size={16} aria-hidden="true" /></Link></div>
+        <div className="rounded-xl border border-gray-200 p-5"><h2 className="font-bold text-gray-900 mb-3 flex gap-2 items-center"><CheckCircle size={17} aria-hidden="true" /> Before You Choose</h2><ul className="list-disc pl-4 space-y-2 text-sm text-gray-700"><li>Plan-specific eligibility</li><li>Doctor and facility network</li><li>Prescription and pharmacy costs</li><li>Medicaid coverage alignment</li><li>Enrollment and start dates</li></ul></div>
+      </aside>
     </div>
-  );
+    <Footer />
+  </div>;
 }
