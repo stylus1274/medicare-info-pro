@@ -1,5 +1,6 @@
 // Use documented editorial dates. Omit unknown dates and the shared legacy migration date.
 const editorialDates: Readonly<Record<string, string>> = {
+  "/medicare-issues-for-veterans-tampa": "2026-11-25",
   "/best-medicare-plans-for-snowbirds-in-florida": "2026-11-25",
   "/medicare-ppo-plans-in-tampa": "2026-11-25",
   "/medicare-snp-plans": "2026-11-25",

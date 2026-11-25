@@ -835,14 +835,14 @@ const ARTICLES: Article[] = [
   },
   {
     slug: "/medicare-issues-for-veterans-tampa",
-    title: "Medicare and VA Benefits for Veterans in Tampa: What You Need to Know in 2026",
+    title: "Medicare and VA Benefits for Veterans in Tampa",
     excerpt:
-      "Veterans in Tampa have access to both VA healthcare and Medicare, but the two programs do not automatically coordinate. Understanding how they work together can save you thousands of dollars and prevent gaps in coverage.",
+      "Understand your options for VA and civilian care in Tampa Bay. Review Medicare enrollment, prescriptions, and TRICARE For Life before changing coverage.",
     category: "Coverage",
     author: "Greg Wohl",
-    date: "June 2026",
-    readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    date: "November 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&q=80",
     live: true,
   },
   {
