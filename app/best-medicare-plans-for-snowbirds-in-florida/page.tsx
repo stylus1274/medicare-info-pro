@@ -160,6 +160,15 @@ const POST: ComponentProps<typeof BlogPostClient>["post"] = {
       "category": "Enrollment"
     }
   ],
+  "sidebarFacts": {
+    "heading": "Before You Travel",
+    "items": ["Doctors and facilities in both states", "Exact plan name and coverage year", "Routine care and authorization rules", "Pharmacies and refill arrangements", "Consecutive time away and visitor terms", "Written confirmations and contact details"]
+  },
+  "sidebarTools": [
+    {"label": "Tampa PPO Options", "href": "/medicare-ppo-plans-in-tampa/", "desc": "2027 local plan comparisons"},
+    {"label": "Brandon Provider Checklist", "href": "/check-medicare-doctor-hospital-networks-brandon-fl/", "desc": "Verify doctors and facilities"},
+    {"label": "Prescription Cost Review", "href": "/compare-medicare-prescription-costs-brandon/", "desc": "Check medications and pharmacies"}
+  ],
   "serviceAreas": [
     "Brandon",
     "Tampa",
